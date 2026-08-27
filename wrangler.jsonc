@@ -1,5 +1,5 @@
 {
-  "name": "matchcamera",
+  "name": "matchcamera-com",
   "compatibility_date": "2026-08-28",
   "main": "./worker/index.js",
   "assets": {
