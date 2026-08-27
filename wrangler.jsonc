@@ -1,6 +1,6 @@
 {
   "name": "matchcamera-com",
-  "compatibility_date": "2026-08-28",
+  "compatibility_date": "2026-08-27",
   "main": "./worker/index.js",
   "assets": {
     "directory": "./public/",
