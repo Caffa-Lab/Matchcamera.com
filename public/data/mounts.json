@@ -1,0 +1,153 @@
+[
+  {
+    "id": "canon-ef-m",
+    "name": "Canon EF-M",
+    "bodyFormats": [
+      "APS-C"
+    ],
+    "lensFormats": [
+      "EF-M",
+      "DC"
+    ]
+  },
+  {
+    "id": "canon-rf",
+    "name": "Canon RF",
+    "bodyFormats": [
+      "Full Frame",
+      "APS-C",
+      "Super 35"
+    ],
+    "lensFormats": [
+      "RF",
+      "RF-S",
+      "DC",
+      "Di III-A"
+    ]
+  },
+  {
+    "id": "fujifilm-g",
+    "name": "Fujifilm G",
+    "bodyFormats": [
+      "Medium Format 44×33"
+    ],
+    "lensFormats": [
+      "GF"
+    ]
+  },
+  {
+    "id": "fujifilm-x",
+    "name": "Fujifilm X",
+    "bodyFormats": [
+      "APS-C"
+    ],
+    "lensFormats": [
+      "XF",
+      "XC",
+      "MKX",
+      "DC",
+      "Di III-A"
+    ]
+  },
+  {
+    "id": "l-mount",
+    "name": "L-Mount",
+    "bodyFormats": [
+      "Full Frame",
+      "APS-C"
+    ],
+    "lensFormats": [
+      "SL",
+      "TL",
+      "S",
+      "DG",
+      "DC"
+    ]
+  },
+  {
+    "id": "micro-four-thirds",
+    "name": "Micro Four Thirds",
+    "bodyFormats": [
+      "Micro Four Thirds"
+    ],
+    "lensFormats": [
+      "MFT",
+      "M.Zuiko",
+      "DC",
+      "Di III-A"
+    ]
+  },
+  {
+    "id": "nikon-1",
+    "name": "Nikon 1",
+    "bodyFormats": [
+      "CX"
+    ],
+    "lensFormats": [
+      "CX"
+    ]
+  },
+  {
+    "id": "nikon-z",
+    "name": "Nikon Z",
+    "bodyFormats": [
+      "Full Frame",
+      "APS-C"
+    ],
+    "lensFormats": [
+      "FX",
+      "DX",
+      "DC",
+      "Di III",
+      "Di III-A"
+    ]
+  },
+  {
+    "id": "pentax-k",
+    "name": "Pentax K",
+    "bodyFormats": [
+      "APS-C"
+    ],
+    "lensFormats": [
+      "Pentax K"
+    ]
+  },
+  {
+    "id": "pentax-q",
+    "name": "Pentax Q",
+    "bodyFormats": [
+      "1/2.3-inch",
+      "1/1.7-inch"
+    ],
+    "lensFormats": [
+      "Q"
+    ]
+  },
+  {
+    "id": "sigma-sa",
+    "name": "Sigma SA",
+    "bodyFormats": [
+      "APS-C",
+      "APS-H"
+    ],
+    "lensFormats": [
+      "SA"
+    ]
+  },
+  {
+    "id": "sony-e",
+    "name": "Sony E",
+    "bodyFormats": [
+      "Full Frame",
+      "APS-C"
+    ],
+    "lensFormats": [
+      "FE",
+      "E",
+      "DG",
+      "DC",
+      "Di III",
+      "Di III-A"
+    ]
+  }
+]

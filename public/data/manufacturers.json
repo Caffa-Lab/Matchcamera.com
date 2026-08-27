@@ -1,0 +1,128 @@
+[
+  {
+    "id": "canon",
+    "name": "Canon",
+    "status": "active",
+    "mounts": [
+      "Canon EF-M",
+      "Canon RF"
+    ],
+    "body": true,
+    "lens": true
+  },
+  {
+    "id": "fujifilm",
+    "name": "Fujifilm",
+    "status": "active",
+    "mounts": [
+      "Fujifilm G",
+      "Fujifilm X"
+    ],
+    "body": true,
+    "lens": true
+  },
+  {
+    "id": "leica",
+    "name": "Leica",
+    "status": "active",
+    "mounts": [
+      "L-Mount"
+    ],
+    "body": true,
+    "lens": true
+  },
+  {
+    "id": "nikon",
+    "name": "Nikon",
+    "status": "active",
+    "mounts": [
+      "Nikon 1",
+      "Nikon Z"
+    ],
+    "body": true,
+    "lens": true
+  },
+  {
+    "id": "om-system",
+    "name": "OM SYSTEM",
+    "status": "active",
+    "mounts": [
+      "Micro Four Thirds"
+    ],
+    "body": true,
+    "lens": true
+  },
+  {
+    "id": "olympus",
+    "name": "Olympus",
+    "status": "active",
+    "mounts": [
+      "Micro Four Thirds"
+    ],
+    "body": true,
+    "lens": true
+  },
+  {
+    "id": "panasonic",
+    "name": "Panasonic",
+    "status": "active",
+    "mounts": [
+      "L-Mount",
+      "Micro Four Thirds"
+    ],
+    "body": true,
+    "lens": true
+  },
+  {
+    "id": "pentax",
+    "name": "Pentax",
+    "status": "active",
+    "mounts": [
+      "Pentax K",
+      "Pentax Q"
+    ],
+    "body": true,
+    "lens": true
+  },
+  {
+    "id": "sigma",
+    "name": "Sigma",
+    "status": "active",
+    "mounts": [
+      "Canon EF-M",
+      "Canon RF",
+      "Fujifilm X",
+      "L-Mount",
+      "Micro Four Thirds",
+      "Nikon Z",
+      "Sigma SA",
+      "Sony E"
+    ],
+    "body": true,
+    "lens": true
+  },
+  {
+    "id": "sony",
+    "name": "Sony",
+    "status": "active",
+    "mounts": [
+      "Sony E"
+    ],
+    "body": true,
+    "lens": true
+  },
+  {
+    "id": "tamron",
+    "name": "Tamron",
+    "status": "active",
+    "mounts": [
+      "Canon RF",
+      "Fujifilm X",
+      "Micro Four Thirds",
+      "Nikon Z",
+      "Sony E"
+    ],
+    "body": false,
+    "lens": true
+  }
+]
