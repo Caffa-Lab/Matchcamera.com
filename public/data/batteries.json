@@ -94,7 +94,15 @@
     "priceSourceName": "캐논코리아 e스토어",
     "priceSource": "https://estore.kr.canon/estore/detailview/35535",
     "priceDate": "2026-08-28",
-    "priceVerification": "한국 공식 사이트 확인"
+    "priceVerification": "한국 공식 사이트 확인",
+    "imageSrc": "/assets/images/accessories/batteries/canon/canon-lp-e6p.webp",
+    "imageSourcePage": "https://estore.kr.canon/estore/detailview/35535",
+    "imageSourceUrl": "https://image.kr.canon//pds/product/1721117511958_k1qipDnpRx.jpg",
+    "imageMethod": "canon-korea-estore",
+    "imageWidth": 900,
+    "imageHeight": 600,
+    "imageFetchedAt": "2026-08-28T12:29:14.710510+00:00",
+    "imageUsageReviewRequired": true
   },
   {
     "id": "canon-lp-e6nh",
@@ -142,7 +150,15 @@
     "priceSourceName": "캐논코리아 e스토어",
     "priceSource": "https://estore.kr.canon/estore/detailview/19335",
     "priceDate": "2026-08-28",
-    "priceVerification": "한국 공식 사이트 확인"
+    "priceVerification": "한국 공식 사이트 확인",
+    "imageSrc": "/assets/images/accessories/batteries/canon/canon-lp-e17.webp",
+    "imageSourcePage": "https://estore.kr.canon/estore/detailview/19335",
+    "imageSourceUrl": "https://image.kr.canon//pds/goods/1753836342622_8QgXijrUzS.jpg",
+    "imageMethod": "canon-korea-estore",
+    "imageWidth": 900,
+    "imageHeight": 676,
+    "imageFetchedAt": "2026-08-28T12:29:27.381548+00:00",
+    "imageUsageReviewRequired": true
   },
   {
     "id": "nikon-en-el15c",

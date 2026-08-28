@@ -9573,5 +9573,29 @@
     "extractMethod": "direct-image",
     "fetchedAt": "2026-08-28T12:26:12.281555+00:00",
     "usageReviewRequired": true
+  },
+  "Canon EF-S 18-135mm f/3.5-5.6 IS USM": {
+    "src": "/assets/images/products/canon/ext-canon-canon-ef-canon-ef-s-18-135mm-f-3-5-5-6-is-usm.webp",
+    "sourcePage": "https://estore.kr.canon/estore/detailview/10608",
+    "sourceImage": "https://image.kr.canon//pds/product/1455671895708_OgjjBdtSqu.jpg",
+    "manufacturer": "Canon",
+    "width": 900,
+    "height": 509,
+    "method": "canon-korea-estore",
+    "extractMethod": "direct-image",
+    "fetchedAt": "2026-08-28T12:28:20.185430+00:00",
+    "usageReviewRequired": true
+  },
+  "Canon PowerShot G7 X Mark III": {
+    "src": "/assets/images/products/canon/ext-canon-canon-powershot-g7-x-mark-iii.webp",
+    "sourcePage": "https://estore.kr.canon/estore/detailview/43115",
+    "sourceImage": "https://image.kr.canon//pds/product/1770269289867_LCylqtU9ns.jpg",
+    "manufacturer": "Canon",
+    "width": 900,
+    "height": 509,
+    "method": "canon-korea-estore",
+    "extractMethod": "direct-image",
+    "fetchedAt": "2026-08-28T12:28:46.223457+00:00",
+    "usageReviewRequired": true
   }
 }

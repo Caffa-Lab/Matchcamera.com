@@ -1204,13 +1204,172 @@
       "status": "failed",
       "query": "EF 11-24mm f/4L USM",
       "reason": "정확한 일반상품 상세 페이지를 찾지 못함 (0개 후보)"
+    },
+    "lens:Canon EF 16-35mm f/2.8L III USM": {
+      "status": "failed",
+      "query": "EF 16-35mm f/2.8L III USM",
+      "reason": "정확한 일반상품 상세 페이지를 찾지 못함 (0개 후보)"
+    },
+    "lens:Canon EF 16-35mm f/4L IS USM": {
+      "status": "failed",
+      "query": "EF 16-35mm f/4L IS USM",
+      "reason": "정확한 일반상품 상세 페이지를 찾지 못함 (0개 후보)"
+    },
+    "lens:Canon EF 24-70mm f/2.8L II USM": {
+      "status": "failed",
+      "query": "EF 24-70mm f/2.8L II USM",
+      "reason": "정확한 일반상품 상세 페이지를 찾지 못함 (3개 후보)"
+    },
+    "lens:Canon EF 24-105mm f/4L IS II USM": {
+      "status": "failed",
+      "query": "EF 24-105mm f/4L IS II USM",
+      "reason": "정확한 일반상품 상세 페이지를 찾지 못함 (0개 후보)"
+    },
+    "lens:Canon EF 70-200mm f/2.8L IS III USM": {
+      "status": "failed",
+      "query": "EF 70-200mm f/2.8L IS III USM",
+      "reason": "정확한 일반상품 상세 페이지를 찾지 못함 (0개 후보)"
+    },
+    "lens:Canon EF 70-200mm f/4L IS II USM": {
+      "status": "failed",
+      "query": "EF 70-200mm f/4L IS II USM",
+      "reason": "정확한 일반상품 상세 페이지를 찾지 못함 (0개 후보)"
+    },
+    "lens:Canon EF 100-400mm f/4.5-5.6L IS II USM": {
+      "status": "failed",
+      "query": "EF 100-400mm f/4.5-5.6L IS II USM",
+      "reason": "정확한 일반상품 상세 페이지를 찾지 못함 (0개 후보)"
+    },
+    "lens:Canon EF 35mm f/1.4L II USM": {
+      "status": "failed",
+      "query": "EF 35mm f/1.4L II USM",
+      "reason": "정확한 일반상품 상세 페이지를 찾지 못함 (0개 후보)"
+    },
+    "lens:Canon EF 50mm f/1.2L USM": {
+      "status": "failed",
+      "query": "EF 50mm f/1.2L USM",
+      "reason": "정확한 일반상품 상세 페이지를 찾지 못함 (0개 후보)"
+    },
+    "lens:Canon EF 50mm f/1.4 USM": {
+      "status": "failed",
+      "query": "EF 50mm f/1.4 USM",
+      "reason": "정확한 일반상품 상세 페이지를 찾지 못함 (0개 후보)"
+    },
+    "lens:Canon EF 85mm f/1.4L IS USM": {
+      "status": "failed",
+      "query": "EF 85mm f/1.4L IS USM",
+      "reason": "정확한 일반상품 상세 페이지를 찾지 못함 (5개 후보)"
+    },
+    "lens:Canon EF 85mm f/1.2L II USM": {
+      "status": "failed",
+      "query": "EF 85mm f/1.2L II USM",
+      "reason": "정확한 일반상품 상세 페이지를 찾지 못함 (0개 후보)"
+    },
+    "lens:Canon EF 100mm f/2.8L Macro IS USM": {
+      "status": "failed",
+      "query": "EF 100mm f/2.8L Macro IS USM",
+      "reason": "정확한 일반상품 상세 페이지를 찾지 못함 (0개 후보)"
+    },
+    "lens:Canon EF-S 10-18mm f/4.5-5.6 IS STM": {
+      "status": "failed",
+      "query": "EF-S 10-18mm f/4.5-5.6 IS STM",
+      "reason": "정확한 일반상품 상세 페이지를 찾지 못함 (0개 후보)"
+    },
+    "lens:Canon EF-S 10-22mm f/3.5-4.5 USM": {
+      "status": "failed",
+      "query": "EF-S 10-22mm f/3.5-4.5 USM",
+      "reason": "정확한 일반상품 상세 페이지를 찾지 못함 (0개 후보)"
+    },
+    "lens:Canon EF-S 17-55mm f/2.8 IS USM": {
+      "status": "failed",
+      "query": "EF-S 17-55mm f/2.8 IS USM",
+      "reason": "정확한 일반상품 상세 페이지를 찾지 못함 (0개 후보)"
+    },
+    "lens:Canon EF-S 18-55mm f/4-5.6 IS STM": {
+      "status": "failed",
+      "query": "EF-S 18-55mm f/4-5.6 IS STM",
+      "reason": "정확한 일반상품 상세 페이지를 찾지 못함 (0개 후보)"
+    },
+    "lens:Canon EF-S 18-135mm f/3.5-5.6 IS USM": {
+      "status": "ok",
+      "query": "EF-S 18-135mm f/3.5-5.6 IS USM",
+      "src": "/assets/images/products/canon/ext-canon-canon-ef-canon-ef-s-18-135mm-f-3-5-5-6-is-usm.webp",
+      "sourcePage": "https://estore.kr.canon/estore/detailview/10608",
+      "sourceImage": "https://image.kr.canon//pds/product/1455671895708_OgjjBdtSqu.jpg",
+      "resultScore": 540,
+      "imageScore": 1030,
+      "width": 900,
+      "height": 509
+    },
+    "lens:Canon EF-S 55-250mm f/4-5.6 IS STM": {
+      "status": "failed",
+      "query": "EF-S 55-250mm f/4-5.6 IS STM",
+      "reason": "정확한 일반상품 상세 페이지를 찾지 못함 (0개 후보)"
+    },
+    "body:Canon PowerShot G1 X Mark III": {
+      "status": "failed",
+      "query": "PowerShot G1 X Mark III",
+      "reason": "상세 페이지 제품명이 DB 제품과 맞지 않음"
+    },
+    "body:Canon PowerShot G5 X Mark II": {
+      "status": "failed",
+      "query": "PowerShot G5 X Mark II",
+      "reason": "정확한 일반상품 상세 페이지를 찾지 못함 (5개 후보)"
+    },
+    "body:Canon PowerShot G7 X Mark III": {
+      "status": "ok",
+      "query": "PowerShot G7 X Mark III",
+      "src": "/assets/images/products/canon/ext-canon-canon-powershot-g7-x-mark-iii.webp",
+      "sourcePage": "https://estore.kr.canon/estore/detailview/43115",
+      "sourceImage": "https://image.kr.canon//pds/product/1770269289867_LCylqtU9ns.jpg",
+      "resultScore": 540,
+      "imageScore": 1030,
+      "width": 900,
+      "height": 509
+    },
+    "body:Canon EOS C300 Mark III": {
+      "status": "failed",
+      "query": "EOS C300 Mark III",
+      "reason": "정확한 일반상품 상세 페이지를 찾지 못함 (0개 후보)"
+    },
+    "body:Canon EOS C500 Mark II": {
+      "status": "failed",
+      "query": "EOS C500 Mark II",
+      "reason": "정확한 일반상품 상세 페이지를 찾지 못함 (0개 후보)"
+    },
+    "battery:LP-E6P": {
+      "status": "ok",
+      "query": "LP-E6P",
+      "src": "/assets/images/accessories/batteries/canon/canon-lp-e6p.webp",
+      "sourcePage": "https://estore.kr.canon/estore/detailview/35535",
+      "sourceImage": "https://image.kr.canon//pds/product/1721117511958_k1qipDnpRx.jpg",
+      "resultScore": 740,
+      "imageScore": 1030,
+      "width": 900,
+      "height": 600
+    },
+    "battery:LP-E6NH": {
+      "status": "failed",
+      "query": "LP-E6NH",
+      "reason": "정확한 일반상품 상세 페이지를 찾지 못함 (0개 후보)"
+    },
+    "battery:LP-E17": {
+      "status": "ok",
+      "query": "LP-E17",
+      "src": "/assets/images/accessories/batteries/canon/canon-lp-e17.webp",
+      "sourcePage": "https://estore.kr.canon/estore/detailview/19335",
+      "sourceImage": "https://image.kr.canon//pds/goods/1753836342622_8QgXijrUzS.jpg",
+      "resultScore": 540,
+      "imageScore": 1030,
+      "width": 900,
+      "height": 676
     }
   },
   "_meta": {
-    "updatedAt": "2026-08-28T12:26:39.389169+00:00",
+    "updatedAt": "2026-08-28T12:29:27.382549+00:00",
     "selected": 174,
-    "ok": 80,
+    "ok": 84,
     "skipped": 0,
-    "failed": 65
+    "failed": 90
   }
 }
