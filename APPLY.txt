@@ -1,0 +1,22 @@
+Matchcamera 한국 가격 연결 v1
+
+1) 이 ZIP을 D:\Matchcamera 에 그대로 덮어쓰기
+2) 아래 파일이 이미 있어야 합니다.
+   D:\Matchcamera\public\data\korea-prices.json
+
+3) 확인
+   D:\Matchcamera\public\assets\js\data.js
+
+4) Git/배포
+   git add .
+   git commit -m "Connect Korean price database"
+   git push
+
+   & "C:\Program Files\nodejs\npx.cmd" wrangler deploy
+
+동작:
+- products.json + korea-prices.json을 제품명/마운트 기준으로 병합
+- 기존 USD 가격은 originalPriceUsd에 보존
+- 화면 표시 가격은 원화(KRW)로 변경
+- 한국 대표가격이 없으면 공식/출시가를 보조 사용
+- 둘 다 없으면 '가격 미확인'
