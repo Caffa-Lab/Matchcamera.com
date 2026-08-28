@@ -1,22 +1,67 @@
-Matchcamera 한국 가격 연결 v1
+Matchcamera 이미지 자동화 분리판 v7
 
-1) 이 ZIP을 D:\Matchcamera 에 그대로 덮어쓰기
-2) 아래 파일이 이미 있어야 합니다.
-   D:\Matchcamera\public\data\korea-prices.json
+목표
+====
+1. Sony / Canon 제외: 기존 안정적인 자동 수집을 전체 실행
+2. Sony: store.sony.co.kr/product-view에서 제품컷을 우선 수집
+3. Canon: 이전에 성공한 browser/official fallback 방식을 현행 제품으로 다시 테스트
 
-3) 확인
-   D:\Matchcamera\public\assets\js\data.js
+실행 순서
+=========
+1) 01_UPDATE_IMAGES_EXCEPT_SONY_CANON.bat
+   - Sony, Canon을 완전히 제외합니다.
+   - Nikon/Fujifilm/Panasonic/Pentax/Sigma/Tamron 등 기존 방식이 정상인 제조사를 처리합니다.
+   - 이미 성공한 이미지는 SKIP합니다.
 
-4) Git/배포
-   git add .
-   git commit -m "Connect Korean price database"
-   git push
+2) 02_TEST_SONY_STORE_A7IV.bat
+   - 사용자가 제공한 Sony Store α7 IV 페이지를 사용합니다.
+   - https://store.sony.co.kr/product-view/102270076
+   - DOM의 img/background/resource 이미지를 모은 뒤 실제 이미지 바이트를 분석합니다.
+   - 흰색/투명 배경, 적절한 종횡비, 큰 해상도의 '제품컷'을 우선합니다.
+   - 성공하면 product-images.json에서 Sony α7 IV 이미지를 Sony Store 제품컷으로 교체합니다.
 
-   & "C:\Program Files\nodejs\npx.cmd" wrangler deploy
+3) 03_UPDATE_SONY_STORE_IMAGES.bat
+   - Sony 전체 제품을 순회합니다.
+   - sony-store-pages.json에 매핑이 없으면 Bing에서
+     site:store.sony.co.kr/product-view + 모델코드/제품명으로 상품 페이지를 자동 탐색합니다.
+   - 찾은 Store URL을 sony-store-pages.json에 저장하므로 다음 실행에서 재검색하지 않습니다.
+   - Store 페이지가 없는 단종 제품은 실패 목록에 남깁니다.
 
-동작:
-- products.json + korea-prices.json을 제품명/마운트 기준으로 병합
-- 기존 USD 가격은 originalPriceUsd에 보존
-- 화면 표시 가격은 원화(KRW)로 변경
-- 한국 대표가격이 없으면 공식/출시가를 보조 사용
-- 둘 다 없으면 '가격 미확인'
+4) 04_TEST_CANON_CURRENT_IMAGES.bat
+   - Canon EOS R5
+   - Canon EOS R5 C
+   - Canon EOS R6 Mark II
+   세 제품을 정확히 지정하여 기존 fallback 방식을 refresh 테스트합니다.
+
+파일
+====
+scripts/update_product_images.py
+  일반 제조사용 v7. --exclude-manufacturer 추가.
+
+scripts/update_sony_store_images.py
+  Sony Store 전용 제품컷 수집기.
+
+public/data/sony-store-pages.example.json
+  초기 Sony Store URL 예시. bootstrap script가 실제 sony-store-pages.json이 없을 때만 생성합니다.
+
+.github/workflows/update-product-images-stable.yml
+  GitHub Actions에서 Sony/Canon을 제외한 안정 제조사만 자동 업데이트합니다.
+
+주의
+====
+Sony Store 페이지에는 사이트 콘텐츠의 저작권 및 상업적 무단전재/복사/배포 금지 안내가 있습니다.
+따라서 이 자동화는 기술적으로 제품 이미지를 수집/정리하는 용도이며,
+Matchcamera 공개 서비스에 Sony Store 이미지를 직접 게시하기 전에는 Sony의 이미지/브랜드 이용조건과
+필요한 사용 허가를 확인해야 합니다.
+
+적용
+====
+ZIP을 D:\Matchcamera 에 그대로 덮어쓰기.
+
+Git/배포
+========
+git add .
+git commit -m "Split product image automation by manufacturer"
+git push
+
+& "C:\Program Files\nodejs\npx.cmd" wrangler deploy

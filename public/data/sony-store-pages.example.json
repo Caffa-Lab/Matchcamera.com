@@ -1,0 +1,11 @@
+{
+  "_meta": {
+    "description": "Sony 제품명 -> Sony Store product-view 매핑. 자동 수집기가 발견한 URL을 추가합니다.",
+    "updatedAt": "2026-08-28"
+  },
+  "Sony α7 IV": {
+    "modelCode": "ILCE-7M4",
+    "url": "https://store.sony.co.kr/product-view/102270076",
+    "note": "사용자가 확인한 Sony Store 상품 페이지"
+  }
+}

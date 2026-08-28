@@ -7,6 +7,7 @@
   <meta name="description" content="제조사, 마운트, 렌즈 포맷, 초점거리와 조리개로 렌즈를 빠르게 찾습니다.">
   <link rel="stylesheet" href="/assets/css/site.css">
   <link rel="stylesheet" href="/assets/css/catalog.css">
+  <link rel="stylesheet" href="/assets/css/catalog-auto.css">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 </head>
 <body class="finder-page" data-catalog-type="lens">
@@ -30,7 +31,7 @@
       <div class="finder-search-row">
         <div class="finder-search">
           <span aria-hidden="true">⌕</span>
-          <input id="catalogSearch" type="search" placeholder="렌즈명, 모델 코드, 초점거리 검색" autocomplete="off">
+          <input id="catalogSearch" type="search" placeholder="예: FE 24-70 GM II, RF 24-70, NIKKOR Z 24-70" autocomplete="off">
           <button id="clearCatalogSearch" type="button">초기화</button>
         </div>
       </div>
@@ -40,8 +41,7 @@
       <div class="result-bar">
         <p>상품 · <strong id="catalogCount">0</strong>개</p>
         <div class="result-controls">
-          <button class="sort-button active" data-sort="recommend" type="button">추천순</button>
-          <button class="sort-button" data-sort="new" type="button">최신순</button>
+          <button class="sort-button active" data-sort="new" type="button">최신순</button>
           <button class="sort-button" data-sort="name" type="button">이름순</button>
           <select id="saleSelect" class="result-select" aria-label="판매 상태">
             <option value="all">전체 상태</option>

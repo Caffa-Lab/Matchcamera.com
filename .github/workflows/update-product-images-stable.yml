@@ -1,0 +1,47 @@
+name: Update stable product images
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "public/data/products.json"
+      - "scripts/update_product_images.py"
+
+permissions:
+  contents: write
+
+jobs:
+  update-images:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - run: pip install -r scripts/requirements-images.txt
+
+      - name: Update all brands except Sony and Canon
+        run: >
+          python scripts/update_product_images.py
+          --exclude-manufacturer Sony
+          --exclude-manufacturer Canon
+          --retry-failed
+          --no-browser-fallback
+
+      - name: Commit generated images
+        shell: bash
+        run: |
+          git config user.name "matchcamera-image-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add public/assets/images/products public/data/product-images.json public/data/product-images-report.json
+          if git diff --cached --quiet; then
+            echo "No image changes."
+          else
+            git commit -m "Auto-update stable product images"
+            git push
+          fi

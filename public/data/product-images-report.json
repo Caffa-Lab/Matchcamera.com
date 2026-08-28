@@ -1,0 +1,1906 @@
+{
+  "_meta": {
+    "updatedAt": "2026-08-28T09:13:38.771685+00:00",
+    "totalProducts": 843
+  },
+  "items": {
+    "Sony NEX-3": {
+      "status": "failed",
+      "label": "Sony NEX-3",
+      "reason": "page https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs: HTTPError: 403 Client Error: Forbidden for url: https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs",
+      "errors": [
+        "browser official page search returned no result",
+        "page https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs: HTTPError: 403 Client Error: Forbidden for url: https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs"
+      ]
+    },
+    "Sony NEX-5": {
+      "status": "failed",
+      "label": "Sony NEX-5",
+      "reason": "page https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs: HTTPError: 403 Client Error: Forbidden for url: https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs",
+      "errors": [
+        "browser official page search returned no result",
+        "page https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs: HTTPError: 403 Client Error: Forbidden for url: https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs"
+      ]
+    },
+    "Sony NEX-C3": {
+      "status": "failed",
+      "label": "Sony NEX-C3",
+      "reason": "blocked host skipped: www.sony.com",
+      "errors": [
+        "browser official page search returned no result",
+        "blocked host skipped: www.sony.com"
+      ]
+    },
+    "Sony NEX-5N": {
+      "status": "failed",
+      "label": "Sony NEX-5N",
+      "reason": "page https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs: HTTPError: 403 Client Error: Forbidden for url: https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs",
+      "errors": [
+        "page https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs: HTTPError: 403 Client Error: Forbidden for url: https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs"
+      ]
+    },
+    "Sony NEX-7": {
+      "status": "failed",
+      "label": "Sony NEX-7",
+      "reason": "page https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs: HTTPError: 403 Client Error: Forbidden for url: https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs",
+      "errors": [
+        "page https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs: HTTPError: 403 Client Error: Forbidden for url: https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs"
+      ]
+    },
+    "Sony NEX-F3": {
+      "status": "failed",
+      "label": "Sony NEX-F3",
+      "reason": "page https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs: HTTPError: 403 Client Error: Forbidden for url: https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs",
+      "errors": [
+        "page https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs: HTTPError: 403 Client Error: Forbidden for url: https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs"
+      ]
+    },
+    "Sony NEX-5R": {
+      "status": "failed",
+      "label": "Sony NEX-5R",
+      "reason": "page https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs: HTTPError: 403 Client Error: Forbidden for url: https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs",
+      "errors": [
+        "page https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs: HTTPError: 403 Client Error: Forbidden for url: https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs"
+      ]
+    },
+    "Sony NEX-6": {
+      "status": "failed",
+      "label": "Sony NEX-6",
+      "reason": "page https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs: HTTPError: 403 Client Error: Forbidden for url: https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs",
+      "errors": [
+        "page https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs: HTTPError: 403 Client Error: Forbidden for url: https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs"
+      ]
+    },
+    "Sony NEX-3N": {
+      "status": "failed",
+      "label": "Sony NEX-3N",
+      "reason": "page https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs: HTTPError: 403 Client Error: Forbidden for url: https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs",
+      "errors": [
+        "page https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs: HTTPError: 403 Client Error: Forbidden for url: https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs"
+      ]
+    },
+    "Sony NEX-5T": {
+      "status": "failed",
+      "label": "Sony NEX-5T",
+      "reason": "page https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs: HTTPError: 403 Client Error: Forbidden for url: https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs",
+      "errors": [
+        "page https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs: HTTPError: 403 Client Error: Forbidden for url: https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs"
+      ]
+    },
+    "Sony α3000": {
+      "status": "failed",
+      "label": "Sony α3000",
+      "reason": "page https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs: HTTPError: 403 Client Error: Forbidden for url: https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs",
+      "errors": [
+        "page https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs: HTTPError: 403 Client Error: Forbidden for url: https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs"
+      ]
+    },
+    "Sony α3500": {
+      "status": "failed",
+      "label": "Sony α3500",
+      "reason": "page https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs: HTTPError: 403 Client Error: Forbidden for url: https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs",
+      "errors": [
+        "page https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs: HTTPError: 403 Client Error: Forbidden for url: https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs"
+      ]
+    },
+    "Sony α5000": {
+      "status": "failed",
+      "label": "Sony α5000",
+      "reason": "page https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs: HTTPError: 403 Client Error: Forbidden for url: https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs",
+      "errors": [
+        "page https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs: HTTPError: 403 Client Error: Forbidden for url: https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs"
+      ]
+    },
+    "Sony α5100": {
+      "status": "failed",
+      "label": "Sony α5100",
+      "reason": "page https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs: HTTPError: 403 Client Error: Forbidden for url: https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs",
+      "errors": [
+        "page https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs: HTTPError: 403 Client Error: Forbidden for url: https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs"
+      ]
+    },
+    "Sony α6000": {
+      "status": "failed",
+      "label": "Sony α6000",
+      "reason": "page https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs: HTTPError: 403 Client Error: Forbidden for url: https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs",
+      "errors": [
+        "page https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs: HTTPError: 403 Client Error: Forbidden for url: https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs"
+      ]
+    },
+    "Sony α6100": {
+      "status": "failed",
+      "label": "Sony α6100",
+      "reason": "page https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs: HTTPError: 403 Client Error: Forbidden for url: https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs",
+      "errors": [
+        "page https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs: HTTPError: 403 Client Error: Forbidden for url: https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs"
+      ]
+    },
+    "Sony α6300": {
+      "status": "failed",
+      "label": "Sony α6300",
+      "reason": "page https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs: HTTPError: 403 Client Error: Forbidden for url: https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs",
+      "errors": [
+        "page https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs: HTTPError: 403 Client Error: Forbidden for url: https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs"
+      ]
+    },
+    "Sony α6400": {
+      "status": "failed",
+      "label": "Sony α6400",
+      "reason": "page https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs: HTTPError: 403 Client Error: Forbidden for url: https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs",
+      "errors": [
+        "page https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs: HTTPError: 403 Client Error: Forbidden for url: https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs"
+      ]
+    },
+    "Sony α6500": {
+      "status": "failed",
+      "label": "Sony α6500",
+      "reason": "page https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs: HTTPError: 403 Client Error: Forbidden for url: https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs",
+      "errors": [
+        "page https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs: HTTPError: 403 Client Error: Forbidden for url: https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs"
+      ]
+    },
+    "Sony α6600": {
+      "status": "failed",
+      "label": "Sony α6600",
+      "reason": "page https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs: HTTPError: 403 Client Error: Forbidden for url: https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs",
+      "errors": [
+        "page https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs: HTTPError: 403 Client Error: Forbidden for url: https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs"
+      ]
+    },
+    "Sony α6700": {
+      "status": "failed",
+      "label": "Sony α6700",
+      "reason": "page https://electronics.sony.com/imaging/interchangeable-lens-cameras/c/all-interchangeable-lens-cameras: HTTPError: 403 Client Error: Forbidden for url: https://electronics.sony.com/imaging/interchangeable-lens-cameras/c/all-interchangeable-lens-cameras",
+      "errors": [
+        "page https://electronics.sony.com/imaging/interchangeable-lens-cameras/c/all-interchangeable-lens-cameras: HTTPError: 403 Client Error: Forbidden for url: https://electronics.sony.com/imaging/interchangeable-lens-cameras/c/all-interchangeable-lens-cameras"
+      ]
+    },
+    "Sony α7": {
+      "status": "failed",
+      "label": "Sony α7",
+      "reason": "page https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs: HTTPError: 403 Client Error: Forbidden for url: https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs",
+      "errors": [
+        "page https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs: HTTPError: 403 Client Error: Forbidden for url: https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs"
+      ]
+    },
+    "Sony α7 II": {
+      "status": "failed",
+      "label": "Sony α7 II",
+      "reason": "page https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs: HTTPError: 403 Client Error: Forbidden for url: https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs",
+      "errors": [
+        "page https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs: HTTPError: 403 Client Error: Forbidden for url: https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs"
+      ]
+    },
+    "Sony α7 III": {
+      "status": "failed",
+      "label": "Sony α7 III",
+      "reason": "page https://electronics.sony.com/imaging/interchangeable-lens-cameras/c/all-interchangeable-lens-cameras: HTTPError: 403 Client Error: Forbidden for url: https://electronics.sony.com/imaging/interchangeable-lens-cameras/c/all-interchangeable-lens-cameras",
+      "errors": [
+        "page https://electronics.sony.com/imaging/interchangeable-lens-cameras/c/all-interchangeable-lens-cameras: HTTPError: 403 Client Error: Forbidden for url: https://electronics.sony.com/imaging/interchangeable-lens-cameras/c/all-interchangeable-lens-cameras"
+      ]
+    },
+    "Sony α7 IV": {
+      "status": "ok",
+      "label": "Sony α7 IV",
+      "src": "/assets/images/products/sony/sony-sony-e-ilce-7m4.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Sony_A7_IV_(ILCE-7M4)_-_by_Henry_S%C3%B6derlund_(51739988735).jpg",
+      "sourceImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Sony_A7_IV_%28ILCE-7M4%29_-_by_Henry_S%C3%B6derlund_%2851739988735%29.jpg/960px-Sony_A7_IV_%28ILCE-7M4%29_-_by_Henry_S%C3%B6derlund_%2851739988735%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "method": "wikimedia-commons"
+    },
+    "Sony α7 V": {
+      "status": "failed",
+      "label": "Sony α7 V",
+      "reason": "page https://electronics.sony.com/imaging/interchangeable-lens-cameras/c/all-interchangeable-lens-cameras: HTTPError: 403 Client Error: Forbidden for url: https://electronics.sony.com/imaging/interchangeable-lens-cameras/c/all-interchangeable-lens-cameras",
+      "errors": [
+        "page https://electronics.sony.com/imaging/interchangeable-lens-cameras/c/all-interchangeable-lens-cameras: HTTPError: 403 Client Error: Forbidden for url: https://electronics.sony.com/imaging/interchangeable-lens-cameras/c/all-interchangeable-lens-cameras"
+      ]
+    },
+    "Sony α7R": {
+      "status": "failed",
+      "label": "Sony α7R",
+      "reason": "page https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs: HTTPError: 403 Client Error: Forbidden for url: https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs",
+      "errors": [
+        "page https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs: HTTPError: 403 Client Error: Forbidden for url: https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs"
+      ]
+    },
+    "Sony α7R II": {
+      "status": "failed",
+      "label": "Sony α7R II",
+      "reason": "page https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs: HTTPError: 403 Client Error: Forbidden for url: https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs",
+      "errors": [
+        "page https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs: HTTPError: 403 Client Error: Forbidden for url: https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs"
+      ]
+    },
+    "Sony α7R III": {
+      "status": "failed",
+      "label": "Sony α7R III",
+      "reason": "page https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs: HTTPError: 403 Client Error: Forbidden for url: https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs",
+      "errors": [
+        "page https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs: HTTPError: 403 Client Error: Forbidden for url: https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs"
+      ]
+    },
+    "Sony α7R IIIA": {
+      "status": "failed",
+      "label": "Sony α7R IIIA",
+      "reason": "page https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs: HTTPError: 403 Client Error: Forbidden for url: https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs",
+      "errors": [
+        "page https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs: HTTPError: 403 Client Error: Forbidden for url: https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs"
+      ]
+    },
+    "Sony α7R IV": {
+      "status": "failed",
+      "label": "Sony α7R IV",
+      "reason": "page https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs: HTTPError: 403 Client Error: Forbidden for url: https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs",
+      "errors": [
+        "page https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs: HTTPError: 403 Client Error: Forbidden for url: https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs"
+      ]
+    },
+    "Sony α7R IVA": {
+      "status": "failed",
+      "label": "Sony α7R IVA",
+      "reason": "page https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs: HTTPError: 403 Client Error: Forbidden for url: https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs",
+      "errors": [
+        "page https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs: HTTPError: 403 Client Error: Forbidden for url: https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs"
+      ]
+    },
+    "Sony α7R V": {
+      "status": "failed",
+      "label": "Sony α7R V",
+      "reason": "page https://electronics.sony.com/imaging/interchangeable-lens-cameras/c/all-interchangeable-lens-cameras: HTTPError: 403 Client Error: Forbidden for url: https://electronics.sony.com/imaging/interchangeable-lens-cameras/c/all-interchangeable-lens-cameras",
+      "errors": [
+        "page https://electronics.sony.com/imaging/interchangeable-lens-cameras/c/all-interchangeable-lens-cameras: HTTPError: 403 Client Error: Forbidden for url: https://electronics.sony.com/imaging/interchangeable-lens-cameras/c/all-interchangeable-lens-cameras"
+      ]
+    },
+    "Sony α7R VI": {
+      "status": "failed",
+      "label": "Sony α7R VI",
+      "reason": "page https://electronics.sony.com/imaging/interchangeable-lens-cameras/c/all-interchangeable-lens-cameras: HTTPError: 403 Client Error: Forbidden for url: https://electronics.sony.com/imaging/interchangeable-lens-cameras/c/all-interchangeable-lens-cameras",
+      "errors": [
+        "page https://electronics.sony.com/imaging/interchangeable-lens-cameras/c/all-interchangeable-lens-cameras: HTTPError: 403 Client Error: Forbidden for url: https://electronics.sony.com/imaging/interchangeable-lens-cameras/c/all-interchangeable-lens-cameras"
+      ]
+    },
+    "Sony α7S": {
+      "status": "failed",
+      "label": "Sony α7S",
+      "reason": "page https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs: HTTPError: 403 Client Error: Forbidden for url: https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs",
+      "errors": [
+        "page https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs: HTTPError: 403 Client Error: Forbidden for url: https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs"
+      ]
+    },
+    "Sony α7S II": {
+      "status": "failed",
+      "label": "Sony α7S II",
+      "reason": "page https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs: HTTPError: 403 Client Error: Forbidden for url: https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs",
+      "errors": [
+        "page https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs: HTTPError: 403 Client Error: Forbidden for url: https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs"
+      ]
+    },
+    "Sony α7S III": {
+      "status": "failed",
+      "label": "Sony α7S III",
+      "reason": "page https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs: HTTPError: 403 Client Error: Forbidden for url: https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs",
+      "errors": [
+        "page https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs: HTTPError: 403 Client Error: Forbidden for url: https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs"
+      ]
+    },
+    "Sony α7C": {
+      "status": "failed",
+      "label": "Sony α7C",
+      "reason": "page https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs: HTTPError: 403 Client Error: Forbidden for url: https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs",
+      "errors": [
+        "page https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs: HTTPError: 403 Client Error: Forbidden for url: https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs"
+      ]
+    },
+    "Sony α7C II": {
+      "status": "failed",
+      "label": "Sony α7C II",
+      "reason": "page https://electronics.sony.com/imaging/interchangeable-lens-cameras/c/all-interchangeable-lens-cameras: HTTPError: 403 Client Error: Forbidden for url: https://electronics.sony.com/imaging/interchangeable-lens-cameras/c/all-interchangeable-lens-cameras",
+      "errors": [
+        "page https://electronics.sony.com/imaging/interchangeable-lens-cameras/c/all-interchangeable-lens-cameras: HTTPError: 403 Client Error: Forbidden for url: https://electronics.sony.com/imaging/interchangeable-lens-cameras/c/all-interchangeable-lens-cameras"
+      ]
+    },
+    "Sony α7CR": {
+      "status": "failed",
+      "label": "Sony α7CR",
+      "reason": "page https://electronics.sony.com/imaging/interchangeable-lens-cameras/c/all-interchangeable-lens-cameras: HTTPError: 403 Client Error: Forbidden for url: https://electronics.sony.com/imaging/interchangeable-lens-cameras/c/all-interchangeable-lens-cameras",
+      "errors": [
+        "page https://electronics.sony.com/imaging/interchangeable-lens-cameras/c/all-interchangeable-lens-cameras: HTTPError: 403 Client Error: Forbidden for url: https://electronics.sony.com/imaging/interchangeable-lens-cameras/c/all-interchangeable-lens-cameras"
+      ]
+    },
+    "Nikon Z 6": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Nikon Z 6"
+    },
+    "Nikon Z 7": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Nikon Z 7"
+    },
+    "Nikon Z 50": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Nikon Z 50"
+    },
+    "Canon EOS M": {
+      "status": "failed",
+      "label": "Canon EOS M",
+      "reason": "page https://www.usa.canon.com/digital-cameras/eos-r-system: HTTPError: 403 Client Error: Forbidden for url: https://www.usa.canon.com/digital-cameras/eos-r-system",
+      "errors": [
+        "browser official page search returned no result",
+        "page https://www.usa.canon.com/digital-cameras/eos-r-system: HTTPError: 403 Client Error: Forbidden for url: https://www.usa.canon.com/digital-cameras/eos-r-system"
+      ]
+    },
+    "Canon EOS M2": {
+      "status": "failed",
+      "label": "Canon EOS M2",
+      "reason": "page https://www.usa.canon.com/digital-cameras/eos-r-system: HTTPError: 403 Client Error: Forbidden for url: https://www.usa.canon.com/digital-cameras/eos-r-system",
+      "errors": [
+        "browser official page search returned no result",
+        "page https://www.usa.canon.com/digital-cameras/eos-r-system: HTTPError: 403 Client Error: Forbidden for url: https://www.usa.canon.com/digital-cameras/eos-r-system"
+      ]
+    },
+    "Canon EOS M3": {
+      "status": "failed",
+      "label": "Canon EOS M3",
+      "reason": "blocked host skipped: www.usa.canon.com",
+      "errors": [
+        "browser official page search returned no result",
+        "blocked host skipped: www.usa.canon.com"
+      ]
+    },
+    "Fujifilm X-Pro1": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Fujifilm X-Pro1"
+    },
+    "Fujifilm X-Pro2": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Fujifilm X-Pro2"
+    },
+    "Fujifilm X-Pro3": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Fujifilm X-Pro3"
+    },
+    "Panasonic LUMIX S1": {
+      "status": "ok",
+      "label": "Panasonic LUMIX S1",
+      "src": "/assets/images/products/panasonic/panasonic-l-mount-lumix-s1.webp",
+      "sourcePage": "https://shop.panasonic.com/pages/lumix-s-series-mirrorless-full-frame-cameras",
+      "sourceImage": "http://shop.panasonic.com/cdn/shop/files/MicrosoftTeams-image_37.png?v=1779301024&width=2048"
+    },
+    "Panasonic LUMIX S1R": {
+      "status": "ok",
+      "label": "Panasonic LUMIX S1R",
+      "src": "/assets/images/products/panasonic/panasonic-l-mount-lumix-s1r.webp",
+      "sourcePage": "https://shop.panasonic.com/pages/lumix-s-series-mirrorless-full-frame-cameras",
+      "sourceImage": "http://shop.panasonic.com/cdn/shop/files/MicrosoftTeams-image_37.png?v=1779301024&width=2048"
+    },
+    "Panasonic LUMIX S1H": {
+      "status": "ok",
+      "label": "Panasonic LUMIX S1H",
+      "src": "/assets/images/products/panasonic/panasonic-l-mount-lumix-s1h.webp",
+      "sourcePage": "https://shop.panasonic.com/pages/lumix-s-series-mirrorless-full-frame-cameras",
+      "sourceImage": "http://shop.panasonic.com/cdn/shop/files/MicrosoftTeams-image_37.png?v=1779301024&width=2048"
+    },
+    "OM SYSTEM OM-1": {
+      "status": "ok",
+      "label": "OM SYSTEM OM-1",
+      "src": "/assets/images/products/om-system/om-system-micro-four-thirds-om-1.webp",
+      "sourcePage": "https://explore.omsystem.com/c/en/cameras",
+      "sourceImage": "https://apac.explore.omsystem.com/media/catalog/product/o/m/om-3-astro-body-front_1_1.webp?width=1000&height=1000&optimize=medium&fit=bounds"
+    },
+    "OM SYSTEM OM-5": {
+      "status": "ok",
+      "label": "OM SYSTEM OM-5",
+      "src": "/assets/images/products/om-system/om-system-micro-four-thirds-om-5.webp",
+      "sourcePage": "https://explore.omsystem.com/c/en/cameras",
+      "sourceImage": "https://apac.explore.omsystem.com/media/catalog/product/o/m/om-3-astro-body-front_1_1.webp?width=1000&height=1000&optimize=medium&fit=bounds"
+    },
+    "OM SYSTEM OM-1 Mark II": {
+      "status": "ok",
+      "label": "OM SYSTEM OM-1 Mark II",
+      "src": "/assets/images/products/om-system/om-system-micro-four-thirds-om-1-mark-ii.webp",
+      "sourcePage": "https://explore.omsystem.com/c/en/cameras",
+      "sourceImage": "https://apac.explore.omsystem.com/media/catalog/product/o/m/om-1-mark-ii-kit-hero-02.webp?width=1000&height=1000&optimize=medium&fit=bounds"
+    },
+    "Olympus PEN E-P1": {
+      "status": "failed",
+      "reason": "official product page not found",
+      "label": "Olympus PEN E-P1"
+    },
+    "Olympus PEN E-P2": {
+      "status": "failed",
+      "reason": "official product page not found",
+      "label": "Olympus PEN E-P2"
+    },
+    "Olympus PEN E-P3": {
+      "status": "failed",
+      "reason": "official product page not found",
+      "label": "Olympus PEN E-P3"
+    },
+    "Leica Leica T (Typ 701)": {
+      "status": "ok",
+      "label": "Leica Leica T (Typ 701)",
+      "src": "/assets/images/products/leica/leica-l-mount-leica-t-typ-701.webp",
+      "sourcePage": "https://leica-camera.com/en-US/photography/sl/all-products",
+      "sourceImage": "https://leica-camera.com/sites/default/files/styles/meta_tag_image/public/2026-04/Product_Overview_SL_3840x2560.jpg?h=deaec4b9&itok=JaBfP61G"
+    },
+    "Leica Leica TL": {
+      "status": "ok",
+      "label": "Leica Leica TL",
+      "src": "/assets/images/products/leica/leica-l-mount-leica-tl.webp",
+      "sourcePage": "https://leica-camera.com/en-US/photography/sl/all-products",
+      "sourceImage": "https://leica-camera.com/sites/default/files/styles/meta_tag_image/public/2026-04/Product_Overview_SL_3840x2560.jpg?h=deaec4b9&itok=JaBfP61G"
+    },
+    "Leica Leica TL2": {
+      "status": "ok",
+      "label": "Leica Leica TL2",
+      "src": "/assets/images/products/leica/leica-l-mount-leica-tl2.webp",
+      "sourcePage": "https://leica-camera.com/en-US/photography/sl/all-products",
+      "sourceImage": "https://leica-camera.com/sites/default/files/styles/meta_tag_image/public/2026-04/Product_Overview_SL_3840x2560.jpg?h=deaec4b9&itok=JaBfP61G"
+    },
+    "Pentax Pentax Q": {
+      "status": "ok",
+      "label": "Pentax Pentax Q",
+      "src": "/assets/images/products/pentax/pentax-pentax-q-pentax-q.webp",
+      "sourcePage": "https://www.ricoh-imaging.co.jp/english/products/q7/lenses/index.html",
+      "sourceImage": "https://www.ricoh-imaging.co.jp/common/img/og-image.gif"
+    },
+    "Pentax Pentax Q10": {
+      "status": "ok",
+      "label": "Pentax Pentax Q10",
+      "src": "/assets/images/products/pentax/pentax-pentax-q-pentax-q10.webp",
+      "sourcePage": "https://www.ricoh-imaging.co.jp/english/products/q7/lenses/index.html",
+      "sourceImage": "https://www.ricoh-imaging.co.jp/common/img/og-image.gif"
+    },
+    "Pentax Pentax Q7": {
+      "status": "ok",
+      "label": "Pentax Pentax Q7",
+      "src": "/assets/images/products/pentax/pentax-pentax-q-pentax-q7.webp",
+      "sourcePage": "https://www.ricoh-imaging.co.jp/english/products/q7/lenses/index.html",
+      "sourceImage": "https://www.ricoh-imaging.co.jp/common/img/og-image.gif"
+    },
+    "Sigma Sigma fp": {
+      "status": "ok",
+      "label": "Sigma Sigma fp",
+      "src": "/assets/images/products/sigma/sigma-l-mount-sigma-fp.webp",
+      "sourcePage": "https://www.sigma-global.com/en/cameras/",
+      "sourceImage": "https://www.sigma-global.com/assets/og_image.jpg"
+    },
+    "Sigma Sigma fp L": {
+      "status": "ok",
+      "label": "Sigma Sigma fp L",
+      "src": "/assets/images/products/sigma/sigma-l-mount-sigma-fp-l.webp",
+      "sourcePage": "https://www.sigma-global.com/en/cameras/",
+      "sourceImage": "https://www.sigma-global.com/assets/og_image.jpg"
+    },
+    "Sigma Sigma BF": {
+      "status": "ok",
+      "label": "Sigma Sigma BF",
+      "src": "/assets/images/products/sigma/sigma-l-mount-sigma-bf.webp",
+      "sourcePage": "https://www.sigma-global.com/en/cameras/",
+      "sourceImage": "https://www.sigma-global.com/assets/og_image.jpg"
+    },
+    "Tamron 12-20mm F2.8": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Tamron 12-20mm F2.8"
+    },
+    "Tamron 16-30mm F2.8 Di III VXD G2": {
+      "status": "ok",
+      "label": "Tamron 16-30mm F2.8 Di III VXD G2",
+      "src": "/assets/images/products/tamron/tamron-sony-e-a064-sony-e.webp",
+      "sourcePage": "https://www.tamron.com/global/consumer/lenses/",
+      "sourceImage": "https://www.tamron.com/global/ogp.png"
+    },
+    "Canon EOS R5": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Canon EOS R5"
+    },
+    "Canon EOS R5 C": {
+      "status": "ok",
+      "label": "Canon EOS R5 C",
+      "src": "/assets/images/products/canon/canon-canon-rf-eos-r5-c.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Canon_EOS_R5_(cropped).jpg",
+      "sourceImage": "https://upload.wikimedia.org/wikipedia/commons/7/74/Canon_EOS_R5_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "method": "wikimedia-commons"
+    },
+    "Canon EOS R50": {
+      "status": "failed",
+      "label": "Canon EOS R50",
+      "reason": "commons https://upload.wikimedia.org/wikipedia/commons/e/ea/Canon_R50_without_lens.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original: HTTPError: 429 Client Error: Too many requests. Please contact noc@wikimedia.org for further information (0068e25) for url: https://upload.wikimedia.org/wikipedia/commons/e/ea/Canon_R50_without_lens.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "errors": [
+        "commons https://upload.wikimedia.org/wikipedia/commons/3/39/Canon_EOS_R50%2C_White%2C_10.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original: HTTPError: 429 Client Error: Too many requests. Please contact noc@wikimedia.org for further information (0068e25) for url: https://upload.wikimedia.org/wikipedia/commons/3/39/Canon_EOS_R50%2C_White%2C_10.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "commons https://upload.wikimedia.org/wikipedia/commons/e/e0/Canon_EOS_R50%2C_White%2C_11.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original: HTTPError: 429 Client Error: Too many requests. Please contact noc@wikimedia.org for further information (0068e25) for url: https://upload.wikimedia.org/wikipedia/commons/e/e0/Canon_EOS_R50%2C_White%2C_11.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "commons https://upload.wikimedia.org/wikipedia/commons/8/85/Canon_EOS_R50%2C_White%2C_12.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original: HTTPError: 429 Client Error: Too many requests. Please contact noc@wikimedia.org for further information (0068e25) for url: https://upload.wikimedia.org/wikipedia/commons/8/85/Canon_EOS_R50%2C_White%2C_12.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "commons https://upload.wikimedia.org/wikipedia/commons/e/ea/Canon_EOS_R50%2C_White%2C_4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original: HTTPError: 429 Client Error: Too many requests. Please contact noc@wikimedia.org for further information (0068e25) for url: https://upload.wikimedia.org/wikipedia/commons/e/ea/Canon_EOS_R50%2C_White%2C_4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "commons https://upload.wikimedia.org/wikipedia/commons/6/62/Canon_EOS_R50_Black.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original: HTTPError: 429 Client Error: Too many requests. Please contact noc@wikimedia.org for further information (0068e25) for url: https://upload.wikimedia.org/wikipedia/commons/6/62/Canon_EOS_R50_Black.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "commons https://upload.wikimedia.org/wikipedia/commons/e/ee/New_Canon_EOS_R51.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original: HTTPError: 429 Client Error: Too many requests. Please contact noc@wikimedia.org for further information (0068e25) for url: https://upload.wikimedia.org/wikipedia/commons/e/ee/New_Canon_EOS_R51.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "commons https://upload.wikimedia.org/wikipedia/commons/2/2b/Canon_R50_without_lens_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original: HTTPError: 429 Client Error: Too many requests. Please contact noc@wikimedia.org for further information (0068e25) for url: https://upload.wikimedia.org/wikipedia/commons/2/2b/Canon_R50_without_lens_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "commons https://upload.wikimedia.org/wikipedia/commons/e/ea/Canon_R50_without_lens.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original: HTTPError: 429 Client Error: Too many requests. Please contact noc@wikimedia.org for further information (0068e25) for url: https://upload.wikimedia.org/wikipedia/commons/e/ea/Canon_R50_without_lens.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+      ]
+    },
+    "Canon EOS R5 Mark II": {
+      "status": "failed",
+      "label": "Canon EOS R5 Mark II",
+      "reason": "commons https://upload.wikimedia.org/wikipedia/commons/8/88/Canon_EOS_R5.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original: HTTPError: 429 Client Error: Too many requests. Please contact noc@wikimedia.org for further information (0068e25) for url: https://upload.wikimedia.org/wikipedia/commons/8/88/Canon_EOS_R5.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "errors": [
+        "commons https://upload.wikimedia.org/wikipedia/commons/a/ac/Canon_EOS_R5_Mark_II-8787.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original: HTTPError: 429 Client Error: Too many requests. Please contact noc@wikimedia.org for further information (0068e25) for url: https://upload.wikimedia.org/wikipedia/commons/a/ac/Canon_EOS_R5_Mark_II-8787.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "commons https://upload.wikimedia.org/wikipedia/commons/5/57/Canon_EOS_R5_Mark_II_%28front%2C_no_body_cap%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original: HTTPError: 429 Client Error: Too many requests. Please contact noc@wikimedia.org for further information (0068e25) for url: https://upload.wikimedia.org/wikipedia/commons/5/57/Canon_EOS_R5_Mark_II_%28front%2C_no_body_cap%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "commons https://upload.wikimedia.org/wikipedia/commons/9/9f/Canon_EOS_R5_Mark_II_%28back%2C_screen_closed%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original: HTTPError: 429 Client Error: Too many requests. Please contact noc@wikimedia.org for further information (0068e25) for url: https://upload.wikimedia.org/wikipedia/commons/9/9f/Canon_EOS_R5_Mark_II_%28back%2C_screen_closed%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "commons https://upload.wikimedia.org/wikipedia/commons/9/9c/Canon_EOS_R5_Mark_II%2BRF_24-105mm_F4L_IS_USM.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original: HTTPError: 429 Client Error: Too many requests. Please contact noc@wikimedia.org for further information (0068e25) for url: https://upload.wikimedia.org/wikipedia/commons/9/9c/Canon_EOS_R5_Mark_II%2BRF_24-105mm_F4L_IS_USM.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "commons https://upload.wikimedia.org/wikipedia/commons/1/15/Canon_RF_35mm_F1.8%2BR5_Mark_II-8812.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original: HTTPError: 429 Client Error: Too many requests. Please contact noc@wikimedia.org for further information (0068e25) for url: https://upload.wikimedia.org/wikipedia/commons/1/15/Canon_RF_35mm_F1.8%2BR5_Mark_II-8812.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "commons https://upload.wikimedia.org/wikipedia/commons/f/ff/Canon_RF_35mm_F1.8%2BR5_Mark_II-8810.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original: HTTPError: 429 Client Error: Too many requests. Please contact noc@wikimedia.org for further information (0068e25) for url: https://upload.wikimedia.org/wikipedia/commons/f/ff/Canon_RF_35mm_F1.8%2BR5_Mark_II-8810.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "commons https://upload.wikimedia.org/wikipedia/commons/7/7f/Canon_RF_35mm_F1.8%2BR5_Mark_II-8813.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original: HTTPError: 429 Client Error: Too many requests. Please contact noc@wikimedia.org for further information (0068e25) for url: https://upload.wikimedia.org/wikipedia/commons/7/7f/Canon_RF_35mm_F1.8%2BR5_Mark_II-8813.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "commons https://upload.wikimedia.org/wikipedia/commons/8/88/Canon_EOS_R5.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original: HTTPError: 429 Client Error: Too many requests. Please contact noc@wikimedia.org for further information (0068e25) for url: https://upload.wikimedia.org/wikipedia/commons/8/88/Canon_EOS_R5.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+      ]
+    },
+    "Canon EOS R50 V": {
+      "status": "failed",
+      "label": "Canon EOS R50 V",
+      "reason": "blocked host skipped: www.usa.canon.com",
+      "errors": [
+        "browser official page search returned no result",
+        "blocked host skipped: www.usa.canon.com"
+      ]
+    },
+    "Nikon Z 5": {
+      "status": "ok",
+      "label": "Nikon Z 5",
+      "src": "/assets/images/products/nikon/nikon-nikon-z-z-5.webp",
+      "sourcePage": "https://www.nikonusa.com/cameras/mirrorless-cameras",
+      "sourceImage": "https://images.cdn.us-central1.gcp.commercetools.com/f7c8f2bb-aff1-4581-a826-1ad2527be222/FrontLeft-1653-Z7II--AsmYDZto-medium.png",
+      "method": "official-page"
+    },
+    "Nikon Z 6II": {
+      "status": "ok",
+      "label": "Nikon Z 6II",
+      "src": "/assets/images/products/nikon/nikon-nikon-z-z-6ii.webp",
+      "sourcePage": "https://www.nikonusa.com/cameras/mirrorless-cameras",
+      "sourceImage": "https://images.cdn.us-central1.gcp.commercetools.com/f7c8f2bb-aff1-4581-a826-1ad2527be222/FrontLeft-1659-Z6II--kujTScXd-medium.png",
+      "method": "official-page"
+    },
+    "Nikon Z 7II": {
+      "status": "ok",
+      "label": "Nikon Z 7II",
+      "src": "/assets/images/products/nikon/nikon-nikon-z-z-7ii.webp",
+      "sourcePage": "https://www.nikonusa.com/cameras/mirrorless-cameras",
+      "sourceImage": "https://images.cdn.us-central1.gcp.commercetools.com/f7c8f2bb-aff1-4581-a826-1ad2527be222/FrontLeft-1653-Z7II--AsmYDZto-medium.png",
+      "method": "official-page"
+    },
+    "Nikon Z fc": {
+      "status": "ok",
+      "label": "Nikon Z fc",
+      "src": "/assets/images/products/nikon/nikon-nikon-z-z-fc.webp",
+      "sourcePage": "https://www.nikonusa.com/cameras/mirrorless-cameras",
+      "sourceImage": "https://images.cdn.us-central1.gcp.commercetools.com/f7c8f2bb-aff1-4581-a826-1ad2527be222/FrontLeft-zfc-34l-vYFe2Q-r-medium.png",
+      "method": "official-page"
+    },
+    "Nikon Z 9": {
+      "status": "ok",
+      "label": "Nikon Z 9",
+      "src": "/assets/images/products/nikon/nikon-nikon-z-z-9.webp",
+      "sourcePage": "https://www.nikonusa.com/cameras/mirrorless-cameras",
+      "sourceImage": "https://images.cdn.us-central1.gcp.commercetools.com/f7c8f2bb-aff1-4581-a826-1ad2527be222/FrontLeft-1653-Z7II--AsmYDZto-medium.png",
+      "method": "official-page"
+    },
+    "Nikon Z 30": {
+      "status": "ok",
+      "label": "Nikon Z 30",
+      "src": "/assets/images/products/nikon/nikon-nikon-z-z-30.webp",
+      "sourcePage": "https://www.nikonusa.com/cameras/mirrorless-cameras",
+      "sourceImage": "https://images.cdn.us-central1.gcp.commercetools.com/f7c8f2bb-aff1-4581-a826-1ad2527be222/FrontLeft-z-30-34-le-lSKR6SOv-medium.png",
+      "method": "official-page"
+    },
+    "Nikon Z 8": {
+      "status": "ok",
+      "label": "Nikon Z 8",
+      "src": "/assets/images/products/nikon/nikon-nikon-z-z-8.webp",
+      "sourcePage": "https://www.nikonusa.com/cameras/mirrorless-cameras",
+      "sourceImage": "https://images.cdn.us-central1.gcp.commercetools.com/f7c8f2bb-aff1-4581-a826-1ad2527be222/FrontLeft-1653-Z7II--AsmYDZto-medium.png",
+      "method": "official-page"
+    },
+    "Nikon Z f": {
+      "status": "ok",
+      "label": "Nikon Z f",
+      "src": "/assets/images/products/nikon/nikon-nikon-z-z-f.webp",
+      "sourcePage": "https://www.nikonusa.com/cameras/mirrorless-cameras",
+      "sourceImage": "https://images.cdn.us-central1.gcp.commercetools.com/f7c8f2bb-aff1-4581-a826-1ad2527be222/FrontLeft-1653-Z7II--AsmYDZto-medium.png",
+      "method": "official-page"
+    },
+    "Nikon Z6III": {
+      "status": "ok",
+      "label": "Nikon Z6III",
+      "src": "/assets/images/products/nikon/nikon-nikon-z-z6iii.webp",
+      "sourcePage": "https://www.nikonusa.com/cameras/mirrorless-cameras",
+      "sourceImage": "https://images.cdn.us-central1.gcp.commercetools.com/f7c8f2bb-aff1-4581-a826-1ad2527be222/Z6III_24-70_4_front3-c8QAAHXw-medium.png",
+      "method": "official-page"
+    },
+    "Nikon Z50II": {
+      "status": "ok",
+      "label": "Nikon Z50II",
+      "src": "/assets/images/products/nikon/nikon-nikon-z-z50ii.webp",
+      "sourcePage": "https://www.nikonusa.com/cameras/mirrorless-cameras",
+      "sourceImage": "https://images.cdn.us-central1.gcp.commercetools.com/f7c8f2bb-aff1-4581-a826-1ad2527be222/Z50II_16-50DX-34-lef-THHYS4Jm-medium.png",
+      "method": "official-page"
+    },
+    "Nikon Z5II": {
+      "status": "ok",
+      "label": "Nikon Z5II",
+      "src": "/assets/images/products/nikon/nikon-nikon-z-z5ii.webp",
+      "sourcePage": "https://www.nikonusa.com/cameras/mirrorless-cameras",
+      "sourceImage": "https://images.cdn.us-central1.gcp.commercetools.com/f7c8f2bb-aff1-4581-a826-1ad2527be222/1680-z5ii-34-left-u2-9MEI--medium.png",
+      "method": "official-page"
+    },
+    "Nikon ZR": {
+      "status": "ok",
+      "label": "Nikon ZR",
+      "src": "/assets/images/products/nikon/nikon-nikon-z-zr.webp",
+      "sourcePage": "https://www.nikonusa.com/cameras/mirrorless-cameras",
+      "sourceImage": "https://images.cdn.us-central1.gcp.commercetools.com/f7c8f2bb-aff1-4581-a826-1ad2527be222/FrontLeft-1653-Z7II--AsmYDZto-medium.png",
+      "method": "official-page"
+    },
+    "Nikon Nikon 1 J1": {
+      "status": "ok",
+      "label": "Nikon Nikon 1 J1",
+      "src": "/assets/images/products/nikon/nikon-nikon-1-nikon-1-j1.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Nikon_1_J1_white_with_lenses.jpg",
+      "sourceImage": "https://upload.wikimedia.org/wikipedia/commons/c/c6/Nikon_1_J1_white_with_lenses.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "method": "wikimedia-commons"
+    },
+    "Nikon Nikon 1 V1": {
+      "status": "ok",
+      "label": "Nikon Nikon 1 V1",
+      "src": "/assets/images/products/nikon/nikon-nikon-1-nikon-1-v1.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Nikon_1_V1_%2B_Fisheye_FC-E9_01.jpg",
+      "sourceImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Nikon_1_V1_%2B_Fisheye_FC-E9_01.jpg/960px-Nikon_1_V1_%2B_Fisheye_FC-E9_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "method": "wikimedia-commons"
+    },
+    "Nikon Nikon 1 J2": {
+      "status": "failed",
+      "label": "Nikon Nikon 1 J2",
+      "reason": "no usable image",
+      "errors": []
+    },
+    "Nikon Nikon 1 J3": {
+      "status": "failed",
+      "label": "Nikon Nikon 1 J3",
+      "reason": "no usable image",
+      "errors": []
+    },
+    "Nikon Nikon 1 S1": {
+      "status": "ok",
+      "label": "Nikon Nikon 1 S1",
+      "src": "/assets/images/products/nikon/nikon-nikon-1-nikon-1-s1.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Nikon_1_S1.jpg",
+      "sourceImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Nikon_1_S1.jpg/960px-Nikon_1_S1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "method": "wikimedia-commons"
+    },
+    "Nikon Nikon 1 V2": {
+      "status": "ok",
+      "label": "Nikon Nikon 1 V2",
+      "src": "/assets/images/products/nikon/nikon-nikon-1-nikon-1-v2.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Nikon_1_v2.jpg",
+      "sourceImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Nikon_1_v2.jpg/960px-Nikon_1_v2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "method": "wikimedia-commons"
+    },
+    "Nikon Nikon 1 AW1": {
+      "status": "ok",
+      "label": "Nikon Nikon 1 AW1",
+      "src": "/assets/images/products/nikon/nikon-nikon-1-nikon-1-aw1.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Nikon_1_AW1_-_panoramio.jpg",
+      "sourceImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Nikon_1_AW1_-_panoramio.jpg/960px-Nikon_1_AW1_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "method": "wikimedia-commons"
+    },
+    "Nikon Nikon 1 J4": {
+      "status": "ok",
+      "label": "Nikon Nikon 1 J4",
+      "src": "/assets/images/products/nikon/nikon-nikon-1-nikon-1-j4.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Nikon_1_V1_with_10-30mm.jpg",
+      "sourceImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Nikon_1_V1_with_10-30mm.jpg/960px-Nikon_1_V1_with_10-30mm.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "method": "wikimedia-commons"
+    },
+    "Nikon Nikon 1 S2": {
+      "status": "ok",
+      "label": "Nikon Nikon 1 S2",
+      "src": "/assets/images/products/nikon/nikon-nikon-1-nikon-1-s2.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Nikon_1_S2.jpg",
+      "sourceImage": "https://upload.wikimedia.org/wikipedia/commons/d/dc/Nikon_1_S2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "method": "wikimedia-commons"
+    },
+    "Nikon Nikon 1 V3": {
+      "status": "ok",
+      "label": "Nikon Nikon 1 V3",
+      "src": "/assets/images/products/nikon/nikon-nikon-1-nikon-1-v3.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Nikon_1_v3.jpg",
+      "sourceImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Nikon_1_v3.jpg/960px-Nikon_1_v3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "method": "wikimedia-commons"
+    },
+    "Nikon Nikon 1 J5": {
+      "status": "ok",
+      "label": "Nikon Nikon 1 J5",
+      "src": "/assets/images/products/nikon/nikon-nikon-1-nikon-1-j5.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Nikon_J1_5.jpg",
+      "sourceImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Nikon_J1_5.jpg/960px-Nikon_J1_5.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "method": "wikimedia-commons"
+    },
+    "Nikon 1 NIKKOR 6.7-13mm F3.5-5.6 VR": {
+      "status": "failed",
+      "label": "Nikon 1 NIKKOR 6.7-13mm F3.5-5.6 VR",
+      "reason": "no usable image",
+      "errors": []
+    },
+    "Nikon 1 NIKKOR 10mm F2.8": {
+      "status": "failed",
+      "label": "Nikon 1 NIKKOR 10mm F2.8",
+      "reason": "no usable image",
+      "errors": []
+    },
+    "Nikon 1 NIKKOR 10-30mm F3.5-5.6 VR": {
+      "status": "failed",
+      "label": "Nikon 1 NIKKOR 10-30mm F3.5-5.6 VR",
+      "reason": "no usable image",
+      "errors": []
+    },
+    "Nikon 1 NIKKOR VR 10-30mm F3.5-5.6 PD-ZOOM": {
+      "status": "failed",
+      "label": "Nikon 1 NIKKOR VR 10-30mm F3.5-5.6 PD-ZOOM",
+      "reason": "no usable image",
+      "errors": []
+    },
+    "Nikon 1 NIKKOR 11-27.5mm F3.5-5.6": {
+      "status": "failed",
+      "label": "Nikon 1 NIKKOR 11-27.5mm F3.5-5.6",
+      "reason": "no usable image",
+      "errors": []
+    },
+    "Nikon 1 NIKKOR 18.5mm F1.8": {
+      "status": "ok",
+      "label": "Nikon 1 NIKKOR 18.5mm F1.8",
+      "src": "/assets/images/products/nikon/nikon-nikon-1-1-nikkor-18-5mm-f1-8.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Nikon_Df_digital_SLR_camera_with_Nikon_AF_Nikkor_85mm_f1.4D_IF_lens.jpg",
+      "sourceImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Nikon_Df_digital_SLR_camera_with_Nikon_AF_Nikkor_85mm_f1.4D_IF_lens.jpg/960px-Nikon_Df_digital_SLR_camera_with_Nikon_AF_Nikkor_85mm_f1.4D_IF_lens.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "method": "wikimedia-commons"
+    },
+    "Nikon 1 NIKKOR 30-110mm F3.8-5.6 VR": {
+      "status": "failed",
+      "label": "Nikon 1 NIKKOR 30-110mm F3.8-5.6 VR",
+      "reason": "no usable image",
+      "errors": []
+    },
+    "Nikon 1 NIKKOR 32mm F1.2": {
+      "status": "failed",
+      "label": "Nikon 1 NIKKOR 32mm F1.2",
+      "reason": "no usable image",
+      "errors": []
+    },
+    "Nikon 1 NIKKOR 10-100mm F4.5-5.6 VR": {
+      "status": "failed",
+      "label": "Nikon 1 NIKKOR 10-100mm F4.5-5.6 VR",
+      "reason": "no usable image",
+      "errors": []
+    },
+    "Nikon 1 NIKKOR 10-100mm F4-5.6 VR PD-ZOOM": {
+      "status": "failed",
+      "label": "Nikon 1 NIKKOR 10-100mm F4-5.6 VR PD-ZOOM",
+      "reason": "no usable image",
+      "errors": []
+    },
+    "Nikon 1 NIKKOR 70-300mm F4.5-5.6 VR": {
+      "status": "ok",
+      "label": "Nikon 1 NIKKOR 70-300mm F4.5-5.6 VR",
+      "src": "/assets/images/products/nikon/nikon-nikon-1-1-nikkor-70-300mm-f4-5-5-6-vr.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Nikon_70-300mm_f4.5-5.6G_ED_IF_AF-S_VR_Nikkor_Zoom_Lens_6_2019-02-16.jpg",
+      "sourceImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Nikon_70-300mm_f4.5-5.6G_ED_IF_AF-S_VR_Nikkor_Zoom_Lens_6_2019-02-16.jpg/960px-Nikon_70-300mm_f4.5-5.6G_ED_IF_AF-S_VR_Nikkor_Zoom_Lens_6_2019-02-16.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "method": "wikimedia-commons"
+    },
+    "Nikon 1 NIKKOR AW 10mm F2.8": {
+      "status": "failed",
+      "label": "Nikon 1 NIKKOR AW 10mm F2.8",
+      "reason": "no usable image",
+      "errors": []
+    },
+    "Nikon 1 NIKKOR AW 11-27.5mm F3.5-5.6": {
+      "status": "failed",
+      "label": "Nikon 1 NIKKOR AW 11-27.5mm F3.5-5.6",
+      "reason": "no usable image",
+      "errors": []
+    },
+    "Nikon NIKKOR Z DX 12-28mm F3.5-5.6 PZ VR": {
+      "status": "ok",
+      "label": "Nikon NIKKOR Z DX 12-28mm F3.5-5.6 PZ VR",
+      "src": "/assets/images/products/nikon/nikon-nikon-z-nikkor-z-dx-12-28mm-f3-5-5-6-pz-vr.webp",
+      "sourcePage": "https://www.nikonusa.com/lenses/mirrorless-lenses",
+      "sourceImage": "https://images.cdn.us-central1.gcp.commercetools.com/f7c8f2bb-aff1-4581-a826-1ad2527be222/FrontLeft-20112-NIKK-0RNG8B9B-medium.png",
+      "method": "official-page"
+    },
+    "Nikon NIKKOR Z 14-24mm F2.8 S": {
+      "status": "ok",
+      "label": "Nikon NIKKOR Z 14-24mm F2.8 S",
+      "src": "/assets/images/products/nikon/nikon-nikon-z-nikkor-z-14-24mm-f2-8-s.webp",
+      "sourcePage": "https://www.nikonusa.com/lenses/mirrorless-lenses",
+      "sourceImage": "https://images.cdn.us-central1.gcp.commercetools.com/f7c8f2bb-aff1-4581-a826-1ad2527be222/FrontLeft-20105-NIKK-IgRHK8XF-medium.png",
+      "method": "official-page"
+    },
+    "Nikon NIKKOR Z 14-30mm F4 S": {
+      "status": "ok",
+      "label": "Nikon NIKKOR Z 14-30mm F4 S",
+      "src": "/assets/images/products/nikon/nikon-nikon-z-nikkor-z-14-30mm-f4-s.webp",
+      "sourcePage": "https://www.nikonusa.com/lenses/mirrorless-lenses",
+      "sourceImage": "https://images.cdn.us-central1.gcp.commercetools.com/f7c8f2bb-aff1-4581-a826-1ad2527be222/FrontLeft-20105-NIKK-IgRHK8XF-medium.png",
+      "method": "official-page"
+    },
+    "Nikon NIKKOR Z DX 16-50mm F2.8 VR": {
+      "status": "ok",
+      "label": "Nikon NIKKOR Z DX 16-50mm F2.8 VR",
+      "src": "/assets/images/products/nikon/nikon-nikon-z-nikkor-z-dx-16-50mm-f2-8-vr.webp",
+      "sourcePage": "https://www.nikonusa.com/lenses/mirrorless-lenses",
+      "sourceImage": "https://images.cdn.us-central1.gcp.commercetools.com/f7c8f2bb-aff1-4581-a826-1ad2527be222/Z50_1-4_angle1-ff_4oxlD-medium.png",
+      "method": "official-page"
+    },
+    "Nikon NIKKOR Z DX 16-50mm F3.5-6.3 VR": {
+      "status": "ok",
+      "label": "Nikon NIKKOR Z DX 16-50mm F3.5-6.3 VR",
+      "src": "/assets/images/products/nikon/nikon-nikon-z-nikkor-z-dx-16-50mm-f3-5-6-3-vr.webp",
+      "sourcePage": "https://www.nikonusa.com/lenses/mirrorless-lenses",
+      "sourceImage": "https://images.cdn.us-central1.gcp.commercetools.com/f7c8f2bb-aff1-4581-a826-1ad2527be222/Z50_1-4_angle1-ff_4oxlD-medium.png",
+      "method": "official-page"
+    },
+    "Nikon NIKKOR Z 17-28mm F2.8": {
+      "status": "ok",
+      "label": "Nikon NIKKOR Z 17-28mm F2.8",
+      "src": "/assets/images/products/nikon/nikon-nikon-z-nikkor-z-17-28mm-f2-8.webp",
+      "sourcePage": "https://www.nikonusa.com/lenses/mirrorless-lenses",
+      "sourceImage": "https://images.cdn.us-central1.gcp.commercetools.com/f7c8f2bb-aff1-4581-a826-1ad2527be222/FrontLeft-20105-NIKK-IgRHK8XF-medium.png",
+      "method": "official-page"
+    },
+    "Nikon NIKKOR Z DX 18-140mm F3.5-6.3 VR": {
+      "status": "ok",
+      "label": "Nikon NIKKOR Z DX 18-140mm F3.5-6.3 VR",
+      "src": "/assets/images/products/nikon/nikon-nikon-z-nikkor-z-dx-18-140mm-f3-5-6-3-vr.webp",
+      "sourcePage": "https://www.nikonusa.com/lenses/mirrorless-lenses",
+      "sourceImage": "https://images.cdn.us-central1.gcp.commercetools.com/f7c8f2bb-aff1-4581-a826-1ad2527be222/FrontLeft-Z180-600_5-foublKyw-medium.png",
+      "method": "official-page"
+    },
+    "Nikon NIKKOR Z 20mm F1.8 S": {
+      "status": "ok",
+      "label": "Nikon NIKKOR Z 20mm F1.8 S",
+      "src": "/assets/images/products/nikon/nikon-nikon-z-nikkor-z-20mm-f1-8-s.webp",
+      "sourcePage": "https://www.nikonusa.com/lenses/mirrorless-lenses",
+      "sourceImage": "https://images.cdn.us-central1.gcp.commercetools.com/f7c8f2bb-aff1-4581-a826-1ad2527be222/FrontLeft-20105-NIKK-IgRHK8XF-medium.png",
+      "method": "official-page"
+    },
+    "Nikon NIKKOR Z 24mm F1.8 S": {
+      "status": "ok",
+      "label": "Nikon NIKKOR Z 24mm F1.8 S",
+      "src": "/assets/images/products/nikon/nikon-nikon-z-nikkor-z-24mm-f1-8-s.webp",
+      "sourcePage": "https://www.nikonusa.com/lenses/mirrorless-lenses",
+      "sourceImage": "https://images.cdn.us-central1.gcp.commercetools.com/f7c8f2bb-aff1-4581-a826-1ad2527be222/FrontLeft-20105-NIKK-IgRHK8XF-medium.png",
+      "method": "official-page"
+    },
+    "Nikon NIKKOR Z DX 24mm F1.7": {
+      "status": "ok",
+      "label": "Nikon NIKKOR Z DX 24mm F1.7",
+      "src": "/assets/images/products/nikon/nikon-nikon-z-nikkor-z-dx-24mm-f1-7.webp",
+      "sourcePage": "https://www.nikonusa.com/lenses/mirrorless-lenses",
+      "sourceImage": "https://images.cdn.us-central1.gcp.commercetools.com/f7c8f2bb-aff1-4581-a826-1ad2527be222/FrontLeft-20105-NIKK-IgRHK8XF-medium.png",
+      "method": "official-page"
+    },
+    "Nikon NIKKOR Z 24-50mm F4-6.3": {
+      "status": "ok",
+      "label": "Nikon NIKKOR Z 24-50mm F4-6.3",
+      "src": "/assets/images/products/nikon/nikon-nikon-z-nikkor-z-24-50mm-f4-6-3.webp",
+      "sourcePage": "https://www.nikonusa.com/lenses/mirrorless-lenses",
+      "sourceImage": "https://images.cdn.us-central1.gcp.commercetools.com/f7c8f2bb-aff1-4581-a826-1ad2527be222/Front-20096-NIKKOR-Z-_2UPmnEP-medium.png",
+      "method": "official-page"
+    },
+    "Nikon NIKKOR Z 24-70mm F2.8 S": {
+      "status": "ok",
+      "label": "Nikon NIKKOR Z 24-70mm F2.8 S",
+      "src": "/assets/images/products/nikon/nikon-nikon-z-nikkor-z-24-70mm-f2-8-s.webp",
+      "sourcePage": "https://www.nikonusa.com/lenses/mirrorless-lenses",
+      "sourceImage": "https://images.cdn.us-central1.gcp.commercetools.com/f7c8f2bb-aff1-4581-a826-1ad2527be222/FrontLeft-20089-NIKK-sHUiGgYa-medium.png",
+      "method": "official-page"
+    },
+    "Nikon NIKKOR Z 24-70mm F2.8 S II": {
+      "status": "ok",
+      "label": "Nikon NIKKOR Z 24-70mm F2.8 S II",
+      "src": "/assets/images/products/nikon/nikon-nikon-z-nikkor-z-24-70mm-f2-8-s-ii.webp",
+      "sourcePage": "https://www.nikonusa.com/lenses/mirrorless-lenses",
+      "sourceImage": "https://images.cdn.us-central1.gcp.commercetools.com/f7c8f2bb-aff1-4581-a826-1ad2527be222/FrontLeft-20089-NIKK-sHUiGgYa-medium.png",
+      "method": "official-page"
+    },
+    "Nikon NIKKOR Z 24-70mm F4 S": {
+      "status": "ok",
+      "label": "Nikon NIKKOR Z 24-70mm F4 S",
+      "src": "/assets/images/products/nikon/nikon-nikon-z-nikkor-z-24-70mm-f4-s.webp",
+      "sourcePage": "https://www.nikonusa.com/lenses/mirrorless-lenses",
+      "sourceImage": "https://images.cdn.us-central1.gcp.commercetools.com/f7c8f2bb-aff1-4581-a826-1ad2527be222/FrontLeft-20089-NIKK-sHUiGgYa-medium.png",
+      "method": "official-page"
+    },
+    "Nikon NIKKOR Z 24-105mm F4-7.1": {
+      "status": "ok",
+      "label": "Nikon NIKKOR Z 24-105mm F4-7.1",
+      "src": "/assets/images/products/nikon/nikon-nikon-z-nikkor-z-24-105mm-f4-7-1.webp",
+      "sourcePage": "https://www.nikonusa.com/lenses/mirrorless-lenses",
+      "sourceImage": "https://images.cdn.us-central1.gcp.commercetools.com/f7c8f2bb-aff1-4581-a826-1ad2527be222/FrontLeft-20105-NIKK-IgRHK8XF-medium.png",
+      "method": "official-page"
+    },
+    "Nikon NIKKOR Z 24-120mm F4 S": {
+      "status": "ok",
+      "label": "Nikon NIKKOR Z 24-120mm F4 S",
+      "src": "/assets/images/products/nikon/nikon-nikon-z-nikkor-z-24-120mm-f4-s.webp",
+      "sourcePage": "https://www.nikonusa.com/lenses/mirrorless-lenses",
+      "sourceImage": "https://images.cdn.us-central1.gcp.commercetools.com/f7c8f2bb-aff1-4581-a826-1ad2527be222/FrontLeft-20105-NIKK-IgRHK8XF-medium.png",
+      "method": "official-page"
+    },
+    "Nikon NIKKOR Z 24-200mm F4-6.3 VR": {
+      "status": "ok",
+      "label": "Nikon NIKKOR Z 24-200mm F4-6.3 VR",
+      "src": "/assets/images/products/nikon/nikon-nikon-z-nikkor-z-24-200mm-f4-6-3-vr.webp",
+      "sourcePage": "https://www.nikonusa.com/lenses/mirrorless-lenses",
+      "sourceImage": "https://images.cdn.us-central1.gcp.commercetools.com/f7c8f2bb-aff1-4581-a826-1ad2527be222/FrontLeft-20105-NIKK-IgRHK8XF-medium.png",
+      "method": "official-page"
+    },
+    "Nikon NIKKOR Z 26mm F2.8": {
+      "status": "ok",
+      "label": "Nikon NIKKOR Z 26mm F2.8",
+      "src": "/assets/images/products/nikon/nikon-nikon-z-nikkor-z-26mm-f2-8.webp",
+      "sourcePage": "https://www.nikonusa.com/lenses/mirrorless-lenses",
+      "sourceImage": "https://images.cdn.us-central1.gcp.commercetools.com/f7c8f2bb-aff1-4581-a826-1ad2527be222/FrontLeft-20116-NIKK-pOkXaz1I-medium.png",
+      "method": "official-page"
+    },
+    "Nikon NIKKOR Z 28mm F2.8": {
+      "status": "ok",
+      "label": "Nikon NIKKOR Z 28mm F2.8",
+      "src": "/assets/images/products/nikon/nikon-nikon-z-nikkor-z-28mm-f2-8.webp",
+      "sourcePage": "https://www.nikonusa.com/lenses/mirrorless-lenses",
+      "sourceImage": "https://images.cdn.us-central1.gcp.commercetools.com/f7c8f2bb-aff1-4581-a826-1ad2527be222/FrontLeft-20105-NIKK-IgRHK8XF-medium.png",
+      "method": "official-page"
+    },
+    "Nikon NIKKOR Z 28mm F2.8 SE": {
+      "status": "ok",
+      "label": "Nikon NIKKOR Z 28mm F2.8 SE",
+      "src": "/assets/images/products/nikon/nikon-nikon-z-nikkor-z-28mm-f2-8-se.webp",
+      "sourcePage": "https://www.nikonusa.com/lenses/mirrorless-lenses",
+      "sourceImage": "https://images.cdn.us-central1.gcp.commercetools.com/f7c8f2bb-aff1-4581-a826-1ad2527be222/FrontLeft-20105-NIKK-IgRHK8XF-medium.png",
+      "method": "official-page"
+    },
+    "Nikon NIKKOR Z 28-75mm F2.8": {
+      "status": "ok",
+      "label": "Nikon NIKKOR Z 28-75mm F2.8",
+      "src": "/assets/images/products/nikon/nikon-nikon-z-nikkor-z-28-75mm-f2-8.webp",
+      "sourcePage": "https://www.nikonusa.com/lenses/mirrorless-lenses",
+      "sourceImage": "https://images.cdn.us-central1.gcp.commercetools.com/f7c8f2bb-aff1-4581-a826-1ad2527be222/FrontLeft-20107-28-7-12HocHhp-medium.png",
+      "method": "official-page"
+    },
+    "Nikon NIKKOR Z 28-135mm F4 PZ": {
+      "status": "ok",
+      "label": "Nikon NIKKOR Z 28-135mm F4 PZ",
+      "src": "/assets/images/products/nikon/nikon-nikon-z-nikkor-z-28-135mm-f4-pz.webp",
+      "sourcePage": "https://www.nikonusa.com/lenses/mirrorless-lenses",
+      "sourceImage": "https://images.cdn.us-central1.gcp.commercetools.com/f7c8f2bb-aff1-4581-a826-1ad2527be222/FrontLeft-20107-28-7-12HocHhp-medium.png",
+      "method": "official-page"
+    },
+    "Nikon NIKKOR Z 28-400mm F4-8 VR": {
+      "status": "ok",
+      "label": "Nikon NIKKOR Z 28-400mm F4-8 VR",
+      "src": "/assets/images/products/nikon/nikon-nikon-z-nikkor-z-28-400mm-f4-8-vr.webp",
+      "sourcePage": "https://www.nikonusa.com/lenses/mirrorless-lenses",
+      "sourceImage": "https://images.cdn.us-central1.gcp.commercetools.com/f7c8f2bb-aff1-4581-a826-1ad2527be222/FrontLeft-20112-NIKK-0RNG8B9B-medium.png",
+      "method": "official-page"
+    },
+    "Nikon NIKKOR Z 35mm F1.2 S": {
+      "status": "ok",
+      "label": "Nikon NIKKOR Z 35mm F1.2 S",
+      "src": "/assets/images/products/nikon/nikon-nikon-z-nikkor-z-35mm-f1-2-s.webp",
+      "sourcePage": "https://www.nikonusa.com/lenses/mirrorless-lenses",
+      "sourceImage": "https://images.cdn.us-central1.gcp.commercetools.com/f7c8f2bb-aff1-4581-a826-1ad2527be222/Z35_1-2-_0003_Z35_1--ynvz9vQQ-medium.png",
+      "method": "official-page"
+    },
+    "Nikon NIKKOR Z 35mm F1.4": {
+      "status": "ok",
+      "label": "Nikon NIKKOR Z 35mm F1.4",
+      "src": "/assets/images/products/nikon/nikon-nikon-z-nikkor-z-35mm-f1-4.webp",
+      "sourcePage": "https://www.nikonusa.com/lenses/mirrorless-lenses",
+      "sourceImage": "https://images.cdn.us-central1.gcp.commercetools.com/f7c8f2bb-aff1-4581-a826-1ad2527be222/Z35_1-2-_0003_Z35_1--ynvz9vQQ-medium.png",
+      "method": "official-page"
+    },
+    "Nikon NIKKOR Z 35mm F1.8 S": {
+      "status": "ok",
+      "label": "Nikon NIKKOR Z 35mm F1.8 S",
+      "src": "/assets/images/products/nikon/nikon-nikon-z-nikkor-z-35mm-f1-8-s.webp",
+      "sourcePage": "https://www.nikonusa.com/lenses/mirrorless-lenses",
+      "sourceImage": "https://images.cdn.us-central1.gcp.commercetools.com/f7c8f2bb-aff1-4581-a826-1ad2527be222/Z35_1-2-_0003_Z35_1--ynvz9vQQ-medium.png",
+      "method": "official-page"
+    },
+    "Nikon NIKKOR Z DX MC 35mm F1.7": {
+      "status": "ok",
+      "label": "Nikon NIKKOR Z DX MC 35mm F1.7",
+      "src": "/assets/images/products/nikon/nikon-nikon-z-nikkor-z-dx-mc-35mm-f1-7.webp",
+      "sourcePage": "https://www.nikonusa.com/lenses/mirrorless-lenses",
+      "sourceImage": "https://images.cdn.us-central1.gcp.commercetools.com/f7c8f2bb-aff1-4581-a826-1ad2527be222/Z35_1-2-_0003_Z35_1--ynvz9vQQ-medium.png",
+      "method": "official-page"
+    },
+    "Nikon NIKKOR Z 40mm F2": {
+      "status": "ok",
+      "label": "Nikon NIKKOR Z 40mm F2",
+      "src": "/assets/images/products/nikon/nikon-nikon-z-nikkor-z-40mm-f2.webp",
+      "sourcePage": "https://www.nikonusa.com/lenses/mirrorless-lenses",
+      "sourceImage": "https://images.cdn.us-central1.gcp.commercetools.com/f7c8f2bb-aff1-4581-a826-1ad2527be222/FrontLeft-20105-NIKK-IgRHK8XF-medium.png",
+      "method": "official-page"
+    },
+    "Nikon NIKKOR Z 40mm F2 SE": {
+      "status": "ok",
+      "label": "Nikon NIKKOR Z 40mm F2 SE",
+      "src": "/assets/images/products/nikon/nikon-nikon-z-nikkor-z-40mm-f2-se.webp",
+      "sourcePage": "https://www.nikonusa.com/lenses/mirrorless-lenses",
+      "sourceImage": "https://images.cdn.us-central1.gcp.commercetools.com/f7c8f2bb-aff1-4581-a826-1ad2527be222/FrontLeft-20105-NIKK-IgRHK8XF-medium.png",
+      "method": "official-page"
+    },
+    "Nikon NIKKOR Z 50mm F1.2 S": {
+      "status": "ok",
+      "label": "Nikon NIKKOR Z 50mm F1.2 S",
+      "src": "/assets/images/products/nikon/nikon-nikon-z-nikkor-z-50mm-f1-2-s.webp",
+      "sourcePage": "https://www.nikonusa.com/lenses/mirrorless-lenses",
+      "sourceImage": "https://images.cdn.us-central1.gcp.commercetools.com/f7c8f2bb-aff1-4581-a826-1ad2527be222/Z50_1-4_angle1-ff_4oxlD-medium.png",
+      "method": "official-page"
+    },
+    "Nikon NIKKOR Z 50mm F1.4": {
+      "status": "ok",
+      "label": "Nikon NIKKOR Z 50mm F1.4",
+      "src": "/assets/images/products/nikon/nikon-nikon-z-nikkor-z-50mm-f1-4.webp",
+      "sourcePage": "https://www.nikonusa.com/lenses/mirrorless-lenses",
+      "sourceImage": "https://images.cdn.us-central1.gcp.commercetools.com/f7c8f2bb-aff1-4581-a826-1ad2527be222/Z50_1-4_angle1-ff_4oxlD-medium.png",
+      "method": "official-page"
+    },
+    "Nikon NIKKOR Z 50mm F1.8 S": {
+      "status": "ok",
+      "label": "Nikon NIKKOR Z 50mm F1.8 S",
+      "src": "/assets/images/products/nikon/nikon-nikon-z-nikkor-z-50mm-f1-8-s.webp",
+      "sourcePage": "https://www.nikonusa.com/lenses/mirrorless-lenses",
+      "sourceImage": "https://images.cdn.us-central1.gcp.commercetools.com/f7c8f2bb-aff1-4581-a826-1ad2527be222/Z50_1-4_angle1-ff_4oxlD-medium.png",
+      "method": "official-page"
+    },
+    "Nikon NIKKOR Z MC 50mm F2.8": {
+      "status": "ok",
+      "label": "Nikon NIKKOR Z MC 50mm F2.8",
+      "src": "/assets/images/products/nikon/nikon-nikon-z-nikkor-z-mc-50mm-f2-8.webp",
+      "sourcePage": "https://www.nikonusa.com/lenses/mirrorless-lenses",
+      "sourceImage": "https://images.cdn.us-central1.gcp.commercetools.com/f7c8f2bb-aff1-4581-a826-1ad2527be222/Z50_1-4_angle1-ff_4oxlD-medium.png",
+      "method": "official-page"
+    },
+    "Nikon NIKKOR Z DX 50-250mm F4.5-6.3 VR": {
+      "status": "ok",
+      "label": "Nikon NIKKOR Z DX 50-250mm F4.5-6.3 VR",
+      "src": "/assets/images/products/nikon/nikon-nikon-z-nikkor-z-dx-50-250mm-f4-5-6-3-vr.webp",
+      "sourcePage": "https://www.nikonusa.com/lenses/mirrorless-lenses",
+      "sourceImage": "https://images.cdn.us-central1.gcp.commercetools.com/f7c8f2bb-aff1-4581-a826-1ad2527be222/Z50_1-4_angle1-ff_4oxlD-medium.png",
+      "method": "official-page"
+    },
+    "Nikon NIKKOR Z 58mm F0.95 S Noct": {
+      "status": "ok",
+      "label": "Nikon NIKKOR Z 58mm F0.95 S Noct",
+      "src": "/assets/images/products/nikon/nikon-nikon-z-nikkor-z-58mm-f0-95-s-noct.webp",
+      "sourcePage": "https://www.nikonusa.com/lenses/mirrorless-lenses",
+      "sourceImage": "https://images.cdn.us-central1.gcp.commercetools.com/f7c8f2bb-aff1-4581-a826-1ad2527be222/Front-20095-NIKKOR-Z-peKogW2D-medium.png",
+      "method": "official-page"
+    },
+    "Nikon NIKKOR Z 70-180mm F2.8": {
+      "status": "ok",
+      "label": "Nikon NIKKOR Z 70-180mm F2.8",
+      "src": "/assets/images/products/nikon/nikon-nikon-z-nikkor-z-70-180mm-f2-8.webp",
+      "sourcePage": "https://www.nikonusa.com/lenses/mirrorless-lenses",
+      "sourceImage": "https://images.cdn.us-central1.gcp.commercetools.com/f7c8f2bb-aff1-4581-a826-1ad2527be222/FrontLeft-20089-NIKK-sHUiGgYa-medium.png",
+      "method": "official-page"
+    },
+    "Nikon NIKKOR Z 70-200mm F2.8 VR S": {
+      "status": "ok",
+      "label": "Nikon NIKKOR Z 70-200mm F2.8 VR S",
+      "src": "/assets/images/products/nikon/nikon-nikon-z-nikkor-z-70-200mm-f2-8-vr-s.webp",
+      "sourcePage": "https://www.nikonusa.com/lenses/mirrorless-lenses",
+      "sourceImage": "https://images.cdn.us-central1.gcp.commercetools.com/f7c8f2bb-aff1-4581-a826-1ad2527be222/FrontLeft-Z180-600_5-foublKyw-medium.png",
+      "method": "official-page"
+    },
+    "Nikon NIKKOR Z 70-200mm F2.8 VR S II": {
+      "status": "ok",
+      "label": "Nikon NIKKOR Z 70-200mm F2.8 VR S II",
+      "src": "/assets/images/products/nikon/nikon-nikon-z-nikkor-z-70-200mm-f2-8-vr-s-ii.webp",
+      "sourcePage": "https://www.nikonusa.com/lenses/mirrorless-lenses",
+      "sourceImage": "https://images.cdn.us-central1.gcp.commercetools.com/f7c8f2bb-aff1-4581-a826-1ad2527be222/FrontLeft-Z180-600_5-foublKyw-medium.png",
+      "method": "official-page"
+    },
+    "Nikon NIKKOR Z 85mm F1.2 S": {
+      "status": "ok",
+      "label": "Nikon NIKKOR Z 85mm F1.2 S",
+      "src": "/assets/images/products/nikon/nikon-nikon-z-nikkor-z-85mm-f1-2-s.webp",
+      "sourcePage": "https://www.nikonusa.com/lenses/mirrorless-lenses",
+      "sourceImage": "https://images.cdn.us-central1.gcp.commercetools.com/f7c8f2bb-aff1-4581-a826-1ad2527be222/FrontLeft-20105-NIKK-IgRHK8XF-medium.png",
+      "method": "official-page"
+    },
+    "Nikon NIKKOR Z 85mm F1.8 S": {
+      "status": "ok",
+      "label": "Nikon NIKKOR Z 85mm F1.8 S",
+      "src": "/assets/images/products/nikon/nikon-nikon-z-nikkor-z-85mm-f1-8-s.webp",
+      "sourcePage": "https://www.nikonusa.com/lenses/mirrorless-lenses",
+      "sourceImage": "https://images.cdn.us-central1.gcp.commercetools.com/f7c8f2bb-aff1-4581-a826-1ad2527be222/FrontLeft-20105-NIKK-IgRHK8XF-medium.png",
+      "method": "official-page"
+    },
+    "Nikon NIKKOR Z 100-400mm F4.5-5.6 VR S": {
+      "status": "ok",
+      "label": "Nikon NIKKOR Z 100-400mm F4.5-5.6 VR S",
+      "src": "/assets/images/products/nikon/nikon-nikon-z-nikkor-z-100-400mm-f4-5-5-6-vr-s.webp",
+      "sourcePage": "https://www.nikonusa.com/lenses/mirrorless-lenses",
+      "sourceImage": "https://images.cdn.us-central1.gcp.commercetools.com/f7c8f2bb-aff1-4581-a826-1ad2527be222/FrontLeft-20112-NIKK-0RNG8B9B-medium.png",
+      "method": "official-page"
+    },
+    "Nikon NIKKOR Z MC 105mm F2.8 VR S": {
+      "status": "ok",
+      "label": "Nikon NIKKOR Z MC 105mm F2.8 VR S",
+      "src": "/assets/images/products/nikon/nikon-nikon-z-nikkor-z-mc-105mm-f2-8-vr-s.webp",
+      "sourcePage": "https://www.nikonusa.com/lenses/mirrorless-lenses",
+      "sourceImage": "https://images.cdn.us-central1.gcp.commercetools.com/f7c8f2bb-aff1-4581-a826-1ad2527be222/FrontLeft-Z180-600_5-foublKyw-medium.png",
+      "method": "official-page"
+    },
+    "Nikon NIKKOR Z 135mm F1.8 S Plena": {
+      "status": "ok",
+      "label": "Nikon NIKKOR Z 135mm F1.8 S Plena",
+      "src": "/assets/images/products/nikon/nikon-nikon-z-nikkor-z-135mm-f1-8-s-plena.webp",
+      "sourcePage": "https://www.nikonusa.com/lenses/mirrorless-lenses",
+      "sourceImage": "https://images.cdn.us-central1.gcp.commercetools.com/f7c8f2bb-aff1-4581-a826-1ad2527be222/FrontLeft-Z135_1-8_a-3KJFVx7V-medium.png",
+      "method": "official-page"
+    },
+    "Nikon NIKKOR Z 180-600mm F5.6-6.3 VR": {
+      "status": "ok",
+      "label": "Nikon NIKKOR Z 180-600mm F5.6-6.3 VR",
+      "src": "/assets/images/products/nikon/nikon-nikon-z-nikkor-z-180-600mm-f5-6-6-3-vr.webp",
+      "sourcePage": "https://www.nikonusa.com/lenses/mirrorless-lenses",
+      "sourceImage": "https://images.cdn.us-central1.gcp.commercetools.com/f7c8f2bb-aff1-4581-a826-1ad2527be222/FrontLeft-Z180-600_5-foublKyw-medium.png",
+      "method": "official-page"
+    },
+    "Nikon NIKKOR Z 400mm F2.8 TC VR S": {
+      "status": "ok",
+      "label": "Nikon NIKKOR Z 400mm F2.8 TC VR S",
+      "src": "/assets/images/products/nikon/nikon-nikon-z-nikkor-z-400mm-f2-8-tc-vr-s.webp",
+      "sourcePage": "https://www.nikonusa.com/lenses/mirrorless-lenses",
+      "sourceImage": "https://images.cdn.us-central1.gcp.commercetools.com/f7c8f2bb-aff1-4581-a826-1ad2527be222/FrontLeft-20112-NIKK-0RNG8B9B-medium.png",
+      "method": "official-page"
+    },
+    "Nikon NIKKOR Z 400mm F4.5 VR S": {
+      "status": "ok",
+      "label": "Nikon NIKKOR Z 400mm F4.5 VR S",
+      "src": "/assets/images/products/nikon/nikon-nikon-z-nikkor-z-400mm-f4-5-vr-s.webp",
+      "sourcePage": "https://www.nikonusa.com/lenses/mirrorless-lenses",
+      "sourceImage": "https://images.cdn.us-central1.gcp.commercetools.com/f7c8f2bb-aff1-4581-a826-1ad2527be222/FrontLeft-20112-NIKK-0RNG8B9B-medium.png",
+      "method": "official-page"
+    },
+    "Nikon NIKKOR Z 600mm F4 TC VR S": {
+      "status": "ok",
+      "label": "Nikon NIKKOR Z 600mm F4 TC VR S",
+      "src": "/assets/images/products/nikon/nikon-nikon-z-nikkor-z-600mm-f4-tc-vr-s.webp",
+      "sourcePage": "https://www.nikonusa.com/lenses/mirrorless-lenses",
+      "sourceImage": "https://images.cdn.us-central1.gcp.commercetools.com/f7c8f2bb-aff1-4581-a826-1ad2527be222/FrontLeft-Z180-600_5-foublKyw-medium.png",
+      "method": "official-page"
+    },
+    "Nikon NIKKOR Z 600mm F6.3 VR S": {
+      "status": "ok",
+      "label": "Nikon NIKKOR Z 600mm F6.3 VR S",
+      "src": "/assets/images/products/nikon/nikon-nikon-z-nikkor-z-600mm-f6-3-vr-s.webp",
+      "sourcePage": "https://www.nikonusa.com/lenses/mirrorless-lenses",
+      "sourceImage": "https://images.cdn.us-central1.gcp.commercetools.com/f7c8f2bb-aff1-4581-a826-1ad2527be222/FrontLeft-Z180-600_5-foublKyw-medium.png",
+      "method": "official-page"
+    },
+    "Nikon NIKKOR Z 800mm F6.3 VR S": {
+      "status": "ok",
+      "label": "Nikon NIKKOR Z 800mm F6.3 VR S",
+      "src": "/assets/images/products/nikon/nikon-nikon-z-nikkor-z-800mm-f6-3-vr-s.webp",
+      "sourcePage": "https://www.nikonusa.com/lenses/mirrorless-lenses",
+      "sourceImage": "https://images.cdn.us-central1.gcp.commercetools.com/f7c8f2bb-aff1-4581-a826-1ad2527be222/FrontLeft-Z180-600_5-foublKyw-medium.png",
+      "method": "official-page"
+    },
+    "Fujifilm X-E1": {
+      "status": "ok",
+      "label": "Fujifilm X-E1",
+      "src": "/assets/images/products/fujifilm/fujifilm-fujifilm-x-x-e1.webp",
+      "sourcePage": "https://www.fujifilm-x.com/ko-kr/products/x-series/",
+      "sourceImage": "https://fujifilm-x.b-cdn.net/wp-content/uploads/2022/05/sgew_x-h2s_thum-1.png?width=365&height=365",
+      "method": "official-page"
+    },
+    "Fujifilm X-E2": {
+      "status": "ok",
+      "label": "Fujifilm X-E2",
+      "src": "/assets/images/products/fujifilm/fujifilm-fujifilm-x-x-e2.webp",
+      "sourcePage": "https://www.fujifilm-x.com/ko-kr/products/x-series/",
+      "sourceImage": "https://fujifilm-x.b-cdn.net/wp-content/uploads/2025/10/thum_x-t30-iii-004c6e21.webp?width=365&height=365",
+      "method": "official-page"
+    },
+    "Fujifilm X-E2S": {
+      "status": "ok",
+      "label": "Fujifilm X-E2S",
+      "src": "/assets/images/products/fujifilm/fujifilm-fujifilm-x-x-e2s.webp",
+      "sourcePage": "https://www.fujifilm-x.com/ko-kr/products/x-series/",
+      "sourceImage": "https://fujifilm-x.b-cdn.net/wp-content/uploads/2022/05/sgew_x-h2s_thum-1.png?width=365&height=365",
+      "method": "official-page"
+    },
+    "Fujifilm X-E3": {
+      "status": "ok",
+      "label": "Fujifilm X-E3",
+      "src": "/assets/images/products/fujifilm/fujifilm-fujifilm-x-x-e3.webp",
+      "sourcePage": "https://www.fujifilm-x.com/ko-kr/products/x-series/",
+      "sourceImage": "https://fujifilm-x.b-cdn.net/wp-content/uploads/2022/05/sgew_x-h2s_thum-1.png?width=365&height=365",
+      "method": "official-page"
+    },
+    "Fujifilm X-E4": {
+      "status": "ok",
+      "label": "Fujifilm X-E4",
+      "src": "/assets/images/products/fujifilm/fujifilm-fujifilm-x-x-e4.webp",
+      "sourcePage": "https://www.fujifilm-x.com/ko-kr/products/x-series/",
+      "sourceImage": "https://fujifilm-x.b-cdn.net/wp-content/uploads/2025/05/x-hf1-placeholder-thumbnail-charcoal-73646e81-8615-4f61-a627-cc1354e44101.jpg?width=365&height=365",
+      "method": "official-page"
+    },
+    "Fujifilm X-E5": {
+      "status": "ok",
+      "label": "Fujifilm X-E5",
+      "src": "/assets/images/products/fujifilm/fujifilm-fujifilm-x-x-e5.webp",
+      "sourcePage": "https://www.fujifilm-x.com/ko-kr/products/x-series/",
+      "sourceImage": "https://fujifilm-x.b-cdn.net/wp-content/uploads/2025/06/thum_X-E5-1.jpg?width=365&height=365",
+      "method": "official-page"
+    },
+    "Fujifilm X-T1": {
+      "status": "ok",
+      "label": "Fujifilm X-T1",
+      "src": "/assets/images/products/fujifilm/fujifilm-fujifilm-x-x-t1.webp",
+      "sourcePage": "https://www.fujifilm-x.com/ko-kr/products/x-series/",
+      "sourceImage": "https://fujifilm-x.b-cdn.net/wp-content/uploads/2022/05/sgew_x-h2s_thum-1.png?width=365&height=365",
+      "method": "official-page"
+    },
+    "Fujifilm X-T2": {
+      "status": "ok",
+      "label": "Fujifilm X-T2",
+      "src": "/assets/images/products/fujifilm/fujifilm-fujifilm-x-x-t2.webp",
+      "sourcePage": "https://www.fujifilm-x.com/ko-kr/products/x-series/",
+      "sourceImage": "https://fujifilm-x.b-cdn.net/wp-content/uploads/2018/02/1_thum_mkx18-55mmt2-9.jpg?width=365&height=365",
+      "method": "official-page"
+    },
+    "Fujifilm X-T3": {
+      "status": "ok",
+      "label": "Fujifilm X-T3",
+      "src": "/assets/images/products/fujifilm/fujifilm-fujifilm-x-x-t3.webp",
+      "sourcePage": "https://www.fujifilm-x.com/ko-kr/products/x-series/",
+      "sourceImage": "https://fujifilm-x.b-cdn.net/wp-content/uploads/2025/10/thum_x-t30-iii-004c6e21.webp?width=365&height=365",
+      "method": "official-page"
+    },
+    "Fujifilm X-T4": {
+      "status": "ok",
+      "label": "Fujifilm X-T4",
+      "src": "/assets/images/products/fujifilm/fujifilm-fujifilm-x-x-t4.webp",
+      "sourcePage": "https://www.fujifilm-x.com/ko-kr/products/x-series/",
+      "sourceImage": "https://fujifilm-x.b-cdn.net/wp-content/uploads/2022/05/sgew_x-h2s_thum-1.png?width=365&height=365",
+      "method": "official-page"
+    },
+    "Fujifilm X-T5": {
+      "status": "ok",
+      "label": "Fujifilm X-T5",
+      "src": "/assets/images/products/fujifilm/fujifilm-fujifilm-x-x-t5.webp",
+      "sourcePage": "https://www.fujifilm-x.com/ko-kr/products/x-series/",
+      "sourceImage": "https://fujifilm-x.b-cdn.net/wp-content/uploads/2022/10/koes_x-t5_thum.jpg?width=365&height=365",
+      "method": "official-page"
+    },
+    "Fujifilm X-T10": {
+      "status": "ok",
+      "label": "Fujifilm X-T10",
+      "src": "/assets/images/products/fujifilm/fujifilm-fujifilm-x-x-t10.webp",
+      "sourcePage": "https://www.fujifilm-x.com/ko-kr/products/x-series/",
+      "sourceImage": "https://fujifilm-x.b-cdn.net/wp-content/uploads/2022/05/sgew_x-h2s_thum-1.png?width=365&height=365",
+      "method": "official-page"
+    },
+    "Fujifilm X-T20": {
+      "status": "ok",
+      "label": "Fujifilm X-T20",
+      "src": "/assets/images/products/fujifilm/fujifilm-fujifilm-x-x-t20.webp",
+      "sourcePage": "https://www.fujifilm-x.com/ko-kr/products/x-series/",
+      "sourceImage": "https://fujifilm-x.b-cdn.net/wp-content/uploads/2022/05/sgew_x-h2s_thum-1.png?width=365&height=365",
+      "method": "official-page"
+    },
+    "Fujifilm X-T30": {
+      "status": "ok",
+      "label": "Fujifilm X-T30",
+      "src": "/assets/images/products/fujifilm/fujifilm-fujifilm-x-x-t30.webp",
+      "sourcePage": "https://www.fujifilm-x.com/ko-kr/products/x-series/",
+      "sourceImage": "https://fujifilm-x.b-cdn.net/wp-content/uploads/2025/10/thum_x-t30-iii-004c6e21.webp?width=365&height=365",
+      "method": "official-page"
+    },
+    "Fujifilm X-T30 II": {
+      "status": "ok",
+      "label": "Fujifilm X-T30 II",
+      "src": "/assets/images/products/fujifilm/fujifilm-fujifilm-x-x-t30-ii.webp",
+      "sourcePage": "https://www.fujifilm-x.com/ko-kr/products/x-series/",
+      "sourceImage": "https://fujifilm-x.b-cdn.net/wp-content/uploads/2025/10/thum_x-t30-iii-004c6e21.webp?width=365&height=365",
+      "method": "official-page"
+    },
+    "Fujifilm X-T30 III": {
+      "status": "ok",
+      "label": "Fujifilm X-T30 III",
+      "src": "/assets/images/products/fujifilm/fujifilm-fujifilm-x-x-t30-iii.webp",
+      "sourcePage": "https://www.fujifilm-x.com/ko-kr/products/x-series/",
+      "sourceImage": "https://fujifilm-x.b-cdn.net/wp-content/uploads/2025/10/thum_x-t30-iii-004c6e21.webp?width=365&height=365",
+      "method": "official-page"
+    },
+    "Fujifilm X-T50": {
+      "status": "ok",
+      "label": "Fujifilm X-T50",
+      "src": "/assets/images/products/fujifilm/fujifilm-fujifilm-x-x-t50.webp",
+      "sourcePage": "https://www.fujifilm-x.com/ko-kr/products/x-series/",
+      "sourceImage": "https://fujifilm-x.b-cdn.net/wp-content/uploads/2024/05/product-list_X-T50_front_16-50_silver.jpg?width=365&height=365",
+      "method": "official-page"
+    },
+    "Fujifilm X-H1": {
+      "status": "ok",
+      "label": "Fujifilm X-H1",
+      "src": "/assets/images/products/fujifilm/fujifilm-fujifilm-x-x-h1.webp",
+      "sourcePage": "https://www.fujifilm-x.com/ko-kr/products/x-series/",
+      "sourceImage": "https://fujifilm-x.b-cdn.net/wp-content/uploads/2022/05/sgew_x-h2s_thum-1.png?width=365&height=365",
+      "method": "official-page"
+    },
+    "Fujifilm X-H2": {
+      "status": "ok",
+      "label": "Fujifilm X-H2",
+      "src": "/assets/images/products/fujifilm/fujifilm-fujifilm-x-x-h2.webp",
+      "sourcePage": "https://www.fujifilm-x.com/ko-kr/products/x-series/",
+      "sourceImage": "https://fujifilm-x.b-cdn.net/wp-content/uploads/2022/05/sgew_x-h2s_thum-1.png?width=365&height=365",
+      "method": "official-page"
+    },
+    "Fujifilm X-H2S": {
+      "status": "ok",
+      "label": "Fujifilm X-H2S",
+      "src": "/assets/images/products/fujifilm/fujifilm-fujifilm-x-x-h2s.webp",
+      "sourcePage": "https://www.fujifilm-x.com/ko-kr/products/x-series/",
+      "sourceImage": "https://fujifilm-x.b-cdn.net/wp-content/uploads/2022/05/sgew_x-h2s_thum-1.png?width=365&height=365",
+      "method": "official-page"
+    },
+    "Fujifilm X-S10": {
+      "status": "ok",
+      "label": "Fujifilm X-S10",
+      "src": "/assets/images/products/fujifilm/fujifilm-fujifilm-x-x-s10.webp",
+      "sourcePage": "https://www.fujifilm-x.com/ko-kr/products/x-series/",
+      "sourceImage": "https://fujifilm-x.b-cdn.net/wp-content/uploads/2022/05/sgew_x-h2s_thum-1.png?width=365&height=365",
+      "method": "official-page"
+    },
+    "Fujifilm X-S20": {
+      "status": "ok",
+      "label": "Fujifilm X-S20",
+      "src": "/assets/images/products/fujifilm/fujifilm-fujifilm-x-x-s20.webp",
+      "sourcePage": "https://www.fujifilm-x.com/ko-kr/products/x-series/",
+      "sourceImage": "https://fujifilm-x.b-cdn.net/wp-content/uploads/2023/05/dwga_x-s20_thum.jpg?width=365&height=365",
+      "method": "official-page"
+    },
+    "Fujifilm X-M1": {
+      "status": "ok",
+      "label": "Fujifilm X-M1",
+      "src": "/assets/images/products/fujifilm/fujifilm-fujifilm-x-x-m1.webp",
+      "sourcePage": "https://www.fujifilm-x.com/ko-kr/products/x-series/",
+      "sourceImage": "https://fujifilm-x.b-cdn.net/wp-content/uploads/2022/05/sgew_x-h2s_thum-1.png?width=365&height=365",
+      "method": "official-page"
+    },
+    "Fujifilm X-M5": {
+      "status": "ok",
+      "label": "Fujifilm X-M5",
+      "src": "/assets/images/products/fujifilm/fujifilm-fujifilm-x-x-m5.webp",
+      "sourcePage": "https://www.fujifilm-x.com/ko-kr/products/x-series/",
+      "sourceImage": "https://fujifilm-x.b-cdn.net/wp-content/uploads/2024/10/product_thumb_x-m5.jpg?width=365&height=365",
+      "method": "official-page"
+    },
+    "Fujifilm X-A1": {
+      "status": "ok",
+      "label": "Fujifilm X-A1",
+      "src": "/assets/images/products/fujifilm/fujifilm-fujifilm-x-x-a1.webp",
+      "sourcePage": "https://www.fujifilm-x.com/ko-kr/products/x-series/",
+      "sourceImage": "https://fujifilm-x.b-cdn.net/wp-content/uploads/2022/05/sgew_x-h2s_thum-1.png?width=365&height=365",
+      "method": "official-page"
+    },
+    "Fujifilm X-A2": {
+      "status": "ok",
+      "label": "Fujifilm X-A2",
+      "src": "/assets/images/products/fujifilm/fujifilm-fujifilm-x-x-a2.webp",
+      "sourcePage": "https://www.fujifilm-x.com/ko-kr/products/x-series/",
+      "sourceImage": "https://fujifilm-x.b-cdn.net/wp-content/uploads/2022/05/sgew_x-h2s_thum-1.png?width=365&height=365",
+      "method": "official-page"
+    },
+    "Fujifilm X-A3": {
+      "status": "ok",
+      "label": "Fujifilm X-A3",
+      "src": "/assets/images/products/fujifilm/fujifilm-fujifilm-x-x-a3.webp",
+      "sourcePage": "https://www.fujifilm-x.com/ko-kr/products/x-series/",
+      "sourceImage": "https://fujifilm-x.b-cdn.net/wp-content/uploads/2022/05/sgew_x-h2s_thum-1.png?width=365&height=365",
+      "method": "official-page"
+    },
+    "Fujifilm X-A5": {
+      "status": "ok",
+      "label": "Fujifilm X-A5",
+      "src": "/assets/images/products/fujifilm/fujifilm-fujifilm-x-x-a5.webp",
+      "sourcePage": "https://www.fujifilm-x.com/ko-kr/products/x-series/",
+      "sourceImage": "https://fujifilm-x.b-cdn.net/wp-content/uploads/2022/05/sgew_x-h2s_thum-1.png?width=365&height=365",
+      "method": "official-page"
+    },
+    "Fujifilm X-A7": {
+      "status": "ok",
+      "label": "Fujifilm X-A7",
+      "src": "/assets/images/products/fujifilm/fujifilm-fujifilm-x-x-a7.webp",
+      "sourcePage": "https://www.fujifilm-x.com/ko-kr/products/x-series/",
+      "sourceImage": "https://fujifilm-x.b-cdn.net/wp-content/uploads/2022/05/sgew_x-h2s_thum-1.png?width=365&height=365",
+      "method": "official-page"
+    },
+    "Fujifilm X-A10": {
+      "status": "ok",
+      "label": "Fujifilm X-A10",
+      "src": "/assets/images/products/fujifilm/fujifilm-fujifilm-x-x-a10.webp",
+      "sourcePage": "https://www.fujifilm-x.com/ko-kr/products/x-series/",
+      "sourceImage": "https://fujifilm-x.b-cdn.net/wp-content/uploads/2022/05/sgew_x-h2s_thum-1.png?width=365&height=365",
+      "method": "official-page"
+    },
+    "Fujifilm X-A20": {
+      "status": "ok",
+      "label": "Fujifilm X-A20",
+      "src": "/assets/images/products/fujifilm/fujifilm-fujifilm-x-x-a20.webp",
+      "sourcePage": "https://www.fujifilm-x.com/ko-kr/products/x-series/",
+      "sourceImage": "https://fujifilm-x.b-cdn.net/wp-content/uploads/2022/05/sgew_x-h2s_thum-1.png?width=365&height=365",
+      "method": "official-page"
+    },
+    "Fujifilm X-T100": {
+      "status": "ok",
+      "label": "Fujifilm X-T100",
+      "src": "/assets/images/products/fujifilm/fujifilm-fujifilm-x-x-t100.webp",
+      "sourcePage": "https://www.fujifilm-x.com/ko-kr/products/x-series/",
+      "sourceImage": "https://fujifilm-x.b-cdn.net/wp-content/uploads/2022/05/sgew_x-h2s_thum-1.png?width=365&height=365",
+      "method": "official-page"
+    },
+    "Fujifilm X-T200": {
+      "status": "ok",
+      "label": "Fujifilm X-T200",
+      "src": "/assets/images/products/fujifilm/fujifilm-fujifilm-x-x-t200.webp",
+      "sourcePage": "https://www.fujifilm-x.com/ko-kr/products/x-series/",
+      "sourceImage": "https://fujifilm-x.b-cdn.net/wp-content/uploads/2022/05/sgew_x-h2s_thum-1.png?width=365&height=365",
+      "method": "official-page"
+    },
+    "Fujifilm GFX 50S": {
+      "status": "ok",
+      "label": "Fujifilm GFX 50S",
+      "src": "/assets/images/products/fujifilm/fujifilm-fujifilm-g-gfx-50s.webp",
+      "sourcePage": "https://www.fujifilm.com/kr/en/consumer/digitalcameras/gfx",
+      "sourceImage": "https://asset.fujifilm.com/common/img/fujifilm_ogp.png",
+      "method": "official-page"
+    },
+    "Fujifilm GFX 50R": {
+      "status": "ok",
+      "label": "Fujifilm GFX 50R",
+      "src": "/assets/images/products/fujifilm/fujifilm-fujifilm-g-gfx-50r.webp",
+      "sourcePage": "https://www.fujifilm.com/kr/en/consumer/digitalcameras/gfx",
+      "sourceImage": "https://asset.fujifilm.com/common/img/fujifilm_ogp.png",
+      "method": "official-page"
+    },
+    "Fujifilm GFX100": {
+      "status": "ok",
+      "label": "Fujifilm GFX100",
+      "src": "/assets/images/products/fujifilm/fujifilm-fujifilm-g-gfx100.webp",
+      "sourcePage": "https://www.fujifilm.com/kr/en/consumer/digitalcameras/gfx",
+      "sourceImage": "https://asset.fujifilm.com/common/img/fujifilm_ogp.png",
+      "method": "official-page"
+    },
+    "Fujifilm GFX100S": {
+      "status": "ok",
+      "label": "Fujifilm GFX100S",
+      "src": "/assets/images/products/fujifilm/fujifilm-fujifilm-g-gfx100s.webp",
+      "sourcePage": "https://www.fujifilm.com/kr/en/consumer/digitalcameras/gfx",
+      "sourceImage": "https://asset.fujifilm.com/common/img/fujifilm_ogp.png",
+      "method": "official-page"
+    },
+    "Fujifilm GFX 50S II": {
+      "status": "ok",
+      "label": "Fujifilm GFX 50S II",
+      "src": "/assets/images/products/fujifilm/fujifilm-fujifilm-g-gfx-50s-ii.webp",
+      "sourcePage": "https://www.fujifilm.com/kr/en/consumer/digitalcameras/gfx",
+      "sourceImage": "https://asset.fujifilm.com/common/img/fujifilm_ogp.png",
+      "method": "official-page"
+    },
+    "Fujifilm GFX100 II": {
+      "status": "ok",
+      "label": "Fujifilm GFX100 II",
+      "src": "/assets/images/products/fujifilm/fujifilm-fujifilm-g-gfx100-ii.webp",
+      "sourcePage": "https://www.fujifilm.com/kr/en/consumer/digitalcameras/gfx",
+      "sourceImage": "https://asset.fujifilm.com/common/img/fujifilm_ogp.png",
+      "method": "official-page"
+    },
+    "Fujifilm GFX100S II": {
+      "status": "ok",
+      "label": "Fujifilm GFX100S II",
+      "src": "/assets/images/products/fujifilm/fujifilm-fujifilm-g-gfx100s-ii.webp",
+      "sourcePage": "https://www.fujifilm.com/kr/en/consumer/digitalcameras/gfx",
+      "sourceImage": "https://asset.fujifilm.com/common/img/fujifilm_ogp.png",
+      "method": "official-page"
+    },
+    "Fujifilm GFX ETERNA 55": {
+      "status": "ok",
+      "label": "Fujifilm GFX ETERNA 55",
+      "src": "/assets/images/products/fujifilm/fujifilm-fujifilm-g-gfx-eterna-55.webp",
+      "sourcePage": "https://www.fujifilm.com/kr/en/consumer/digitalcameras/gfx",
+      "sourceImage": "https://asset.fujifilm.com/common/img/fujifilm_ogp.png",
+      "method": "official-page"
+    },
+    "Fujifilm XF8mmF3.5 R WR": {
+      "status": "ok",
+      "label": "Fujifilm XF8mmF3.5 R WR",
+      "src": "/assets/images/products/fujifilm/fujifilm-fujifilm-x-xf8mmf3-5.webp",
+      "sourcePage": "https://www.fujifilm-x.com/ko-kr/products/lenses/",
+      "sourceImage": "https://fujifilm-x.b-cdn.net/wp-content/uploads/2023/05/1_thum_xf8mmf35-r-wr_rpnu_2.jpg?width=365&height=365",
+      "method": "official-page"
+    },
+    "Fujifilm XF14mmF2.8 R": {
+      "status": "ok",
+      "label": "Fujifilm XF14mmF2.8 R",
+      "src": "/assets/images/products/fujifilm/fujifilm-fujifilm-x-xf14mmf2-8.webp",
+      "sourcePage": "https://www.fujifilm-x.com/ko-kr/products/lenses/",
+      "sourceImage": "https://fujifilm-x.b-cdn.net/wp-content/uploads/2016/10/1_thum_xf14mmf2-8-r.jpg?width=365&height=365",
+      "method": "official-page"
+    },
+    "Fujifilm XF16mmF1.4 R WR": {
+      "status": "ok",
+      "label": "Fujifilm XF16mmF1.4 R WR",
+      "src": "/assets/images/products/fujifilm/fujifilm-fujifilm-x-xf16mmf1-4.webp",
+      "sourcePage": "https://www.fujifilm-x.com/ko-kr/products/lenses/",
+      "sourceImage": "https://fujifilm-x.b-cdn.net/wp-content/uploads/2016/10/2_thum_xf16mmf1-4-r-wr.jpg?width=365&height=365",
+      "method": "official-page"
+    },
+    "Fujifilm XF16mmF2.8 R WR": {
+      "status": "ok",
+      "label": "Fujifilm XF16mmF2.8 R WR",
+      "src": "/assets/images/products/fujifilm/fujifilm-fujifilm-x-xf16mmf2-8.webp",
+      "sourcePage": "https://www.fujifilm-x.com/ko-kr/products/lenses/",
+      "sourceImage": "https://fujifilm-x.b-cdn.net/wp-content/uploads/2016/10/2_thum_xf16mmf1-4-r-wr.jpg?width=365&height=365",
+      "method": "official-page"
+    },
+    "Fujifilm XF18mmF1.4 R LM WR": {
+      "status": "ok",
+      "label": "Fujifilm XF18mmF1.4 R LM WR",
+      "src": "/assets/images/products/fujifilm/fujifilm-fujifilm-x-xf18mmf1-4.webp",
+      "sourcePage": "https://www.fujifilm-x.com/ko-kr/products/lenses/",
+      "sourceImage": "https://fujifilm-x.b-cdn.net/wp-content/uploads/2021/04/thum_xf18mmf1.4_haoi.jpg?width=365&height=365",
+      "method": "official-page"
+    },
+    "Fujifilm XF18mmF2 R": {
+      "status": "ok",
+      "label": "Fujifilm XF18mmF2 R",
+      "src": "/assets/images/products/fujifilm/fujifilm-fujifilm-x-xf18mmf2.webp",
+      "sourcePage": "https://www.fujifilm-x.com/ko-kr/products/lenses/",
+      "sourceImage": "https://fujifilm-x.b-cdn.net/wp-content/uploads/2016/10/3_thum_xf18mmf2-r.jpg?width=365&height=365",
+      "method": "official-page"
+    },
+    "Fujifilm XF23mmF1.4 R": {
+      "status": "ok",
+      "label": "Fujifilm XF23mmF1.4 R",
+      "src": "/assets/images/products/fujifilm/fujifilm-fujifilm-x-xf23mmf1-4.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Fujifilm_Fujinon_XF_23mm_F1.4_R_LM_WR_(52367929102).jpg",
+      "sourceImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Fujifilm_Fujinon_XF_23mm_F1.4_R_LM_WR_%2852367929102%29.jpg/960px-Fujifilm_Fujinon_XF_23mm_F1.4_R_LM_WR_%2852367929102%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "method": "wikimedia-commons"
+    },
+    "Fujifilm XF23mmF1.4 R LM WR": {
+      "status": "ok",
+      "label": "Fujifilm XF23mmF1.4 R LM WR",
+      "src": "/assets/images/products/fujifilm/fujifilm-fujifilm-x-xf23mmf1-4-2.webp",
+      "sourcePage": "https://www.fujifilm-x.com/ko-kr/products/lenses/",
+      "sourceImage": "https://fujifilm-x.b-cdn.net/wp-content/uploads/2021/09/1_thum_xf23mmf14_1214-1.jpg?width=365&height=365",
+      "method": "official-page"
+    },
+    "Fujifilm XF23mmF2 R WR": {
+      "status": "ok",
+      "label": "Fujifilm XF23mmF2 R WR",
+      "src": "/assets/images/products/fujifilm/fujifilm-fujifilm-x-xf23mmf2.webp",
+      "sourcePage": "https://www.fujifilm-x.com/ko-kr/products/lenses/",
+      "sourceImage": "https://fujifilm-x.b-cdn.net/wp-content/uploads/2017/04/5_thum_xf23mmf2-r-wr.jpg?width=365&height=365",
+      "method": "official-page"
+    },
+    "Fujifilm XF23mmF2.8 R WR": {
+      "status": "ok",
+      "label": "Fujifilm XF23mmF2.8 R WR",
+      "src": "/assets/images/products/fujifilm/fujifilm-fujifilm-x-xf23mmf2-8.webp",
+      "sourcePage": "https://www.fujifilm-x.com/ko-kr/products/lenses/",
+      "sourceImage": "https://fujifilm-x.b-cdn.net/wp-content/uploads/2017/04/5_thum_xf23mmf2-r-wr.jpg?width=365&height=365",
+      "method": "official-page"
+    },
+    "Fujifilm XF27mmF2.8": {
+      "status": "ok",
+      "label": "Fujifilm XF27mmF2.8",
+      "src": "/assets/images/products/fujifilm/fujifilm-fujifilm-x-xf27mmf2-8.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:X-T2_XF27mmF2.8_20200904_5934.jpg",
+      "sourceImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/X-T2_XF27mmF2.8_20200904_5934.jpg/960px-X-T2_XF27mmF2.8_20200904_5934.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "method": "wikimedia-commons"
+    },
+    "Fujifilm XF27mmF2.8 R WR": {
+      "status": "ok",
+      "label": "Fujifilm XF27mmF2.8 R WR",
+      "src": "/assets/images/products/fujifilm/fujifilm-fujifilm-x-xf27mmf2-8-2.webp",
+      "sourcePage": "https://www.fujifilm-x.com/ko-kr/products/lenses/",
+      "sourceImage": "https://fujifilm-x.b-cdn.net/wp-content/uploads/2021/01/thum_xf27mmf28-r-wr-lboe.jpg?width=365&height=365",
+      "method": "official-page"
+    },
+    "Fujifilm XF30mmF2.8 R LM WR Macro": {
+      "status": "ok",
+      "label": "Fujifilm XF30mmF2.8 R LM WR Macro",
+      "src": "/assets/images/products/fujifilm/fujifilm-fujifilm-x-xf30mmf2-8.webp",
+      "sourcePage": "https://www.fujifilm-x.com/ko-kr/products/lenses/",
+      "sourceImage": "https://fujifilm-x.b-cdn.net/wp-content/uploads/2022/10/1_thum_xf30mmf28-r-lm-wr-macro_zxcv.jpg?width=365&height=365",
+      "method": "official-page"
+    },
+    "Fujifilm XF33mmF1.4 R LM WR": {
+      "status": "ok",
+      "label": "Fujifilm XF33mmF1.4 R LM WR",
+      "src": "/assets/images/products/fujifilm/fujifilm-fujifilm-x-xf33mmf1-4.webp",
+      "sourcePage": "https://www.fujifilm-x.com/ko-kr/products/lenses/",
+      "sourceImage": "https://fujifilm-x.b-cdn.net/wp-content/uploads/2021/09/1_thum_xf33mmf14-r-lm-wr_nakp-1.jpg?width=365&height=365",
+      "method": "official-page"
+    },
+    "Fujifilm XF35mmF1.4 R": {
+      "status": "ok",
+      "label": "Fujifilm XF35mmF1.4 R",
+      "src": "/assets/images/products/fujifilm/fujifilm-fujifilm-x-xf35mmf1-4.webp",
+      "sourcePage": "https://www.fujifilm-x.com/ko-kr/products/lenses/",
+      "sourceImage": "https://fujifilm-x.b-cdn.net/wp-content/uploads/2016/10/7_thum_xf35mmf1-4-r.jpg?width=365&height=365",
+      "method": "official-page"
+    },
+    "Fujifilm XF35mmF2 R WR": {
+      "status": "ok",
+      "label": "Fujifilm XF35mmF2 R WR",
+      "src": "/assets/images/products/fujifilm/fujifilm-fujifilm-x-xf35mmf2.webp",
+      "sourcePage": "https://www.fujifilm-x.com/ko-kr/products/lenses/",
+      "sourceImage": "https://fujifilm-x.b-cdn.net/wp-content/uploads/2016/10/8_thum_xf35mmf2-r-wr.jpg?width=365&height=365",
+      "method": "official-page"
+    },
+    "Fujifilm XF50mmF1.0 R WR": {
+      "status": "ok",
+      "label": "Fujifilm XF50mmF1.0 R WR",
+      "src": "/assets/images/products/fujifilm/fujifilm-fujifilm-x-xf50mmf1-0.webp",
+      "sourcePage": "https://www.fujifilm-x.com/ko-kr/products/lenses/",
+      "sourceImage": "https://fujifilm-x.b-cdn.net/wp-content/uploads/2020/09/xf50mmf1-r-wr_feature-ahaf.jpg?width=365&height=365",
+      "method": "official-page"
+    },
+    "Fujifilm XF50mmF2 R WR": {
+      "status": "ok",
+      "label": "Fujifilm XF50mmF2 R WR",
+      "src": "/assets/images/products/fujifilm/fujifilm-fujifilm-x-xf50mmf2.webp",
+      "sourcePage": "https://www.fujifilm-x.com/ko-kr/products/lenses/",
+      "sourceImage": "https://fujifilm-x.b-cdn.net/wp-content/uploads/2017/04/9_thum_xf50mmf2-r-wr.jpg?width=365&height=365",
+      "method": "official-page"
+    },
+    "Fujifilm XF56mmF1.2 R": {
+      "status": "ok",
+      "label": "Fujifilm XF56mmF1.2 R",
+      "src": "/assets/images/products/fujifilm/fujifilm-fujifilm-x-xf56mmf1-2.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Color_Test-_Fujifilm_XF56mm-F1.2_(37126838505).jpg",
+      "sourceImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Color_Test-_Fujifilm_XF56mm-F1.2_%2837126838505%29.jpg/960px-Color_Test-_Fujifilm_XF56mm-F1.2_%2837126838505%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "method": "wikimedia-commons"
+    },
+    "Fujifilm XF56mmF1.2 R APD": {
+      "status": "ok",
+      "label": "Fujifilm XF56mmF1.2 R APD",
+      "src": "/assets/images/products/fujifilm/fujifilm-fujifilm-x-xf56mmf1-2-2.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Color_Test-_Fujifilm_XF56mm-F1.2_(37126838505).jpg",
+      "sourceImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Color_Test-_Fujifilm_XF56mm-F1.2_%2837126838505%29.jpg/960px-Color_Test-_Fujifilm_XF56mm-F1.2_%2837126838505%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "method": "wikimedia-commons"
+    },
+    "Fujifilm XF56mmF1.2 R WR": {
+      "status": "ok",
+      "label": "Fujifilm XF56mmF1.2 R WR",
+      "src": "/assets/images/products/fujifilm/fujifilm-fujifilm-x-xf56mmf1-2-3.webp",
+      "sourcePage": "https://www.fujifilm-x.com/ko-kr/products/lenses/",
+      "sourceImage": "https://fujifilm-x.b-cdn.net/wp-content/uploads/2022/09/1_thum_xf56mmf12-r-wr_qwer.jpg?width=365&height=365",
+      "method": "official-page"
+    },
+    "Fujifilm XF60mmF2.4 R Macro": {
+      "status": "ok",
+      "label": "Fujifilm XF60mmF2.4 R Macro",
+      "src": "/assets/images/products/fujifilm/fujifilm-fujifilm-x-xf60mmf2-4.webp",
+      "sourcePage": "https://www.fujifilm-x.com/ko-kr/products/lenses/",
+      "sourceImage": "https://fujifilm-x.b-cdn.net/wp-content/uploads/2016/10/12_thum_xf60mmf2-4-r-macro.jpg?width=365&height=365",
+      "method": "official-page"
+    },
+    "Fujifilm XF80mmF2.8 R LM OIS WR Macro": {
+      "status": "ok",
+      "label": "Fujifilm XF80mmF2.8 R LM OIS WR Macro",
+      "src": "/assets/images/products/fujifilm/fujifilm-fujifilm-x-xf80mmf2-8.webp",
+      "sourcePage": "https://www.fujifilm-x.com/ko-kr/products/lenses/",
+      "sourceImage": "https://fujifilm-x.b-cdn.net/wp-content/uploads/2017/09/13_thum_xf80mmf2-8macro.jpg?width=365&height=365",
+      "method": "official-page"
+    },
+    "Fujifilm XF90mmF2 R LM WR": {
+      "status": "ok",
+      "label": "Fujifilm XF90mmF2 R LM WR",
+      "src": "/assets/images/products/fujifilm/fujifilm-fujifilm-x-xf90mmf2.webp",
+      "sourcePage": "https://www.fujifilm-x.com/ko-kr/products/lenses/",
+      "sourceImage": "https://fujifilm-x.b-cdn.net/wp-content/uploads/2016/10/14_thum_xf90mmf2-r-lm-wr.jpg?width=365&height=365",
+      "method": "official-page"
+    },
+    "Fujifilm XF200mmF2 R LM OIS WR": {
+      "status": "ok",
+      "label": "Fujifilm XF200mmF2 R LM OIS WR",
+      "src": "/assets/images/products/fujifilm/fujifilm-fujifilm-x-xf200mmf2.webp",
+      "sourcePage": "https://www.fujifilm-x.com/ko-kr/products/lenses/",
+      "sourceImage": "https://fujifilm-x.b-cdn.net/wp-content/uploads/2018/07/15_thum_xf200mmf2-r-lm-ois-wr_.jpg?width=365&height=365",
+      "method": "official-page"
+    },
+    "Fujifilm XF500mmF5.6 R LM OIS WR": {
+      "status": "ok",
+      "label": "Fujifilm XF500mmF5.6 R LM OIS WR",
+      "src": "/assets/images/products/fujifilm/fujifilm-fujifilm-x-xf500mmf5-6.webp",
+      "sourcePage": "https://www.fujifilm-x.com/ko-kr/products/lenses/",
+      "sourceImage": "https://fujifilm-x.b-cdn.net/wp-content/uploads/2024/10/product-thumb_xf500mmf56-1.jpg?width=365&height=365",
+      "method": "official-page"
+    },
+    "Fujifilm XC35mmF2": {
+      "status": "ok",
+      "label": "Fujifilm XC35mmF2",
+      "src": "/assets/images/products/fujifilm/fujifilm-fujifilm-x-xc35mmf2.webp",
+      "sourcePage": "https://www.fujifilm-x.com/ko-kr/products/lenses/",
+      "sourceImage": "https://fujifilm-x.b-cdn.net/wp-content/uploads/2020/01/xc35mmf2_thum.jpg?width=365&height=365",
+      "method": "official-page"
+    },
+    "Fujifilm XF8-16mmF2.8 R LM WR": {
+      "status": "ok",
+      "label": "Fujifilm XF8-16mmF2.8 R LM WR",
+      "src": "/assets/images/products/fujifilm/fujifilm-fujifilm-x-xf8-16mmf2-8.webp",
+      "sourcePage": "https://www.fujifilm-x.com/ko-kr/products/lenses/",
+      "sourceImage": "https://fujifilm-x.b-cdn.net/wp-content/uploads/2018/07/1_thum_xf8-16mmf2_8-r-lm-wr.jpg?width=365&height=365",
+      "method": "official-page"
+    },
+    "Fujifilm XF10-24mmF4 R OIS": {
+      "status": "ok",
+      "label": "Fujifilm XF10-24mmF4 R OIS",
+      "src": "/assets/images/products/fujifilm/fujifilm-fujifilm-x-xf10-24mmf4.webp",
+      "sourcePage": "https://www.fujifilm-x.com/ko-kr/products/lenses/",
+      "sourceImage": "https://fujifilm-x.b-cdn.net/wp-content/uploads/2020/10/xf10-24mmf4-r-ois-wr-product-list.jpg?width=365&height=365",
+      "method": "official-page"
+    },
+    "Fujifilm XF10-24mmF4 R OIS WR": {
+      "status": "ok",
+      "label": "Fujifilm XF10-24mmF4 R OIS WR",
+      "src": "/assets/images/products/fujifilm/fujifilm-fujifilm-x-xf10-24mmf4-2.webp",
+      "sourcePage": "https://www.fujifilm-x.com/ko-kr/products/lenses/",
+      "sourceImage": "https://fujifilm-x.b-cdn.net/wp-content/uploads/2020/10/xf10-24mmf4-r-ois-wr-product-list.jpg?width=365&height=365",
+      "method": "official-page"
+    },
+    "Fujifilm XF16-50mmF2.8-4.8 R LM WR": {
+      "status": "ok",
+      "label": "Fujifilm XF16-50mmF2.8-4.8 R LM WR",
+      "src": "/assets/images/products/fujifilm/fujifilm-fujifilm-x-xf16-50mmf2-8-4-8.webp",
+      "sourcePage": "https://www.fujifilm-x.com/ko-kr/products/lenses/",
+      "sourceImage": "https://fujifilm-x.b-cdn.net/wp-content/uploads/2024/05/XF16-50mm_lens_feature-image-2.jpg?width=365&height=365",
+      "method": "official-page"
+    },
+    "Fujifilm XF16-55mmF2.8 R LM WR": {
+      "status": "ok",
+      "label": "Fujifilm XF16-55mmF2.8 R LM WR",
+      "src": "/assets/images/products/fujifilm/fujifilm-fujifilm-x-xf16-55mmf2-8.webp",
+      "sourcePage": "https://www.fujifilm-x.com/ko-kr/products/lenses/",
+      "sourceImage": "https://fujifilm-x.b-cdn.net/wp-content/uploads/2016/10/2_thum_xf16-55mmf2-8-r-lm-wr.jpg?width=365&height=365",
+      "method": "official-page"
+    },
+    "Fujifilm XF16-55mmF2.8 R LM WR II": {
+      "status": "ok",
+      "label": "Fujifilm XF16-55mmF2.8 R LM WR II",
+      "src": "/assets/images/products/fujifilm/fujifilm-fujifilm-x-xf16-55mmf2-8-2.webp",
+      "sourcePage": "https://www.fujifilm-x.com/ko-kr/products/lenses/",
+      "sourceImage": "https://fujifilm-x.b-cdn.net/wp-content/uploads/2024/10/product-thumb_xf16-55mmf28-ii-1.jpg?width=365&height=365",
+      "method": "official-page"
+    },
+    "Fujifilm XF16-80mmF4 R OIS WR": {
+      "status": "ok",
+      "label": "Fujifilm XF16-80mmF4 R OIS WR",
+      "src": "/assets/images/products/fujifilm/fujifilm-fujifilm-x-xf16-80mmf4.webp",
+      "sourcePage": "https://www.fujifilm-x.com/ko-kr/products/lenses/",
+      "sourceImage": "https://fujifilm-x.b-cdn.net/wp-content/uploads/2019/10/xf16-80mmf4-r-ois-wr_thum.jpg?width=365&height=365",
+      "method": "official-page"
+    },
+    "Fujifilm XF18-55mmF2.8-4 R LM OIS": {
+      "status": "ok",
+      "label": "Fujifilm XF18-55mmF2.8-4 R LM OIS",
+      "src": "/assets/images/products/fujifilm/fujifilm-fujifilm-x-xf18-55mmf2-8-4.webp",
+      "sourcePage": "https://www.fujifilm-x.com/ko-kr/products/lenses/",
+      "sourceImage": "https://fujifilm-x.b-cdn.net/wp-content/uploads/2016/10/5_thum_xf18-55mmf2-8-4-r-lm-ois.jpg?width=365&height=365",
+      "method": "official-page"
+    },
+    "Fujifilm XF18-120mmF4 LM PZ WR": {
+      "status": "ok",
+      "label": "Fujifilm XF18-120mmF4 LM PZ WR",
+      "src": "/assets/images/products/fujifilm/fujifilm-fujifilm-x-xf18-120mmf4.webp",
+      "sourcePage": "https://www.fujifilm-x.com/ko-kr/products/lenses/",
+      "sourceImage": "https://fujifilm-x.b-cdn.net/wp-content/uploads/2022/05/1_thum_xf18-120mmf4-lm-pz-wr_fgrt.jpg?width=365&height=365",
+      "method": "official-page"
+    },
+    "Fujifilm XF18-135mmF3.5-5.6 R LM OIS WR": {
+      "status": "ok",
+      "label": "Fujifilm XF18-135mmF3.5-5.6 R LM OIS WR",
+      "src": "/assets/images/products/fujifilm/fujifilm-fujifilm-x-xf18-135mmf3-5-5-6.webp",
+      "sourcePage": "https://www.fujifilm-x.com/ko-kr/products/lenses/",
+      "sourceImage": "https://fujifilm-x.b-cdn.net/wp-content/uploads/2016/10/7_thum_xf18-135mmf3-5-5-6-r-lm-ois-wr.jpg.jpg?width=365&height=365",
+      "method": "official-page"
+    },
+    "Fujifilm XF50-140mmF2.8 R LM OIS WR": {
+      "status": "ok",
+      "label": "Fujifilm XF50-140mmF2.8 R LM OIS WR",
+      "src": "/assets/images/products/fujifilm/fujifilm-fujifilm-x-xf50-140mmf2-8.webp",
+      "sourcePage": "https://www.fujifilm-x.com/ko-kr/products/lenses/",
+      "sourceImage": "https://fujifilm-x.b-cdn.net/wp-content/uploads/2016/10/3_thum_xf50-140mmf2_8-r-lm-ois-wr.jpg?width=365&height=365",
+      "method": "official-page"
+    },
+    "Fujifilm XF55-200mmF3.5-4.8 R LM OIS": {
+      "status": "ok",
+      "label": "Fujifilm XF55-200mmF3.5-4.8 R LM OIS",
+      "src": "/assets/images/products/fujifilm/fujifilm-fujifilm-x-xf55-200mmf3-5-4-8.webp",
+      "sourcePage": "https://www.fujifilm-x.com/ko-kr/products/lenses/",
+      "sourceImage": "https://fujifilm-x.b-cdn.net/wp-content/uploads/2016/10/8_thum_xf55-200mmf3-5-4-8-r-lm-ois.jpg?width=365&height=365",
+      "method": "official-page"
+    },
+    "Fujifilm XF70-300mmF4-5.6 R LM OIS WR": {
+      "status": "ok",
+      "label": "Fujifilm XF70-300mmF4-5.6 R LM OIS WR",
+      "src": "/assets/images/products/fujifilm/fujifilm-fujifilm-x-xf70-300mmf4-5-6.webp",
+      "sourcePage": "https://www.fujifilm-x.com/ko-kr/products/lenses/",
+      "sourceImage": "https://fujifilm-x.b-cdn.net/wp-content/uploads/2021/01/thum_xf70-300mm-lboe.jpg?width=365&height=365",
+      "method": "official-page"
+    },
+    "Fujifilm XF100-400mmF4.5-5.6 R LM OIS WR": {
+      "status": "ok",
+      "label": "Fujifilm XF100-400mmF4.5-5.6 R LM OIS WR",
+      "src": "/assets/images/products/fujifilm/fujifilm-fujifilm-x-xf100-400mmf4-5-5-6.webp",
+      "sourcePage": "https://www.fujifilm-x.com/ko-kr/products/lenses/",
+      "sourceImage": "https://fujifilm-x.b-cdn.net/wp-content/uploads/2016/10/4_thum_xf100-400mmf4-5-5-6-r-lm-ois-wr.jpg?width=365&height=365",
+      "method": "official-page"
+    },
+    "Fujifilm XF150-600mmF5.6-8 R LM OIS WR": {
+      "status": "ok",
+      "label": "Fujifilm XF150-600mmF5.6-8 R LM OIS WR",
+      "src": "/assets/images/products/fujifilm/fujifilm-fujifilm-x-xf150-600mmf5-6-8.webp",
+      "sourcePage": "https://www.fujifilm-x.com/ko-kr/products/lenses/",
+      "sourceImage": "https://fujifilm-x.b-cdn.net/wp-content/uploads/2022/05/1_thum_xf150-600mmf56-8-r-lm-ois-wr_mgpf.jpg?width=365&height=365",
+      "method": "official-page"
+    },
+    "Fujifilm XC13-33mmF3.5-6.3 OIS": {
+      "status": "ok",
+      "label": "Fujifilm XC13-33mmF3.5-6.3 OIS",
+      "src": "/assets/images/products/fujifilm/fujifilm-fujifilm-x-xc13-33mmf3-5-6-3.webp",
+      "sourcePage": "https://www.fujifilm-x.com/ko-kr/products/lenses/",
+      "sourceImage": "https://fujifilm-x.b-cdn.net/wp-content/uploads/2016/10/7_thum_xf18-135mmf3-5-5-6-r-lm-ois-wr.jpg.jpg?width=365&height=365",
+      "method": "official-page"
+    },
+    "Fujifilm XC15-45mmF3.5-5.6 OIS PZ": {
+      "status": "ok",
+      "label": "Fujifilm XC15-45mmF3.5-5.6 OIS PZ",
+      "src": "/assets/images/products/fujifilm/fujifilm-fujifilm-x-xc15-45mmf3-5-5-6.webp",
+      "sourcePage": "https://www.fujifilm-x.com/ko-kr/products/lenses/",
+      "sourceImage": "https://fujifilm-x.b-cdn.net/wp-content/uploads/2019/10/9_thum_xc15-45mmf3-5-5-6-ois-pz-1.jpg?width=365&height=365",
+      "method": "official-page"
+    }
+  }
+}

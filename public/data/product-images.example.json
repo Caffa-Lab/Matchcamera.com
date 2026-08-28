@@ -1,0 +1,6 @@
+{
+  "_meta": {
+    "generatedBy": "scripts/update_product_images.py",
+    "description": "제품명 -> 로컬 이미지/공식 출처 매핑. 자동화 스크립트가 갱신합니다."
+  }
+}
