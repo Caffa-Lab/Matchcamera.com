@@ -5,38 +5,52 @@ const header = document.querySelector('[data-header]');
 const brandStyles = document.createElement('style');
 brandStyles.textContent = `
   .site-header{height:74px!important}
-  .top-nav{width:min(1760px,calc(100% - 32px))!important;gap:20px!important}
-  .brand{gap:12px!important;min-width:max-content}
-  .brand-logo{width:44px!important;height:44px!important;display:block;flex:0 0 auto;filter:drop-shadow(0 6px 12px rgba(89,96,239,.18))}
-  .brand-word{display:flex!important;align-items:baseline;gap:0;font-size:19px!important;letter-spacing:-.045em!important;line-height:1;white-space:nowrap}
-  .brand-word strong{font-weight:900;color:#121827}.brand-word span{font-weight:800;color:#665cf2}
-  .category-nav{gap:2px!important;min-width:0}
-  .category-nav a,.category-nav button{height:44px!important;padding:0 13px!important;font-size:13.5px!important;font-weight:800!important;border-radius:12px!important}
-  .global-search{width:266px!important;height:44px!important;border-radius:23px!important;flex:0 0 auto}
-  .global-search input{font-size:13.5px!important;padding-left:16px!important}
-  .global-search button{width:48px!important;height:44px!important;display:grid!important;place-items:center!important}
-  .global-search button svg{width:20px!important;height:20px!important;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round}
-  @media(max-width:1450px){
-    .top-nav{gap:12px!important}
-    .category-nav a,.category-nav button{padding:0 10px!important;font-size:13px!important}
-    .global-search{width:230px!important}
+  .top-nav{width:min(1760px,calc(100% - 32px))!important;gap:18px!important}
+  .brand{gap:11px!important;min-width:max-content}
+  .brand-logo{width:44px!important;height:44px!important;display:block!important;flex:0 0 auto!important;filter:drop-shadow(0 5px 11px rgba(89,96,239,.16))}
+  .brand-word{display:flex!important;align-items:baseline!important;gap:0!important;font-size:19px!important;letter-spacing:-.04em!important;line-height:1!important;white-space:nowrap!important}
+  .brand-word strong{font-weight:900!important;color:#121827!important}
+  .brand-word span{font-weight:800!important;color:#665cf2!important}
+
+  .category-nav{gap:1px!important;min-width:0!important}
+  .category-nav a,.category-nav button{
+    height:44px!important;
+    padding:0 12px!important;
+    font-size:14px!important;
+    line-height:1!important;
+    font-weight:700!important;
+    border-radius:10px!important;
   }
-  @media(max-width:1180px){.global-search{display:none!important}}
+  .category-nav a.active{font-weight:900!important}
+
+  .global-search{width:266px!important;height:44px!important;border-radius:22px!important;flex:0 0 auto!important}
+  .global-search input{font-size:13px!important;line-height:1!important;padding:0 6px 0 15px!important}
+  .global-search button{width:48px!important;height:44px!important;display:grid!important;place-items:center!important;padding:0!important}
+  .global-search button svg{width:20px!important;height:20px!important;fill:none!important;stroke:currentColor!important;stroke-width:2!important;stroke-linecap:round!important}
+
+  @media(max-width:1450px){
+    .top-nav{gap:10px!important}
+    .category-nav a,.category-nav button{padding:0 9px!important;font-size:13px!important}
+    .global-search{width:220px!important}
+  }
+  @media(max-width:1180px){
+    .global-search{display:none!important}
+  }
   @media(max-width:980px){
     .site-header{height:68px!important}
     .brand-logo{width:40px!important;height:40px!important}
     .brand-word{font-size:17px!important}
-    .category-nav{overflow:auto!important;scrollbar-width:none}
-    .category-nav::-webkit-scrollbar{display:none}
+    .category-nav{overflow-x:auto!important;overflow-y:hidden!important;scrollbar-width:none!important}
+    .category-nav::-webkit-scrollbar{display:none!important}
   }
   @media(max-width:620px){
     .site-header{height:63px!important}
     .top-nav{width:calc(100% - 20px)!important}
     .brand-logo{width:36px!important;height:36px!important}
     .brand-word{display:none!important}
-    .category-nav a,.category-nav button{height:38px!important;padding:0 8px!important;font-size:11.5px!important}
+    .category-nav a,.category-nav button{height:38px!important;padding:0 8px!important;font-size:12px!important}
   }
-`;
+`
 document.head.appendChild(brandStyles);
 
 const logoMark = `
