@@ -959,13 +959,890 @@
       "candidateScore": 879,
       "width": 144,
       "height": 108
+    },
+    "lens:Sony FE 85mm F1.4 GM II": {
+      "status": "ok",
+      "kind": "lens",
+      "modelCode": "SEL85F14GM2",
+      "src": "/assets/images/products/sony/sony-sony-e-sel85f14gm2.webp",
+      "sourcePage": "https://support.d-imaging.sony.co.jp/www/cscs/accessories/?area=ap&lang=ko&mdl=SEL85F14GM2",
+      "sourceImage": "https://support.d-imaging.sony.co.jp/www/cscs/common/product_image/middle/SEL85F14GM2.jpg",
+      "extractMethod": "direct-image",
+      "candidateScore": 879,
+      "width": 144,
+      "height": 108
+    },
+    "lens:Sony FE 85mm F1.8": {
+      "status": "ok",
+      "kind": "lens",
+      "modelCode": "SEL85F18",
+      "src": "/assets/images/products/sony/sony-sony-e-sel85f18.webp",
+      "sourcePage": "https://support.d-imaging.sony.co.jp/www/cscs/accessories/?area=ap&lang=ko&mdl=SEL85F18",
+      "sourceImage": "https://support.d-imaging.sony.co.jp/www/cscs/common/product_image/middle/SEL85F18.jpg",
+      "extractMethod": "direct-image",
+      "candidateScore": 879,
+      "width": 144,
+      "height": 108
+    },
+    "lens:Sony FE 90mm F2.8 Macro G OSS": {
+      "status": "ok",
+      "kind": "lens",
+      "modelCode": "SEL90M28G",
+      "src": "/assets/images/products/sony/sony-sony-e-sel90m28g.webp",
+      "sourcePage": "https://support.d-imaging.sony.co.jp/www/cscs/accessories/?area=ap&lang=ko&mdl=SEL90M28G",
+      "sourceImage": "https://support.d-imaging.sony.co.jp/www/cscs/common/product_image/middle/SEL90M28G.jpg",
+      "extractMethod": "direct-image",
+      "candidateScore": 923,
+      "width": 144,
+      "height": 108
+    },
+    "lens:Sony FE 100mm F2.8 STF GM OSS": {
+      "status": "ok",
+      "kind": "lens",
+      "modelCode": "SEL100F28GM",
+      "src": "/assets/images/products/sony/sony-sony-e-sel100f28gm.webp",
+      "sourcePage": "https://support.d-imaging.sony.co.jp/www/cscs/accessories/?area=ap&lang=ko&mdl=SEL100F28GM",
+      "sourceImage": "https://support.d-imaging.sony.co.jp/www/cscs/common/product_image/middle/SEL100F28GM.jpg",
+      "extractMethod": "direct-image",
+      "candidateScore": 923,
+      "width": 144,
+      "height": 108
+    },
+    "lens:Sony FE 100mm F2.8 Macro GM OSS": {
+      "status": "ok",
+      "kind": "lens",
+      "modelCode": "SEL100M28GM",
+      "src": "/assets/images/products/sony/sony-sony-e-sel100m28gm.webp",
+      "sourcePage": "https://support.d-imaging.sony.co.jp/www/cscs/accessories/?area=ap&lang=ko&mdl=SEL100M28GM",
+      "sourceImage": "https://support.d-imaging.sony.co.jp/www/cscs/common/product_image/middle/SEL100M28GM.jpg",
+      "extractMethod": "direct-image",
+      "candidateScore": 923,
+      "width": 144,
+      "height": 108
+    },
+    "lens:Sony FE 135mm F1.8 GM": {
+      "status": "ok",
+      "kind": "lens",
+      "modelCode": "SEL135F18GM",
+      "src": "/assets/images/products/sony/sony-sony-e-sel135f18gm.webp",
+      "sourcePage": "https://support.d-imaging.sony.co.jp/www/cscs/accessories/?area=ap&lang=ko&mdl=SEL135F18GM",
+      "sourceImage": "https://support.d-imaging.sony.co.jp/www/cscs/common/product_image/middle/SEL135F18GM.jpg",
+      "extractMethod": "direct-image",
+      "candidateScore": 879,
+      "width": 144,
+      "height": 108
+    },
+    "lens:Sony FE 300mm F2.8 GM OSS": {
+      "status": "ok",
+      "kind": "lens",
+      "modelCode": "SEL300F28GM",
+      "src": "/assets/images/products/sony/sony-sony-e-sel300f28gm.webp",
+      "sourcePage": "https://support.d-imaging.sony.co.jp/www/cscs/accessories/?area=ap&lang=ko&mdl=SEL300F28GM",
+      "sourceImage": "https://support.d-imaging.sony.co.jp/www/cscs/common/product_image/middle/SEL300F28GM.jpg",
+      "extractMethod": "direct-image",
+      "candidateScore": 901,
+      "width": 144,
+      "height": 108
+    },
+    "lens:Sony FE 400mm F2.8 GM OSS": {
+      "status": "ok",
+      "kind": "lens",
+      "modelCode": "SEL400F28GM",
+      "src": "/assets/images/products/sony/sony-sony-e-sel400f28gm.webp",
+      "sourcePage": "https://support.d-imaging.sony.co.jp/www/cscs/accessories/?area=ap&lang=ko&mdl=SEL400F28GM",
+      "sourceImage": "https://support.d-imaging.sony.co.jp/www/cscs/common/product_image/middle/SEL400F28GM.jpg",
+      "extractMethod": "direct-image",
+      "candidateScore": 901,
+      "width": 144,
+      "height": 108
+    },
+    "lens:Sony FE 600mm F4 GM OSS": {
+      "status": "ok",
+      "kind": "lens",
+      "modelCode": "SEL600F40GM",
+      "src": "/assets/images/products/sony/sony-sony-e-sel600f40gm.webp",
+      "sourcePage": "https://support.d-imaging.sony.co.jp/www/cscs/accessories/?area=ap&lang=ko&mdl=SEL600F40GM",
+      "sourceImage": "https://support.d-imaging.sony.co.jp/www/cscs/common/product_image/middle/SEL600F40GM.jpg",
+      "extractMethod": "direct-image",
+      "candidateScore": 879,
+      "width": 144,
+      "height": 108
+    },
+    "lens:Sony E 10-18mm F4 OSS": {
+      "status": "ok",
+      "kind": "lens",
+      "modelCode": "SEL1018",
+      "src": "/assets/images/products/sony/sony-sony-e-sel1018.webp",
+      "sourcePage": "https://support.d-imaging.sony.co.jp/www/cscs/accessories/?area=ap&lang=ko&mdl=SEL1018",
+      "sourceImage": "https://support.d-imaging.sony.co.jp/www/cscs/common/product_image/middle/SEL1018.jpg",
+      "extractMethod": "direct-image",
+      "candidateScore": 879,
+      "width": 144,
+      "height": 108
+    },
+    "lens:Sony E PZ 10-20mm F4 G": {
+      "status": "ok",
+      "kind": "lens",
+      "modelCode": "SELP1020G",
+      "src": "/assets/images/products/sony/sony-sony-e-selp1020g.webp",
+      "sourcePage": "https://support.d-imaging.sony.co.jp/www/cscs/accessories/?area=ap&lang=ko&mdl=SELP1020G",
+      "sourceImage": "https://support.d-imaging.sony.co.jp/www/cscs/common/product_image/middle/SELP1020G.jpg",
+      "extractMethod": "direct-image",
+      "candidateScore": 857,
+      "width": 144,
+      "height": 108
+    },
+    "lens:Sony E PZ 16-50mm F3.5-5.6 OSS": {
+      "status": "ok",
+      "kind": "lens",
+      "modelCode": "SELP1650",
+      "src": "/assets/images/products/sony/sony-sony-e-selp1650.webp",
+      "sourcePage": "https://support.d-imaging.sony.co.jp/www/cscs/accessories/?area=ap&lang=ko&mdl=SELP1650",
+      "sourceImage": "https://support.d-imaging.sony.co.jp/www/cscs/common/product_image/middle/SELP1650.jpg",
+      "extractMethod": "direct-image",
+      "candidateScore": 901,
+      "width": 144,
+      "height": 108
+    },
+    "lens:Sony E PZ 16-50mm F3.5-5.6 OSS II": {
+      "status": "ok",
+      "kind": "lens",
+      "modelCode": "SELP16502",
+      "src": "/assets/images/products/sony/sony-sony-e-selp16502.webp",
+      "sourcePage": "https://support.d-imaging.sony.co.jp/www/cscs/accessories/?area=ap&lang=ko&mdl=SELP16502",
+      "sourceImage": "https://support.d-imaging.sony.co.jp/www/cscs/common/product_image/middle/SELP16502.jpg",
+      "extractMethod": "direct-image",
+      "candidateScore": 901,
+      "width": 144,
+      "height": 108
+    },
+    "lens:Sony E 16-55mm F2.8 G": {
+      "status": "ok",
+      "kind": "lens",
+      "modelCode": "SEL1655G",
+      "src": "/assets/images/products/sony/sony-sony-e-sel1655g.webp",
+      "sourcePage": "https://support.d-imaging.sony.co.jp/www/cscs/accessories/?area=ap&lang=ko&mdl=SEL1655G",
+      "sourceImage": "https://support.d-imaging.sony.co.jp/www/cscs/common/product_image/middle/SEL1655G.jpg",
+      "extractMethod": "direct-image",
+      "candidateScore": 879,
+      "width": 144,
+      "height": 108
+    },
+    "lens:Sony Vario-Tessar T* E 16-70mm F4 ZA OSS": {
+      "status": "ok",
+      "kind": "lens",
+      "modelCode": "SEL1670Z",
+      "src": "/assets/images/products/sony/sony-sony-e-sel1670z.webp",
+      "sourcePage": "https://support.d-imaging.sony.co.jp/www/cscs/accessories/?area=ap&lang=ko&mdl=SEL1670Z",
+      "sourceImage": "https://support.d-imaging.sony.co.jp/www/cscs/common/product_image/middle/SEL1670Z.jpg",
+      "extractMethod": "direct-image",
+      "candidateScore": 901,
+      "width": 144,
+      "height": 108
+    },
+    "lens:Sony E 18-50mm F4-5.6": {
+      "status": "failed",
+      "codes": [
+        "SEL1850"
+      ],
+      "reason": "페이지에서 모델 코드 SEL1850를 확인하지 못함"
+    },
+    "lens:Sony E 18-55mm F3.5-5.6 OSS": {
+      "status": "ok",
+      "kind": "lens",
+      "modelCode": "SEL1855",
+      "src": "/assets/images/products/sony/sony-sony-e-sel1855.webp",
+      "sourcePage": "https://support.d-imaging.sony.co.jp/www/cscs/accessories/?area=ap&lang=ko&mdl=SEL1855",
+      "sourceImage": "https://support.d-imaging.sony.co.jp/www/cscs/common/product_image/middle/SEL1855.jpg",
+      "extractMethod": "direct-image",
+      "candidateScore": 901,
+      "width": 144,
+      "height": 108
+    },
+    "lens:Sony E PZ 18-105mm F4 G OSS": {
+      "status": "ok",
+      "kind": "lens",
+      "modelCode": "SELP18105G",
+      "src": "/assets/images/products/sony/sony-sony-e-selp18105g.webp",
+      "sourcePage": "https://support.d-imaging.sony.co.jp/www/cscs/accessories/?area=ap&lang=ko&mdl=SELP18105G",
+      "sourceImage": "https://support.d-imaging.sony.co.jp/www/cscs/common/product_image/middle/SELP18105G.jpg",
+      "extractMethod": "direct-image",
+      "candidateScore": 879,
+      "width": 144,
+      "height": 108
+    },
+    "lens:Sony E PZ 18-110mm F4 G OSS": {
+      "status": "ok",
+      "kind": "lens",
+      "modelCode": "SELP18110G",
+      "src": "/assets/images/products/sony/sony-sony-e-selp18110g.webp",
+      "sourcePage": "https://support.d-imaging.sony.co.jp/www/cscs/accessories/?area=ap&lang=ko&mdl=SELP18110G",
+      "sourceImage": "https://support.d-imaging.sony.co.jp/www/cscs/common/product_image/middle/SELP18110G.jpg",
+      "extractMethod": "direct-image",
+      "candidateScore": 879,
+      "width": 144,
+      "height": 107
+    },
+    "lens:Sony E 18-135mm F3.5-5.6 OSS": {
+      "status": "ok",
+      "kind": "lens",
+      "modelCode": "SEL18135",
+      "src": "/assets/images/products/sony/sony-sony-e-sel18135.webp",
+      "sourcePage": "https://support.d-imaging.sony.co.jp/www/cscs/accessories/?area=ap&lang=ko&mdl=SEL18135",
+      "sourceImage": "https://support.d-imaging.sony.co.jp/www/cscs/common/product_image/middle/SEL18135.jpg",
+      "extractMethod": "direct-image",
+      "candidateScore": 901,
+      "width": 144,
+      "height": 108
+    },
+    "lens:Sony E 18-200mm F3.5-6.3 OSS": {
+      "status": "ok",
+      "kind": "lens",
+      "modelCode": "SEL18200",
+      "src": "/assets/images/products/sony/sony-sony-e-sel18200.webp",
+      "sourcePage": "https://support.d-imaging.sony.co.jp/www/cscs/accessories/?area=ap&lang=ko&mdl=SEL18200",
+      "sourceImage": "https://support.d-imaging.sony.co.jp/www/cscs/common/product_image/middle/SEL18200.jpg",
+      "extractMethod": "direct-image",
+      "candidateScore": 901,
+      "width": 144,
+      "height": 108
+    },
+    "lens:Sony E 18-200mm F3.5-6.3 OSS LE": {
+      "status": "ok",
+      "kind": "lens",
+      "modelCode": "SEL18200LE",
+      "src": "/assets/images/products/sony/sony-sony-e-sel18200le.webp",
+      "sourcePage": "https://support.d-imaging.sony.co.jp/www/cscs/accessories/?area=ap&lang=ko&mdl=SEL18200LE",
+      "sourceImage": "https://support.d-imaging.sony.co.jp/www/cscs/common/product_image/middle/SEL18200LE.jpg",
+      "extractMethod": "direct-image",
+      "candidateScore": 901,
+      "width": 144,
+      "height": 108
+    },
+    "lens:Sony E PZ 18-200mm F3.5-6.3 OSS": {
+      "status": "ok",
+      "kind": "lens",
+      "modelCode": "SELP18200",
+      "src": "/assets/images/products/sony/sony-sony-e-selp18200.webp",
+      "sourcePage": "https://support.d-imaging.sony.co.jp/www/cscs/accessories/?area=ap&lang=ko&mdl=SELP18200",
+      "sourceImage": "https://support.d-imaging.sony.co.jp/www/cscs/common/product_image/middle/SELP18200.jpg",
+      "extractMethod": "direct-image",
+      "candidateScore": 901,
+      "width": 144,
+      "height": 108
+    },
+    "lens:Sony E 55-210mm F4.5-6.3 OSS": {
+      "status": "ok",
+      "kind": "lens",
+      "modelCode": "SEL55210",
+      "src": "/assets/images/products/sony/sony-sony-e-sel55210.webp",
+      "sourcePage": "https://support.d-imaging.sony.co.jp/www/cscs/accessories/?area=ap&lang=ko&mdl=SEL55210",
+      "sourceImage": "https://support.d-imaging.sony.co.jp/www/cscs/common/product_image/middle/SEL55210.jpg",
+      "extractMethod": "direct-image",
+      "candidateScore": 901,
+      "width": 144,
+      "height": 108
+    },
+    "lens:Sony E 70-350mm F4.5-6.3 G OSS": {
+      "status": "ok",
+      "kind": "lens",
+      "modelCode": "SEL70350G",
+      "src": "/assets/images/products/sony/sony-sony-e-sel70350g.webp",
+      "sourcePage": "https://support.d-imaging.sony.co.jp/www/cscs/accessories/?area=ap&lang=ko&mdl=SEL70350G",
+      "sourceImage": "https://support.d-imaging.sony.co.jp/www/cscs/common/product_image/middle/SEL70350G.jpg",
+      "extractMethod": "direct-image",
+      "candidateScore": 901,
+      "width": 144,
+      "height": 108
+    },
+    "lens:Sony FE 12-24mm F2.8 GM": {
+      "status": "ok",
+      "kind": "lens",
+      "modelCode": "SEL1224GM",
+      "src": "/assets/images/products/sony/sony-sony-e-sel1224gm.webp",
+      "sourcePage": "https://support.d-imaging.sony.co.jp/www/cscs/accessories/?area=ap&lang=ko&mdl=SEL1224GM",
+      "sourceImage": "https://support.d-imaging.sony.co.jp/www/cscs/common/product_image/middle/SEL1224GM.jpg",
+      "extractMethod": "direct-image",
+      "candidateScore": 879,
+      "width": 144,
+      "height": 108
+    },
+    "lens:Sony FE 12-24mm F4 G": {
+      "status": "ok",
+      "kind": "lens",
+      "modelCode": "SEL1224G",
+      "src": "/assets/images/products/sony/sony-sony-e-sel1224g.webp",
+      "sourcePage": "https://support.d-imaging.sony.co.jp/www/cscs/accessories/?area=ap&lang=ko&mdl=SEL1224G",
+      "sourceImage": "https://support.d-imaging.sony.co.jp/www/cscs/common/product_image/middle/SEL1224G.jpg",
+      "extractMethod": "direct-image",
+      "candidateScore": 857,
+      "width": 144,
+      "height": 108
+    },
+    "lens:Sony FE 16-25mm F2.8 G": {
+      "status": "ok",
+      "kind": "lens",
+      "modelCode": "SEL1625G",
+      "src": "/assets/images/products/sony/sony-sony-e-sel1625g.webp",
+      "sourcePage": "https://support.d-imaging.sony.co.jp/www/cscs/accessories/?area=ap&lang=ko&mdl=SEL1625G",
+      "sourceImage": "https://support.d-imaging.sony.co.jp/www/cscs/common/product_image/middle/SEL1625G.jpg",
+      "extractMethod": "direct-image",
+      "candidateScore": 879,
+      "width": 144,
+      "height": 108
+    },
+    "lens:Sony FE 16-35mm F2.8 GM": {
+      "status": "ok",
+      "kind": "lens",
+      "modelCode": "SEL1635GM",
+      "src": "/assets/images/products/sony/sony-sony-e-sel1635gm.webp",
+      "sourcePage": "https://support.d-imaging.sony.co.jp/www/cscs/accessories/?area=ap&lang=ko&mdl=SEL1635GM",
+      "sourceImage": "https://support.d-imaging.sony.co.jp/www/cscs/common/product_image/middle/SEL1635GM.jpg",
+      "extractMethod": "direct-image",
+      "candidateScore": 879,
+      "width": 144,
+      "height": 108
+    },
+    "lens:Sony FE 16-35mm F2.8 GM II": {
+      "status": "ok",
+      "kind": "lens",
+      "modelCode": "SEL1635GM2",
+      "src": "/assets/images/products/sony/sony-sony-e-sel1635gm2.webp",
+      "sourcePage": "https://support.d-imaging.sony.co.jp/www/cscs/accessories/?area=ap&lang=ko&mdl=SEL1635GM2",
+      "sourceImage": "https://support.d-imaging.sony.co.jp/www/cscs/common/product_image/middle/SEL1635GM2.jpg",
+      "extractMethod": "direct-image",
+      "candidateScore": 879,
+      "width": 144,
+      "height": 108
+    },
+    "lens:Sony FE C 16-35mm T3.1 G": {
+      "status": "ok",
+      "kind": "lens",
+      "modelCode": "SELC1635G",
+      "src": "/assets/images/products/sony/sony-sony-e-selc1635g.webp",
+      "sourcePage": "https://support.d-imaging.sony.co.jp/www/cscs/accessories/?area=ap&lang=ko&mdl=SELC1635G",
+      "sourceImage": "https://support.d-imaging.sony.co.jp/www/cscs/common/product_image/middle/SELC1635G.jpg",
+      "extractMethod": "direct-image",
+      "candidateScore": 879,
+      "width": 144,
+      "height": 108
+    },
+    "lens:Sony Vario-Tessar T* FE 16-35mm F4 ZA OSS": {
+      "status": "ok",
+      "kind": "lens",
+      "modelCode": "SEL1635Z",
+      "src": "/assets/images/products/sony/sony-sony-e-sel1635z.webp",
+      "sourcePage": "https://support.d-imaging.sony.co.jp/www/cscs/accessories/?area=ap&lang=ko&mdl=SEL1635Z",
+      "sourceImage": "https://support.d-imaging.sony.co.jp/www/cscs/common/product_image/middle/SEL1635Z.jpg",
+      "extractMethod": "direct-image",
+      "candidateScore": 901,
+      "width": 144,
+      "height": 108
+    },
+    "lens:Sony FE PZ 16-35mm F4 G": {
+      "status": "ok",
+      "kind": "lens",
+      "modelCode": "SELP1635G",
+      "src": "/assets/images/products/sony/sony-sony-e-selp1635g.webp",
+      "sourcePage": "https://support.d-imaging.sony.co.jp/www/cscs/accessories/?area=ap&lang=ko&mdl=SELP1635G",
+      "sourceImage": "https://support.d-imaging.sony.co.jp/www/cscs/common/product_image/middle/SELP1635G.jpg",
+      "extractMethod": "direct-image",
+      "candidateScore": 857,
+      "width": 144,
+      "height": 108
+    },
+    "lens:Sony FE 20-70mm F4 G": {
+      "status": "ok",
+      "kind": "lens",
+      "modelCode": "SEL2070G",
+      "src": "/assets/images/products/sony/sony-sony-e-sel2070g.webp",
+      "sourcePage": "https://support.d-imaging.sony.co.jp/www/cscs/accessories/?area=ap&lang=ko&mdl=SEL2070G",
+      "sourceImage": "https://support.d-imaging.sony.co.jp/www/cscs/common/product_image/middle/SEL2070G.jpg",
+      "extractMethod": "direct-image",
+      "candidateScore": 857,
+      "width": 144,
+      "height": 108
+    },
+    "lens:Sony FE 24-50mm F2.8 G": {
+      "status": "ok",
+      "kind": "lens",
+      "modelCode": "SEL2450G",
+      "src": "/assets/images/products/sony/sony-sony-e-sel2450g.webp",
+      "sourcePage": "https://support.d-imaging.sony.co.jp/www/cscs/accessories/?area=ap&lang=ko&mdl=SEL2450G",
+      "sourceImage": "https://support.d-imaging.sony.co.jp/www/cscs/common/product_image/middle/SEL2450G.jpg",
+      "extractMethod": "direct-image",
+      "candidateScore": 879,
+      "width": 144,
+      "height": 108
+    },
+    "lens:Sony FE 24-70mm F2.8 GM": {
+      "status": "ok",
+      "kind": "lens",
+      "modelCode": "SEL2470GM",
+      "src": "/assets/images/products/sony/sony-sony-e-sel2470gm.webp",
+      "sourcePage": "https://support.d-imaging.sony.co.jp/www/cscs/accessories/?area=ap&lang=ko&mdl=SEL2470GM",
+      "sourceImage": "https://support.d-imaging.sony.co.jp/www/cscs/common/product_image/middle/SEL2470GM.jpg",
+      "extractMethod": "direct-image",
+      "candidateScore": 879,
+      "width": 144,
+      "height": 108
+    },
+    "lens:Sony FE 24-70mm F2.8 GM II": {
+      "status": "ok",
+      "kind": "lens",
+      "modelCode": "SEL2470GM2",
+      "src": "/assets/images/products/sony/sony-sony-e-sel2470gm2.webp",
+      "sourcePage": "https://support.d-imaging.sony.co.jp/www/cscs/accessories/?area=ap&lang=ko&mdl=SEL2470GM2",
+      "sourceImage": "https://support.d-imaging.sony.co.jp/www/cscs/common/product_image/middle/SEL2470GM2.jpg",
+      "extractMethod": "direct-image",
+      "candidateScore": 879,
+      "width": 144,
+      "height": 108
+    },
+    "lens:Sony Vario-Tessar T* FE 24-70mm F4 ZA OSS": {
+      "status": "ok",
+      "kind": "lens",
+      "modelCode": "SEL2470Z",
+      "src": "/assets/images/products/sony/sony-sony-e-sel2470z.webp",
+      "sourcePage": "https://support.d-imaging.sony.co.jp/www/cscs/accessories/?area=ap&lang=ko&mdl=SEL2470Z",
+      "sourceImage": "https://support.d-imaging.sony.co.jp/www/cscs/common/product_image/middle/SEL2470Z.jpg",
+      "extractMethod": "direct-image",
+      "candidateScore": 901,
+      "width": 144,
+      "height": 108
+    },
+    "lens:Sony FE 24-105mm F4 G OSS": {
+      "status": "ok",
+      "kind": "lens",
+      "modelCode": "SEL24105G",
+      "src": "/assets/images/products/sony/sony-sony-e-sel24105g.webp",
+      "sourcePage": "https://support.d-imaging.sony.co.jp/www/cscs/accessories/?area=ap&lang=ko&mdl=SEL24105G",
+      "sourceImage": "https://support.d-imaging.sony.co.jp/www/cscs/common/product_image/middle/SEL24105G.jpg",
+      "extractMethod": "direct-image",
+      "candidateScore": 879,
+      "width": 144,
+      "height": 108
+    },
+    "lens:Sony FE 24-240mm F3.5-6.3 OSS": {
+      "status": "ok",
+      "kind": "lens",
+      "modelCode": "SEL24240",
+      "src": "/assets/images/products/sony/sony-sony-e-sel24240.webp",
+      "sourcePage": "https://support.d-imaging.sony.co.jp/www/cscs/accessories/?area=ap&lang=ko&mdl=SEL24240",
+      "sourceImage": "https://support.d-imaging.sony.co.jp/www/cscs/common/product_image/middle/SEL24240.jpg",
+      "extractMethod": "direct-image",
+      "candidateScore": 901,
+      "width": 144,
+      "height": 108
+    },
+    "lens:Sony FE 28-60mm F4-5.6": {
+      "status": "ok",
+      "kind": "lens",
+      "modelCode": "SEL2860",
+      "src": "/assets/images/products/sony/sony-sony-e-sel2860.webp",
+      "sourcePage": "https://support.d-imaging.sony.co.jp/www/cscs/accessories/?area=ap&lang=ko&mdl=SEL2860",
+      "sourceImage": "https://support.d-imaging.sony.co.jp/www/cscs/common/product_image/middle/SEL2860.jpg",
+      "extractMethod": "direct-image",
+      "candidateScore": 879,
+      "width": 144,
+      "height": 108
+    },
+    "lens:Sony FE 28-70mm F2 GM": {
+      "status": "ok",
+      "kind": "lens",
+      "modelCode": "SEL2870GM",
+      "src": "/assets/images/products/sony/sony-sony-e-sel2870gm.webp",
+      "sourcePage": "https://support.d-imaging.sony.co.jp/www/cscs/accessories/?area=ap&lang=ko&mdl=SEL2870GM",
+      "sourceImage": "https://support.d-imaging.sony.co.jp/www/cscs/common/product_image/middle/SEL2870GM.jpg",
+      "extractMethod": "direct-image",
+      "candidateScore": 857,
+      "width": 144,
+      "height": 108
+    },
+    "lens:Sony FE 28-70mm F3.5-5.6 OSS": {
+      "status": "ok",
+      "kind": "lens",
+      "modelCode": "SEL2870",
+      "src": "/assets/images/products/sony/sony-sony-e-sel2870.webp",
+      "sourcePage": "https://support.d-imaging.sony.co.jp/www/cscs/accessories/?area=ap&lang=ko&mdl=SEL2870",
+      "sourceImage": "https://support.d-imaging.sony.co.jp/www/cscs/common/product_image/middle/SEL2870.jpg",
+      "extractMethod": "direct-image",
+      "candidateScore": 901,
+      "width": 144,
+      "height": 108
+    },
+    "lens:Sony FE 28-70mm F3.5-5.6 OSS II": {
+      "status": "ok",
+      "kind": "lens",
+      "modelCode": "SEL28702",
+      "src": "/assets/images/products/sony/sony-sony-e-sel28702.webp",
+      "sourcePage": "https://support.d-imaging.sony.co.jp/www/cscs/accessories/?area=ap&lang=ko&mdl=SEL28702",
+      "sourceImage": "https://support.d-imaging.sony.co.jp/www/cscs/common/product_image/middle/SEL28702.jpg",
+      "extractMethod": "direct-image",
+      "candidateScore": 901,
+      "width": 144,
+      "height": 108
+    },
+    "lens:Sony FE PZ 28-135mm F4 G OSS": {
+      "status": "ok",
+      "kind": "lens",
+      "modelCode": "SELP28135G",
+      "src": "/assets/images/products/sony/sony-sony-e-selp28135g.webp",
+      "sourcePage": "https://support.d-imaging.sony.co.jp/www/cscs/accessories/?area=ap&lang=ko&mdl=SELP28135G",
+      "sourceImage": "https://support.d-imaging.sony.co.jp/www/cscs/common/product_image/middle/SELP28135G.jpg",
+      "extractMethod": "direct-image",
+      "candidateScore": 879,
+      "width": 144,
+      "height": 108
+    },
+    "lens:Sony FE 50-150mm F2 GM": {
+      "status": "ok",
+      "kind": "lens",
+      "modelCode": "SEL50150GM",
+      "src": "/assets/images/products/sony/sony-sony-e-sel50150gm.webp",
+      "sourcePage": "https://support.d-imaging.sony.co.jp/www/cscs/accessories/?area=ap&lang=ko&mdl=SEL50150GM",
+      "sourceImage": "https://support.d-imaging.sony.co.jp/www/cscs/common/product_image/middle/SEL50150GM.jpg",
+      "extractMethod": "direct-image",
+      "candidateScore": 857,
+      "width": 144,
+      "height": 108
+    },
+    "lens:Sony FE 70-200mm F2.8 GM OSS": {
+      "status": "ok",
+      "kind": "lens",
+      "modelCode": "SEL70200GM",
+      "src": "/assets/images/products/sony/sony-sony-e-sel70200gm.webp",
+      "sourcePage": "https://support.d-imaging.sony.co.jp/www/cscs/accessories/?area=ap&lang=ko&mdl=SEL70200GM",
+      "sourceImage": "https://support.d-imaging.sony.co.jp/www/cscs/common/product_image/middle/SEL70200GM.jpg",
+      "extractMethod": "direct-image",
+      "candidateScore": 901,
+      "width": 144,
+      "height": 108
+    },
+    "lens:Sony FE 70-200mm F2.8 GM OSS II": {
+      "status": "ok",
+      "kind": "lens",
+      "modelCode": "SEL70200GM2",
+      "src": "/assets/images/products/sony/sony-sony-e-sel70200gm2.webp",
+      "sourcePage": "https://support.d-imaging.sony.co.jp/www/cscs/accessories/?area=ap&lang=ko&mdl=SEL70200GM2",
+      "sourceImage": "https://support.d-imaging.sony.co.jp/www/cscs/common/product_image/middle/SEL70200GM2.jpg",
+      "extractMethod": "direct-image",
+      "candidateScore": 901,
+      "width": 144,
+      "height": 108
+    },
+    "lens:Sony FE 70-200mm F4 G OSS": {
+      "status": "ok",
+      "kind": "lens",
+      "modelCode": "SEL70200G",
+      "src": "/assets/images/products/sony/sony-sony-e-sel70200g.webp",
+      "sourcePage": "https://support.d-imaging.sony.co.jp/www/cscs/accessories/?area=ap&lang=ko&mdl=SEL70200G",
+      "sourceImage": "https://support.d-imaging.sony.co.jp/www/cscs/common/product_image/middle/SEL70200G.jpg",
+      "extractMethod": "direct-image",
+      "candidateScore": 879,
+      "width": 144,
+      "height": 108
+    },
+    "lens:Sony FE 70-200mm F4 Macro G OSS II": {
+      "status": "ok",
+      "kind": "lens",
+      "modelCode": "SEL70200G2",
+      "src": "/assets/images/products/sony/sony-sony-e-sel70200g2.webp",
+      "sourcePage": "https://support.d-imaging.sony.co.jp/www/cscs/accessories/?area=ap&lang=ko&mdl=SEL70200G2",
+      "sourceImage": "https://support.d-imaging.sony.co.jp/www/cscs/common/product_image/middle/SEL70200G2.jpg",
+      "extractMethod": "direct-image",
+      "candidateScore": 901,
+      "width": 144,
+      "height": 108
+    },
+    "lens:Sony FE 70-300mm F4.5-5.6 G OSS": {
+      "status": "ok",
+      "kind": "lens",
+      "modelCode": "SEL70300G",
+      "src": "/assets/images/products/sony/sony-sony-e-sel70300g.webp",
+      "sourcePage": "https://support.d-imaging.sony.co.jp/www/cscs/accessories/?area=ap&lang=ko&mdl=SEL70300G",
+      "sourceImage": "https://support.d-imaging.sony.co.jp/www/cscs/common/product_image/middle/SEL70300G.jpg",
+      "extractMethod": "direct-image",
+      "candidateScore": 901,
+      "width": 144,
+      "height": 95
+    },
+    "lens:Sony FE 100-400mm F4.5-5.6 GM OSS": {
+      "status": "ok",
+      "kind": "lens",
+      "modelCode": "SEL100400GM",
+      "src": "/assets/images/products/sony/sony-sony-e-sel100400gm.webp",
+      "sourcePage": "https://support.d-imaging.sony.co.jp/www/cscs/accessories/?area=ap&lang=ko&mdl=SEL100400GM",
+      "sourceImage": "https://support.d-imaging.sony.co.jp/www/cscs/common/product_image/middle/SEL100400GM.jpg",
+      "extractMethod": "direct-image",
+      "candidateScore": 901,
+      "width": 144,
+      "height": 108
+    },
+    "lens:Sony FE 100-400mm F4.5 GM OSS": {
+      "status": "ok",
+      "kind": "lens",
+      "modelCode": "SEL100400MC",
+      "src": "/assets/images/products/sony/sony-sony-e-sel100400mc.webp",
+      "sourcePage": "https://support.d-imaging.sony.co.jp/www/cscs/accessories/?area=ap&lang=ko&mdl=SEL100400MC",
+      "sourceImage": "https://support.d-imaging.sony.co.jp/www/cscs/common/product_image/middle/SEL100400MC.jpg",
+      "extractMethod": "direct-image",
+      "candidateScore": 901,
+      "width": 144,
+      "height": 108
+    },
+    "lens:Sony FE 100-400mm F5.6-8 OSS": {
+      "status": "ok",
+      "kind": "lens",
+      "modelCode": "SEL100400",
+      "src": "/assets/images/products/sony/sony-sony-e-sel100400.webp",
+      "sourcePage": "https://support.d-imaging.sony.co.jp/www/cscs/accessories/?area=ap&lang=ko&mdl=SEL100400",
+      "sourceImage": "https://support.d-imaging.sony.co.jp/www/cscs/common/product_image/middle/SEL100400.jpg",
+      "extractMethod": "direct-image",
+      "candidateScore": 901,
+      "width": 144,
+      "height": 108
+    },
+    "lens:Sony FE 200-600mm F5.6-6.3 G OSS": {
+      "status": "ok",
+      "kind": "lens",
+      "modelCode": "SEL200600G",
+      "src": "/assets/images/products/sony/sony-sony-e-sel200600g.webp",
+      "sourcePage": "https://support.d-imaging.sony.co.jp/www/cscs/accessories/?area=ap&lang=ko&mdl=SEL200600G",
+      "sourceImage": "https://support.d-imaging.sony.co.jp/www/cscs/common/product_image/middle/SEL200600G.jpg",
+      "extractMethod": "direct-image",
+      "candidateScore": 901,
+      "width": 144,
+      "height": 108
+    },
+    "lens:Sony FE 400-800mm F6.3-8 G OSS": {
+      "status": "ok",
+      "kind": "lens",
+      "modelCode": "SEL400800G",
+      "src": "/assets/images/products/sony/sony-sony-e-sel400800g.webp",
+      "sourcePage": "https://support.d-imaging.sony.co.jp/www/cscs/accessories/?area=ap&lang=ko&mdl=SEL400800G",
+      "sourceImage": "https://support.d-imaging.sony.co.jp/www/cscs/common/product_image/middle/SEL400800G.jpg",
+      "extractMethod": "direct-image",
+      "candidateScore": 901,
+      "width": 144,
+      "height": 108
+    },
+    "body:Sony α99 II": {
+      "status": "failed",
+      "reason": "no model code"
+    },
+    "body:Sony α99": {
+      "status": "failed",
+      "reason": "no model code"
+    },
+    "body:Sony α77 II": {
+      "status": "failed",
+      "reason": "no model code"
+    },
+    "body:Sony α77": {
+      "status": "failed",
+      "reason": "no model code"
+    },
+    "body:Sony α68": {
+      "status": "failed",
+      "reason": "no model code"
+    },
+    "body:Sony α65": {
+      "status": "failed",
+      "reason": "no model code"
+    },
+    "body:Sony α58": {
+      "status": "failed",
+      "reason": "no model code"
+    },
+    "body:Sony α57": {
+      "status": "failed",
+      "reason": "no model code"
+    },
+    "body:Sony α55": {
+      "status": "failed",
+      "reason": "no model code"
+    },
+    "body:Sony α37": {
+      "status": "failed",
+      "reason": "no model code"
+    },
+    "body:Sony α35": {
+      "status": "failed",
+      "reason": "no model code"
+    },
+    "body:Sony α33": {
+      "status": "failed",
+      "reason": "no model code"
+    },
+    "body:Sony α900": {
+      "status": "failed",
+      "reason": "no model code"
+    },
+    "body:Sony α850": {
+      "status": "failed",
+      "reason": "no model code"
+    },
+    "body:Sony α700": {
+      "status": "failed",
+      "reason": "no model code"
+    },
+    "body:Sony α580": {
+      "status": "failed",
+      "reason": "no model code"
+    },
+    "body:Sony α560": {
+      "status": "failed",
+      "reason": "no model code"
+    },
+    "body:Sony α550": {
+      "status": "failed",
+      "reason": "no model code"
+    },
+    "body:Sony α500": {
+      "status": "failed",
+      "reason": "no model code"
+    },
+    "body:Sony α450": {
+      "status": "failed",
+      "reason": "no model code"
+    },
+    "body:Sony α390": {
+      "status": "failed",
+      "reason": "no model code"
+    },
+    "body:Sony α380": {
+      "status": "failed",
+      "reason": "no model code"
+    },
+    "body:Sony α350": {
+      "status": "failed",
+      "reason": "no model code"
+    },
+    "body:Sony α330": {
+      "status": "failed",
+      "reason": "no model code"
+    },
+    "body:Sony α300": {
+      "status": "failed",
+      "reason": "no model code"
+    },
+    "body:Sony α290": {
+      "status": "failed",
+      "reason": "no model code"
+    },
+    "body:Sony α230": {
+      "status": "failed",
+      "reason": "no model code"
+    },
+    "body:Sony α200": {
+      "status": "failed",
+      "reason": "no model code"
+    },
+    "body:Sony α100": {
+      "status": "failed",
+      "reason": "no model code"
+    },
+    "lens:Sony Vario-Sonnar T* 16-35mm F2.8 ZA SSM II": {
+      "status": "failed",
+      "reason": "no model code"
+    },
+    "lens:Sony Vario-Sonnar T* 24-70mm F2.8 ZA SSM II": {
+      "status": "failed",
+      "reason": "no model code"
+    },
+    "lens:Sony 70-200mm F2.8 G SSM II": {
+      "status": "failed",
+      "reason": "no model code"
+    },
+    "lens:Sony 70-400mm F4-5.6 G SSM II": {
+      "status": "failed",
+      "reason": "no model code"
+    },
+    "lens:Sony Planar T* 50mm F1.4 ZA SSM": {
+      "status": "failed",
+      "reason": "no model code"
+    },
+    "lens:Sony Planar T* 85mm F1.4 ZA": {
+      "status": "failed",
+      "reason": "no model code"
+    },
+    "lens:Sony Sonnar T* 135mm F1.8 ZA": {
+      "status": "failed",
+      "reason": "no model code"
+    },
+    "lens:Sony DT 16-50mm F2.8 SSM": {
+      "status": "failed",
+      "reason": "no model code"
+    },
+    "lens:Sony DT 18-135mm F3.5-5.6 SAM": {
+      "status": "failed",
+      "reason": "no model code"
+    },
+    "body:Sony RX1R II": {
+      "status": "failed",
+      "reason": "no model code"
+    },
+    "body:Sony RX100 VII": {
+      "status": "failed",
+      "reason": "no model code"
+    },
+    "body:Sony RX100 VI": {
+      "status": "failed",
+      "reason": "no model code"
+    },
+    "body:Sony RX100 V A": {
+      "status": "failed",
+      "reason": "no model code"
+    },
+    "body:Sony FX6": {
+      "status": "failed",
+      "codes": [
+        "FX6"
+      ],
+      "reason": "페이지에서 모델 코드 FX6를 확인하지 못함"
+    },
+    "body:Sony FX9": {
+      "status": "failed",
+      "codes": [
+        "FX9"
+      ],
+      "reason": "페이지에서 모델 코드 FX9를 확인하지 못함"
+    },
+    "body:Sony VENICE 2": {
+      "status": "failed",
+      "reason": "no model code"
+    },
+    "battery:NP-FZ100": {
+      "status": "ok",
+      "kind": "battery",
+      "modelCode": "NP-FZ100",
+      "src": "/assets/images/accessories/batteries/sony/sony-np-fz100.webp",
+      "sourcePage": "https://support.d-imaging.sony.co.jp/www/cscs/accessories/?area=ap&lang=ko&mdl=NP-FZ100",
+      "sourceImage": "https://support.d-imaging.sony.co.jp/www/cscs/common/product_image/middle/NP-FZ100.jpg",
+      "extractMethod": "direct-image",
+      "candidateScore": 857,
+      "width": 144,
+      "height": 108
+    },
+    "battery:NP-FW50": {
+      "status": "ok",
+      "kind": "battery",
+      "modelCode": "NP-FW50",
+      "src": "/assets/images/accessories/batteries/sony/sony-np-fw50.webp",
+      "sourcePage": "https://support.d-imaging.sony.co.jp/www/cscs/accessories/?area=ap&lang=ko&mdl=NP-FW50",
+      "sourceImage": "https://support.d-imaging.sony.co.jp/www/cscs/common/product_image/middle/NP-FW50.jpg",
+      "extractMethod": "direct-image",
+      "candidateScore": 857,
+      "width": 144,
+      "height": 108
     }
   },
   "_meta": {
-    "updatedAt": "2026-08-28T11:43:46.202446+00:00",
-    "ok": 80,
+    "updatedAt": "2026-08-28T11:46:24.727342+00:00",
+    "ok": 137,
     "skipped": 0,
-    "failed": 0,
+    "failed": 46,
     "selected": 183
   }
 }

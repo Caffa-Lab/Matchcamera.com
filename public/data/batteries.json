@@ -30,7 +30,16 @@
     "priceSourceName": "Sony Korea",
     "priceSource": "https://www.sony.co.kr/electronics/interchangeable-lens-cameras-batteries-chargers/np-fz100",
     "priceDate": "2026-08-28",
-    "priceVerification": "한국 공식 사이트 확인"
+    "priceVerification": "한국 공식 사이트 확인",
+    "imageSrc": "/assets/images/accessories/batteries/sony/sony-np-fz100.webp",
+    "imageSourcePage": "https://support.d-imaging.sony.co.jp/www/cscs/accessories/?area=ap&lang=ko&mdl=NP-FZ100",
+    "imageSourceUrl": "https://support.d-imaging.sony.co.jp/www/cscs/common/product_image/middle/NP-FZ100.jpg",
+    "imageMethod": "sony-support-d-imaging",
+    "imageModelCode": "NP-FZ100",
+    "imageWidth": 144,
+    "imageHeight": 108,
+    "imageFetchedAt": "2026-08-28T11:46:21.230383+00:00",
+    "imageUsageReviewRequired": true
   },
   {
     "id": "sony-np-fw50",
@@ -59,7 +68,16 @@
     "priceSourceName": "",
     "priceSource": "",
     "priceDate": "2026-08-28",
-    "priceVerification": "미확인"
+    "priceVerification": "미확인",
+    "imageSrc": "/assets/images/accessories/batteries/sony/sony-np-fw50.webp",
+    "imageSourcePage": "https://support.d-imaging.sony.co.jp/www/cscs/accessories/?area=ap&lang=ko&mdl=NP-FW50",
+    "imageSourceUrl": "https://support.d-imaging.sony.co.jp/www/cscs/common/product_image/middle/NP-FW50.jpg",
+    "imageMethod": "sony-support-d-imaging",
+    "imageModelCode": "NP-FW50",
+    "imageWidth": 144,
+    "imageHeight": 108,
+    "imageFetchedAt": "2026-08-28T11:46:23.824777+00:00",
+    "imageUsageReviewRequired": true
   },
   {
     "id": "canon-lp-e6p",
