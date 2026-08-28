@@ -68,7 +68,11 @@ function renderBatteries(){
     const names=(b.compatibleNames||[]);
     const preview=names.slice(0,7);
     const extra=Math.max(0,names.length-preview.length);
+    const visual=b.imageSrc
+      ? `<div class="battery-visual"><img src="${esc(b.imageSrc)}" alt="${esc(b.officialName||'Sony battery')}" loading="lazy" onerror="this.hidden=true;this.nextElementSibling.hidden=false"><div class="battery-brand-fallback" hidden>${esc(b.manufacturer||'Sony')}</div></div>`
+      : `<div class="battery-visual"><div class="battery-brand-fallback">${esc(b.manufacturer||'Sony')}</div></div>`;
     return `<article class="battery-card">
+      ${visual}
       <div class="battery-main">
         <div class="battery-brand">${esc(b.manufacturer||'')}</div>
         <h2>${esc(b.officialName||'')}</h2>
