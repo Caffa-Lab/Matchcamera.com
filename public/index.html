@@ -3,156 +3,151 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Matchcamera — 카메라와 렌즈를 맞추다</title>
-  <meta name="description" content="카메라 바디를 선택하고 호환 가능한 렌즈를 빠르게 찾고 비교하세요.">
+  <title>Matchcamera — 카메라 구성과 렌즈 호환성</title>
+  <meta name="description" content="카메라 바디와 렌즈를 PC 견적처럼 구성하고 마운트·센서 포맷·이미지서클 호환성을 확인합니다.">
   <link rel="stylesheet" href="/assets/css/site.css">
-  <link rel="stylesheet" href="/assets/css/home.css">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="manifest" href="/site.webmanifest">
 </head>
-<body class="home-page">
+<body class="builder-page">
   <div data-header></div>
-
-  <main>
-    <section class="home-hero">
-      <div class="container hero-shell">
-        <div class="hero-copy">
-          <span class="hero-kicker"><span class="status-dot"></span>카메라 · 렌즈 호환성 검색</span>
-          <h1>내 카메라에 맞는 렌즈를<br><span>바로 찾아보세요.</span></h1>
-          <p>바디를 고르면 마운트와 센서 포맷을 기준으로 호환 가능한 렌즈를 정리합니다. 여러 브랜드를 한곳에서 비교하고 원하는 촬영 시스템을 구성할 수 있습니다.</p>
-
-          <div class="hero-actions">
-            <a class="home-btn primary" href="/builder/">바디 선택하고 시작하기 <span aria-hidden="true">→</span></a>
-            <a class="home-btn secondary" href="/database/">제품 검색</a>
-          </div>
-
-          <div class="hero-stats" aria-label="Matchcamera 데이터베이스 현황">
-            <div><strong id="productCount">-</strong><span>등록 제품</span></div>
-            <div><strong id="bodyCount">-</strong><span>카메라 바디</span></div>
-            <div><strong id="lensCount">-</strong><span>등록 렌즈</span></div>
-            <div><strong id="brandCount">-</strong><span>제조사</span></div>
-          </div>
+  <main class="app-main">
+    <div class="app-frame">
+      <aside class="catalog-pane">
+        <div class="catalog-head">
+          <select id="catalogMode" class="catalog-mode" aria-label="제품 종류">
+            <option value="body">바디 필터</option>
+            <option value="lens">렌즈 필터</option>
+          </select>
         </div>
-
-        <div class="compat-preview" aria-label="호환성 판정 예시">
-          <div class="preview-topline">
-            <span>Compatibility check</span>
-            <span class="live-pill"><i></i> LIVE</span>
-          </div>
-
-          <div class="gear-card">
-            <div class="gear-type">BODY</div>
-            <div class="gear-info">
-              <strong>Sony α7 IV</strong>
-              <span>Full Frame · Sony E</span>
-            </div>
-            <span class="gear-chip">E</span>
-          </div>
-
-          <div class="compat-link">
-            <span></span>
-            <b>+</b>
-            <span></span>
-          </div>
-
-          <div class="gear-card">
-            <div class="gear-type">LENS</div>
-            <div class="gear-info">
-              <strong>FE 24-70mm F2.8 GM II</strong>
-              <span>FE · Sony E</span>
-            </div>
-            <span class="gear-chip">FE</span>
-          </div>
-
-          <div class="compat-result">
-            <div class="result-icon">✓</div>
-            <div>
-              <strong>완전 호환</strong>
-              <span>마운트와 이미지 서클이 일치합니다.</span>
-            </div>
-          </div>
-
-          <a class="preview-link" href="/builder/">내 장비로 확인하기 <span>→</span></a>
+        <div class="catalog-search">
+          <input id="search" type="search" placeholder="제품명 / 모델 코드 검색" autocomplete="off">
+          <button id="clearSearch" type="button">초기화</button>
         </div>
-      </div>
-    </section>
+        <div class="catalog-filters">
+          <select id="manufacturerFilter" class="compact-control" aria-label="제조사"></select>
+          <select id="mountFilter" class="compact-control" aria-label="마운트"></select>
+          <select id="formatFilter" class="compact-control" aria-label="포맷"></select>
+          <select id="saleFilter" class="compact-control" aria-label="판매 상태">
+            <option value="all">모든 판매 상태</option>
+            <option value="yes">현재 판매 확인</option>
+          </select>
+        </div>
+        <label id="compatOnlyWrap" class="check-row hidden">
+          <input id="compatOnly" type="checkbox" checked>
+          <span>선택 바디와 호환되는 렌즈만</span>
+        </label>
+        <div class="catalog-result-head">
+          <b id="catalogTitle">바디</b>
+          <span><strong id="resultCount">0</strong>개</span>
+        </div>
+        <div id="catalogList" class="catalog-list" aria-live="polite"></div>
+      </aside>
 
-    <section class="home-section home-section-tight">
-      <div class="container">
-        <div class="section-title-row">
+      <section class="build-pane">
+        <div class="build-head">
           <div>
-            <span class="section-label">QUICK START</span>
-            <h2>어떤 방법으로 찾으시겠어요?</h2>
+            <span class="section-kicker">MATCHCAMERA BUILD</span>
+            <h1>내 카메라 구성</h1>
+            <p>바디를 선택하면 장착 가능한 렌즈를 자동으로 좁혀 보여줍니다.</p>
           </div>
-          <p>찾고 싶은 방식부터 선택하면 바로 필요한 화면으로 이동합니다.</p>
-        </div>
-
-        <div class="quick-grid">
-          <a class="quick-card featured" href="/builder/">
-            <span class="quick-index">01</span>
-            <div>
-              <h3>바디부터 선택</h3>
-              <p>내 카메라를 고르고 호환 가능한 렌즈만 확인합니다.</p>
-            </div>
-            <span class="quick-arrow">→</span>
-          </a>
-          <a class="quick-card" href="/database/">
-            <span class="quick-index">02</span>
-            <div>
-              <h3>제품 검색</h3>
-              <p>제조사, 마운트, 센서 포맷으로 전체 DB를 탐색합니다.</p>
-            </div>
-            <span class="quick-arrow">→</span>
-          </a>
-          <a class="quick-card" href="/compare/">
-            <span class="quick-index">03</span>
-            <div>
-              <h3>제품 비교</h3>
-              <p>두 제품의 핵심 사양을 한 화면에서 나란히 비교합니다.</p>
-            </div>
-            <span class="quick-arrow">→</span>
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <section class="home-section mount-section">
-      <div class="container">
-        <div class="section-title-row mount-head">
-          <div>
-            <span class="section-label">POPULAR MOUNTS</span>
-            <h2>주요 마운트 바로가기</h2>
+          <div class="build-actions">
+            <button id="loadBtn" class="small-action load" type="button">마지막 구성 불러오기</button>
+            <button id="resetBtn" class="small-action reset" type="button">초기화</button>
           </div>
-          <a class="text-link" href="/database/">전체 제품 보기 <span>→</span></a>
         </div>
 
-        <div class="mount-grid" id="mountGrid">
-          <div class="mount-skeleton"></div><div class="mount-skeleton"></div><div class="mount-skeleton"></div>
-          <div class="mount-skeleton"></div><div class="mount-skeleton"></div><div class="mount-skeleton"></div>
-        </div>
-      </div>
-    </section>
+        <div class="build-table">
+          <div class="build-row required" data-slot-mode="body">
+            <div class="slot-icon camera-icon" aria-hidden="true"></div>
+            <div class="slot-label">
+              <strong>바디</strong>
+              <span>카메라 시스템의 기준</span>
+            </div>
+            <div id="bodySlot" class="slot-content"></div>
+            <button class="slot-select" data-slot-mode="body" type="button">바디 선택</button>
+          </div>
 
-    <section class="home-section how-section">
-      <div class="container how-shell">
-        <div class="how-copy">
-          <span class="section-label">HOW IT WORKS</span>
-          <h2>호환성 판단 기준은 단순합니다.</h2>
-          <p>물리 마운트를 먼저 확인하고, 그 다음 센서 포맷과 렌즈 이미지 서클을 확인합니다. 필요한 경우 크롭 모드 같은 조건부 호환도 별도로 표시합니다.</p>
+          <div id="lensSlots"></div>
+
+          <div class="build-row planned">
+            <div class="slot-icon card-icon" aria-hidden="true"></div>
+            <div class="slot-label"><strong>메모리 카드</strong><span>용량 · 규격 · 속도</span></div>
+            <div class="slot-content planned-text">액세서리 DB 확장 후 지원</div>
+            <span class="soon-badge">준비 중</span>
+          </div>
+          <div class="build-row planned">
+            <div class="slot-icon battery-icon" aria-hidden="true"></div>
+            <div class="slot-label"><strong>배터리</strong><span>정품 · 호환 배터리</span></div>
+            <div class="slot-content planned-text">바디별 배터리 규격 연결 예정</div>
+            <span class="soon-badge">준비 중</span>
+          </div>
+          <div class="build-row planned">
+            <div class="slot-icon flash-icon" aria-hidden="true"></div>
+            <div class="slot-label"><strong>플래시</strong><span>핫슈 · TTL 호환</span></div>
+            <div class="slot-content planned-text">플래시 호환성 DB 확장 예정</div>
+            <span class="soon-badge">준비 중</span>
+          </div>
+          <div class="build-row planned">
+            <div class="slot-icon tripod-icon" aria-hidden="true"></div>
+            <div class="slot-label"><strong>삼각대</strong><span>하중 · 플레이트</span></div>
+            <div class="slot-content planned-text">삼각대 및 헤드 DB 확장 예정</div>
+            <span class="soon-badge">준비 중</span>
+          </div>
         </div>
-        <div class="how-flow">
-          <div><span>1</span><b>마운트</b><small>물리적 장착 가능 여부</small></div>
-          <i>→</i>
-          <div><span>2</span><b>센서 포맷</b><small>FF · APS-C · MFT 등</small></div>
-          <i>→</i>
-          <div><span>3</span><b>호환 결과</b><small>완전 · 조건부 · 비호환</small></div>
+
+        <div class="build-note">
+          <b>호환성 판정 기준</b>
+          <span>물리적 마운트 → 렌즈 이미지서클 → 바디 센서 포맷 순으로 판정합니다. 제조사 기능 제한이나 펌웨어 차이는 추후 세부 데이터로 확장합니다.</span>
         </div>
-      </div>
-    </section>
+      </section>
+
+      <aside class="summary-pane">
+        <div class="summary-tools">
+          <button id="saveBtn" type="button">저장</button>
+          <button id="shareBtn" type="button">공유</button>
+        </div>
+
+        <section class="summary-card price-summary">
+          <div class="summary-line major">
+            <span>확인 가격 합계</span>
+            <strong id="totalPrice">-</strong>
+          </div>
+          <div class="summary-line">
+            <span>가격 확인 제품</span>
+            <b id="pricedCount">0 / 0</b>
+          </div>
+          <p id="priceNote">공식 가격이 확인된 제품만 합산합니다.</p>
+        </section>
+
+        <section class="summary-card">
+          <h2>구성 요약</h2>
+          <div class="summary-line"><span>선택 제품</span><b id="itemCount">0개</b></div>
+          <div class="summary-line"><span>총 무게</span><b id="totalWeight">-</b></div>
+          <div class="summary-line"><span>기준 마운트</span><b id="summaryMount">-</b></div>
+          <div class="summary-line"><span>센서 포맷</span><b id="summarySensor">-</b></div>
+        </section>
+
+        <section class="summary-card compat-card">
+          <div class="summary-title-row">
+            <h2>호환성 검사</h2>
+            <span id="compatOverall" class="compat-pill neutral">선택 필요</span>
+          </div>
+          <div id="compatDetails" class="compat-details">
+            <p class="empty-summary">바디와 렌즈를 선택하면 조합별 호환성을 확인합니다.</p>
+          </div>
+        </section>
+
+        <div class="summary-bottom-actions">
+          <a href="/database/" class="outline-action">제품 DB 보기</a>
+          <a href="/compare/" class="outline-action">제품 비교하기</a>
+        </div>
+      </aside>
+    </div>
   </main>
-
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
   <div data-footer></div>
   <script type="module" src="/assets/js/common.js"></script>
-  <script type="module" src="/assets/js/home.js"></script>
+  <script type="module" src="/assets/js/builder.js"></script>
 </body>
 </html>
