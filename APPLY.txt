@@ -1,67 +1,89 @@
-Matchcamera 이미지 자동화 분리판 v7
+Matchcamera 전체 수정사항 통합판 v1
+기준일: 2026-08-28
 
-목표
-====
-1. Sony / Canon 제외: 기존 안정적인 자동 수집을 전체 실행
-2. Sony: store.sony.co.kr/product-view에서 제품컷을 우선 수집
-3. Canon: 이전에 성공한 browser/official fallback 방식을 현행 제품으로 다시 테스트
-
-실행 순서
+적용 방법
 =========
-1) 01_UPDATE_IMAGES_EXCEPT_SONY_CANON.bat
-   - Sony, Canon을 완전히 제외합니다.
-   - Nikon/Fujifilm/Panasonic/Pentax/Sigma/Tamron 등 기존 방식이 정상인 제조사를 처리합니다.
-   - 이미 성공한 이미지는 SKIP합니다.
+1. 현재 돌아가는 이미지 자동화가 끝난 뒤 git push까지 완료합니다.
+2. 이 ZIP의 내용을 D:\Matchcamera 에 그대로 덮어씁니다.
+3. 아래 배너 파일을 직접 추가합니다.
+   D:\Matchcamera\public\assets\images\banner\Banner1.webp
+   D:\Matchcamera\public\assets\images\banner\Banner2.webp
+   D:\Matchcamera\public\assets\images\banner\Banner3.webp
+   D:\Matchcamera\public\assets\images\banner\Banner4.webp
 
-2) 02_TEST_SONY_STORE_A7IV.bat
-   - 사용자가 제공한 Sony Store α7 IV 페이지를 사용합니다.
-   - https://store.sony.co.kr/product-view/102270076
-   - DOM의 img/background/resource 이미지를 모은 뒤 실제 이미지 바이트를 분석합니다.
-   - 흰색/투명 배경, 적절한 종횡비, 큰 해상도의 '제품컷'을 우선합니다.
-   - 성공하면 product-images.json에서 Sony α7 IV 이미지를 Sony Store 제품컷으로 교체합니다.
+배너 권장 규격
+=============
+- 권장: 1920 x 500 px
+- 고해상도: 2560 x 667 px
+- WebP 권장
+- 중요한 텍스트/피사체는 중앙 약 1400px 안쪽에 배치
+- 존재하지 않는 Banner2~4는 사이트에서 자동으로 숨깁니다.
 
-3) 03_UPDATE_SONY_STORE_IMAGES.bat
-   - Sony 전체 제품을 순회합니다.
-   - sony-store-pages.json에 매핑이 없으면 Bing에서
-     site:store.sony.co.kr/product-view + 모델코드/제품명으로 상품 페이지를 자동 탐색합니다.
-   - 찾은 Store URL을 sony-store-pages.json에 저장하므로 다음 실행에서 재검색하지 않습니다.
-   - Store 페이지가 없는 단종 제품은 실패 목록에 남깁니다.
+반영 내용
+=========
+- matchcamera.com/ 전용 메인 홈페이지 생성
+- 큰 배너 슬라이더 + 좌우 화살표 + 하단 점 + 자동 전환
+- 메인 통합 검색창 비율/크기 및 돋보기 아이콘 수정
+- 배너 아래 Sony/Canon/Nikon/Fujifilm 대표 바디 4개
+- 배너 아래 각 브랜드 24-70mm급 대표 렌즈 4개
+- 상단 메뉴: 홈 / 바디 / 렌즈 / 내 카메라 만들기 / 비교 / 제품 DB / 액세서리 / 프로그램 / 문의하기
+- 문의하기: admin@matchcamera.com mailto 방식
+- 프로그램 페이지 추가
+- 내 카메라 만들기 화면을 약 120% 체감 크기로 확대
+- 제품 DB 표/필터 확대
+- Sony 검색 별칭 개선: a7r5 / a7rv / a7rm5 / alpha7r5 / 알파7r5 등
+- 바디/렌즈 필터 최상단에 카메라 방식 추가
+  미러리스 / DSLR / 일체형 카메라 / 시네마
+- 제조사 필터 max:8 제한 제거: Sony/Sigma/Tamron 포함 전체 제조사 표시
+- 제품 사진이 없으면 해당 제조사 워드마크 SVG 표시
+- 브랜드 워드마크도 없으면 제조사 텍스트로 fallback
+- 마운트 어댑터 DB + 액세서리 페이지 추가
+- 내 카메라 만들기에서 직접 마운트가 다르면 등록된 어댑터를 탐색해 '어댑터 호환' 표시
 
-4) 04_TEST_CANON_CURRENT_IMAGES.bat
-   - Canon EOS R5
-   - Canon EOS R5 C
-   - Canon EOS R6 Mark II
-   세 제품을 정확히 지정하여 기존 fallback 방식을 refresh 테스트합니다.
+추가 DB
+=======
+public/data/system-expansion.json
+- 306개 확장 레코드
+- DSLR 바디 180개
+- DSLR 렌즈 95개
+- 일체형 카메라 17개
+- 시네마 바디 14개
 
-파일
-====
-scripts/update_product_images.py
-  일반 제조사용 v7. --exclude-manufacturer 추가.
+기존 public/data/products.json은 덮어쓰지 않습니다.
+data.js가 products.json + system-expansion.json을 런타임에 합쳐 사용합니다.
+따라서 현재 진행 중인 843개 제품 DB와 이미지 자동화 결과를 보존합니다.
 
-scripts/update_sony_store_images.py
-  Sony Store 전용 제품컷 수집기.
+주의: legacy DSLR/시네마 확장 레코드는 제품 범위를 우선 확장한 1차 데이터이며,
+세부 사양·판매 상태는 확인되지 않은 값을 추정해서 채우지 않고 '확인 필요' 상태로 둡니다.
+기존 검증된 미러리스 DB의 상세 사양을 훼손하지 않습니다.
 
-public/data/sony-store-pages.example.json
-  초기 Sony Store URL 예시. bootstrap script가 실제 sony-store-pages.json이 없을 때만 생성합니다.
+마운트 어댑터
+=============
+public/data/mount-adapters.json
+- Canon EF -> RF / EF-M
+- Nikon F -> Z / Nikon 1
+- Sony A -> E
+- Sigma MC-11 / MC-21
+- Four Thirds -> Micro Four Thirds
+- Leica M -> L-Mount
+- Pentax K -> Q
+등을 포함합니다.
+AF/전자제어는 바디/렌즈 조합별 제약이 있을 수 있으므로 조건부 표기를 사용합니다.
 
-.github/workflows/update-product-images-stable.yml
-  GitHub Actions에서 Sony/Canon을 제외한 안정 제조사만 자동 업데이트합니다.
+제품 이미지 fallback
+===================
+1. product-images.json에 제품 사진이 있으면 실제 제품 사진
+2. 없으면 /assets/images/brands/<brand>.svg
+3. 로고 파일도 없으면 제조사 텍스트
 
-주의
-====
-Sony Store 페이지에는 사이트 콘텐츠의 저작권 및 상업적 무단전재/복사/배포 금지 안내가 있습니다.
-따라서 이 자동화는 기술적으로 제품 이미지를 수집/정리하는 용도이며,
-Matchcamera 공개 서비스에 Sony Store 이미지를 직접 게시하기 전에는 Sony의 이미지/브랜드 이용조건과
-필요한 사용 허가를 확인해야 합니다.
+이번 ZIP은 product-images.json과 이미지 자동화 scripts를 덮어쓰지 않습니다.
 
-적용
-====
-ZIP을 D:\Matchcamera 에 그대로 덮어쓰기.
-
-Git/배포
-========
+Git / 배포
+==========
+cd D:\Matchcamera
 git add .
-git commit -m "Split product image automation by manufacturer"
+git commit -m "Apply Matchcamera homepage and catalog expansion"
 git push
-
 & "C:\Program Files\nodejs\npx.cmd" wrangler deploy
+
+배포 후 Ctrl + F5로 확인하세요.

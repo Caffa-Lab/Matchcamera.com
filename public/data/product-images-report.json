@@ -1,6 +1,6 @@
 {
   "_meta": {
-    "updatedAt": "2026-08-28T10:14:20.800253+00:00",
+    "updatedAt": "2026-08-28T10:44:31.300124+00:00",
     "totalProducts": 843
   },
   "items": {
@@ -400,25 +400,19 @@
       "label": "Panasonic LUMIX S1H"
     },
     "OM SYSTEM OM-1": {
-      "status": "ok",
-      "label": "OM SYSTEM OM-1",
-      "src": "/assets/images/products/om-system/om-system-micro-four-thirds-om-1.webp",
-      "sourcePage": "https://explore.omsystem.com/c/en/cameras",
-      "sourceImage": "https://apac.explore.omsystem.com/media/catalog/product/o/m/om-3-astro-body-front_1_1.webp?width=1000&height=1000&optimize=medium&fit=bounds"
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "OM SYSTEM OM-1"
     },
     "OM SYSTEM OM-5": {
-      "status": "ok",
-      "label": "OM SYSTEM OM-5",
-      "src": "/assets/images/products/om-system/om-system-micro-four-thirds-om-5.webp",
-      "sourcePage": "https://explore.omsystem.com/c/en/cameras",
-      "sourceImage": "https://apac.explore.omsystem.com/media/catalog/product/o/m/om-3-astro-body-front_1_1.webp?width=1000&height=1000&optimize=medium&fit=bounds"
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "OM SYSTEM OM-5"
     },
     "OM SYSTEM OM-1 Mark II": {
-      "status": "ok",
-      "label": "OM SYSTEM OM-1 Mark II",
-      "src": "/assets/images/products/om-system/om-system-micro-four-thirds-om-1-mark-ii.webp",
-      "sourcePage": "https://explore.omsystem.com/c/en/cameras",
-      "sourceImage": "https://apac.explore.omsystem.com/media/catalog/product/o/m/om-1-mark-ii-kit-hero-02.webp?width=1000&height=1000&optimize=medium&fit=bounds"
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "OM SYSTEM OM-1 Mark II"
     },
     "Olympus PEN E-P1": {
       "status": "ok",
@@ -445,46 +439,34 @@
       "method": "wikimedia-commons"
     },
     "Leica Leica T (Typ 701)": {
-      "status": "ok",
-      "label": "Leica Leica T (Typ 701)",
-      "src": "/assets/images/products/leica/leica-l-mount-leica-t-typ-701.webp",
-      "sourcePage": "https://leica-camera.com/en-US/photography/sl/all-products",
-      "sourceImage": "https://leica-camera.com/sites/default/files/styles/meta_tag_image/public/2026-04/Product_Overview_SL_3840x2560.jpg?h=deaec4b9&itok=JaBfP61G"
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Leica Leica T (Typ 701)"
     },
     "Leica Leica TL": {
-      "status": "ok",
-      "label": "Leica Leica TL",
-      "src": "/assets/images/products/leica/leica-l-mount-leica-tl.webp",
-      "sourcePage": "https://leica-camera.com/en-US/photography/sl/all-products",
-      "sourceImage": "https://leica-camera.com/sites/default/files/styles/meta_tag_image/public/2026-04/Product_Overview_SL_3840x2560.jpg?h=deaec4b9&itok=JaBfP61G"
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Leica Leica TL"
     },
     "Leica Leica TL2": {
-      "status": "ok",
-      "label": "Leica Leica TL2",
-      "src": "/assets/images/products/leica/leica-l-mount-leica-tl2.webp",
-      "sourcePage": "https://leica-camera.com/en-US/photography/sl/all-products",
-      "sourceImage": "https://leica-camera.com/sites/default/files/styles/meta_tag_image/public/2026-04/Product_Overview_SL_3840x2560.jpg?h=deaec4b9&itok=JaBfP61G"
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Leica Leica TL2"
     },
     "Pentax Pentax Q": {
-      "status": "ok",
-      "label": "Pentax Pentax Q",
-      "src": "/assets/images/products/pentax/pentax-pentax-q-pentax-q.webp",
-      "sourcePage": "https://www.ricoh-imaging.co.jp/english/products/q7/lenses/index.html",
-      "sourceImage": "https://www.ricoh-imaging.co.jp/common/img/og-image.gif"
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Pentax Pentax Q"
     },
     "Pentax Pentax Q10": {
-      "status": "ok",
-      "label": "Pentax Pentax Q10",
-      "src": "/assets/images/products/pentax/pentax-pentax-q-pentax-q10.webp",
-      "sourcePage": "https://www.ricoh-imaging.co.jp/english/products/q7/lenses/index.html",
-      "sourceImage": "https://www.ricoh-imaging.co.jp/common/img/og-image.gif"
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Pentax Pentax Q10"
     },
     "Pentax Pentax Q7": {
-      "status": "ok",
-      "label": "Pentax Pentax Q7",
-      "src": "/assets/images/products/pentax/pentax-pentax-q-pentax-q7.webp",
-      "sourcePage": "https://www.ricoh-imaging.co.jp/english/products/q7/lenses/index.html",
-      "sourceImage": "https://www.ricoh-imaging.co.jp/common/img/og-image.gif"
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Pentax Pentax Q7"
     },
     "Sigma Sigma fp": {
       "status": "ok",
@@ -3145,6 +3127,710 @@
       "src": "/assets/images/products/olympus/olympus-micro-four-thirds-om-d-e-m10-mark-iii.webp",
       "sourcePage": "https://commons.wikimedia.org/wiki/File:Olympus_OM-D_E-M10_Mark_III_27_Mar_2019a.jpg",
       "sourceImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Olympus_OM-D_E-M10_Mark_III_27_Mar_2019a.jpg/960px-Olympus_OM-D_E-M10_Mark_III_27_Mar_2019a.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "method": "wikimedia-commons"
+    },
+    "Olympus OM-D E-M1X": {
+      "status": "ok",
+      "label": "Olympus OM-D E-M1X",
+      "src": "/assets/images/products/olympus/olympus-micro-four-thirds-om-d-e-m1x.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Olympus_OM-D_E-M1X_27_Feb_2019a.jpg",
+      "sourceImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Olympus_OM-D_E-M1X_27_Feb_2019a.jpg/960px-Olympus_OM-D_E-M1X_27_Feb_2019a.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "method": "wikimedia-commons"
+    },
+    "Olympus OM-D E-M5 Mark III": {
+      "status": "ok",
+      "label": "Olympus OM-D E-M5 Mark III",
+      "src": "/assets/images/products/olympus/olympus-micro-four-thirds-om-d-e-m5-mark-iii.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Olympus_OM-D_E-M5_Mark_III_4_mar_2020a.jpg",
+      "sourceImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Olympus_OM-D_E-M5_Mark_III_4_mar_2020a.jpg/960px-Olympus_OM-D_E-M5_Mark_III_4_mar_2020a.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "method": "wikimedia-commons"
+    },
+    "Olympus OM-D E-M1 Mark III": {
+      "status": "ok",
+      "label": "Olympus OM-D E-M1 Mark III",
+      "src": "/assets/images/products/olympus/olympus-micro-four-thirds-om-d-e-m1-mark-iii.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Olympus_OM-D_E-M1_Mark_III_4_mar_2020c.jpg",
+      "sourceImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Olympus_OM-D_E-M1_Mark_III_4_mar_2020c.jpg/960px-Olympus_OM-D_E-M1_Mark_III_4_mar_2020c.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "method": "wikimedia-commons"
+    },
+    "Olympus OM-D E-M10 Mark IV": {
+      "status": "ok",
+      "label": "Olympus OM-D E-M10 Mark IV",
+      "src": "/assets/images/products/olympus/olympus-micro-four-thirds-om-d-e-m10-mark-iv.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Olympus_OM-D_E-M10_Mark_IV_24_Oct_2020c.jpg",
+      "sourceImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Olympus_OM-D_E-M10_Mark_IV_24_Oct_2020c.jpg/960px-Olympus_OM-D_E-M10_Mark_IV_24_Oct_2020c.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "method": "wikimedia-commons"
+    },
+    "Olympus AIR A01": {
+      "status": "ok",
+      "label": "Olympus AIR A01",
+      "src": "/assets/images/products/olympus/olympus-micro-four-thirds-air-a01.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Olympus_Air_A01_with_Lumix_25mm_F1.7.jpg",
+      "sourceImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Olympus_Air_A01_with_Lumix_25mm_F1.7.jpg/960px-Olympus_Air_A01_with_Lumix_25mm_F1.7.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "method": "wikimedia-commons"
+    },
+    "OM SYSTEM OM-3": {
+      "status": "ok",
+      "label": "OM SYSTEM OM-3",
+      "src": "/assets/images/products/om-system/om-system-micro-four-thirds-om-3.webp",
+      "sourcePage": "https://explore.omsystem.com/c/en/cameras",
+      "sourceImage": "https://apac.explore.omsystem.com/media/catalog/product/o/m/om-3-astro-body-front_1_1.webp?width=1000&height=1000&optimize=medium&fit=bounds",
+      "method": "official-page"
+    },
+    "OM SYSTEM OM-5 Mark II": {
+      "status": "ok",
+      "label": "OM SYSTEM OM-5 Mark II",
+      "src": "/assets/images/products/om-system/om-system-micro-four-thirds-om-5-mark-ii.webp",
+      "sourcePage": "https://explore.omsystem.com/c/en/cameras",
+      "sourceImage": "https://apac.explore.omsystem.com/media/catalog/product/o/m/om-1-mark-ii-kit-hero-02.webp?width=1000&height=1000&optimize=medium&fit=bounds",
+      "method": "official-page"
+    },
+    "OM SYSTEM OM-3 ASTRO": {
+      "status": "ok",
+      "label": "OM SYSTEM OM-3 ASTRO",
+      "src": "/assets/images/products/om-system/om-system-micro-four-thirds-om-3-astro.webp",
+      "sourcePage": "https://explore.omsystem.com/c/en/cameras",
+      "sourceImage": "https://apac.explore.omsystem.com/media/catalog/product/o/m/om-3-astro-body-front_1_1.webp?width=1000&height=1000&optimize=medium&fit=bounds",
+      "method": "official-page"
+    },
+    "Olympus M.Zuiko Digital ED 8mm F1.8 Fisheye PRO": {
+      "status": "ok",
+      "label": "Olympus M.Zuiko Digital ED 8mm F1.8 Fisheye PRO",
+      "src": "/assets/images/products/olympus/olympus-micro-four-thirds-m-zuiko-digital-ed-8mm-f1-8-fisheye-pro.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Olympus_M.Zuiko_Digital_ED_8mm_f-1.8_PRO_front_PSD.jpg",
+      "sourceImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Olympus_M.Zuiko_Digital_ED_8mm_f-1.8_PRO_front_PSD.jpg/960px-Olympus_M.Zuiko_Digital_ED_8mm_f-1.8_PRO_front_PSD.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "method": "wikimedia-commons"
+    },
+    "Olympus M.Zuiko Digital ED 9-18mm F4-5.6": {
+      "status": "ok",
+      "label": "Olympus M.Zuiko Digital ED 9-18mm F4-5.6",
+      "src": "/assets/images/products/olympus/olympus-micro-four-thirds-m-zuiko-digital-ed-9-18mm-f4-5-6.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Olympus_(9506191565).jpg",
+      "sourceImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Olympus_%289506191565%29.jpg/960px-Olympus_%289506191565%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "method": "wikimedia-commons"
+    },
+    "OM SYSTEM M.Zuiko Digital ED 9-18mm F4-5.6 II": {
+      "status": "ok",
+      "label": "OM SYSTEM M.Zuiko Digital ED 9-18mm F4-5.6 II",
+      "src": "/assets/images/products/om-system/om-system-micro-four-thirds-m-zuiko-digital-ed-9-18mm-f4-5-6-ii.webp",
+      "sourcePage": "https://explore.omsystem.com/c/en/lenses",
+      "sourceImage": "https://apac.explore.omsystem.com/media/catalog/product/transparent/9/-/9-18mm-ii-billboard-05_o_95.webp?width=1000&height=1000&optimize=medium&fit=bounds",
+      "method": "official-page"
+    },
+    "Olympus M.Zuiko Digital ED 7-14mm F2.8 PRO": {
+      "status": "failed",
+      "label": "Olympus M.Zuiko Digital ED 7-14mm F2.8 PRO",
+      "reason": "no usable image",
+      "errors": []
+    },
+    "Olympus M.Zuiko Digital ED 8-25mm F4 PRO": {
+      "status": "ok",
+      "label": "Olympus M.Zuiko Digital ED 8-25mm F4 PRO",
+      "src": "/assets/images/products/olympus/olympus-micro-four-thirds-m-zuiko-digital-ed-8-25mm-f4-pro.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Olympus_M.ZUIKO_DIGITAL_ED_8-25mm_F4.0_PRO_(51241600620).jpg",
+      "sourceImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Olympus_M.ZUIKO_DIGITAL_ED_8-25mm_F4.0_PRO_%2851241600620%29.jpg/960px-Olympus_M.ZUIKO_DIGITAL_ED_8-25mm_F4.0_PRO_%2851241600620%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "method": "wikimedia-commons"
+    },
+    "Olympus M.Zuiko Digital ED 12mm F2": {
+      "status": "ok",
+      "label": "Olympus M.Zuiko Digital ED 12mm F2",
+      "src": "/assets/images/products/olympus/olympus-micro-four-thirds-m-zuiko-digital-ed-12mm-f2.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Olympus_M.12_F2_MSC_(cropped).jpg",
+      "sourceImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Olympus_M.12_F2_MSC_%28cropped%29.jpg/960px-Olympus_M.12_F2_MSC_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "method": "wikimedia-commons"
+    },
+    "Olympus M.Zuiko Digital 17mm F1.8": {
+      "status": "ok",
+      "label": "Olympus M.Zuiko Digital 17mm F1.8",
+      "src": "/assets/images/products/olympus/olympus-micro-four-thirds-m-zuiko-digital-17mm-f1-8.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Holding_an_Olympus_PEN_E-P7_with_M.ZUIKO_DIGITAL_17mm_F1.8_20260516115815.jpg",
+      "sourceImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Holding_an_Olympus_PEN_E-P7_with_M.ZUIKO_DIGITAL_17mm_F1.8_20260516115815.jpg/960px-Holding_an_Olympus_PEN_E-P7_with_M.ZUIKO_DIGITAL_17mm_F1.8_20260516115815.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "method": "wikimedia-commons"
+    },
+    "OM SYSTEM M.Zuiko Digital 17mm F1.8 II": {
+      "status": "ok",
+      "label": "OM SYSTEM M.Zuiko Digital 17mm F1.8 II",
+      "src": "/assets/images/products/om-system/om-system-micro-four-thirds-m-zuiko-digital-17mm-f1-8-ii.webp",
+      "sourcePage": "https://explore.omsystem.com/c/en/lenses",
+      "sourceImage": "https://apac.explore.omsystem.com/media/catalog/product/transparent/1/7/17mm-f1-8-ii_1_1.webp?width=1000&height=1000&optimize=medium&fit=bounds",
+      "method": "official-page"
+    },
+    "Olympus M.Zuiko Digital 17mm F2.8": {
+      "status": "ok",
+      "label": "Olympus M.Zuiko Digital 17mm F2.8",
+      "src": "/assets/images/products/olympus/olympus-micro-four-thirds-m-zuiko-digital-17mm-f2-8.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Olympus_E-M5_(front).jpg",
+      "sourceImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Olympus_E-M5_%28front%29.jpg/960px-Olympus_E-M5_%28front%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "method": "wikimedia-commons"
+    },
+    "Olympus M.Zuiko Digital ED 20mm F1.4 PRO": {
+      "status": "failed",
+      "label": "Olympus M.Zuiko Digital ED 20mm F1.4 PRO",
+      "reason": "no usable image",
+      "errors": []
+    },
+    "Olympus M.Zuiko Digital ED 25mm F1.2 PRO": {
+      "status": "ok",
+      "label": "Olympus M.Zuiko Digital ED 25mm F1.2 PRO",
+      "src": "/assets/images/products/olympus/olympus-micro-four-thirds-m-zuiko-digital-ed-25mm-f1-2-pro.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Olympus_M.Zuiko_Digital_ED_25mm_F1.2_PRO_(50848725122).jpg",
+      "sourceImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Olympus_M.Zuiko_Digital_ED_25mm_F1.2_PRO_%2850848725122%29.jpg/960px-Olympus_M.Zuiko_Digital_ED_25mm_F1.2_PRO_%2850848725122%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "method": "wikimedia-commons"
+    },
+    "Olympus M.Zuiko Digital 25mm F1.8": {
+      "status": "ok",
+      "label": "Olympus M.Zuiko Digital 25mm F1.8",
+      "src": "/assets/images/products/olympus/olympus-micro-four-thirds-m-zuiko-digital-25mm-f1-8.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Olympus_PEN_E-PL7_with_25mm_f1.8.jpg",
+      "sourceImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Olympus_PEN_E-PL7_with_25mm_f1.8.jpg/960px-Olympus_PEN_E-PL7_with_25mm_f1.8.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "method": "wikimedia-commons"
+    },
+    "OM SYSTEM M.Zuiko Digital 25mm F1.8 II": {
+      "status": "ok",
+      "label": "OM SYSTEM M.Zuiko Digital 25mm F1.8 II",
+      "src": "/assets/images/products/om-system/om-system-micro-four-thirds-m-zuiko-digital-25mm-f1-8-ii.webp",
+      "sourcePage": "https://explore.omsystem.com/c/en/lenses",
+      "sourceImage": "https://apac.explore.omsystem.com/media/catalog/product/transparent/2/5/25mm-f1-8-ii_1_1.webp?width=1000&height=1000&optimize=medium&fit=bounds",
+      "method": "official-page"
+    },
+    "Olympus M.Zuiko Digital ED 30mm F3.5 Macro": {
+      "status": "ok",
+      "label": "Olympus M.Zuiko Digital ED 30mm F3.5 Macro",
+      "src": "/assets/images/products/olympus/olympus-micro-four-thirds-m-zuiko-digital-ed-30mm-f3-5-macro.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:OM_System_90_mm_F3.5_ED_Macro_IS_Pro-20230623-RM-130527.jpg",
+      "sourceImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/OM_System_90_mm_F3.5_ED_Macro_IS_Pro-20230623-RM-130527.jpg/960px-OM_System_90_mm_F3.5_ED_Macro_IS_Pro-20230623-RM-130527.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "method": "wikimedia-commons"
+    },
+    "Olympus M.Zuiko Digital ED 45mm F1.2 PRO": {
+      "status": "ok",
+      "label": "Olympus M.Zuiko Digital ED 45mm F1.2 PRO",
+      "src": "/assets/images/products/olympus/olympus-micro-four-thirds-m-zuiko-digital-ed-45mm-f1-2-pro.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Olympus_M.ZUIKO_DIGITAL_ED_45mm_F1.2_PRO_(52363481326).jpg",
+      "sourceImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Olympus_M.ZUIKO_DIGITAL_ED_45mm_F1.2_PRO_%2852363481326%29.jpg/960px-Olympus_M.ZUIKO_DIGITAL_ED_45mm_F1.2_PRO_%2852363481326%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "method": "wikimedia-commons"
+    },
+    "Olympus M.Zuiko Digital 45mm F1.8": {
+      "status": "ok",
+      "label": "Olympus M.Zuiko Digital 45mm F1.8",
+      "src": "/assets/images/products/olympus/olympus-micro-four-thirds-m-zuiko-digital-45mm-f1-8.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Olympus_M_Zuiko_Digital_ED_45mm_F1.8.jpg",
+      "sourceImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Olympus_M_Zuiko_Digital_ED_45mm_F1.8.jpg/960px-Olympus_M_Zuiko_Digital_ED_45mm_F1.8.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "method": "wikimedia-commons"
+    },
+    "Olympus M.Zuiko Digital ED 60mm F2.8 Macro": {
+      "status": "ok",
+      "label": "Olympus M.Zuiko Digital ED 60mm F2.8 Macro",
+      "src": "/assets/images/products/olympus/olympus-micro-four-thirds-m-zuiko-digital-ed-60mm-f2-8-macro.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Lens_Olympus_M.Zuiko_Digital_ED_60mm_f2.8_Macro_P8051964.jpg",
+      "sourceImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Lens_Olympus_M.Zuiko_Digital_ED_60mm_f2.8_Macro_P8051964.jpg/960px-Lens_Olympus_M.Zuiko_Digital_ED_60mm_f2.8_Macro_P8051964.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "method": "wikimedia-commons"
+    },
+    "Olympus M.Zuiko Digital ED 75mm F1.8": {
+      "status": "ok",
+      "label": "Olympus M.Zuiko Digital ED 75mm F1.8",
+      "src": "/assets/images/products/olympus/olympus-micro-four-thirds-m-zuiko-digital-ed-75mm-f1-8.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Olympus_lens_M.Zuiko_75_mm_f1.8.jpg",
+      "sourceImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Olympus_lens_M.Zuiko_75_mm_f1.8.jpg/960px-Olympus_lens_M.Zuiko_75_mm_f1.8.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "method": "wikimedia-commons"
+    },
+    "OM SYSTEM M.Zuiko Digital ED 90mm F3.5 Macro IS PRO": {
+      "status": "ok",
+      "label": "OM SYSTEM M.Zuiko Digital ED 90mm F3.5 Macro IS PRO",
+      "src": "/assets/images/products/om-system/om-system-micro-four-thirds-m-zuiko-digital-ed-90mm-f3-5-macro-is-pro.webp",
+      "sourcePage": "https://explore.omsystem.com/c/en/lenses",
+      "sourceImage": "https://apac.explore.omsystem.com/media/catalog/product/c/l/clp_image_-_90mm_macro.png?width=1000&height=1000&optimize=medium&fit=bounds",
+      "method": "official-page"
+    },
+    "Olympus M.Zuiko Digital ED 300mm F4 IS PRO": {
+      "status": "ok",
+      "label": "Olympus M.Zuiko Digital ED 300mm F4 IS PRO",
+      "src": "/assets/images/products/olympus/olympus-micro-four-thirds-m-zuiko-digital-ed-300mm-f4-is-pro.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Olympus_M.Zuiko_Digital_300mm_F4.0.jpg",
+      "sourceImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Olympus_M.Zuiko_Digital_300mm_F4.0.jpg/960px-Olympus_M.Zuiko_Digital_300mm_F4.0.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "method": "wikimedia-commons"
+    },
+    "Olympus M.Zuiko Digital ED 12-40mm F2.8 PRO": {
+      "status": "ok",
+      "label": "Olympus M.Zuiko Digital ED 12-40mm F2.8 PRO",
+      "src": "/assets/images/products/olympus/olympus-micro-four-thirds-m-zuiko-digital-ed-12-40mm-f2-8-pro.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Olympus_M.Zuiko_Digital_ED_12-40mm_f2.8_PRO_(29325705467).jpg",
+      "sourceImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Olympus_M.Zuiko_Digital_ED_12-40mm_f2.8_PRO_%2829325705467%29.jpg/960px-Olympus_M.Zuiko_Digital_ED_12-40mm_f2.8_PRO_%2829325705467%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "method": "wikimedia-commons"
+    },
+    "OM SYSTEM M.Zuiko Digital ED 12-40mm F2.8 PRO II": {
+      "status": "ok",
+      "label": "OM SYSTEM M.Zuiko Digital ED 12-40mm F2.8 PRO II",
+      "src": "/assets/images/products/om-system/om-system-micro-four-thirds-m-zuiko-digital-ed-12-40mm-f2-8-pro-ii.webp",
+      "sourcePage": "https://explore.omsystem.com/c/en/lenses",
+      "sourceImage": "https://apac.explore.omsystem.com/media/catalog/product/1/2/12-40mm_clp_1.webp?width=1000&height=1000&optimize=medium&fit=bounds",
+      "method": "official-page"
+    },
+    "Olympus M.Zuiko Digital ED 12-45mm F4 PRO": {
+      "status": "failed",
+      "label": "Olympus M.Zuiko Digital ED 12-45mm F4 PRO",
+      "reason": "no usable image",
+      "errors": []
+    },
+    "Olympus M.Zuiko Digital ED 12-50mm F3.5-6.3 EZ": {
+      "status": "ok",
+      "label": "Olympus M.Zuiko Digital ED 12-50mm F3.5-6.3 EZ",
+      "src": "/assets/images/products/olympus/olympus-micro-four-thirds-m-zuiko-digital-ed-12-50mm-f3-5-6-3-ez.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:OLYMPUS_OM-D_E-M5_-_ED_12-50mm_F3.5-6.3_EZ_(7214629392).jpg",
+      "sourceImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/OLYMPUS_OM-D_E-M5_-_ED_12-50mm_F3.5-6.3_EZ_%287214629392%29.jpg/960px-OLYMPUS_OM-D_E-M5_-_ED_12-50mm_F3.5-6.3_EZ_%287214629392%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "method": "wikimedia-commons"
+    },
+    "Olympus M.Zuiko Digital ED 12-100mm F4 IS PRO": {
+      "status": "ok",
+      "label": "Olympus M.Zuiko Digital ED 12-100mm F4 IS PRO",
+      "src": "/assets/images/products/olympus/olympus-micro-four-thirds-m-zuiko-digital-ed-12-100mm-f4-is-pro.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Olympus_M.Zuiko_Digital_ED_12-100mm_f-4_PRO_front_PSD.jpg",
+      "sourceImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Olympus_M.Zuiko_Digital_ED_12-100mm_f-4_PRO_front_PSD.jpg/960px-Olympus_M.Zuiko_Digital_ED_12-100mm_f-4_PRO_front_PSD.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "method": "wikimedia-commons"
+    },
+    "Olympus M.Zuiko Digital ED 12-200mm F3.5-6.3": {
+      "status": "ok",
+      "label": "Olympus M.Zuiko Digital ED 12-200mm F3.5-6.3",
+      "src": "/assets/images/products/olympus/olympus-micro-four-thirds-m-zuiko-digital-ed-12-200mm-f3-5-6-3.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Olympus_OM-D_E-M5_Mark_III_05.jpg",
+      "sourceImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Olympus_OM-D_E-M5_Mark_III_05.jpg/960px-Olympus_OM-D_E-M5_Mark_III_05.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "method": "wikimedia-commons"
+    },
+    "Olympus M.Zuiko Digital ED 14-42mm F3.5-5.6": {
+      "status": "ok",
+      "label": "Olympus M.Zuiko Digital ED 14-42mm F3.5-5.6",
+      "src": "/assets/images/products/olympus/olympus-micro-four-thirds-m-zuiko-digital-ed-14-42mm-f3-5-5-6.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Olympus_M.Zuiko_Digital_14-42mm_F3.5-5.6_cutted.jpg",
+      "sourceImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Olympus_M.Zuiko_Digital_14-42mm_F3.5-5.6_cutted.jpg/960px-Olympus_M.Zuiko_Digital_14-42mm_F3.5-5.6_cutted.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "method": "wikimedia-commons"
+    },
+    "Olympus M.Zuiko Digital 14-42mm F3.5-5.6 II": {
+      "status": "ok",
+      "label": "Olympus M.Zuiko Digital 14-42mm F3.5-5.6 II",
+      "src": "/assets/images/products/olympus/olympus-micro-four-thirds-m-zuiko-digital-14-42mm-f3-5-5-6-ii.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Olympus_M.Zuiko_digital_14-42mm_f3.5-5.6_II_R.jpg",
+      "sourceImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Olympus_M.Zuiko_digital_14-42mm_f3.5-5.6_II_R.jpg/960px-Olympus_M.Zuiko_digital_14-42mm_f3.5-5.6_II_R.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "method": "wikimedia-commons"
+    },
+    "Olympus M.Zuiko Digital 14-42mm F3.5-5.6 II R": {
+      "status": "ok",
+      "label": "Olympus M.Zuiko Digital 14-42mm F3.5-5.6 II R",
+      "src": "/assets/images/products/olympus/olympus-micro-four-thirds-m-zuiko-digital-14-42mm-f3-5-5-6-ii-r.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Olympus_M.Zuiko_digital_14-42mm_f3.5-5.6_II_R.jpg",
+      "sourceImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Olympus_M.Zuiko_digital_14-42mm_f3.5-5.6_II_R.jpg/960px-Olympus_M.Zuiko_digital_14-42mm_f3.5-5.6_II_R.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "method": "wikimedia-commons"
+    },
+    "Olympus M.Zuiko Digital ED 14-42mm F3.5-5.6 EZ": {
+      "status": "ok",
+      "label": "Olympus M.Zuiko Digital ED 14-42mm F3.5-5.6 EZ",
+      "src": "/assets/images/products/olympus/olympus-micro-four-thirds-m-zuiko-digital-ed-14-42mm-f3-5-5-6-ez.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Olympus_M.Zuiko_Digital_14-42mm_F3.5-5.6_cutted.jpg",
+      "sourceImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Olympus_M.Zuiko_Digital_14-42mm_F3.5-5.6_cutted.jpg/960px-Olympus_M.Zuiko_Digital_14-42mm_F3.5-5.6_cutted.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "method": "wikimedia-commons"
+    },
+    "Olympus M.Zuiko Digital ED 14-150mm F4-5.6": {
+      "status": "failed",
+      "label": "Olympus M.Zuiko Digital ED 14-150mm F4-5.6",
+      "reason": "no usable image",
+      "errors": []
+    },
+    "Olympus M.Zuiko Digital ED 14-150mm F4-5.6 II": {
+      "status": "failed",
+      "label": "Olympus M.Zuiko Digital ED 14-150mm F4-5.6 II",
+      "reason": "no usable image",
+      "errors": []
+    },
+    "Olympus M.Zuiko Digital ED 40-150mm F2.8 PRO": {
+      "status": "ok",
+      "label": "Olympus M.Zuiko Digital ED 40-150mm F2.8 PRO",
+      "src": "/assets/images/products/olympus/olympus-micro-four-thirds-m-zuiko-digital-ed-40-150mm-f2-8-pro.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Olympus_M.Zuiko_Digital_40-150mm_F2.8.jpg",
+      "sourceImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Olympus_M.Zuiko_Digital_40-150mm_F2.8.jpg/960px-Olympus_M.Zuiko_Digital_40-150mm_F2.8.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "method": "wikimedia-commons"
+    },
+    "OM SYSTEM M.Zuiko Digital ED 40-150mm F4 PRO": {
+      "status": "ok",
+      "label": "OM SYSTEM M.Zuiko Digital ED 40-150mm F4 PRO",
+      "src": "/assets/images/products/om-system/om-system-micro-four-thirds-m-zuiko-digital-ed-40-150mm-f4-pro.webp",
+      "sourcePage": "https://explore.omsystem.com/c/en/lenses",
+      "sourceImage": "https://apac.explore.omsystem.com/media/catalog/product/transparent/e/z/ez-m4015_f4_pro_large_copy.webp?width=1000&height=1000&optimize=medium&fit=bounds",
+      "method": "official-page"
+    },
+    "Olympus M.Zuiko Digital ED 40-150mm F4-5.6": {
+      "status": "ok",
+      "label": "Olympus M.Zuiko Digital ED 40-150mm F4-5.6",
+      "src": "/assets/images/products/olympus/olympus-micro-four-thirds-m-zuiko-digital-ed-40-150mm-f4-5-6.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Olympus_M.Zuiko_Digital_40-150mm.png",
+      "sourceImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Olympus_M.Zuiko_Digital_40-150mm.png/960px-Olympus_M.Zuiko_Digital_40-150mm.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "method": "wikimedia-commons"
+    },
+    "Olympus M.Zuiko Digital ED 40-150mm F4-5.6 R": {
+      "status": "failed",
+      "label": "Olympus M.Zuiko Digital ED 40-150mm F4-5.6 R",
+      "reason": "no usable image",
+      "errors": []
+    },
+    "OM SYSTEM M.Zuiko Digital ED 50-200mm F2.8 IS PRO": {
+      "status": "ok",
+      "label": "OM SYSTEM M.Zuiko Digital ED 50-200mm F2.8 IS PRO",
+      "src": "/assets/images/products/om-system/om-system-micro-four-thirds-m-zuiko-digital-ed-50-200mm-f2-8-is-pro.webp",
+      "sourcePage": "https://explore.omsystem.com/c/en/lenses",
+      "sourceImage": "https://apac.explore.omsystem.com/media/catalog/product/5/0/50-200mm_f2.8_is_pro-om_1_1.webp?width=1000&height=1000&optimize=medium&fit=bounds",
+      "method": "official-page"
+    },
+    "Olympus M.Zuiko Digital ED 75-300mm F4.8-6.7": {
+      "status": "ok",
+      "label": "Olympus M.Zuiko Digital ED 75-300mm F4.8-6.7",
+      "src": "/assets/images/products/olympus/olympus-micro-four-thirds-m-zuiko-digital-ed-75-300mm-f4-8-6-7.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Olympus_M.Zuiko_75-300mm_II_and_Lumix_GH1_(20180817_134214).jpg",
+      "sourceImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Olympus_M.Zuiko_75-300mm_II_and_Lumix_GH1_%2820180817_134214%29.jpg/960px-Olympus_M.Zuiko_75-300mm_II_and_Lumix_GH1_%2820180817_134214%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "method": "wikimedia-commons"
+    },
+    "Olympus M.Zuiko Digital ED 75-300mm F4.8-6.7 II": {
+      "status": "ok",
+      "label": "Olympus M.Zuiko Digital ED 75-300mm F4.8-6.7 II",
+      "src": "/assets/images/products/olympus/olympus-micro-four-thirds-m-zuiko-digital-ed-75-300mm-f4-8-6-7-ii.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Olympus_M.Zuiko_75-300mm_II_and_Lumix_GH1_(20180817_134214).jpg",
+      "sourceImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Olympus_M.Zuiko_75-300mm_II_and_Lumix_GH1_%2820180817_134214%29.jpg/960px-Olympus_M.Zuiko_75-300mm_II_and_Lumix_GH1_%2820180817_134214%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "method": "wikimedia-commons"
+    },
+    "Olympus M.Zuiko Digital ED 100-400mm F5-6.3 IS": {
+      "status": "ok",
+      "label": "Olympus M.Zuiko Digital ED 100-400mm F5-6.3 IS",
+      "src": "/assets/images/products/olympus/olympus-micro-four-thirds-m-zuiko-digital-ed-100-400mm-f5-6-3-is.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Olympus_M.Zuiko_Digital_ED_100-400mm_F5.0-6.3_IS-20240115-RM-171222.jpg",
+      "sourceImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Olympus_M.Zuiko_Digital_ED_100-400mm_F5.0-6.3_IS-20240115-RM-171222.jpg/960px-Olympus_M.Zuiko_Digital_ED_100-400mm_F5.0-6.3_IS-20240115-RM-171222.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "method": "wikimedia-commons"
+    },
+    "OM SYSTEM M.Zuiko Digital ED 100-400mm F5-6.3 IS II": {
+      "status": "ok",
+      "label": "OM SYSTEM M.Zuiko Digital ED 100-400mm F5-6.3 IS II",
+      "src": "/assets/images/products/om-system/om-system-micro-four-thirds-m-zuiko-digital-ed-100-400mm-f5-6-3-is-ii.webp",
+      "sourcePage": "https://explore.omsystem.com/c/en/lenses",
+      "sourceImage": "https://apac.explore.omsystem.com/media/catalog/product/transparent/1/0/100-400mm-ii_1.webp?width=1000&height=1000&optimize=medium&fit=bounds",
+      "method": "official-page"
+    },
+    "Olympus M.Zuiko Digital ED 150-400mm F4.5 TC1.25x IS PRO": {
+      "status": "ok",
+      "label": "Olympus M.Zuiko Digital ED 150-400mm F4.5 TC1.25x IS PRO",
+      "src": "/assets/images/products/olympus/olympus-micro-four-thirds-m-zuiko-digital-ed-150-400mm-f4-5-tc1-25x-is-pro.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Olympus_M.Zuiko_Digital_ED_150%E2%80%91400mm_F4.5_TC1.25x_IS_PRO_-_by_Henry_S%C3%B6derlund_(51739082561).jpg",
+      "sourceImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Olympus_M.Zuiko_Digital_ED_150%E2%80%91400mm_F4.5_TC1.25x_IS_PRO_-_by_Henry_S%C3%B6derlund_%2851739082561%29.jpg/960px-Olympus_M.Zuiko_Digital_ED_150%E2%80%91400mm_F4.5_TC1.25x_IS_PRO_-_by_Henry_S%C3%B6derlund_%2851739082561%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "method": "wikimedia-commons"
+    },
+    "OM SYSTEM M.Zuiko Digital ED 150-600mm F5-6.3 IS": {
+      "status": "ok",
+      "label": "OM SYSTEM M.Zuiko Digital ED 150-600mm F5-6.3 IS",
+      "src": "/assets/images/products/om-system/om-system-micro-four-thirds-m-zuiko-digital-ed-150-600mm-f5-6-3-is.webp",
+      "sourcePage": "https://explore.omsystem.com/c/en/lenses",
+      "sourceImage": "https://apac.explore.omsystem.com/media/catalog/product/transparent/1/5/150-600mm-product-image_o_85.webp?width=1000&height=1000&optimize=medium&fit=bounds",
+      "method": "official-page"
+    },
+    "Leica Leica CL": {
+      "status": "ok",
+      "label": "Leica Leica CL",
+      "src": "/assets/images/products/leica/leica-l-mount-leica-cl.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Leica_CL_with_Elmarit-TL_18mm_F2.8_Asph._in_box_(L1000035).jpg",
+      "sourceImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Leica_CL_with_Elmarit-TL_18mm_F2.8_Asph._in_box_%28L1000035%29.jpg/960px-Leica_CL_with_Elmarit-TL_18mm_F2.8_Asph._in_box_%28L1000035%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "method": "wikimedia-commons"
+    },
+    "Leica Leica SL (Typ 601)": {
+      "status": "ok",
+      "label": "Leica Leica SL (Typ 601)",
+      "src": "/assets/images/products/leica/leica-l-mount-leica-sl-typ-601.webp",
+      "sourcePage": "https://leica-camera.com/en-US/photography/sl/all-products",
+      "sourceImage": "https://leica-camera.com/sites/default/files/styles/meta_tag_image/public/2026-04/Product_Overview_SL_3840x2560.jpg?h=deaec4b9&itok=JaBfP61G",
+      "method": "official-page"
+    },
+    "Leica Leica SL2": {
+      "status": "ok",
+      "label": "Leica Leica SL2",
+      "src": "/assets/images/products/leica/leica-l-mount-leica-sl2.webp",
+      "sourcePage": "https://leica-camera.com/en-US/photography/sl/all-products",
+      "sourceImage": "https://leica-camera.com/sites/default/files/styles/meta_tag_image/public/2026-04/Product_Overview_SL_3840x2560.jpg?h=deaec4b9&itok=JaBfP61G",
+      "method": "official-page"
+    },
+    "Leica Leica SL2-S": {
+      "status": "ok",
+      "label": "Leica Leica SL2-S",
+      "src": "/assets/images/products/leica/leica-l-mount-leica-sl2-s.webp",
+      "sourcePage": "https://leica-camera.com/en-US/photography/sl/all-products",
+      "sourceImage": "https://leica-camera.com/sites/default/files/styles/meta_tag_image/public/2026-04/Product_Overview_SL_3840x2560.jpg?h=deaec4b9&itok=JaBfP61G",
+      "method": "official-page"
+    },
+    "Leica Leica SL3": {
+      "status": "ok",
+      "label": "Leica Leica SL3",
+      "src": "/assets/images/products/leica/leica-l-mount-leica-sl3.webp",
+      "sourcePage": "https://leica-camera.com/en-US/photography/sl/all-products",
+      "sourceImage": "https://leica-camera.com/sites/default/files/styles/meta_tag_image/public/2026-04/Product_Overview_SL_3840x2560.jpg?h=deaec4b9&itok=JaBfP61G",
+      "method": "official-page"
+    },
+    "Leica Leica SL3-S": {
+      "status": "ok",
+      "label": "Leica Leica SL3-S",
+      "src": "/assets/images/products/leica/leica-l-mount-leica-sl3-s.webp",
+      "sourcePage": "https://leica-camera.com/en-US/photography/sl/all-products",
+      "sourceImage": "https://leica-camera.com/sites/default/files/styles/meta_tag_image/public/2026-04/Product_Overview_SL_3840x2560.jpg?h=deaec4b9&itok=JaBfP61G",
+      "method": "official-page"
+    },
+    "Leica Super-Vario-Elmar-TL 11-23mm F3.5-4.5 ASPH.": {
+      "status": "failed",
+      "label": "Leica Super-Vario-Elmar-TL 11-23mm F3.5-4.5 ASPH.",
+      "reason": "no usable image",
+      "errors": []
+    },
+    "Leica Vario-Elmar-TL 18-56mm F3.5-5.6 ASPH.": {
+      "status": "failed",
+      "label": "Leica Vario-Elmar-TL 18-56mm F3.5-5.6 ASPH.",
+      "reason": "no usable image",
+      "errors": []
+    },
+    "Leica APO-Vario-Elmar-TL 55-135mm F3.5-4.5 ASPH.": {
+      "status": "failed",
+      "label": "Leica APO-Vario-Elmar-TL 55-135mm F3.5-4.5 ASPH.",
+      "reason": "no usable image",
+      "errors": []
+    },
+    "Leica Elmarit-TL 18mm F2.8 ASPH.": {
+      "status": "ok",
+      "label": "Leica Elmarit-TL 18mm F2.8 ASPH.",
+      "src": "/assets/images/products/leica/leica-l-mount-elmarit-tl-18mm-f2-8-asph.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Leica_CL_with_Elmarit-TL_18mm_F2.8_Asph._in_box_(L1000035).jpg",
+      "sourceImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Leica_CL_with_Elmarit-TL_18mm_F2.8_Asph._in_box_%28L1000035%29.jpg/960px-Leica_CL_with_Elmarit-TL_18mm_F2.8_Asph._in_box_%28L1000035%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "method": "wikimedia-commons"
+    },
+    "Leica Summicron-TL 23mm F2 ASPH.": {
+      "status": "failed",
+      "label": "Leica Summicron-TL 23mm F2 ASPH.",
+      "reason": "no usable image",
+      "errors": []
+    },
+    "Leica Summilux-TL 35mm F1.4 ASPH.": {
+      "status": "failed",
+      "label": "Leica Summilux-TL 35mm F1.4 ASPH.",
+      "reason": "no usable image",
+      "errors": []
+    },
+    "Leica APO-Macro-Elmarit-TL 60mm F2.8 ASPH.": {
+      "status": "failed",
+      "label": "Leica APO-Macro-Elmarit-TL 60mm F2.8 ASPH.",
+      "reason": "no usable image",
+      "errors": []
+    },
+    "Leica Super-Vario-Elmarit-SL 14-24mm F2.8 ASPH.": {
+      "status": "ok",
+      "label": "Leica Super-Vario-Elmarit-SL 14-24mm F2.8 ASPH.",
+      "src": "/assets/images/products/leica/leica-l-mount-super-vario-elmarit-sl-14-24mm-f2-8-asph.webp",
+      "sourcePage": "https://leica-camera.com/ko-KR/photography/lenses/sl/all-products",
+      "sourceImage": "https://leica-camera.com/themes/custom/leica_theme/assets/visuals/leica.png",
+      "method": "official-page"
+    },
+    "Leica Super-Vario-Elmar-SL 16-35mm F3.5-4.5 ASPH.": {
+      "status": "ok",
+      "label": "Leica Super-Vario-Elmar-SL 16-35mm F3.5-4.5 ASPH.",
+      "src": "/assets/images/products/leica/leica-l-mount-super-vario-elmar-sl-16-35mm-f3-5-4-5-asph.webp",
+      "sourcePage": "https://leica-camera.com/ko-KR/photography/lenses/sl/all-products",
+      "sourceImage": "https://leica-camera.com/themes/custom/leica_theme/assets/visuals/leica.png",
+      "method": "official-page"
+    },
+    "Leica Vario-Elmarit-SL 24-70mm F2.8 ASPH.": {
+      "status": "ok",
+      "label": "Leica Vario-Elmarit-SL 24-70mm F2.8 ASPH.",
+      "src": "/assets/images/products/leica/leica-l-mount-vario-elmarit-sl-24-70mm-f2-8-asph.webp",
+      "sourcePage": "https://leica-camera.com/ko-KR/photography/lenses/sl/all-products",
+      "sourceImage": "https://leica-camera.com/themes/custom/leica_theme/assets/visuals/leica.png",
+      "method": "official-page"
+    },
+    "Leica Vario-Elmarit-SL 28-70mm F2.8 ASPH.": {
+      "status": "ok",
+      "label": "Leica Vario-Elmarit-SL 28-70mm F2.8 ASPH.",
+      "src": "/assets/images/products/leica/leica-l-mount-vario-elmarit-sl-28-70mm-f2-8-asph.webp",
+      "sourcePage": "https://leica-camera.com/ko-KR/photography/lenses/sl/all-products",
+      "sourceImage": "https://leica-camera.com/themes/custom/leica_theme/assets/visuals/leica.png",
+      "method": "official-page"
+    },
+    "Leica Vario-Elmarit-SL 24-90mm F2.8-4 ASPH.": {
+      "status": "ok",
+      "label": "Leica Vario-Elmarit-SL 24-90mm F2.8-4 ASPH.",
+      "src": "/assets/images/products/leica/leica-l-mount-vario-elmarit-sl-24-90mm-f2-8-4-asph.webp",
+      "sourcePage": "https://leica-camera.com/ko-KR/photography/lenses/sl/all-products",
+      "sourceImage": "https://leica-camera.com/themes/custom/leica_theme/assets/visuals/leica.png",
+      "method": "official-page"
+    },
+    "Leica Vario-Elmarit-SL 70-200mm F2.8 ASPH.": {
+      "status": "ok",
+      "label": "Leica Vario-Elmarit-SL 70-200mm F2.8 ASPH.",
+      "src": "/assets/images/products/leica/leica-l-mount-vario-elmarit-sl-70-200mm-f2-8-asph.webp",
+      "sourcePage": "https://leica-camera.com/ko-KR/photography/lenses/sl/all-products",
+      "sourceImage": "https://leica-camera.com/themes/custom/leica_theme/assets/visuals/leica.png",
+      "method": "official-page"
+    },
+    "Leica APO-Vario-Elmarit-SL 90-280mm F2.8-4": {
+      "status": "ok",
+      "label": "Leica APO-Vario-Elmarit-SL 90-280mm F2.8-4",
+      "src": "/assets/images/products/leica/leica-l-mount-apo-vario-elmarit-sl-90-280mm-f2-8-4.webp",
+      "sourcePage": "https://leica-camera.com/ko-KR/photography/lenses/sl/all-products",
+      "sourceImage": "https://leica-camera.com/themes/custom/leica_theme/assets/visuals/leica.png",
+      "method": "official-page"
+    },
+    "Leica Vario-Elmar-SL 100-400mm F5-6.3": {
+      "status": "ok",
+      "label": "Leica Vario-Elmar-SL 100-400mm F5-6.3",
+      "src": "/assets/images/products/leica/leica-l-mount-vario-elmar-sl-100-400mm-f5-6-3.webp",
+      "sourcePage": "https://leica-camera.com/ko-KR/photography/lenses/sl/all-products",
+      "sourceImage": "https://leica-camera.com/themes/custom/leica_theme/assets/visuals/leica.png",
+      "method": "official-page"
+    },
+    "Leica Super-APO-Summicron-SL 21mm F2 ASPH.": {
+      "status": "ok",
+      "label": "Leica Super-APO-Summicron-SL 21mm F2 ASPH.",
+      "src": "/assets/images/products/leica/leica-l-mount-super-apo-summicron-sl-21mm-f2-asph.webp",
+      "sourcePage": "https://leica-camera.com/ko-KR/photography/lenses/sl/all-products",
+      "sourceImage": "https://leica-camera.com/themes/custom/leica_theme/assets/visuals/leica.png",
+      "method": "official-page"
+    },
+    "Leica APO-Summicron-SL 28mm F2 ASPH.": {
+      "status": "ok",
+      "label": "Leica APO-Summicron-SL 28mm F2 ASPH.",
+      "src": "/assets/images/products/leica/leica-l-mount-apo-summicron-sl-28mm-f2-asph.webp",
+      "sourcePage": "https://leica-camera.com/ko-KR/photography/lenses/sl/all-products",
+      "sourceImage": "https://leica-camera.com/themes/custom/leica_theme/assets/visuals/leica.png",
+      "method": "official-page"
+    },
+    "Leica APO-Summicron-SL 35mm F2 ASPH.": {
+      "status": "ok",
+      "label": "Leica APO-Summicron-SL 35mm F2 ASPH.",
+      "src": "/assets/images/products/leica/leica-l-mount-apo-summicron-sl-35mm-f2-asph.webp",
+      "sourcePage": "https://leica-camera.com/ko-KR/photography/lenses/sl/all-products",
+      "sourceImage": "https://leica-camera.com/themes/custom/leica_theme/assets/visuals/leica.png",
+      "method": "official-page"
+    },
+    "Leica Summicron-SL 35mm F2 ASPH.": {
+      "status": "ok",
+      "label": "Leica Summicron-SL 35mm F2 ASPH.",
+      "src": "/assets/images/products/leica/leica-l-mount-summicron-sl-35mm-f2-asph.webp",
+      "sourcePage": "https://leica-camera.com/ko-KR/photography/lenses/sl/all-products",
+      "sourceImage": "https://leica-camera.com/themes/custom/leica_theme/assets/visuals/leica.png",
+      "method": "official-page"
+    },
+    "Leica Summilux-SL 50mm F1.4 ASPH.": {
+      "status": "ok",
+      "label": "Leica Summilux-SL 50mm F1.4 ASPH.",
+      "src": "/assets/images/products/leica/leica-l-mount-summilux-sl-50mm-f1-4-asph.webp",
+      "sourcePage": "https://leica-camera.com/ko-KR/photography/lenses/sl/all-products",
+      "sourceImage": "https://leica-camera.com/themes/custom/leica_theme/assets/visuals/leica.png",
+      "method": "official-page"
+    },
+    "Leica APO-Summicron-SL 50mm F2 ASPH.": {
+      "status": "ok",
+      "label": "Leica APO-Summicron-SL 50mm F2 ASPH.",
+      "src": "/assets/images/products/leica/leica-l-mount-apo-summicron-sl-50mm-f2-asph.webp",
+      "sourcePage": "https://leica-camera.com/ko-KR/photography/lenses/sl/all-products",
+      "sourceImage": "https://leica-camera.com/themes/custom/leica_theme/assets/visuals/leica.png",
+      "method": "official-page"
+    },
+    "Leica Summicron-SL 50mm F2 ASPH.": {
+      "status": "ok",
+      "label": "Leica Summicron-SL 50mm F2 ASPH.",
+      "src": "/assets/images/products/leica/leica-l-mount-summicron-sl-50mm-f2-asph.webp",
+      "sourcePage": "https://leica-camera.com/ko-KR/photography/lenses/sl/all-products",
+      "sourceImage": "https://leica-camera.com/themes/custom/leica_theme/assets/visuals/leica.png",
+      "method": "official-page"
+    },
+    "Leica APO-Summicron-SL 75mm F2 ASPH.": {
+      "status": "ok",
+      "label": "Leica APO-Summicron-SL 75mm F2 ASPH.",
+      "src": "/assets/images/products/leica/leica-l-mount-apo-summicron-sl-75mm-f2-asph.webp",
+      "sourcePage": "https://leica-camera.com/ko-KR/photography/lenses/sl/all-products",
+      "sourceImage": "https://leica-camera.com/themes/custom/leica_theme/assets/visuals/leica.png",
+      "method": "official-page"
+    },
+    "Leica APO-Summicron-SL 90mm F2 ASPH.": {
+      "status": "ok",
+      "label": "Leica APO-Summicron-SL 90mm F2 ASPH.",
+      "src": "/assets/images/products/leica/leica-l-mount-apo-summicron-sl-90mm-f2-asph.webp",
+      "sourcePage": "https://leica-camera.com/ko-KR/photography/lenses/sl/all-products",
+      "sourceImage": "https://leica-camera.com/themes/custom/leica_theme/assets/visuals/leica.png",
+      "method": "official-page"
+    },
+    "Leica APO-Macro-Elmarit-SL 100mm F2.8": {
+      "status": "ok",
+      "label": "Leica APO-Macro-Elmarit-SL 100mm F2.8",
+      "src": "/assets/images/products/leica/leica-l-mount-apo-macro-elmarit-sl-100mm-f2-8.webp",
+      "sourcePage": "https://leica-camera.com/ko-KR/photography/lenses/sl/all-products",
+      "sourceImage": "https://leica-camera.com/themes/custom/leica_theme/assets/visuals/leica.png",
+      "method": "official-page"
+    },
+    "Pentax Pentax Q-S1": {
+      "status": "ok",
+      "label": "Pentax Pentax Q-S1",
+      "src": "/assets/images/products/pentax/pentax-pentax-q-pentax-q-s1.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Pentax_Q_S-1_color_variations_2017_CP%2B.jpg",
+      "sourceImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Pentax_Q_S-1_color_variations_2017_CP%2B.jpg/960px-Pentax_Q_S-1_color_variations_2017_CP%2B.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "method": "wikimedia-commons"
+    },
+    "Pentax Pentax K-01": {
+      "status": "ok",
+      "label": "Pentax Pentax K-01",
+      "src": "/assets/images/products/pentax/pentax-pentax-k-k-01.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Pentax_K-01_35mm.jpg",
+      "sourceImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Pentax_K-01_35mm.jpg/960px-Pentax_K-01_35mm.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "method": "wikimedia-commons"
+    },
+    "Pentax 01 STANDARD PRIME 8.5mm F1.9": {
+      "status": "ok",
+      "label": "Pentax 01 STANDARD PRIME 8.5mm F1.9",
+      "src": "/assets/images/products/pentax/pentax-pentax-q-01.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Pentax_K-01_35mm.jpg",
+      "sourceImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Pentax_K-01_35mm.jpg/960px-Pentax_K-01_35mm.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "method": "wikimedia-commons"
+    },
+    "Pentax 02 STANDARD ZOOM 5-15mm F2.8-4.5": {
+      "status": "ok",
+      "label": "Pentax 02 STANDARD ZOOM 5-15mm F2.8-4.5",
+      "src": "/assets/images/products/pentax/pentax-pentax-q-02.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Pentax_Option_33LF_02.jpg",
+      "sourceImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Pentax_Option_33LF_02.jpg/960px-Pentax_Option_33LF_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "method": "wikimedia-commons"
+    },
+    "Pentax 03 FISH-EYE 3.2mm F5.6": {
+      "status": "ok",
+      "label": "Pentax 03 FISH-EYE 3.2mm F5.6",
+      "src": "/assets/images/products/pentax/pentax-pentax-q-03.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Pentax_Option_33LF_03.jpg",
+      "sourceImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Pentax_Option_33LF_03.jpg/960px-Pentax_Option_33LF_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "method": "wikimedia-commons"
+    },
+    "Pentax 04 TOY LENS WIDE 6.3mm F7.1": {
+      "status": "ok",
+      "label": "Pentax 04 TOY LENS WIDE 6.3mm F7.1",
+      "src": "/assets/images/products/pentax/pentax-pentax-q-04.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Pentax_K-5_4740_04.jpg",
+      "sourceImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Pentax_K-5_4740_04.jpg/960px-Pentax_K-5_4740_04.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "method": "wikimedia-commons"
+    },
+    "Pentax 05 TOY LENS TELEPHOTO 18mm F8": {
+      "status": "ok",
+      "label": "Pentax 05 TOY LENS TELEPHOTO 18mm F8",
+      "src": "/assets/images/products/pentax/pentax-pentax-q-05.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Pentax_K-5_4743_05.jpg",
+      "sourceImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Pentax_K-5_4743_05.jpg/960px-Pentax_K-5_4743_05.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "method": "wikimedia-commons"
+    },
+    "Pentax 06 TELEPHOTO ZOOM 15-45mm F2.8": {
+      "status": "ok",
+      "label": "Pentax 06 TELEPHOTO ZOOM 15-45mm F2.8",
+      "src": "/assets/images/products/pentax/pentax-pentax-q-06.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Foto,_PENTAX_Objektiv,_smc_PENTAX-F_28_F2.8,_IMGP0667.jpg",
+      "sourceImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Foto%2C_PENTAX_Objektiv%2C_smc_PENTAX-F_28_F2.8%2C_IMGP0667.jpg/960px-Foto%2C_PENTAX_Objektiv%2C_smc_PENTAX-F_28_F2.8%2C_IMGP0667.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "method": "wikimedia-commons"
+    },
+    "Pentax 07 MOUNT SHIELD LENS 11.5mm F9": {
+      "status": "ok",
+      "label": "Pentax 07 MOUNT SHIELD LENS 11.5mm F9",
+      "src": "/assets/images/products/pentax/pentax-pentax-q-07.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Pentax_2011_(5994727076).jpg",
+      "sourceImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Pentax_2011_%285994727076%29.jpg/960px-Pentax_2011_%285994727076%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "method": "wikimedia-commons"
     }
   }
