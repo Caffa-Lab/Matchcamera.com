@@ -1,6 +1,6 @@
 {
   "_meta": {
-    "updatedAt": "2026-08-28T09:13:38.771685+00:00",
+    "updatedAt": "2026-08-28T09:39:32.183276+00:00",
     "totalProducts": 843
   },
   "items": {
@@ -385,25 +385,19 @@
       "label": "Fujifilm X-Pro3"
     },
     "Panasonic LUMIX S1": {
-      "status": "ok",
-      "label": "Panasonic LUMIX S1",
-      "src": "/assets/images/products/panasonic/panasonic-l-mount-lumix-s1.webp",
-      "sourcePage": "https://shop.panasonic.com/pages/lumix-s-series-mirrorless-full-frame-cameras",
-      "sourceImage": "http://shop.panasonic.com/cdn/shop/files/MicrosoftTeams-image_37.png?v=1779301024&width=2048"
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Panasonic LUMIX S1"
     },
     "Panasonic LUMIX S1R": {
-      "status": "ok",
-      "label": "Panasonic LUMIX S1R",
-      "src": "/assets/images/products/panasonic/panasonic-l-mount-lumix-s1r.webp",
-      "sourcePage": "https://shop.panasonic.com/pages/lumix-s-series-mirrorless-full-frame-cameras",
-      "sourceImage": "http://shop.panasonic.com/cdn/shop/files/MicrosoftTeams-image_37.png?v=1779301024&width=2048"
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Panasonic LUMIX S1R"
     },
     "Panasonic LUMIX S1H": {
-      "status": "ok",
-      "label": "Panasonic LUMIX S1H",
-      "src": "/assets/images/products/panasonic/panasonic-l-mount-lumix-s1h.webp",
-      "sourcePage": "https://shop.panasonic.com/pages/lumix-s-series-mirrorless-full-frame-cameras",
-      "sourceImage": "http://shop.panasonic.com/cdn/shop/files/MicrosoftTeams-image_37.png?v=1779301024&width=2048"
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Panasonic LUMIX S1H"
     },
     "OM SYSTEM OM-1": {
       "status": "ok",
@@ -1900,6 +1894,582 @@
       "src": "/assets/images/products/fujifilm/fujifilm-fujifilm-x-xc15-45mmf3-5-5-6.webp",
       "sourcePage": "https://www.fujifilm-x.com/ko-kr/products/lenses/",
       "sourceImage": "https://fujifilm-x.b-cdn.net/wp-content/uploads/2019/10/9_thum_xc15-45mmf3-5-5-6-ois-pz-1.jpg?width=365&height=365",
+      "method": "official-page"
+    },
+    "Fujifilm XC16-50mmF3.5-5.6 OIS": {
+      "status": "ok",
+      "label": "Fujifilm XC16-50mmF3.5-5.6 OIS",
+      "src": "/assets/images/products/fujifilm/fujifilm-fujifilm-x-xc16-50mmf3-5-5-6.webp",
+      "sourcePage": "https://www.fujifilm-x.com/ko-kr/products/lenses/",
+      "sourceImage": "https://fujifilm-x.b-cdn.net/wp-content/uploads/2019/07/gf50mmf35-R-lm-wr_thum.jpg?width=365&height=365",
+      "method": "official-page"
+    },
+    "Fujifilm XC16-50mmF3.5-5.6 OIS II": {
+      "status": "ok",
+      "label": "Fujifilm XC16-50mmF3.5-5.6 OIS II",
+      "src": "/assets/images/products/fujifilm/fujifilm-fujifilm-x-xc16-50mmf3-5-5-6-2.webp",
+      "sourcePage": "https://www.fujifilm-x.com/ko-kr/products/lenses/",
+      "sourceImage": "https://fujifilm-x.b-cdn.net/wp-content/uploads/2019/07/gf50mmf35-R-lm-wr_thum.jpg?width=365&height=365",
+      "method": "official-page"
+    },
+    "Fujifilm XC50-230mmF4.5-6.7 OIS": {
+      "status": "ok",
+      "label": "Fujifilm XC50-230mmF4.5-6.7 OIS",
+      "src": "/assets/images/products/fujifilm/fujifilm-fujifilm-x-xc50-230mmf4-5-6-7.webp",
+      "sourcePage": "https://www.fujifilm-x.com/ko-kr/products/lenses/",
+      "sourceImage": "https://fujifilm-x.b-cdn.net/wp-content/uploads/2016/10/11_thum_xc50-230mmf4-5-6-7-ois.jpg?width=365&height=365",
+      "method": "official-page"
+    },
+    "Fujifilm XC50-230mmF4.5-6.7 OIS II": {
+      "status": "ok",
+      "label": "Fujifilm XC50-230mmF4.5-6.7 OIS II",
+      "src": "/assets/images/products/fujifilm/fujifilm-fujifilm-x-xc50-230mmf4-5-6-7-2.webp",
+      "sourcePage": "https://www.fujifilm-x.com/ko-kr/products/lenses/",
+      "sourceImage": "https://fujifilm-x.b-cdn.net/wp-content/uploads/2016/10/11_thum_xc50-230mmf4-5-6-7-ois.jpg?width=365&height=365",
+      "method": "official-page"
+    },
+    "Fujifilm MKX18-55mmT2.9": {
+      "status": "ok",
+      "label": "Fujifilm MKX18-55mmT2.9",
+      "src": "/assets/images/products/fujifilm/fujifilm-fujifilm-x-mkx18-55mmt2-9.webp",
+      "sourcePage": "https://www.fujifilm-x.com/ko-kr/products/lenses/",
+      "sourceImage": "https://fujifilm-x.b-cdn.net/wp-content/uploads/2018/02/1_thum_mkx18-55mmt2-9.jpg?width=365&height=365",
+      "method": "official-page"
+    },
+    "Fujifilm MKX50-135mmT2.9": {
+      "status": "ok",
+      "label": "Fujifilm MKX50-135mmT2.9",
+      "src": "/assets/images/products/fujifilm/fujifilm-fujifilm-x-mkx50-135mmt2-9.webp",
+      "sourcePage": "https://www.fujifilm-x.com/ko-kr/products/lenses/",
+      "sourceImage": "https://fujifilm-x.b-cdn.net/wp-content/uploads/2018/02/2_thum_mkx50-135mmt2-9.jpg?width=365&height=365",
+      "method": "official-page"
+    },
+    "Fujifilm GF23mmF4 R LM WR": {
+      "status": "ok",
+      "label": "Fujifilm GF23mmF4 R LM WR",
+      "src": "/assets/images/products/fujifilm/fujifilm-fujifilm-g-gf23mmf4.webp",
+      "sourcePage": "https://www.fujifilm.com/kr/en/consumer/digitalcameras/gfx",
+      "sourceImage": "https://asset.fujifilm.com/common/img/fujifilm_ogp.png",
+      "method": "official-page"
+    },
+    "Fujifilm GF30mmF3.5 R WR": {
+      "status": "ok",
+      "label": "Fujifilm GF30mmF3.5 R WR",
+      "src": "/assets/images/products/fujifilm/fujifilm-fujifilm-g-gf30mmf3-5.webp",
+      "sourcePage": "https://www.fujifilm.com/kr/en/consumer/digitalcameras/gfx",
+      "sourceImage": "https://asset.fujifilm.com/common/img/fujifilm_ogp.png",
+      "method": "official-page"
+    },
+    "Fujifilm GF45mmF2.8 R WR": {
+      "status": "ok",
+      "label": "Fujifilm GF45mmF2.8 R WR",
+      "src": "/assets/images/products/fujifilm/fujifilm-fujifilm-g-gf45mmf2-8.webp",
+      "sourcePage": "https://www.fujifilm.com/kr/en/consumer/digitalcameras/gfx",
+      "sourceImage": "https://asset.fujifilm.com/common/img/fujifilm_ogp.png",
+      "method": "official-page"
+    },
+    "Fujifilm GF50mmF3.5 R LM WR": {
+      "status": "ok",
+      "label": "Fujifilm GF50mmF3.5 R LM WR",
+      "src": "/assets/images/products/fujifilm/fujifilm-fujifilm-g-gf50mmf3-5.webp",
+      "sourcePage": "https://www.fujifilm.com/kr/en/consumer/digitalcameras/gfx",
+      "sourceImage": "https://asset.fujifilm.com/common/img/fujifilm_ogp.png",
+      "method": "official-page"
+    },
+    "Fujifilm GF55mmF1.7 R WR": {
+      "status": "ok",
+      "label": "Fujifilm GF55mmF1.7 R WR",
+      "src": "/assets/images/products/fujifilm/fujifilm-fujifilm-g-gf55mmf1-7.webp",
+      "sourcePage": "https://www.fujifilm.com/kr/en/consumer/digitalcameras/gfx",
+      "sourceImage": "https://asset.fujifilm.com/common/img/fujifilm_ogp.png",
+      "method": "official-page"
+    },
+    "Fujifilm GF63mmF2.8 R WR": {
+      "status": "ok",
+      "label": "Fujifilm GF63mmF2.8 R WR",
+      "src": "/assets/images/products/fujifilm/fujifilm-fujifilm-g-gf63mmf2-8.webp",
+      "sourcePage": "https://www.fujifilm.com/kr/en/consumer/digitalcameras/gfx",
+      "sourceImage": "https://asset.fujifilm.com/common/img/fujifilm_ogp.png",
+      "method": "official-page"
+    },
+    "Fujifilm GF80mmF1.7 R WR": {
+      "status": "ok",
+      "label": "Fujifilm GF80mmF1.7 R WR",
+      "src": "/assets/images/products/fujifilm/fujifilm-fujifilm-g-gf80mmf1-7.webp",
+      "sourcePage": "https://www.fujifilm.com/kr/en/consumer/digitalcameras/gfx",
+      "sourceImage": "https://asset.fujifilm.com/common/img/fujifilm_ogp.png",
+      "method": "official-page"
+    },
+    "Fujifilm GF110mmF2 R LM WR": {
+      "status": "ok",
+      "label": "Fujifilm GF110mmF2 R LM WR",
+      "src": "/assets/images/products/fujifilm/fujifilm-fujifilm-g-gf110mmf2.webp",
+      "sourcePage": "https://www.fujifilm.com/kr/en/consumer/digitalcameras/gfx",
+      "sourceImage": "https://asset.fujifilm.com/common/img/fujifilm_ogp.png",
+      "method": "official-page"
+    },
+    "Fujifilm GF120mmF4 R LM OIS WR Macro": {
+      "status": "ok",
+      "label": "Fujifilm GF120mmF4 R LM OIS WR Macro",
+      "src": "/assets/images/products/fujifilm/fujifilm-fujifilm-g-gf120mmf4.webp",
+      "sourcePage": "https://www.fujifilm.com/kr/en/consumer/digitalcameras/gfx",
+      "sourceImage": "https://asset.fujifilm.com/common/img/fujifilm_ogp.png",
+      "method": "official-page"
+    },
+    "Fujifilm GF250mmF4 R LM OIS WR": {
+      "status": "ok",
+      "label": "Fujifilm GF250mmF4 R LM OIS WR",
+      "src": "/assets/images/products/fujifilm/fujifilm-fujifilm-g-gf250mmf4.webp",
+      "sourcePage": "https://www.fujifilm.com/kr/en/consumer/digitalcameras/gfx",
+      "sourceImage": "https://asset.fujifilm.com/common/img/fujifilm_ogp.png",
+      "method": "official-page"
+    },
+    "Fujifilm GF500mmF5.6 R LM OIS WR": {
+      "status": "ok",
+      "label": "Fujifilm GF500mmF5.6 R LM OIS WR",
+      "src": "/assets/images/products/fujifilm/fujifilm-fujifilm-g-gf500mmf5-6.webp",
+      "sourcePage": "https://www.fujifilm.com/kr/en/consumer/digitalcameras/gfx",
+      "sourceImage": "https://asset.fujifilm.com/common/img/fujifilm_ogp.png",
+      "method": "official-page"
+    },
+    "Fujifilm GF19-35mmT3.5 PZ OIS WR": {
+      "status": "ok",
+      "label": "Fujifilm GF19-35mmT3.5 PZ OIS WR",
+      "src": "/assets/images/products/fujifilm/fujifilm-fujifilm-g-gf19-35mmt3-5.webp",
+      "sourcePage": "https://www.fujifilm.com/kr/en/consumer/digitalcameras/gfx",
+      "sourceImage": "https://asset.fujifilm.com/common/img/fujifilm_ogp.png",
+      "method": "official-page"
+    },
+    "Fujifilm GF20-35mmF4 R WR": {
+      "status": "ok",
+      "label": "Fujifilm GF20-35mmF4 R WR",
+      "src": "/assets/images/products/fujifilm/fujifilm-fujifilm-g-gf20-35mmf4.webp",
+      "sourcePage": "https://www.fujifilm.com/kr/en/consumer/digitalcameras/gfx",
+      "sourceImage": "https://asset.fujifilm.com/common/img/fujifilm_ogp.png",
+      "method": "official-page"
+    },
+    "Fujifilm GF32-64mmF4 R LM WR": {
+      "status": "ok",
+      "label": "Fujifilm GF32-64mmF4 R LM WR",
+      "src": "/assets/images/products/fujifilm/fujifilm-fujifilm-g-gf32-64mmf4.webp",
+      "sourcePage": "https://www.fujifilm.com/kr/en/consumer/digitalcameras/gfx",
+      "sourceImage": "https://asset.fujifilm.com/common/img/fujifilm_ogp.png",
+      "method": "official-page"
+    },
+    "Fujifilm GF32-90mmT3.5 PZ OIS WR": {
+      "status": "ok",
+      "label": "Fujifilm GF32-90mmT3.5 PZ OIS WR",
+      "src": "/assets/images/products/fujifilm/fujifilm-fujifilm-g-gf32-90mmt3-5.webp",
+      "sourcePage": "https://www.fujifilm.com/kr/en/consumer/digitalcameras/gfx",
+      "sourceImage": "https://asset.fujifilm.com/common/img/fujifilm_ogp.png",
+      "method": "official-page"
+    },
+    "Fujifilm GF35-70mmF4.5-5.6 WR": {
+      "status": "ok",
+      "label": "Fujifilm GF35-70mmF4.5-5.6 WR",
+      "src": "/assets/images/products/fujifilm/fujifilm-fujifilm-g-gf35-70mmf4-5-5-6.webp",
+      "sourcePage": "https://www.fujifilm.com/kr/en/consumer/digitalcameras/gfx",
+      "sourceImage": "https://asset.fujifilm.com/common/img/fujifilm_ogp.png",
+      "method": "official-page"
+    },
+    "Fujifilm GF45-100mmF4 R LM OIS WR": {
+      "status": "ok",
+      "label": "Fujifilm GF45-100mmF4 R LM OIS WR",
+      "src": "/assets/images/products/fujifilm/fujifilm-fujifilm-g-gf45-100mmf4.webp",
+      "sourcePage": "https://www.fujifilm.com/kr/en/consumer/digitalcameras/gfx",
+      "sourceImage": "https://asset.fujifilm.com/common/img/fujifilm_ogp.png",
+      "method": "official-page"
+    },
+    "Fujifilm GF100-200mmF5.6 R LM OIS WR": {
+      "status": "ok",
+      "label": "Fujifilm GF100-200mmF5.6 R LM OIS WR",
+      "src": "/assets/images/products/fujifilm/fujifilm-fujifilm-g-gf100-200mmf5-6.webp",
+      "sourcePage": "https://www.fujifilm.com/kr/en/consumer/digitalcameras/gfx",
+      "sourceImage": "https://asset.fujifilm.com/common/img/fujifilm_ogp.png",
+      "method": "official-page"
+    },
+    "Fujifilm GF30mmF5.6 T/S": {
+      "status": "ok",
+      "label": "Fujifilm GF30mmF5.6 T/S",
+      "src": "/assets/images/products/fujifilm/fujifilm-fujifilm-g-gf30mmf5-6.webp",
+      "sourcePage": "https://www.fujifilm.com/kr/en/consumer/digitalcameras/gfx",
+      "sourceImage": "https://asset.fujifilm.com/common/img/fujifilm_ogp.png",
+      "method": "official-page"
+    },
+    "Fujifilm GF110mmF5.6 T/S Macro": {
+      "status": "ok",
+      "label": "Fujifilm GF110mmF5.6 T/S Macro",
+      "src": "/assets/images/products/fujifilm/fujifilm-fujifilm-g-gf110mmf5-6.webp",
+      "sourcePage": "https://www.fujifilm.com/kr/en/consumer/digitalcameras/gfx",
+      "sourceImage": "https://asset.fujifilm.com/common/img/fujifilm_ogp.png",
+      "method": "official-page"
+    },
+    "Panasonic LUMIX S5": {
+      "status": "ok",
+      "label": "Panasonic LUMIX S5",
+      "src": "/assets/images/products/panasonic/panasonic-l-mount-lumix-s5.webp",
+      "sourcePage": "https://shop.panasonic.com/pages/lumix-s-series-mirrorless-full-frame-cameras",
+      "sourceImage": "http://shop.panasonic.com/cdn/shop/files/MicrosoftTeams-image_37.png?v=1779301024&width=2048",
+      "method": "official-page"
+    },
+    "Panasonic LUMIX S5II": {
+      "status": "ok",
+      "label": "Panasonic LUMIX S5II",
+      "src": "/assets/images/products/panasonic/panasonic-l-mount-lumix-s5ii.webp",
+      "sourcePage": "https://shop.panasonic.com/pages/lumix-s-series-mirrorless-full-frame-cameras",
+      "sourceImage": "http://shop.panasonic.com/cdn/shop/files/MicrosoftTeams-image_37.png?v=1779301024&width=2048",
+      "method": "official-page"
+    },
+    "Panasonic LUMIX S5IIX": {
+      "status": "ok",
+      "label": "Panasonic LUMIX S5IIX",
+      "src": "/assets/images/products/panasonic/panasonic-l-mount-lumix-s5iix.webp",
+      "sourcePage": "https://shop.panasonic.com/pages/lumix-s-series-mirrorless-full-frame-cameras",
+      "sourceImage": "http://shop.panasonic.com/cdn/shop/files/MicrosoftTeams-image_37.png?v=1779301024&width=2048",
+      "method": "official-page"
+    },
+    "Panasonic LUMIX S9": {
+      "status": "ok",
+      "label": "Panasonic LUMIX S9",
+      "src": "/assets/images/products/panasonic/panasonic-l-mount-lumix-s9.webp",
+      "sourcePage": "https://shop.panasonic.com/pages/lumix-s-series-mirrorless-full-frame-cameras",
+      "sourceImage": "http://shop.panasonic.com/cdn/shop/files/MicrosoftTeams-image_37.png?v=1779301024&width=2048",
+      "method": "official-page"
+    },
+    "Panasonic LUMIX S1RII": {
+      "status": "ok",
+      "label": "Panasonic LUMIX S1RII",
+      "src": "/assets/images/products/panasonic/panasonic-l-mount-lumix-s1rii.webp",
+      "sourcePage": "https://shop.panasonic.com/pages/lumix-s-series-mirrorless-full-frame-cameras",
+      "sourceImage": "http://shop.panasonic.com/cdn/shop/files/MicrosoftTeams-image_37.png?v=1779301024&width=2048",
+      "method": "official-page"
+    },
+    "Panasonic LUMIX S1II": {
+      "status": "ok",
+      "label": "Panasonic LUMIX S1II",
+      "src": "/assets/images/products/panasonic/panasonic-l-mount-lumix-s1ii.webp",
+      "sourcePage": "https://shop.panasonic.com/pages/lumix-s-series-mirrorless-full-frame-cameras",
+      "sourceImage": "http://shop.panasonic.com/cdn/shop/files/MicrosoftTeams-image_37.png?v=1779301024&width=2048",
+      "method": "official-page"
+    },
+    "Panasonic LUMIX S1IIE": {
+      "status": "ok",
+      "label": "Panasonic LUMIX S1IIE",
+      "src": "/assets/images/products/panasonic/panasonic-l-mount-lumix-s1iie.webp",
+      "sourcePage": "https://shop.panasonic.com/pages/lumix-s-series-mirrorless-full-frame-cameras",
+      "sourceImage": "http://shop.panasonic.com/cdn/shop/files/MicrosoftTeams-image_37.png?v=1779301024&width=2048",
+      "method": "official-page"
+    },
+    "Panasonic LUMIX BS1H": {
+      "status": "ok",
+      "label": "Panasonic LUMIX BS1H",
+      "src": "/assets/images/products/panasonic/panasonic-l-mount-lumix-bs1h.webp",
+      "sourcePage": "https://shop.panasonic.com/pages/lumix-s-series-mirrorless-full-frame-cameras",
+      "sourceImage": "http://shop.panasonic.com/cdn/shop/files/MicrosoftTeams-image_37.png?v=1779301024&width=2048",
+      "method": "official-page"
+    },
+    "Panasonic LUMIX G1": {
+      "status": "ok",
+      "label": "Panasonic LUMIX G1",
+      "src": "/assets/images/products/panasonic/panasonic-micro-four-thirds-lumix-g1.webp",
+      "sourcePage": "https://shop.panasonic.com/pages/lumix-g-series-mirrorless-micro-four-thirds-cameras",
+      "sourceImage": "http://shop.panasonic.com/cdn/shop/files/MicrosoftTeams-image_37.png?v=1779301024&width=2048",
+      "method": "official-page"
+    },
+    "Panasonic LUMIX G2": {
+      "status": "ok",
+      "label": "Panasonic LUMIX G2",
+      "src": "/assets/images/products/panasonic/panasonic-micro-four-thirds-lumix-g2.webp",
+      "sourcePage": "https://shop.panasonic.com/pages/lumix-g-series-mirrorless-micro-four-thirds-cameras",
+      "sourceImage": "http://shop.panasonic.com/cdn/shop/files/MicrosoftTeams-image_37.png?v=1779301024&width=2048",
+      "method": "official-page"
+    },
+    "Panasonic LUMIX G3": {
+      "status": "ok",
+      "label": "Panasonic LUMIX G3",
+      "src": "/assets/images/products/panasonic/panasonic-micro-four-thirds-lumix-g3.webp",
+      "sourcePage": "https://shop.panasonic.com/pages/lumix-g-series-mirrorless-micro-four-thirds-cameras",
+      "sourceImage": "http://shop.panasonic.com/cdn/shop/files/MicrosoftTeams-image_37.png?v=1779301024&width=2048",
+      "method": "official-page"
+    },
+    "Panasonic LUMIX G5": {
+      "status": "ok",
+      "label": "Panasonic LUMIX G5",
+      "src": "/assets/images/products/panasonic/panasonic-micro-four-thirds-lumix-g5.webp",
+      "sourcePage": "https://shop.panasonic.com/pages/lumix-g-series-mirrorless-micro-four-thirds-cameras",
+      "sourceImage": "http://shop.panasonic.com/cdn/shop/files/MicrosoftTeams-image_37.png?v=1779301024&width=2048",
+      "method": "official-page"
+    },
+    "Panasonic LUMIX G6": {
+      "status": "ok",
+      "label": "Panasonic LUMIX G6",
+      "src": "/assets/images/products/panasonic/panasonic-micro-four-thirds-lumix-g6.webp",
+      "sourcePage": "https://shop.panasonic.com/pages/lumix-g-series-mirrorless-micro-four-thirds-cameras",
+      "sourceImage": "http://shop.panasonic.com/cdn/shop/files/MicrosoftTeams-image_37.png?v=1779301024&width=2048",
+      "method": "official-page"
+    },
+    "Panasonic LUMIX G7": {
+      "status": "ok",
+      "label": "Panasonic LUMIX G7",
+      "src": "/assets/images/products/panasonic/panasonic-micro-four-thirds-lumix-g7.webp",
+      "sourcePage": "https://shop.panasonic.com/pages/lumix-g-series-mirrorless-micro-four-thirds-cameras",
+      "sourceImage": "http://shop.panasonic.com/cdn/shop/files/MicrosoftTeams-image_37.png?v=1779301024&width=2048",
+      "method": "official-page"
+    },
+    "Panasonic LUMIX G80/G85": {
+      "status": "ok",
+      "label": "Panasonic LUMIX G80/G85",
+      "src": "/assets/images/products/panasonic/panasonic-micro-four-thirds-lumix-g80-g85.webp",
+      "sourcePage": "https://shop.panasonic.com/pages/lumix-g-series-mirrorless-micro-four-thirds-cameras",
+      "sourceImage": "http://shop.panasonic.com/cdn/shop/files/MicrosoftTeams-image_37.png?v=1779301024&width=2048",
+      "method": "official-page"
+    },
+    "Panasonic LUMIX G90/G95": {
+      "status": "ok",
+      "label": "Panasonic LUMIX G90/G95",
+      "src": "/assets/images/products/panasonic/panasonic-micro-four-thirds-lumix-g90-g95.webp",
+      "sourcePage": "https://shop.panasonic.com/pages/lumix-g-series-mirrorless-micro-four-thirds-cameras",
+      "sourceImage": "http://shop.panasonic.com/cdn/shop/files/MicrosoftTeams-image_37.png?v=1779301024&width=2048",
+      "method": "official-page"
+    },
+    "Panasonic LUMIX G97": {
+      "status": "ok",
+      "label": "Panasonic LUMIX G97",
+      "src": "/assets/images/products/panasonic/panasonic-micro-four-thirds-lumix-g97.webp",
+      "sourcePage": "https://shop.panasonic.com/pages/lumix-g-series-mirrorless-micro-four-thirds-cameras",
+      "sourceImage": "http://shop.panasonic.com/cdn/shop/files/MicrosoftTeams-image_37.png?v=1779301024&width=2048",
+      "method": "official-page"
+    },
+    "Panasonic LUMIX G9": {
+      "status": "ok",
+      "label": "Panasonic LUMIX G9",
+      "src": "/assets/images/products/panasonic/panasonic-micro-four-thirds-lumix-g9.webp",
+      "sourcePage": "https://shop.panasonic.com/pages/lumix-g-series-mirrorless-micro-four-thirds-cameras",
+      "sourceImage": "http://shop.panasonic.com/cdn/shop/files/MicrosoftTeams-image_37.png?v=1779301024&width=2048",
+      "method": "official-page"
+    },
+    "Panasonic LUMIX G9II": {
+      "status": "ok",
+      "label": "Panasonic LUMIX G9II",
+      "src": "/assets/images/products/panasonic/panasonic-micro-four-thirds-lumix-g9ii.webp",
+      "sourcePage": "https://shop.panasonic.com/pages/lumix-g-series-mirrorless-micro-four-thirds-cameras",
+      "sourceImage": "http://shop.panasonic.com/cdn/shop/files/MicrosoftTeams-image_37.png?v=1779301024&width=2048",
+      "method": "official-page"
+    },
+    "Panasonic LUMIX G10": {
+      "status": "ok",
+      "label": "Panasonic LUMIX G10",
+      "src": "/assets/images/products/panasonic/panasonic-micro-four-thirds-lumix-g10.webp",
+      "sourcePage": "https://shop.panasonic.com/pages/lumix-g-series-mirrorless-micro-four-thirds-cameras",
+      "sourceImage": "http://shop.panasonic.com/cdn/shop/files/MicrosoftTeams-image_37.png?v=1779301024&width=2048",
+      "method": "official-page"
+    },
+    "Panasonic LUMIX GH1": {
+      "status": "ok",
+      "label": "Panasonic LUMIX GH1",
+      "src": "/assets/images/products/panasonic/panasonic-micro-four-thirds-lumix-gh1.webp",
+      "sourcePage": "https://shop.panasonic.com/pages/lumix-g-series-mirrorless-micro-four-thirds-cameras",
+      "sourceImage": "http://shop.panasonic.com/cdn/shop/files/MicrosoftTeams-image_37.png?v=1779301024&width=2048",
+      "method": "official-page"
+    },
+    "Panasonic LUMIX GH2": {
+      "status": "ok",
+      "label": "Panasonic LUMIX GH2",
+      "src": "/assets/images/products/panasonic/panasonic-micro-four-thirds-lumix-gh2.webp",
+      "sourcePage": "https://shop.panasonic.com/pages/lumix-g-series-mirrorless-micro-four-thirds-cameras",
+      "sourceImage": "http://shop.panasonic.com/cdn/shop/files/MicrosoftTeams-image_37.png?v=1779301024&width=2048",
+      "method": "official-page"
+    },
+    "Panasonic LUMIX GH3": {
+      "status": "ok",
+      "label": "Panasonic LUMIX GH3",
+      "src": "/assets/images/products/panasonic/panasonic-micro-four-thirds-lumix-gh3.webp",
+      "sourcePage": "https://shop.panasonic.com/pages/lumix-g-series-mirrorless-micro-four-thirds-cameras",
+      "sourceImage": "http://shop.panasonic.com/cdn/shop/files/MicrosoftTeams-image_37.png?v=1779301024&width=2048",
+      "method": "official-page"
+    },
+    "Panasonic LUMIX GH4": {
+      "status": "ok",
+      "label": "Panasonic LUMIX GH4",
+      "src": "/assets/images/products/panasonic/panasonic-micro-four-thirds-lumix-gh4.webp",
+      "sourcePage": "https://shop.panasonic.com/pages/lumix-g-series-mirrorless-micro-four-thirds-cameras",
+      "sourceImage": "http://shop.panasonic.com/cdn/shop/files/MicrosoftTeams-image_37.png?v=1779301024&width=2048",
+      "method": "official-page"
+    },
+    "Panasonic LUMIX GH5": {
+      "status": "ok",
+      "label": "Panasonic LUMIX GH5",
+      "src": "/assets/images/products/panasonic/panasonic-micro-four-thirds-lumix-gh5.webp",
+      "sourcePage": "https://shop.panasonic.com/pages/lumix-g-series-mirrorless-micro-four-thirds-cameras",
+      "sourceImage": "http://shop.panasonic.com/cdn/shop/files/MicrosoftTeams-image_37.png?v=1779301024&width=2048",
+      "method": "official-page"
+    },
+    "Panasonic LUMIX GH5S": {
+      "status": "ok",
+      "label": "Panasonic LUMIX GH5S",
+      "src": "/assets/images/products/panasonic/panasonic-micro-four-thirds-lumix-gh5s.webp",
+      "sourcePage": "https://shop.panasonic.com/pages/lumix-g-series-mirrorless-micro-four-thirds-cameras",
+      "sourceImage": "http://shop.panasonic.com/cdn/shop/files/MicrosoftTeams-image_37.png?v=1779301024&width=2048",
+      "method": "official-page"
+    },
+    "Panasonic LUMIX GH5 II": {
+      "status": "ok",
+      "label": "Panasonic LUMIX GH5 II",
+      "src": "/assets/images/products/panasonic/panasonic-micro-four-thirds-lumix-gh5-ii.webp",
+      "sourcePage": "https://shop.panasonic.com/pages/lumix-g-series-mirrorless-micro-four-thirds-cameras",
+      "sourceImage": "http://shop.panasonic.com/cdn/shop/files/MicrosoftTeams-image_37.png?v=1779301024&width=2048",
+      "method": "official-page"
+    },
+    "Panasonic LUMIX GH6": {
+      "status": "ok",
+      "label": "Panasonic LUMIX GH6",
+      "src": "/assets/images/products/panasonic/panasonic-micro-four-thirds-lumix-gh6.webp",
+      "sourcePage": "https://shop.panasonic.com/pages/lumix-g-series-mirrorless-micro-four-thirds-cameras",
+      "sourceImage": "http://shop.panasonic.com/cdn/shop/files/MicrosoftTeams-image_37.png?v=1779301024&width=2048",
+      "method": "official-page"
+    },
+    "Panasonic LUMIX GH7": {
+      "status": "ok",
+      "label": "Panasonic LUMIX GH7",
+      "src": "/assets/images/products/panasonic/panasonic-micro-four-thirds-lumix-gh7.webp",
+      "sourcePage": "https://shop.panasonic.com/pages/lumix-g-series-mirrorless-micro-four-thirds-cameras",
+      "sourceImage": "http://shop.panasonic.com/cdn/shop/files/MicrosoftTeams-image_37.png?v=1779301024&width=2048",
+      "method": "official-page"
+    },
+    "Panasonic LUMIX GF1": {
+      "status": "ok",
+      "label": "Panasonic LUMIX GF1",
+      "src": "/assets/images/products/panasonic/panasonic-micro-four-thirds-lumix-gf1.webp",
+      "sourcePage": "https://shop.panasonic.com/pages/lumix-g-series-mirrorless-micro-four-thirds-cameras",
+      "sourceImage": "http://shop.panasonic.com/cdn/shop/files/MicrosoftTeams-image_37.png?v=1779301024&width=2048",
+      "method": "official-page"
+    },
+    "Panasonic LUMIX GF2": {
+      "status": "ok",
+      "label": "Panasonic LUMIX GF2",
+      "src": "/assets/images/products/panasonic/panasonic-micro-four-thirds-lumix-gf2.webp",
+      "sourcePage": "https://shop.panasonic.com/pages/lumix-g-series-mirrorless-micro-four-thirds-cameras",
+      "sourceImage": "http://shop.panasonic.com/cdn/shop/files/MicrosoftTeams-image_37.png?v=1779301024&width=2048",
+      "method": "official-page"
+    },
+    "Panasonic LUMIX GF3": {
+      "status": "ok",
+      "label": "Panasonic LUMIX GF3",
+      "src": "/assets/images/products/panasonic/panasonic-micro-four-thirds-lumix-gf3.webp",
+      "sourcePage": "https://shop.panasonic.com/pages/lumix-g-series-mirrorless-micro-four-thirds-cameras",
+      "sourceImage": "http://shop.panasonic.com/cdn/shop/files/MicrosoftTeams-image_37.png?v=1779301024&width=2048",
+      "method": "official-page"
+    },
+    "Panasonic LUMIX GF5": {
+      "status": "ok",
+      "label": "Panasonic LUMIX GF5",
+      "src": "/assets/images/products/panasonic/panasonic-micro-four-thirds-lumix-gf5.webp",
+      "sourcePage": "https://shop.panasonic.com/pages/lumix-g-series-mirrorless-micro-four-thirds-cameras",
+      "sourceImage": "http://shop.panasonic.com/cdn/shop/files/MicrosoftTeams-image_37.png?v=1779301024&width=2048",
+      "method": "official-page"
+    },
+    "Panasonic LUMIX GF6": {
+      "status": "ok",
+      "label": "Panasonic LUMIX GF6",
+      "src": "/assets/images/products/panasonic/panasonic-micro-four-thirds-lumix-gf6.webp",
+      "sourcePage": "https://shop.panasonic.com/pages/lumix-g-series-mirrorless-micro-four-thirds-cameras",
+      "sourceImage": "http://shop.panasonic.com/cdn/shop/files/MicrosoftTeams-image_37.png?v=1779301024&width=2048",
+      "method": "official-page"
+    },
+    "Panasonic LUMIX GF7": {
+      "status": "ok",
+      "label": "Panasonic LUMIX GF7",
+      "src": "/assets/images/products/panasonic/panasonic-micro-four-thirds-lumix-gf7.webp",
+      "sourcePage": "https://shop.panasonic.com/pages/lumix-g-series-mirrorless-micro-four-thirds-cameras",
+      "sourceImage": "http://shop.panasonic.com/cdn/shop/files/MicrosoftTeams-image_37.png?v=1779301024&width=2048",
+      "method": "official-page"
+    },
+    "Panasonic LUMIX GF8": {
+      "status": "ok",
+      "label": "Panasonic LUMIX GF8",
+      "src": "/assets/images/products/panasonic/panasonic-micro-four-thirds-lumix-gf8.webp",
+      "sourcePage": "https://shop.panasonic.com/pages/lumix-g-series-mirrorless-micro-four-thirds-cameras",
+      "sourceImage": "http://shop.panasonic.com/cdn/shop/files/MicrosoftTeams-image_37.png?v=1779301024&width=2048",
+      "method": "official-page"
+    },
+    "Panasonic LUMIX GF9/GX850": {
+      "status": "ok",
+      "label": "Panasonic LUMIX GF9/GX850",
+      "src": "/assets/images/products/panasonic/panasonic-micro-four-thirds-lumix-gf9-gx850.webp",
+      "sourcePage": "https://shop.panasonic.com/pages/lumix-g-series-mirrorless-micro-four-thirds-cameras",
+      "sourceImage": "http://shop.panasonic.com/cdn/shop/files/MicrosoftTeams-image_37.png?v=1779301024&width=2048",
+      "method": "official-page"
+    },
+    "Panasonic LUMIX GF10": {
+      "status": "ok",
+      "label": "Panasonic LUMIX GF10",
+      "src": "/assets/images/products/panasonic/panasonic-micro-four-thirds-lumix-gf10.webp",
+      "sourcePage": "https://shop.panasonic.com/pages/lumix-g-series-mirrorless-micro-four-thirds-cameras",
+      "sourceImage": "http://shop.panasonic.com/cdn/shop/files/MicrosoftTeams-image_37.png?v=1779301024&width=2048",
+      "method": "official-page"
+    },
+    "Panasonic LUMIX GX1": {
+      "status": "ok",
+      "label": "Panasonic LUMIX GX1",
+      "src": "/assets/images/products/panasonic/panasonic-micro-four-thirds-lumix-gx1.webp",
+      "sourcePage": "https://shop.panasonic.com/pages/lumix-g-series-mirrorless-micro-four-thirds-cameras",
+      "sourceImage": "http://shop.panasonic.com/cdn/shop/files/MicrosoftTeams-image_37.png?v=1779301024&width=2048",
+      "method": "official-page"
+    },
+    "Panasonic LUMIX GX7": {
+      "status": "ok",
+      "label": "Panasonic LUMIX GX7",
+      "src": "/assets/images/products/panasonic/panasonic-micro-four-thirds-lumix-gx7.webp",
+      "sourcePage": "https://shop.panasonic.com/pages/lumix-g-series-mirrorless-micro-four-thirds-cameras",
+      "sourceImage": "http://shop.panasonic.com/cdn/shop/files/MicrosoftTeams-image_37.png?v=1779301024&width=2048",
+      "method": "official-page"
+    },
+    "Panasonic LUMIX GX8": {
+      "status": "ok",
+      "label": "Panasonic LUMIX GX8",
+      "src": "/assets/images/products/panasonic/panasonic-micro-four-thirds-lumix-gx8.webp",
+      "sourcePage": "https://shop.panasonic.com/pages/lumix-g-series-mirrorless-micro-four-thirds-cameras",
+      "sourceImage": "http://shop.panasonic.com/cdn/shop/files/MicrosoftTeams-image_37.png?v=1779301024&width=2048",
+      "method": "official-page"
+    },
+    "Panasonic LUMIX GX80/GX85": {
+      "status": "ok",
+      "label": "Panasonic LUMIX GX80/GX85",
+      "src": "/assets/images/products/panasonic/panasonic-micro-four-thirds-lumix-gx80-gx85.webp",
+      "sourcePage": "https://shop.panasonic.com/pages/lumix-g-series-mirrorless-micro-four-thirds-cameras",
+      "sourceImage": "http://shop.panasonic.com/cdn/shop/files/MicrosoftTeams-image_37.png?v=1779301024&width=2048",
+      "method": "official-page"
+    },
+    "Panasonic LUMIX GX9": {
+      "status": "ok",
+      "label": "Panasonic LUMIX GX9",
+      "src": "/assets/images/products/panasonic/panasonic-micro-four-thirds-lumix-gx9.webp",
+      "sourcePage": "https://shop.panasonic.com/pages/lumix-g-series-mirrorless-micro-four-thirds-cameras",
+      "sourceImage": "http://shop.panasonic.com/cdn/shop/files/MicrosoftTeams-image_37.png?v=1779301024&width=2048",
+      "method": "official-page"
+    },
+    "Panasonic LUMIX GM1": {
+      "status": "ok",
+      "label": "Panasonic LUMIX GM1",
+      "src": "/assets/images/products/panasonic/panasonic-micro-four-thirds-lumix-gm1.webp",
+      "sourcePage": "https://shop.panasonic.com/pages/lumix-g-series-mirrorless-micro-four-thirds-cameras",
+      "sourceImage": "http://shop.panasonic.com/cdn/shop/files/MicrosoftTeams-image_37.png?v=1779301024&width=2048",
+      "method": "official-page"
+    },
+    "Panasonic LUMIX GM5": {
+      "status": "ok",
+      "label": "Panasonic LUMIX GM5",
+      "src": "/assets/images/products/panasonic/panasonic-micro-four-thirds-lumix-gm5.webp",
+      "sourcePage": "https://shop.panasonic.com/pages/lumix-g-series-mirrorless-micro-four-thirds-cameras",
+      "sourceImage": "http://shop.panasonic.com/cdn/shop/files/MicrosoftTeams-image_37.png?v=1779301024&width=2048",
+      "method": "official-page"
+    },
+    "Panasonic LUMIX G100": {
+      "status": "ok",
+      "label": "Panasonic LUMIX G100",
+      "src": "/assets/images/products/panasonic/panasonic-micro-four-thirds-lumix-g100.webp",
+      "sourcePage": "https://shop.panasonic.com/pages/lumix-g-series-mirrorless-micro-four-thirds-cameras",
+      "sourceImage": "http://shop.panasonic.com/cdn/shop/files/MicrosoftTeams-image_37.png?v=1779301024&width=2048",
       "method": "official-page"
     }
   }
