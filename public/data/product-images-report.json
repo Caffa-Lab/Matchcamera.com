@@ -1,6 +1,6 @@
 {
   "_meta": {
-    "updatedAt": "2026-08-28T09:39:32.183276+00:00",
+    "updatedAt": "2026-08-28T10:14:20.800253+00:00",
     "totalProducts": 843
   },
   "items": {
@@ -421,19 +421,28 @@
       "sourceImage": "https://apac.explore.omsystem.com/media/catalog/product/o/m/om-1-mark-ii-kit-hero-02.webp?width=1000&height=1000&optimize=medium&fit=bounds"
     },
     "Olympus PEN E-P1": {
-      "status": "failed",
-      "reason": "official product page not found",
-      "label": "Olympus PEN E-P1"
+      "status": "ok",
+      "label": "Olympus PEN E-P1",
+      "src": "/assets/images/products/olympus/olympus-micro-four-thirds-pen-e-p1.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Bfishadow_Olympus_E-P1.jpg",
+      "sourceImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Bfishadow_Olympus_E-P1.jpg/960px-Bfishadow_Olympus_E-P1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "method": "wikimedia-commons"
     },
     "Olympus PEN E-P2": {
-      "status": "failed",
-      "reason": "official product page not found",
-      "label": "Olympus PEN E-P2"
+      "status": "ok",
+      "label": "Olympus PEN E-P2",
+      "src": "/assets/images/products/olympus/olympus-micro-four-thirds-pen-e-p2.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Olympus_E-P2.jpg",
+      "sourceImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Olympus_E-P2.jpg/960px-Olympus_E-P2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "method": "wikimedia-commons"
     },
     "Olympus PEN E-P3": {
-      "status": "failed",
-      "reason": "official product page not found",
-      "label": "Olympus PEN E-P3"
+      "status": "ok",
+      "label": "Olympus PEN E-P3",
+      "src": "/assets/images/products/olympus/olympus-micro-four-thirds-pen-e-p3.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Olympus_E-P3_with_Holga_lens.jpg",
+      "sourceImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Olympus_E-P3_with_Holga_lens.jpg/960px-Olympus_E-P3_with_Holga_lens.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "method": "wikimedia-commons"
     },
     "Leica Leica T (Typ 701)": {
       "status": "ok",
@@ -2471,6 +2480,672 @@
       "sourcePage": "https://shop.panasonic.com/pages/lumix-g-series-mirrorless-micro-four-thirds-cameras",
       "sourceImage": "http://shop.panasonic.com/cdn/shop/files/MicrosoftTeams-image_37.png?v=1779301024&width=2048",
       "method": "official-page"
+    },
+    "Panasonic LUMIX G100D": {
+      "status": "ok",
+      "label": "Panasonic LUMIX G100D",
+      "src": "/assets/images/products/panasonic/panasonic-micro-four-thirds-lumix-g100d.webp",
+      "sourcePage": "https://shop.panasonic.com/pages/lumix-g-series-mirrorless-micro-four-thirds-cameras",
+      "sourceImage": "http://shop.panasonic.com/cdn/shop/files/MicrosoftTeams-image_37.png?v=1779301024&width=2048",
+      "method": "official-page"
+    },
+    "Panasonic LUMIX BGH1": {
+      "status": "ok",
+      "label": "Panasonic LUMIX BGH1",
+      "src": "/assets/images/products/panasonic/panasonic-micro-four-thirds-lumix-bgh1.webp",
+      "sourcePage": "https://shop.panasonic.com/pages/lumix-g-series-mirrorless-micro-four-thirds-cameras",
+      "sourceImage": "http://shop.panasonic.com/cdn/shop/files/MicrosoftTeams-image_37.png?v=1779301024&width=2048",
+      "method": "official-page"
+    },
+    "Panasonic LUMIX S 14-28mm F4-5.6 MACRO": {
+      "status": "ok",
+      "label": "Panasonic LUMIX S 14-28mm F4-5.6 MACRO",
+      "src": "/assets/images/products/panasonic/panasonic-l-mount-lumix-s-14-28mm-f4-5-6-macro.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Panasonic_Lumix_G3_-_A_Review_(7581057722).jpg",
+      "sourceImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Panasonic_Lumix_G3_-_A_Review_%287581057722%29.jpg/960px-Panasonic_Lumix_G3_-_A_Review_%287581057722%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "method": "wikimedia-commons"
+    },
+    "Panasonic LUMIX S PRO 16-35mm F4": {
+      "status": "failed",
+      "label": "Panasonic LUMIX S PRO 16-35mm F4",
+      "reason": "page https://www.panasonic.com/global/consumer/lumix/s/L-Mount.html: HTTPError: 403 Client Error: Forbidden for url: https://www.panasonic.com/global/consumer/lumix/s/L-Mount.html",
+      "errors": [
+        "page https://www.panasonic.com/global/consumer/lumix/s/L-Mount.html: HTTPError: 403 Client Error: Forbidden for url: https://www.panasonic.com/global/consumer/lumix/s/L-Mount.html"
+      ]
+    },
+    "Panasonic LUMIX S 18-40mm F4.5-6.3": {
+      "status": "ok",
+      "label": "Panasonic LUMIX S 18-40mm F4.5-6.3",
+      "src": "/assets/images/products/panasonic/panasonic-l-mount-lumix-s-18-40mm-f4-5-6-3.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Panasonic_Lumix_DC-S9N-N_01.jpg",
+      "sourceImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Panasonic_Lumix_DC-S9N-N_01.jpg/960px-Panasonic_Lumix_DC-S9N-N_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "method": "wikimedia-commons"
+    },
+    "Panasonic LUMIX S 20-60mm F3.5-5.6": {
+      "status": "ok",
+      "label": "Panasonic LUMIX S 20-60mm F3.5-5.6",
+      "src": "/assets/images/products/panasonic/panasonic-l-mount-lumix-s-20-60mm-f3-5-5-6.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Panasonic_Lumix_DC-S5_with_20-60mm_Kit_Lens.jpg",
+      "sourceImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Panasonic_Lumix_DC-S5_with_20-60mm_Kit_Lens.jpg/960px-Panasonic_Lumix_DC-S5_with_20-60mm_Kit_Lens.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "method": "wikimedia-commons"
+    },
+    "Panasonic LUMIX S 24-60mm F2.8": {
+      "status": "failed",
+      "label": "Panasonic LUMIX S 24-60mm F2.8",
+      "reason": "blocked host skipped: www.panasonic.com",
+      "errors": [
+        "blocked host skipped: www.panasonic.com"
+      ]
+    },
+    "Panasonic LUMIX S PRO 24-70mm F2.8": {
+      "status": "ok",
+      "label": "Panasonic LUMIX S PRO 24-70mm F2.8",
+      "src": "/assets/images/products/panasonic/panasonic-l-mount-lumix-s-pro-24-70mm-f2-8.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Panasonic_Lumix_DC-S1H_26_oct_2019a.jpg",
+      "sourceImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Panasonic_Lumix_DC-S1H_26_oct_2019a.jpg/960px-Panasonic_Lumix_DC-S1H_26_oct_2019a.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "method": "wikimedia-commons"
+    },
+    "Panasonic LUMIX S 24-105mm F4 MACRO O.I.S.": {
+      "status": "ok",
+      "label": "Panasonic LUMIX S 24-105mm F4 MACRO O.I.S.",
+      "src": "/assets/images/products/panasonic/panasonic-l-mount-lumix-s-24-105mm-f4-macro-o-i-s.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Panasonic_Lumix_S_24-105mm_F4_Macro_O.I.S._20260621151403.jpg",
+      "sourceImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Panasonic_Lumix_S_24-105mm_F4_Macro_O.I.S._20260621151403.jpg/960px-Panasonic_Lumix_S_24-105mm_F4_Macro_O.I.S._20260621151403.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "method": "wikimedia-commons"
+    },
+    "Panasonic LUMIX S PRO 70-200mm F2.8 O.I.S.": {
+      "status": "failed",
+      "label": "Panasonic LUMIX S PRO 70-200mm F2.8 O.I.S.",
+      "reason": "blocked host skipped: www.panasonic.com",
+      "errors": [
+        "blocked host skipped: www.panasonic.com"
+      ]
+    },
+    "Panasonic LUMIX S PRO 70-200mm F4 O.I.S.": {
+      "status": "ok",
+      "label": "Panasonic LUMIX S PRO 70-200mm F4 O.I.S.",
+      "src": "/assets/images/products/panasonic/panasonic-l-mount-lumix-s-pro-70-200mm-f4-o-i-s.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Panasonic_Lumix_S_PRO_70-200mm_F4_O.I.S._(51248180327).jpg",
+      "sourceImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Panasonic_Lumix_S_PRO_70-200mm_F4_O.I.S._%2851248180327%29.jpg/960px-Panasonic_Lumix_S_PRO_70-200mm_F4_O.I.S._%2851248180327%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "method": "wikimedia-commons"
+    },
+    "Panasonic LUMIX S 70-300mm F4.5-5.6 MACRO O.I.S.": {
+      "status": "ok",
+      "label": "Panasonic LUMIX S 70-300mm F4.5-5.6 MACRO O.I.S.",
+      "src": "/assets/images/products/panasonic/panasonic-l-mount-lumix-s-70-300mm-f4-5-5-6-macro-o-i-s.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Panasonic_Lumix_S_70-300mm_F4.5-5.6_Macro_O.I.S._20260621142827.jpg",
+      "sourceImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Panasonic_Lumix_S_70-300mm_F4.5-5.6_Macro_O.I.S._20260621142827.jpg/960px-Panasonic_Lumix_S_70-300mm_F4.5-5.6_Macro_O.I.S._20260621142827.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "method": "wikimedia-commons"
+    },
+    "Panasonic LUMIX S 100-500mm F5-7.1 O.I.S.": {
+      "status": "failed",
+      "label": "Panasonic LUMIX S 100-500mm F5-7.1 O.I.S.",
+      "reason": "blocked host skipped: www.panasonic.com",
+      "errors": [
+        "blocked host skipped: www.panasonic.com"
+      ]
+    },
+    "Panasonic LUMIX S 28-200mm F4-7.1 MACRO O.I.S.": {
+      "status": "failed",
+      "label": "Panasonic LUMIX S 28-200mm F4-7.1 MACRO O.I.S.",
+      "reason": "blocked host skipped: www.panasonic.com",
+      "errors": [
+        "blocked host skipped: www.panasonic.com"
+      ]
+    },
+    "Panasonic LUMIX S 18mm F1.8": {
+      "status": "failed",
+      "label": "Panasonic LUMIX S 18mm F1.8",
+      "reason": "blocked host skipped: www.panasonic.com",
+      "errors": [
+        "blocked host skipped: www.panasonic.com"
+      ]
+    },
+    "Panasonic LUMIX S 24mm F1.8": {
+      "status": "failed",
+      "label": "Panasonic LUMIX S 24mm F1.8",
+      "reason": "blocked host skipped: www.panasonic.com",
+      "errors": [
+        "blocked host skipped: www.panasonic.com"
+      ]
+    },
+    "Panasonic LUMIX S 26mm F8": {
+      "status": "failed",
+      "label": "Panasonic LUMIX S 26mm F8",
+      "reason": "blocked host skipped: www.panasonic.com",
+      "errors": [
+        "blocked host skipped: www.panasonic.com"
+      ]
+    },
+    "Panasonic LUMIX S 35mm F1.8": {
+      "status": "ok",
+      "label": "Panasonic LUMIX S 35mm F1.8",
+      "src": "/assets/images/products/panasonic/panasonic-l-mount-lumix-s-35mm-f1-8.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Panasonic_Lumix_S_35mm_F1.8_(52972339626).jpg",
+      "sourceImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Panasonic_Lumix_S_35mm_F1.8_%2852972339626%29.jpg/960px-Panasonic_Lumix_S_35mm_F1.8_%2852972339626%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "method": "wikimedia-commons"
+    },
+    "Panasonic LUMIX S 40mm F2": {
+      "status": "ok",
+      "label": "Panasonic LUMIX S 40mm F2",
+      "src": "/assets/images/products/panasonic/panasonic-l-mount-lumix-s-40mm-f2.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:7Artisans_AF_40mm_F2.5_20260516103351.jpg",
+      "sourceImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/7Artisans_AF_40mm_F2.5_20260516103351.jpg/960px-7Artisans_AF_40mm_F2.5_20260516103351.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "method": "wikimedia-commons"
+    },
+    "Panasonic LUMIX S PRO 50mm F1.4": {
+      "status": "failed",
+      "label": "Panasonic LUMIX S PRO 50mm F1.4",
+      "reason": "blocked host skipped: www.panasonic.com",
+      "errors": [
+        "blocked host skipped: www.panasonic.com"
+      ]
+    },
+    "Panasonic LUMIX S 50mm F1.8": {
+      "status": "ok",
+      "label": "Panasonic LUMIX S 50mm F1.8",
+      "src": "/assets/images/products/panasonic/panasonic-l-mount-lumix-s-50mm-f1-8.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Panasonic_Lumix_DC-S5II_with_Lumix_S_50mm_1.8_2023-02-06.jpg",
+      "sourceImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Panasonic_Lumix_DC-S5II_with_Lumix_S_50mm_1.8_2023-02-06.jpg/960px-Panasonic_Lumix_DC-S5II_with_Lumix_S_50mm_1.8_2023-02-06.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "method": "wikimedia-commons"
+    },
+    "Panasonic LUMIX S 85mm F1.8": {
+      "status": "ok",
+      "label": "Panasonic LUMIX S 85mm F1.8",
+      "src": "/assets/images/products/panasonic/panasonic-l-mount-lumix-s-85mm-f1-8.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:GX1_with_Canon_FD_85mm_f1.8_(7197636914).jpg",
+      "sourceImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/GX1_with_Canon_FD_85mm_f1.8_%287197636914%29.jpg/960px-GX1_with_Canon_FD_85mm_f1.8_%287197636914%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "method": "wikimedia-commons"
+    },
+    "Panasonic LUMIX S 100mm F2.8 MACRO": {
+      "status": "failed",
+      "label": "Panasonic LUMIX S 100mm F2.8 MACRO",
+      "reason": "blocked host skipped: www.panasonic.com",
+      "errors": [
+        "blocked host skipped: www.panasonic.com"
+      ]
+    },
+    "Panasonic LUMIX G FISHEYE 8mm F3.5": {
+      "status": "failed",
+      "label": "Panasonic LUMIX G FISHEYE 8mm F3.5",
+      "reason": "no usable image",
+      "errors": []
+    },
+    "Panasonic LEICA DG SUMMILUX 9mm F1.7 ASPH.": {
+      "status": "failed",
+      "label": "Panasonic LEICA DG SUMMILUX 9mm F1.7 ASPH.",
+      "reason": "no usable image",
+      "errors": []
+    },
+    "Panasonic LEICA DG VARIO-ELMARIT 8-18mm F2.8-4 ASPH.": {
+      "status": "failed",
+      "label": "Panasonic LEICA DG VARIO-ELMARIT 8-18mm F2.8-4 ASPH.",
+      "reason": "no usable image",
+      "errors": []
+    },
+    "Panasonic LUMIX G VARIO 7-14mm F4 ASPH.": {
+      "status": "ok",
+      "label": "Panasonic LUMIX G VARIO 7-14mm F4 ASPH.",
+      "src": "/assets/images/products/panasonic/panasonic-micro-four-thirds-lumix-g-vario-7-14mm-f4-asph.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:LUMIX_G_VARIO_7-14mm-F4.0_ASPH._(10884710734).jpg",
+      "sourceImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/LUMIX_G_VARIO_7-14mm-F4.0_ASPH._%2810884710734%29.jpg/960px-LUMIX_G_VARIO_7-14mm-F4.0_ASPH._%2810884710734%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "method": "wikimedia-commons"
+    },
+    "Panasonic LEICA DG VARIO-SUMMILUX 10-25mm F1.7 ASPH.": {
+      "status": "ok",
+      "label": "Panasonic LEICA DG VARIO-SUMMILUX 10-25mm F1.7 ASPH.",
+      "src": "/assets/images/products/panasonic/panasonic-micro-four-thirds-leica-dg-vario-summilux-10-25mm-f1-7-asph.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Leica.DG.10-25.jpg",
+      "sourceImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Leica.DG.10-25.jpg/960px-Leica.DG.10-25.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "method": "wikimedia-commons"
+    },
+    "Panasonic LEICA DG SUMMILUX 12mm F1.4 ASPH.": {
+      "status": "failed",
+      "label": "Panasonic LEICA DG SUMMILUX 12mm F1.4 ASPH.",
+      "reason": "no usable image",
+      "errors": []
+    },
+    "Panasonic LUMIX G VARIO 12-32mm F3.5-5.6 ASPH. MEGA O.I.S.": {
+      "status": "failed",
+      "label": "Panasonic LUMIX G VARIO 12-32mm F3.5-5.6 ASPH. MEGA O.I.S.",
+      "reason": "no usable image",
+      "errors": []
+    },
+    "Panasonic LUMIX G X VARIO 12-35mm F2.8 POWER O.I.S.": {
+      "status": "ok",
+      "label": "Panasonic LUMIX G X VARIO 12-35mm F2.8 POWER O.I.S.",
+      "src": "/assets/images/products/panasonic/panasonic-micro-four-thirds-lumix-g-x-vario-12-35mm-f2-8-power-o-i-s.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Panasonic_GH4.jpg",
+      "sourceImage": "https://upload.wikimedia.org/wikipedia/commons/0/07/Panasonic_GH4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "method": "wikimedia-commons"
+    },
+    "Panasonic LUMIX G X VARIO 12-35mm F2.8 II POWER O.I.S.": {
+      "status": "failed",
+      "label": "Panasonic LUMIX G X VARIO 12-35mm F2.8 II POWER O.I.S.",
+      "reason": "no usable image",
+      "errors": []
+    },
+    "Panasonic LEICA DG VARIO-ELMARIT 12-35mm F2.8 ASPH. POWER O.I.S.": {
+      "status": "failed",
+      "label": "Panasonic LEICA DG VARIO-ELMARIT 12-35mm F2.8 ASPH. POWER O.I.S.",
+      "reason": "no usable image",
+      "errors": []
+    },
+    "Panasonic LUMIX G VARIO 12-60mm F3.5-5.6 ASPH. POWER O.I.S.": {
+      "status": "ok",
+      "label": "Panasonic LUMIX G VARIO 12-60mm F3.5-5.6 ASPH. POWER O.I.S.",
+      "src": "/assets/images/products/panasonic/panasonic-micro-four-thirds-lumix-g-vario-12-60mm-f3-5-5-6-asph-power-o-i-s.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Panasonic_Lumix_DMC-G7M.jpg",
+      "sourceImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Panasonic_Lumix_DMC-G7M.jpg/960px-Panasonic_Lumix_DMC-G7M.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "method": "wikimedia-commons"
+    },
+    "Panasonic LEICA DG VARIO-ELMARIT 12-60mm F2.8-4 ASPH. POWER O.I.S.": {
+      "status": "failed",
+      "label": "Panasonic LEICA DG VARIO-ELMARIT 12-60mm F2.8-4 ASPH. POWER O.I.S.",
+      "reason": "no usable image",
+      "errors": []
+    },
+    "Panasonic LUMIX G 14mm F2.5 ASPH.": {
+      "status": "ok",
+      "label": "Panasonic LUMIX G 14mm F2.5 ASPH.",
+      "src": "/assets/images/products/panasonic/panasonic-micro-four-thirds-lumix-g-14mm-f2-5-asph.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:LUMIX_G_14mm-F2.5_ASPH._(6574627925).jpg",
+      "sourceImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/LUMIX_G_14mm-F2.5_ASPH._%286574627925%29.jpg/960px-LUMIX_G_14mm-F2.5_ASPH._%286574627925%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "method": "wikimedia-commons"
+    },
+    "Panasonic LUMIX G 14mm F2.5 II ASPH.": {
+      "status": "failed",
+      "label": "Panasonic LUMIX G 14mm F2.5 II ASPH.",
+      "reason": "no usable image",
+      "errors": []
+    },
+    "Panasonic LUMIX G VARIO 14-42mm F3.5-5.6 ASPH. MEGA O.I.S.": {
+      "status": "ok",
+      "label": "Panasonic LUMIX G VARIO 14-42mm F3.5-5.6 ASPH. MEGA O.I.S.",
+      "src": "/assets/images/products/panasonic/panasonic-micro-four-thirds-lumix-g-vario-14-42mm-f3-5-5-6-asph-mega-o-i-s.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Panasonic_Lumix_DMC-GF2_02.jpg",
+      "sourceImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Panasonic_Lumix_DMC-GF2_02.jpg/960px-Panasonic_Lumix_DMC-GF2_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "method": "wikimedia-commons"
+    },
+    "Panasonic LUMIX G VARIO 14-42mm F3.5-5.6 II ASPH. MEGA O.I.S.": {
+      "status": "ok",
+      "label": "Panasonic LUMIX G VARIO 14-42mm F3.5-5.6 II ASPH. MEGA O.I.S.",
+      "src": "/assets/images/products/panasonic/panasonic-micro-four-thirds-lumix-g-vario-14-42mm-f3-5-5-6-ii-asph-mega-o-i-s.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Olympus_14-42_II_extended.jpg",
+      "sourceImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Olympus_14-42_II_extended.jpg/960px-Olympus_14-42_II_extended.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "method": "wikimedia-commons"
+    },
+    "Panasonic LUMIX G X VARIO PZ 14-42mm F3.5-5.6 POWER O.I.S.": {
+      "status": "ok",
+      "label": "Panasonic LUMIX G X VARIO PZ 14-42mm F3.5-5.6 POWER O.I.S.",
+      "src": "/assets/images/products/panasonic/panasonic-micro-four-thirds-lumix-g-x-vario-pz-14-42mm-f3-5-5-6-power-o-i-s.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Panasonic_Lumix_DMC-GF5_01-r.jpg",
+      "sourceImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Panasonic_Lumix_DMC-GF5_01-r.jpg/960px-Panasonic_Lumix_DMC-GF5_01-r.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "method": "wikimedia-commons"
+    },
+    "Panasonic LUMIX G VARIO 14-45mm F3.5-5.6 ASPH. MEGA O.I.S.": {
+      "status": "ok",
+      "label": "Panasonic LUMIX G VARIO 14-45mm F3.5-5.6 ASPH. MEGA O.I.S.",
+      "src": "/assets/images/products/panasonic/panasonic-micro-four-thirds-lumix-g-vario-14-45mm-f3-5-5-6-asph-mega-o-i-s.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Panasonic_Lumix_G_Vario_HD_14-140mm_F3.5-5.6_Asph_Power_OIS-20140211-RM-165719.jpg",
+      "sourceImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Panasonic_Lumix_G_Vario_HD_14-140mm_F3.5-5.6_Asph_Power_OIS-20140211-RM-165719.jpg/960px-Panasonic_Lumix_G_Vario_HD_14-140mm_F3.5-5.6_Asph_Power_OIS-20140211-RM-165719.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "method": "wikimedia-commons"
+    },
+    "Panasonic LUMIX G VARIO 14-140mm F4-5.8 ASPH. MEGA O.I.S.": {
+      "status": "ok",
+      "label": "Panasonic LUMIX G VARIO 14-140mm F4-5.8 ASPH. MEGA O.I.S.",
+      "src": "/assets/images/products/panasonic/panasonic-micro-four-thirds-lumix-g-vario-14-140mm-f4-5-8-asph-mega-o-i-s.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Panasonic_Lumix_DMC-GH1_%2B_G_Vario_HD_14-140mm_F4.0-5.8_ASPH_Mega_OIS,_-14_september_2010_a.jpg",
+      "sourceImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Panasonic_Lumix_DMC-GH1_%2B_G_Vario_HD_14-140mm_F4.0-5.8_ASPH_Mega_OIS%2C_-14_september_2010_a.jpg/960px-Panasonic_Lumix_DMC-GH1_%2B_G_Vario_HD_14-140mm_F4.0-5.8_ASPH_Mega_OIS%2C_-14_september_2010_a.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "method": "wikimedia-commons"
+    },
+    "Panasonic LUMIX G VARIO 14-140mm F3.5-5.6 ASPH. POWER O.I.S.": {
+      "status": "ok",
+      "label": "Panasonic LUMIX G VARIO 14-140mm F3.5-5.6 ASPH. POWER O.I.S.",
+      "src": "/assets/images/products/panasonic/panasonic-micro-four-thirds-lumix-g-vario-14-140mm-f3-5-5-6-asph-power-o-i-s.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Panasonic_Lumix_G_Vario_HD_14-140mm_F3.5-5.6_Asph_Power_OIS-20140211-RM-165719.jpg",
+      "sourceImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Panasonic_Lumix_G_Vario_HD_14-140mm_F3.5-5.6_Asph_Power_OIS-20140211-RM-165719.jpg/960px-Panasonic_Lumix_G_Vario_HD_14-140mm_F3.5-5.6_Asph_Power_OIS-20140211-RM-165719.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "method": "wikimedia-commons"
+    },
+    "Panasonic LUMIX G VARIO 14-140mm F3.5-5.6 II ASPH. POWER O.I.S.": {
+      "status": "ok",
+      "label": "Panasonic LUMIX G VARIO 14-140mm F3.5-5.6 II ASPH. POWER O.I.S.",
+      "src": "/assets/images/products/panasonic/panasonic-micro-four-thirds-lumix-g-vario-14-140mm-f3-5-5-6-ii-asph-power-o-i-s.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Panasonic_Lumix_DC-G100_with_14-140_lens.jpg",
+      "sourceImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Panasonic_Lumix_DC-G100_with_14-140_lens.jpg/960px-Panasonic_Lumix_DC-G100_with_14-140_lens.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "method": "wikimedia-commons"
+    },
+    "Panasonic LEICA DG SUMMILUX 15mm F1.7 ASPH.": {
+      "status": "failed",
+      "label": "Panasonic LEICA DG SUMMILUX 15mm F1.7 ASPH.",
+      "reason": "no usable image",
+      "errors": []
+    },
+    "Panasonic LUMIX G 20mm F1.7 ASPH.": {
+      "status": "ok",
+      "label": "Panasonic LUMIX G 20mm F1.7 ASPH.",
+      "src": "/assets/images/products/panasonic/panasonic-micro-four-thirds-lumix-g-20mm-f1-7-asph.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Olympus_E-P2_with_Panasonic_Lumix_G_20mm_F1.7_ASPH_Pancake_Lens.jpg",
+      "sourceImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Olympus_E-P2_with_Panasonic_Lumix_G_20mm_F1.7_ASPH_Pancake_Lens.jpg/960px-Olympus_E-P2_with_Panasonic_Lumix_G_20mm_F1.7_ASPH_Pancake_Lens.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "method": "wikimedia-commons"
+    },
+    "Panasonic LUMIX G 20mm F1.7 II ASPH.": {
+      "status": "ok",
+      "label": "Panasonic LUMIX G 20mm F1.7 II ASPH.",
+      "src": "/assets/images/products/panasonic/panasonic-micro-four-thirds-lumix-g-20mm-f1-7-ii-asph.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Micro_Four_Thirds_Olympus_E-P2_with_Panasonic_Lumix_G_20mm_F1.7_ASPH_aspherical_pancake_lens.jpg",
+      "sourceImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Micro_Four_Thirds_Olympus_E-P2_with_Panasonic_Lumix_G_20mm_F1.7_ASPH_aspherical_pancake_lens.jpg/960px-Micro_Four_Thirds_Olympus_E-P2_with_Panasonic_Lumix_G_20mm_F1.7_ASPH_aspherical_pancake_lens.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "method": "wikimedia-commons"
+    },
+    "Panasonic LEICA DG SUMMILUX 25mm F1.4 ASPH.": {
+      "status": "ok",
+      "label": "Panasonic LEICA DG SUMMILUX 25mm F1.4 ASPH.",
+      "src": "/assets/images/products/panasonic/panasonic-micro-four-thirds-leica-dg-summilux-25mm-f1-4-asph.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Panasonic_Leica_DG_Summilux_25mm_f1.4.jpg",
+      "sourceImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Panasonic_Leica_DG_Summilux_25mm_f1.4.jpg/960px-Panasonic_Leica_DG_Summilux_25mm_f1.4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "method": "wikimedia-commons"
+    },
+    "Panasonic LEICA DG SUMMILUX 25mm F1.4 II ASPH.": {
+      "status": "failed",
+      "label": "Panasonic LEICA DG SUMMILUX 25mm F1.4 II ASPH.",
+      "reason": "no usable image",
+      "errors": []
+    },
+    "Panasonic LUMIX G 25mm F1.7 ASPH.": {
+      "status": "ok",
+      "label": "Panasonic LUMIX G 25mm F1.7 ASPH.",
+      "src": "/assets/images/products/panasonic/panasonic-micro-four-thirds-lumix-g-25mm-f1-7-asph.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Panasonic_Lumix_G_25mm_F1.7_ASPH_lens.jpg",
+      "sourceImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Panasonic_Lumix_G_25mm_F1.7_ASPH_lens.jpg/960px-Panasonic_Lumix_G_25mm_F1.7_ASPH_lens.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "method": "wikimedia-commons"
+    },
+    "Panasonic LEICA DG VARIO-SUMMILUX 25-50mm F1.7 ASPH.": {
+      "status": "failed",
+      "label": "Panasonic LEICA DG VARIO-SUMMILUX 25-50mm F1.7 ASPH.",
+      "reason": "no usable image",
+      "errors": []
+    },
+    "Panasonic LUMIX G MACRO 30mm F2.8 ASPH. MEGA O.I.S.": {
+      "status": "failed",
+      "label": "Panasonic LUMIX G MACRO 30mm F2.8 ASPH. MEGA O.I.S.",
+      "reason": "no usable image",
+      "errors": []
+    },
+    "Panasonic LUMIX G X VARIO 35-100mm F2.8 POWER O.I.S.": {
+      "status": "failed",
+      "label": "Panasonic LUMIX G X VARIO 35-100mm F2.8 POWER O.I.S.",
+      "reason": "no usable image",
+      "errors": []
+    },
+    "Panasonic LUMIX G X VARIO 35-100mm F2.8 II POWER O.I.S.": {
+      "status": "failed",
+      "label": "Panasonic LUMIX G X VARIO 35-100mm F2.8 II POWER O.I.S.",
+      "reason": "no usable image",
+      "errors": []
+    },
+    "Panasonic LUMIX G VARIO 35-100mm F4-5.6 ASPH. MEGA O.I.S.": {
+      "status": "failed",
+      "label": "Panasonic LUMIX G VARIO 35-100mm F4-5.6 ASPH. MEGA O.I.S.",
+      "reason": "no usable image",
+      "errors": []
+    },
+    "Panasonic LEICA DG NOCTICRON 42.5mm F1.2 ASPH. POWER O.I.S.": {
+      "status": "ok",
+      "label": "Panasonic LEICA DG NOCTICRON 42.5mm F1.2 ASPH. POWER O.I.S.",
+      "src": "/assets/images/products/panasonic/panasonic-micro-four-thirds-leica-dg-nocticron-42-5mm-f1-2-asph-power-o-i-s.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Leica_DG_Nocticron_42.5mm_F1.2_01.jpg",
+      "sourceImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Leica_DG_Nocticron_42.5mm_F1.2_01.jpg/960px-Leica_DG_Nocticron_42.5mm_F1.2_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "method": "wikimedia-commons"
+    },
+    "Panasonic LUMIX G 42.5mm F1.7 ASPH. POWER O.I.S.": {
+      "status": "failed",
+      "label": "Panasonic LUMIX G 42.5mm F1.7 ASPH. POWER O.I.S.",
+      "reason": "no usable image",
+      "errors": []
+    },
+    "Panasonic LEICA DG MACRO-ELMARIT 45mm F2.8 ASPH. MEGA O.I.S.": {
+      "status": "ok",
+      "label": "Panasonic LEICA DG MACRO-ELMARIT 45mm F2.8 ASPH. MEGA O.I.S.",
+      "src": "/assets/images/products/panasonic/panasonic-micro-four-thirds-leica-dg-macro-elmarit-45mm-f2-8-asph-mega-o-i-s.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Panasonic_Leica_DG_Macro-Elmarit_45mm_F2.8_ASPH._Mega_O.I.S._lens.jpg",
+      "sourceImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Panasonic_Leica_DG_Macro-Elmarit_45mm_F2.8_ASPH._Mega_O.I.S._lens.jpg/960px-Panasonic_Leica_DG_Macro-Elmarit_45mm_F2.8_ASPH._Mega_O.I.S._lens.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "method": "wikimedia-commons"
+    },
+    "Panasonic LUMIX G VARIO 45-150mm F4-5.6 ASPH. MEGA O.I.S.": {
+      "status": "ok",
+      "label": "Panasonic LUMIX G VARIO 45-150mm F4-5.6 ASPH. MEGA O.I.S.",
+      "src": "/assets/images/products/panasonic/panasonic-micro-four-thirds-lumix-g-vario-45-150mm-f4-5-6-asph-mega-o-i-s.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Panasonic_45-150mm_01.jpg",
+      "sourceImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Panasonic_45-150mm_01.jpg/960px-Panasonic_45-150mm_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "method": "wikimedia-commons"
+    },
+    "Panasonic LUMIX G X VARIO PZ 45-175mm F4-5.6 POWER O.I.S.": {
+      "status": "failed",
+      "label": "Panasonic LUMIX G X VARIO PZ 45-175mm F4-5.6 POWER O.I.S.",
+      "reason": "no usable image",
+      "errors": []
+    },
+    "Panasonic LUMIX G VARIO 45-200mm F4-5.6 MEGA O.I.S.": {
+      "status": "ok",
+      "label": "Panasonic LUMIX G VARIO 45-200mm F4-5.6 MEGA O.I.S.",
+      "src": "/assets/images/products/panasonic/panasonic-micro-four-thirds-lumix-g-vario-45-200mm-f4-5-6-mega-o-i-s.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Panasonic_Lumix_DMC-G1.jpg",
+      "sourceImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Panasonic_Lumix_DMC-G1.jpg/960px-Panasonic_Lumix_DMC-G1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "method": "wikimedia-commons"
+    },
+    "Panasonic LUMIX G VARIO 45-200mm F4-5.6 II POWER O.I.S.": {
+      "status": "failed",
+      "label": "Panasonic LUMIX G VARIO 45-200mm F4-5.6 II POWER O.I.S.",
+      "reason": "no usable image",
+      "errors": []
+    },
+    "Panasonic LEICA DG VARIO-ELMARIT 50-200mm F2.8-4 ASPH. POWER O.I.S.": {
+      "status": "failed",
+      "label": "Panasonic LEICA DG VARIO-ELMARIT 50-200mm F2.8-4 ASPH. POWER O.I.S.",
+      "reason": "no usable image",
+      "errors": []
+    },
+    "Panasonic LUMIX G VARIO 100-300mm F4-5.6 MEGA O.I.S.": {
+      "status": "ok",
+      "label": "Panasonic LUMIX G VARIO 100-300mm F4-5.6 MEGA O.I.S.",
+      "src": "/assets/images/products/panasonic/panasonic-micro-four-thirds-lumix-g-vario-100-300mm-f4-5-6-mega-o-i-s.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Panasonic_Lumix_G_Vario_HD_100-300mm_F4.0-5.6-_Mega_O.I.S.-20140211-RM-175404.jpg",
+      "sourceImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Panasonic_Lumix_G_Vario_HD_100-300mm_F4.0-5.6-_Mega_O.I.S.-20140211-RM-175404.jpg/960px-Panasonic_Lumix_G_Vario_HD_100-300mm_F4.0-5.6-_Mega_O.I.S.-20140211-RM-175404.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "method": "wikimedia-commons"
+    },
+    "Panasonic LUMIX G VARIO 100-300mm F4-5.6 II POWER O.I.S.": {
+      "status": "failed",
+      "label": "Panasonic LUMIX G VARIO 100-300mm F4-5.6 II POWER O.I.S.",
+      "reason": "no usable image",
+      "errors": []
+    },
+    "Panasonic LEICA DG VARIO-ELMAR 100-400mm F4-6.3 ASPH. POWER O.I.S.": {
+      "status": "failed",
+      "label": "Panasonic LEICA DG VARIO-ELMAR 100-400mm F4-6.3 ASPH. POWER O.I.S.",
+      "reason": "no usable image",
+      "errors": []
+    },
+    "Panasonic LEICA DG VARIO-ELMAR 100-400mm F4-6.3 II ASPH. POWER O.I.S.": {
+      "status": "failed",
+      "label": "Panasonic LEICA DG VARIO-ELMAR 100-400mm F4-6.3 II ASPH. POWER O.I.S.",
+      "reason": "no usable image",
+      "errors": []
+    },
+    "Panasonic LEICA DG ELMARIT 200mm F2.8 POWER O.I.S.": {
+      "status": "failed",
+      "label": "Panasonic LEICA DG ELMARIT 200mm F2.8 POWER O.I.S.",
+      "reason": "no usable image",
+      "errors": []
+    },
+    "Olympus PEN E-P5": {
+      "status": "ok",
+      "label": "Olympus PEN E-P5",
+      "src": "/assets/images/products/olympus/olympus-micro-four-thirds-pen-e-p5.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Olympus_PEN_E-P5_Front_1.jpg",
+      "sourceImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Olympus_PEN_E-P5_Front_1.jpg/960px-Olympus_PEN_E-P5_Front_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "method": "wikimedia-commons"
+    },
+    "Olympus PEN E-P7": {
+      "status": "ok",
+      "label": "Olympus PEN E-P7",
+      "src": "/assets/images/products/olympus/olympus-micro-four-thirds-pen-e-p7.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Olympus_PEN_E-P7_14_Jul_2021c.jpg",
+      "sourceImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Olympus_PEN_E-P7_14_Jul_2021c.jpg/960px-Olympus_PEN_E-P7_14_Jul_2021c.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "method": "wikimedia-commons"
+    },
+    "Olympus PEN E-PL1": {
+      "status": "ok",
+      "label": "Olympus PEN E-PL1",
+      "src": "/assets/images/products/olympus/olympus-micro-four-thirds-pen-e-pl1.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Olympus_PEN_E-PL1.jpg",
+      "sourceImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Olympus_PEN_E-PL1.jpg/960px-Olympus_PEN_E-PL1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "method": "wikimedia-commons"
+    },
+    "Olympus PEN E-PL1s": {
+      "status": "ok",
+      "label": "Olympus PEN E-PL1s",
+      "src": "/assets/images/products/olympus/olympus-micro-four-thirds-pen-e-pl1s.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Olympus_PEN_E-PL1.jpg",
+      "sourceImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Olympus_PEN_E-PL1.jpg/960px-Olympus_PEN_E-PL1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "method": "wikimedia-commons"
+    },
+    "Olympus PEN E-PL2": {
+      "status": "ok",
+      "label": "Olympus PEN E-PL2",
+      "src": "/assets/images/products/olympus/olympus-micro-four-thirds-pen-e-pl2.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Olympus_PEN_E-PL2_with_OM_Zuiko_50mm_1.8.jpg",
+      "sourceImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Olympus_PEN_E-PL2_with_OM_Zuiko_50mm_1.8.jpg/960px-Olympus_PEN_E-PL2_with_OM_Zuiko_50mm_1.8.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "method": "wikimedia-commons"
+    },
+    "Olympus PEN E-PL3": {
+      "status": "ok",
+      "label": "Olympus PEN E-PL3",
+      "src": "/assets/images/products/olympus/olympus-micro-four-thirds-pen-e-pl3.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Olympus_PEN_E-PL3.jpg",
+      "sourceImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Olympus_PEN_E-PL3.jpg/960px-Olympus_PEN_E-PL3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "method": "wikimedia-commons"
+    },
+    "Olympus PEN E-PL5": {
+      "status": "ok",
+      "label": "Olympus PEN E-PL5",
+      "src": "/assets/images/products/olympus/olympus-micro-four-thirds-pen-e-pl5.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Olympus_EPL5_back_01.jpg",
+      "sourceImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Olympus_EPL5_back_01.jpg/960px-Olympus_EPL5_back_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "method": "wikimedia-commons"
+    },
+    "Olympus PEN E-PL6": {
+      "status": "ok",
+      "label": "Olympus PEN E-PL6",
+      "src": "/assets/images/products/olympus/olympus-micro-four-thirds-pen-e-pl6.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Olympus_PEN_E-PL6_black_kit_lens_2016-03-03.jpg",
+      "sourceImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Olympus_PEN_E-PL6_black_kit_lens_2016-03-03.jpg/960px-Olympus_PEN_E-PL6_black_kit_lens_2016-03-03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "method": "wikimedia-commons"
+    },
+    "Olympus PEN E-PL7": {
+      "status": "ok",
+      "label": "Olympus PEN E-PL7",
+      "src": "/assets/images/products/olympus/olympus-micro-four-thirds-pen-e-pl7.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Olympus_PEN_E-PL7_with_25mm_f1.8.jpg",
+      "sourceImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Olympus_PEN_E-PL7_with_25mm_f1.8.jpg/960px-Olympus_PEN_E-PL7_with_25mm_f1.8.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "method": "wikimedia-commons"
+    },
+    "Olympus PEN E-PL8": {
+      "status": "failed",
+      "label": "Olympus PEN E-PL8",
+      "reason": "no usable image",
+      "errors": []
+    },
+    "Olympus PEN E-PL9": {
+      "status": "failed",
+      "label": "Olympus PEN E-PL9",
+      "reason": "no usable image",
+      "errors": []
+    },
+    "Olympus PEN E-PL10": {
+      "status": "failed",
+      "label": "Olympus PEN E-PL10",
+      "reason": "no usable image",
+      "errors": []
+    },
+    "Olympus PEN E-PM1": {
+      "status": "ok",
+      "label": "Olympus PEN E-PM1",
+      "src": "/assets/images/products/olympus/olympus-micro-four-thirds-pen-e-pm1.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Olympus_E-PM1_%2B_BCL-15.jpg",
+      "sourceImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Olympus_E-PM1_%2B_BCL-15.jpg/960px-Olympus_E-PM1_%2B_BCL-15.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "method": "wikimedia-commons"
+    },
+    "Olympus PEN E-PM2": {
+      "status": "ok",
+      "label": "Olympus PEN E-PM2",
+      "src": "/assets/images/products/olympus/olympus-micro-four-thirds-pen-e-pm2.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:OLYMPUS_PEN_MINI_E-PM2_(8651180173).jpg",
+      "sourceImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/OLYMPUS_PEN_MINI_E-PM2_%288651180173%29.jpg/960px-OLYMPUS_PEN_MINI_E-PM2_%288651180173%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "method": "wikimedia-commons"
+    },
+    "Olympus PEN-F": {
+      "status": "ok",
+      "label": "Olympus PEN-F",
+      "src": "/assets/images/products/olympus/olympus-micro-four-thirds-pen-f.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Olympus_PEN_F_Lens_to_Sony_NEX_E_Mount_Adapter.jpg",
+      "sourceImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Olympus_PEN_F_Lens_to_Sony_NEX_E_Mount_Adapter.jpg/960px-Olympus_PEN_F_Lens_to_Sony_NEX_E_Mount_Adapter.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "method": "wikimedia-commons"
+    },
+    "Olympus OM-D E-M5": {
+      "status": "ok",
+      "label": "Olympus OM-D E-M5",
+      "src": "/assets/images/products/olympus/olympus-micro-four-thirds-om-d-e-m5.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Olympus_OM-D_E-M5.jpg",
+      "sourceImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Olympus_OM-D_E-M5.jpg/960px-Olympus_OM-D_E-M5.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "method": "wikimedia-commons"
+    },
+    "Olympus OM-D E-M1": {
+      "status": "ok",
+      "label": "Olympus OM-D E-M1",
+      "src": "/assets/images/products/olympus/olympus-micro-four-thirds-om-d-e-m1.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Olympus_OM-D_E-M1-_20131118.jpg",
+      "sourceImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Olympus_OM-D_E-M1-_20131118.jpg/960px-Olympus_OM-D_E-M1-_20131118.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "method": "wikimedia-commons"
+    },
+    "Olympus OM-D E-M10": {
+      "status": "ok",
+      "label": "Olympus OM-D E-M10",
+      "src": "/assets/images/products/olympus/olympus-micro-four-thirds-om-d-e-m10.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Olympus_OM-D_E-M10_2014_CP%2B.jpg",
+      "sourceImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Olympus_OM-D_E-M10_2014_CP%2B.jpg/960px-Olympus_OM-D_E-M10_2014_CP%2B.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "method": "wikimedia-commons"
+    },
+    "Olympus OM-D E-M5 Mark II": {
+      "status": "ok",
+      "label": "Olympus OM-D E-M5 Mark II",
+      "src": "/assets/images/products/olympus/olympus-micro-four-thirds-om-d-e-m5-mark-ii.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Olympus_OM-D_E-M5_Mark_III_b.jpg",
+      "sourceImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Olympus_OM-D_E-M5_Mark_III_b.jpg/960px-Olympus_OM-D_E-M5_Mark_III_b.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "method": "wikimedia-commons"
+    },
+    "Olympus OM-D E-M10 Mark II": {
+      "status": "ok",
+      "label": "Olympus OM-D E-M10 Mark II",
+      "src": "/assets/images/products/olympus/olympus-micro-four-thirds-om-d-e-m10-mark-ii.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Olympus_OM-D_E-M10_Mark_II.JPG",
+      "sourceImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Olympus_OM-D_E-M10_Mark_II.JPG/960px-Olympus_OM-D_E-M10_Mark_II.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "method": "wikimedia-commons"
+    },
+    "Olympus OM-D E-M1 Mark II": {
+      "status": "ok",
+      "label": "Olympus OM-D E-M1 Mark II",
+      "src": "/assets/images/products/olympus/olympus-micro-four-thirds-om-d-e-m1-mark-ii.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Olympus_OM-D_E-M1_Mark_II_magnesium-alloy_chassis_2017_CP%2B.jpg",
+      "sourceImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Olympus_OM-D_E-M1_Mark_II_magnesium-alloy_chassis_2017_CP%2B.jpg/960px-Olympus_OM-D_E-M1_Mark_II_magnesium-alloy_chassis_2017_CP%2B.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "method": "wikimedia-commons"
+    },
+    "Olympus OM-D E-M10 Mark III": {
+      "status": "ok",
+      "label": "Olympus OM-D E-M10 Mark III",
+      "src": "/assets/images/products/olympus/olympus-micro-four-thirds-om-d-e-m10-mark-iii.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Olympus_OM-D_E-M10_Mark_III_27_Mar_2019a.jpg",
+      "sourceImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Olympus_OM-D_E-M10_Mark_III_27_Mar_2019a.jpg/960px-Olympus_OM-D_E-M10_Mark_III_27_Mar_2019a.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "method": "wikimedia-commons"
     }
   }
 }
