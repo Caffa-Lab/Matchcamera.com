@@ -231,18 +231,16 @@
   },
   "Sony α7 IV": {
     "src": "/assets/images/products/sony/sony-sony-e-ilce-7m4.webp",
-    "sourcePage": "https://commons.wikimedia.org/wiki/File:Sony_A7_IV_(ILCE-7M4)_-_by_Henry_S%C3%B6derlund_(51739988735).jpg",
-    "sourceImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Sony_A7_IV_%28ILCE-7M4%29_-_by_Henry_S%C3%B6derlund_%2851739988735%29.jpg/960px-Sony_A7_IV_%28ILCE-7M4%29_-_by_Henry_S%C3%B6derlund_%2851739988735%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "sourcePage": "https://store.sony.co.kr/product-view/102270076",
+    "sourceImage": "https://sony.cdn-nhncommerce.com/Mall-No-A3ju/20211123/164015.959881000/ILCE-7M4_5.png",
     "manufacturer": "Sony",
     "modelCode": "ILCE-7M4",
-    "width": 900,
-    "height": 600,
-    "method": "wikimedia-commons",
-    "license": "CC BY 2.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-    "artist": "Henry Söderlund from Helsinki, Finland, Finland",
-    "credit": "Sony A7 IV (ILCE-7M4)",
-    "fetchedAt": "2026-08-28T07:40:39.672084+00:00"
+    "width": 864,
+    "height": 864,
+    "method": "sony-store-product",
+    "imageRole": "product-cut",
+    "fetchedAt": "2026-08-28T11:02:30.645035+00:00",
+    "usageReviewRequired": true
   },
   "Canon EOS R5": {
     "src": "/assets/images/products/canon/canon-canon-rf-eos-r5.webp",

@@ -1,0 +1,18 @@
+{
+  "_meta": {
+    "updatedAt": "2026-08-28T11:02:30.786065+00:00",
+    "selected": 1,
+    "ok": 1,
+    "skipped": 0,
+    "failed": 0
+  },
+  "items": {
+    "Sony α7 IV": {
+      "status": "ok",
+      "src": "/assets/images/products/sony/sony-sony-e-ilce-7m4.webp",
+      "sourcePage": "https://store.sony.co.kr/product-view/102270076",
+      "sourceImage": "https://sony.cdn-nhncommerce.com/Mall-No-A3ju/20211123/164015.959881000/ILCE-7M4_5.png",
+      "score": 377.6
+    }
+  }
+}
