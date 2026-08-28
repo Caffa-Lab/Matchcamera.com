@@ -59,7 +59,17 @@
       </div>
 
       <div class="accessory-panel hidden" data-accessory-panel="battery">
-        <div class="accessory-placeholder"><span class="status">DB 확장 예정</span><h2>배터리</h2><p>바디별 정품 배터리 규격과 호환 모델을 연결할 예정입니다.</p></div>
+        <div class="toolbar battery-toolbar">
+          <input id="batterySearch" class="control" placeholder="배터리명 또는 호환 바디 검색">
+          <select id="batteryBrand" class="control"></select>
+          <select id="batterySale" class="control">
+            <option value="all">모든 판매 상태</option>
+            <option value="예">현재 판매 확인</option>
+            <option value="확인 필요">판매 상태 확인 필요</option>
+          </select>
+        </div>
+        <p class="muted tiny"><b id="batteryCount">0</b>개 배터리</p>
+        <div id="batteryList" class="battery-list"></div>
       </div>
 
       <div class="accessory-panel hidden" data-accessory-panel="flash">

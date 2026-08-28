@@ -35,3 +35,20 @@
 @media(max-width:1400px){.accessory-category-grid{grid-template-columns:repeat(3,minmax(150px,1fr))}.builder-page .app-frame{grid-template-columns:350px minmax(620px,1fr)}.builder-page .summary-pane{grid-column:1/-1;position:static;min-height:auto}.database-page .toolbar{grid-template-columns:repeat(4,1fr)}}
 @media(max-width:900px){.accessory-category-grid{grid-template-columns:1fr 1fr}.global-search{display:none}.category-nav{overflow:auto}.builder-page .app-frame{grid-template-columns:1fr}.builder-page .catalog-pane{position:static;max-height:none}.builder-page .build-row{grid-template-columns:55px 115px minmax(0,1fr) 92px}.database-page .toolbar{grid-template-columns:1fr 1fr}.simple-grid{grid-template-columns:1fr}.adapter-card{grid-template-columns:1fr 1fr}.contact-grid{grid-template-columns:1fr}.contact-field.full{grid-column:auto}}
 @media(max-width:620px){.accessory-category-grid{grid-template-columns:1fr}.database-page .toolbar{grid-template-columns:1fr}.adapter-card{grid-template-columns:1fr}.contact-shell{padding:20px}.contact-actions{align-items:flex-start;flex-direction:column}.builder-page .app-frame{width:calc(100% - 12px)}.builder-page .build-row{grid-template-columns:42px minmax(0,1fr) 76px}}
+
+
+/* Battery database */
+.battery-toolbar{grid-template-columns:2fr 1fr 1fr}
+.battery-list{display:grid;gap:10px;padding-bottom:64px}
+.battery-card{display:grid;grid-template-columns:minmax(220px,1.1fr) minmax(320px,2fr) 160px;gap:18px;align-items:center;background:#fff;border:1px solid var(--line);border-radius:15px;padding:17px 18px;box-shadow:0 5px 18px rgba(20,28,45,.035)}
+.battery-brand{font-size:10px;font-weight:900;color:#6b7280;text-transform:uppercase;letter-spacing:.08em;margin-bottom:4px}
+.battery-card h2{font-size:18px;margin:0 0 5px;color:#171d2a}
+.battery-card p{font-size:11px;color:var(--muted);line-height:1.55;margin:0}
+.battery-label{display:block;font-size:10px;font-weight:900;color:#737c8b;margin-bottom:7px}
+.battery-tags{display:flex;flex-wrap:wrap;gap:5px}
+.battery-tags span{font-size:10px;padding:5px 7px;border-radius:7px;background:#f5f6fa;color:#48505d;border:1px solid #eceef3}
+.battery-meta{text-align:right;display:flex;flex-direction:column;gap:8px}
+.battery-meta span{font-size:10px;color:#727b89}
+.battery-meta strong{font-size:15px;color:#232a38}
+@media(max-width:1000px){.battery-card{grid-template-columns:1fr}.battery-meta{text-align:left;flex-direction:row;align-items:center;justify-content:space-between}}
+@media(max-width:700px){.battery-toolbar{grid-template-columns:1fr}.battery-card{padding:14px}}

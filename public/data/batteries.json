@@ -1,0 +1,246 @@
+[
+  {
+    "id": "sony-np-fz100",
+    "manufacturer": "Sony",
+    "officialName": "NP-FZ100",
+    "compatibleNames": [
+      "Sony α7 III",
+      "Sony α7 IV",
+      "Sony α7R III",
+      "Sony α7R IV",
+      "Sony α7R V",
+      "Sony α7S III",
+      "Sony α7C II",
+      "Sony α7CR",
+      "Sony α9",
+      "Sony α9 II",
+      "Sony α9 III",
+      "Sony α1",
+      "Sony α1 II",
+      "Sony α6600",
+      "Sony α6700",
+      "Sony Cinema Line FX3",
+      "Sony Cinema Line FX30"
+    ],
+    "compatiblePrefixes": [],
+    "currentSale": "예",
+    "note": "Sony 고용량 Z 시리즈 배터리. 세부 충전/USB 전원 기능은 바디별 확인 필요."
+  },
+  {
+    "id": "sony-np-fw50",
+    "manufacturer": "Sony",
+    "officialName": "NP-FW50",
+    "compatibleNames": [
+      "Sony α7",
+      "Sony α7 II",
+      "Sony α7R",
+      "Sony α7R II",
+      "Sony α7S",
+      "Sony α7S II",
+      "Sony α6000",
+      "Sony α6100",
+      "Sony α6300",
+      "Sony α6400",
+      "Sony α6500"
+    ],
+    "compatiblePrefixes": [
+      "Sony NEX-"
+    ],
+    "currentSale": "확인 필요",
+    "note": "구형 Sony 미러리스에서 널리 사용된 W 시리즈 배터리."
+  },
+  {
+    "id": "canon-lp-e6p",
+    "manufacturer": "Canon",
+    "officialName": "LP-E6P",
+    "compatibleNames": [
+      "Canon EOS R5 Mark II"
+    ],
+    "compatiblePrefixes": [],
+    "currentSale": "예",
+    "note": "고전력 요구 바디용 최신 LP-E6 계열. 구형 LP-E6 계열과의 기능 차이는 바디별 확인 필요."
+  },
+  {
+    "id": "canon-lp-e6nh",
+    "manufacturer": "Canon",
+    "officialName": "LP-E6NH",
+    "compatibleNames": [
+      "Canon EOS R5",
+      "Canon EOS R5 C",
+      "Canon EOS R6",
+      "Canon EOS R6 Mark II",
+      "Canon EOS R7",
+      "Canon EOS R",
+      "Canon EOS Ra"
+    ],
+    "compatiblePrefixes": [],
+    "currentSale": "예",
+    "note": "Canon EOS R/고급 DSLR 계열에서 폭넓게 사용되는 LP-E6 계열."
+  },
+  {
+    "id": "canon-lp-e17",
+    "manufacturer": "Canon",
+    "officialName": "LP-E17",
+    "compatibleNames": [
+      "Canon EOS RP",
+      "Canon EOS R8",
+      "Canon EOS R10",
+      "Canon EOS R50",
+      "Canon EOS R100",
+      "Canon EOS M3",
+      "Canon EOS M5",
+      "Canon EOS M6",
+      "Canon EOS M6 Mark II"
+    ],
+    "compatiblePrefixes": [],
+    "currentSale": "예",
+    "note": "소형 EOS R 및 일부 EOS M 바디용."
+  },
+  {
+    "id": "nikon-en-el15c",
+    "manufacturer": "Nikon",
+    "officialName": "EN-EL15c",
+    "compatibleNames": [
+      "Nikon Z 5",
+      "Nikon Z 6",
+      "Nikon Z 6II",
+      "Nikon Z 6III",
+      "Nikon Z 7",
+      "Nikon Z 7II",
+      "Nikon Z 8",
+      "Nikon Z f",
+      "Nikon D780",
+      "Nikon D850",
+      "Nikon D7500"
+    ],
+    "compatiblePrefixes": [],
+    "currentSale": "예",
+    "note": "EN-EL15 계열은 세대별 충전/전원 기능 차이가 있으므로 개별 바디 설명서 확인 필요."
+  },
+  {
+    "id": "nikon-en-el25",
+    "manufacturer": "Nikon",
+    "officialName": "EN-EL25",
+    "compatibleNames": [
+      "Nikon Z 50",
+      "Nikon Z fc",
+      "Nikon Z 30"
+    ],
+    "compatiblePrefixes": [],
+    "currentSale": "예",
+    "note": "Nikon 소형 DX 미러리스 계열용."
+  },
+  {
+    "id": "nikon-en-el25a",
+    "manufacturer": "Nikon",
+    "officialName": "EN-EL25a",
+    "compatibleNames": [
+      "Nikon Z 50II"
+    ],
+    "compatiblePrefixes": [],
+    "currentSale": "예",
+    "note": "신형 EN-EL25 계열. 기존 EN-EL25와의 호환 범위는 바디별 확인 필요."
+  },
+  {
+    "id": "fujifilm-np-w235",
+    "manufacturer": "Fujifilm",
+    "officialName": "NP-W235",
+    "compatibleNames": [
+      "Fujifilm X-T4",
+      "Fujifilm X-T5",
+      "Fujifilm X-H2",
+      "Fujifilm X-H2S",
+      "Fujifilm X-S20",
+      "Fujifilm GFX100 II",
+      "Fujifilm GFX100S II"
+    ],
+    "compatiblePrefixes": [],
+    "currentSale": "예",
+    "note": "Fujifilm 고용량 W235 계열."
+  },
+  {
+    "id": "fujifilm-np-w126s",
+    "manufacturer": "Fujifilm",
+    "officialName": "NP-W126S",
+    "compatibleNames": [
+      "Fujifilm X-T3",
+      "Fujifilm X-S10",
+      "Fujifilm X-E4",
+      "Fujifilm X100V",
+      "Fujifilm X100VI"
+    ],
+    "compatiblePrefixes": [],
+    "currentSale": "예",
+    "note": "다수의 Fujifilm X 시리즈 및 X100 계열에서 사용."
+  },
+  {
+    "id": "panasonic-dmw-blk22",
+    "manufacturer": "Panasonic",
+    "officialName": "DMW-BLK22",
+    "compatibleNames": [
+      "Panasonic LUMIX S5",
+      "Panasonic LUMIX S5II",
+      "Panasonic LUMIX S5IIX",
+      "Panasonic LUMIX GH5 II",
+      "Panasonic LUMIX GH6",
+      "Panasonic LUMIX GH7",
+      "Panasonic LUMIX G9II"
+    ],
+    "compatiblePrefixes": [],
+    "currentSale": "예",
+    "note": "LUMIX S5/GH/G9 일부 현행 바디용."
+  },
+  {
+    "id": "om-system-blx-1",
+    "manufacturer": "OM SYSTEM",
+    "officialName": "BLX-1",
+    "compatibleNames": [
+      "OM SYSTEM OM-1",
+      "OM SYSTEM OM-1 Mark II",
+      "OM SYSTEM OM-3"
+    ],
+    "compatiblePrefixes": [],
+    "currentSale": "예",
+    "note": "OM SYSTEM 상위 바디용 배터리."
+  },
+  {
+    "id": "om-system-bls-50",
+    "manufacturer": "OM SYSTEM",
+    "officialName": "BLS-50",
+    "compatibleNames": [
+      "OM SYSTEM OM-5"
+    ],
+    "compatiblePrefixes": [
+      "Olympus OM-D E-M10"
+    ],
+    "currentSale": "예",
+    "note": "OM-5 및 일부 Olympus/OM SYSTEM 소형 바디 계열."
+  },
+  {
+    "id": "pentax-d-li90",
+    "manufacturer": "Pentax",
+    "officialName": "D-LI90",
+    "compatibleNames": [
+      "Pentax K-1",
+      "Pentax K-1 Mark II",
+      "Pentax K-3 Mark III"
+    ],
+    "compatiblePrefixes": [],
+    "currentSale": "확인 필요",
+    "note": "Pentax 고급 DSLR 계열에서 사용되는 배터리."
+  },
+  {
+    "id": "sigma-bp-51",
+    "manufacturer": "Sigma",
+    "officialName": "BP-51",
+    "compatibleNames": [
+      "Sigma Sigma fp",
+      "Sigma Sigma fp L",
+      "Sigma fp",
+      "Sigma fp L"
+    ],
+    "compatiblePrefixes": [],
+    "currentSale": "확인 필요",
+    "note": "SIGMA fp 계열용."
+  }
+]

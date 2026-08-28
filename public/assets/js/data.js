@@ -1,11 +1,13 @@
 let cache;
 let adapterCache;
+let batteryCache;
 
 const PRODUCT_URL = '/data/products.json';
 const EXPANSION_URL = '/data/system-expansion.json';
 const KOREA_PRICE_URL = '/data/korea-prices.json';
 const IMAGE_MAP_URL = '/data/product-images.json';
 const ADAPTER_URL = '/data/mount-adapters.json';
+const BATTERY_URL = '/data/batteries.json';
 
 async function optionalJson(url, fallback){
   try{
@@ -217,6 +219,30 @@ export async function loadAdapters(){
   if(adapterCache) return adapterCache;
   adapterCache = await optionalJson(ADAPTER_URL, []);
   return Array.isArray(adapterCache) ? adapterCache : [];
+}
+
+export async function loadBatteries(){
+  if(batteryCache) return batteryCache;
+  batteryCache = await optionalJson(BATTERY_URL, []);
+  return Array.isArray(batteryCache) ? batteryCache : [];
+}
+
+export function batteryMatchesBody(battery, body){
+  if(!battery || !body) return false;
+  const label = normalizeSearch(productLabel(body));
+  const modelCode = normalizeSearch(body.modelCode || '');
+  const names = Array.isArray(battery.compatibleNames) ? battery.compatibleNames : [];
+  const codes = Array.isArray(battery.compatibleModelCodes) ? battery.compatibleModelCodes : [];
+  const prefixes = Array.isArray(battery.compatiblePrefixes) ? battery.compatiblePrefixes : [];
+
+  if(names.some(x => normalizeSearch(x) === label)) return true;
+  if(modelCode && codes.some(x => normalizeSearch(x) === modelCode)) return true;
+  if(prefixes.some(x => label.startsWith(normalizeSearch(x)))) return true;
+  return false;
+}
+
+export function findBatteriesForBody(body, batteries=[]){
+  return (Array.isArray(batteries) ? batteries : []).filter(b => batteryMatchesBody(b, body));
 }
 
 export const money = v => {
