@@ -35,13 +35,1182 @@
       "status": "failed",
       "query": "EOS M6",
       "reason": "정확한 일반상품 상세 페이지를 찾지 못함 (0개 후보)"
+    },
+    "body:Canon EOS M100": {
+      "status": "failed",
+      "query": "EOS M100",
+      "reason": "정확한 일반상품 상세 페이지를 찾지 못함 (1개 후보)"
+    },
+    "body:Canon EOS M50": {
+      "status": "ok",
+      "query": "EOS M50",
+      "src": "/assets/images/products/canon/canon-canon-ef-m-eos-m50.webp",
+      "sourcePage": "https://estore.kr.canon/estore/detailview/17594",
+      "sourceImage": "https://image.kr.canon//pds/product/1582002176832_PJvDckwHDv.jpg",
+      "resultScore": 540,
+      "imageScore": 1030,
+      "width": 900,
+      "height": 600
+    },
+    "body:Canon EOS M6 Mark II": {
+      "status": "failed",
+      "query": "EOS M6 Mark II",
+      "reason": "정확한 일반상품 상세 페이지를 찾지 못함 (0개 후보)"
+    },
+    "body:Canon EOS M200": {
+      "status": "failed",
+      "query": "EOS M200",
+      "reason": "정확한 일반상품 상세 페이지를 찾지 못함 (0개 후보)"
+    },
+    "body:Canon EOS M50 Mark II": {
+      "status": "failed",
+      "query": "EOS M50 Mark II",
+      "reason": "정확한 일반상품 상세 페이지를 찾지 못함 (0개 후보)"
+    },
+    "body:Canon EOS R": {
+      "status": "ok",
+      "query": "EOS R",
+      "src": "/assets/images/products/canon/canon-canon-rf-eos-r.webp",
+      "sourcePage": "https://estore.kr.canon/estore/detailview/43095",
+      "sourceImage": "https://image.kr.canon//pds/product/1762850991540_Ns7ewZU1el.jpg",
+      "resultScore": 740,
+      "imageScore": 1030,
+      "width": 900,
+      "height": 600
+    },
+    "body:Canon EOS RP": {
+      "status": "ok",
+      "query": "EOS RP",
+      "src": "/assets/images/products/canon/canon-canon-rf-eos-rp.webp",
+      "sourcePage": "https://estore.kr.canon/estore/detailview/23097",
+      "sourceImage": "https://image.kr.canon//pds/product/1550221137796_tjuMa3zYVM.jpg",
+      "resultScore": 240,
+      "imageScore": 1030,
+      "width": 900,
+      "height": 509
+    },
+    "body:Canon EOS Ra": {
+      "status": "failed",
+      "query": "EOS Ra",
+      "reason": "정확한 일반상품 상세 페이지를 찾지 못함 (0개 후보)"
+    },
+    "body:Canon EOS R5": {
+      "status": "ok",
+      "query": "EOS R5",
+      "src": "/assets/images/products/canon/canon-canon-rf-eos-r5.webp",
+      "sourcePage": "https://estore.kr.canon/estore/detailview/35377",
+      "sourceImage": "https://image.kr.canon//pds/product/1721117275871_kixJuZMhkQ.jpg",
+      "resultScore": 240,
+      "imageScore": 1030,
+      "width": 900,
+      "height": 600
+    },
+    "body:Canon EOS R6": {
+      "status": "ok",
+      "query": "EOS R6",
+      "src": "/assets/images/products/canon/canon-canon-rf-eos-r6.webp",
+      "sourcePage": "https://estore.kr.canon/estore/detailview/43095",
+      "sourceImage": "https://image.kr.canon//pds/product/1762850991540_Ns7ewZU1el.jpg",
+      "resultScore": 740,
+      "imageScore": 1030,
+      "width": 900,
+      "height": 600
+    },
+    "body:Canon EOS R3": {
+      "status": "ok",
+      "query": "EOS R3",
+      "src": "/assets/images/products/canon/canon-canon-rf-eos-r3.webp",
+      "sourcePage": "https://estore.kr.canon/estore/detailview/21931",
+      "sourceImage": "https://image.kr.canon/pds/editor/upload/product/mirrorless/EOSR3/images/EOS-R3_2_06.jpg",
+      "resultScore": 540,
+      "imageScore": 1065,
+      "width": 746,
+      "height": 900
+    },
+    "body:Canon EOS R5 C": {
+      "status": "failed",
+      "query": "EOS R5 C",
+      "reason": "정확한 일반상품 상세 페이지를 찾지 못함 (0개 후보)"
+    },
+    "body:Canon EOS R7": {
+      "status": "ok",
+      "query": "EOS R7",
+      "src": "/assets/images/products/canon/canon-canon-rf-eos-r7.webp",
+      "sourcePage": "https://estore.kr.canon/estore/detailview/23056",
+      "sourceImage": "https://image.kr.canon//pds/product/1653365099643_ArTA4JacbE.jpg",
+      "resultScore": 240,
+      "imageScore": 1030,
+      "width": 900,
+      "height": 509
+    },
+    "body:Canon EOS R10": {
+      "status": "ok",
+      "query": "EOS R10",
+      "src": "/assets/images/products/canon/canon-canon-rf-eos-r10.webp",
+      "sourcePage": "https://estore.kr.canon/estore/detailview/35215",
+      "sourceImage": "https://image.kr.canon//pds/product/1703555386987_0BqHUobasx.jpg",
+      "resultScore": 240,
+      "imageScore": 1030,
+      "width": 900,
+      "height": 509
+    },
+    "body:Canon EOS R6 Mark II": {
+      "status": "ok",
+      "query": "EOS R6 Mark II",
+      "src": "/assets/images/products/canon/canon-canon-rf-eos-r6-mark-ii.webp",
+      "sourcePage": "https://estore.kr.canon/estore/detailview/23514",
+      "sourceImage": "https://image.kr.canon//pds/product/1667362335324_vepVQ7gt7k.jpg",
+      "resultScore": 240,
+      "imageScore": 1030,
+      "width": 900,
+      "height": 509
+    },
+    "body:Canon EOS R8": {
+      "status": "ok",
+      "query": "EOS R8",
+      "src": "/assets/images/products/canon/canon-canon-rf-eos-r8.webp",
+      "sourcePage": "https://estore.kr.canon/estore/detailview/25472",
+      "sourceImage": "https://image.kr.canon//pds/product/1675830182562_5b2s8qxnSS.jpg",
+      "resultScore": 740,
+      "imageScore": 1030,
+      "width": 900,
+      "height": 509
+    },
+    "body:Canon EOS R50": {
+      "status": "ok",
+      "query": "EOS R50",
+      "src": "/assets/images/products/canon/canon-canon-rf-eos-r50.webp",
+      "sourcePage": "https://estore.kr.canon/estore/detailview/41735",
+      "sourceImage": "https://image.kr.canon//pds/goods/1773127988927_0SLWkZGkzG.jpg",
+      "resultScore": 540,
+      "imageScore": 1030,
+      "width": 900,
+      "height": 676
+    },
+    "body:Canon EOS R100": {
+      "status": "ok",
+      "query": "EOS R100",
+      "src": "/assets/images/products/canon/canon-canon-rf-eos-r100.webp",
+      "sourcePage": "https://estore.kr.canon/estore/detailview/42399",
+      "sourceImage": "https://image.kr.canon//pds/product/1703554640274_eKS2JDO2o0.jpg",
+      "resultScore": 240,
+      "imageScore": 1030,
+      "width": 900,
+      "height": 509
+    },
+    "body:Canon EOS R1": {
+      "status": "ok",
+      "query": "EOS R1",
+      "src": "/assets/images/products/canon/canon-canon-rf-eos-r1.webp",
+      "sourcePage": "https://estore.kr.canon/estore/detailview/39335",
+      "sourceImage": "https://image.kr.canon/pds/editor/upload/product/mirrorless/EOS_R1/images/EOS-R1_1_01.jpg",
+      "resultScore": 740,
+      "imageScore": 1035,
+      "width": 239,
+      "height": 900
+    },
+    "body:Canon EOS R5 Mark II": {
+      "status": "ok",
+      "query": "EOS R5 Mark II",
+      "src": "/assets/images/products/canon/canon-canon-rf-eos-r5-mark-ii.webp",
+      "sourcePage": "https://estore.kr.canon/estore/detailview/35377",
+      "sourceImage": "https://image.kr.canon//pds/product/1721117275871_kixJuZMhkQ.jpg",
+      "resultScore": 240,
+      "imageScore": 1030,
+      "width": 900,
+      "height": 600
+    },
+    "body:Canon EOS R50 V": {
+      "status": "ok",
+      "query": "EOS R50 V",
+      "src": "/assets/images/products/canon/canon-canon-rf-eos-r50-v.webp",
+      "sourcePage": "https://estore.kr.canon/estore/detailview/40695",
+      "sourceImage": "https://image.kr.canon//pds/goods/1745540746992_pDoMzxe9Hl.jpg",
+      "resultScore": 740,
+      "imageScore": 1030,
+      "width": 900,
+      "height": 676
+    },
+    "body:Canon EOS R6 Mark III": {
+      "status": "ok",
+      "query": "EOS R6 Mark III",
+      "src": "/assets/images/products/canon/canon-canon-rf-eos-r6-mark-iii.webp",
+      "sourcePage": "https://estore.kr.canon/estore/detailview/43095",
+      "sourceImage": "https://image.kr.canon//pds/product/1762850991540_Ns7ewZU1el.jpg",
+      "resultScore": 240,
+      "imageScore": 1030,
+      "width": 900,
+      "height": 600
+    },
+    "body:Canon EOS C70": {
+      "status": "failed",
+      "query": "EOS C70",
+      "reason": "정확한 일반상품 상세 페이지를 찾지 못함 (0개 후보)"
+    },
+    "body:Canon EOS C400": {
+      "status": "failed",
+      "query": "EOS C400",
+      "reason": "정확한 일반상품 상세 페이지를 찾지 못함 (0개 후보)"
+    },
+    "body:Canon EOS C80": {
+      "status": "failed",
+      "query": "EOS C80",
+      "reason": "정확한 일반상품 상세 페이지를 찾지 못함 (0개 후보)"
+    },
+    "body:Canon EOS C50": {
+      "status": "failed",
+      "query": "EOS C50",
+      "reason": "정확한 일반상품 상세 페이지를 찾지 못함 (0개 후보)"
+    },
+    "lens:Canon EF-M 11-22mm F4-5.6 IS STM": {
+      "status": "failed",
+      "query": "EF-M 11-22mm F4-5.6 IS STM",
+      "reason": "정확한 일반상품 상세 페이지를 찾지 못함 (0개 후보)"
+    },
+    "lens:Canon EF-M 15-45mm F3.5-6.3 IS STM": {
+      "status": "failed",
+      "query": "EF-M 15-45mm F3.5-6.3 IS STM",
+      "reason": "정확한 일반상품 상세 페이지를 찾지 못함 (0개 후보)"
+    },
+    "lens:Canon EF-M 18-55mm F3.5-5.6 IS STM": {
+      "status": "failed",
+      "query": "EF-M 18-55mm F3.5-5.6 IS STM",
+      "reason": "정확한 일반상품 상세 페이지를 찾지 못함 (0개 후보)"
+    },
+    "lens:Canon EF-M 18-150mm F3.5-6.3 IS STM": {
+      "status": "failed",
+      "query": "EF-M 18-150mm F3.5-6.3 IS STM",
+      "reason": "정확한 일반상품 상세 페이지를 찾지 못함 (0개 후보)"
+    },
+    "lens:Canon EF-M 22mm F2 STM": {
+      "status": "failed",
+      "query": "EF-M 22mm F2 STM",
+      "reason": "정확한 일반상품 상세 페이지를 찾지 못함 (0개 후보)"
+    },
+    "lens:Canon EF-M 28mm F3.5 Macro IS STM": {
+      "status": "ok",
+      "query": "EF-M 28mm F3.5 Macro IS STM",
+      "src": "/assets/images/products/canon/canon-canon-ef-m-28mm.webp",
+      "sourcePage": "https://estore.kr.canon/estore/detailview/11046",
+      "sourceImage": "https://image.kr.canon//pds/product/1462876304245_PpefbaQs1h.jpg",
+      "resultScore": 540,
+      "imageScore": 1030,
+      "width": 900,
+      "height": 509
+    },
+    "lens:Canon EF-M 32mm F1.4 STM": {
+      "status": "failed",
+      "query": "EF-M 32mm F1.4 STM",
+      "reason": "정확한 일반상품 상세 페이지를 찾지 못함 (0개 후보)"
+    },
+    "lens:Canon EF-M 55-200mm F4.5-6.3 IS STM": {
+      "status": "failed",
+      "query": "EF-M 55-200mm F4.5-6.3 IS STM",
+      "reason": "정확한 일반상품 상세 페이지를 찾지 못함 (0개 후보)"
+    },
+    "lens:Canon RF7-14mm F2.8-3.5 L Fisheye STM": {
+      "status": "ok",
+      "query": "RF7-14mm F2.8-3.5 L Fisheye STM",
+      "src": "/assets/images/products/canon/canon-canon-rf-rf7-14mm.webp",
+      "sourcePage": "https://estore.kr.canon/estore/detailview/42495",
+      "sourceImage": "https://image.kr.canon//pds/product/1770084329200_VQTLoaxVHr.jpg",
+      "resultScore": 740,
+      "imageScore": 1030,
+      "width": 900,
+      "height": 675
+    },
+    "lens:Canon RF10-20mm F4 L IS STM": {
+      "status": "ok",
+      "query": "RF10-20mm F4 L IS STM",
+      "src": "/assets/images/products/canon/canon-canon-rf-rf10-20mm.webp",
+      "sourcePage": "https://estore.kr.canon/estore/detailview/26421",
+      "sourceImage": "https://image.kr.canon//pds/goods/1751279595781_OM6n74WisE.png",
+      "resultScore": 740,
+      "imageScore": 985,
+      "width": 500,
+      "height": 375
+    },
+    "lens:Canon RF14-35mm F4 L IS USM": {
+      "status": "ok",
+      "query": "RF14-35mm F4 L IS USM",
+      "src": "/assets/images/products/canon/canon-canon-rf-rf14-35mm.webp",
+      "sourcePage": "https://estore.kr.canon/estore/detailview/23472",
+      "sourceImage": "https://image.kr.canon//pds/goods/1751279640931_ccu977yrKQ.png",
+      "resultScore": 740,
+      "imageScore": 985,
+      "width": 500,
+      "height": 375
+    },
+    "lens:Canon RF15-30mm F4.5-6.3 IS STM": {
+      "status": "ok",
+      "query": "RF15-30mm F4.5-6.3 IS STM",
+      "src": "/assets/images/products/canon/canon-canon-rf-rf15-30mm.webp",
+      "sourcePage": "https://estore.kr.canon/estore/detailview/23333",
+      "sourceImage": "https://image.kr.canon//pds/goods/1751279672936_Z6xzmOqM34.png",
+      "resultScore": 740,
+      "imageScore": 1010,
+      "width": 900,
+      "height": 675
+    },
+    "lens:Canon RF15-35mm F2.8 L IS USM": {
+      "status": "ok",
+      "query": "RF15-35mm F2.8 L IS USM",
+      "src": "/assets/images/products/canon/canon-canon-rf-rf15-35mm.webp",
+      "sourcePage": "https://estore.kr.canon/estore/detailview/22613",
+      "sourceImage": "https://image.kr.canon//pds/goods/1751279707879_LjUgnRobnX.png",
+      "resultScore": 740,
+      "imageScore": 985,
+      "width": 500,
+      "height": 375
+    },
+    "lens:Canon RF16-28mm F2.8 IS STM": {
+      "status": "ok",
+      "query": "RF16-28mm F2.8 IS STM",
+      "src": "/assets/images/products/canon/canon-canon-rf-rf16-28mm.webp",
+      "sourcePage": "https://estore.kr.canon/estore/detailview/40189",
+      "sourceImage": "https://image.kr.canon//pds/goods/1751279743161_Pyq4hCRB3N.png",
+      "resultScore": 740,
+      "imageScore": 1010,
+      "width": 900,
+      "height": 675
+    },
+    "lens:Canon RF24-50mm F4.5-6.3 IS STM": {
+      "status": "ok",
+      "query": "RF24-50mm F4.5-6.3 IS STM",
+      "src": "/assets/images/products/canon/canon-canon-rf-rf24-50mm.webp",
+      "sourcePage": "https://estore.kr.canon/estore/detailview/25474",
+      "sourceImage": "https://image.kr.canon//pds/goods/1751279872888_EaWzDik2uU.png",
+      "resultScore": 740,
+      "imageScore": 1010,
+      "width": 900,
+      "height": 675
+    },
+    "lens:Canon RF24-70mm F2.8 L IS USM": {
+      "status": "ok",
+      "query": "RF24-70mm F2.8 L IS USM",
+      "src": "/assets/images/products/canon/canon-canon-rf-rf24-70mm.webp",
+      "sourcePage": "https://estore.kr.canon/estore/detailview/22596",
+      "sourceImage": "https://image.kr.canon//pds/goods/1751279912615_ec0qKKGoBs.png",
+      "resultScore": 740,
+      "imageScore": 985,
+      "width": 500,
+      "height": 375
+    },
+    "lens:Canon RF24-105mm F2.8 L IS USM Z": {
+      "status": "ok",
+      "query": "RF24-105mm F2.8 L IS USM Z",
+      "src": "/assets/images/products/canon/canon-canon-rf-rf24-105mm.webp",
+      "sourcePage": "https://estore.kr.canon/estore/detailview/40562",
+      "sourceImage": "https://image.kr.canon//pds/goods/1751279952776_dQP5oRBBvb.png",
+      "resultScore": 740,
+      "imageScore": 985,
+      "width": 500,
+      "height": 375
+    },
+    "lens:Canon RF24-105mm F4 L IS USM": {
+      "status": "ok",
+      "query": "RF24-105mm F4 L IS USM",
+      "src": "/assets/images/products/canon/canon-canon-rf-rf24-105mm-2.webp",
+      "sourcePage": "https://estore.kr.canon/estore/detailview/22598",
+      "sourceImage": "https://image.kr.canon//pds/goods/1751280031467_lOIVwPPZrH.png",
+      "resultScore": 740,
+      "imageScore": 985,
+      "width": 500,
+      "height": 375
+    },
+    "lens:Canon RF24-105mm F4-7.1 IS STM": {
+      "status": "ok",
+      "query": "RF24-105mm F4-7.1 IS STM",
+      "src": "/assets/images/products/canon/canon-canon-rf-rf24-105mm-3.webp",
+      "sourcePage": "https://estore.kr.canon/estore/detailview/17903",
+      "sourceImage": "https://image.kr.canon//pds/goods/1751280072863_9JZSacswxd.png",
+      "resultScore": 740,
+      "imageScore": 1010,
+      "width": 900,
+      "height": 675
+    },
+    "lens:Canon RF24-240mm F4-6.3 IS USM": {
+      "status": "ok",
+      "query": "RF24-240mm F4-6.3 IS USM",
+      "src": "/assets/images/products/canon/canon-canon-rf-rf24-240mm.webp",
+      "sourcePage": "https://estore.kr.canon/estore/detailview/16831",
+      "sourceImage": "https://image.kr.canon//pds/product/1751259056857_R7MkrDjKDU.png",
+      "resultScore": 740,
+      "imageScore": 1010,
+      "width": 900,
+      "height": 675
+    },
+    "lens:Canon RF28-70mm F2 L USM": {
+      "status": "ok",
+      "query": "RF28-70mm F2 L USM",
+      "src": "/assets/images/products/canon/canon-canon-rf-rf28-70mm.webp",
+      "sourcePage": "https://estore.kr.canon/estore/detailview/22616",
+      "sourceImage": "https://image.kr.canon//pds/goods/1751280269675_ukMiIQZjZT.png",
+      "resultScore": 740,
+      "imageScore": 985,
+      "width": 500,
+      "height": 375
+    },
+    "lens:Canon RF28-70mm F2.8 IS STM": {
+      "status": "ok",
+      "query": "RF28-70mm F2.8 IS STM",
+      "src": "/assets/images/products/canon/canon-canon-rf-rf28-70mm-2.webp",
+      "sourcePage": "https://estore.kr.canon/estore/detailview/37269",
+      "sourceImage": "https://image.kr.canon//pds/goods/1751280304223_mbhITNnxJs.png",
+      "resultScore": 540,
+      "imageScore": 1010,
+      "width": 900,
+      "height": 675
+    },
+    "lens:Canon RF70-200mm F2.8 L IS USM": {
+      "status": "ok",
+      "query": "RF70-200mm F2.8 L IS USM",
+      "src": "/assets/images/products/canon/canon-canon-rf-rf70-200mm.webp",
+      "sourcePage": "https://estore.kr.canon/estore/detailview/40563",
+      "sourceImage": "https://image.kr.canon//pds/goods/1751281502902_yLqwZNNUbj.png",
+      "resultScore": 740,
+      "imageScore": 1010,
+      "width": 800,
+      "height": 600
+    },
+    "lens:Canon RF70-200mm F2.8 L IS USM Z": {
+      "status": "ok",
+      "query": "RF70-200mm F2.8 L IS USM Z",
+      "src": "/assets/images/products/canon/canon-canon-rf-rf70-200mm-2.webp",
+      "sourcePage": "https://estore.kr.canon/estore/detailview/40563",
+      "sourceImage": "https://image.kr.canon//pds/goods/1751281502902_yLqwZNNUbj.png",
+      "resultScore": 740,
+      "imageScore": 1010,
+      "width": 800,
+      "height": 600
+    },
+    "lens:Canon RF70-200mm F4 L IS USM": {
+      "status": "ok",
+      "query": "RF70-200mm F4 L IS USM",
+      "src": "/assets/images/products/canon/canon-canon-rf-rf70-200mm-3.webp",
+      "sourcePage": "https://estore.kr.canon/estore/detailview/23473",
+      "sourceImage": "https://image.kr.canon//pds/goods/1751281614182_NEyhuiPGWl.png",
+      "resultScore": 540,
+      "imageScore": 985,
+      "width": 500,
+      "height": 375
+    },
+    "lens:Canon RF100-300mm F2.8 L IS USM": {
+      "status": "ok",
+      "query": "RF100-300mm F2.8 L IS USM",
+      "src": "/assets/images/products/canon/canon-canon-rf-rf100-300mm.webp",
+      "sourcePage": "https://estore.kr.canon/estore/detailview/25621",
+      "sourceImage": "https://image.kr.canon//pds/goods/1751281748987_nbxxntGWTG.png",
+      "resultScore": 540,
+      "imageScore": 985,
+      "width": 500,
+      "height": 375
+    },
+    "lens:Canon RF100-400mm F5.6-8 IS USM": {
+      "status": "ok",
+      "query": "RF100-400mm F5.6-8 IS USM",
+      "src": "/assets/images/products/canon/canon-canon-rf-rf100-400mm.webp",
+      "sourcePage": "https://estore.kr.canon/estore/detailview/42935",
+      "sourceImage": "https://image.kr.canon//pds/product/1751259847251_HY72Qks8es.png",
+      "resultScore": 740,
+      "imageScore": 1010,
+      "width": 900,
+      "height": 675
+    },
+    "lens:Canon RF100-500mm F4.5-7.1 L IS USM": {
+      "status": "ok",
+      "query": "RF100-500mm F4.5-7.1 L IS USM",
+      "src": "/assets/images/products/canon/canon-canon-rf-rf100-500mm.webp",
+      "sourcePage": "https://estore.kr.canon/estore/detailview/22610",
+      "sourceImage": "https://image.kr.canon//pds/goods/1751281831518_t9KEVHi4Kq.png",
+      "resultScore": 740,
+      "imageScore": 985,
+      "width": 500,
+      "height": 375
+    },
+    "lens:Canon RF200-800mm F6.3-9 IS USM": {
+      "status": "ok",
+      "query": "RF200-800mm F6.3-9 IS USM",
+      "src": "/assets/images/products/canon/canon-canon-rf-rf200-800mm.webp",
+      "sourcePage": "https://estore.kr.canon/estore/detailview/26563",
+      "sourceImage": "https://image.kr.canon//pds/product/1751259974493_o7muPx4YeC.png",
+      "resultScore": 540,
+      "imageScore": 1030,
+      "width": 900,
+      "height": 675
+    },
+    "lens:Canon RF-S10-18mm F4.5-6.3 IS STM": {
+      "status": "ok",
+      "query": "RF-S10-18mm F4.5-6.3 IS STM",
+      "src": "/assets/images/products/canon/canon-canon-rf-rf-s10-18mm.webp",
+      "sourcePage": "https://estore.kr.canon/estore/detailview/26561",
+      "sourceImage": "https://image.kr.canon//pds/goods/1751282277646_WLqMVzibxH.png",
+      "resultScore": 740,
+      "imageScore": 1010,
+      "width": 900,
+      "height": 675
+    },
+    "lens:Canon RF-S18-45mm F4.5-6.3 IS STM": {
+      "status": "ok",
+      "query": "RF-S18-45mm F4.5-6.3 IS STM",
+      "src": "/assets/images/products/canon/canon-canon-rf-rf-s18-45mm.webp",
+      "sourcePage": "https://estore.kr.canon/estore/detailview/23117",
+      "sourceImage": "https://image.kr.canon//pds/goods/1751282332523_kQBdPeyXdh.png",
+      "resultScore": 540,
+      "imageScore": 1010,
+      "width": 900,
+      "height": 675
+    },
+    "lens:Canon RF-S18-150mm F3.5-6.3 IS STM": {
+      "status": "ok",
+      "query": "RF-S18-150mm F3.5-6.3 IS STM",
+      "src": "/assets/images/products/canon/canon-canon-rf-rf-s18-150mm.webp",
+      "sourcePage": "https://estore.kr.canon/estore/detailview/23118",
+      "sourceImage": "https://image.kr.canon//pds/goods/1751282356713_o5vHeySZtY.png",
+      "resultScore": 740,
+      "imageScore": 1010,
+      "width": 900,
+      "height": 675
+    },
+    "lens:Canon RF-S55-210mm F5-7.1 IS STM": {
+      "status": "ok",
+      "query": "RF-S55-210mm F5-7.1 IS STM",
+      "src": "/assets/images/products/canon/canon-canon-rf-rf-s55-210mm.webp",
+      "sourcePage": "https://estore.kr.canon/estore/detailview/25468",
+      "sourceImage": "https://image.kr.canon//pds/goods/1751282386297_SzJqlg8iGD.png",
+      "resultScore": 740,
+      "imageScore": 1010,
+      "width": 900,
+      "height": 675
+    },
+    "lens:Canon RF14mm F1.4 L VCM": {
+      "status": "ok",
+      "query": "RF14mm F1.4 L VCM",
+      "src": "/assets/images/products/canon/canon-canon-rf-rf14mm.webp",
+      "sourcePage": "https://estore.kr.canon/estore/detailview/42505",
+      "sourceImage": "https://image.kr.canon/pds/editor/upload/product/mirrorless/L345/L345-1_04.jpg",
+      "resultScore": 740,
+      "imageScore": 1065,
+      "width": 416,
+      "height": 900
+    },
+    "lens:Canon RF16mm F2.8 STM": {
+      "status": "ok",
+      "query": "RF16mm F2.8 STM",
+      "src": "/assets/images/products/canon/canon-canon-rf-rf16mm.webp",
+      "sourcePage": "https://estore.kr.canon/estore/detailview/21633",
+      "sourceImage": "https://image.kr.canon//pds/goods/1751279774969_MtUBGPOSLp.png",
+      "resultScore": 740,
+      "imageScore": 1010,
+      "width": 900,
+      "height": 675
+    },
+    "lens:Canon RF24mm F1.4 L VCM": {
+      "status": "ok",
+      "query": "RF24mm F1.4 L VCM",
+      "src": "/assets/images/products/canon/canon-canon-rf-rf24mm.webp",
+      "sourcePage": "https://estore.kr.canon/estore/detailview/39301",
+      "sourceImage": "https://image.kr.canon//pds/goods/1751280194897_yqPXIb0gw7.png",
+      "resultScore": 740,
+      "imageScore": 1010,
+      "width": 900,
+      "height": 668
+    },
+    "lens:Canon RF24mm F1.8 MACRO IS STM": {
+      "status": "ok",
+      "query": "RF24mm F1.8 MACRO IS STM",
+      "src": "/assets/images/products/canon/canon-canon-rf-rf24mm-2.webp",
+      "sourcePage": "https://estore.kr.canon/estore/detailview/23331",
+      "sourceImage": "https://image.kr.canon//pds/goods/1751280233620_vPydBhlFLg.png",
+      "resultScore": 540,
+      "imageScore": 1010,
+      "width": 900,
+      "height": 675
+    },
+    "lens:Canon RF28mm F2.8 STM": {
+      "status": "ok",
+      "query": "RF28mm F2.8 STM",
+      "src": "/assets/images/products/canon/canon-canon-rf-rf28mm.webp",
+      "sourcePage": "https://estore.kr.canon/estore/detailview/25923",
+      "sourceImage": "https://image.kr.canon//pds/goods/1751280341177_cDarQyoize.png",
+      "resultScore": 740,
+      "imageScore": 1010,
+      "width": 900,
+      "height": 675
+    },
+    "lens:Canon RF35mm F1.4 L VCM": {
+      "status": "ok",
+      "query": "RF35mm F1.4 L VCM",
+      "src": "/assets/images/products/canon/canon-canon-rf-rf35mm.webp",
+      "sourcePage": "https://estore.kr.canon/estore/detailview/35075",
+      "sourceImage": "https://image.kr.canon//pds/goods/1751274993893_eNYk0s04zs.png",
+      "resultScore": 740,
+      "imageScore": 985,
+      "width": 500,
+      "height": 375
+    },
+    "lens:Canon RF35mm F1.8 Macro IS STM": {
+      "status": "ok",
+      "query": "RF35mm F1.8 Macro IS STM",
+      "src": "/assets/images/products/canon/canon-canon-rf-rf35mm-2.webp",
+      "sourcePage": "https://estore.kr.canon/estore/detailview/40268",
+      "sourceImage": "https://image.kr.canon/crop179x101/pds/noimg/noimg.gif",
+      "resultScore": 740,
+      "imageScore": 955,
+      "width": 179,
+      "height": 101
+    },
+    "lens:Canon RF50mm F1.2 L USM": {
+      "status": "ok",
+      "query": "RF50mm F1.2 L USM",
+      "src": "/assets/images/products/canon/canon-canon-rf-rf50mm.webp",
+      "sourcePage": "https://estore.kr.canon/estore/detailview/22619",
+      "sourceImage": "https://image.kr.canon//pds/goods/1764656949547_S5uo7QYyI0.png",
+      "resultScore": 740,
+      "imageScore": 1030,
+      "width": 900,
+      "height": 509
+    },
+    "lens:Canon RF50mm F1.4 L VCM": {
+      "status": "ok",
+      "query": "RF50mm F1.4 L VCM",
+      "src": "/assets/images/products/canon/canon-canon-rf-rf50mm-2.webp",
+      "sourcePage": "https://estore.kr.canon/estore/detailview/39300",
+      "sourceImage": "https://image.kr.canon//pds/goods/1751281414384_cXLSKxxuaA.png",
+      "resultScore": 740,
+      "imageScore": 1010,
+      "width": 900,
+      "height": 668
+    },
+    "lens:Canon RF50mm F1.8 STM": {
+      "status": "ok",
+      "query": "RF50mm F1.8 STM",
+      "src": "/assets/images/products/canon/canon-canon-rf-rf50mm-3.webp",
+      "sourcePage": "https://estore.kr.canon/estore/detailview/19077",
+      "sourceImage": "https://image.kr.canon//pds/goods/1751281442767_p3j0jvmI2i.png",
+      "resultScore": 540,
+      "imageScore": 1010,
+      "width": 900,
+      "height": 675
+    },
+    "lens:Canon RF85mm F2 Macro IS STM": {
+      "status": "ok",
+      "query": "RF85mm F2 Macro IS STM",
+      "src": "/assets/images/products/canon/canon-canon-rf-rf85mm.webp",
+      "sourcePage": "https://estore.kr.canon/estore/detailview/18851",
+      "sourceImage": "https://image.kr.canon//pds/goods/1751431379947_d5rG4H3DfT.png",
+      "resultScore": 740,
+      "imageScore": 1030,
+      "width": 900,
+      "height": 675
+    },
+    "lens:Canon RF85mm F1.2 L USM": {
+      "status": "ok",
+      "query": "RF85mm F1.2 L USM",
+      "src": "/assets/images/products/canon/canon-canon-rf-rf85mm-2.webp",
+      "sourcePage": "https://estore.kr.canon/estore/detailview/22601",
+      "sourceImage": "https://image.kr.canon//pds/goods/1751281688620_LF5P09dmwm.png",
+      "resultScore": 740,
+      "imageScore": 985,
+      "width": 500,
+      "height": 375
+    },
+    "lens:Canon RF85mm F1.2 L USM DS": {
+      "status": "ok",
+      "query": "RF85mm F1.2 L USM DS",
+      "src": "/assets/images/products/canon/canon-canon-rf-rf85mm-3.webp",
+      "sourcePage": "https://estore.kr.canon/estore/detailview/22603",
+      "sourceImage": "https://image.kr.canon//pds/goods/1751281653311_WfVhuOn5cc.png",
+      "resultScore": 740,
+      "imageScore": 985,
+      "width": 500,
+      "height": 375
+    },
+    "lens:Canon RF100mm F2.8 L Macro IS USM": {
+      "status": "ok",
+      "query": "RF100mm F2.8 L Macro IS USM",
+      "src": "/assets/images/products/canon/canon-canon-rf-rf100mm.webp",
+      "sourcePage": "https://estore.kr.canon/estore/detailview/23471",
+      "sourceImage": "https://image.kr.canon//pds/goods/1751281861949_ay8Vvy4iKx.png",
+      "resultScore": 540,
+      "imageScore": 985,
+      "width": 500,
+      "height": 375
+    },
+    "lens:Canon RF135mm F1.8 L IS USM": {
+      "status": "ok",
+      "query": "RF135mm F1.8 L IS USM",
+      "src": "/assets/images/products/canon/canon-canon-rf-rf135mm.webp",
+      "sourcePage": "https://estore.kr.canon/estore/detailview/23551",
+      "sourceImage": "https://image.kr.canon//pds/product/1667363509090_S98clGCyfU.jpg",
+      "resultScore": 540,
+      "imageScore": 1030,
+      "width": 900,
+      "height": 509
+    },
+    "lens:Canon RF400mm F2.8 L IS USM": {
+      "status": "ok",
+      "query": "RF400mm F2.8 L IS USM",
+      "src": "/assets/images/products/canon/canon-canon-rf-rf400mm.webp",
+      "sourcePage": "https://estore.kr.canon/estore/detailview/20411",
+      "sourceImage": "https://image.kr.canon//pds/goods/1751281969514_bwu8FHJ7TL.png",
+      "resultScore": 540,
+      "imageScore": 985,
+      "width": 500,
+      "height": 375
+    },
+    "lens:Canon RF600mm F4 L IS USM": {
+      "status": "ok",
+      "query": "RF600mm F4 L IS USM",
+      "src": "/assets/images/products/canon/canon-canon-rf-rf600mm.webp",
+      "sourcePage": "https://estore.kr.canon/estore/detailview/20395",
+      "sourceImage": "https://image.kr.canon//pds/goods/1751282054499_eeGuT2Iax5.png",
+      "resultScore": 540,
+      "imageScore": 985,
+      "width": 500,
+      "height": 375
+    },
+    "lens:Canon RF600mm F11 IS STM": {
+      "status": "ok",
+      "query": "RF600mm F11 IS STM",
+      "src": "/assets/images/products/canon/canon-canon-rf-rf600mm-2.webp",
+      "sourcePage": "https://estore.kr.canon/estore/detailview/22591",
+      "sourceImage": "https://image.kr.canon//pds/goods/1751282084322_7rz2uRpZs7.png",
+      "resultScore": 540,
+      "imageScore": 1010,
+      "width": 750,
+      "height": 562
+    },
+    "lens:Canon RF800mm F5.6 L IS USM": {
+      "status": "ok",
+      "query": "RF800mm F5.6 L IS USM",
+      "src": "/assets/images/products/canon/canon-canon-rf-rf800mm.webp",
+      "sourcePage": "https://estore.kr.canon/estore/detailview/22973",
+      "sourceImage": "https://image.kr.canon//pds/goods/1751282114052_ZOHKYoOg47.png",
+      "resultScore": 540,
+      "imageScore": 985,
+      "width": 500,
+      "height": 375
+    },
+    "lens:Canon RF800mm F11 IS STM": {
+      "status": "ok",
+      "query": "RF800mm F11 IS STM",
+      "src": "/assets/images/products/canon/canon-canon-rf-rf800mm-2.webp",
+      "sourcePage": "https://estore.kr.canon/estore/detailview/22594",
+      "sourceImage": "https://image.kr.canon//pds/goods/1751282144054_nKLEy4Y0Vl.png",
+      "resultScore": 540,
+      "imageScore": 1010,
+      "width": 750,
+      "height": 563
+    },
+    "lens:Canon RF1200mm F8 L IS USM": {
+      "status": "ok",
+      "query": "RF1200mm F8 L IS USM",
+      "src": "/assets/images/products/canon/canon-canon-rf-rf1200mm.webp",
+      "sourcePage": "https://estore.kr.canon/estore/detailview/22992",
+      "sourceImage": "https://image.kr.canon//pds/goods/1751282168709_QpJHd37qRq.png",
+      "resultScore": 540,
+      "imageScore": 745,
+      "width": 500,
+      "height": 375
+    },
+    "lens:Canon RF-S3.9mm F3.5 STM DUAL FISHEYE": {
+      "status": "ok",
+      "query": "RF-S3.9mm F3.5 STM DUAL FISHEYE",
+      "src": "/assets/images/products/canon/canon-canon-rf-rf-s3-9mm.webp",
+      "sourcePage": "https://estore.kr.canon/estore/detailview/35093",
+      "sourceImage": "https://image.kr.canon//pds/goods/1751282224988_MSE2wkZsKt.png",
+      "resultScore": 740,
+      "imageScore": 1010,
+      "width": 900,
+      "height": 675
+    },
+    "lens:Canon RF-S7.8mm F4 STM DUAL": {
+      "status": "ok",
+      "query": "RF-S7.8mm F4 STM DUAL",
+      "src": "/assets/images/products/canon/canon-canon-rf-rf-s7-8mm.webp",
+      "sourcePage": "https://estore.kr.canon/estore/detailview/39295",
+      "sourceImage": "https://image.kr.canon//pds/goods/1751282251372_OFRCEz6U3v.png",
+      "resultScore": 740,
+      "imageScore": 1010,
+      "width": 900,
+      "height": 675
+    },
+    "lens:Canon RF5.2mm F2.8 L Dual Fisheye": {
+      "status": "ok",
+      "query": "RF5.2mm F2.8 L Dual Fisheye",
+      "src": "/assets/images/products/canon/canon-canon-rf-rf5-2mm.webp",
+      "sourcePage": "https://estore.kr.canon/estore/detailview/22091",
+      "sourceImage": "https://image.kr.canon//pds/goods/1751276836550_0kqMM7Izh7.png",
+      "resultScore": 740,
+      "imageScore": 985,
+      "width": 500,
+      "height": 375
+    },
+    "body:Canon EOS-1D X Mark III": {
+      "status": "ok",
+      "query": "EOS-1D X Mark III",
+      "src": "/assets/images/products/canon/ext-canon-canon-eos-1d-x-mark-iii.webp",
+      "sourcePage": "https://estore.kr.canon/estore/detailview/17391",
+      "sourceImage": "https://image.kr.canon//pds/product/1578364526767_Q5KbICxDe8.jpg",
+      "resultScore": 540,
+      "imageScore": 1030,
+      "width": 900,
+      "height": 509
+    },
+    "body:Canon EOS-1D X Mark II": {
+      "status": "ok",
+      "query": "EOS-1D X Mark II",
+      "src": "/assets/images/products/canon/ext-canon-canon-eos-1d-x-mark-ii.webp",
+      "sourcePage": "https://estore.kr.canon/estore/detailview/16542",
+      "sourceImage": "https://image.kr.canon//pds/product/1563957138197_cLJGYXlSuU.jpg",
+      "resultScore": 540,
+      "imageScore": 1030,
+      "width": 900,
+      "height": 509
+    },
+    "body:Canon EOS-1D X": {
+      "status": "ok",
+      "query": "EOS-1D X",
+      "src": "/assets/images/products/canon/ext-canon-canon-eos-1d-x.webp",
+      "sourcePage": "https://estore.kr.canon/estore/detailview/17391",
+      "sourceImage": "https://image.kr.canon//pds/product/1578364526767_Q5KbICxDe8.jpg",
+      "resultScore": 540,
+      "imageScore": 1030,
+      "width": 900,
+      "height": 509
+    },
+    "body:Canon EOS-1Ds Mark III": {
+      "status": "failed",
+      "query": "EOS-1Ds Mark III",
+      "reason": "정확한 일반상품 상세 페이지를 찾지 못함 (0개 후보)"
+    },
+    "body:Canon EOS-1Ds Mark II": {
+      "status": "failed",
+      "query": "EOS-1Ds Mark II",
+      "reason": "정확한 일반상품 상세 페이지를 찾지 못함 (0개 후보)"
+    },
+    "body:Canon EOS-1Ds": {
+      "status": "failed",
+      "query": "EOS-1Ds",
+      "reason": "정확한 일반상품 상세 페이지를 찾지 못함 (0개 후보)"
+    },
+    "body:Canon EOS-1D Mark IV": {
+      "status": "failed",
+      "query": "EOS-1D Mark IV",
+      "reason": "정확한 일반상품 상세 페이지를 찾지 못함 (0개 후보)"
+    },
+    "body:Canon EOS-1D Mark III": {
+      "status": "failed",
+      "query": "EOS-1D Mark III",
+      "reason": "정확한 일반상품 상세 페이지를 찾지 못함 (1개 후보)"
+    },
+    "body:Canon EOS-1D Mark II N": {
+      "status": "failed",
+      "query": "EOS-1D Mark II N",
+      "reason": "정확한 일반상품 상세 페이지를 찾지 못함 (0개 후보)"
+    },
+    "body:Canon EOS-1D Mark II": {
+      "status": "failed",
+      "query": "EOS-1D Mark II",
+      "reason": "정확한 일반상품 상세 페이지를 찾지 못함 (1개 후보)"
+    },
+    "body:Canon EOS-1D": {
+      "status": "ok",
+      "query": "EOS-1D",
+      "src": "/assets/images/products/canon/ext-canon-canon-eos-1d.webp",
+      "sourcePage": "https://estore.kr.canon/estore/detailview/17391",
+      "sourceImage": "https://image.kr.canon//pds/product/1578364526767_Q5KbICxDe8.jpg",
+      "resultScore": 540,
+      "imageScore": 1030,
+      "width": 900,
+      "height": 509
+    },
+    "body:Canon EOS 5D Mark IV": {
+      "status": "failed",
+      "query": "EOS 5D Mark IV",
+      "reason": "정확한 일반상품 상세 페이지를 찾지 못함 (3개 후보)"
+    },
+    "body:Canon EOS 5DS R": {
+      "status": "failed",
+      "query": "EOS 5DS R",
+      "reason": "정확한 일반상품 상세 페이지를 찾지 못함 (1개 후보)"
+    },
+    "body:Canon EOS 5DS": {
+      "status": "failed",
+      "query": "EOS 5DS",
+      "reason": "정확한 일반상품 상세 페이지를 찾지 못함 (2개 후보)"
+    },
+    "body:Canon EOS 5D Mark III": {
+      "status": "ok",
+      "query": "EOS 5D Mark III",
+      "src": "/assets/images/products/canon/ext-canon-canon-eos-5d-mark-iii.webp",
+      "sourcePage": "https://estore.kr.canon/estore/detailview/16577",
+      "sourceImage": "https://image.kr.canon//pds/product/1563953645382_kWth44IxgW.jpg",
+      "resultScore": 540,
+      "imageScore": 1030,
+      "width": 900,
+      "height": 509
+    },
+    "body:Canon EOS 5D Mark II": {
+      "status": "failed",
+      "query": "EOS 5D Mark II",
+      "reason": "정확한 일반상품 상세 페이지를 찾지 못함 (1개 후보)"
+    },
+    "body:Canon EOS 5D": {
+      "status": "failed",
+      "query": "EOS 5D",
+      "reason": "정확한 일반상품 상세 페이지를 찾지 못함 (4개 후보)"
+    },
+    "body:Canon EOS 6D Mark II": {
+      "status": "failed",
+      "query": "EOS 6D Mark II",
+      "reason": "상세 페이지 제품명이 DB 제품과 맞지 않음"
+    },
+    "body:Canon EOS 6D": {
+      "status": "ok",
+      "query": "EOS 6D",
+      "src": "/assets/images/products/canon/ext-canon-canon-eos-6d.webp",
+      "sourcePage": "https://estore.kr.canon/estore/detailview/16648",
+      "sourceImage": "https://image.kr.canon//pds/product/1563960791304_vLDejHANnh.jpg",
+      "resultScore": 540,
+      "imageScore": 1030,
+      "width": 900,
+      "height": 509
+    },
+    "body:Canon EOS 7D Mark II": {
+      "status": "ok",
+      "query": "EOS 7D Mark II",
+      "src": "/assets/images/products/canon/ext-canon-canon-eos-7d-mark-ii.webp",
+      "sourcePage": "https://estore.kr.canon/estore/detailview/16600",
+      "sourceImage": "https://image.kr.canon//pds/product/1563954554205_z4PUCqayCn.jpg",
+      "resultScore": 540,
+      "imageScore": 1030,
+      "width": 900,
+      "height": 509
+    },
+    "body:Canon EOS 7D": {
+      "status": "ok",
+      "query": "EOS 7D",
+      "src": "/assets/images/products/canon/ext-canon-canon-eos-7d.webp",
+      "sourcePage": "https://estore.kr.canon/estore/detailview/16600",
+      "sourceImage": "https://image.kr.canon//pds/product/1563954554205_z4PUCqayCn.jpg",
+      "resultScore": 540,
+      "imageScore": 1030,
+      "width": 900,
+      "height": 509
+    },
+    "body:Canon EOS 90D": {
+      "status": "ok",
+      "query": "EOS 90D",
+      "src": "/assets/images/products/canon/ext-canon-canon-eos-90d.webp",
+      "sourcePage": "https://estore.kr.canon/estore/detailview/17596",
+      "sourceImage": "https://image.kr.canon//pds/product/1582002352344_Anna75nn6U.jpg",
+      "resultScore": 540,
+      "imageScore": 1030,
+      "width": 900,
+      "height": 600
+    },
+    "body:Canon EOS 80D": {
+      "status": "failed",
+      "query": "EOS 80D",
+      "reason": "정확한 일반상품 상세 페이지를 찾지 못함 (1개 후보)"
+    },
+    "body:Canon EOS 70D": {
+      "status": "ok",
+      "query": "EOS 70D",
+      "src": "/assets/images/products/canon/ext-canon-canon-eos-70d.webp",
+      "sourcePage": "https://estore.kr.canon/estore/detailview/16578",
+      "sourceImage": "https://image.kr.canon//pds/product/1563954125704_IDfeqlXMrI.jpg",
+      "resultScore": 540,
+      "imageScore": 1030,
+      "width": 900,
+      "height": 509
+    },
+    "body:Canon EOS 60D": {
+      "status": "failed",
+      "query": "EOS 60D",
+      "reason": "정확한 일반상품 상세 페이지를 찾지 못함 (0개 후보)"
+    },
+    "body:Canon EOS 50D": {
+      "status": "failed",
+      "query": "EOS 50D",
+      "reason": "정확한 일반상품 상세 페이지를 찾지 못함 (0개 후보)"
+    },
+    "body:Canon EOS 40D": {
+      "status": "failed",
+      "query": "EOS 40D",
+      "reason": "정확한 일반상품 상세 페이지를 찾지 못함 (0개 후보)"
+    },
+    "body:Canon EOS 30D": {
+      "status": "failed",
+      "query": "EOS 30D",
+      "reason": "정확한 일반상품 상세 페이지를 찾지 못함 (0개 후보)"
+    },
+    "body:Canon EOS 20D": {
+      "status": "failed",
+      "query": "EOS 20D",
+      "reason": "정확한 일반상품 상세 페이지를 찾지 못함 (0개 후보)"
+    },
+    "body:Canon EOS 10D": {
+      "status": "failed",
+      "query": "EOS 10D",
+      "reason": "정확한 일반상품 상세 페이지를 찾지 못함 (0개 후보)"
+    },
+    "body:Canon EOS 850D": {
+      "status": "ok",
+      "query": "EOS 850D",
+      "src": "/assets/images/products/canon/ext-canon-canon-eos-850d.webp",
+      "sourcePage": "https://estore.kr.canon/estore/detailview/18291",
+      "sourceImage": "https://image.kr.canon//pds/product/1563955315991_gVfg3A71wq.jpg",
+      "resultScore": 540,
+      "imageScore": 1030,
+      "width": 900,
+      "height": 509
+    },
+    "body:Canon EOS 800D": {
+      "status": "failed",
+      "query": "EOS 800D",
+      "reason": "정확한 일반상품 상세 페이지를 찾지 못함 (0개 후보)"
+    },
+    "body:Canon EOS 77D": {
+      "status": "failed",
+      "query": "EOS 77D",
+      "reason": "정확한 일반상품 상세 페이지를 찾지 못함 (0개 후보)"
+    },
+    "body:Canon EOS 760D": {
+      "status": "failed",
+      "query": "EOS 760D",
+      "reason": "정확한 일반상품 상세 페이지를 찾지 못함 (1개 후보)"
+    },
+    "body:Canon EOS 750D": {
+      "status": "ok",
+      "query": "EOS 750D",
+      "src": "/assets/images/products/canon/ext-canon-canon-eos-750d.webp",
+      "sourcePage": "https://estore.kr.canon/estore/detailview/16606",
+      "sourceImage": "https://image.kr.canon//pds/product/1563954806741_Atj0GsiXLp.jpg",
+      "resultScore": 540,
+      "imageScore": 1030,
+      "width": 900,
+      "height": 509
+    },
+    "body:Canon EOS 700D": {
+      "status": "failed",
+      "query": "EOS 700D",
+      "reason": "정확한 일반상품 상세 페이지를 찾지 못함 (0개 후보)"
+    },
+    "body:Canon EOS 650D": {
+      "status": "failed",
+      "query": "EOS 650D",
+      "reason": "정확한 일반상품 상세 페이지를 찾지 못함 (0개 후보)"
+    },
+    "body:Canon EOS 600D": {
+      "status": "failed",
+      "query": "EOS 600D",
+      "reason": "정확한 일반상품 상세 페이지를 찾지 못함 (0개 후보)"
+    },
+    "body:Canon EOS 550D": {
+      "status": "failed",
+      "query": "EOS 550D",
+      "reason": "정확한 일반상품 상세 페이지를 찾지 못함 (0개 후보)"
+    },
+    "body:Canon EOS 500D": {
+      "status": "failed",
+      "query": "EOS 500D",
+      "reason": "정확한 일반상품 상세 페이지를 찾지 못함 (0개 후보)"
+    },
+    "body:Canon EOS 450D": {
+      "status": "failed",
+      "query": "EOS 450D",
+      "reason": "정확한 일반상품 상세 페이지를 찾지 못함 (0개 후보)"
+    },
+    "body:Canon EOS 400D": {
+      "status": "failed",
+      "query": "EOS 400D",
+      "reason": "정확한 일반상품 상세 페이지를 찾지 못함 (0개 후보)"
+    },
+    "body:Canon EOS 350D": {
+      "status": "failed",
+      "query": "EOS 350D",
+      "reason": "정확한 일반상품 상세 페이지를 찾지 못함 (0개 후보)"
+    },
+    "body:Canon EOS 300D": {
+      "status": "failed",
+      "query": "EOS 300D",
+      "reason": "정확한 일반상품 상세 페이지를 찾지 못함 (0개 후보)"
+    },
+    "body:Canon EOS 250D": {
+      "status": "failed",
+      "query": "EOS 250D",
+      "reason": "정확한 일반상품 상세 페이지를 찾지 못함 (0개 후보)"
+    },
+    "body:Canon EOS 200D II": {
+      "status": "failed",
+      "query": "EOS 200D II",
+      "reason": "정확한 일반상품 상세 페이지를 찾지 못함 (1개 후보)"
+    },
+    "body:Canon EOS 200D": {
+      "status": "failed",
+      "query": "EOS 200D",
+      "reason": "정확한 일반상품 상세 페이지를 찾지 못함 (4개 후보)"
+    },
+    "body:Canon EOS 100D": {
+      "status": "failed",
+      "query": "EOS 100D",
+      "reason": "상세 페이지 제품명이 DB 제품과 맞지 않음"
+    },
+    "body:Canon EOS 2000D": {
+      "status": "failed",
+      "query": "EOS 2000D",
+      "reason": "정확한 일반상품 상세 페이지를 찾지 못함 (0개 후보)"
+    },
+    "body:Canon EOS 1300D": {
+      "status": "failed",
+      "query": "EOS 1300D",
+      "reason": "정확한 일반상품 상세 페이지를 찾지 못함 (0개 후보)"
+    },
+    "body:Canon EOS 1200D": {
+      "status": "ok",
+      "query": "EOS 1200D",
+      "src": "/assets/images/products/canon/ext-canon-canon-eos-1200d.webp",
+      "sourcePage": "https://estore.kr.canon/estore/detailview/16604",
+      "sourceImage": "https://image.kr.canon//pds/product/1563957702835_SPeYYqXRMG.jpg",
+      "resultScore": 540,
+      "imageScore": 1030,
+      "width": 900,
+      "height": 509
+    },
+    "body:Canon EOS 1100D": {
+      "status": "failed",
+      "query": "EOS 1100D",
+      "reason": "정확한 일반상품 상세 페이지를 찾지 못함 (0개 후보)"
+    },
+    "body:Canon EOS 1000D": {
+      "status": "failed",
+      "query": "EOS 1000D",
+      "reason": "정확한 일반상품 상세 페이지를 찾지 못함 (0개 후보)"
+    },
+    "body:Canon EOS D60": {
+      "status": "failed",
+      "query": "EOS D60",
+      "reason": "정확한 일반상품 상세 페이지를 찾지 못함 (0개 후보)"
+    },
+    "body:Canon EOS D30": {
+      "status": "failed",
+      "query": "EOS D30",
+      "reason": "정확한 일반상품 상세 페이지를 찾지 못함 (0개 후보)"
+    },
+    "lens:Canon EF 11-24mm f/4L USM": {
+      "status": "failed",
+      "query": "EF 11-24mm f/4L USM",
+      "reason": "정확한 일반상품 상세 페이지를 찾지 못함 (0개 후보)"
     }
   },
   "_meta": {
-    "updatedAt": "2026-08-28T12:09:26.771955+00:00",
+    "updatedAt": "2026-08-28T12:26:39.389169+00:00",
     "selected": 174,
-    "ok": 1,
+    "ok": 80,
     "skipped": 0,
-    "failed": 5
+    "failed": 65
   }
 }
