@@ -4,6 +4,7 @@ let batteryCache;
 
 const PRODUCT_URL = '/data/products.json';
 const EXPANSION_URL = '/data/system-expansion.json';
+const PARTNER_PRODUCT_URL = '/data/official-partner-products.json';
 const KOREA_PRICE_URL = '/data/korea-prices.json';
 const IMAGE_MAP_URL = '/data/product-images.json';
 const ADAPTER_URL = '/data/mount-adapters.json';
@@ -156,13 +157,14 @@ export async function loadProducts(){
   if(!productRes.ok) throw new Error('제품 DB를 불러오지 못했습니다.');
   const baseProducts = await productRes.json();
 
-  const [expansion, koreaPrices, imageMap] = await Promise.all([
+  const [expansion, partnerProducts, koreaPrices, imageMap] = await Promise.all([
     optionalJson(EXPANSION_URL, []),
+    optionalJson(PARTNER_PRODUCT_URL, []),
     optionalJson(KOREA_PRICE_URL, []),
     optionalJson(IMAGE_MAP_URL, {}),
   ]);
 
-  const products = mergeProductLists(baseProducts, expansion);
+  const products = mergeProductLists(mergeProductLists(baseProducts, expansion), partnerProducts);
   const priceExact = new Map();
   const priceByName = new Map();
   for(const row of Array.isArray(koreaPrices) ? koreaPrices : []){

@@ -1,0 +1,47 @@
+Matchcamera Official Korea Sources v15
+
+v14 테스트 결과
+===============
+SIGMA   : 정상
+SAMYANG : 실패
+TAMRON  : 정상
+
+원인
+====
+LK삼양은 Cafe24 구조라 검색결과에서
+- 제품명 링크
+- 제품 이미지 링크
+- 자세히보기 링크
+가 서로 다른 <a> 요소로 분리되어 있습니다.
+
+v14는 각각의 <a> 텍스트만 후보로 읽어서
+30개 링크를 발견하고도 'AF 24-60mm F2.8 FE'라는 정확한 상품명을
+같은 후보 안에서 확보하지 못했습니다.
+
+v15 수정
+========
+- Samyang만 전용 수집 방식 적용
+- 공식 AF 카테고리 page 1 / page 2 직접 조회
+- 줌렌즈 공식 카테고리도 보조 조회
+- <a>가 아니라 전체 제품 카드 <li> 기준으로 제품명+가격+이미지+상세링크를 묶어서 판정
+- '전용 후드', cap, filter 등 액세서리는 강제 제외
+- 상세 페이지를 다시 열어 제품명 재검증
+- Samyang 검색 페이지는 V-AF 등 카테고리 미포함 제품의 fallback으로만 사용
+
+확인된 AF 24-60mm F2.8 FE 공식 상세 URL 예:
+https://samyanglensmall.com/product/af-24-60mm-f28-fe/74/category/33/display/1/
+
+실행
+====
+현재 v14 전체 자동화를 실행 중이면 Ctrl+C로 중지.
+
+ZIP을 D:\Matchcamera 에 덮어쓴 뒤:
+TEST_OFFICIAL_KOREA_SOURCES.bat
+
+Samyang 결과가
+  DETAIL -> .../product/af-24-60mm-f28-fe/74/...
+  OK price= 990000 ...
+형태면 정상.
+
+이후:
+UPDATE_ALL_OFFICIAL_KOREA_IMAGES_PRICES.bat

@@ -1,43 +1,51 @@
-Matchcamera Canon Korea eStore 이미지 자동화 v12
+Matchcamera 한국 공식 유통/공식몰 이미지+가격 v14
 
-대상
+참고 소스
+=========
+1. 세기몰 / 세기P&C
+   https://www.saeki.co.kr/category/main?dspCateId=100002
+   - SIGMA 공식 수입/유통 상품
+2. LK삼양 카메라 렌즈 공식몰
+   https://samyanglensmall.com/product/list.html?cate_no=53
+   - Samyang 공식몰
+3. 썬포토
+   https://sunphoto.kr/product/list.html?cate_no=165
+   - TAMRON 국내 공식 유통 상품
+
+즉시 추가된 데이터
+==================
+- Samyang 현재 AF 라인업: 21개 제품을 제품 DB 확장에 추가
+- Samyang 공식몰 정상가: 21개
+- Sigma 공식 유통 정상가 추가/재검증: 33개 행
+- Tamron 공식 유통 소비자가 추가/재검증: 11개 행
+
+가격 원칙
+=========
+- 정상가 / 소비자가 / 공식 판매 정상가격 우선
+- 할인 전 가격이 명확하면 할인 전 가격 사용
+- 할인가, 쿠폰가, 리퍼가, 병행수입, 최저가 제외
+
+자동 이미지/가격 수집
+=====================
+먼저:
+TEST_OFFICIAL_KOREA_SOURCES.bat
+
+정상이라면:
+UPDATE_ALL_OFFICIAL_KOREA_IMAGES_PRICES.bat
+
+자동 수집 대상:
+- Sigma -> 세기몰
+- Samyang -> LK삼양 공식몰
+- Tamron -> 썬포토
+
+자동 수집 결과:
+- public/data/korea-prices.json
+- public/data/product-images.json
+- public/assets/images/products/<brand>/
+- public/data/official-korea-source-report.json
+
+주의
 ====
-Canon 바디 / 렌즈 / 배터리
-
-소스
-====
-https://estore.kr.canon/
-
-테스트
-======
-TEST_CANON_ESTORE_BODY_LENS_BATTERY.bat
-
-테스트 대상:
-- EOS R5 Mark II
-- RF24-70mm F2.8L IS USM
-- LP-E6P
-
-정상 확인 후 전체:
-UPDATE_ALL_CANON_BODY_LENS_BATTERY_IMAGES.bat
-
-저장
-====
-바디/렌즈:
-public/assets/images/products/canon/
-public/data/product-images.json
-
-배터리:
-public/assets/images/accessories/batteries/canon/
-public/data/batteries.json
-
-리포트:
-public/data/canon-estore-images-report.json
-
-매칭 안전장치
-=============
-- Canon eStore 자체 통합검색 사용
-- 정확한 제품명 우선
-- 렌즈킷(예: 24-105 포함) 감점
-- 안심플러스/리퍼비시/사은품 감점
-- image.kr.canon 제품 이미지 우선
-- 로그인/CAPTCHA/접근제어 우회 없음
+- 사이트에 없는 단종 제품은 FAIL로 남을 수 있습니다.
+- 잘못된 제품을 강제로 매칭하지 않고 실패로 남기는 쪽을 우선합니다.
+- 공식몰 이미지를 Matchcamera 공개 서비스에서 사용할 때는 각 사이트/브랜드의 이미지 이용 조건을 별도로 확인하세요.
