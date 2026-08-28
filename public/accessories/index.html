@@ -1,1 +1,78 @@
-<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>액세서리 | Matchcamera</title><meta name="description" content="카메라 마운트 어댑터 데이터베이스."><link rel="stylesheet" href="/assets/css/site.css"><link rel="stylesheet" href="/assets/css/site-enhancements.css"><link rel="icon" href="/favicon.svg" type="image/svg+xml"></head><body><div data-header></div><main class="simple-main"><section class="simple-hero"><div class="container"><h1>액세서리</h1><p>현재는 마운트 어댑터를 우선 제공합니다. 바디와 렌즈의 직접 장착이 불가능할 때 변환 가능 여부를 확인합니다.</p></div></section><section class="container"><div class="toolbar" style="grid-template-columns:2fr 1fr 1fr 1fr"><input id="adapterSearch" class="control" placeholder="제품명 또는 마운트 검색"><select id="adapterBrand" class="control"></select><select id="adapterFrom" class="control"></select><select id="adapterTo" class="control"></select></div><p class="muted tiny"><b id="adapterCount">0</b>개 어댑터</p><div id="adapterList" class="adapter-list"></div></section></main><div data-footer></div><script type="module" src="/assets/js/common.js"></script><script type="module" src="/assets/js/accessories.js"></script></body></html>
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>액세서리 | Matchcamera</title>
+  <meta name="description" content="마운트 어댑터, 메모리 카드, 배터리, 플래시, 삼각대 등 카메라 액세서리를 확인합니다.">
+  <link rel="stylesheet" href="/assets/css/site.css">
+  <link rel="stylesheet" href="/assets/css/site-enhancements.css">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+  <div data-header></div>
+  <main class="simple-main">
+    <section class="simple-hero">
+      <div class="container">
+        <h1>액세서리</h1>
+        <p>기존 액세서리 항목을 유지하면서 마운트 어댑터 호환성까지 함께 제공합니다.</p>
+      </div>
+    </section>
+
+    <section class="container">
+      <div class="accessory-category-grid" aria-label="액세서리 종류">
+        <button class="accessory-category active" type="button" data-accessory-category="adapter">
+          <strong>마운트 어댑터</strong>
+          <span>다른 마운트의 렌즈를 연결할 수 있는지 확인</span>
+        </button>
+        <button class="accessory-category" type="button" data-accessory-category="memory">
+          <strong>메모리 카드</strong>
+          <span>SD · CFexpress · XQD 등 바디별 규격</span>
+        </button>
+        <button class="accessory-category" type="button" data-accessory-category="battery">
+          <strong>배터리</strong>
+          <span>정품 배터리 및 바디별 배터리 규격</span>
+        </button>
+        <button class="accessory-category" type="button" data-accessory-category="flash">
+          <strong>플래시</strong>
+          <span>핫슈 · TTL · 무선 플래시 호환성</span>
+        </button>
+        <button class="accessory-category" type="button" data-accessory-category="tripod">
+          <strong>삼각대</strong>
+          <span>허용 하중 · 플레이트 · 헤드 조합</span>
+        </button>
+      </div>
+
+      <div class="accessory-panel" data-accessory-panel="adapter">
+        <div class="toolbar" style="grid-template-columns:2fr 1fr 1fr 1fr">
+          <input id="adapterSearch" class="control" placeholder="제품명 또는 마운트 검색">
+          <select id="adapterBrand" class="control"></select>
+          <select id="adapterFrom" class="control"></select>
+          <select id="adapterTo" class="control"></select>
+        </div>
+        <p class="muted tiny"><b id="adapterCount">0</b>개 어댑터</p>
+        <div id="adapterList" class="adapter-list"></div>
+      </div>
+
+      <div class="accessory-panel hidden" data-accessory-panel="memory">
+        <div class="accessory-placeholder"><span class="status">DB 확장 예정</span><h2>메모리 카드</h2><p>카메라별 지원 규격, 최대 용량, UHS-I/UHS-II, CFexpress Type A/B, 권장 영상 기록 속도 등을 연결할 예정입니다.</p></div>
+      </div>
+
+      <div class="accessory-panel hidden" data-accessory-panel="battery">
+        <div class="accessory-placeholder"><span class="status">DB 확장 예정</span><h2>배터리</h2><p>바디별 정품 배터리 규격과 호환 모델을 연결할 예정입니다.</p></div>
+      </div>
+
+      <div class="accessory-panel hidden" data-accessory-panel="flash">
+        <div class="accessory-placeholder"><span class="status">DB 확장 예정</span><h2>플래시</h2><p>핫슈 규격, TTL, HSS, 무선 제어 및 제조사별 기능 호환성을 연결할 예정입니다.</p></div>
+      </div>
+
+      <div class="accessory-panel hidden" data-accessory-panel="tripod">
+        <div class="accessory-placeholder"><span class="status">DB 확장 예정</span><h2>삼각대</h2><p>삼각대는 삭제하지 않았습니다. 허용 하중, 자체 무게, 최대 높이, 접은 길이, 플레이트 규격, 헤드 종류를 기준으로 제품 DB를 확장할 예정입니다.</p></div>
+      </div>
+    </section>
+  </main>
+  <div data-footer></div>
+  <script type="module" src="/assets/js/common.js"></script>
+  <script type="module" src="/assets/js/accessories.js"></script>
+</body>
+</html>

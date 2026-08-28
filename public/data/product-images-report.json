@@ -1,7 +1,17 @@
 {
   "_meta": {
-    "updatedAt": "2026-08-28T10:44:31.300124+00:00",
-    "totalProducts": 843
+    "updatedAt": "2026-08-28T10:57:29.519451+00:00",
+    "totalProducts": 843,
+    "selected": 618,
+    "okThisRun": 441,
+    "skippedThisRun": 115,
+    "failedThisRun": 62,
+    "blockedHostsThisRun": [
+      "www.panasonic.com"
+    ],
+    "host403CountsThisRun": {
+      "www.panasonic.com": 2
+    }
   },
   "items": {
     "Sony NEX-3": {
@@ -469,25 +479,19 @@
       "label": "Pentax Pentax Q7"
     },
     "Sigma Sigma fp": {
-      "status": "ok",
-      "label": "Sigma Sigma fp",
-      "src": "/assets/images/products/sigma/sigma-l-mount-sigma-fp.webp",
-      "sourcePage": "https://www.sigma-global.com/en/cameras/",
-      "sourceImage": "https://www.sigma-global.com/assets/og_image.jpg"
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sigma Sigma fp"
     },
     "Sigma Sigma fp L": {
-      "status": "ok",
-      "label": "Sigma Sigma fp L",
-      "src": "/assets/images/products/sigma/sigma-l-mount-sigma-fp-l.webp",
-      "sourcePage": "https://www.sigma-global.com/en/cameras/",
-      "sourceImage": "https://www.sigma-global.com/assets/og_image.jpg"
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sigma Sigma fp L"
     },
     "Sigma Sigma BF": {
-      "status": "ok",
-      "label": "Sigma Sigma BF",
-      "src": "/assets/images/products/sigma/sigma-l-mount-sigma-bf.webp",
-      "sourcePage": "https://www.sigma-global.com/en/cameras/",
-      "sourceImage": "https://www.sigma-global.com/assets/og_image.jpg"
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sigma Sigma BF"
     },
     "Tamron 12-20mm F2.8": {
       "status": "skipped",
@@ -495,11 +499,9 @@
       "label": "Tamron 12-20mm F2.8"
     },
     "Tamron 16-30mm F2.8 Di III VXD G2": {
-      "status": "ok",
-      "label": "Tamron 16-30mm F2.8 Di III VXD G2",
-      "src": "/assets/images/products/tamron/tamron-sony-e-a064-sony-e.webp",
-      "sourcePage": "https://www.tamron.com/global/consumer/lenses/",
-      "sourceImage": "https://www.tamron.com/global/ogp.png"
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Tamron 16-30mm F2.8 Di III VXD G2"
     },
     "Canon EOS R5": {
       "status": "skipped",
@@ -3832,6 +3834,442 @@
       "sourcePage": "https://commons.wikimedia.org/wiki/File:Pentax_2011_(5994727076).jpg",
       "sourceImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Pentax_2011_%285994727076%29.jpg/960px-Pentax_2011_%285994727076%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "method": "wikimedia-commons"
+    },
+    "Pentax 08 WIDE ZOOM 3.8-5.9mm F3.7-4.0": {
+      "status": "ok",
+      "label": "Pentax 08 WIDE ZOOM 3.8-5.9mm F3.7-4.0",
+      "src": "/assets/images/products/pentax/pentax-pentax-q-08.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:08-09-2006_Pisanello_1395c_1455_Madonna_della_quaglia_-_Photo_Paolo_Villa_-_detc_01_-_Castelvecchio_Verona_-_Pentax_K10D_SMC_-_Pentax-FA_35mm_F2_-_08-09-2006.jpg",
+      "sourceImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/08-09-2006_Pisanello_1395c_1455_Madonna_della_quaglia_-_Photo_Paolo_Villa_-_detc_01_-_Castelvecchio_Verona_-_Pentax_K10D_SMC_-_Pentax-FA_35mm_F2_-_08-09-2006.jpg/960px-thumbnail.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "method": "wikimedia-commons"
+    },
+    "Sigma Sigma sd Quattro": {
+      "status": "ok",
+      "label": "Sigma Sigma sd Quattro",
+      "src": "/assets/images/products/sigma/sigma-sigma-sa-sigma-sd-quattro.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Sigma_sd_Quattro_front-left_2016_China_P%26E.jpg",
+      "sourceImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Sigma_sd_Quattro_front-left_2016_China_P%26E.jpg/960px-Sigma_sd_Quattro_front-left_2016_China_P%26E.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "method": "wikimedia-commons"
+    },
+    "Sigma Sigma sd Quattro H": {
+      "status": "ok",
+      "label": "Sigma Sigma sd Quattro H",
+      "src": "/assets/images/products/sigma/sigma-sigma-sa-sigma-sd-quattro-h.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Sigma_sd_Quattro_H_front-right_2017_CP%2B.jpg",
+      "sourceImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Sigma_sd_Quattro_H_front-right_2017_CP%2B.jpg/960px-Sigma_sd_Quattro_H_front-right_2017_CP%2B.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "method": "wikimedia-commons"
+    },
+    "Sigma 19mm F2.8 EX DN": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sigma 19mm F2.8 EX DN"
+    },
+    "Sigma 30mm F2.8 EX DN": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sigma 30mm F2.8 EX DN"
+    },
+    "Sigma 19mm F2.8 DN | Art": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sigma 19mm F2.8 DN | Art"
+    },
+    "Sigma 30mm F2.8 DN | Art": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sigma 30mm F2.8 DN | Art"
+    },
+    "Sigma 60mm F2.8 DN | Art": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sigma 60mm F2.8 DN | Art"
+    },
+    "Sigma 12mm F1.4 DC | Contemporary": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sigma 12mm F1.4 DC | Contemporary"
+    },
+    "Sigma 15mm F1.4 DC | Contemporary": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sigma 15mm F1.4 DC | Contemporary"
+    },
+    "Sigma 16mm F1.4 DC DN | Contemporary": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sigma 16mm F1.4 DC DN | Contemporary"
+    },
+    "Sigma 23mm F1.4 DC DN | Contemporary": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sigma 23mm F1.4 DC DN | Contemporary"
+    },
+    "Sigma 30mm F1.4 DC DN | Contemporary": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sigma 30mm F1.4 DC DN | Contemporary"
+    },
+    "Sigma 56mm F1.4 DC DN | Contemporary": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sigma 56mm F1.4 DC DN | Contemporary"
+    },
+    "Sigma 10-18mm F2.8 DC DN | Contemporary": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sigma 10-18mm F2.8 DC DN | Contemporary"
+    },
+    "Sigma 16-300mm F3.5-6.7 DC OS | Contemporary": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sigma 16-300mm F3.5-6.7 DC OS | Contemporary"
+    },
+    "Sigma 17-40mm F1.8 DC | Art": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sigma 17-40mm F1.8 DC | Art"
+    },
+    "Sigma 18-50mm F2.8 DC DN | Contemporary": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sigma 18-50mm F2.8 DC DN | Contemporary"
+    },
+    "Sigma 14mm F1.4 DG DN | Art": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sigma 14mm F1.4 DG DN | Art"
+    },
+    "Sigma 15mm F1.4 DG DN Diagonal Fisheye | Art": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sigma 15mm F1.4 DG DN Diagonal Fisheye | Art"
+    },
+    "Sigma 17mm F4 DG DN | Contemporary": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sigma 17mm F4 DG DN | Contemporary"
+    },
+    "Sigma 20mm F1.4 DG DN | Art": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sigma 20mm F1.4 DG DN | Art"
+    },
+    "Sigma 20mm F2 DG DN | Contemporary": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sigma 20mm F2 DG DN | Contemporary"
+    },
+    "Sigma 24mm F1.4 DG DN | Art": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sigma 24mm F1.4 DG DN | Art"
+    },
+    "Sigma 24mm F2 DG DN | Contemporary": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sigma 24mm F2 DG DN | Contemporary"
+    },
+    "Sigma 24mm F3.5 DG DN | Contemporary": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sigma 24mm F3.5 DG DN | Contemporary"
+    },
+    "Sigma 35mm F1.2 DG DN | Art": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sigma 35mm F1.2 DG DN | Art"
+    },
+    "Sigma 35mm F1.2 DG II | Art": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sigma 35mm F1.2 DG II | Art"
+    },
+    "Sigma 35mm F1.4 DG DN | Art": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sigma 35mm F1.4 DG DN | Art"
+    },
+    "Sigma 35mm F2 DG DN | Contemporary": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sigma 35mm F2 DG DN | Contemporary"
+    },
+    "Sigma 45mm F2.8 DG DN | Contemporary": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sigma 45mm F2.8 DG DN | Contemporary"
+    },
+    "Sigma 50mm F1.2 DG DN | Art": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sigma 50mm F1.2 DG DN | Art"
+    },
+    "Sigma 50mm F1.4 DG DN | Art": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sigma 50mm F1.4 DG DN | Art"
+    },
+    "Sigma 50mm F2 DG DN | Contemporary": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sigma 50mm F2 DG DN | Contemporary"
+    },
+    "Sigma 65mm F2 DG DN | Contemporary": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sigma 65mm F2 DG DN | Contemporary"
+    },
+    "Sigma 85mm F1.4 DG DN | Art": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sigma 85mm F1.4 DG DN | Art"
+    },
+    "Sigma 90mm F2.8 DG DN | Contemporary": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sigma 90mm F2.8 DG DN | Contemporary"
+    },
+    "Sigma 105mm F2.8 DG DN Macro | Art": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sigma 105mm F2.8 DG DN Macro | Art"
+    },
+    "Sigma 200mm F2 DG OS | Sports": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sigma 200mm F2 DG OS | Sports"
+    },
+    "Sigma 500mm F5.6 DG DN OS | Sports": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sigma 500mm F5.6 DG DN OS | Sports"
+    },
+    "Sigma 14-24mm F2.8 DG DN | Art": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sigma 14-24mm F2.8 DG DN | Art"
+    },
+    "Sigma 16-28mm F2.8 DG DN | Contemporary": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sigma 16-28mm F2.8 DG DN | Contemporary"
+    },
+    "Sigma 20-200mm F3.5-6.3 DG | Contemporary": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sigma 20-200mm F3.5-6.3 DG | Contemporary"
+    },
+    "Sigma 24-70mm F2.8 DG DN | Art": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sigma 24-70mm F2.8 DG DN | Art"
+    },
+    "Sigma 24-70mm F2.8 DG DN II | Art": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sigma 24-70mm F2.8 DG DN II | Art"
+    },
+    "Sigma 28-45mm F1.8 DG DN | Art": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sigma 28-45mm F1.8 DG DN | Art"
+    },
+    "Sigma 28-70mm F2.8 DG DN | Contemporary": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sigma 28-70mm F2.8 DG DN | Contemporary"
+    },
+    "Sigma 60-600mm F4.5-6.3 DG DN OS | Sports": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sigma 60-600mm F4.5-6.3 DG DN OS | Sports"
+    },
+    "Sigma 70-200mm F2.8 DG DN OS | Sports": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sigma 70-200mm F2.8 DG DN OS | Sports"
+    },
+    "Sigma 100-400mm F5-6.3 DG DN OS | Contemporary": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sigma 100-400mm F5-6.3 DG DN OS | Contemporary"
+    },
+    "Sigma 150-600mm F5-6.3 DG DN OS | Sports": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sigma 150-600mm F5-6.3 DG DN OS | Sports"
+    },
+    "Sigma 300-600mm F4 DG OS | Sports": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sigma 300-600mm F4 DG OS | Sports"
+    },
+    "Tamron 17-28mm F2.8 Di III RXD": {
+      "status": "ok",
+      "label": "Tamron 17-28mm F2.8 Di III RXD",
+      "src": "/assets/images/products/tamron/tamron-sony-e-a046-sony-e.webp",
+      "sourcePage": "https://www.tamron.com/global/consumer/lenses/",
+      "sourceImage": "https://www.tamron.com/global/ogp.png",
+      "method": "official-page"
+    },
+    "Tamron 17-50mm F4 Di III VXD": {
+      "status": "ok",
+      "label": "Tamron 17-50mm F4 Di III VXD",
+      "src": "/assets/images/products/tamron/tamron-sony-e-a068-sony-e.webp",
+      "sourcePage": "https://www.tamron.com/global/consumer/lenses/",
+      "sourceImage": "https://www.tamron.com/global/ogp.png",
+      "method": "official-page"
+    },
+    "Tamron 20mm F2.8 Di III OSD M1:2": {
+      "status": "ok",
+      "label": "Tamron 20mm F2.8 Di III OSD M1:2",
+      "src": "/assets/images/products/tamron/tamron-sony-e-f050-sony-e.webp",
+      "sourcePage": "https://www.tamron.com/global/consumer/lenses/",
+      "sourceImage": "https://www.tamron.com/global/ogp.png",
+      "method": "official-page"
+    },
+    "Tamron 20-40mm F2.8 Di III VXD": {
+      "status": "ok",
+      "label": "Tamron 20-40mm F2.8 Di III VXD",
+      "src": "/assets/images/products/tamron/tamron-sony-e-a062-sony-e.webp",
+      "sourcePage": "https://www.tamron.com/global/consumer/lenses/",
+      "sourceImage": "https://www.tamron.com/global/ogp.png",
+      "method": "official-page"
+    },
+    "Tamron 24mm F2.8 Di III OSD M1:2": {
+      "status": "ok",
+      "label": "Tamron 24mm F2.8 Di III OSD M1:2",
+      "src": "/assets/images/products/tamron/tamron-sony-e-f051-sony-e.webp",
+      "sourcePage": "https://www.tamron.com/global/consumer/lenses/",
+      "sourceImage": "https://www.tamron.com/global/ogp.png",
+      "method": "official-page"
+    },
+    "Tamron 25-200mm F2.8-5.6 Di III VXD G2": {
+      "status": "ok",
+      "label": "Tamron 25-200mm F2.8-5.6 Di III VXD G2",
+      "src": "/assets/images/products/tamron/tamron-sony-e-a075-sony-e.webp",
+      "sourcePage": "https://www.tamron.com/global/consumer/lenses/",
+      "sourceImage": "https://www.tamron.com/global/ogp.png",
+      "method": "official-page"
+    },
+    "Tamron 28-75mm F2.8 Di III RXD": {
+      "status": "ok",
+      "label": "Tamron 28-75mm F2.8 Di III RXD",
+      "src": "/assets/images/products/tamron/tamron-sony-e-a036-sony-e.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Tamron_Objektiv_28-75_mm_F2.8_Di_III_RXD_von_2018.jpg",
+      "sourceImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Tamron_Objektiv_28-75_mm_F2.8_Di_III_RXD_von_2018.jpg/960px-Tamron_Objektiv_28-75_mm_F2.8_Di_III_RXD_von_2018.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "method": "wikimedia-commons"
+    },
+    "Tamron 28-75mm F2.8 Di III VXD G2": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Tamron 28-75mm F2.8 Di III VXD G2"
+    },
+    "Tamron 28-200mm F2.8-5.6 Di III RXD": {
+      "status": "ok",
+      "label": "Tamron 28-200mm F2.8-5.6 Di III RXD",
+      "src": "/assets/images/products/tamron/tamron-sony-e-a071-sony-e.webp",
+      "sourcePage": "https://www.tamron.com/global/consumer/lenses/",
+      "sourceImage": "https://www.tamron.com/global/ogp.png",
+      "method": "official-page"
+    },
+    "Tamron 28-300mm F4-7.1 Di III VC VXD": {
+      "status": "ok",
+      "label": "Tamron 28-300mm F4-7.1 Di III VC VXD",
+      "src": "/assets/images/products/tamron/tamron-sony-e-a074-sony-e.webp",
+      "sourcePage": "https://www.tamron.com/global/consumer/lenses/",
+      "sourceImage": "https://www.tamron.com/global/ogp.png",
+      "method": "official-page"
+    },
+    "Tamron 35mm F2.8 Di III OSD M1:2": {
+      "status": "ok",
+      "label": "Tamron 35mm F2.8 Di III OSD M1:2",
+      "src": "/assets/images/products/tamron/tamron-sony-e-f053-sony-e.webp",
+      "sourcePage": "https://www.tamron.com/global/consumer/lenses/",
+      "sourceImage": "https://www.tamron.com/global/ogp.png",
+      "method": "official-page"
+    },
+    "Tamron 35-100mm F2.8 Di III VXD": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Tamron 35-100mm F2.8 Di III VXD"
+    },
+    "Tamron 35-150mm F2-2.8 Di III VXD": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Tamron 35-150mm F2-2.8 Di III VXD"
+    },
+    "Tamron 50-300mm F4.5-6.3 Di III VC VXD": {
+      "status": "ok",
+      "label": "Tamron 50-300mm F4.5-6.3 Di III VC VXD",
+      "src": "/assets/images/products/tamron/tamron-sony-e-a069-sony-e.webp",
+      "sourcePage": "https://www.tamron.com/global/consumer/lenses/",
+      "sourceImage": "https://www.tamron.com/global/ogp.png",
+      "method": "official-page"
+    },
+    "Tamron 50-400mm F4.5-6.3 Di III VC VXD": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Tamron 50-400mm F4.5-6.3 Di III VC VXD"
+    },
+    "Tamron 70-180mm F2.8 Di III VXD": {
+      "status": "ok",
+      "label": "Tamron 70-180mm F2.8 Di III VXD",
+      "src": "/assets/images/products/tamron/tamron-sony-e-a056-sony-e.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Tamron_70-180mm_F_2.8_Di_III_VC_VXD_G2_(model_A065),_Sony_E_by_Henry_S%C3%B6derlund.jpg",
+      "sourceImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Tamron_70-180mm_F_2.8_Di_III_VC_VXD_G2_%28model_A065%29%2C_Sony_E_by_Henry_S%C3%B6derlund.jpg/960px-Tamron_70-180mm_F_2.8_Di_III_VC_VXD_G2_%28model_A065%29%2C_Sony_E_by_Henry_S%C3%B6derlund.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "method": "wikimedia-commons"
+    },
+    "Tamron 70-180mm F2.8 Di III VC VXD G2": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Tamron 70-180mm F2.8 Di III VC VXD G2"
+    },
+    "Tamron 70-300mm F4.5-6.3 Di III RXD": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Tamron 70-300mm F4.5-6.3 Di III RXD"
+    },
+    "Tamron 90mm F2.8 Di III MACRO VXD": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Tamron 90mm F2.8 Di III MACRO VXD"
+    },
+    "Tamron 150-500mm F5-6.7 Di III VC VXD": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Tamron 150-500mm F5-6.7 Di III VC VXD"
+    },
+    "Tamron 11-20mm F2.8 Di III-A RXD": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Tamron 11-20mm F2.8 Di III-A RXD"
+    },
+    "Tamron 14-150mm F3.5-5.8 Di III": {
+      "status": "ok",
+      "label": "Tamron 14-150mm F3.5-5.8 Di III",
+      "src": "/assets/images/products/tamron/tamron-micro-four-thirds-c001-micro-four-thirds.webp",
+      "sourcePage": "https://www.tamron.com/global/consumer/lenses/",
+      "sourceImage": "https://www.tamron.com/global/ogp.png",
+      "method": "official-page"
+    },
+    "Tamron 17-70mm F2.8 Di III-A VC RXD": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Tamron 17-70mm F2.8 Di III-A VC RXD"
+    },
+    "Tamron 18-200mm F3.5-6.3 Di III VC": {
+      "status": "ok",
+      "label": "Tamron 18-200mm F3.5-6.3 Di III VC",
+      "src": "/assets/images/products/tamron/tamron-sony-e-b011-sony-e.webp",
+      "sourcePage": "https://www.tamron.com/global/consumer/lenses/",
+      "sourceImage": "https://www.tamron.com/global/ogp.png",
+      "method": "official-page"
+    },
+    "Tamron 18-300mm F3.5-6.3 Di III-A VC VXD": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Tamron 18-300mm F3.5-6.3 Di III-A VC VXD"
     }
   }
 }

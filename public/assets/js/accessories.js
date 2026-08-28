@@ -1,7 +1,70 @@
 import {loadAdapters} from './data.js';
-const $=s=>document.querySelector(s);const esc=(v='')=>String(v).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+
+const $=s=>document.querySelector(s);
+const esc=(v='')=>String(v).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const state={all:[],q:'',brand:'all',from:'all',to:'all'};
-function options(values,label){return `<option value="all">${label}</option>`+values.map(v=>`<option value="${esc(v)}">${esc(v)}</option>`).join('')}
-function setup(){const vals=k=>[...new Set(state.all.map(x=>x[k]).filter(Boolean))].sort((a,b)=>a.localeCompare(b,'ko'));$('#adapterBrand').innerHTML=options(vals('manufacturer'),'모든 제조사');$('#adapterFrom').innerHTML=options(vals('fromMount'),'모든 렌즈측 마운트');$('#adapterTo').innerHTML=options(vals('toMount'),'모든 바디측 마운트')}
-function render(){const q=state.q.toLowerCase();let x=state.all.filter(a=>(!q||JSON.stringify(a).toLowerCase().includes(q))&&(state.brand==='all'||a.manufacturer===state.brand)&&(state.from==='all'||a.fromMount===state.from)&&(state.to==='all'||a.toMount===state.to));$('#adapterCount').textContent=x.length.toLocaleString();$('#adapterList').innerHTML=x.map(a=>`<article class="adapter-card"><div><h2>${esc(a.officialName)}</h2><p>${esc(a.manufacturer)}${a.note?` · ${esc(a.note)}`:''}</p></div><div class="adapter-flow"><span>렌즈 측</span><strong>${esc(a.fromMount)}</strong></div><div class="adapter-flow"><span>바디 측</span><strong>${esc(a.toMount)}</strong></div><div class="adapter-tags"><span>AF ${esc(a.afSupport||'확인 필요')}</span><span>조리개 ${esc(a.apertureControl||'확인 필요')}</span><span>EXIF ${esc(a.exifSupport||'확인 필요')}</span>${a.focalReducer==='예'?'<span>포컬리듀서</span>':''}</div></article>`).join('')||'<div class="empty">조건에 맞는 어댑터가 없습니다.</div>'}
-state.all=await loadAdapters();setup();render();$('#adapterSearch').addEventListener('input',e=>{state.q=e.target.value;render()});[['#adapterBrand','brand'],['#adapterFrom','from'],['#adapterTo','to']].forEach(([s,k])=>$(s).addEventListener('change',e=>{state[k]=e.target.value;render()}));
+
+function options(values,label){
+  return `<option value="all">${label}</option>`+
+    values.map(v=>`<option value="${esc(v)}">${esc(v)}</option>`).join('');
+}
+
+function setup(){
+  const vals=k=>[...new Set(state.all.map(x=>x[k]).filter(Boolean))].sort((a,b)=>a.localeCompare(b,'ko'));
+  $('#adapterBrand').innerHTML=options(vals('manufacturer'),'모든 제조사');
+  $('#adapterFrom').innerHTML=options(vals('fromMount'),'모든 렌즈측 마운트');
+  $('#adapterTo').innerHTML=options(vals('toMount'),'모든 바디측 마운트');
+}
+
+function render(){
+  const q=state.q.toLowerCase();
+  const list=state.all.filter(a=>
+    (!q||JSON.stringify(a).toLowerCase().includes(q))&&
+    (state.brand==='all'||a.manufacturer===state.brand)&&
+    (state.from==='all'||a.fromMount===state.from)&&
+    (state.to==='all'||a.toMount===state.to)
+  );
+  $('#adapterCount').textContent=list.length.toLocaleString();
+  $('#adapterList').innerHTML=list.map(a=>`
+    <article class="adapter-card">
+      <div><h2>${esc(a.officialName)}</h2><p>${esc(a.manufacturer)}${a.note?` · ${esc(a.note)}`:''}</p></div>
+      <div class="adapter-flow"><span>렌즈 측</span><strong>${esc(a.fromMount)}</strong></div>
+      <div class="adapter-flow"><span>바디 측</span><strong>${esc(a.toMount)}</strong></div>
+      <div class="adapter-tags">
+        <span>AF ${esc(a.afSupport||'확인 필요')}</span>
+        <span>조리개 ${esc(a.apertureControl||'확인 필요')}</span>
+        <span>EXIF ${esc(a.exifSupport||'확인 필요')}</span>
+        ${a.focalReducer==='예'?'<span>포컬리듀서</span>':''}
+      </div>
+    </article>`).join('') || '<div class="empty">조건에 맞는 어댑터가 없습니다.</div>';
+}
+
+function showCategory(category){
+  document.querySelectorAll('[data-accessory-category]').forEach(btn=>{
+    btn.classList.toggle('active',btn.dataset.accessoryCategory===category);
+  });
+  document.querySelectorAll('[data-accessory-panel]').forEach(panel=>{
+    panel.classList.toggle('hidden',panel.dataset.accessoryPanel!==category);
+  });
+  const u=new URL(location.href);
+  if(category==='adapter') u.searchParams.delete('category');
+  else u.searchParams.set('category',category);
+  history.replaceState(null,'',u);
+}
+
+state.all=await loadAdapters();
+setup();
+render();
+
+$('#adapterSearch').addEventListener('input',e=>{state.q=e.target.value;render();});
+[['#adapterBrand','brand'],['#adapterFrom','from'],['#adapterTo','to']].forEach(([selector,key])=>
+  $(selector).addEventListener('change',e=>{state[key]=e.target.value;render();})
+);
+
+document.addEventListener('click',e=>{
+  const btn=e.target.closest('[data-accessory-category]');
+  if(btn) showCategory(btn.dataset.accessoryCategory);
+});
+
+const initial=new URLSearchParams(location.search).get('category');
+if(['adapter','memory','battery','flash','tripod'].includes(initial)) showCategory(initial);

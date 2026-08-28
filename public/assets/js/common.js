@@ -4,12 +4,38 @@ const header = document.querySelector('[data-header]');
 
 const brandStyles = document.createElement('style');
 brandStyles.textContent = `
-  .brand{gap:10px!important}.brand-logo{width:38px;height:38px;display:block;flex:0 0 auto;filter:drop-shadow(0 5px 10px rgba(89,96,239,.18))}
-  .brand-word{display:flex!important;align-items:baseline;gap:0;font-size:17px!important;letter-spacing:-.045em!important;line-height:1;white-space:nowrap}
+  .site-header{height:78px!important}
+  .top-nav{width:min(1760px,calc(100% - 32px))!important;gap:20px!important}
+  .brand{gap:12px!important;min-width:max-content}
+  .brand-logo{width:46px!important;height:46px!important;display:block;flex:0 0 auto;filter:drop-shadow(0 6px 12px rgba(89,96,239,.18))}
+  .brand-word{display:flex!important;align-items:baseline;gap:0;font-size:20px!important;letter-spacing:-.045em!important;line-height:1;white-space:nowrap}
   .brand-word strong{font-weight:900;color:#121827}.brand-word span{font-weight:800;color:#665cf2}
-  .site-header{height:64px}.top-nav{gap:14px}.category-nav a,.category-nav button{padding:0 12px;font-size:14px}.global-search{width:230px;height:40px;border-radius:20px}.global-search input{font-size:13px;padding-left:14px}.global-search button{width:44px;height:40px;display:grid;place-items:center}.global-search button svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round}
-  @media(max-width:1180px){.category-nav a,.category-nav button{padding:0 8px;font-size:12px}.global-search{display:none}}
-  @media(max-width:820px){.brand-word{display:flex!important;font-size:15px!important}}@media(max-width:520px){.brand-word{display:none!important}}
+  .category-nav{gap:2px!important;min-width:0}
+  .category-nav a,.category-nav button{height:46px!important;padding:0 14px!important;font-size:15px!important;font-weight:800!important;border-radius:12px!important}
+  .global-search{width:280px!important;height:46px!important;border-radius:23px!important;flex:0 0 auto}
+  .global-search input{font-size:14px!important;padding-left:16px!important}
+  .global-search button{width:50px!important;height:46px!important;display:grid!important;place-items:center!important}
+  .global-search button svg{width:21px!important;height:21px!important;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round}
+  @media(max-width:1450px){
+    .top-nav{gap:12px!important}
+    .category-nav a,.category-nav button{padding:0 10px!important;font-size:13px!important}
+    .global-search{width:230px!important}
+  }
+  @media(max-width:1180px){.global-search{display:none!important}}
+  @media(max-width:980px){
+    .site-header{height:72px!important}
+    .brand-logo{width:42px!important;height:42px!important}
+    .brand-word{font-size:18px!important}
+    .category-nav{overflow:auto!important;scrollbar-width:none}
+    .category-nav::-webkit-scrollbar{display:none}
+  }
+  @media(max-width:620px){
+    .site-header{height:66px!important}
+    .top-nav{width:calc(100% - 20px)!important}
+    .brand-logo{width:38px!important;height:38px!important}
+    .brand-word{display:none!important}
+    .category-nav a,.category-nav button{height:40px!important;padding:0 9px!important;font-size:12px!important}
+  }
 `;
 document.head.appendChild(brandStyles);
 
