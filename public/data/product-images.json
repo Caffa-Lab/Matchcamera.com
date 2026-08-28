@@ -6897,7 +6897,7 @@
     "height": 108,
     "method": "sony-support-d-imaging",
     "extractMethod": "direct-image",
-    "fetchedAt": "2026-08-28T11:58:24.747209+00:00",
+    "fetchedAt": "2026-08-28T12:09:11.057506+00:00",
     "usageReviewRequired": true
   },
   "Sony NEX-5": {
@@ -8627,6 +8627,18 @@
     "method": "sony-support-d-imaging",
     "extractMethod": "direct-image",
     "fetchedAt": "2026-08-28T12:04:20.971922+00:00",
+    "usageReviewRequired": true
+  },
+  "Canon EOS M": {
+    "src": "/assets/images/products/canon/canon-canon-ef-m-eos-m.webp",
+    "sourcePage": "https://estore.kr.canon/estore/detailview/17594",
+    "sourceImage": "https://image.kr.canon//pds/product/1582002176832_PJvDckwHDv.jpg",
+    "manufacturer": "Canon",
+    "width": 900,
+    "height": 600,
+    "method": "canon-korea-estore",
+    "extractMethod": "direct-image",
+    "fetchedAt": "2026-08-28T12:09:01.137402+00:00",
     "usageReviewRequired": true
   }
 }

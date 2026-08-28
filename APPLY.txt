@@ -1,64 +1,43 @@
-Matchcamera Sony 공식 이미지 자동화 v8
+Matchcamera Canon Korea eStore 이미지 자동화 v12
 
-목표
+대상
 ====
-Sony 바디 / 렌즈 / 배터리 이미지를
-support.d-imaging.sony.co.jp Sony 공식 호환성 사이트에서 자동 수집합니다.
+Canon 바디 / 렌즈 / 배터리
 
-사용하는 공식 페이지 형식
-=========================
-https://support.d-imaging.sony.co.jp/www/cscs/accessories/?area=ap&lang=ko&mdl=모델코드
+소스
+====
+https://estore.kr.canon/
 
-예:
-ILCE-7M4
-SEL2470GM2
-NP-FZ100
+테스트
+======
+TEST_CANON_ESTORE_BODY_LENS_BATTERY.bat
 
-저장 위치
-=========
+테스트 대상:
+- EOS R5 Mark II
+- RF24-70mm F2.8L IS USM
+- LP-E6P
+
+정상 확인 후 전체:
+UPDATE_ALL_CANON_BODY_LENS_BATTERY_IMAGES.bat
+
+저장
+====
 바디/렌즈:
-public/assets/images/products/sony/
+public/assets/images/products/canon/
 public/data/product-images.json
 
 배터리:
-public/assets/images/accessories/batteries/sony/
+public/assets/images/accessories/batteries/canon/
 public/data/batteries.json
 
 리포트:
-public/data/sony-support-images-report.json
+public/data/canon-estore-images-report.json
 
-제품 사진 선택
-==============
-- 모델코드가 img URL/ALT/주변 텍스트에 있는 이미지 우선
-- 큰 이미지 우선
-- Sony 로고, 화살표, 호환성 상태 아이콘, UI 이미지 제외
-- 이미지 URL을 브라우저 세션으로 직접 가져오는 것을 우선
-- 직접 이미지 다운로드가 안 되면 실제 img 요소를 고해상도 스크린샷
-- WebP 최대 900px로 저장
-
-실행 순서
-=========
-1. 먼저:
-TEST_SONY_SUPPORT_BODY_LENS_BATTERY.bat
-
-세 제품이 정확한 제품 사진인지 확인:
-- Sony α7 IV
-- Sony FE 24-70mm F2.8 GM II
-- Sony NP-FZ100
-
-2. 정상이라면:
-UPDATE_ALL_SONY_BODY_LENS_BATTERY_IMAGES.bat
-
-3. 실패한 항목만 다시 시도하려면:
-RETRY_FAILED_SONY_SUPPORT_IMAGES.bat
-기존에 성공한 Sony 공식 support 이미지는 SKIP됩니다.
-
-주의
-====
-Matchcamera DB에 존재하는 Sony 바디/렌즈와 Sony 배터리를 대상으로 합니다.
-Sony 공식 호환성 사이트에 해당 모델 페이지/이미지가 없는 구형 제품은 실패로 남을 수 있습니다.
-이미지 자체의 공개 서비스 사용은 Sony의 이용조건/브랜드 정책을 별도로 확인해야 합니다.
-
-적용
-====
-ZIP을 D:\Matchcamera에 그대로 덮어쓰기.
+매칭 안전장치
+=============
+- Canon eStore 자체 통합검색 사용
+- 정확한 제품명 우선
+- 렌즈킷(예: 24-105 포함) 감점
+- 안심플러스/리퍼비시/사은품 감점
+- image.kr.canon 제품 이미지 우선
+- 로그인/CAPTCHA/접근제어 우회 없음

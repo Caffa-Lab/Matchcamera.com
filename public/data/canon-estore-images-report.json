@@ -1,0 +1,47 @@
+{
+  "items": {
+    "body:Canon EOS M": {
+      "status": "ok",
+      "query": "EOS M",
+      "src": "/assets/images/products/canon/canon-canon-ef-m-eos-m.webp",
+      "sourcePage": "https://estore.kr.canon/estore/detailview/17594",
+      "sourceImage": "https://image.kr.canon//pds/product/1582002176832_PJvDckwHDv.jpg",
+      "resultScore": 540,
+      "imageScore": 1030,
+      "width": 900,
+      "height": 600
+    },
+    "body:Canon EOS M2": {
+      "status": "failed",
+      "query": "EOS M2",
+      "reason": "정확한 일반상품 상세 페이지를 찾지 못함 (1개 후보)"
+    },
+    "body:Canon EOS M3": {
+      "status": "failed",
+      "query": "EOS M3",
+      "reason": "정확한 일반상품 상세 페이지를 찾지 못함 (1개 후보)"
+    },
+    "body:Canon EOS M10": {
+      "status": "failed",
+      "query": "EOS M10",
+      "reason": "정확한 일반상품 상세 페이지를 찾지 못함 (0개 후보)"
+    },
+    "body:Canon EOS M5": {
+      "status": "failed",
+      "query": "EOS M5",
+      "reason": "정확한 일반상품 상세 페이지를 찾지 못함 (0개 후보)"
+    },
+    "body:Canon EOS M6": {
+      "status": "failed",
+      "query": "EOS M6",
+      "reason": "정확한 일반상품 상세 페이지를 찾지 못함 (0개 후보)"
+    }
+  },
+  "_meta": {
+    "updatedAt": "2026-08-28T12:09:26.771955+00:00",
+    "selected": 174,
+    "ok": 1,
+    "skipped": 0,
+    "failed": 5
+  }
+}
