@@ -6,3 +6,10 @@
 @media(max-width:1000px){.featured-grid{grid-template-columns:repeat(2,1fr)}.home-quick{grid-template-columns:1fr}.banner-shell{aspect-ratio:16/5}.home-search-section h1{font-size:29px}}
 @media(max-width:620px){.home-search-section{padding-top:24px}.home-search{grid-template-columns:48px 1fr 64px;height:52px}.home-search input{font-size:13px}.banner-shell{width:calc(100% - 16px);border-radius:13px;aspect-ratio:16/7}.banner-arrow{width:38px;height:38px;font-size:23px}.banner-arrow.prev{left:8px}.banner-arrow.next{right:8px}.featured-section,.home-quick{width:calc(100% - 16px)}.featured-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.featured-card{min-height:235px;padding:10px}.featured-visual{height:118px}.featured-card h3{font-size:13px}.featured-head h2{font-size:20px}.banner-fallback strong{font-size:22px}}
 .featured-visual>.brand-logo-fallback,.featured-visual>.featured-brand-text{display:none}.featured-visual.show-brand>.brand-logo-fallback{display:block}.featured-visual.show-brand>.featured-brand-text:not([hidden]){display:block}
+
+/* v6: 홈 대표 바디/렌즈 가격 가독성 */
+.featured-price{
+  font-size:18px!important;
+  line-height:1.2;
+  letter-spacing:-.025em;
+}

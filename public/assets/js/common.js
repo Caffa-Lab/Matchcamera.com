@@ -16,12 +16,14 @@ brandStyles.textContent = `
   .category-nav a,.category-nav button{
     height:44px!important;
     padding:0 12px!important;
+    font-family:"Noto Sans KR","Malgun Gothic","Segoe UI",sans-serif!important;
     font-size:14px!important;
-    line-height:1!important;
-    font-weight:700!important;
+    line-height:1.4!important;
+    letter-spacing:-.02em!important;
+    font-weight:600!important;
     border-radius:10px!important;
   }
-  .category-nav a.active{font-weight:900!important}
+  .category-nav a.active{font-weight:700!important}
 
   .global-search{width:266px!important;height:44px!important;border-radius:22px!important;flex:0 0 auto!important}
   .global-search input{font-size:13px!important;line-height:1!important;padding:0 6px 0 15px!important}
