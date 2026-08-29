@@ -196,6 +196,7 @@ export async function loadProducts(){
     return {
       ...p,
       cameraSystem,
+      originalPriceUsd: p.currentPriceUsd ?? null,
       currentPriceKrw: displayKrw,
       koreaStreetPriceKrw: hasStreet ? street : null,
       koreaOfficialPriceKrw: hasOfficial ? official : null,
@@ -206,6 +207,7 @@ export async function loadProducts(){
       koreaPriceSource: kr?.['가격 출처 URL'] || '',
       koreaPriceVerification: kr?.['가격 검증 상태'] || '',
       koreaPriceNote: kr?.['비고'] || '',
+      currentPriceUsd: displayKrw,
       imageSrc,
       imageSourcePage: typeof img === 'object' ? img?.sourcePage || img?.source || '' : '',
       imageSourceUrl: typeof img === 'object' ? img?.sourceImage || '' : '',
