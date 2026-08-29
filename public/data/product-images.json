@@ -3024,18 +3024,15 @@
   },
   "Panasonic LUMIX S5": {
     "src": "/assets/images/products/panasonic/panasonic-l-mount-lumix-s5.webp",
-    "sourcePage": "https://shop.panasonic.com/pages/lumix-s-series-mirrorless-full-frame-cameras",
-    "sourceImage": "http://shop.panasonic.com/cdn/shop/files/MicrosoftTeams-image_37.png?v=1779301024&width=2048",
+    "sourcePage": "https://brand.naver.com/panasonic/products/7970290046",
+    "sourceImage": "https://shop-phinf.pstatic.net/20241023_207/1729658330986SnJVx_JPEG/63791178784095544_1128219734.jpg?type=o1000",
     "manufacturer": "Panasonic",
-    "modelCode": "LUMIX S5",
     "width": 900,
-    "height": 471,
-    "method": "official-page",
-    "license": "",
-    "licenseUrl": "",
-    "artist": "",
-    "credit": "",
-    "fetchedAt": "2026-08-28T09:22:49.595236+00:00"
+    "height": 900,
+    "method": "panasonic-naver-brandstore",
+    "extractMethod": "direct-image",
+    "fetchedAt": "2026-08-29T15:36:34.359131+00:00",
+    "usageReviewRequired": true
   },
   "Panasonic LUMIX S5II": {
     "src": "/assets/images/products/panasonic/panasonic-l-mount-lumix-s5ii.webp",
@@ -3069,18 +3066,15 @@
   },
   "Panasonic LUMIX S9": {
     "src": "/assets/images/products/panasonic/panasonic-l-mount-lumix-s9.webp",
-    "sourcePage": "https://shop.panasonic.com/pages/lumix-s-series-mirrorless-full-frame-cameras",
-    "sourceImage": "http://shop.panasonic.com/cdn/shop/files/MicrosoftTeams-image_37.png?v=1779301024&width=2048",
+    "sourcePage": "https://brand.naver.com/panasonic/products/10577134796",
+    "sourceImage": "https://shop-phinf.pstatic.net/20241115_298/1731629198157i7dij_JPEG/17190714019140423_265236137.jpg?type=o1000",
     "manufacturer": "Panasonic",
-    "modelCode": "LUMIX S9",
     "width": 900,
-    "height": 471,
-    "method": "official-page",
-    "license": "",
-    "licenseUrl": "",
-    "artist": "",
-    "credit": "",
-    "fetchedAt": "2026-08-28T09:23:56.542549+00:00"
+    "height": 900,
+    "method": "panasonic-naver-brandstore",
+    "extractMethod": "direct-image",
+    "fetchedAt": "2026-08-29T15:35:58.351446+00:00",
+    "usageReviewRequired": true
   },
   "Panasonic LUMIX S1RII": {
     "src": "/assets/images/products/panasonic/panasonic-l-mount-lumix-s1rii.webp",
@@ -3294,18 +3288,15 @@
   },
   "Panasonic LUMIX G9II": {
     "src": "/assets/images/products/panasonic/panasonic-micro-four-thirds-lumix-g9ii.webp",
-    "sourcePage": "https://shop.panasonic.com/pages/lumix-g-series-mirrorless-micro-four-thirds-cameras",
-    "sourceImage": "http://shop.panasonic.com/cdn/shop/files/MicrosoftTeams-image_37.png?v=1779301024&width=2048",
+    "sourcePage": "https://brand.naver.com/panasonic/products/9453405477",
+    "sourceImage": "https://shop-phinf.pstatic.net/20240517_250/1715932811671SYh4M_JPEG/43235495536918379_1697894254.jpg?type=o1000",
     "manufacturer": "Panasonic",
-    "modelCode": "LUMIX G9II",
     "width": 900,
-    "height": 471,
-    "method": "official-page",
-    "license": "",
-    "licenseUrl": "",
-    "artist": "",
-    "credit": "",
-    "fetchedAt": "2026-08-28T09:29:27.558605+00:00"
+    "height": 900,
+    "method": "panasonic-naver-brandstore",
+    "extractMethod": "direct-image",
+    "fetchedAt": "2026-08-29T15:36:18.143080+00:00",
+    "usageReviewRequired": true
   },
   "Panasonic LUMIX G10": {
     "src": "/assets/images/products/panasonic/panasonic-micro-four-thirds-lumix-g10.webp",
@@ -3444,18 +3435,15 @@
   },
   "Panasonic LUMIX GH7": {
     "src": "/assets/images/products/panasonic/panasonic-micro-four-thirds-lumix-gh7.webp",
-    "sourcePage": "https://shop.panasonic.com/pages/lumix-g-series-mirrorless-micro-four-thirds-cameras",
-    "sourceImage": "http://shop.panasonic.com/cdn/shop/files/MicrosoftTeams-image_37.png?v=1779301024&width=2048",
+    "sourcePage": "https://brand.naver.com/panasonic/products/10503868896",
+    "sourceImage": "https://shop-phinf.pstatic.net/20240626_10/1719384820989iXsTb_JPEG/1154592670185504_469653971.jpg?type=o1000",
     "manufacturer": "Panasonic",
-    "modelCode": "LUMIX GH7",
     "width": 900,
-    "height": 471,
-    "method": "official-page",
-    "license": "",
-    "licenseUrl": "",
-    "artist": "",
-    "credit": "",
-    "fetchedAt": "2026-08-28T09:33:14.260522+00:00"
+    "height": 900,
+    "method": "panasonic-naver-brandstore",
+    "extractMethod": "direct-image",
+    "fetchedAt": "2026-08-29T15:36:02.651514+00:00",
+    "usageReviewRequired": true
   },
   "Panasonic LUMIX GF1": {
     "src": "/assets/images/products/panasonic/panasonic-micro-four-thirds-lumix-gf1.webp",

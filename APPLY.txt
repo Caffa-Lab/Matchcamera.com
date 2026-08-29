@@ -1,51 +1,51 @@
-Matchcamera 한국 공식 유통/공식몰 이미지+가격 v14
+Matchcamera Panasonic 네이버 브랜드스토어 이미지+가격 v17
 
-참고 소스
+대상
+====
+https://brand.naver.com/panasonic/category/d1638682756a48b4a157b156ed0f2ca8?cp=1
+
+기능
+====
+- 카테고리 페이지 자동 순회
+- Panasonic 바디/렌즈 상품 상세 페이지 확인
+- 공식 가격 자동 추출
+- 대표 제품사진 자동 추출
+- Matchcamera Panasonic 제품 DB와 안전 매칭
+- 제품명 매칭이 애매하면 DB를 수정하지 않고 report에만 기록
+
+가격 규칙
 =========
-1. 세기몰 / 세기P&C
-   https://www.saeki.co.kr/category/main?dspCateId=100002
-   - SIGMA 공식 수입/유통 상품
-2. LK삼양 카메라 렌즈 공식몰
-   https://samyanglensmall.com/product/list.html?cate_no=53
-   - Samyang 공식몰
-3. 썬포토
-   https://sunphoto.kr/product/list.html?cate_no=165
-   - TAMRON 국내 공식 유통 상품
+1. 할인 전 정상가 / 소비자가 / 정가가 보이면 우선
+2. 정상가가 따로 없으면 공식 브랜드스토어 현재 표시 판매가 사용
+3. 가격 유형을 JSON에 구분해서 저장
+4. 병행수입/해외가격은 사용하지 않음
 
-즉시 추가된 데이터
-==================
-- Samyang 현재 AF 라인업: 21개 제품을 제품 DB 확장에 추가
-- Samyang 공식몰 정상가: 21개
-- Sigma 공식 유통 정상가 추가/재검증: 33개 행
-- Tamron 공식 유통 소비자가 추가/재검증: 11개 행
+저장
+====
+가격:
+public/data/korea-prices.json
 
-가격 원칙
-=========
-- 정상가 / 소비자가 / 공식 판매 정상가격 우선
-- 할인 전 가격이 명확하면 할인 전 가격 사용
-- 할인가, 쿠폰가, 리퍼가, 병행수입, 최저가 제외
+이미지:
+public/assets/images/products/panasonic/
+public/data/product-images.json
 
-자동 이미지/가격 수집
-=====================
+전체 추출/매칭 리포트:
+public/data/panasonic-naver-extracted.json
+
+실행
+====
 먼저:
-TEST_OFFICIAL_KOREA_SOURCES.bat
+TEST_PANASONIC_NAVER_IMAGES_PRICES.bat
+
+첫 5개 결과의 제품명/이미지/가격이 정확한지 확인.
 
 정상이라면:
-UPDATE_ALL_OFFICIAL_KOREA_IMAGES_PRICES.bat
-
-자동 수집 대상:
-- Sigma -> 세기몰
-- Samyang -> LK삼양 공식몰
-- Tamron -> 썬포토
-
-자동 수집 결과:
-- public/data/korea-prices.json
-- public/data/product-images.json
-- public/assets/images/products/<brand>/
-- public/data/official-korea-source-report.json
+UPDATE_ALL_PANASONIC_NAVER_IMAGES_PRICES.bat
 
 주의
 ====
-- 사이트에 없는 단종 제품은 FAIL로 남을 수 있습니다.
-- 잘못된 제품을 강제로 매칭하지 않고 실패로 남기는 쪽을 우선합니다.
-- 공식몰 이미지를 Matchcamera 공개 서비스에서 사용할 때는 각 사이트/브랜드의 이미지 이용 조건을 별도로 확인하세요.
+- 이 ZIP은 현재의 korea-prices.json / product-images.json을 덮어쓰지 않습니다.
+  실행 시 현재 로컬 데이터를 읽어 필요한 Panasonic 항목만 갱신합니다.
+- CAPTCHA/로그인/접근제어를 우회하지 않습니다.
+- 네이버가 자동 브라우저에 추가 확인 화면을 띄우면 전체 실행을 중지하고
+  visible 모드 테스트 창에서 정상 접근되는지 먼저 확인하세요.

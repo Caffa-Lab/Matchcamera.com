@@ -1,0 +1,1087 @@
+{
+  "_meta": {
+    "source": "https://brand.naver.com/panasonic/category/d1638682756a48b4a157b156ed0f2ca8?cp=1",
+    "startedAt": "2026-08-29T15:34:43.737980+00:00",
+    "dbPanasonicProducts": 123,
+    "updatedAt": "2026-08-29T15:36:34.382132+00:00",
+    "matched": 11,
+    "priceUpdated": 11,
+    "imageUpdated": 11,
+    "ambiguous": 9,
+    "failed": 0,
+    "finishedAt": "2026-08-29T15:36:35.209483+00:00",
+    "categoryProducts": 20
+  },
+  "items": [
+    {
+      "status": "ambiguous",
+      "naverTitle": "파나소닉 루믹스 LUMIX DC-TZ300 카메라 : 파나소닉 공식 스토어",
+      "sourcePage": "https://brand.naver.com/panasonic/products/13531559861",
+      "sourceImage": "https://shop-phinf.pstatic.net/20260515_220/1778819988854muqwf_JPEG/16971526408367078_1503353342.jpg?type=o1000",
+      "price": 3590000,
+      "priceType": "네이버 브랜드스토어 정상가/소비자가",
+      "matchScore": 0.04,
+      "matchHits": [],
+      "matchCandidates": [
+        {
+          "name": "Panasonic LUMIX S1",
+          "mount": "L-Mount",
+          "score": 0.04,
+          "hits": []
+        },
+        {
+          "name": "Panasonic LUMIX S1R",
+          "mount": "L-Mount",
+          "score": 0.04,
+          "hits": []
+        },
+        {
+          "name": "Panasonic LUMIX S1H",
+          "mount": "L-Mount",
+          "score": 0.04,
+          "hits": []
+        },
+        {
+          "name": "Panasonic LUMIX S5",
+          "mount": "L-Mount",
+          "score": 0.04,
+          "hits": []
+        },
+        {
+          "name": "Panasonic LUMIX S5II",
+          "mount": "L-Mount",
+          "score": 0.04,
+          "hits": []
+        }
+      ],
+      "categoryPage": 1
+    },
+    {
+      "status": "ambiguous",
+      "naverTitle": "파나소닉 LUMIX S1ⅡE 24-105 Lens KIT 풀프레임 미러리스 카메라 DC-S1M2E 렌즈킷 S-R24105 : 파나소닉 공식 스토어",
+      "sourcePage": "https://brand.naver.com/panasonic/products/11872291322",
+      "sourceImage": "https://shop-phinf.pstatic.net/20250522_12/1747884926722AIpB2_JPEG/30579212122770906_2083360143.jpg?type=o1000",
+      "price": 3590000,
+      "priceType": "네이버 브랜드스토어 정상가/소비자가",
+      "matchScore": 1.25,
+      "matchHits": [
+        "s1m2",
+        "dcs1m2",
+        "s1ii"
+      ],
+      "matchCandidates": [
+        {
+          "name": "Panasonic LUMIX S1II",
+          "mount": "L-Mount",
+          "score": 1.25,
+          "hits": [
+            "s1m2",
+            "dcs1m2",
+            "s1ii"
+          ]
+        },
+        {
+          "name": "Panasonic LUMIX S1IIE",
+          "mount": "L-Mount",
+          "score": 1.25,
+          "hits": [
+            "s1iie",
+            "s1m2e",
+            "dcs1m2e"
+          ]
+        },
+        {
+          "name": "Panasonic LUMIX S1",
+          "mount": "L-Mount",
+          "score": 1.23,
+          "hits": [
+            "s1",
+            "dcs1"
+          ]
+        },
+        {
+          "name": "Panasonic LUMIX S 24-105mm F4 MACRO O.I.S.",
+          "mount": "L-Mount",
+          "score": 0.84,
+          "hits": [
+            "24105",
+            "sr24105"
+          ]
+        },
+        {
+          "name": "Panasonic LUMIX S1R",
+          "mount": "L-Mount",
+          "score": 0.04,
+          "hits": []
+        }
+      ],
+      "categoryPage": 1
+    },
+    {
+      "status": "ambiguous",
+      "naverTitle": "파나소닉 LUMIX S1ⅡE Body 풀프레임 미러리스 카메라 DC-S1M2E 바디킷 : 파나소닉 공식 스토어",
+      "sourcePage": "https://brand.naver.com/panasonic/products/11872281411",
+      "sourceImage": "https://shop-phinf.pstatic.net/20250522_38/1747884650723uBSmj_JPEG/59177761754243389_2139227511.jpg?type=o1000",
+      "price": 3590000,
+      "priceType": "네이버 브랜드스토어 정상가/소비자가",
+      "matchScore": 1.25,
+      "matchHits": [
+        "s1m2",
+        "dcs1m2",
+        "s1ii"
+      ],
+      "matchCandidates": [
+        {
+          "name": "Panasonic LUMIX S1II",
+          "mount": "L-Mount",
+          "score": 1.25,
+          "hits": [
+            "s1m2",
+            "dcs1m2",
+            "s1ii"
+          ]
+        },
+        {
+          "name": "Panasonic LUMIX S1IIE",
+          "mount": "L-Mount",
+          "score": 1.25,
+          "hits": [
+            "s1iie",
+            "s1m2e",
+            "dcs1m2e"
+          ]
+        },
+        {
+          "name": "Panasonic LUMIX S1",
+          "mount": "L-Mount",
+          "score": 1.23,
+          "hits": [
+            "s1",
+            "dcs1"
+          ]
+        },
+        {
+          "name": "Panasonic LUMIX S1R",
+          "mount": "L-Mount",
+          "score": 0.04,
+          "hits": []
+        },
+        {
+          "name": "Panasonic LUMIX S1H",
+          "mount": "L-Mount",
+          "score": 0.04,
+          "hits": []
+        }
+      ],
+      "categoryPage": 1
+    },
+    {
+      "status": "ambiguous",
+      "naverTitle": "파나소닉 LUMIX S1Ⅱ Lens Kit 풀프레임 미러리스 카메라 DC-S1M2 렌즈킷 S-R24105 : 파나소닉 공식 스토어",
+      "sourcePage": "https://brand.naver.com/panasonic/products/11872260434",
+      "sourceImage": "https://shop-phinf.pstatic.net/20250522_178/1747884186585IFpqy_JPEG/54396614240646649_1528063888.jpg?type=o1000",
+      "price": 3590000,
+      "priceType": "네이버 브랜드스토어 정상가/소비자가",
+      "matchScore": 1.25,
+      "matchHits": [
+        "s1m2",
+        "dcs1m2",
+        "s1ii"
+      ],
+      "matchCandidates": [
+        {
+          "name": "Panasonic LUMIX S1II",
+          "mount": "L-Mount",
+          "score": 1.25,
+          "hits": [
+            "s1m2",
+            "dcs1m2",
+            "s1ii"
+          ]
+        },
+        {
+          "name": "Panasonic LUMIX S1",
+          "mount": "L-Mount",
+          "score": 1.23,
+          "hits": [
+            "s1",
+            "dcs1"
+          ]
+        },
+        {
+          "name": "Panasonic LUMIX S 24-105mm F4 MACRO O.I.S.",
+          "mount": "L-Mount",
+          "score": 0.84,
+          "hits": [
+            "24105",
+            "sr24105"
+          ]
+        },
+        {
+          "name": "Panasonic LUMIX S1R",
+          "mount": "L-Mount",
+          "score": 0.04,
+          "hits": []
+        },
+        {
+          "name": "Panasonic LUMIX S1H",
+          "mount": "L-Mount",
+          "score": 0.04,
+          "hits": []
+        }
+      ],
+      "categoryPage": 1
+    },
+    {
+      "status": "ambiguous",
+      "naverTitle": "파나소닉 LUMIX S1Ⅱ Body 풀프레임 미러리스 카메라 DC-S1M2 바디킷 : 파나소닉 공식 스토어",
+      "sourcePage": "https://brand.naver.com/panasonic/products/11872250724",
+      "sourceImage": "https://shop-phinf.pstatic.net/20250522_235/1747883868342YfxVx_JPEG/26075808470449750_686082933.jpg?type=o1000",
+      "price": 3590000,
+      "priceType": "네이버 브랜드스토어 정상가/소비자가",
+      "matchScore": 1.25,
+      "matchHits": [
+        "s1m2",
+        "dcs1m2",
+        "s1ii"
+      ],
+      "matchCandidates": [
+        {
+          "name": "Panasonic LUMIX S1II",
+          "mount": "L-Mount",
+          "score": 1.25,
+          "hits": [
+            "s1m2",
+            "dcs1m2",
+            "s1ii"
+          ]
+        },
+        {
+          "name": "Panasonic LUMIX S1",
+          "mount": "L-Mount",
+          "score": 1.23,
+          "hits": [
+            "s1",
+            "dcs1"
+          ]
+        },
+        {
+          "name": "Panasonic LUMIX S1R",
+          "mount": "L-Mount",
+          "score": 0.04,
+          "hits": []
+        },
+        {
+          "name": "Panasonic LUMIX S1H",
+          "mount": "L-Mount",
+          "score": 0.04,
+          "hits": []
+        },
+        {
+          "name": "Panasonic LUMIX S5",
+          "mount": "L-Mount",
+          "score": 0.04,
+          "hits": []
+        }
+      ],
+      "categoryPage": 1
+    },
+    {
+      "status": "ambiguous",
+      "naverTitle": "파나소닉 LUMIX S1RⅡ Body 풀프레임 미러리스 카메라 DC-S1RM2 바디킷 : 파나소닉 공식 스토어",
+      "sourcePage": "https://brand.naver.com/panasonic/products/11614517575",
+      "sourceImage": "https://shop-phinf.pstatic.net/20250320_259/1742446725632IHWQ8_JPEG/5423469739505796_1634969022.jpg?type=o1000",
+      "price": 3590000,
+      "priceType": "네이버 브랜드스토어 정상가/소비자가",
+      "matchScore": 1.25,
+      "matchHits": [
+        "s1rii",
+        "s1rm2",
+        "dcs1rm2"
+      ],
+      "matchCandidates": [
+        {
+          "name": "Panasonic LUMIX S1RII",
+          "mount": "L-Mount",
+          "score": 1.25,
+          "hits": [
+            "s1rii",
+            "s1rm2",
+            "dcs1rm2"
+          ]
+        },
+        {
+          "name": "Panasonic LUMIX S1",
+          "mount": "L-Mount",
+          "score": 1.23,
+          "hits": [
+            "s1",
+            "dcs1"
+          ]
+        },
+        {
+          "name": "Panasonic LUMIX S1R",
+          "mount": "L-Mount",
+          "score": 1.23,
+          "hits": [
+            "s1r",
+            "dcs1r"
+          ]
+        },
+        {
+          "name": "Panasonic LUMIX S1H",
+          "mount": "L-Mount",
+          "score": 0.04,
+          "hits": []
+        },
+        {
+          "name": "Panasonic LUMIX S5",
+          "mount": "L-Mount",
+          "score": 0.04,
+          "hits": []
+        }
+      ],
+      "categoryPage": 1
+    },
+    {
+      "status": "ambiguous",
+      "naverTitle": "파나소닉 LUMIX S1RⅡ 24-105 Lens KIT 풀프레임 미러리스 카메라 DC-S1RM2 24-105 렌즈킷 : 파나소닉 공식 스토어",
+      "sourcePage": "https://brand.naver.com/panasonic/products/11614517340",
+      "sourceImage": "https://shop-phinf.pstatic.net/20250320_81/1742446923281N0fYz_JPEG/34170699223896260_482515772.jpg?type=o1000",
+      "price": 3590000,
+      "priceType": "네이버 브랜드스토어 정상가/소비자가",
+      "matchScore": 1.25,
+      "matchHits": [
+        "s1rii",
+        "s1rm2",
+        "dcs1rm2"
+      ],
+      "matchCandidates": [
+        {
+          "name": "Panasonic LUMIX S1RII",
+          "mount": "L-Mount",
+          "score": 1.25,
+          "hits": [
+            "s1rii",
+            "s1rm2",
+            "dcs1rm2"
+          ]
+        },
+        {
+          "name": "Panasonic LUMIX S1",
+          "mount": "L-Mount",
+          "score": 1.23,
+          "hits": [
+            "s1",
+            "dcs1"
+          ]
+        },
+        {
+          "name": "Panasonic LUMIX S1R",
+          "mount": "L-Mount",
+          "score": 1.23,
+          "hits": [
+            "s1r",
+            "dcs1r"
+          ]
+        },
+        {
+          "name": "Panasonic LUMIX S 24-105mm F4 MACRO O.I.S.",
+          "mount": "L-Mount",
+          "score": 0.78,
+          "hits": [
+            "24105"
+          ]
+        },
+        {
+          "name": "Panasonic LUMIX S1H",
+          "mount": "L-Mount",
+          "score": 0.04,
+          "hits": []
+        }
+      ],
+      "categoryPage": 1
+    },
+    {
+      "status": "ambiguous",
+      "naverTitle": "파나소닉 루믹스 DC-S9 / S-R1428MGC 렌즈 패키지 : 파나소닉 공식 스토어",
+      "sourcePage": "https://brand.naver.com/panasonic/products/11558277330",
+      "sourceImage": "https://shop-phinf.pstatic.net/20250306_74/1741236998680IHeIB_JPEG/16576675458484121_1257413993.jpg?type=o1000",
+      "price": 3590000,
+      "priceType": "네이버 브랜드스토어 정상가/소비자가",
+      "matchScore": 0.0,
+      "matchHits": [],
+      "matchCandidates": [],
+      "categoryPage": 1
+    },
+    {
+      "status": "ambiguous",
+      "naverTitle": "파나소닉 루믹스 LUMIX DC-TZ99 디지털 카메라 : 파나소닉 공식 스토어",
+      "sourcePage": "https://brand.naver.com/panasonic/products/11487703871",
+      "sourceImage": "https://shop-phinf.pstatic.net/20250922_140/17585029538845YLpr_JPEG/8593900893149879_1125818827.jpg?type=o1000",
+      "price": 3590000,
+      "priceType": "네이버 브랜드스토어 정상가/소비자가",
+      "matchScore": 0.04,
+      "matchHits": [],
+      "matchCandidates": [
+        {
+          "name": "Panasonic LUMIX S1",
+          "mount": "L-Mount",
+          "score": 0.04,
+          "hits": []
+        },
+        {
+          "name": "Panasonic LUMIX S1R",
+          "mount": "L-Mount",
+          "score": 0.04,
+          "hits": []
+        },
+        {
+          "name": "Panasonic LUMIX S1H",
+          "mount": "L-Mount",
+          "score": 0.04,
+          "hits": []
+        },
+        {
+          "name": "Panasonic LUMIX S5",
+          "mount": "L-Mount",
+          "score": 0.04,
+          "hits": []
+        },
+        {
+          "name": "Panasonic LUMIX S5II",
+          "mount": "L-Mount",
+          "score": 0.04,
+          "hits": []
+        }
+      ],
+      "categoryPage": 1
+    },
+    {
+      "status": "ok",
+      "naverTitle": "파나소닉 루믹스 DC-S9 바디킷 풀프레임 미러리스 카메라 렌즈미포함 : 파나소닉 공식 스토어",
+      "sourcePage": "https://brand.naver.com/panasonic/products/11131307031",
+      "sourceImage": "https://shop-phinf.pstatic.net/20250922_23/1758501411532cAMbq_JPEG/8592358525033902_1671934751.jpg?type=o1000",
+      "price": 3590000,
+      "priceType": "네이버 브랜드스토어 정상가/소비자가",
+      "matchScore": 1.23,
+      "matchHits": [
+        "dcs9",
+        "s9"
+      ],
+      "matchCandidates": [
+        {
+          "name": "Panasonic LUMIX S9",
+          "mount": "L-Mount",
+          "score": 1.23,
+          "hits": [
+            "dcs9",
+            "s9"
+          ]
+        },
+        {
+          "name": "Panasonic LUMIX S1",
+          "mount": "L-Mount",
+          "score": 0.04,
+          "hits": []
+        },
+        {
+          "name": "Panasonic LUMIX S1R",
+          "mount": "L-Mount",
+          "score": 0.04,
+          "hits": []
+        },
+        {
+          "name": "Panasonic LUMIX S1H",
+          "mount": "L-Mount",
+          "score": 0.04,
+          "hits": []
+        },
+        {
+          "name": "Panasonic LUMIX S5",
+          "mount": "L-Mount",
+          "score": 0.04,
+          "hits": []
+        }
+      ],
+      "categoryPage": 1,
+      "matchedProduct": "Panasonic LUMIX S9",
+      "matchedMount": "L-Mount",
+      "priceUpdated": true,
+      "imageUpdated": true
+    },
+    {
+      "status": "ok",
+      "naverTitle": "파나소닉 루믹스 DC-S9 바디킷 풀프레임 미러리스 카메라 렌즈미포함 : 파나소닉 공식 스토어",
+      "sourcePage": "https://brand.naver.com/panasonic/products/10577134796",
+      "sourceImage": "https://shop-phinf.pstatic.net/20241115_298/1731629198157i7dij_JPEG/17190714019140423_265236137.jpg?type=o1000",
+      "price": 3590000,
+      "priceType": "네이버 브랜드스토어 정상가/소비자가",
+      "matchScore": 1.23,
+      "matchHits": [
+        "dcs9",
+        "s9"
+      ],
+      "matchCandidates": [
+        {
+          "name": "Panasonic LUMIX S9",
+          "mount": "L-Mount",
+          "score": 1.23,
+          "hits": [
+            "dcs9",
+            "s9"
+          ]
+        },
+        {
+          "name": "Panasonic LUMIX S1",
+          "mount": "L-Mount",
+          "score": 0.04,
+          "hits": []
+        },
+        {
+          "name": "Panasonic LUMIX S1R",
+          "mount": "L-Mount",
+          "score": 0.04,
+          "hits": []
+        },
+        {
+          "name": "Panasonic LUMIX S1H",
+          "mount": "L-Mount",
+          "score": 0.04,
+          "hits": []
+        },
+        {
+          "name": "Panasonic LUMIX S5",
+          "mount": "L-Mount",
+          "score": 0.04,
+          "hits": []
+        }
+      ],
+      "categoryPage": 1,
+      "matchedProduct": "Panasonic LUMIX S9",
+      "matchedMount": "L-Mount",
+      "priceUpdated": true,
+      "imageUpdated": true
+    },
+    {
+      "status": "ok",
+      "naverTitle": "파나소닉 LUMIX DC-GH7 바디킷 루믹스 시네마 미러리스 카메라 : 파나소닉 공식 스토어",
+      "sourcePage": "https://brand.naver.com/panasonic/products/10503868896",
+      "sourceImage": "https://shop-phinf.pstatic.net/20240626_10/1719384820989iXsTb_JPEG/1154592670185504_469653971.jpg?type=o1000",
+      "price": 3590000,
+      "priceType": "네이버 브랜드스토어 정상가/소비자가",
+      "matchScore": 1.23,
+      "matchHits": [
+        "dcgh7",
+        "gh7"
+      ],
+      "matchCandidates": [
+        {
+          "name": "Panasonic LUMIX GH7",
+          "mount": "Micro Four Thirds",
+          "score": 1.23,
+          "hits": [
+            "dcgh7",
+            "gh7"
+          ]
+        },
+        {
+          "name": "Panasonic LUMIX S1",
+          "mount": "L-Mount",
+          "score": 0.04,
+          "hits": []
+        },
+        {
+          "name": "Panasonic LUMIX S1R",
+          "mount": "L-Mount",
+          "score": 0.04,
+          "hits": []
+        },
+        {
+          "name": "Panasonic LUMIX S1H",
+          "mount": "L-Mount",
+          "score": 0.04,
+          "hits": []
+        },
+        {
+          "name": "Panasonic LUMIX S5",
+          "mount": "L-Mount",
+          "score": 0.04,
+          "hits": []
+        }
+      ],
+      "categoryPage": 1,
+      "matchedProduct": "Panasonic LUMIX GH7",
+      "matchedMount": "Micro Four Thirds",
+      "priceUpdated": true,
+      "imageUpdated": true
+    },
+    {
+      "status": "ok",
+      "naverTitle": "파나소닉 루믹스 풀프레임 미러리스 카메라 DC-S5M2X S-R2060+S-S50 더블 렌즈킷 : 파나소닉 공식 스토어",
+      "sourcePage": "https://brand.naver.com/panasonic/products/9469998734",
+      "sourceImage": "https://shop-phinf.pstatic.net/20240517_80/17159325108131cJN5_JPEG/43235194679468685_1192494474.jpg?type=o1000",
+      "price": 3590000,
+      "priceType": "네이버 브랜드스토어 정상가/소비자가",
+      "matchScore": 1.23,
+      "matchHits": [
+        "dcs5",
+        "s5"
+      ],
+      "matchCandidates": [
+        {
+          "name": "Panasonic LUMIX S5",
+          "mount": "L-Mount",
+          "score": 1.23,
+          "hits": [
+            "dcs5",
+            "s5"
+          ]
+        },
+        {
+          "name": "Panasonic LUMIX S5II",
+          "mount": "L-Mount",
+          "score": 0.88,
+          "hits": [
+            "s5m2",
+            "dcs5m2"
+          ]
+        },
+        {
+          "name": "Panasonic LUMIX S5IIX",
+          "mount": "L-Mount",
+          "score": 0.88,
+          "hits": [
+            "s5m2x",
+            "dcs5m2x"
+          ]
+        },
+        {
+          "name": "Panasonic LUMIX S 20-60mm F3.5-5.6",
+          "mount": "L-Mount",
+          "score": 0.84,
+          "hits": [
+            "sr2060",
+            "2060"
+          ]
+        },
+        {
+          "name": "Panasonic LUMIX S 50mm F1.8",
+          "mount": "L-Mount",
+          "score": 0.78,
+          "hits": [
+            "ss50"
+          ]
+        }
+      ],
+      "categoryPage": 1,
+      "matchedProduct": "Panasonic LUMIX S5",
+      "matchedMount": "L-Mount",
+      "priceUpdated": true,
+      "imageUpdated": true
+    },
+    {
+      "status": "ok",
+      "naverTitle": "파나소닉 루믹스 풀프레임 미러리스 카메라 DC-S5M2X S-R2060 렌즈킷 : 파나소닉 공식 스토어",
+      "sourcePage": "https://brand.naver.com/panasonic/products/9469540573",
+      "sourceImage": "https://shop-phinf.pstatic.net/20240517_85/171593269015129fQJ_JPEG/43235374019195696_1237031585.jpg?type=o1000",
+      "price": 3590000,
+      "priceType": "네이버 브랜드스토어 정상가/소비자가",
+      "matchScore": 1.23,
+      "matchHits": [
+        "dcs5",
+        "s5"
+      ],
+      "matchCandidates": [
+        {
+          "name": "Panasonic LUMIX S5",
+          "mount": "L-Mount",
+          "score": 1.23,
+          "hits": [
+            "dcs5",
+            "s5"
+          ]
+        },
+        {
+          "name": "Panasonic LUMIX S5II",
+          "mount": "L-Mount",
+          "score": 0.88,
+          "hits": [
+            "s5m2",
+            "dcs5m2"
+          ]
+        },
+        {
+          "name": "Panasonic LUMIX S5IIX",
+          "mount": "L-Mount",
+          "score": 0.88,
+          "hits": [
+            "s5m2x",
+            "dcs5m2x"
+          ]
+        },
+        {
+          "name": "Panasonic LUMIX S 20-60mm F3.5-5.6",
+          "mount": "L-Mount",
+          "score": 0.84,
+          "hits": [
+            "sr2060",
+            "2060"
+          ]
+        },
+        {
+          "name": "Panasonic LUMIX S1",
+          "mount": "L-Mount",
+          "score": 0.04,
+          "hits": []
+        }
+      ],
+      "categoryPage": 1,
+      "matchedProduct": "Panasonic LUMIX S5",
+      "matchedMount": "L-Mount",
+      "priceUpdated": true,
+      "imageUpdated": true
+    },
+    {
+      "status": "ok",
+      "naverTitle": "파나소닉 루믹스 DC-G9M2 바디킷 : 파나소닉 공식 스토어",
+      "sourcePage": "https://brand.naver.com/panasonic/products/9453417426",
+      "sourceImage": "https://shop-phinf.pstatic.net/20240517_154/1715932766753q9BcH_JPEG/43235450615830532_554855823.jpg?type=o1000",
+      "price": 3590000,
+      "priceType": "네이버 브랜드스토어 정상가/소비자가",
+      "matchScore": 0.88,
+      "matchHits": [
+        "g9m2",
+        "dcg9m2"
+      ],
+      "matchCandidates": [
+        {
+          "name": "Panasonic LUMIX G9II",
+          "mount": "Micro Four Thirds",
+          "score": 0.88,
+          "hits": [
+            "g9m2",
+            "dcg9m2"
+          ]
+        },
+        {
+          "name": "Panasonic LUMIX S1",
+          "mount": "L-Mount",
+          "score": 0.04,
+          "hits": []
+        },
+        {
+          "name": "Panasonic LUMIX S1R",
+          "mount": "L-Mount",
+          "score": 0.04,
+          "hits": []
+        },
+        {
+          "name": "Panasonic LUMIX S1H",
+          "mount": "L-Mount",
+          "score": 0.04,
+          "hits": []
+        },
+        {
+          "name": "Panasonic LUMIX S5",
+          "mount": "L-Mount",
+          "score": 0.04,
+          "hits": []
+        }
+      ],
+      "categoryPage": 1,
+      "matchedProduct": "Panasonic LUMIX G9II",
+      "matchedMount": "Micro Four Thirds",
+      "priceUpdated": true,
+      "imageUpdated": true
+    },
+    {
+      "status": "ok",
+      "naverTitle": "파나소닉 루믹스 DC-G9M2 렌즈킷 : 파나소닉 공식 스토어",
+      "sourcePage": "https://brand.naver.com/panasonic/products/9453405477",
+      "sourceImage": "https://shop-phinf.pstatic.net/20240517_250/1715932811671SYh4M_JPEG/43235495536918379_1697894254.jpg?type=o1000",
+      "price": 3590000,
+      "priceType": "네이버 브랜드스토어 정상가/소비자가",
+      "matchScore": 0.88,
+      "matchHits": [
+        "g9m2",
+        "dcg9m2"
+      ],
+      "matchCandidates": [
+        {
+          "name": "Panasonic LUMIX G9II",
+          "mount": "Micro Four Thirds",
+          "score": 0.88,
+          "hits": [
+            "g9m2",
+            "dcg9m2"
+          ]
+        },
+        {
+          "name": "Panasonic LUMIX S1",
+          "mount": "L-Mount",
+          "score": 0.04,
+          "hits": []
+        },
+        {
+          "name": "Panasonic LUMIX S1R",
+          "mount": "L-Mount",
+          "score": 0.04,
+          "hits": []
+        },
+        {
+          "name": "Panasonic LUMIX S1H",
+          "mount": "L-Mount",
+          "score": 0.04,
+          "hits": []
+        },
+        {
+          "name": "Panasonic LUMIX S5",
+          "mount": "L-Mount",
+          "score": 0.04,
+          "hits": []
+        }
+      ],
+      "categoryPage": 1,
+      "matchedProduct": "Panasonic LUMIX G9II",
+      "matchedMount": "Micro Four Thirds",
+      "priceUpdated": true,
+      "imageUpdated": true
+    },
+    {
+      "status": "ok",
+      "naverTitle": "파나소닉 루믹스 풀프레임 미러리스 카메라 DC-S5M2X 바디 : 파나소닉 공식 스토어",
+      "sourcePage": "https://brand.naver.com/panasonic/products/8793615413",
+      "sourceImage": "https://shop-phinf.pstatic.net/20240517_80/1715932859822adiDO_JPEG/43235543688445985_196205068.jpg?type=o1000",
+      "price": 3590000,
+      "priceType": "네이버 브랜드스토어 정상가/소비자가",
+      "matchScore": 1.23,
+      "matchHits": [
+        "dcs5",
+        "s5"
+      ],
+      "matchCandidates": [
+        {
+          "name": "Panasonic LUMIX S5",
+          "mount": "L-Mount",
+          "score": 1.23,
+          "hits": [
+            "dcs5",
+            "s5"
+          ]
+        },
+        {
+          "name": "Panasonic LUMIX S5II",
+          "mount": "L-Mount",
+          "score": 0.88,
+          "hits": [
+            "s5m2",
+            "dcs5m2"
+          ]
+        },
+        {
+          "name": "Panasonic LUMIX S5IIX",
+          "mount": "L-Mount",
+          "score": 0.88,
+          "hits": [
+            "s5m2x",
+            "dcs5m2x"
+          ]
+        },
+        {
+          "name": "Panasonic LUMIX S1",
+          "mount": "L-Mount",
+          "score": 0.04,
+          "hits": []
+        },
+        {
+          "name": "Panasonic LUMIX S1R",
+          "mount": "L-Mount",
+          "score": 0.04,
+          "hits": []
+        }
+      ],
+      "categoryPage": 1,
+      "matchedProduct": "Panasonic LUMIX S5",
+      "matchedMount": "L-Mount",
+      "priceUpdated": true,
+      "imageUpdated": true
+    },
+    {
+      "status": "ok",
+      "naverTitle": "파나소닉 루믹스 풀프레임 미러리스 카메라 DC-S5M2W S-R2060+S-S50 더블렌즈킷 : 파나소닉 공식 스토어",
+      "sourcePage": "https://brand.naver.com/panasonic/products/7970290520",
+      "sourceImage": "https://shop-phinf.pstatic.net/20240517_31/1715933245921w1vhX_JPEG/43235929785198327_2044357284.jpg?type=o1000",
+      "price": 3590000,
+      "priceType": "네이버 브랜드스토어 정상가/소비자가",
+      "matchScore": 1.23,
+      "matchHits": [
+        "dcs5",
+        "s5"
+      ],
+      "matchCandidates": [
+        {
+          "name": "Panasonic LUMIX S5",
+          "mount": "L-Mount",
+          "score": 1.23,
+          "hits": [
+            "dcs5",
+            "s5"
+          ]
+        },
+        {
+          "name": "Panasonic LUMIX S5II",
+          "mount": "L-Mount",
+          "score": 0.88,
+          "hits": [
+            "s5m2",
+            "dcs5m2"
+          ]
+        },
+        {
+          "name": "Panasonic LUMIX S 20-60mm F3.5-5.6",
+          "mount": "L-Mount",
+          "score": 0.84,
+          "hits": [
+            "sr2060",
+            "2060"
+          ]
+        },
+        {
+          "name": "Panasonic LUMIX S 50mm F1.8",
+          "mount": "L-Mount",
+          "score": 0.78,
+          "hits": [
+            "ss50"
+          ]
+        },
+        {
+          "name": "Panasonic LUMIX S1",
+          "mount": "L-Mount",
+          "score": 0.04,
+          "hits": []
+        }
+      ],
+      "categoryPage": 1,
+      "matchedProduct": "Panasonic LUMIX S5",
+      "matchedMount": "L-Mount",
+      "priceUpdated": true,
+      "imageUpdated": true
+    },
+    {
+      "status": "ok",
+      "naverTitle": "파나소닉 루믹스 풀프레임 미러리스 카메라 DC-S5M2K S-R2060 렌즈킷 : 파나소닉 공식 스토어",
+      "sourcePage": "https://brand.naver.com/panasonic/products/7970290250",
+      "sourceImage": "https://shop-phinf.pstatic.net/20240517_210/1715933341473GQgtD_JPEG/43236025352304429_616615063.jpg?type=o1000",
+      "price": 3590000,
+      "priceType": "네이버 브랜드스토어 정상가/소비자가",
+      "matchScore": 1.23,
+      "matchHits": [
+        "dcs5",
+        "s5"
+      ],
+      "matchCandidates": [
+        {
+          "name": "Panasonic LUMIX S5",
+          "mount": "L-Mount",
+          "score": 1.23,
+          "hits": [
+            "dcs5",
+            "s5"
+          ]
+        },
+        {
+          "name": "Panasonic LUMIX S5II",
+          "mount": "L-Mount",
+          "score": 0.88,
+          "hits": [
+            "s5m2",
+            "dcs5m2"
+          ]
+        },
+        {
+          "name": "Panasonic LUMIX S 20-60mm F3.5-5.6",
+          "mount": "L-Mount",
+          "score": 0.84,
+          "hits": [
+            "sr2060",
+            "2060"
+          ]
+        },
+        {
+          "name": "Panasonic LUMIX S1",
+          "mount": "L-Mount",
+          "score": 0.04,
+          "hits": []
+        },
+        {
+          "name": "Panasonic LUMIX S1R",
+          "mount": "L-Mount",
+          "score": 0.04,
+          "hits": []
+        }
+      ],
+      "categoryPage": 1,
+      "matchedProduct": "Panasonic LUMIX S5",
+      "matchedMount": "L-Mount",
+      "priceUpdated": true,
+      "imageUpdated": true
+    },
+    {
+      "status": "ok",
+      "naverTitle": "파나소닉 루믹스 풀프레임 미러리스 카메라 DC-S5M2 바디킷 : 파나소닉 공식 스토어",
+      "sourcePage": "https://brand.naver.com/panasonic/products/7970290046",
+      "sourceImage": "https://shop-phinf.pstatic.net/20241023_207/1729658330986SnJVx_JPEG/63791178784095544_1128219734.jpg?type=o1000",
+      "price": 3590000,
+      "priceType": "네이버 브랜드스토어 정상가/소비자가",
+      "matchScore": 1.23,
+      "matchHits": [
+        "dcs5",
+        "s5"
+      ],
+      "matchCandidates": [
+        {
+          "name": "Panasonic LUMIX S5",
+          "mount": "L-Mount",
+          "score": 1.23,
+          "hits": [
+            "dcs5",
+            "s5"
+          ]
+        },
+        {
+          "name": "Panasonic LUMIX S5II",
+          "mount": "L-Mount",
+          "score": 0.88,
+          "hits": [
+            "s5m2",
+            "dcs5m2"
+          ]
+        },
+        {
+          "name": "Panasonic LUMIX S1",
+          "mount": "L-Mount",
+          "score": 0.04,
+          "hits": []
+        },
+        {
+          "name": "Panasonic LUMIX S1R",
+          "mount": "L-Mount",
+          "score": 0.04,
+          "hits": []
+        },
+        {
+          "name": "Panasonic LUMIX S1H",
+          "mount": "L-Mount",
+          "score": 0.04,
+          "hits": []
+        }
+      ],
+      "categoryPage": 1,
+      "matchedProduct": "Panasonic LUMIX S5",
+      "matchedMount": "L-Mount",
+      "priceUpdated": true,
+      "imageUpdated": true
+    }
+  ]
+}
