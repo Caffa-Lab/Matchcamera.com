@@ -1,0 +1,22 @@
+{
+  "version": 1,
+  "banners": [
+    { "slot": 1, "src": "/assets/images/banner/Banner1.webp", "href": "", "alt": "Matchcamera Banner 1", "enabled": true },
+    { "slot": 2, "src": "/assets/images/banner/Banner2.webp", "href": "", "alt": "Matchcamera Banner 2", "enabled": true },
+    { "slot": 3, "src": "/assets/images/banner/Banner3.webp", "href": "", "alt": "Matchcamera Banner 3", "enabled": true },
+    { "slot": 4, "src": "/assets/images/banner/Banner4.webp", "href": "", "alt": "Matchcamera Banner 4", "enabled": true }
+  ],
+  "featuredBodyIds": [
+    "sony-바디-sony-e-ilce-7m5",
+    "canon-바디-canon-rf-eos-r6-mark-iii",
+    "nikon-바디-nikon-z-z6iii",
+    "fujifilm-바디-fujifilm-x-x-h2"
+  ],
+  "featuredLensIds": [
+    "sony-렌즈-sony-e-sel2470gm2",
+    "canon-렌즈-canon-rf-rf24-70mm",
+    "nikon-렌즈-nikon-z-nikkor-z-24-70mm-f2-8-s-ii",
+    "fujifilm-렌즈-fujifilm-x-xf16-55mmf2-8-2"
+  ],
+  "updatedAt": "2026-08-30T00:00:00.000Z"
+}

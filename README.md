@@ -46,6 +46,12 @@
 
 로컬 확인은 정적 서버를 사용하면 됩니다. 예: VS Code Live Server 또는 `python -m http.server 5500 -d public`.
 
+## 관리자 페이지
+
+`/admin/`에서 제품, 한국 가격, 제품 이미지, 배터리, 마운트 어댑터, 홈 배너와 대표 제품을 관리할 수 있습니다. 브라우저에 비밀번호나 GitHub Token을 저장하지 않으며 Cloudflare Access JWT와 Worker 관리자 API를 사용합니다.
+
+운영 전 필수 설정은 [`docs/ADMIN_SETUP.md`](docs/ADMIN_SETUP.md)를 따릅니다.
+
 ## 데이터 관리 주의
 
 미확인 세부 사양은 추정하지 않고 비워 두거나 `확인 필요`로 표시합니다. Pentax K-01과 Sigma sd Quattro는 기존 SLR 계열 마운트를 재사용하므로 K/SA 전체 레거시 렌즈군은 별도 확장 대상으로 표시되어 있습니다.

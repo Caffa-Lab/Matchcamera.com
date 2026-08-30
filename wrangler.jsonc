@@ -5,6 +5,14 @@
   "assets": {
     "directory": "./public/",
     "binding": "ASSETS",
-    "run_worker_first": ["/api/*"]
+    "run_worker_first": ["/api/*", "/admin", "/admin/*"]
+  },
+  "vars": {
+    "GITHUB_REPO_OWNER": "Caffa-Lab",
+    "GITHUB_REPO_NAME": "Matchcamera.com",
+    "GITHUB_REPO_BRANCH": "main"
+  },
+  "secrets": {
+    "required": ["GITHUB_ADMIN_TOKEN", "CF_ACCESS_TEAM_DOMAIN", "CF_ACCESS_AUD"]
   }
 }

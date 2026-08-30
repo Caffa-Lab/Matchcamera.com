@@ -61,7 +61,7 @@
 @media(max-width:1000px){.battery-card{grid-template-columns:1fr}.battery-meta{text-align:left;flex-direction:row;align-items:center;justify-content:space-between}}
 @media(max-width:700px){.battery-toolbar{grid-template-columns:1fr}.battery-card{padding:14px}}
 
-/* v7 - 내 카메라 만들기: 선택된 바디/렌즈 사진 */
+/* v7 - 카메라 견적내기: 선택된 바디/렌즈 사진 */
 .builder-page .selected-product-visual{
   width:46px!important;
   height:46px!important;

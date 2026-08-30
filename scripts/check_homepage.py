@@ -15,7 +15,7 @@ else:
         errors.append('public/index.html이 home-page가 아님')
     if '/assets/js/home.js' not in text:
         errors.append('public/index.html에 home.js 연결이 없음')
-    if '내 카메라 만들기 — Matchcamera' in text and 'builder-page' in text:
+    if '카메라 견적내기 — Matchcamera' in text and 'builder-page' in text:
         errors.append('public/index.html이 Builder 페이지로 덮어써진 것으로 보임')
 
 if not builder.exists():
@@ -33,4 +33,4 @@ if errors:
 
 print("HOME CHECK: OK")
 print(" - /            -> Home")
-print(" - /builder/    -> 내 카메라 만들기")
+print(" - /builder/    -> 카메라 견적내기")

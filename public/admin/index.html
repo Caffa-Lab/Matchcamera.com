@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex,nofollow,noarchive">
+  <title>Matchcamera Admin</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/admin/admin.css">
+</head>
+<body>
+  <div class="admin-shell">
+    <aside class="sidebar">
+      <a class="admin-brand" href="/admin/" aria-label="Matchcamera 관리자 홈">
+        <span class="brand-mark">M</span>
+        <span><strong>Matchcamera</strong><small>ADMIN CONSOLE</small></span>
+      </a>
+      <nav class="side-nav" aria-label="관리자 메뉴">
+        <button class="active" data-view="dashboard" type="button"><span>01</span>대시보드</button>
+        <button data-view="products" type="button"><span>02</span>제품 관리</button>
+        <button data-view="prices" type="button"><span>03</span>가격 관리</button>
+        <button data-view="images" type="button"><span>04</span>이미지 관리</button>
+        <button data-view="accessories" type="button"><span>05</span>액세서리</button>
+        <button data-view="home" type="button"><span>06</span>홈 관리</button>
+        <button data-view="audit" type="button"><span>07</span>DB 검수</button>
+      </nav>
+      <div class="sidebar-foot">
+        <div class="session-user"><span class="status-dot"></span><div><small>로그인 계정</small><strong id="sessionEmail">확인 중</strong></div></div>
+        <a href="/" target="_blank" rel="noopener">사이트 열기 ↗</a>
+      </div>
+    </aside>
+
+    <main class="admin-main">
+      <header class="topbar">
+        <div><p id="viewEyebrow">MATCHCAMERA DATABASE</p><h1 id="viewTitle">대시보드</h1></div>
+        <div class="top-actions">
+          <span id="syncState" class="sync-state">동기화 중</span>
+          <button id="refreshButton" class="button secondary" type="button">새로고침</button>
+        </div>
+      </header>
+
+      <div id="fatalError" class="fatal-error" hidden></div>
+      <div id="readonlyNotice" class="notice" hidden>로컬 미리보기 모드입니다. GitHub Token이 없어 읽기만 가능합니다.</div>
+
+      <section class="view active" data-page="dashboard">
+        <div id="statsGrid" class="stats-grid"></div>
+        <div class="dashboard-grid">
+          <article class="panel"><div class="panel-head"><div><p>DATA COVERAGE</p><h2>DB 완성도</h2></div></div><div id="coverageList" class="coverage-list"></div></article>
+          <article class="panel"><div class="panel-head"><div><p>REPOSITORY</p><h2>운영 상태</h2></div></div><div id="repositoryState" class="repository-state"></div></article>
+        </div>
+        <article class="panel"><div class="panel-head"><div><p>REVIEW QUEUE</p><h2>우선 검수 항목</h2></div><button class="text-button" data-go="audit" type="button">전체 보기 →</button></div><div id="dashboardIssues" class="compact-table"></div></article>
+      </section>
+
+      <section class="view" data-page="products">
+        <div class="toolbar">
+          <input id="productSearch" class="control grow" type="search" placeholder="제품명·모델코드·ID 검색">
+          <select id="productBrand" class="control"><option value="">전체 제조사</option></select>
+          <select id="productType" class="control"><option value="">바디·렌즈 전체</option><option>바디</option><option>렌즈</option></select>
+          <select id="productSource" class="control"><option value="">전체 데이터 파일</option></select>
+          <button id="addProduct" class="button primary" type="button">+ 제품 추가</button>
+        </div>
+        <div class="table-panel"><table><thead><tr><th>제품</th><th>제조사</th><th>종류</th><th>마운트</th><th>모델 코드</th><th>판매 상태</th><th>데이터 파일</th><th></th></tr></thead><tbody id="productRows"></tbody></table></div>
+        <div id="productPagination" class="pagination"></div>
+      </section>
+
+      <section class="view" data-page="prices">
+        <div class="toolbar">
+          <input id="priceSearch" class="control grow" type="search" placeholder="제품명·모델코드 검색">
+          <select id="priceBrand" class="control"><option value="">전체 제조사</option></select>
+          <select id="priceStatus" class="control"><option value="">전체 가격 상태</option><option value="missing">가격 미확인</option><option value="verified">가격 있음</option></select>
+        </div>
+        <div class="table-panel"><table><thead><tr><th>제품</th><th>제조사</th><th>종류</th><th>한국 공식/출시 가격</th><th>기준 가격</th><th>기준일</th><th>검증 상태</th><th></th></tr></thead><tbody id="priceRows"></tbody></table></div>
+        <div id="pricePagination" class="pagination"></div>
+      </section>
+
+      <section class="view" data-page="images">
+        <div class="toolbar">
+          <input id="imageSearch" class="control grow" type="search" placeholder="제품명·모델코드 검색">
+          <select id="imageBrand" class="control"><option value="">전체 제조사</option></select>
+          <select id="imageStatus" class="control"><option value="">전체 이미지 상태</option><option value="missing">이미지 없음</option><option value="available">이미지 있음</option></select>
+        </div>
+        <div id="imageGrid" class="image-grid"></div>
+        <div id="imagePagination" class="pagination"></div>
+      </section>
+
+      <section class="view" data-page="accessories">
+        <div class="toolbar">
+          <select id="accessoryKind" class="control"><option value="batteries">배터리</option><option value="adapters">마운트 어댑터</option></select>
+          <input id="accessorySearch" class="control grow" type="search" placeholder="액세서리명·ID 검색">
+          <button id="addAccessory" class="button primary" type="button">+ 액세서리 추가</button>
+        </div>
+        <div class="table-panel"><table><thead id="accessoryHead"></thead><tbody id="accessoryRows"></tbody></table></div>
+      </section>
+
+      <section class="view" data-page="home">
+        <div class="section-heading"><div><p>MAIN BANNER</p><h2>배너 4개 관리</h2><span>권장 크기 1920 × 500px · 파일당 최대 6MB</span></div></div>
+        <div id="bannerEditor" class="banner-editor"></div>
+        <div class="section-heading"><div><p>FEATURED PRODUCTS</p><h2>홈 대표 제품</h2><span>바디 4개와 렌즈 4개를 직접 선택합니다.</span></div></div>
+        <div class="featured-editor"><article class="panel"><h3>대표 바디</h3><div id="featuredBodyEditor" class="select-stack"></div></article><article class="panel"><h3>대표 렌즈</h3><div id="featuredLensEditor" class="select-stack"></div></article></div>
+        <div class="sticky-save"><span>저장하면 GitHub 커밋 후 자동 배포가 시작됩니다.</span><button id="saveHome" class="button primary" type="button">홈 설정 저장</button></div>
+      </section>
+
+      <section class="view" data-page="audit">
+        <div id="auditCards" class="stats-grid audit-cards"></div>
+        <div class="toolbar"><select id="auditType" class="control"><option value="">전체 검수 항목</option><option value="duplicate-id">중복 ID</option><option value="duplicate-model">모델코드 중복</option><option value="missing-price">가격 없음</option><option value="missing-image">이미지 없음</option><option value="missing-mount">마운트 없음</option><option value="invalid">필수 필드 오류</option></select><input id="auditSearch" class="control grow" type="search" placeholder="제품명·오류 검색"></div>
+        <div class="table-panel"><table><thead><tr><th>유형</th><th>제품</th><th>제조사</th><th>내용</th><th>데이터 파일</th><th></th></tr></thead><tbody id="auditRows"></tbody></table></div>
+      </section>
+    </main>
+  </div>
+
+  <dialog id="editorDialog">
+    <form method="dialog" class="dialog-shell">
+      <header><div><p id="dialogEyebrow">EDITOR</p><h2 id="dialogTitle">항목 수정</h2></div><button class="icon-button" value="cancel" aria-label="닫기">×</button></header>
+      <div id="dialogBody" class="dialog-body"></div>
+      <footer><div id="dialogDanger"></div><div class="dialog-actions"><button class="button secondary" value="cancel">취소</button><button id="dialogSave" class="button primary" value="default" type="button">저장</button></div></footer>
+    </form>
+  </dialog>
+  <div id="loading" class="loading" hidden><span></span><strong>데이터 처리 중</strong></div>
+  <div id="toast" class="toast" role="status"></div>
+  <script type="module" src="/admin/admin.js"></script>
+</body>
+</html>

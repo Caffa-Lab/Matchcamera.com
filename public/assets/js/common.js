@@ -119,7 +119,7 @@ const nav = [
   ['/', '홈', isHome],
   ['/body/', '바디', here.startsWith('/body/')],
   ['/lens/', '렌즈', here.startsWith('/lens/')],
-  ['/builder/', '내 카메라 만들기', here.startsWith('/builder/')],
+  ['/builder/', '카메라 견적내기', here.startsWith('/builder/')],
   ['/compare/', '비교', here.startsWith('/compare/')],
   ['/database/', '제품 DB', here.startsWith('/database/')],
   ['/accessories/', '액세서리', here.startsWith('/accessories/')],
