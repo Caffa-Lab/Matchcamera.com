@@ -13,3 +13,7 @@
   line-height:1.2;
   letter-spacing:-.025em;
 }
+.banner-fallback[hidden],
+.banner-arrow[hidden] {
+  display: none !important;
+}
