@@ -1,2 +1,55 @@
-<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>제품 비교 | Matchcamera</title><meta name="description" content="카메라와 렌즈의 주요 스펙을 비교합니다."><link rel="stylesheet" href="/assets/css/site.css"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="manifest" href="/site.webmanifest"></head><body><div data-header></div>
-<main><section class="page-head"><div class="container"><h1>제품 비교</h1><p>초기 버전은 핵심 스펙을 1:1로 비교합니다. 이후 동일 카테고리 자동 비교 항목을 확장합니다.</p></div></section><section class="container" style="padding-bottom:60px"><div class="compare-grid" style="margin-bottom:16px"><select id="a" class="control"></select><select id="b" class="control"></select></div><div class="compare-grid"><div id="left" class="panel"></div><div id="right" class="panel"></div></div></section></main><div data-footer></div><script type="module" src="/assets/js/common.js"></script><script type="module" src="/assets/js/compare.js"></script></body></html>
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>제품 비교 | Matchcamera</title>
+  <meta name="description" content="카메라 바디와 렌즈를 각각 검색하고 주요 사양을 비교합니다.">
+  <link rel="stylesheet" href="/assets/css/site.css">
+  <link rel="stylesheet" href="/assets/css/compare.css">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="/site.webmanifest">
+</head>
+<body class="compare-page">
+  <div data-header></div>
+  <main class="compare-main">
+    <section class="page-head">
+      <div class="container">
+        <h1>제품 비교</h1>
+        <p>바디 또는 렌즈를 선택하고 제품명을 검색해 주요 사양과 국내 가격을 비교하세요.</p>
+      </div>
+    </section>
+    <section class="container compare-shell">
+      <div class="compare-tabs" role="tablist" aria-label="비교 제품 종류">
+        <button class="compare-tab active" type="button" data-compare-type="바디" role="tab" aria-selected="true">바디 비교</button>
+        <button class="compare-tab" type="button" data-compare-type="렌즈" role="tab" aria-selected="false">렌즈 비교</button>
+      </div>
+      <div class="compare-search-grid">
+        <section class="product-picker" data-picker="a">
+          <label for="compareSearchA"><span>제품 A</span><strong>첫 번째 제품 검색</strong></label>
+          <div class="compare-search-box">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"></circle><path d="m16 16 4.2 4.2"></path></svg>
+            <input id="compareSearchA" type="search" autocomplete="off" role="combobox" aria-expanded="false" aria-controls="compareResultsA" placeholder="제품명을 입력하세요">
+            <button type="button" data-clear-picker="a" aria-label="첫 번째 제품 선택 초기화">초기화</button>
+          </div>
+          <div id="compareResultsA" class="compare-search-results" role="listbox" hidden></div>
+        </section>
+        <section class="product-picker" data-picker="b">
+          <label for="compareSearchB"><span>제품 B</span><strong>두 번째 제품 검색</strong></label>
+          <div class="compare-search-box">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"></circle><path d="m16 16 4.2 4.2"></path></svg>
+            <input id="compareSearchB" type="search" autocomplete="off" role="combobox" aria-expanded="false" aria-controls="compareResultsB" placeholder="제품명을 입력하세요">
+            <button type="button" data-clear-picker="b" aria-label="두 번째 제품 선택 초기화">초기화</button>
+          </div>
+          <div id="compareResultsB" class="compare-search-results" role="listbox" hidden></div>
+        </section>
+      </div>
+      <div id="compareProducts" class="compare-product-grid" aria-live="polite"></div>
+      <div id="compareTable" class="compare-table-wrap" aria-live="polite"></div>
+    </section>
+  </main>
+  <div data-footer></div>
+  <script type="module" src="/assets/js/common.js"></script>
+  <script type="module" src="/assets/js/compare.js"></script>
+</body>
+</html>
