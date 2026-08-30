@@ -52,9 +52,13 @@
 .battery-brand{font-size:10px;font-weight:900;color:#6b7280;text-transform:uppercase;letter-spacing:.08em;margin-bottom:4px}
 .battery-card h2{font-size:18px;margin:0 0 5px;color:#171d2a}
 .battery-card p{font-size:11px;color:var(--muted);line-height:1.55;margin:0}
+.battery-specs{display:flex;flex-wrap:wrap;gap:5px;margin-top:9px}
+.battery-specs span{font-size:10px;font-weight:800;color:#48505d;background:#f7f8fb;border:1px solid #e8eaf0;border-radius:7px;padding:4px 7px}
 .battery-label{display:block;font-size:10px;font-weight:900;color:#737c8b;margin-bottom:7px}
 .battery-tags{display:flex;flex-wrap:wrap;gap:5px}
 .battery-tags span{font-size:10px;padding:5px 7px;border-radius:7px;background:#f5f6fa;color:#48505d;border:1px solid #eceef3}
+.battery-related-label{margin-top:10px}
+.battery-related span{background:#f2f1ff;border-color:#e4e1ff;color:#5753d9}
 .battery-meta{text-align:right;display:flex;flex-direction:column;gap:8px}
 .battery-meta span{font-size:10px;color:#727b89}
 .battery-meta strong{font-size:15px;color:#232a38}

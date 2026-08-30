@@ -1,5 +1,51 @@
 [
   {
+    "id": "sony-np-sa100",
+    "manufacturer": "Sony",
+    "officialName": "NP-SA100",
+    "compatibleNames": [
+      "Sony α7R VI"
+    ],
+    "compatibleModelCodes": [
+      "ILCE-7RM6"
+    ],
+    "compatiblePrefixes": [],
+    "includedWithNames": [
+      "Sony α7R VI"
+    ],
+    "capacityMah": 2670,
+    "voltageV": 7.82,
+    "energyWh": 20.9,
+    "weightG": 89,
+    "dimensionsMm": "24.6 × 38.4 × 51.8",
+    "compatibleChargers": [
+      "BC-SAD1"
+    ],
+    "compatibleGrips": [
+      "VG-C6"
+    ],
+    "compatibleDcCouplers": [
+      "DC-C2"
+    ],
+    "currentSale": "예",
+    "note": "Sony 차세대 α용 고용량 배터리. α7R VI 기본 구성품이며 NP-FZ100과는 별도 규격입니다.",
+    "currentPriceKrw": 149000,
+    "priceType": "한국 공식 판매가",
+    "priceSourceName": "Sony Korea",
+    "priceSource": "https://www.sony.co.kr/electronics/interchangeable-lens-cameras-batteries-chargers/np-sa100",
+    "priceDate": "2026-08-30",
+    "priceVerification": "한국 공식 사이트 확인",
+    "imageSrc": "/assets/images/accessories/batteries/sony/sony-np-sa100.webp",
+    "imageSourcePage": "https://support.d-imaging.sony.co.jp/www/cscs/accessories/?area=ap&lang=ko&mdl=NP-SA100",
+    "imageSourceUrl": "https://support.d-imaging.sony.co.jp/www/cscs/common/product_image/middle/NP-SA100.jpg",
+    "imageMethod": "sony-support-d-imaging",
+    "imageModelCode": "NP-SA100",
+    "imageWidth": 144,
+    "imageHeight": 108,
+    "imageFetchedAt": "2026-08-30T00:00:00+00:00",
+    "imageUsageReviewRequired": true
+  },
+  {
     "id": "sony-np-fz100",
     "manufacturer": "Sony",
     "officialName": "NP-FZ100",

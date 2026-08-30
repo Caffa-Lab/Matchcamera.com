@@ -71,12 +71,24 @@ function renderBatteries(){
     const visual=b.imageSrc
       ? `<div class="battery-visual"><img src="${esc(b.imageSrc)}" alt="${esc(b.officialName||'Sony battery')}" loading="lazy" onerror="this.hidden=true;this.nextElementSibling.hidden=false"><div class="battery-brand-fallback" hidden>${esc(b.manufacturer||'Sony')}</div></div>`
       : `<div class="battery-visual"><div class="battery-brand-fallback">${esc(b.manufacturer||'Sony')}</div></div>`;
+    const specs=[
+      b.capacityMah?`${Number(b.capacityMah).toLocaleString()}mAh`:'',
+      b.voltageV?`${esc(b.voltageV)}V`:'',
+      b.energyWh?`${esc(b.energyWh)}Wh`:'',
+      b.weightG?`${esc(b.weightG)}g`:''
+    ].filter(Boolean);
+    const related=[
+      ...(b.compatibleChargers||[]).map(x=>`충전기 ${x}`),
+      ...(b.compatibleGrips||[]).map(x=>`세로 그립 ${x}`),
+      ...(b.compatibleDcCouplers||[]).map(x=>`DC 커플러 ${x}`)
+    ];
     return `<article class="battery-card">
       ${visual}
       <div class="battery-main">
         <div class="battery-brand">${esc(b.manufacturer||'')}</div>
         <h2>${esc(b.officialName||'')}</h2>
         <p>${esc(b.note||'')}</p>
+        ${specs.length?`<div class="battery-specs">${specs.map(x=>`<span>${x}</span>`).join('')}</div>`:''}
       </div>
       <div class="battery-compat">
         <span class="battery-label">호환 바디</span>
@@ -84,6 +96,7 @@ function renderBatteries(){
           ${preview.map(x=>`<span>${esc(x)}</span>`).join('')}
           ${extra?`<span>+${extra}개</span>`:''}
         </div>
+        ${related.length?`<span class="battery-label battery-related-label">관련 액세서리</span><div class="battery-tags battery-related">${related.map(x=>`<span>${esc(x)}</span>`).join('')}</div>`:''}
       </div>
       <div class="battery-meta">
         <span>${b.currentSale==='예'?'현재 판매 확인':'판매 상태 확인 필요'}</span>

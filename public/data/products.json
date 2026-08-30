@@ -2301,9 +2301,9 @@
     "weightG": 713,
     "saleStatus": "판매 중",
     "note": null,
-    "officialSource": "https://electronics.sony.com/imaging/interchangeable-lens-cameras/c/all-interchangeable-lens-cameras",
-    "verifiedAt": "2026-08-27",
-    "verification": "Sony 공식 자료 + 교차검증",
+    "officialSource": "https://www.sony.co.kr/electronics/interchangeable-lens-cameras/ilce-7rm6",
+    "verifiedAt": "2026-08-30",
+    "verification": "Sony Korea 공식 자료 확인",
     "specs": {
       "제조사": "Sony",
       "카메라 방식": "미러리스",
@@ -2333,7 +2333,11 @@
       "메모리카드 종류": "SD UHS-II / CFexpress Type A",
       "카드 슬롯 수": 2,
       "CFexpress 지원 여부": "있음",
-      "배터리 모델": "NP-FZ100",
+      "배터리 모델": "NP-SA100",
+      "배터리 용량(mAh)": 2670,
+      "배터리 포함 여부": "포함",
+      "호환 배터리 충전기": "BC-SAD1",
+      "호환 세로 그립": "VG-C6",
       "USB 종류": "USB Type-C",
       "HDMI 종류": "HDMI Type-A",
       "마이크 단자": "있음",
@@ -2344,10 +2348,10 @@
       "무게(g)": 713,
       "가격 기준일": "2026-08-27",
       "판매 상태": "판매 중",
-      "공식 출처 URL": "https://electronics.sony.com/imaging/interchangeable-lens-cameras/c/all-interchangeable-lens-cameras",
-      "교차검증 URL": "https://en.wikipedia.org/wiki/List_of_Sony_E-mount_cameras",
-      "데이터 기준일": "2026-08-27",
-      "검증 상태": "Sony 공식 자료 + 교차검증"
+      "공식 출처 URL": "https://www.sony.co.kr/electronics/interchangeable-lens-cameras/ilce-7rm6",
+      "교차검증 URL": "https://www.sony.jp/ichigan/products/NP-SA100/compatible.html",
+      "데이터 기준일": "2026-08-30",
+      "검증 상태": "Sony Korea/Japan 공식 자료 확인"
     }
   },
   {
