@@ -9696,5 +9696,15 @@
     "width": 144,
     "height": 108,
     "usageReviewRequired": true
+  },
+  "Sony α99 II": {
+    "src": "/assets/images/products/sony/ext-sony-sony-99-ii.jpg",
+    "sourcePage": "",
+    "sourceImage": "",
+    "method": "manual-admin",
+    "fetchedAt": "2026-08-30T11:31:16.915Z",
+    "width": 330,
+    "height": 330,
+    "usageReviewRequired": true
   }
 }
