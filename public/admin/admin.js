@@ -284,10 +284,24 @@ function defaultHome() {
 
 function renderHome() {
   const config = files[PATHS.home] || defaultHome();
+  const cacheVersion = Number.isFinite(Date.parse(config.updatedAt)) ? Date.parse(config.updatedAt) : "";
   $("#bannerEditor").innerHTML = [1, 2, 3, 4].map((slot) => {
     const item = config.banners?.find((banner) => Number(banner.slot) === slot) || defaultHome().banners[slot - 1];
-    return `<article class="banner-card" data-banner-card="${slot}"><div class="banner-preview">${item.src ? `<img src="${esc(item.src)}" alt="${esc(item.alt || "")}">` : `<span>배너 ${slot}</span>`}</div><div class="banner-fields"><div class="field full"><label>대체 텍스트</label><input name="bannerAlt${slot}" value="${esc(item.alt || "")}"></div><div class="field full"><label>클릭 링크</label><input name="bannerHref${slot}" value="${esc(item.href || "")}" placeholder="비워두면 클릭 비활성화"></div><div class="field"><label>이미지 교체</label><input name="bannerFile${slot}" type="file" accept="image/webp,image/png,image/jpeg,image/avif"></div><label class="field-check"><input name="bannerEnabled${slot}" type="checkbox" ${item.enabled !== false ? "checked" : ""}>사용</label></div></article>`;
+    const previewSrc = item.src && cacheVersion ? `${item.src}?v=${cacheVersion}` : item.src;
+    return `<article class="banner-card" data-banner-card="${slot}"><div class="banner-preview">${previewSrc ? `<img src="${esc(previewSrc)}" alt="${esc(item.alt || "")}">` : `<span>배너 ${slot}</span>`}</div><div class="banner-fields"><div class="field full"><label>대체 텍스트</label><input name="bannerAlt${slot}" value="${esc(item.alt || "")}"></div><div class="field full"><label>클릭 링크</label><input name="bannerHref${slot}" value="${esc(item.href || "")}" placeholder="비워두면 클릭 비활성화"></div><div class="field"><label>이미지 교체 · WEBP 자동 변환</label><input name="bannerFile${slot}" type="file" accept="image/webp,image/png,image/jpeg,image/avif"></div><label class="field-check"><input name="bannerEnabled${slot}" type="checkbox" ${item.enabled !== false ? "checked" : ""}>사용</label></div></article>`;
   }).join("");
+  $$('[name^="bannerFile"]', $("#bannerEditor")).forEach((input) => {
+    input.addEventListener("change", () => {
+      const file = input.files[0];
+      if (!file) return;
+      const preview = input.closest(".banner-card")?.querySelector(".banner-preview");
+      if (!preview) return;
+      const reader = new FileReader();
+      reader.onload = () => { preview.innerHTML = `<img src="${esc(reader.result)}" alt="선택한 배너 미리보기">`; };
+      reader.onerror = () => toast("선택한 배너 미리보기를 불러오지 못했습니다.");
+      reader.readAsDataURL(file);
+    });
+  });
   const bodyOptions = products.filter((p) => p.type === "바디").sort(productSort);
   const lensOptions = products.filter((p) => p.type === "렌즈").sort(productSort);
   $("#featuredBodyEditor").innerHTML = featuredSelects("featuredBody", config.featuredBodyIds || [], bodyOptions);
@@ -611,6 +625,31 @@ async function fileBase64(file) {
   return String(dataUrl).split(",")[1] || "";
 }
 
+async function bannerWebpBase64(file) {
+  if (!file?.size) throw new Error("선택한 배너 이미지가 비어 있습니다.");
+  if (file.size > 6 * 1024 * 1024) throw new Error("배너 원본 파일은 6MB 이하여야 합니다.");
+  let bitmap = null;
+  try {
+    bitmap = await createImageBitmap(file);
+    if (!bitmap.width || !bitmap.height) throw new Error("배너 이미지 크기를 확인할 수 없습니다.");
+    if (bitmap.width * bitmap.height > 40_000_000) throw new Error("배너 이미지 해상도가 너무 큽니다.");
+    const canvas = document.createElement("canvas");
+    canvas.width = bitmap.width;
+    canvas.height = bitmap.height;
+    const context = canvas.getContext("2d");
+    if (!context) throw new Error("배너 이미지 변환을 시작할 수 없습니다.");
+    context.drawImage(bitmap, 0, 0);
+    const webp = await new Promise((resolve) => canvas.toBlob(resolve, "image/webp", 0.92));
+    if (!webp?.size || webp.type !== "image/webp") throw new Error("배너를 WEBP로 변환하지 못했습니다.");
+    if (webp.size > 6 * 1024 * 1024) throw new Error("변환된 배너가 6MB를 초과합니다.");
+    const base64 = await fileBase64(webp);
+    if (!base64) throw new Error("변환된 배너 데이터가 비어 있습니다.");
+    return base64;
+  } finally {
+    bitmap?.close();
+  }
+}
+
 async function imageDimensions(file) {
   try { const bitmap = await createImageBitmap(file); const result = { width: bitmap.width, height: bitmap.height }; bitmap.close(); return result; }
   catch { return { width: null, height: null }; }
@@ -708,32 +747,34 @@ async function deleteAccessory() {
 }
 
 async function saveHome() {
-  const current = files[PATHS.home] || defaultHome();
-  const config = { version: 1, banners: [], featuredBodyIds: [], featuredLensIds: [], updatedAt: new Date().toISOString() };
-  const changes = [];
-  for (let slot = 1; slot <= 4; slot += 1) {
-    const old = current.banners?.find((banner) => Number(banner.slot) === slot) || defaultHome().banners[slot - 1];
-    const file = $(`[name="bannerFile${slot}"]`).files[0];
-    let src = old.src;
-    if (file) {
-      const extRaw = file.name.split(".").pop().toLowerCase();
-      const ext = extRaw === "jpeg" ? "jpg" : extRaw;
-      if (!["webp", "png", "jpg", "avif"].includes(ext)) return toast("배너는 WEBP, PNG, JPG, AVIF만 지원합니다.");
-      const path = `public/assets/images/banner/Banner${slot}.${ext}`;
-      src = path.replace(/^public/, "");
-      changes.push({ path, base64: await fileBase64(file) });
-      const oldPath = localRepoPath(old.src);
-      if (oldPath && oldPath !== path) changes.push({ path: oldPath, delete: true });
+  try {
+    const current = files[PATHS.home] || defaultHome();
+    const config = { version: 1, banners: [], featuredBodyIds: [], featuredLensIds: [], updatedAt: new Date().toISOString() };
+    const changes = [];
+    for (let slot = 1; slot <= 4; slot += 1) {
+      const old = current.banners?.find((banner) => Number(banner.slot) === slot) || defaultHome().banners[slot - 1];
+      const file = $(`[name="bannerFile${slot}"]`).files[0];
+      let src = old.src;
+      if (file) {
+        const path = `public/assets/images/banner/Banner${slot}.webp`;
+        const base64 = await bannerWebpBase64(file);
+        src = path.replace(/^public/, "");
+        changes.push({ path, base64 });
+        const oldPath = localRepoPath(old.src);
+        if (oldPath && oldPath !== path) changes.push({ path: oldPath, delete: true });
+      }
+      config.banners.push({ slot, src, href: $(`[name="bannerHref${slot}"]`).value.trim(), alt: $(`[name="bannerAlt${slot}"]`).value.trim(), enabled: $(`[name="bannerEnabled${slot}"]`).checked });
     }
-    config.banners.push({ slot, src, href: $(`[name="bannerHref${slot}"]`).value.trim(), alt: $(`[name="bannerAlt${slot}"]`).value.trim(), enabled: $(`[name="bannerEnabled${slot}"]`).checked });
+    for (let index = 0; index < 4; index += 1) {
+      const body = $(`[name="featuredBody${index}"]`).value; if (body) config.featuredBodyIds.push(body);
+      const lens = $(`[name="featuredLens${index}"]`).value; if (lens) config.featuredLensIds.push(lens);
+    }
+    if (new Set(config.featuredBodyIds).size !== config.featuredBodyIds.length || new Set(config.featuredLensIds).size !== config.featuredLensIds.length) return toast("같은 대표 제품을 중복 선택할 수 없습니다.");
+    changes.unshift({ path: PATHS.home, value: config });
+    await commit(changes, "Admin: update homepage configuration");
+  } catch (error) {
+    toast(error.message || "배너 이미지를 처리하지 못했습니다.");
   }
-  for (let index = 0; index < 4; index += 1) {
-    const body = $(`[name="featuredBody${index}"]`).value; if (body) config.featuredBodyIds.push(body);
-    const lens = $(`[name="featuredLens${index}"]`).value; if (lens) config.featuredLensIds.push(lens);
-  }
-  if (new Set(config.featuredBodyIds).size !== config.featuredBodyIds.length || new Set(config.featuredLensIds).size !== config.featuredLensIds.length) return toast("같은 대표 제품을 중복 선택할 수 없습니다.");
-  changes.unshift({ path: PATHS.home, value: config });
-  await commit(changes, "Admin: update homepage configuration");
 }
 
 function showView(view) {

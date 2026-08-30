@@ -28,6 +28,11 @@ function safeBannerHref(value){
   try{const url=new URL(href);return url.protocol==='https:'?url.href:''}catch{return ''}
 }
 
+function versionedBannerSrc(src,updatedAt){
+  const timestamp=Date.parse(updatedAt||'');
+  return Number.isFinite(timestamp)?`${src}?v=${timestamp}`:src;
+}
+
 function renderBanners(config){
   document.querySelectorAll('.banner-slide').forEach(slide=>slide.remove());
   clearInterval(timer);
@@ -39,7 +44,8 @@ function renderBanners(config){
   const markup=items.map((item,index)=>{
     const tag=item.href?'a':'div';
     const href=item.href?` href="${esc(item.href)}"`:'';
-    return `<${tag} class="banner-slide ${index===0?'active':''}"${href} data-banner-index="${index}"><img src="${esc(item.src)}" alt="${esc(item.alt||`Matchcamera Banner ${item.slot||index+1}`)}"></${tag}>`;
+    const src=versionedBannerSrc(item.src,config?.updatedAt);
+    return `<${tag} class="banner-slide ${index===0?'active':''}"${href} data-banner-index="${index}"><img src="${esc(src)}" alt="${esc(item.alt||`Matchcamera Banner ${item.slot||index+1}`)}"></${tag}>`;
   }).join('');
   $('#bannerTrack').insertAdjacentHTML('afterbegin',markup);
   slides=[...document.querySelectorAll('.banner-slide')];

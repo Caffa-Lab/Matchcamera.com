@@ -126,8 +126,46 @@ async function main() {
       },
       body: JSON.stringify({
         baseHeadSha: oldHead,
+        message: "Reject empty banner",
+        changes: [{ path: "public/assets/images/banner/Banner2.webp", base64: "" }],
+      }),
+    }), {
+      ASSETS, CF_ACCESS_TEAM_DOMAIN: team, CF_ACCESS_AUD: aud, GITHUB_ADMIN_TOKEN: "test-token",
+      GITHUB_REPO_OWNER: "Caffa-Lab", GITHUB_REPO_NAME: "Matchcamera.com", GITHUB_REPO_BRANCH: "main",
+    });
+    assert(response.status === 400, "empty banner image must be rejected before GitHub write");
+
+    response = await worker.fetch(new Request("https://matchcamera.com/admin/api/commit", {
+      method: "POST",
+      headers: {
+        "Cf-Access-Jwt-Assertion": token, "Content-Type": "application/json", "X-Matchcamera-Admin": "1",
+        Origin: "https://matchcamera.com", "Sec-Fetch-Site": "same-origin",
+      },
+      body: JSON.stringify({
+        baseHeadSha: oldHead,
+        message: "Reject fake WEBP",
+        changes: [{ path: "public/assets/images/banner/Banner2.webp", base64: Buffer.from("not-webp").toString("base64") }],
+      }),
+    }), {
+      ASSETS, CF_ACCESS_TEAM_DOMAIN: team, CF_ACCESS_AUD: aud, GITHUB_ADMIN_TOKEN: "test-token",
+      GITHUB_REPO_OWNER: "Caffa-Lab", GITHUB_REPO_NAME: "Matchcamera.com", GITHUB_REPO_BRANCH: "main",
+    });
+    assert(response.status === 400, "fake WEBP data must be rejected before GitHub write");
+
+    const webpBase64 = Buffer.from([0x52, 0x49, 0x46, 0x46, 0, 0, 0, 0, 0x57, 0x45, 0x42, 0x50]).toString("base64");
+    response = await worker.fetch(new Request("https://matchcamera.com/admin/api/commit", {
+      method: "POST",
+      headers: {
+        "Cf-Access-Jwt-Assertion": token, "Content-Type": "application/json", "X-Matchcamera-Admin": "1",
+        Origin: "https://matchcamera.com", "Sec-Fetch-Site": "same-origin",
+      },
+      body: JSON.stringify({
+        baseHeadSha: oldHead,
         message: "Admin integration test",
-        changes: [{ path: "public/data/home-config.json", value: state.files["public/data/home-config.json"] }],
+        changes: [
+          { path: "public/data/home-config.json", value: state.files["public/data/home-config.json"] },
+          { path: "public/assets/images/banner/Banner2.webp", base64: webpBase64 },
+        ],
       }),
     }), {
       ASSETS, CF_ACCESS_TEAM_DOMAIN: team, CF_ACCESS_AUD: aud, GITHUB_ADMIN_TOKEN: "test-token",
@@ -136,6 +174,7 @@ async function main() {
     const committed = await response.json();
     assert(response.status === 200 && committed.headSha === newHead, "atomic GitHub commit must complete");
     assert(calls.some((call) => call.method === "POST" && call.url.endsWith("/git/trees") && call.body.base_tree === baseTree), "new tree must use current tree as base");
+    assert(calls.some((call) => call.method === "POST" && call.url.endsWith("/git/trees") && call.body.tree.some((entry) => entry.path === "public/assets/images/banner/Banner2.webp")), "WEBP banner must be included in the Git tree");
     assert(calls.some((call) => call.method === "PATCH" && call.url.endsWith("/git/refs/heads/main") && call.body.force === false), "branch update must not force push");
   } finally {
     globalThis.fetch = originalFetch;

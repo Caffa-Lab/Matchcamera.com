@@ -278,6 +278,16 @@ function normalizeBinaryPath(path) {
   return value;
 }
 
+function validateBinaryImage(path, base64) {
+  let prefix = "";
+  try { prefix = atob(base64.slice(0, 64)); }
+  catch { throw new HttpError(400, "이미지 데이터를 해석하지 못했습니다."); }
+  if (/\.webp$/i.test(path)) {
+    const isWebp = prefix.length >= 12 && prefix.slice(0, 4) === "RIFF" && prefix.slice(8, 12) === "WEBP";
+    if (!isWebp) throw new HttpError(400, "WEBP 확장자와 실제 이미지 형식이 일치하지 않습니다.");
+  }
+}
+
 function validateSameOrigin(request) {
   const url = new URL(request.url);
   const origin = request.headers.get("Origin");
@@ -310,7 +320,9 @@ async function commitChanges(env, payload) {
     const base64 = String(change?.base64 || "").replace(/\s/g, "");
     if (!/^[A-Za-z0-9+/]*={0,2}$/.test(base64)) throw new HttpError(400, "이미지 데이터가 올바른 Base64가 아닙니다.");
     const bytes = Math.floor((base64.length * 3) / 4) - (base64.endsWith("==") ? 2 : base64.endsWith("=") ? 1 : 0);
-    if (!bytes || bytes > MAX_BINARY_BYTES) throw new HttpError(413, "이미지는 파일당 6MB 이하여야 합니다.");
+    if (!bytes) throw new HttpError(400, "빈 이미지 파일은 저장할 수 없습니다.");
+    if (bytes > MAX_BINARY_BYTES) throw new HttpError(413, "이미지는 파일당 6MB 이하여야 합니다.");
+    validateBinaryImage(binaryPath, base64);
     normalized.push({ path: binaryPath, content: base64, encoding: "base64", delete: false });
   }
   const ref = await githubRequest(env, `${root}/git/ref/${githubRefPath(branch)}`);
