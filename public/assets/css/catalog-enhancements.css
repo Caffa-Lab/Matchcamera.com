@@ -21,3 +21,9 @@
   .finder-card .card-price small{font-size:11px!important}
   .finder-card .card-price strong{font-size:20px!important}
 }
+
+/* 다중 선택 필터 및 결과 없는 선택지 */
+.filter-chip{cursor:pointer;transition:border-color .15s ease,background-color .15s ease,color .15s ease,opacity .15s ease}
+.filter-chip.selected{background:#eeefff!important;border-color:#6067ef!important;color:#4f55db!important;font-weight:900}
+.filter-chip.unavailable,.filter-chip:disabled{background:#f2f3f5!important;border-color:#e3e6ea!important;color:#b3bac3!important;box-shadow:none!important;cursor:not-allowed;opacity:.58;text-decoration:none}
+.filter-chip.unavailable:hover,.filter-chip:disabled:hover{background:#f2f3f5!important;border-color:#e3e6ea!important;color:#b3bac3!important}
