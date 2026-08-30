@@ -8484,18 +8484,6 @@
     "fetchedAt": "2026-08-28T12:11:07.146471+00:00",
     "usageReviewRequired": true
   },
-  "Canon EOS R3": {
-    "src": "/assets/images/products/canon/canon-canon-rf-eos-r3.webp",
-    "sourcePage": "https://estore.kr.canon/estore/detailview/21931",
-    "sourceImage": "https://image.kr.canon/pds/editor/upload/product/mirrorless/EOSR3/images/EOS-R3_2_06.jpg",
-    "manufacturer": "Canon",
-    "width": 746,
-    "height": 900,
-    "method": "canon-korea-estore",
-    "extractMethod": "direct-image",
-    "fetchedAt": "2026-08-28T12:11:14.385238+00:00",
-    "usageReviewRequired": true
-  },
   "Canon EOS R7": {
     "src": "/assets/images/products/canon/canon-canon-rf-eos-r7.webp",
     "sourcePage": "https://estore.kr.canon/estore/detailview/23056",
