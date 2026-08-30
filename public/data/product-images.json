@@ -1,4 +1,30 @@
 {
+  "Sony BURANO": {
+    "src": "/assets/images/products/sony/sony-burano-mpc-2610.webp",
+    "sourcePage": "https://store.sony.co.kr/product-view/116294131",
+    "sourceImage": "https://sony.cdn-nhncommerce.com/Mall-No-A3ju/20240131/133131.375464000/116294131_06.png",
+    "manufacturer": "Sony",
+    "modelCode": "MPC-2610",
+    "width": 864,
+    "height": 864,
+    "method": "sony-store-korea",
+    "extractMethod": "official-store-api",
+    "fetchedAt": "2026-08-30T12:30:00+00:00",
+    "usageReviewRequired": true
+  },
+  "Sony Cinema Line FX6": {
+    "src": "/assets/images/products/sony/sony-cinema-line-fx6-ilme-fx6v.webp",
+    "sourcePage": "https://store.sony.co.kr/product-view/102263858",
+    "sourceImage": "https://sony.cdn-nhncommerce.com/Mall-No-A3ju/migration/3730_1/goods/32870180_List0.png",
+    "manufacturer": "Sony",
+    "modelCode": "ILME-FX6V",
+    "width": 864,
+    "height": 864,
+    "method": "sony-store-korea",
+    "extractMethod": "official-store-api",
+    "fetchedAt": "2026-08-30T12:30:00+00:00",
+    "usageReviewRequired": true
+  },
   "Nikon Z 6": {
     "src": "/assets/images/products/nikon/nikon-nikon-z-z-6.webp",
     "sourcePage": "https://www.nikonusa.com/cameras/mirrorless-cameras",
@@ -9588,25 +9614,5 @@
     "artist": "Jean-François Azens",
     "credit": "Own work",
     "fetchedAt": "2026-08-29T17:07:53.412840+00:00"
-  },
-  "Sony E 18-50mm F4-5.6": {
-    "src": "/assets/images/products/sony/sony-sony-e-sel1850.png",
-    "sourcePage": "",
-    "sourceImage": "",
-    "method": "manual-admin",
-    "fetchedAt": "2026-08-30T09:39:12.623Z",
-    "width": 144,
-    "height": 108,
-    "usageReviewRequired": true
-  },
-  "Sony α99 II": {
-    "src": "/assets/images/products/sony/ext-sony-sony-99-ii.jpg",
-    "sourcePage": "",
-    "sourceImage": "",
-    "method": "manual-admin",
-    "fetchedAt": "2026-08-30T11:31:16.915Z",
-    "width": 330,
-    "height": 330,
-    "usageReviewRequired": true
   }
 }

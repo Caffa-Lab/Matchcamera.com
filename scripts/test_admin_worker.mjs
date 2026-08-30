@@ -54,7 +54,13 @@ async function main() {
   const count = state.files["public/data/products.json"].length
     + state.files["public/data/system-expansion.json"].length
     + state.files["public/data/official-partner-products.json"].length;
-  assert(response.status === 200 && count === 1170, "admin state product count mismatch");
+  const expectedCount = (await Promise.all([
+    "public/data/products.json",
+    "public/data/system-expansion.json",
+    "public/data/official-partner-products.json",
+  ].map(async (file) => JSON.parse(await fs.readFile(path.join(root, file), "utf8")).length)))
+    .reduce((sum, value) => sum + value, 0);
+  assert(response.status === 200 && count === expectedCount, "admin state product count mismatch");
   assert(state.writable === false && state.source === "local-assets", "tokenless local state must be read-only");
 
   response = await worker.fetch(new Request("http://localhost/admin/api/commit", {
