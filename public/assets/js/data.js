@@ -256,4 +256,5 @@ export function productKey(p){ return p.modelCode || p.model || p.id; }
 export function brandSlug(name=''){
   return String(name).toLowerCase().normalize('NFKD').replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
 }
-export function brandLogoUrl(name=''){ return `/assets/images/brands/${brandSlug(name)}.svg`; }
+const PNG_BRAND_LOGOS=new Set(['sony','canon','fujifilm','leica','nikon','olympus','om-system','panasonic','pentax','ricoh','sigma','tamron','samyang']);
+export function brandLogoUrl(name=''){const slug=brandSlug(name);return `/assets/images/brands/${slug}.${PNG_BRAND_LOGOS.has(slug)?'png':'svg'}`;}

@@ -6,7 +6,7 @@ const esc=(v='')=>String(v).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'
 const isSale=p=>p.currentSale==='예'||p.saleStatus==='현재 판매';const keyOf=p=>p?.id||productKey(p);
 function toast(m){const el=$('#toast');el.textContent=m;el.classList.add('show');clearTimeout(toast.t);toast.t=setTimeout(()=>el.classList.remove('show'),1700)}
 function optionList(v,l){return `<option value="all">${l}</option>`+v.map(x=>`<option value="${esc(x)}">${esc(x)}</option>`).join('')}
-function productIcon(p){if(p.imageSrc)return `<span class="catalog-thumb" style="background:#fff"><img src="${esc(p.imageSrc)}" alt="" style="width:100%;height:100%;object-fit:contain;padding:3px" onerror="this.remove()"></span>`;return `<span class="catalog-thumb" style="background:#fff;display:grid;place-items:center"><img src="${esc(brandLogoUrl(p.manufacturer))}" alt="${esc(p.manufacturer)}" style="max-width:82%;max-height:30px" onerror="this.hidden=true;this.nextElementSibling.hidden=false"><b hidden style="font-size:8px;color:#6c7580">${esc(p.manufacturer)}</b></span>`}
+function productIcon(p){if(p.imageSrc)return `<span class="catalog-thumb" style="background:#fff"><img src="${esc(p.imageSrc)}" alt="" style="width:100%;height:100%;object-fit:contain;padding:3px" onerror="this.remove()"></span>`;return `<span class="catalog-thumb" style="background:#fff;display:grid;place-items:center;overflow:hidden"><img src="${esc(brandLogoUrl(p.manufacturer))}" alt="${esc(p.manufacturer)}" style="width:100%;height:100%;object-fit:contain;padding:3px" onerror="this.hidden=true;this.nextElementSibling.hidden=false"><b hidden style="font-size:8px;color:#6c7580">${esc(p.manufacturer)}</b></span>`}
 
 function selectedSlotVisual(p,kind='body'){
   if(!p){
