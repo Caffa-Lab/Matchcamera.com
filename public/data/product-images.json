@@ -9671,5 +9671,20 @@
     "extractMethod": "direct-image",
     "fetchedAt": "2026-08-28T14:18:49.793560+00:00",
     "usageReviewRequired": true
+  },
+  "Panasonic LEICA DG SUMMILUX 15mm F1.7 ASPH.": {
+    "src": "/assets/images/products/panasonic/panasonic-micro-four-thirds-leica-dg-summilux-15mm-f1-7-asph.webp",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Panasonic_LUMIX_DMC-GX80_et_DG_SUMMILUX_15_mm.jpg",
+    "sourceImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Panasonic_LUMIX_DMC-GX80_et_DG_SUMMILUX_15_mm.jpg/960px-Panasonic_LUMIX_DMC-GX80_et_DG_SUMMILUX_15_mm.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "manufacturer": "Panasonic",
+    "modelCode": "LEICA DG SUMMILUX 15mm F1.7 ASPH.",
+    "width": 900,
+    "height": 675,
+    "method": "wikimedia-commons",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "artist": "Jean-François Azens",
+    "credit": "Own work",
+    "fetchedAt": "2026-08-29T17:07:53.412840+00:00"
   }
 }
