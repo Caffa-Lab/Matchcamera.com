@@ -1,0 +1,39 @@
+name: Deploy Matchcamera Worker
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+concurrency:
+  group: matchcamera-production
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  deploy:
+    name: Validate and deploy
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v6
+
+      - name: Validate admin and homepage
+        run: |
+          node --check public/admin/admin.js
+          node --check public/assets/js/home.js
+          node --check worker/index.js
+          node scripts/test_admin_worker.mjs
+          python3 scripts/check_homepage.py
+
+      - name: Deploy Worker
+        uses: cloudflare/wrangler-action@v4
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          wranglerVersion: "4.127.1"
+          command: deploy

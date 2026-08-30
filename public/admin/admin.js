@@ -364,7 +364,7 @@ async function commit(changes, message) {
   setLoading(true, "GitHub에 안전하게 저장하는 중");
   try {
     const result = await api("commit", { method: "POST", body: JSON.stringify({ baseHeadSha: snapshot.headSha, message, changes }) });
-    toast(`저장 완료 · ${result.headSha.slice(0, 8)}`);
+    toast(`저장 완료 · 자동 배포 대기 · ${result.headSha.slice(0, 8)}`);
     $("#editorDialog").close();
     await loadState(false);
   } catch (error) {
