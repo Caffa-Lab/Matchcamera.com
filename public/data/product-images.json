@@ -8440,12 +8440,10 @@
     "src": "/assets/images/products/canon/canon-canon-ef-m-eos-m50.webp",
     "sourcePage": "https://estore.kr.canon/estore/detailview/17594",
     "sourceImage": "https://image.kr.canon//pds/product/1582002176832_PJvDckwHDv.jpg",
-    "manufacturer": "Canon",
+    "method": "canon-korea-estore",
+    "fetchedAt": "2026-08-28T12:10:17.668666+00:00",
     "width": 900,
     "height": 600,
-    "method": "canon-korea-estore",
-    "extractMethod": "direct-image",
-    "fetchedAt": "2026-08-28T12:10:17.668666+00:00",
     "usageReviewRequired": true
   },
   "Canon EOS R": {
