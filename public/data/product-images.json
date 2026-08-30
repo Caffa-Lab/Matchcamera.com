@@ -9226,18 +9226,6 @@
     "fetchedAt": "2026-08-28T12:22:14.339561+00:00",
     "usageReviewRequired": true
   },
-  "Canon EOS 7D Mark II": {
-    "src": "/assets/images/products/canon/ext-canon-canon-eos-7d-mark-ii.webp",
-    "sourcePage": "https://estore.kr.canon/estore/detailview/16600",
-    "sourceImage": "https://image.kr.canon//pds/product/1563954554205_z4PUCqayCn.jpg",
-    "manufacturer": "Canon",
-    "width": 900,
-    "height": 509,
-    "method": "canon-korea-estore",
-    "extractMethod": "direct-image",
-    "fetchedAt": "2026-08-28T12:23:11.249947+00:00",
-    "usageReviewRequired": true
-  },
   "Canon EOS 7D": {
     "src": "/assets/images/products/canon/ext-canon-canon-eos-7d.webp",
     "sourcePage": "https://estore.kr.canon/estore/detailview/16600",
