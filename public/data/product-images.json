@@ -9322,18 +9322,6 @@
     "fetchedAt": "2026-08-28T12:24:40.878377+00:00",
     "usageReviewRequired": true
   },
-  "Canon EOS 1200D": {
-    "src": "/assets/images/products/canon/ext-canon-canon-eos-1200d.webp",
-    "sourcePage": "https://estore.kr.canon/estore/detailview/16604",
-    "sourceImage": "https://image.kr.canon//pds/product/1563957702835_SPeYYqXRMG.jpg",
-    "manufacturer": "Canon",
-    "width": 900,
-    "height": 509,
-    "method": "canon-korea-estore",
-    "extractMethod": "direct-image",
-    "fetchedAt": "2026-08-28T12:26:12.281555+00:00",
-    "usageReviewRequired": true
-  },
   "Canon EF-S 18-135mm f/3.5-5.6 IS USM": {
     "src": "/assets/images/products/canon/ext-canon-canon-ef-canon-ef-s-18-135mm-f-3-5-5-6-is-usm.webp",
     "sourcePage": "https://estore.kr.canon/estore/detailview/10608",
