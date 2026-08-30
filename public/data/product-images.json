@@ -8914,18 +8914,6 @@
     "fetchedAt": "2026-08-28T12:17:28.655144+00:00",
     "usageReviewRequired": true
   },
-  "Canon RF14mm F1.4 L VCM": {
-    "src": "/assets/images/products/canon/canon-canon-rf-rf14mm.webp",
-    "sourcePage": "https://estore.kr.canon/estore/detailview/42505",
-    "sourceImage": "https://image.kr.canon/pds/editor/upload/product/mirrorless/L345/L345-1_04.jpg",
-    "manufacturer": "Canon",
-    "width": 416,
-    "height": 900,
-    "method": "canon-korea-estore",
-    "extractMethod": "direct-image",
-    "fetchedAt": "2026-08-28T12:17:35.995710+00:00",
-    "usageReviewRequired": true
-  },
   "Canon RF16mm F2.8 STM": {
     "src": "/assets/images/products/canon/canon-canon-rf-rf16mm.webp",
     "sourcePage": "https://estore.kr.canon/estore/detailview/21633",
