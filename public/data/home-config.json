@@ -1,10 +1,34 @@
 {
   "version": 1,
   "banners": [
-    { "slot": 1, "src": "/assets/images/banner/Banner1.webp", "href": "", "alt": "Matchcamera Banner 1", "enabled": true },
-    { "slot": 2, "src": "/assets/images/banner/Banner2.webp", "href": "", "alt": "Matchcamera Banner 2", "enabled": true },
-    { "slot": 3, "src": "/assets/images/banner/Banner3.webp", "href": "", "alt": "Matchcamera Banner 3", "enabled": true },
-    { "slot": 4, "src": "/assets/images/banner/Banner4.webp", "href": "", "alt": "Matchcamera Banner 4", "enabled": true }
+    {
+      "slot": 1,
+      "src": "/assets/images/banner/Banner1.webp",
+      "href": "https://matchcamera.com/builder/?mode=body",
+      "alt": "Matchcamera Banner 1",
+      "enabled": true
+    },
+    {
+      "slot": 2,
+      "src": "/assets/images/banner/Banner2.webp",
+      "href": "https://www.instagram.com/caffa.jpeg/",
+      "alt": "Matchcamera Banner 2",
+      "enabled": true
+    },
+    {
+      "slot": 3,
+      "src": "/assets/images/banner/Banner3.webp",
+      "href": "",
+      "alt": "Matchcamera Banner 3",
+      "enabled": false
+    },
+    {
+      "slot": 4,
+      "src": "/assets/images/banner/Banner4.webp",
+      "href": "",
+      "alt": "Matchcamera Banner 4",
+      "enabled": false
+    }
   ],
   "featuredBodyIds": [
     "sony-바디-sony-e-ilce-7m5",
@@ -18,5 +42,5 @@
     "nikon-렌즈-nikon-z-nikkor-z-24-70mm-f2-8-s-ii",
     "fujifilm-렌즈-fujifilm-x-xf16-55mmf2-8-2"
   ],
-  "updatedAt": "2026-08-30T00:00:00.000Z"
+  "updatedAt": "2026-08-30T09:50:59.965Z"
 }
