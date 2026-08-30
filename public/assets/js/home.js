@@ -1,4 +1,5 @@
 import {loadProducts, money, productLabel, brandLogoUrl} from './data.js';
+import {openProductDetail} from './product-detail.js';
 
 const $ = s => document.querySelector(s);
 const esc = (v='') => String(v).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -116,7 +117,7 @@ function visual(p){
 }
 function card(p){
   const format=p.type==='바디'?(p.sensorFormat||p.cameraSystem||''):(p.focalLength||p.lensFormat||'');
-  return `<a class="featured-card" href="/database/?q=${encodeURIComponent(productLabel(p))}">${visual(p)}<small>${esc(p.manufacturer)} · ${esc(p.mount||'')}</small><h3>${esc(productLabel(p))}</h3><div class="featured-meta">${esc(format)}${p.releaseYear?` · ${p.releaseYear}`:''}</div><div class="featured-price">${esc(money(p.currentPriceKrw))}</div></a>`;
+  return `<article class="featured-card" data-product-detail="${esc(p.id)}" role="button" tabindex="0" aria-label="${esc(productLabel(p))} 상세 보기">${visual(p)}<small>${esc(p.manufacturer)} · ${esc(p.mount||'')}</small><h3>${esc(productLabel(p))}</h3><div class="featured-meta">${esc(format)}${p.releaseYear?` · ${p.releaseYear}`:''}</div><div class="featured-price">${esc(money(p.currentPriceKrw))}</div></article>`;
 }
 
 try{
@@ -126,6 +127,17 @@ try{
   const lenses=configuredProducts(products,config.featuredLensIds,'렌즈',preferredLenses);
   $('#featuredBodies').innerHTML=bodies.map(card).join('');
   $('#featuredLenses').innerHTML=lenses.map(card).join('');
+  const openFromCard=target=>{
+    const card=target.closest('[data-product-detail]');
+    if(card)openProductDetail(products.find(p=>p.id===card.dataset.productDetail));
+  };
+  document.addEventListener('click',event=>openFromCard(event.target));
+  document.addEventListener('keydown',event=>{
+    if((event.key==='Enter'||event.key===' ')&&event.target.matches('[data-product-detail]')){
+      event.preventDefault();
+      openFromCard(event.target);
+    }
+  });
 }catch(error){
   console.error(error);
   renderBanners({banners:defaultBanners});
