@@ -9214,18 +9214,6 @@
     "fetchedAt": "2026-08-28T12:21:14.400654+00:00",
     "usageReviewRequired": true
   },
-  "Canon EOS-1D X Mark II": {
-    "src": "/assets/images/products/canon/ext-canon-canon-eos-1d-x-mark-ii.webp",
-    "sourcePage": "https://estore.kr.canon/estore/detailview/16542",
-    "sourceImage": "https://image.kr.canon//pds/product/1563957138197_cLJGYXlSuU.jpg",
-    "manufacturer": "Canon",
-    "width": 900,
-    "height": 509,
-    "method": "canon-korea-estore",
-    "extractMethod": "direct-image",
-    "fetchedAt": "2026-08-28T12:21:21.815086+00:00",
-    "usageReviewRequired": true
-  },
   "Canon EOS-1D X": {
     "src": "/assets/images/products/canon/ext-canon-canon-eos-1d-x.webp",
     "sourcePage": "https://estore.kr.canon/estore/detailview/17391",
