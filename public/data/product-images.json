@@ -9686,5 +9686,15 @@
     "artist": "Jean-François Azens",
     "credit": "Own work",
     "fetchedAt": "2026-08-29T17:07:53.412840+00:00"
+  },
+  "Sony E 18-50mm F4-5.6": {
+    "src": "https://support.d-imaging.sony.co.jp/www/cscs/common/product_image/middle/SEL1850.png",
+    "sourcePage": "",
+    "sourceImage": "",
+    "method": "manual-admin",
+    "fetchedAt": "2026-08-30T09:39:12.623Z",
+    "width": null,
+    "height": null,
+    "usageReviewRequired": true
   }
 }
