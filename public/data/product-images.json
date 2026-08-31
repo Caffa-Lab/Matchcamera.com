@@ -6330,18 +6330,6 @@
     "credit": "Own work",
     "fetchedAt": "2026-08-28T10:56:50.133604+00:00"
   },
-  "Tamron 28-75mm F2.8 Di III VXD G2": {
-    "src": "/assets/images/products/tamron/tamron-nikon-z-a063-nikon-z.webp",
-    "sourcePage": "https://sunphoto.kr/product/%ED%83%90%EB%A1%A0-28-75mm-f28-di-iii-vxd-g2-a063-for-nikon-z-mount/1123/category/44/display/1/",
-    "sourceImage": "https://ecimg.cafe24img.com/pg1313b16629550065/sunphoto3/web/product/extra/big/20250828/93121e0fb4b19488a5488ce2005dbf6d.png",
-    "manufacturer": "Tamron",
-    "width": 900,
-    "height": 745,
-    "method": "sunphoto-official-korea",
-    "extractMethod": "direct-image",
-    "fetchedAt": "2026-08-28T14:07:53.957548+00:00",
-    "usageReviewRequired": true
-  },
   "Tamron 28-200mm F2.8-5.6 Di III RXD": {
     "src": "/assets/images/products/tamron/tamron-sony-e-a071-sony-e.webp",
     "sourcePage": "https://sunphoto.kr/product/%ED%83%90%EB%A1%A0-28-200mm-f28-56-di-iii-rxd-a071-for-sony-e-mount/1608/category/43/display/1/",
@@ -6390,18 +6378,6 @@
     "fetchedAt": "2026-08-28T14:08:33.215755+00:00",
     "usageReviewRequired": true
   },
-  "Tamron 35-150mm F2-2.8 Di III VXD": {
-    "src": "/assets/images/products/tamron/tamron-nikon-z-a058-nikon-z.webp",
-    "sourcePage": "https://sunphoto.kr/product/%ED%83%90%EB%A1%A0-35-150mm-f2-28-di-iii-vxd-a058-for-nikon-z-mount/968/category/44/display/1/",
-    "sourceImage": "https://ecimg.cafe24img.com/pg1313b16629550065/sunphoto3/web/product/extra/big/20250828/3f731eec51aac902a21ac0c160f0e6ca.png",
-    "manufacturer": "Tamron",
-    "width": 900,
-    "height": 900,
-    "method": "sunphoto-official-korea",
-    "extractMethod": "direct-image",
-    "fetchedAt": "2026-08-28T14:08:49.171251+00:00",
-    "usageReviewRequired": true
-  },
   "Tamron 50-300mm F4.5-6.3 Di III VC VXD": {
     "src": "/assets/images/products/tamron/tamron-sony-e-a069-sony-e.webp",
     "sourcePage": "https://sunphoto.kr/product/%ED%83%90%EB%A1%A0-50-300mm-f45-63-di-iii-vc-vxd-a069-for-sony-e-mount/1084/category/43/display/1/",
@@ -6413,33 +6389,6 @@
     "extractMethod": "direct-image",
     "fetchedAt": "2026-08-28T14:08:56.956101+00:00",
     "usageReviewRequired": true
-  },
-  "Tamron 50-400mm F4.5-6.3 Di III VC VXD": {
-    "src": "/assets/images/products/tamron/tamron-nikon-z-a067-nikon-z.webp",
-    "sourcePage": "https://sunphoto.kr/product/%ED%83%90%EB%A1%A0-50-400mm-f45-63-di-iii-vc-vxd-a067-for-nikon-z-mount/1878/category/44/display/1/",
-    "sourceImage": "https://ecimg.cafe24img.com/pg1313b16629550065/sunphoto3/web/product/extra/big/20250828/5b90614766e7b5f832caf5929e4de174.png",
-    "manufacturer": "Tamron",
-    "width": 900,
-    "height": 900,
-    "method": "sunphoto-official-korea",
-    "extractMethod": "direct-image",
-    "fetchedAt": "2026-08-28T14:09:12.708609+00:00",
-    "usageReviewRequired": true
-  },
-  "Tamron 70-180mm F2.8 Di III VXD": {
-    "src": "/assets/images/products/tamron/tamron-sony-e-a056-sony-e.webp",
-    "sourcePage": "https://commons.wikimedia.org/wiki/File:Tamron_70-180mm_F_2.8_Di_III_VC_VXD_G2_(model_A065),_Sony_E_by_Henry_S%C3%B6derlund.jpg",
-    "sourceImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Tamron_70-180mm_F_2.8_Di_III_VC_VXD_G2_%28model_A065%29%2C_Sony_E_by_Henry_S%C3%B6derlund.jpg/960px-Tamron_70-180mm_F_2.8_Di_III_VC_VXD_G2_%28model_A065%29%2C_Sony_E_by_Henry_S%C3%B6derlund.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "manufacturer": "Tamron",
-    "modelCode": "A056 [Sony E]",
-    "width": 720,
-    "height": 900,
-    "method": "wikimedia-commons",
-    "license": "CC BY 2.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-    "artist": "Henry Söderlund",
-    "credit": "https://www.flickr.com/photos/hrns/53204123923/",
-    "fetchedAt": "2026-08-28T10:57:05.929470+00:00"
   },
   "Tamron 70-180mm F2.8 Di III VC VXD G2": {
     "src": "/assets/images/products/tamron/tamron-nikon-z-a065-nikon-z.webp",
@@ -6501,21 +6450,6 @@
     "fetchedAt": "2026-08-28T14:10:50.699194+00:00",
     "usageReviewRequired": true
   },
-  "Tamron 14-150mm F3.5-5.8 Di III": {
-    "src": "/assets/images/products/tamron/tamron-micro-four-thirds-c001-micro-four-thirds.webp",
-    "sourcePage": "https://www.tamron.com/global/consumer/lenses/",
-    "sourceImage": "https://www.tamron.com/global/ogp.png",
-    "manufacturer": "Tamron",
-    "modelCode": "C001 [Micro Four Thirds]",
-    "width": 900,
-    "height": 473,
-    "method": "official-page",
-    "license": "",
-    "licenseUrl": "",
-    "artist": "",
-    "credit": "",
-    "fetchedAt": "2026-08-28T10:57:20.179205+00:00"
-  },
   "Tamron 17-70mm F2.8 Di III-A VC RXD": {
     "src": "/assets/images/products/tamron/tamron-canon-rf-b070-canon-rf.webp",
     "sourcePage": "https://sunphoto.kr/product/%ED%83%90%EB%A1%A0-17-70mm-f28-di-iii-a-vc-rxd-b070-for-canon-rf-mount/3284/category/512/display/1/",
@@ -6527,21 +6461,6 @@
     "extractMethod": "direct-image",
     "fetchedAt": "2026-08-28T14:11:24.721347+00:00",
     "usageReviewRequired": true
-  },
-  "Tamron 18-200mm F3.5-6.3 Di III VC": {
-    "src": "/assets/images/products/tamron/tamron-sony-e-b011-sony-e.webp",
-    "sourcePage": "https://www.tamron.com/global/consumer/lenses/",
-    "sourceImage": "https://www.tamron.com/global/ogp.png",
-    "manufacturer": "Tamron",
-    "modelCode": "B011 [Sony E]",
-    "width": 900,
-    "height": 473,
-    "method": "official-page",
-    "license": "",
-    "licenseUrl": "",
-    "artist": "",
-    "credit": "",
-    "fetchedAt": "2026-08-28T10:57:27.973570+00:00"
   },
   "Tamron 18-300mm F3.5-6.3 Di III-A VC VXD": {
     "src": "/assets/images/products/tamron/tamron-canon-rf-b061-canon-rf.webp",
