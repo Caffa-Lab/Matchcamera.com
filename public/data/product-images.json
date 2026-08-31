@@ -8462,16 +8462,6 @@
     "fetchedAt": "2026-08-28T12:04:20.971922+00:00",
     "usageReviewRequired": true
   },
-  "Canon EOS M50": {
-    "src": "/assets/images/products/canon/canon-canon-ef-m-eos-m50.webp",
-    "sourcePage": "https://estore.kr.canon/estore/detailview/17594",
-    "sourceImage": "https://image.kr.canon//pds/product/1582002176832_PJvDckwHDv.jpg",
-    "method": "canon-korea-estore",
-    "fetchedAt": "2026-08-28T12:10:17.668666+00:00",
-    "width": 900,
-    "height": 600,
-    "usageReviewRequired": true
-  },
   "Canon EOS R": {
     "src": "/assets/images/products/canon/canon-canon-rf-eos-r.webp",
     "sourcePage": "https://estore.kr.canon/estore/detailview/43095",
@@ -9250,66 +9240,6 @@
     "method": "canon-korea-estore",
     "extractMethod": "direct-image",
     "fetchedAt": "2026-08-28T12:22:14.339561+00:00",
-    "usageReviewRequired": true
-  },
-  "Canon EOS 7D": {
-    "src": "/assets/images/products/canon/ext-canon-canon-eos-7d.webp",
-    "sourcePage": "https://estore.kr.canon/estore/detailview/16600",
-    "sourceImage": "https://image.kr.canon//pds/product/1563954554205_z4PUCqayCn.jpg",
-    "manufacturer": "Canon",
-    "width": 900,
-    "height": 509,
-    "method": "canon-korea-estore",
-    "extractMethod": "direct-image",
-    "fetchedAt": "2026-08-28T12:23:18.344892+00:00",
-    "usageReviewRequired": true
-  },
-  "Canon EOS 90D": {
-    "src": "/assets/images/products/canon/ext-canon-canon-eos-90d.webp",
-    "sourcePage": "https://estore.kr.canon/estore/detailview/17596",
-    "sourceImage": "https://image.kr.canon//pds/product/1582002352344_Anna75nn6U.jpg",
-    "manufacturer": "Canon",
-    "width": 900,
-    "height": 600,
-    "method": "canon-korea-estore",
-    "extractMethod": "direct-image",
-    "fetchedAt": "2026-08-28T12:23:26.847937+00:00",
-    "usageReviewRequired": true
-  },
-  "Canon EOS 70D": {
-    "src": "/assets/images/products/canon/ext-canon-canon-eos-70d.webp",
-    "sourcePage": "https://estore.kr.canon/estore/detailview/16578",
-    "sourceImage": "https://image.kr.canon//pds/product/1563954125704_IDfeqlXMrI.jpg",
-    "manufacturer": "Canon",
-    "width": 900,
-    "height": 509,
-    "method": "canon-korea-estore",
-    "extractMethod": "direct-image",
-    "fetchedAt": "2026-08-28T12:23:39.294218+00:00",
-    "usageReviewRequired": true
-  },
-  "Canon EOS 850D": {
-    "src": "/assets/images/products/canon/ext-canon-canon-eos-850d.webp",
-    "sourcePage": "https://estore.kr.canon/estore/detailview/18291",
-    "sourceImage": "https://image.kr.canon//pds/product/1563955315991_gVfg3A71wq.jpg",
-    "manufacturer": "Canon",
-    "width": 900,
-    "height": 509,
-    "method": "canon-korea-estore",
-    "extractMethod": "direct-image",
-    "fetchedAt": "2026-08-28T12:24:17.371023+00:00",
-    "usageReviewRequired": true
-  },
-  "Canon EOS 750D": {
-    "src": "/assets/images/products/canon/ext-canon-canon-eos-750d.webp",
-    "sourcePage": "https://estore.kr.canon/estore/detailview/16606",
-    "sourceImage": "https://image.kr.canon//pds/product/1563954806741_Atj0GsiXLp.jpg",
-    "manufacturer": "Canon",
-    "width": 900,
-    "height": 509,
-    "method": "canon-korea-estore",
-    "extractMethod": "direct-image",
-    "fetchedAt": "2026-08-28T12:24:40.878377+00:00",
     "usageReviewRequired": true
   },
   "Canon EF-S 18-135mm f/3.5-5.6 IS USM": {
