@@ -426,6 +426,22 @@ async function handleAdmin(request, env) {
   }
 }
 
+async function serveAssetOrNotFound(request, env) {
+  const response = await env.ASSETS.fetch(request);
+  if (response.status !== 404 || !["GET", "HEAD"].includes(request.method)) return response;
+  const notFoundUrl = new URL("/404.html", request.url);
+  const notFound = await env.ASSETS.fetch(new Request(notFoundUrl, request));
+  if (!notFound.ok) return response;
+  const headers = new Headers(notFound.headers);
+  headers.set("Cache-Control", "no-store");
+  headers.set("X-Content-Type-Options", "nosniff");
+  return new Response(request.method === "HEAD" ? null : notFound.body, {
+    status: 404,
+    statusText: "Not Found",
+    headers,
+  });
+}
+
 export default {
   async fetch(request, env) {
     const url = new URL(request.url);
@@ -434,7 +450,7 @@ export default {
     }
     if (url.pathname === "/admin") return Response.redirect(`${url.origin}/admin/`, 308);
     if (url.pathname.startsWith(ADMIN_PREFIX)) return handleAdmin(request, env);
-    return env.ASSETS.fetch(request);
+    return serveAssetOrNotFound(request, env);
   },
 };
 

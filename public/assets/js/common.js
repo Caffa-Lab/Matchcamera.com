@@ -19,21 +19,11 @@ brandStyles.textContent = `
     min-width:max-content!important;
   }
   .brand-logo{
-    width:44px!important;height:44px!important;
-    display:block!important;flex:0 0 auto!important;
+    width:46px!important;height:46px!important;
+    display:block!important;flex:0 0 auto!important;object-fit:contain!important;
     filter:drop-shadow(0 5px 11px rgba(89,96,239,.16))
   }
-  .brand-word{
-    display:flex!important;
-    align-items:baseline!important;
-    gap:0!important;
-    font-size:19px!important;
-    letter-spacing:-.04em!important;
-    line-height:1!important;
-    white-space:nowrap!important;
-  }
-  .brand-word strong{font-weight:900!important;color:#121827!important}
-  .brand-word span{font-weight:800!important;color:#665cf2!important}
+  .brand-wordmark{width:158px!important;height:30px!important;display:block!important;object-fit:contain!important;object-position:left center!important}
 
   .category-nav{
     height:100%!important;
@@ -84,6 +74,7 @@ brandStyles.textContent = `
 
   @media(max-width:1450px){
     .top-nav{gap:10px!important}
+    .brand-wordmark{width:140px!important;height:26px!important}
     .category-nav a,.category-nav button{padding:0 9px!important;font-size:13px!important}
     .global-search{width:220px!important}
   }
@@ -93,7 +84,7 @@ brandStyles.textContent = `
   @media(max-width:980px){
     .site-header{height:68px!important}
     .brand-logo{width:40px!important;height:40px!important}
-    .brand-word{font-size:17px!important}
+    .brand-wordmark{width:126px!important;height:24px!important}
     .category-nav{overflow-x:auto!important;overflow-y:hidden!important;scrollbar-width:none!important}
     .category-nav::-webkit-scrollbar{display:none!important}
   }
@@ -101,19 +92,14 @@ brandStyles.textContent = `
     .site-header{height:62px!important}
     .top-nav{width:calc(100% - 20px)!important}
     .brand-logo{width:36px!important;height:36px!important}
-    .brand-word{display:none!important}
+    .brand-wordmark{display:none!important}
     .category-nav a,.category-nav button{padding:0 8px!important;font-size:12px!important}
   }
 `
 document.head.appendChild(brandStyles);
 
-const logoMark = `
-<svg class="brand-logo" viewBox="0 0 44 44" aria-hidden="true" focusable="false">
-  <defs><linearGradient id="mcLogoGradient" x1="4" y1="4" x2="40" y2="40" gradientUnits="userSpaceOnUse"><stop stop-color="#5968F2"/><stop offset="1" stop-color="#805AF5"/></linearGradient></defs>
-  <rect x="1" y="1" width="42" height="42" rx="12" fill="url(#mcLogoGradient)"/>
-  <path d="M13.5 16.5h4.2l2-2.8h4.8l2 2.8h4c1.7 0 3 1.3 3 3v9.8c0 1.7-1.3 3-3 3h-17c-1.7 0-3-1.3-3-3v-9.8c0-1.7 1.3-3 3-3Z" fill="none" stroke="#fff" stroke-width="2.25" stroke-linejoin="round"/>
-  <circle cx="22" cy="24" r="5.7" fill="none" stroke="#fff" stroke-width="2.25"/><circle cx="22" cy="24" r="2.2" fill="#fff"/><path d="M29.7 19.3h1.8" stroke="#fff" stroke-width="2.25" stroke-linecap="round"/>
-</svg>`;
+const logoMark = '<img class="brand-logo" src="/assets/images/matchcamera/symbol.png" alt="">';
+const logoWordmark = '<img class="brand-wordmark" src="/assets/images/matchcamera/wordmark.png" alt="">';
 
 const nav = [
   ['/', '홈', isHome],
@@ -133,7 +119,7 @@ if(header){
   header.innerHTML = `
     <header class="site-header">
       <div class="top-nav">
-        <a class="brand" href="/" aria-label="Matchcamera 홈">${logoMark}<span class="brand-word"><strong>Match</strong><span>camera</span></span></a>
+        <a class="brand" href="/" aria-label="Matchcamera 홈">${logoMark}${logoWordmark}</a>
         <nav class="category-nav" aria-label="주요 메뉴">${nav.map(([href,label,active])=>`<a href="${href}" class="${active?'active':''}">${label}</a>`).join('')}</nav>
         <form class="global-search" action="/database/" role="search">
           <input name="q" type="search" placeholder="통합 검색" aria-label="통합 검색">

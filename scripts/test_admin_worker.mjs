@@ -40,7 +40,14 @@ async function signedJwt(privateKey, payload, kid = "test-key") {
 
 async function main() {
   const localEnv = { ASSETS, ADMIN_DEV_BYPASS: "true" };
-  let response = await worker.fetch(new Request("http://localhost/admin/"), localEnv);
+  let response = await worker.fetch(new Request("http://localhost/builder/"), localEnv);
+  assert(response.status === 200, "existing public route must load normally");
+
+  response = await worker.fetch(new Request("http://localhost/not-a-real-matchcamera-address"), localEnv);
+  assert(response.status === 404, "unknown public route must keep HTTP 404 status");
+  assert((await response.text()).includes("잘못된 주소입니다."), "unknown public route must show the Korean 404 message");
+
+  response = await worker.fetch(new Request("http://localhost/admin/"), localEnv);
   assert(response.status === 200, "local admin HTML must load");
   assert(response.headers.get("Cache-Control")?.includes("no-store"), "admin HTML must not be cached");
   assert(response.headers.get("Content-Security-Policy")?.includes("frame-ancestors 'none'"), "admin CSP missing");
