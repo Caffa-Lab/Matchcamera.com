@@ -220,3 +220,5 @@
   font-weight:900;
 }
 .builder-page .price-breakdown-row.is-missing>strong{color:#d35c50;font-size:11px}
+.builder-page .summary-line.major span,
+.builder-page .summary-line.major strong{color:#ef3e36}
