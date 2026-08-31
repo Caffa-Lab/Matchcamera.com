@@ -22,7 +22,8 @@
         <button data-view="images" type="button"><span>04</span>이미지 관리</button>
         <button data-view="accessories" type="button"><span>05</span>액세서리</button>
         <button data-view="home" type="button"><span>06</span>홈 관리</button>
-        <button data-view="audit" type="button"><span>07</span>DB 검수</button>
+        <button data-view="manufacturers" type="button"><span>07</span>제조사 순서</button>
+        <button data-view="audit" type="button"><span>08</span>DB 검수</button>
       </nav>
       <div class="sidebar-foot">
         <div class="session-user"><span class="status-dot"></span><div><small>로그인 계정</small><strong id="sessionEmail">확인 중</strong></div></div>
@@ -35,6 +36,9 @@
         <div><p id="viewEyebrow">MATCHCAMERA DATABASE</p><h1 id="viewTitle">대시보드</h1></div>
         <div class="top-actions">
           <span id="syncState" class="sync-state">동기화 중</span>
+          <span id="pendingState" class="pending-state" hidden>변경 0개</span>
+          <button id="discardPending" class="button secondary" type="button" hidden>변경 취소</button>
+          <button id="deployPending" class="button primary deploy-button" type="button" disabled>변경사항 한 번에 배포</button>
           <button id="refreshButton" class="button secondary" type="button">새로고침</button>
         </div>
       </header>
@@ -97,7 +101,15 @@
         <div id="bannerEditor" class="banner-editor"></div>
         <div class="section-heading"><div><p>FEATURED PRODUCTS</p><h2>홈 대표 제품</h2><span>바디 4개와 렌즈 4개를 직접 선택합니다.</span></div></div>
         <div class="featured-editor"><article class="panel"><h3>대표 바디</h3><div id="featuredBodyEditor" class="select-stack"></div></article><article class="panel"><h3>대표 렌즈</h3><div id="featuredLensEditor" class="select-stack"></div></article></div>
-        <div class="sticky-save"><span>저장하면 GitHub 커밋 후 자동 배포가 시작됩니다.</span><button id="saveHome" class="button primary" type="button">홈 설정 저장</button></div>
+        <div class="sticky-save"><span>홈 변경사항을 추가한 뒤 상단의 ‘변경사항 한 번에 배포’를 누르세요.</span><button id="saveHome" class="button primary" type="button">홈 변경사항 추가</button></div>
+      </section>
+
+      <section class="view" data-page="manufacturers">
+        <div class="section-heading"><div><p>MANUFACTURER ORDER</p><h2>제조사 표시 순서</h2><span>▲·▼ 버튼으로 순서를 바꾼 뒤 변경사항에 추가하세요. 새 제조사는 목록 마지막에 자동 추가됩니다.</span></div></div>
+        <article class="panel manufacturer-panel">
+          <div id="manufacturerOrderList" class="manufacturer-order-list"></div>
+          <div class="manufacturer-order-actions"><button id="resetManufacturerOrder" class="button secondary" type="button">알파벳순으로 초기화</button><button id="saveManufacturerOrder" class="button primary" type="button">순서 변경사항 추가</button></div>
+        </article>
       </section>
 
       <section class="view" data-page="audit">

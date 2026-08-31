@@ -1,9 +1,10 @@
-import {brandLogoUrl, loadProducts, matchesSearch, money, productLabel} from './data.js';
+import {brandLogoUrl,loadProducts,loadManufacturerOrder,matchesSearch,money,productLabel} from './data.js';
 
 const $=selector=>document.querySelector(selector);
 const esc=(value='')=>String(value).replace(/[&<>"']/g,char=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
 const hasValue=value=>value!==null&&value!==undefined&&String(value).trim()!=='';
-const products=await loadProducts();
+const [products,manufacturerOrder]=await Promise.all([loadProducts(),loadManufacturerOrder()]);
+const manufacturerRanks=new Map(manufacturerOrder.map((brand,index)=>[brand,index]));
 const state={type:'바디',a:null,b:null};
 const pickers={
   a:{root:$('[data-picker="a"]'),input:$('#compareSearchA'),results:$('#compareResultsA')},
@@ -14,7 +15,7 @@ function typeProducts(){
   return products.filter(product=>product.type===state.type).sort((a,b)=>{
     const currentA=a.currentSale==='예'?1:0;
     const currentB=b.currentSale==='예'?1:0;
-    return currentB-currentA||(b.releaseYear||0)-(a.releaseYear||0)||productLabel(a).localeCompare(productLabel(b),'ko');
+    return (manufacturerRanks.get(a.manufacturer)??Number.MAX_SAFE_INTEGER)-(manufacturerRanks.get(b.manufacturer)??Number.MAX_SAFE_INTEGER)||currentB-currentA||(b.releaseYear||0)-(a.releaseYear||0)||productLabel(a).localeCompare(productLabel(b),'ko');
   });
 }
 

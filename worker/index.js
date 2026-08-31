@@ -1,7 +1,7 @@
 const ADMIN_PREFIX = "/admin/";
 const ADMIN_API_PREFIX = "/admin/api/";
 const GITHUB_API_VERSION = "2022-11-28";
-const MAX_REQUEST_BYTES = 12 * 1024 * 1024;
+const MAX_REQUEST_BYTES = 90 * 1024 * 1024;
 const MAX_BINARY_BYTES = 6 * 1024 * 1024;
 
 const DATA_PATHS = [
@@ -13,14 +13,16 @@ const DATA_PATHS = [
   "public/data/batteries.json",
   "public/data/mount-adapters.json",
   "public/data/home-config.json",
+  "public/data/manufacturer-order.json",
 ];
 
-const REQUIRED_DATA_PATHS = new Set(DATA_PATHS.slice(0, -1));
+const REQUIRED_DATA_PATHS = new Set(DATA_PATHS.slice(0, 7));
 const PRODUCT_PATHS = new Set(DATA_PATHS.slice(0, 3));
 const ARRAY_DATA_PATHS = new Set([
   ...DATA_PATHS.slice(0, 4),
   "public/data/batteries.json",
   "public/data/mount-adapters.json",
+  "public/data/manufacturer-order.json",
 ]);
 
 const ADMIN_HEADERS = {
@@ -190,6 +192,12 @@ function defaultHomeConfig() {
   };
 }
 
+function defaultDataValue(path) {
+  if (path === "public/data/home-config.json") return defaultHomeConfig();
+  if (path === "public/data/manufacturer-order.json") return [];
+  return null;
+}
+
 async function readGithubSnapshot(env) {
   const { owner, repo, branch } = repoSettings(env);
   const root = `/repos/${encodeURIComponent(owner)}/${encodeURIComponent(repo)}`;
@@ -207,7 +215,7 @@ async function readGithubSnapshot(env) {
     const entry = byPath.get(path);
     if (!entry) {
       if (REQUIRED_DATA_PATHS.has(path)) throw new HttpError(502, `필수 데이터 파일이 없습니다: ${path}`);
-      files[path] = defaultHomeConfig();
+      files[path] = defaultDataValue(path);
       return;
     }
     const blob = await githubRequest(env, `${root}/git/blobs/${encodeURIComponent(entry.sha)}`);
@@ -224,7 +232,7 @@ async function readLocalAssetState(request, env) {
     const response = await env.ASSETS.fetch(new Request(assetUrl, request));
     if (!response.ok) {
       if (REQUIRED_DATA_PATHS.has(path)) throw new HttpError(502, `로컬 데이터 파일이 없습니다: ${path}`);
-      files[path] = defaultHomeConfig();
+      files[path] = defaultDataValue(path);
       continue;
     }
     files[path] = await response.json();
@@ -256,6 +264,11 @@ function validateJsonValue(path, value) {
   if (!DATA_PATHS.includes(path)) throw new HttpError(400, `수정할 수 없는 데이터 경로입니다: ${path}`);
   if (ARRAY_DATA_PATHS.has(path) && !Array.isArray(value)) throw new HttpError(400, `${path}는 JSON 배열이어야 합니다.`);
   if (path === "public/data/product-images.json" && !isPlainObject(value)) throw new HttpError(400, "product-images.json은 JSON 객체여야 합니다.");
+  if (path === "public/data/manufacturer-order.json") {
+    if (value.length > 100 || value.some((brand) => typeof brand !== "string" || !brand.trim()) || new Set(value).size !== value.length) {
+      throw new HttpError(400, "제조사 순서는 중복 없는 문자열 배열이어야 합니다.");
+    }
+  }
   if (PRODUCT_PATHS.has(path)) {
     const ids = new Set();
     for (const row of value) {
@@ -301,7 +314,7 @@ async function commitChanges(env, payload) {
   const { owner, repo, branch } = repoSettings(env);
   const root = `/repos/${encodeURIComponent(owner)}/${encodeURIComponent(repo)}`;
   const changes = Array.isArray(payload?.changes) ? payload.changes : [];
-  if (!changes.length || changes.length > 12) throw new HttpError(400, "한 번에 1~12개 파일만 수정할 수 있습니다.");
+  if (!changes.length || changes.length > 64) throw new HttpError(400, "한 번에 1~64개 파일만 수정할 수 있습니다.");
   const seen = new Set();
   const normalized = [];
   for (const change of changes) {

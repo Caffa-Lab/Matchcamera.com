@@ -1,8 +1,8 @@
-import {loadAdapters,loadBatteries,money} from './data.js';
+import {loadAdapters,loadBatteries,loadManufacturerOrder,sortManufacturers,money} from './data.js';
 
 const $=s=>document.querySelector(s);
 const esc=(v='')=>String(v).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-const state={all:[],q:'',brand:'all',from:'all',to:'all',batteries:[],batteryQ:'',batteryBrand:'all',batterySale:'all'};
+const state={all:[],manufacturerOrder:[],q:'',brand:'all',from:'all',to:'all',batteries:[],batteryQ:'',batteryBrand:'all',batterySale:'all'};
 
 function options(values,label){
   return `<option value="all">${label}</option>`+
@@ -10,7 +10,7 @@ function options(values,label){
 }
 
 function setup(){
-  const vals=k=>[...new Set(state.all.map(x=>x[k]).filter(Boolean))].sort((a,b)=>a.localeCompare(b,'ko'));
+  const vals=k=>k==='manufacturer'?sortManufacturers([...new Set(state.all.map(x=>x[k]).filter(Boolean))],state.manufacturerOrder):[...new Set(state.all.map(x=>x[k]).filter(Boolean))].sort((a,b)=>a.localeCompare(b,'ko'));
   $('#adapterBrand').innerHTML=options(vals('manufacturer'),'모든 제조사');
   $('#adapterFrom').innerHTML=options(vals('fromMount'),'모든 렌즈측 마운트');
   $('#adapterTo').innerHTML=options(vals('toMount'),'모든 바디측 마운트');
@@ -41,8 +41,7 @@ function render(){
 
 
 function setupBatteries(){
-  const brands=[...new Set(state.batteries.map(x=>x.manufacturer).filter(Boolean))]
-    .sort((a,b)=>a.localeCompare(b,'ko'));
+  const brands=sortManufacturers([...new Set(state.batteries.map(x=>x.manufacturer).filter(Boolean))],state.manufacturerOrder);
   $('#batteryBrand').innerHTML=options(brands,'모든 제조사');
 }
 
@@ -119,7 +118,7 @@ function showCategory(category){
   history.replaceState(null,'',u);
 }
 
-[state.all,state.batteries]=await Promise.all([loadAdapters(),loadBatteries()]);
+[state.all,state.batteries,state.manufacturerOrder]=await Promise.all([loadAdapters(),loadBatteries(),loadManufacturerOrder()]);
 setup();
 setupBatteries();
 render();

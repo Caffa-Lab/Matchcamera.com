@@ -7,12 +7,13 @@ const PATHS = {
   batteries: "public/data/batteries.json",
   adapters: "public/data/mount-adapters.json",
   home: "public/data/home-config.json",
+  manufacturerOrder: "public/data/manufacturer-order.json",
 };
 const PRODUCT_PATHS = [PATHS.products, PATHS.expansion, PATHS.partners];
 const PAGE_SIZE = 50;
 const VIEW_TITLES = {
   dashboard: "대시보드", products: "제품 관리", prices: "가격 관리", images: "이미지 관리",
-  accessories: "액세서리", home: "홈 관리", audit: "DB 검수",
+  accessories: "액세서리", home: "홈 관리", manufacturers: "제조사 순서", audit: "DB 검수",
 };
 const PRICE_POLICY = "한국 공식 사이트/공식 유통사 정상가·정가만 사용. 최저가·병행수입·해외가격 제외.";
 
@@ -37,6 +38,9 @@ let priceByName = new Map();
 let pages = { products: 1, prices: 1, images: 1 };
 let currentEditor = null;
 let toastTimer = null;
+let manufacturerDraft = [];
+const pendingChanges = new Map();
+const pendingMessages = [];
 
 async function api(route, options = {}) {
   const response = await fetch(`/admin/api/${route}`, {
@@ -142,9 +146,19 @@ function issue(type, title, product, detail) {
   return { type, title, detail, product, sourceFile: product._sourceFile, sourceIndex: product._sourceIndex };
 }
 
-function uniqueBrands() {
-  return [...new Set(products.map((product) => product.manufacturer).filter(Boolean))].sort((a, b) => a.localeCompare(b, "ko"));
+function configuredManufacturerOrder() {
+  const available = [...new Set(products.map((product) => product.manufacturer).filter(Boolean))];
+  const configured = Array.isArray(files[PATHS.manufacturerOrder]) ? files[PATHS.manufacturerOrder] : [];
+  const ordered = configured.filter((brand, index) => available.includes(brand) && configured.indexOf(brand) === index);
+  return [...ordered, ...available.filter((brand) => !ordered.includes(brand)).sort((a, b) => a.localeCompare(b, "ko"))];
 }
+
+function manufacturerRank(name) {
+  const index = configuredManufacturerOrder().indexOf(name);
+  return index < 0 ? Number.MAX_SAFE_INTEGER : index;
+}
+
+function uniqueBrands() { return configuredManufacturerOrder(); }
 
 function fillSelect(selector, values, firstLabel) {
   const select = $(selector);
@@ -257,7 +271,7 @@ function renderImages() {
   const page = paged(filtered, "images");
   $("#imageGrid").innerHTML = page.rows.map((product) => {
     const image = imageFor(product);
-    return `<article class="image-card"><div class="image-visual">${image?.src ? `<img src="${esc(image.src)}" alt="${esc(label(product))}" loading="lazy">` : `<span class="missing">이미지 없음</span>`}</div><h3>${esc(label(product))}</h3><p>${esc(product.manufacturer || "-")} · ${esc(product.modelCode || product.id)}</p><button data-edit-image data-source="${esc(product._sourceFile)}" data-index="${product._sourceIndex}" type="button">이미지 ${image?.src ? "관리" : "추가"}</button></article>`;
+    return `<article class="image-card"><div class="image-visual">${image?.src ? `<img src="${esc(image.src)}" alt="${esc(label(product))}" loading="lazy">` : `<span class="missing">이미지 없음</span>`}</div><h3>${esc(label(product))}</h3><p>${esc(product.manufacturer || "-")} · ${esc(product.modelCode || product.id)}</p><div class="image-card-actions"><button data-edit-image data-source="${esc(product._sourceFile)}" data-index="${product._sourceIndex}" type="button">이미지 ${image?.src ? "관리" : "추가"}</button>${image?.src ? `<button class="image-delete-button" data-delete-image data-source="${esc(product._sourceFile)}" data-index="${product._sourceIndex}" type="button">삭제</button>` : ""}</div></article>`;
   }).join("") || `<div class="empty-state">검색 결과가 없습니다.</div>`;
   renderPagination("#imagePagination", "images", page.totalPages, renderImages);
 }
@@ -309,7 +323,16 @@ function renderHome() {
 }
 
 function productSort(a, b) {
-  return String(a.manufacturer || "").localeCompare(String(b.manufacturer || ""), "ko") || label(a).localeCompare(label(b), "ko");
+  return manufacturerRank(a.manufacturer) - manufacturerRank(b.manufacturer) || String(a.manufacturer || "").localeCompare(String(b.manufacturer || ""), "ko") || label(a).localeCompare(label(b), "ko");
+}
+
+function renderManufacturerOrder(reset = false) {
+  if (reset || !manufacturerDraft.length) manufacturerDraft = configuredManufacturerOrder();
+  $("#manufacturerOrderList").innerHTML = manufacturerDraft.map((brand, index) => `<div class="manufacturer-order-row"><span>${index + 1}</span><strong>${esc(brand)}</strong><div class="manufacturer-order-controls"><button data-manufacturer-move="up" data-manufacturer-index="${index}" type="button" aria-label="${esc(brand)} 위로" ${index === 0 ? "disabled" : ""}>▲</button><button data-manufacturer-move="down" data-manufacturer-index="${index}" type="button" aria-label="${esc(brand)} 아래로" ${index === manufacturerDraft.length - 1 ? "disabled" : ""}>▼</button></div></div>`).join("") || `<div class="empty-state">등록된 제조사가 없습니다.</div>`;
+}
+
+async function saveManufacturerOrder() {
+  await commit([{ path: PATHS.manufacturerOrder, value: [...manufacturerDraft] }], "Admin: update manufacturer display order");
 }
 
 function featuredSelects(name, selected, options) {
@@ -337,7 +360,7 @@ function renderAll() {
   fillSelect("#priceBrand", brands, "전체 제조사");
   fillSelect("#imageBrand", brands, "전체 제조사");
   $("#productSource").innerHTML = `<option value="">전체 데이터 파일</option>${PRODUCT_PATHS.map((path) => `<option value="${esc(path)}">${esc(sourceLabel(path))}</option>`).join("")}`;
-  renderDashboard(); renderProducts(); renderPrices(); renderImages(); renderAccessories(); renderHome(); renderAudit();
+  renderDashboard(); renderProducts(); renderPrices(); renderImages(); renderAccessories(); renderHome(); renderManufacturerOrder(); renderAudit();
 }
 
 async function loadState(showLoader = true) {
@@ -345,6 +368,7 @@ async function loadState(showLoader = true) {
   try {
     snapshot = await api("state");
     files = snapshot.files;
+    manufacturerDraft = [];
     rebuildIndexes();
     renderAll();
     $("#readonlyNotice").hidden = snapshot.writable;
@@ -359,18 +383,50 @@ async function loadState(showLoader = true) {
   }
 }
 
+function updatePendingUi() {
+  const count = pendingChanges.size;
+  $("#pendingState").hidden = count === 0;
+  $("#pendingState").textContent = `변경 ${count}개`;
+  $("#discardPending").hidden = count === 0;
+  $("#deployPending").disabled = count === 0 || !snapshot?.writable;
+}
+
 async function commit(changes, message) {
   if (!snapshot?.writable) return toast("현재 읽기 전용 모드입니다.");
-  setLoading(true, "GitHub에 안전하게 저장하는 중");
+  for (const change of changes) {
+    pendingChanges.set(change.path, clone(change));
+    if (Object.prototype.hasOwnProperty.call(change, "value")) files[change.path] = clone(change.value);
+  }
+  if (message) pendingMessages.push(message);
+  if ($("#editorDialog").open) $("#editorDialog").close();
+  rebuildIndexes();
+  renderAll();
+  updatePendingUi();
+  toast(`변경사항에 추가했습니다 · 현재 ${pendingChanges.size}개 파일`);
+}
+
+async function deployPending() {
+  if (!pendingChanges.size || !snapshot?.writable) return;
+  setLoading(true, "변경사항을 한 번에 저장하고 배포 요청하는 중");
   try {
-    const result = await api("commit", { method: "POST", body: JSON.stringify({ baseHeadSha: snapshot.headSha, message, changes }) });
-    toast(`저장 완료 · 자동 배포 대기 · ${result.headSha.slice(0, 8)}`);
-    $("#editorDialog").close();
+    const changes = [...pendingChanges.values()];
+    const result = await api("commit", { method: "POST", body: JSON.stringify({ baseHeadSha: snapshot.headSha, message: `Admin: publish ${changes.length} pending file changes`, changes }) });
+    pendingChanges.clear(); pendingMessages.length = 0;
+    updatePendingUi();
+    toast(`일괄 저장 완료 · 자동 배포 시작 · ${result.headSha.slice(0, 8)}`);
     await loadState(false);
   } catch (error) {
     toast(error.message);
-    if (/원격 저장소가 변경/.test(error.message)) await loadState(false);
+    if (/원격 저장소가 변경/.test(error.message)) toast("대기 중인 변경사항은 유지했습니다. 원격 변경 충돌을 먼저 해결해야 합니다.");
   } finally { setLoading(false); }
+}
+
+async function discardPending() {
+  if (!pendingChanges.size || !confirm("아직 배포하지 않은 모든 변경사항을 취소할까요?")) return;
+  pendingChanges.clear(); pendingMessages.length = 0;
+  updatePendingUi();
+  await loadState(false);
+  toast("대기 중인 변경사항을 취소했습니다.");
 }
 
 function field(name, title, value = "", options = {}) {
@@ -390,6 +446,7 @@ function openDialog(title, eyebrow, body, saveHandler, danger = "") {
   $("#dialogBody").innerHTML = body;
   $("#dialogDanger").innerHTML = danger;
   $("#dialogSave").onclick = saveHandler;
+  $("#dialogSave").textContent = "변경사항 추가";
   $("#dialogSave").disabled = !snapshot.writable;
   $("#editorDialog").showModal();
 }
@@ -787,7 +844,14 @@ function showView(view) {
 function bindEvents() {
   $$(".side-nav button").forEach((button) => button.addEventListener("click", () => showView(button.dataset.view)));
   $$('[data-go]').forEach((button) => button.addEventListener("click", () => showView(button.dataset.go)));
-  $("#refreshButton").addEventListener("click", () => loadState());
+  $("#refreshButton").addEventListener("click", () => {
+    if (pendingChanges.size && !confirm("배포하지 않은 변경사항을 취소하고 새로고침할까요?")) return;
+    pendingChanges.clear(); pendingMessages.length = 0; updatePendingUi(); loadState();
+  });
+  $("#deployPending").addEventListener("click", deployPending);
+  $("#discardPending").addEventListener("click", discardPending);
+  $("#saveManufacturerOrder").addEventListener("click", saveManufacturerOrder);
+  $("#resetManufacturerOrder").addEventListener("click", () => { manufacturerDraft = [...manufacturerDraft].sort((a, b) => a.localeCompare(b, "ko")); renderManufacturerOrder(); });
   [["#productSearch", renderProducts], ["#productBrand", renderProducts], ["#productType", renderProducts], ["#productSource", renderProducts], ["#priceSearch", renderPrices], ["#priceBrand", renderPrices], ["#priceStatus", renderPrices], ["#imageSearch", renderImages], ["#imageBrand", renderImages], ["#imageStatus", renderImages], ["#accessoryKind", renderAccessories], ["#accessorySearch", renderAccessories], ["#auditType", renderAudit], ["#auditSearch", renderAudit]].forEach(([selector, renderer]) => {
     $(selector).addEventListener($(selector).tagName === "INPUT" ? "input" : "change", () => { pages.products = pages.prices = pages.images = 1; renderer(); });
   });
@@ -801,6 +865,15 @@ function bindEvents() {
     if (priceButton) return openPriceEditor(getProduct(priceButton.dataset.source, priceButton.dataset.index));
     const imageButton = event.target.closest("[data-edit-image]");
     if (imageButton) return openImageEditor(getProduct(imageButton.dataset.source, imageButton.dataset.index));
+    const deleteImageButton = event.target.closest("[data-delete-image]");
+    if (deleteImageButton) { const product = getProduct(deleteImageButton.dataset.source, deleteImageButton.dataset.index); return deleteImage(product, imageFor(product)); }
+    const manufacturerMove = event.target.closest("[data-manufacturer-move]");
+    if (manufacturerMove) {
+      const index = Number(manufacturerMove.dataset.manufacturerIndex);
+      const target = index + (manufacturerMove.dataset.manufacturerMove === "up" ? -1 : 1);
+      if (target >= 0 && target < manufacturerDraft.length) [manufacturerDraft[index], manufacturerDraft[target]] = [manufacturerDraft[target], manufacturerDraft[index]];
+      renderManufacturerOrder(); return;
+    }
     const accessoryButton = event.target.closest("[data-edit-accessory]");
     if (accessoryButton) return openAccessoryEditor(accessoryButton.dataset.kind, Number(accessoryButton.dataset.index));
   });
@@ -808,6 +881,7 @@ function bindEvents() {
 
 async function boot() {
   bindEvents();
+  updatePendingUi();
   const initialView = location.hash.slice(1);
   if (VIEW_TITLES[initialView]) showView(initialView);
   setLoading(true, "관리자 세션 확인 중");
@@ -821,5 +895,7 @@ async function boot() {
     $("#sessionEmail").textContent = "인증 실패";
   } finally { setLoading(false); }
 }
+
+window.addEventListener("beforeunload", (event) => { if (pendingChanges.size) { event.preventDefault(); event.returnValue = ""; } });
 
 boot();

@@ -1,6 +1,7 @@
 let cache;
 let adapterCache;
 let batteryCache;
+let manufacturerOrderCache;
 
 const PRODUCT_URL = '/data/products.json';
 const EXPANSION_URL = '/data/system-expansion.json';
@@ -9,6 +10,7 @@ const KOREA_PRICE_URL = '/data/korea-prices.json';
 const IMAGE_MAP_URL = '/data/product-images.json';
 const ADAPTER_URL = '/data/mount-adapters.json';
 const BATTERY_URL = '/data/batteries.json';
+const MANUFACTURER_ORDER_URL = '/data/manufacturer-order.json';
 
 async function optionalJson(url, fallback){
   try{
@@ -225,6 +227,18 @@ export async function loadBatteries(){
   if(batteryCache) return batteryCache;
   batteryCache = await optionalJson(BATTERY_URL, []);
   return Array.isArray(batteryCache) ? batteryCache : [];
+}
+
+export async function loadManufacturerOrder(){
+  if(manufacturerOrderCache) return manufacturerOrderCache;
+  const value=await optionalJson(MANUFACTURER_ORDER_URL,[]);
+  manufacturerOrderCache=Array.isArray(value)?value.filter((brand,index)=>typeof brand==='string'&&brand.trim()&&value.indexOf(brand)===index):[];
+  return manufacturerOrderCache;
+}
+
+export function sortManufacturers(values,order=[]){
+  const rank=new Map(order.map((brand,index)=>[brand,index]));
+  return [...values].sort((a,b)=>(rank.get(a)??Number.MAX_SAFE_INTEGER)-(rank.get(b)??Number.MAX_SAFE_INTEGER)||String(a).localeCompare(String(b),'ko'));
 }
 
 export function batteryMatchesBody(battery, body){

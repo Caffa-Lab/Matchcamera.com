@@ -62,6 +62,7 @@ async function main() {
     .reduce((sum, value) => sum + value, 0);
   assert(response.status === 200 && count === expectedCount, "admin state product count mismatch");
   assert(state.writable === false && state.source === "local-assets", "tokenless local state must be read-only");
+  assert(Array.isArray(state.files["public/data/manufacturer-order.json"]), "manufacturer order must load as an array");
 
   response = await worker.fetch(new Request("http://localhost/admin/api/commit", {
     method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({}),
@@ -158,6 +159,23 @@ async function main() {
     });
     assert(response.status === 400, "fake WEBP data must be rejected before GitHub write");
 
+    response = await worker.fetch(new Request("https://matchcamera.com/admin/api/commit", {
+      method: "POST",
+      headers: {
+        "Cf-Access-Jwt-Assertion": token, "Content-Type": "application/json", "X-Matchcamera-Admin": "1",
+        Origin: "https://matchcamera.com", "Sec-Fetch-Site": "same-origin",
+      },
+      body: JSON.stringify({
+        baseHeadSha: oldHead,
+        message: "Reject duplicate manufacturer order",
+        changes: [{ path: "public/data/manufacturer-order.json", value: ["Sony", "Sony"] }],
+      }),
+    }), {
+      ASSETS, CF_ACCESS_TEAM_DOMAIN: team, CF_ACCESS_AUD: aud, GITHUB_ADMIN_TOKEN: "test-token",
+      GITHUB_REPO_OWNER: "Caffa-Lab", GITHUB_REPO_NAME: "Matchcamera.com", GITHUB_REPO_BRANCH: "main",
+    });
+    assert(response.status === 400, "duplicate manufacturer order must be rejected before GitHub write");
+
     const webpBase64 = Buffer.from([0x52, 0x49, 0x46, 0x46, 0, 0, 0, 0, 0x57, 0x45, 0x42, 0x50]).toString("base64");
     response = await worker.fetch(new Request("https://matchcamera.com/admin/api/commit", {
       method: "POST",
@@ -170,6 +188,7 @@ async function main() {
         message: "Admin integration test",
         changes: [
           { path: "public/data/home-config.json", value: state.files["public/data/home-config.json"] },
+          { path: "public/data/manufacturer-order.json", value: ["Sony", "Canon", "Nikon"] },
           { path: "public/assets/images/banner/Banner2.webp", base64: webpBase64 },
         ],
       }),
@@ -181,6 +200,7 @@ async function main() {
     assert(response.status === 200 && committed.headSha === newHead, "atomic GitHub commit must complete");
     assert(calls.some((call) => call.method === "POST" && call.url.endsWith("/git/trees") && call.body.base_tree === baseTree), "new tree must use current tree as base");
     assert(calls.some((call) => call.method === "POST" && call.url.endsWith("/git/trees") && call.body.tree.some((entry) => entry.path === "public/assets/images/banner/Banner2.webp")), "WEBP banner must be included in the Git tree");
+    assert(calls.some((call) => call.method === "POST" && call.url.endsWith("/git/trees") && call.body.tree.some((entry) => entry.path === "public/data/manufacturer-order.json")), "manufacturer order must be committed in the same tree");
     assert(calls.some((call) => call.method === "PATCH" && call.url.endsWith("/git/refs/heads/main") && call.body.force === false), "branch update must not force push");
   } finally {
     globalThis.fetch = originalFetch;

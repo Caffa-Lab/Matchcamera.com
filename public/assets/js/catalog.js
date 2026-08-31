@@ -1,10 +1,10 @@
-import {loadProducts, money, productLabel, productKey, matchesSearch, brandLogoUrl} from './data.js';
+import {loadProducts,loadManufacturerOrder,sortManufacturers,money,productLabel,productKey,matchesSearch,brandLogoUrl} from './data.js';
 import {openProductDetail} from './product-detail.js';
 const $=s=>document.querySelector(s);
 const type=document.body.dataset.catalogType==='lens'?'렌즈':'바디';
 const typeKey=type==='렌즈'?'lens':'body';
 const PAGE_SIZE=24;
-const state={all:[],query:'',sale:'all',sort:'new',visible:PAGE_SIZE,filters:{}};
+const state={all:[],manufacturerOrder:[],query:'',sale:'all',sort:'new',visible:PAGE_SIZE,filters:{}};
 const esc=(v='')=>String(v).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const unique=arr=>[...new Set(arr.filter(v=>v!==null&&v!==undefined&&String(v).trim()!==''))];
 const isCurrent=p=>p.currentSale==='예'||p.saleStatus==='현재 판매';
@@ -15,7 +15,7 @@ function spec(p,...names){for(const name of names){const v=p.specs?.[name];if(v!
 function sortSystems(values){return [...values].sort((a,b)=>SYSTEM_ORDER.indexOf(a)-SYSTEM_ORDER.indexOf(b));}
 function bodyRows(source){return [
   {key:'cameraSystem',label:'카메라 방식',values:sortSystems(unique(source.map(p=>p.cameraSystem)).filter(v=>SYSTEM_ORDER.includes(v)))},
-  {key:'manufacturer',label:'제조사',values:unique(source.map(p=>p.manufacturer)).sort((a,b)=>a.localeCompare(b,'ko'))},
+  {key:'manufacturer',label:'제조사',values:sortManufacturers(unique(source.map(p=>p.manufacturer)),state.manufacturerOrder)},
   {key:'mount',label:'마운트',values:unique(source.map(p=>p.mount)).sort(),max:16},
   {key:'sensorFormat',label:'센서',values:unique(source.map(p=>p.sensorFormat)).sort(),max:12},
   {key:'ibis',label:'손떨림 보정',values:unique(source.map(p=>p.ibis)).sort(),max:6},
@@ -23,7 +23,7 @@ function bodyRows(source){return [
 ];}
 function lensRows(source){const lensTypes=unique(source.map(p=>p.lensType||p.category)).sort();return [
   {key:'cameraSystem',label:'카메라 방식',values:['미러리스','DSLR','시네마']},
-  {key:'manufacturer',label:'제조사',values:unique(source.map(p=>p.manufacturer)).sort((a,b)=>a.localeCompare(b,'ko'))},
+  {key:'manufacturer',label:'제조사',values:sortManufacturers(unique(source.map(p=>p.manufacturer)),state.manufacturerOrder)},
   {key:'mount',label:'마운트',values:unique(source.map(p=>p.mount)).sort(),max:18},
   {key:'lensFormat',label:'렌즈 포맷',values:unique(source.map(p=>p.lensFormat)).sort(),max:12},
   {key:'lensType',label:'렌즈 유형',values:lensTypes.length?lensTypes:['광각','표준','망원','매크로','단렌즈','줌렌즈'],max:10},
@@ -53,7 +53,7 @@ function actionUrl(p){if(typeKey==='body')return `/builder/?mode=lens&body=${enc
 function card(p){const specs=type==='바디'?bodySpecs(p):lensSpecs(p);const price=money(p.currentPriceKrw??p.currentPriceUsd);const priceType=p.koreaPriceType||'국내 가격';return `<article class="finder-card" data-product-detail="${esc(p.id)}" role="button" tabindex="0" aria-label="${esc(productLabel(p))} 상세 보기">${productVisual(p)}<div class="finder-card-body"><div class="card-topline"><span>${esc(p.manufacturer||'')}</span><span>${esc(p.koreaSaleStatus||p.saleStatus||(isCurrent(p)?'현재 판매':'단종'))}</span></div><h2>${esc(productLabel(p))}</h2><p class="card-model">${esc(p.modelCode||p.series||'')}</p><div class="card-specs">${specs.map(s=>`<span>${esc(s)}</span>`).join('')}</div><div class="card-meta"><span>출시 ${esc(p.releaseYear||'-')}</span><span>${p.weightG?`무게 ${esc(p.weightG)}g`:'무게 미확인'}</span></div><div class="card-price"><small>${esc(priceType)}</small><strong>${esc(price)}</strong></div><div class="card-actions"><button class="detail-link" type="button" data-detail-button>상세 사양</button>${p.cameraSystem==='일체형 카메라'?'<span class="detail-link">렌즈 고정형</span>':`<a class="build-add" href="${actionUrl(p)}">내 구성에 담기</a>`}</div></div></article>`;}
 function render(){const list=filtered();$('#catalogCount').textContent=list.length.toLocaleString();const visible=list.slice(0,state.visible);$('#productCards').innerHTML=visible.length?visible.map(card).join(''):`<div class="finder-empty">조건에 맞는 ${type}가 없습니다.<br><button id="resetFiltersInline" type="button">필터 초기화</button></div>`;bindImageFallbacks();$('#loadMore').classList.toggle('hidden',visible.length>=list.length);}
 function resetFilters(){state.filters={};state.query='';state.sale='all';state.sort='new';state.visible=PAGE_SIZE;$('#catalogSearch').value='';$('#saleSelect').value='all';document.querySelectorAll('[data-sort]').forEach(x=>x.classList.toggle('active',x.dataset.sort==='new'));renderFilters();render();}
-state.all=await loadProducts();renderFilters();render();
+[state.all,state.manufacturerOrder]=await Promise.all([loadProducts(),loadManufacturerOrder()]);renderFilters();render();
 $('#catalogSearch').addEventListener('input',e=>{state.query=e.target.value;state.visible=PAGE_SIZE;renderFilters();render();});$('#clearCatalogSearch').addEventListener('click',resetFilters);$('#saleSelect').addEventListener('change',e=>{state.sale=e.target.value;state.visible=PAGE_SIZE;renderFilters();render();});$('#loadMore').addEventListener('click',()=>{state.visible+=PAGE_SIZE;render();});
 document.addEventListener('click',e=>{const chip=e.target.closest('[data-filter-key]');if(chip&&!chip.disabled){const key=chip.dataset.filterKey,value=chip.dataset.filterValue;const selected=new Set(state.filters[key]||[]);if(!value)selected.clear();else if(selected.has(value))selected.delete(value);else selected.add(value);if(selected.size)state.filters[key]=[...selected];else delete state.filters[key];state.visible=PAGE_SIZE;renderFilters();render();return;}const sort=e.target.closest('[data-sort]');if(sort){state.sort=sort.dataset.sort;document.querySelectorAll('[data-sort]').forEach(x=>x.classList.toggle('active',x===sort));render();return;}if(e.target.closest('#resetFiltersInline')){resetFilters();return;}const card=e.target.closest('[data-product-detail]');if(card&&!e.target.closest('.build-add'))openProductDetail(state.all.find(p=>p.id===card.dataset.productDetail));});
 document.addEventListener('keydown',e=>{if((e.key==='Enter'||e.key===' ')&&e.target.matches('[data-product-detail]')){e.preventDefault();openProductDetail(state.all.find(p=>p.id===e.target.dataset.productDetail));}});
