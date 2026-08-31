@@ -11,7 +11,7 @@
 .global-search button:hover{background:#f5f6ff;color:#5d5ee7}
 
 /* Builder: browser 100%에서 기존 약 120% 체감 크기 */
-.builder-page .app-main{padding:14px 0 28px}.builder-page .app-frame{width:min(1760px,calc(100% - 24px));grid-template-columns:390px minmax(690px,1fr) 360px;gap:12px}.builder-page .catalog-pane,.builder-page .build-pane,.builder-page .summary-pane{min-height:calc(100vh - 102px)}.builder-page .catalog-pane{top:86px;max-height:calc(100vh - 98px)}.builder-page .summary-pane{top:86px;padding:11px}.builder-page .catalog-head{padding:11px 12px 8px}.builder-page .catalog-mode{height:43px;font-size:15px}.builder-page .catalog-search{height:42px;grid-template-columns:1fr 66px;margin:0 12px 9px}.builder-page .catalog-search input{font-size:14px;padding:0 12px}.builder-page .catalog-search button{font-size:12px}.builder-page .catalog-filters{gap:7px;padding:0 12px 10px}.builder-page .compact-control{height:38px;font-size:13px;padding:0 9px}.builder-page .check-row{font-size:12px;margin:0 12px 9px;padding:9px 10px}.builder-page .catalog-result-head{padding:10px 13px;font-size:12px}.builder-page .catalog-result-head b{font-size:14px}.builder-page .catalog-item{grid-template-columns:60px minmax(0,1fr) 58px;gap:10px;padding:13px 10px}.builder-page .catalog-thumb{width:53px;height:53px}.builder-page .catalog-product-top b{font-size:13px}.builder-page .catalog-sub{font-size:11px}.builder-page .catalog-meta>span:first-child,.builder-page .catalog-price{font-size:10px}.builder-page .catalog-add{height:34px;font-size:10px}.builder-page .build-head{min-height:96px;padding:17px 18px 15px}.builder-page .section-kicker{font-size:9px}.builder-page .build-head h1{font-size:22px}.builder-page .build-head p{font-size:12px}.builder-page .small-action{height:36px;font-size:11px;padding:0 16px}.builder-page .build-row{min-height:91px;grid-template-columns:66px 145px minmax(0,1fr) 102px;padding:8px 13px 8px 10px;gap:9px}.builder-page .slot-icon{transform:scale(1.16)}.builder-page .slot-label strong{font-size:13px}.builder-page .slot-label span{font-size:10px}.builder-page .empty-slot b,.builder-page .selected-slot b{font-size:12px}.builder-page .empty-slot span,.builder-page .selected-slot span{font-size:10px}.builder-page .slot-select{height:35px;font-size:11px}.builder-page .planned-text{font-size:11px}.builder-page .soon-badge{font-size:10px;padding:5px 7px}.builder-page .build-note{margin:17px;padding:13px 15px}.builder-page .build-note b{font-size:12px}.builder-page .build-note span{font-size:11px}.builder-page .summary-tools button{height:38px;font-size:12px}.builder-page .summary-card{padding:14px}.builder-page .summary-card h2{font-size:13px}.builder-page .summary-line{font-size:12px;padding:7px 0}.builder-page .summary-line.major{font-size:14px}.builder-page .summary-line.major strong{font-size:22px}.builder-page .price-summary p,.builder-page .empty-summary{font-size:10px}.builder-page .outline-action{height:35px;font-size:11px}
+.builder-page .app-main{padding:14px 0 28px}.builder-page .app-frame{width:min(1760px,calc(100% - 24px));grid-template-columns:390px minmax(690px,1fr) 360px;gap:12px}.builder-page .catalog-pane,.builder-page .build-pane,.builder-page .summary-pane{min-height:calc(100vh - 102px)}.builder-page .catalog-pane{top:86px;max-height:calc(100vh - 98px)}.builder-page .summary-pane{top:86px;padding:11px}.builder-page .catalog-head{padding:11px 12px 8px}.builder-page .catalog-mode{height:43px;font-size:15px}.builder-page .catalog-search{height:42px;grid-template-columns:1fr 66px;margin:0 12px 9px}.builder-page .catalog-search input{font-size:14px;padding:0 12px}.builder-page .catalog-search button{font-size:12px}.builder-page .catalog-filters{gap:7px;padding:0 12px 10px}.builder-page .compact-control{height:38px;font-size:13px;padding:0 9px}.builder-page .check-row{font-size:12px;margin:0 12px 9px;padding:9px 10px}.builder-page .catalog-result-head{padding:10px 13px;font-size:12px}.builder-page .catalog-result-head b{font-size:14px}.builder-page .catalog-item{grid-template-columns:60px minmax(0,1fr) 58px;gap:10px;padding:13px 10px}.builder-page .catalog-thumb{width:53px;height:53px}.builder-page .catalog-product-top b{font-size:13px}.builder-page .catalog-sub{font-size:11px}.builder-page .catalog-meta>span:first-child,.builder-page .catalog-price{font-size:10px}.builder-page .catalog-add{height:34px;font-size:10px}.builder-page .build-head{min-height:96px;padding:17px 18px 15px}.builder-page .section-kicker{font-size:9px}.builder-page .build-head h1{font-size:22px}.builder-page .build-head p{font-size:12px}.builder-page .small-action{height:36px;font-size:11px;padding:0 16px}.builder-page .build-row{min-height:91px;grid-template-columns:66px 145px minmax(0,1fr) 102px;padding:8px 13px 8px 10px;gap:9px}.builder-page .slot-icon{transform:scale(1.16)}.builder-page .slot-label strong{font-size:13px}.builder-page .slot-label span{font-size:10px}.builder-page .empty-slot b,.builder-page .selected-slot b{font-size:12px}.builder-page .empty-slot span,.builder-page .selected-slot span{font-size:10px}.builder-page .slot-select{height:35px;font-size:11px}.builder-page .planned-text{font-size:11px}.builder-page .soon-badge{font-size:10px;padding:5px 7px}.builder-page .build-note{margin:17px;padding:13px 15px}.builder-page .build-note b{font-size:12px}.builder-page .build-note span{font-size:11px}.builder-page .summary-tools button{height:38px;font-size:12px}.builder-page .summary-card{padding:14px}.builder-page .summary-card h2{font-size:13px}.builder-page .summary-line{font-size:12px;padding:7px 0}.builder-page .summary-line.major{font-size:14px}.builder-page .summary-line.major strong{font-size:22px}.builder-page .price-breakdown-row span,.builder-page .price-breakdown-empty{font-size:10px}.builder-page .price-breakdown-row b,.builder-page .price-breakdown-row>strong{font-size:11px}.builder-page .price-breakdown-row.is-missing>strong{font-size:10px}.builder-page .price-summary p,.builder-page .empty-summary{font-size:10px}.builder-page .outline-action{height:35px;font-size:11px}
 
 /* Database 확대 */
 .database-page .container{width:min(1560px,calc(100% - 28px))}.database-page .page-head{padding:42px 0 22px}.database-page .page-head h1{font-size:32px}.database-page .page-head p{font-size:14px}.database-page .toolbar{grid-template-columns:2fr repeat(7,minmax(130px,1fr));gap:9px}.database-page .control{height:44px;font-size:13px;padding:0 12px}.database-page .data-table{min-width:1250px}.database-page .data-table th,.database-page .data-table td{padding:14px 14px;font-size:12px}.database-page .data-table th{font-size:12px}.database-page .tiny{font-size:11px}.database-page .link-btn{font-size:13px}.database-page .spec{font-size:12px;padding:11px 0}.database-page dialog{width:min(980px,calc(100% - 30px))}
@@ -185,3 +185,38 @@
   .brand-logo{width:36px!important;height:36px!important}
   .category-nav a,.category-nav button{padding:0 8px!important;font-size:12px!important}
 }
+
+/* Builder price summary: 구분 → 제품명 → 붉은 가격 */
+.builder-page .summary-tools{grid-template-columns:1fr}
+.builder-page .summary-tools #shareBtn{background:#18a77b}
+.builder-page .price-breakdown{gap:0}
+.builder-page .price-breakdown-row{
+  display:grid;
+  grid-template-columns:1fr;
+  align-items:stretch;
+  gap:3px;
+  padding:10px 0 11px;
+}
+.builder-page .price-breakdown-row .price-breakdown-label{
+  display:block;
+  font-size:11px;
+  line-height:1.25;
+  color:#687481;
+}
+.builder-page .price-breakdown-row b{
+  display:block;
+  font-size:13px;
+  line-height:1.35;
+  white-space:normal;
+  overflow:visible;
+  text-overflow:clip;
+}
+.builder-page .price-breakdown-row>strong{
+  justify-self:end;
+  margin-top:1px;
+  color:#ef3e36;
+  font-size:15px;
+  line-height:1.2;
+  font-weight:900;
+}
+.builder-page .price-breakdown-row.is-missing>strong{color:#d35c50;font-size:11px}
