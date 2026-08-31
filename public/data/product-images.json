@@ -175,36 +175,6 @@
     "height": 470,
     "fetchedAt": "2026-08-28T07:08:49.165678+00:00"
   },
-  "Pentax Pentax Q": {
-    "src": "/assets/images/products/pentax/pentax-pentax-q-pentax-q.webp",
-    "sourcePage": "https://www.ricoh-imaging.co.jp/english/products/q7/lenses/index.html",
-    "sourceImage": "https://www.ricoh-imaging.co.jp/common/img/og-image.gif",
-    "manufacturer": "Pentax",
-    "modelCode": "Pentax Q",
-    "width": 900,
-    "height": 900,
-    "fetchedAt": "2026-08-28T07:09:09.612201+00:00"
-  },
-  "Pentax Pentax Q10": {
-    "src": "/assets/images/products/pentax/pentax-pentax-q-pentax-q10.webp",
-    "sourcePage": "https://www.ricoh-imaging.co.jp/english/products/q7/lenses/index.html",
-    "sourceImage": "https://www.ricoh-imaging.co.jp/common/img/og-image.gif",
-    "manufacturer": "Pentax",
-    "modelCode": "Pentax Q10",
-    "width": 900,
-    "height": 900,
-    "fetchedAt": "2026-08-28T07:09:28.856803+00:00"
-  },
-  "Pentax Pentax Q7": {
-    "src": "/assets/images/products/pentax/pentax-pentax-q-pentax-q7.webp",
-    "sourcePage": "https://www.ricoh-imaging.co.jp/english/products/q7/lenses/index.html",
-    "sourceImage": "https://www.ricoh-imaging.co.jp/common/img/og-image.gif",
-    "manufacturer": "Pentax",
-    "modelCode": "Pentax Q7",
-    "width": 900,
-    "height": 900,
-    "fetchedAt": "2026-08-28T07:09:48.173511+00:00"
-  },
   "Sigma Sigma fp": {
     "src": "/assets/images/products/sigma/sigma-l-mount-sigma-fp.webp",
     "sourcePage": "https://www.saeki.co.kr/item/itemDetail?itemId=PD00020548",
@@ -216,28 +186,6 @@
     "extractMethod": "direct-image",
     "fetchedAt": "2026-08-28T13:50:34.398981+00:00",
     "usageReviewRequired": true
-  },
-  "Sigma Sigma fp L": {
-    "src": "/assets/images/products/sigma/sigma-l-mount-sigma-fp-l.webp",
-    "sourcePage": "https://www.saeki.co.kr/item/itemDetail?itemId=PD00020548",
-    "sourceImage": "https://cdn.saeki.co.kr/malluploadfile/public/images/magazine/2025/202508/0f5194f6-b448-4e44-8f3c-73199c2b5568.jpg",
-    "manufacturer": "Sigma",
-    "width": 660,
-    "height": 900,
-    "method": "saeki-official-korea",
-    "extractMethod": "direct-image",
-    "fetchedAt": "2026-08-28T13:50:42.194667+00:00",
-    "usageReviewRequired": true
-  },
-  "Sigma Sigma BF": {
-    "src": "/assets/images/products/sigma/sigma-l-mount-sigma-bf.webp",
-    "sourcePage": "https://www.sigma-global.com/en/cameras/",
-    "sourceImage": "https://www.sigma-global.com/assets/og_image.jpg",
-    "manufacturer": "Sigma",
-    "modelCode": "Sigma BF",
-    "width": 900,
-    "height": 473,
-    "fetchedAt": "2026-08-28T07:10:47.072995+00:00"
   },
   "Tamron 12-20mm F2.8": {
     "src": "/assets/images/products/tamron/tamron-nikon-z-a084-nikon-z.webp",
@@ -5451,111 +5399,6 @@
     "credit": "",
     "fetchedAt": "2026-08-28T10:44:00.589656+00:00"
   },
-  "Pentax Pentax Q-S1": {
-    "src": "/assets/images/products/pentax/pentax-pentax-q-pentax-q-s1.webp",
-    "sourcePage": "https://commons.wikimedia.org/wiki/File:Pentax_Q_S-1_color_variations_2017_CP%2B.jpg",
-    "sourceImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Pentax_Q_S-1_color_variations_2017_CP%2B.jpg/960px-Pentax_Q_S-1_color_variations_2017_CP%2B.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "manufacturer": "Pentax",
-    "modelCode": "Pentax Q-S1",
-    "width": 900,
-    "height": 300,
-    "method": "wikimedia-commons",
-    "license": "CC BY-SA 3.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-    "artist": "Morio",
-    "credit": "Own work",
-    "fetchedAt": "2026-08-28T10:44:04.753053+00:00"
-  },
-  "Pentax Pentax K-01": {
-    "src": "/assets/images/products/pentax/pentax-pentax-k-k-01.webp",
-    "sourcePage": "https://commons.wikimedia.org/wiki/File:Pentax_K-01_35mm.jpg",
-    "sourceImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Pentax_K-01_35mm.jpg/960px-Pentax_K-01_35mm.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "manufacturer": "Pentax",
-    "modelCode": "K-01",
-    "width": 900,
-    "height": 601,
-    "method": "wikimedia-commons",
-    "license": "CC BY-SA 3.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-    "artist": "User:JeremyA",
-    "credit": "Own work",
-    "fetchedAt": "2026-08-28T10:44:08.473884+00:00"
-  },
-  "Pentax 01 STANDARD PRIME 8.5mm F1.9": {
-    "src": "/assets/images/products/pentax/pentax-pentax-q-01.webp",
-    "sourcePage": "https://commons.wikimedia.org/wiki/File:Pentax_K-01_35mm.jpg",
-    "sourceImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Pentax_K-01_35mm.jpg/960px-Pentax_K-01_35mm.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "manufacturer": "Pentax",
-    "modelCode": "01",
-    "width": 900,
-    "height": 601,
-    "method": "wikimedia-commons",
-    "license": "CC BY-SA 3.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-    "artist": "User:JeremyA",
-    "credit": "Own work",
-    "fetchedAt": "2026-08-28T10:44:11.472872+00:00"
-  },
-  "Pentax 02 STANDARD ZOOM 5-15mm F2.8-4.5": {
-    "src": "/assets/images/products/pentax/pentax-pentax-q-02.webp",
-    "sourcePage": "https://commons.wikimedia.org/wiki/File:Pentax_Option_33LF_02.jpg",
-    "sourceImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Pentax_Option_33LF_02.jpg/960px-Pentax_Option_33LF_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "manufacturer": "Pentax",
-    "modelCode": "02",
-    "width": 900,
-    "height": 675,
-    "method": "wikimedia-commons",
-    "license": "Public domain",
-    "licenseUrl": "",
-    "artist": "Luis Dantas",
-    "credit": "Own work",
-    "fetchedAt": "2026-08-28T10:44:14.668283+00:00"
-  },
-  "Pentax 03 FISH-EYE 3.2mm F5.6": {
-    "src": "/assets/images/products/pentax/pentax-pentax-q-03.webp",
-    "sourcePage": "https://commons.wikimedia.org/wiki/File:Pentax_Option_33LF_03.jpg",
-    "sourceImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Pentax_Option_33LF_03.jpg/960px-Pentax_Option_33LF_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "manufacturer": "Pentax",
-    "modelCode": "03",
-    "width": 900,
-    "height": 675,
-    "method": "wikimedia-commons",
-    "license": "Public domain",
-    "licenseUrl": "",
-    "artist": "Luis Dantas",
-    "credit": "Own work",
-    "fetchedAt": "2026-08-28T10:44:17.693722+00:00"
-  },
-  "Pentax 04 TOY LENS WIDE 6.3mm F7.1": {
-    "src": "/assets/images/products/pentax/pentax-pentax-q-04.webp",
-    "sourcePage": "https://commons.wikimedia.org/wiki/File:Pentax_K-5_4740_04.jpg",
-    "sourceImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Pentax_K-5_4740_04.jpg/960px-Pentax_K-5_4740_04.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "manufacturer": "Pentax",
-    "modelCode": "04",
-    "width": 900,
-    "height": 597,
-    "method": "wikimedia-commons",
-    "license": "CC BY-SA 3.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-    "artist": "user:Joergens.mi",
-    "credit": "Own work",
-    "fetchedAt": "2026-08-28T10:44:21.433371+00:00"
-  },
-  "Pentax 05 TOY LENS TELEPHOTO 18mm F8": {
-    "src": "/assets/images/products/pentax/pentax-pentax-q-05.webp",
-    "sourcePage": "https://commons.wikimedia.org/wiki/File:Pentax_K-5_4743_05.jpg",
-    "sourceImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Pentax_K-5_4743_05.jpg/960px-Pentax_K-5_4743_05.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "manufacturer": "Pentax",
-    "modelCode": "05",
-    "width": 900,
-    "height": 673,
-    "method": "wikimedia-commons",
-    "license": "CC BY-SA 3.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-    "artist": "user:Joergens.mi",
-    "credit": "Own work",
-    "fetchedAt": "2026-08-28T10:44:24.860302+00:00"
-  },
   "Pentax 06 TELEPHOTO ZOOM 15-45mm F2.8": {
     "src": "/assets/images/products/pentax/pentax-pentax-q-06.webp",
     "sourcePage": "https://commons.wikimedia.org/wiki/File:Foto,_PENTAX_Objektiv,_smc_PENTAX-F_28_F2.8,_IMGP0667.jpg",
@@ -5675,21 +5518,6 @@
     "artist": "Miwok",
     "credit": "https://www.flickr.com/photos/miwok/27501298685/",
     "fetchedAt": "2026-08-28T10:44:52.841405+00:00"
-  },
-  "Sigma 30mm F2.8 DN | Art": {
-    "src": "/assets/images/products/sigma/sigma-sony-e-30mm-f2-8-dn-art-sony-e.webp",
-    "sourcePage": "https://commons.wikimedia.org/wiki/File:Sigma_30mm_DN_Art_Lens.jpg",
-    "sourceImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Sigma_30mm_DN_Art_Lens.jpg/960px-Sigma_30mm_DN_Art_Lens.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "manufacturer": "Sigma",
-    "modelCode": "30mm F2.8 DN | Art [Sony E]",
-    "width": 900,
-    "height": 600,
-    "method": "wikimedia-commons",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-    "artist": "Xulescu g",
-    "credit": "Own work",
-    "fetchedAt": "2026-08-28T10:44:55.979047+00:00"
   },
   "Sigma 60mm F2.8 DN | Art": {
     "src": "/assets/images/products/sigma/sigma-sony-e-60mm-f2-8-dn-art-sony-e.webp",
@@ -5826,18 +5654,6 @@
     "fetchedAt": "2026-08-28T13:57:34.049595+00:00",
     "usageReviewRequired": true
   },
-  "Sigma 14mm F1.4 DG DN | Art": {
-    "src": "/assets/images/products/sigma/sigma-l-mount-14mm-f1-4-dg-dn-art-l-mount.webp",
-    "sourcePage": "https://www.saeki.co.kr/item/itemDetail?itemId=PD00030345",
-    "sourceImage": "https://cdn.saeki.co.kr/malluploadfile/public/images/editor/2023/202307/d3f40ae1-3674-4461-bc9c-45b2b0a3c534.jpg",
-    "manufacturer": "Sigma",
-    "width": 456,
-    "height": 900,
-    "method": "saeki-official-korea",
-    "extractMethod": "direct-image",
-    "fetchedAt": "2026-08-28T13:57:46.850384+00:00",
-    "usageReviewRequired": true
-  },
   "Sigma 15mm F1.4 DG DN Diagonal Fisheye | Art": {
     "src": "/assets/images/products/sigma/sigma-l-mount-15mm-f1-4-dg-dn-diagonal-fisheye-art-l-mount.webp",
     "sourcePage": "https://www.saeki.co.kr/item/itemDetail?itemId=PD00024231",
@@ -5848,18 +5664,6 @@
     "method": "saeki-official-korea",
     "extractMethod": "direct-image",
     "fetchedAt": "2026-08-28T13:58:03.209693+00:00",
-    "usageReviewRequired": true
-  },
-  "Sigma 17mm F4 DG DN | Contemporary": {
-    "src": "/assets/images/products/sigma/sigma-l-mount-17mm-f4-dg-dn-contemporary-l-mount.webp",
-    "sourcePage": "https://www.saeki.co.kr/item/itemDetail?itemId=PD00030343",
-    "sourceImage": "https://cdn.saeki.co.kr/malluploadfile/public/images/magazine/2025/202501/10b6cd46-25a4-4d78-99ec-b117b19d1f2a.jpg",
-    "manufacturer": "Sigma",
-    "width": 660,
-    "height": 900,
-    "method": "saeki-official-korea",
-    "extractMethod": "direct-image",
-    "fetchedAt": "2026-08-28T13:58:19.944850+00:00",
     "usageReviewRequired": true
   },
   "Sigma 20mm F1.4 DG DN | Art": {
@@ -5946,33 +5750,6 @@
     "fetchedAt": "2026-08-28T14:00:03.380784+00:00",
     "usageReviewRequired": true
   },
-  "Sigma 35mm F1.4 DG DN | Art": {
-    "src": "/assets/images/products/sigma/sigma-l-mount-35mm-f1-4-dg-dn-art-l-mount.webp",
-    "sourcePage": "https://www.saeki.co.kr/item/itemDetail?itemId=PD00030268",
-    "sourceImage": "https://cdn.saeki.co.kr/malluploadfile/public/images/magazine/2021/202105/7116fac2-908b-4987-b7dd-ce45b2d80ce6.jpg",
-    "manufacturer": "Sigma",
-    "width": 660,
-    "height": 900,
-    "method": "saeki-official-korea",
-    "extractMethod": "direct-image",
-    "fetchedAt": "2026-08-28T14:00:20.278034+00:00",
-    "usageReviewRequired": true
-  },
-  "Sigma 35mm F2 DG DN | Contemporary": {
-    "src": "/assets/images/products/sigma/sigma-sony-e-35mm-f2-dg-dn-contemporary-sony-e.webp",
-    "sourcePage": "https://www.sigma-global.com/en/lenses/",
-    "sourceImage": "https://www.sigma-global.com/assets/og_image.jpg",
-    "manufacturer": "Sigma",
-    "modelCode": "35mm F2 DG DN | Contemporary [Sony E]",
-    "width": 900,
-    "height": 473,
-    "method": "official-page",
-    "license": "",
-    "licenseUrl": "",
-    "artist": "",
-    "credit": "",
-    "fetchedAt": "2026-08-28T10:51:50.412920+00:00"
-  },
   "Sigma 45mm F2.8 DG DN | Contemporary": {
     "src": "/assets/images/products/sigma/sigma-sony-e-45mm-f2-8-dg-dn-contemporary-sony-e.webp",
     "sourcePage": "https://www.saeki.co.kr/item/itemDetail?itemId=PD00030234",
@@ -5995,30 +5772,6 @@
     "method": "saeki-official-korea",
     "extractMethod": "direct-image",
     "fetchedAt": "2026-08-28T14:00:58.757008+00:00",
-    "usageReviewRequired": true
-  },
-  "Sigma 50mm F1.4 DG DN | Art": {
-    "src": "/assets/images/products/sigma/sigma-l-mount-50mm-f1-4-dg-dn-art-l-mount.webp",
-    "sourcePage": "https://www.saeki.co.kr/item/itemDetail?itemId=PD00030336",
-    "sourceImage": "https://cdn.saeki.co.kr/malluploadfile/public/images/magazine/2025/202503/5bf0c582-a475-4f78-9504-552ce40e4e23.jpg",
-    "manufacturer": "Sigma",
-    "width": 660,
-    "height": 900,
-    "method": "saeki-official-korea",
-    "extractMethod": "direct-image",
-    "fetchedAt": "2026-08-28T14:01:16.898126+00:00",
-    "usageReviewRequired": true
-  },
-  "Sigma 50mm F2 DG DN | Contemporary": {
-    "src": "/assets/images/products/sigma/sigma-l-mount-50mm-f2-dg-dn-contemporary-l-mount.webp",
-    "sourcePage": "https://www.saeki.co.kr/item/itemDetail?itemId=PD00030341",
-    "sourceImage": "https://cdn.saeki.co.kr/malluploadfile/public/images/editor/2023/202304/200d73e7-ad6c-41ff-b38b-a687f18d3aca.jpg",
-    "manufacturer": "Sigma",
-    "width": 531,
-    "height": 900,
-    "method": "saeki-official-korea",
-    "extractMethod": "direct-image",
-    "fetchedAt": "2026-08-28T14:01:33.290482+00:00",
     "usageReviewRequired": true
   },
   "Sigma 65mm F2 DG DN | Contemporary": {
@@ -6239,21 +5992,6 @@
     "extractMethod": "direct-image",
     "fetchedAt": "2026-08-28T14:06:23.059723+00:00",
     "usageReviewRequired": true
-  },
-  "Tamron 17-28mm F2.8 Di III RXD": {
-    "src": "/assets/images/products/tamron/tamron-sony-e-a046-sony-e.webp",
-    "sourcePage": "https://www.tamron.com/global/consumer/lenses/",
-    "sourceImage": "https://www.tamron.com/global/ogp.png",
-    "manufacturer": "Tamron",
-    "modelCode": "A046 [Sony E]",
-    "width": 900,
-    "height": 473,
-    "method": "official-page",
-    "license": "",
-    "licenseUrl": "",
-    "artist": "",
-    "credit": "",
-    "fetchedAt": "2026-08-28T10:56:37.011955+00:00"
   },
   "Tamron 17-50mm F4 Di III VXD": {
     "src": "/assets/images/products/tamron/tamron-sony-e-a068-sony-e.webp",
@@ -9298,5 +9036,15 @@
     "artist": "Jean-François Azens",
     "credit": "Own work",
     "fetchedAt": "2026-08-29T17:07:53.412840+00:00"
+  },
+  "Sony E 18-50mm F4-5.6": {
+    "src": "/assets/images/products/sony/sony-sony-e-sel1850.png",
+    "sourcePage": "",
+    "sourceImage": "",
+    "method": "manual-admin",
+    "fetchedAt": "2026-08-31T10:39:24.968Z",
+    "width": 144,
+    "height": 108,
+    "usageReviewRequired": true
   }
 }
