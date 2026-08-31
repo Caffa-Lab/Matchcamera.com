@@ -28,6 +28,25 @@ function aperture(value){
   const n=numberValue(value);
   return Number.isFinite(n)&&n>0?`f/${Math.round(n*10)/10}`:'—';
 }
+function focalLength(value){
+  const n=numberValue(value);
+  if(!Number.isFinite(n)||n<=0)return '—';
+  const rounded=Math.round(n*10)/10;
+  return `${Number.isInteger(rounded)?Math.round(rounded):rounded}mm`;
+}
+function photoDate(value){
+  if(value instanceof Date&&!Number.isNaN(value.getTime())){
+    return [value.getFullYear(),String(value.getMonth()+1).padStart(2,'0'),String(value.getDate()).padStart(2,'0')].join('.');
+  }
+  const match=String(value||'').match(/(\d{4})[:.-](\d{1,2})[:.-](\d{1,2})/);
+  return match?`${match[1]}.${match[2].padStart(2,'0')}.${match[3].padStart(2,'0')}`:'—';
+}
+function cameraName(make,model){
+  const maker=String(make||'').trim(),body=String(model||'').trim();
+  if(!body)return maker||'—';
+  if(maker&&body.toLowerCase().startsWith(maker.toLowerCase()))return body;
+  return [maker,body].filter(Boolean).join(' ');
+}
 function fileSize(bytes){
   if(bytes<1024)return `${bytes} B`;
   if(bytes<1024*1024)return `${(bytes/1024).toFixed(1)} KB`;
@@ -156,11 +175,15 @@ async function renderFile(file,exifr){
     const make=exif?.Make||'',model=exif?.Model||'';
     const lens=exif?.LensModel||exif?.LensMake||exif?.Lens||'';
     const iso=exif?.ISO?String(exif.ISO):'—';
-    const shutter=exposure(exif?.ExposureTime??exif?.ShutterSpeedValue);
-    const fNumber=aperture(exif?.FNumber??exif?.ApertureValue);
+    const rawShutter=exif?.ExposureTime??exif?.ShutterSpeedValue;
+    const rawAperture=exif?.FNumber??exif?.ApertureValue;
+    const shutter=exposure(rawShutter);
+    const fNumber=aperture(rawAperture);
+    const focal=focalLength(exif?.FocalLength);
+    const takenAt=photoDate(exif?.DateTimeOriginal??exif?.CreateDate??exif?.DateTime??exif?.ModifyDate);
     const phone=isPhone(make,model)?phoneInfo(make,model):null;
     const brand=cameraBrand(make,model),hasLens=Boolean(lens&&lens!=='—');
-    const camera=[make,model].filter(Boolean).join(' ')||'—';
+    const camera=cameraName(make,model);
     const displayLens=phone?'—':hasLens?lens:'—';
     const values=[camera,displayLens,iso,shutter,fNumber];
     body.querySelectorAll('.metadata-value').forEach((element,index)=>element.textContent=values[index]);
@@ -172,9 +195,11 @@ async function renderFile(file,exifr){
       copy(`📷${bold(cameraShort)}${hasLens?` + ${italicBoldDigits(lensShort)}`:''}\n\n${tags}`,instaButton,'insta');
     });
     blogButton.addEventListener('click',()=>{
-      if(phone)return copy(bold(phone.display),blogButton,'blog');
-      const cameraShort=shortBody(model||camera),lensShort=hasLens?shortLens(lens,brand):'';
-      copy(`${bold(cameraShort)}${hasLens?` + ${italic(lensShort)}`:''}`,blogButton,'blog');
+      const title=phone?camera:`${camera}${hasLens?` + ${lens}`:''}`;
+      const blogAperture=Number.isFinite(numberValue(rawAperture))?`F ${Math.round(numberValue(rawAperture)*10)/10}`:'F —';
+      const blogShutter=shutter==='—'?'SS —':`SS ${shutter.replace(/\s+/g,'')}`;
+      const payload=`${title}\n${blogAperture} | ${blogShutter} | ISO ${iso} | ${focal} (${takenAt})`;
+      copy(payload,blogButton,'blog');
     });
   }catch(error){
     body.querySelectorAll('.metadata-value').forEach(element=>element.textContent='—');
