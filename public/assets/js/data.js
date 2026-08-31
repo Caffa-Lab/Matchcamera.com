@@ -6,6 +6,7 @@ let manufacturerOrderCache;
 const PRODUCT_URL = '/data/products.json';
 const EXPANSION_URL = '/data/system-expansion.json';
 const PARTNER_PRODUCT_URL = '/data/official-partner-products.json';
+const HASSELBLAD_PRODUCT_URL = '/data/hasselblad-products.json';
 const KOREA_PRICE_URL = '/data/korea-prices.json';
 const IMAGE_MAP_URL = '/data/product-images.json';
 const ADAPTER_URL = '/data/mount-adapters.json';
@@ -159,14 +160,15 @@ export async function loadProducts(){
   if(!productRes.ok) throw new Error('제품 DB를 불러오지 못했습니다.');
   const baseProducts = await productRes.json();
 
-  const [expansion, partnerProducts, koreaPrices, imageMap] = await Promise.all([
+  const [expansion, partnerProducts, hasselbladProducts, koreaPrices, imageMap] = await Promise.all([
     optionalJson(EXPANSION_URL, []),
     optionalJson(PARTNER_PRODUCT_URL, []),
+    optionalJson(HASSELBLAD_PRODUCT_URL, []),
     optionalJson(KOREA_PRICE_URL, []),
     optionalJson(IMAGE_MAP_URL, {}),
   ]);
 
-  const products = mergeProductLists(mergeProductLists(baseProducts, expansion), partnerProducts);
+  const products = mergeProductLists(mergeProductLists(mergeProductLists(baseProducts, expansion), partnerProducts), hasselbladProducts);
   const priceExact = new Map();
   const priceByName = new Map();
   for(const row of Array.isArray(koreaPrices) ? koreaPrices : []){
@@ -190,7 +192,9 @@ export async function loadProducts(){
     const official = Number(kr?.['한국 공식/출시 가격(원)']);
     const hasStreet = Number.isFinite(street) && street > 0;
     const hasOfficial = Number.isFinite(official) && official > 0;
-    const displayKrw = hasStreet ? street : (hasOfficial ? official : null);
+    const embeddedPrice = Number(p.currentPriceKrw);
+    const hasEmbeddedPrice = Number.isFinite(embeddedPrice) && embeddedPrice > 0;
+    const displayKrw = hasStreet ? street : (hasOfficial ? official : (hasEmbeddedPrice ? embeddedPrice : null));
     const img = imageMap?.[name];
     const imageSrc = typeof img === 'string' ? img : img?.src || null;
     const cameraSystem = normalizedSystem(p);
@@ -200,14 +204,14 @@ export async function loadProducts(){
       cameraSystem,
       currentPriceKrw: displayKrw,
       koreaStreetPriceKrw: hasStreet ? street : null,
-      koreaOfficialPriceKrw: hasOfficial ? official : null,
-      koreaPriceType: kr?.['가격 유형'] || '',
-      koreaDistribution: kr?.['유통 형태'] || '',
-      koreaSaleStatus: kr?.['국내 유통 상태'] || '',
-      koreaPriceDate: kr?.['가격 기준일'] || '',
-      koreaPriceSource: kr?.['가격 출처 URL'] || '',
-      koreaPriceVerification: kr?.['가격 검증 상태'] || '',
-      koreaPriceNote: kr?.['비고'] || '',
+      koreaOfficialPriceKrw: hasOfficial ? official : (hasEmbeddedPrice ? embeddedPrice : null),
+      koreaPriceType: kr?.['가격 유형'] || p.koreaPriceType || '',
+      koreaDistribution: kr?.['유통 형태'] || p.koreaDistribution || '',
+      koreaSaleStatus: kr?.['국내 유통 상태'] || p.koreaSaleStatus || '',
+      koreaPriceDate: kr?.['가격 기준일'] || p.koreaPriceDate || '',
+      koreaPriceSource: kr?.['가격 출처 URL'] || p.koreaPriceSource || '',
+      koreaPriceVerification: kr?.['가격 검증 상태'] || p.koreaPriceVerification || '',
+      koreaPriceNote: kr?.['비고'] || p.koreaPriceNote || '',
       imageSrc,
       imageSourcePage: typeof img === 'object' ? img?.sourcePage || img?.source || '' : '',
       imageSourceUrl: typeof img === 'object' ? img?.sourceImage || '' : '',
