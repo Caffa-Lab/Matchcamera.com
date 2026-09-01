@@ -1,4 +1,4 @@
-import {loadProducts, money, productLabel, brandLogoUrl} from './data.js';
+import {loadProducts, money, productLabel, brandLogoUrl} from './data.js?v=20260901-all';
 import {openProductDetail} from './product-detail.js';
 
 const $ = s => document.querySelector(s);

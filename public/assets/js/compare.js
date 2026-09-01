@@ -1,4 +1,4 @@
-import {brandLogoUrl,loadProducts,loadManufacturerOrder,matchesSearch,money,productLabel} from './data.js';
+import {brandLogoUrl,loadProducts,loadManufacturerOrder,matchesSearch,money,productLabel} from './data.js?v=20260901-all';
 
 const $=selector=>document.querySelector(selector);
 const esc=(value='')=>String(value).replace(/[&<>"']/g,char=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));

@@ -8,21 +8,42 @@ const DATA_PATHS = [
   "public/data/products.json",
   "public/data/system-expansion.json",
   "public/data/official-partner-products.json",
+  "public/data/hasselblad-products.json",
   "public/data/korea-prices.json",
   "public/data/product-images.json",
   "public/data/batteries.json",
   "public/data/mount-adapters.json",
   "public/data/home-config.json",
   "public/data/manufacturer-order.json",
+  "public/data/filter-order.json",
+  "public/data/flashes.json",
+  "public/data/memory-cards.json",
+  "public/data/tripods.json",
+  "public/data/heads.json",
+  "public/data/plates.json",
 ];
 
-const REQUIRED_DATA_PATHS = new Set(DATA_PATHS.slice(0, 7));
-const PRODUCT_PATHS = new Set(DATA_PATHS.slice(0, 3));
+const REQUIRED_DATA_PATHS = new Set([
+  "public/data/products.json", "public/data/system-expansion.json", "public/data/official-partner-products.json",
+  "public/data/korea-prices.json", "public/data/product-images.json", "public/data/batteries.json", "public/data/mount-adapters.json",
+]);
+const PRODUCT_PATHS = new Set([
+  "public/data/products.json", "public/data/system-expansion.json", "public/data/official-partner-products.json", "public/data/hasselblad-products.json",
+]);
 const ARRAY_DATA_PATHS = new Set([
-  ...DATA_PATHS.slice(0, 4),
+  "public/data/products.json",
+  "public/data/system-expansion.json",
+  "public/data/official-partner-products.json",
+  "public/data/hasselblad-products.json",
+  "public/data/korea-prices.json",
   "public/data/batteries.json",
   "public/data/mount-adapters.json",
   "public/data/manufacturer-order.json",
+  "public/data/flashes.json",
+  "public/data/memory-cards.json",
+  "public/data/tripods.json",
+  "public/data/heads.json",
+  "public/data/plates.json",
 ]);
 
 const ADMIN_HEADERS = {
@@ -195,6 +216,8 @@ function defaultHomeConfig() {
 function defaultDataValue(path) {
   if (path === "public/data/home-config.json") return defaultHomeConfig();
   if (path === "public/data/manufacturer-order.json") return [];
+  if (path === "public/data/filter-order.json") return { version: 1, bodyRows: [], lensRows: [], options: {} };
+  if (["public/data/flashes.json", "public/data/memory-cards.json", "public/data/tripods.json", "public/data/heads.json", "public/data/plates.json"].includes(path)) return [];
   return null;
 }
 
@@ -267,6 +290,16 @@ function validateJsonValue(path, value) {
   if (path === "public/data/manufacturer-order.json") {
     if (value.length > 100 || value.some((brand) => typeof brand !== "string" || !brand.trim()) || new Set(value).size !== value.length) {
       throw new HttpError(400, "제조사 순서는 중복 없는 문자열 배열이어야 합니다.");
+    }
+  }
+  if (path === "public/data/filter-order.json") {
+    if (!isPlainObject(value) || !Array.isArray(value.bodyRows) || !Array.isArray(value.lensRows) || !isPlainObject(value.options)) {
+      throw new HttpError(400, "필터 순서 설정 형식이 올바르지 않습니다.");
+    }
+    const allRows = [...value.bodyRows, ...value.lensRows];
+    if (allRows.some((row) => typeof row !== "string" || !row.trim())) throw new HttpError(400, "필터 행 이름은 문자열이어야 합니다.");
+    for (const options of Object.values(value.options)) {
+      if (!Array.isArray(options) || options.some((item) => typeof item !== "string")) throw new HttpError(400, "필터 선택지 순서는 문자열 배열이어야 합니다.");
     }
   }
   if (PRODUCT_PATHS.has(path)) {

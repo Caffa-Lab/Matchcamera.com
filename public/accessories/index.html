@@ -38,9 +38,11 @@
           <span>핫슈 · TTL · 무선 플래시 호환성</span>
         </button>
         <button class="accessory-category" type="button" data-accessory-category="tripod">
-          <strong>삼각대</strong>
-          <span>허용 하중 · 플레이트 · 헤드 조합</span>
+          <strong>삼각대 다리</strong>
+          <span>허용 하중 · 높이 · 자체 무게</span>
         </button>
+        <button class="accessory-category" type="button" data-accessory-category="head"><strong>볼헤드</strong><span>허용 하중 · 볼 지름 · 클램프 규격</span></button>
+        <button class="accessory-category" type="button" data-accessory-category="plate"><strong>플레이트</strong><span>범용·전용 플레이트와 Arca 규격</span></button>
       </div>
 
       <div class="accessory-panel" data-accessory-panel="adapter">
@@ -55,7 +57,7 @@
       </div>
 
       <div class="accessory-panel hidden" data-accessory-panel="memory">
-        <div class="accessory-placeholder"><span class="status">DB 확장 예정</span><h2>메모리 카드</h2><p>카메라별 지원 규격, 최대 용량, UHS-I/UHS-II, CFexpress Type A/B, 권장 영상 기록 속도 등을 연결할 예정입니다.</p></div>
+        <div class="toolbar"><input id="memorySearch" class="control grow" placeholder="카드명·규격·속도 검색"></div><p class="muted tiny"><b id="memoryCount">0</b>개 메모리 카드</p><div id="memoryList" class="accessory-data-grid"></div>
       </div>
 
       <div class="accessory-panel hidden" data-accessory-panel="battery">
@@ -73,16 +75,18 @@
       </div>
 
       <div class="accessory-panel hidden" data-accessory-panel="flash">
-        <div class="accessory-placeholder"><span class="status">DB 확장 예정</span><h2>플래시</h2><p>핫슈 규격, TTL, HSS, 무선 제어 및 제조사별 기능 호환성을 연결할 예정입니다.</p></div>
+        <div class="toolbar"><input id="flashSearch" class="control grow" placeholder="플래시명·TTL 시스템 검색"></div><p class="muted tiny"><b id="flashCount">0</b>개 플래시</p><div id="flashList" class="accessory-data-grid"></div>
       </div>
 
       <div class="accessory-panel hidden" data-accessory-panel="tripod">
-        <div class="accessory-placeholder"><span class="status">DB 확장 예정</span><h2>삼각대</h2><p>삼각대는 삭제하지 않았습니다. 허용 하중, 자체 무게, 최대 높이, 접은 길이, 플레이트 규격, 헤드 종류를 기준으로 제품 DB를 확장할 예정입니다.</p></div>
+        <p class="muted tiny"><b id="tripodCount">0</b>개 삼각대 다리</p><div id="tripodList" class="accessory-data-grid"></div>
       </div>
+      <div class="accessory-panel hidden" data-accessory-panel="head"><p class="muted tiny"><b id="headCount">0</b>개 볼헤드</p><div id="headList" class="accessory-data-grid"></div></div>
+      <div class="accessory-panel hidden" data-accessory-panel="plate"><p class="muted tiny"><b id="plateCount">0</b>개 플레이트</p><div id="plateList" class="accessory-data-grid"></div></div>
     </section>
   </main>
   <div data-footer></div>
   <script type="module" src="/assets/js/common.js?v=20260831-logo-filter-fix"></script>
-  <script type="module" src="/assets/js/accessories.js"></script>
+  <script type="module" src="/assets/js/accessories.js?v=20260901-accessory-db"></script>
 </body>
 </html>

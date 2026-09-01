@@ -1,0 +1,53 @@
+[
+  {
+    "id": "photoclam-mini-30ns",
+    "manufacturer": "PhotoClam",
+    "officialName": "MINI-30NS Ballhead",
+    "headType": "ball-head",
+    "maxLoadKg": 20,
+    "weightKg": 0.273,
+    "heightMm": 83,
+    "ballDiameterMm": 30,
+    "plateStandard": "Arca-Swiss",
+    "includedPlate": "PC-59-UP4",
+    "tripodMount": "3/8-inch",
+    "koreaPurchasable": true,
+    "currentSale": "확인 필요",
+    "officialSource": "https://photoclam.com/product/photoclam-mini-30ns-ballhead/66/",
+    "verifiedAt": "2026-09-01"
+  },
+  {
+    "id": "photoclam-pro-38ns",
+    "manufacturer": "PhotoClam",
+    "officialName": "PRO-38NS Ballhead",
+    "headType": "ball-head",
+    "maxLoadKg": 27,
+    "weightKg": 0.39,
+    "heightMm": 93,
+    "ballDiameterMm": 38,
+    "plateStandard": "Arca-Swiss",
+    "includedPlate": "PC-69-UP4",
+    "tripodMount": "3/8-inch",
+    "koreaPurchasable": true,
+    "currentSale": "확인 필요",
+    "officialSource": "https://photoclam.com/product/photoclam-pro-38ns-ballhead/127/",
+    "verifiedAt": "2026-09-01"
+  },
+  {
+    "id": "photoclam-pro-46ns",
+    "manufacturer": "PhotoClam",
+    "officialName": "PRO-46NS Ballhead",
+    "headType": "ball-head",
+    "maxLoadKg": 47,
+    "weightKg": 0.536,
+    "heightMm": 102,
+    "ballDiameterMm": 46,
+    "plateStandard": "Arca-Swiss",
+    "includedPlate": "PC-69-UP4",
+    "tripodMount": "3/8-inch",
+    "koreaPurchasable": true,
+    "currentSale": "확인 필요",
+    "officialSource": "https://photoclam.com/product/photoclam-pro-46ns-ballhead/134/",
+    "verifiedAt": "2026-09-01"
+  }
+]

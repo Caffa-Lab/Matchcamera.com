@@ -2,6 +2,12 @@ let cache;
 let adapterCache;
 let batteryCache;
 let manufacturerOrderCache;
+let filterOrderCache;
+let flashCache;
+let memoryCardCache;
+let tripodCache;
+let headCache;
+let plateCache;
 
 const PRODUCT_URL = '/data/products.json';
 const EXPANSION_URL = '/data/system-expansion.json';
@@ -12,6 +18,12 @@ const IMAGE_MAP_URL = '/data/product-images.json';
 const ADAPTER_URL = '/data/mount-adapters.json';
 const BATTERY_URL = '/data/batteries.json';
 const MANUFACTURER_ORDER_URL = '/data/manufacturer-order.json';
+const FILTER_ORDER_URL = '/data/filter-order.json';
+const FLASH_URL = '/data/flashes.json';
+const MEMORY_CARD_URL = '/data/memory-cards.json';
+const TRIPOD_URL = '/data/tripods.json';
+const HEAD_URL = '/data/heads.json';
+const PLATE_URL = '/data/plates.json';
 
 async function optionalJson(url, fallback){
   try{
@@ -195,7 +207,7 @@ export async function loadProducts(){
     const embeddedPrice = Number(p.currentPriceKrw);
     const hasEmbeddedPrice = Number.isFinite(embeddedPrice) && embeddedPrice > 0;
     const displayKrw = hasStreet ? street : (hasOfficial ? official : (hasEmbeddedPrice ? embeddedPrice : null));
-    const img = imageMap?.[name];
+    const img = imageMap?.[p.id] || imageMap?.[name];
     const imageSrc = typeof img === 'string' ? img : img?.src || null;
     const cameraSystem = normalizedSystem(p);
 
@@ -217,8 +229,12 @@ export async function loadProducts(){
       imageSourceUrl: typeof img === 'object' ? img?.sourceImage || '' : '',
       searchAliases: [...new Set([...(p.searchAliases || []), ...sonyAliases({...p,cameraSystem})])],
     };
-  });
+  }).filter(isProductActive);
   return cache;
+}
+
+export function isProductActive(product){
+  return product?.active !== false && product?.enabled !== false && product?.visibility !== 'hidden';
 }
 
 export async function loadAdapters(){
@@ -238,6 +254,61 @@ export async function loadManufacturerOrder(){
   const value=await optionalJson(MANUFACTURER_ORDER_URL,[]);
   manufacturerOrderCache=Array.isArray(value)?value.filter((brand,index)=>typeof brand==='string'&&brand.trim()&&value.indexOf(brand)===index):[];
   return manufacturerOrderCache;
+}
+
+export async function loadFilterOrder(){
+  if(filterOrderCache) return filterOrderCache;
+  filterOrderCache=await optionalJson(FILTER_ORDER_URL,{version:1,bodyRows:[],lensRows:[],options:{}});
+  return filterOrderCache && typeof filterOrderCache==='object' ? filterOrderCache : {version:1,bodyRows:[],lensRows:[],options:{}};
+}
+
+async function loadArray(url,cacheName){
+  const value=await optionalJson(url,[]);
+  const rows=Array.isArray(value)?value.filter(item=>item?.active!==false):[];
+  if(cacheName==='flash')flashCache=rows;
+  if(cacheName==='memory')memoryCardCache=rows;
+  if(cacheName==='tripod')tripodCache=rows;
+  if(cacheName==='head')headCache=rows;
+  if(cacheName==='plate')plateCache=rows;
+  return rows;
+}
+export async function loadFlashes(){return flashCache||loadArray(FLASH_URL,'flash')}
+export async function loadMemoryCards(){return memoryCardCache||loadArray(MEMORY_CARD_URL,'memory')}
+export async function loadTripods(){return tripodCache||loadArray(TRIPOD_URL,'tripod')}
+export async function loadHeads(){return headCache||loadArray(HEAD_URL,'head')}
+export async function loadPlates(){return plateCache||loadArray(PLATE_URL,'plate')}
+
+export function publicManufacturer(name=''){
+  return /^(Olympus|OM SYSTEM)$/i.test(String(name).trim()) ? 'Olympus · OM SYSTEM' : String(name || '').trim();
+}
+
+export function memoryCardCompatibility(card,body){
+  if(!card||!body)return {level:'unknown',label:'판정 불가',reason:'바디 또는 카드 정보가 없습니다.'};
+  const specs=body.specs||{};
+  const hay=[body.memoryCardTypes,body.cardTypes,body.memoryCardType,specs['메모리 카드'],specs['메모리카드'],specs['기록 매체'],specs['메모리카드 종류'],specs['메모리 카드 종류']].flat().filter(Boolean).join(' ').toLowerCase();
+  if(!hay)return {level:'unknown',label:'판정 불가',reason:'바디의 메모리 카드 슬롯 규격이 등록되지 않았습니다.'};
+  const type=String(card.cardType||'').toLowerCase();
+  const aliases=type.includes('cfexpress type a')?['cfexpress type a','cfexpress a']:type.includes('cfexpress type b')?['cfexpress type b','cfexpress b']:type.includes('sd')?['sd','sdhc','sdxc']:type.includes('xqd')?['xqd']:[type];
+  const compatible=aliases.some(alias=>alias&&hay.includes(alias));
+  if(!compatible)return {level:'incompatible',label:'사용 불가',reason:`바디 슬롯 규격과 ${card.cardType||'카드'}가 일치하지 않습니다.`};
+  const videoNeed=Number(body.minimumVpg||body.minimumVideoMbps||0);
+  const cardVpg=Number(card.vpg||String(card.speedClass||'').match(/(?:VPG|V)(\d+)/i)?.[1]||0);
+  if(videoNeed&&cardVpg&&cardVpg<videoNeed)return {level:'conditional',label:'속도 주의',reason:`카드 보장 속도 ${cardVpg}MB/s가 바디 권장 ${videoNeed}MB/s보다 낮습니다.`};
+  return {level:'compatible',label:'호환',reason:`${card.cardType||'카드'} 슬롯 호환이 확인됩니다.`};
+}
+
+export function supportLoadGrade(capacityKg,payloadKg,{downgrade=false}={}){
+  const capacity=Number(capacityKg);const payload=Number(payloadKg);
+  if(!Number.isFinite(capacity)||capacity<=0||!Number.isFinite(payload)||payload<0)return {level:'unknown',label:'판정 불가',reserveKg:null,reason:'허용 하중 또는 탑재 중량 정보가 없습니다.'};
+  const reserve=capacity-payload;
+  const dangerMargin=Math.max(.2,payload*.25);
+  const ampleMargin=Math.max(1,payload);
+  const epsilon=1e-9;
+  let index=reserve < -epsilon ? 0 : reserve + epsilon < dangerMargin ? 1 : reserve + epsilon < ampleMargin ? 2 : 3;
+  if(downgrade&&index>0)index-=1;
+  const rows=[['impossible','불가능'],['danger','위험'],['normal','보통'],['ample','여유']];
+  const [level,label]=rows[index];
+  return {level,label,reserveKg:reserve,dangerMarginKg:dangerMargin,ampleMarginKg:ampleMargin,reason:`탑재 ${payload.toFixed(2)}kg / 허용 ${capacity.toFixed(2)}kg / 여유 ${reserve.toFixed(2)}kg${downgrade?' · 안정성 조건으로 1단계 하향':''}`};
 }
 
 export function sortManufacturers(values,order=[]){

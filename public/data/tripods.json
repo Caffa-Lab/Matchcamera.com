@@ -1,0 +1,50 @@
+[
+  {
+    "id": "photoclam-ptc-mini28",
+    "manufacturer": "PhotoClam",
+    "officialName": "PTC-MINI28 Carbon Tripod",
+    "kind": "tripod-legs",
+    "material": "Carbon Fiber",
+    "maxLoadKg": 28,
+    "weightKg": 0.97,
+    "maxHeightMm": 535,
+    "foldedLengthMm": 280,
+    "headMount": "3/8-inch",
+    "currentSale": "확인 필요",
+    "koreaPurchasable": true,
+    "officialSource": "https://photoclam.com/product/photoclam-ptc-mini28-carbon-fiber-mini-tripod/251/",
+    "verifiedAt": "2026-09-01"
+  },
+  {
+    "id": "photoclam-ptc-2351c",
+    "manufacturer": "PhotoClam",
+    "officialName": "PTC-2351C Carbon Tripod",
+    "kind": "tripod-legs",
+    "material": "Carbon Fiber",
+    "maxLoadKg": 20,
+    "weightKg": 1.5,
+    "maxHeightMm": 1425,
+    "foldedLengthMm": 455,
+    "headMount": "3/8-inch",
+    "currentSale": "확인 필요",
+    "koreaPurchasable": true,
+    "officialSource": "https://photoclam.com/product/photoclam-ptc-2351c-carbon-fiber-tripod/297/",
+    "verifiedAt": "2026-09-01"
+  },
+  {
+    "id": "photoclam-ptc-2442p",
+    "manufacturer": "PhotoClam",
+    "officialName": "PTC-2442P Carbon Tripod",
+    "kind": "tripod-legs",
+    "material": "Carbon Fiber",
+    "maxLoadKg": 30,
+    "weightKg": 1.63,
+    "maxHeightMm": 1695,
+    "foldedLengthMm": 575,
+    "headMount": "3/8-inch",
+    "currentSale": "확인 필요",
+    "koreaPurchasable": true,
+    "officialSource": "https://photoclam.com/product/photoclam-ptc-2442p-carbon-fiber-tripod/305/",
+    "verifiedAt": "2026-09-01"
+  }
+]

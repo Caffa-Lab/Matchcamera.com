@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "bodyRows": [
+    "sensorFormat",
+    "cameraSystem",
+    "manufacturer",
+    "mount",
+    "ibis",
+    "releaseGroup"
+  ],
+  "lensRows": [
+    "cameraSystem",
+    "manufacturer",
+    "mount",
+    "lensFormat",
+    "lensType",
+    "focalGroup",
+    "apertureGroup",
+    "stabilization"
+  ],
+  "options": {
+    "sensorFormat": ["풀프레임", "크롭센서", "중형", "기타"],
+    "cameraSystem": ["미러리스", "DSLR", "일체형 카메라", "시네마"],
+    "lensType": ["줌렌즈", "단렌즈"],
+    "focalGroup": ["초광각 ≤ 20mm", "광각 21~35mm", "표준 36~70mm", "망원 71~200mm", "초망원 > 200mm"],
+    "apertureGroup": ["F1.4 이하", "F1.8~F2", "F2.8", "F4", "F4 초과"],
+    "stabilization": ["있음", "없음"],
+    "releaseGroup": ["2024~현재", "2020~2023", "2015~2019", "2014 이전"]
+  }
+}

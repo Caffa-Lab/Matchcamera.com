@@ -23,7 +23,8 @@
         <button data-view="accessories" type="button"><span>05</span>액세서리</button>
         <button data-view="home" type="button"><span>06</span>홈 관리</button>
         <button data-view="manufacturers" type="button"><span>07</span>제조사 순서</button>
-        <button data-view="audit" type="button"><span>08</span>DB 검수</button>
+        <button data-view="filters" type="button"><span>08</span>필터 순서</button>
+        <button data-view="audit" type="button"><span>09</span>DB 검수</button>
       </nav>
       <div class="sidebar-foot">
         <div class="session-user"><span class="status-dot"></span><div><small>로그인 계정</small><strong id="sessionEmail">확인 중</strong></div></div>
@@ -60,10 +61,11 @@
           <input id="productSearch" class="control grow" type="search" placeholder="제품명·모델코드·ID 검색">
           <select id="productBrand" class="control"><option value="">전체 제조사</option></select>
           <select id="productType" class="control"><option value="">바디·렌즈 전체</option><option>바디</option><option>렌즈</option></select>
+          <select id="productVisibility" class="control"><option value="">전체 표시 상태</option><option value="active">사이트 표시</option><option value="inactive">비활성화</option></select>
           <select id="productSource" class="control"><option value="">전체 데이터 파일</option></select>
           <button id="addProduct" class="button primary" type="button">+ 제품 추가</button>
         </div>
-        <div class="table-panel"><table><thead><tr><th>제품</th><th>제조사</th><th>종류</th><th>마운트</th><th>모델 코드</th><th>판매 상태</th><th>데이터 파일</th><th></th></tr></thead><tbody id="productRows"></tbody></table></div>
+        <div class="table-panel"><table><thead><tr><th>제품</th><th>제조사</th><th>종류</th><th>마운트</th><th>모델 코드</th><th>표시</th><th>판매 상태</th><th>데이터 파일</th><th></th></tr></thead><tbody id="productRows"></tbody></table></div>
         <div id="productPagination" class="pagination"></div>
       </section>
 
@@ -89,7 +91,7 @@
 
       <section class="view" data-page="accessories">
         <div class="toolbar">
-          <select id="accessoryKind" class="control"><option value="batteries">배터리</option><option value="adapters">마운트 어댑터</option></select>
+          <select id="accessoryKind" class="control"><option value="batteries">배터리</option><option value="adapters">마운트 어댑터</option><option value="memoryCards">메모리 카드</option><option value="flashes">플래시</option><option value="tripods">삼각대 다리</option><option value="heads">볼헤드</option><option value="plates">플레이트</option></select>
           <input id="accessorySearch" class="control grow" type="search" placeholder="액세서리명·ID 검색">
           <button id="addAccessory" class="button primary" type="button">+ 액세서리 추가</button>
         </div>
@@ -110,6 +112,16 @@
           <div id="manufacturerOrderList" class="manufacturer-order-list"></div>
           <div class="manufacturer-order-actions"><button id="resetManufacturerOrder" class="button secondary" type="button">알파벳순으로 초기화</button><button id="saveManufacturerOrder" class="button primary" type="button">순서 변경사항 추가</button></div>
         </article>
+      </section>
+
+      <section class="view" data-page="filters">
+        <div class="section-heading"><div><p>FILTER ORDER</p><h2>필터 표시 순서</h2><span>▲·▼로 행 순서를 바꾸고, 선택지는 한 줄에 하나씩 원하는 순서로 입력하세요.</span></div></div>
+        <div class="featured-editor filter-order-editor">
+          <article class="panel"><h3>바디 필터 행</h3><div id="bodyFilterOrder" class="manufacturer-order-list"></div></article>
+          <article class="panel"><h3>렌즈 필터 행</h3><div id="lensFilterOrder" class="manufacturer-order-list"></div></article>
+        </div>
+        <article class="panel"><h3>필터 선택지 순서</h3><div id="filterOptionOrder" class="form-grid filter-option-order"></div></article>
+        <div class="sticky-save"><span>순서 변경은 배포 후 바디·렌즈·견적 필터에 적용됩니다.</span><button id="saveFilterOrder" class="button primary" type="button">필터 변경사항 추가</button></div>
       </section>
 
       <section class="view" data-page="audit">

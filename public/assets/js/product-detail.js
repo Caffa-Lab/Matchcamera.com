@@ -1,4 +1,4 @@
-import {brandLogoUrl, money, productLabel} from './data.js';
+import {brandLogoUrl, money, productLabel} from './data.js?v=20260901-all';
 
 const esc=(value='')=>String(value).replace(/[&<>"']/g,char=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
 const hasValue=value=>value!==null&&value!==undefined&&String(value).trim()!=='';

@@ -1,0 +1,175 @@
+{
+  "generatedAt": "2026-09-01T03:10:39.594233+00:00",
+  "minimumSourceSide": 500,
+  "totalSony": 27,
+  "updated": 8,
+  "results": [
+    {
+      "id": "sony-바디-sony-e-ilce-6700",
+      "status": "updated",
+      "source": "https://www.sony.co.kr/interchangeable-lens-cameras/products/ilce-6700",
+      "sourceSize": [
+        1200,
+        1200
+      ]
+    },
+    {
+      "id": "sony-바디-sony-e-ilce-7m3",
+      "status": "not-found",
+      "error": "공식 고해상도 제품 페이지를 찾지 못했습니다."
+    },
+    {
+      "id": "sony-바디-sony-e-ilce-7m4",
+      "status": "updated",
+      "source": "https://www.sony.co.kr/interchangeable-lens-cameras/products/ilce-7m4",
+      "sourceSize": [
+        1200,
+        1200
+      ]
+    },
+    {
+      "id": "sony-바디-sony-e-ilce-7m5",
+      "status": "not-found",
+      "error": "공식 고해상도 제품 페이지를 찾지 못했습니다."
+    },
+    {
+      "id": "sony-바디-sony-e-ilce-7rm5",
+      "status": "updated",
+      "source": "https://www.sony.co.kr/interchangeable-lens-cameras/products/ilce-7rm5",
+      "sourceSize": [
+        1200,
+        1200
+      ]
+    },
+    {
+      "id": "sony-바디-sony-e-ilce-7rm6",
+      "status": "not-found",
+      "error": "공식 고해상도 제품 페이지를 찾지 못했습니다."
+    },
+    {
+      "id": "sony-바디-sony-e-ilce-7cm2",
+      "status": "updated",
+      "source": "https://www.sony.co.kr/interchangeable-lens-cameras/products/ilce-7cm2",
+      "sourceSize": [
+        1200,
+        1200
+      ]
+    },
+    {
+      "id": "sony-바디-sony-e-ilce-7cr",
+      "status": "updated",
+      "source": "https://www.sony.co.kr/interchangeable-lens-cameras/products/ilce-7cr",
+      "sourceSize": [
+        1200,
+        1200
+      ]
+    },
+    {
+      "id": "sony-바디-sony-e-ilce-9m3",
+      "status": "updated",
+      "source": "https://www.sony.co.kr/interchangeable-lens-cameras/products/ilce-9m3",
+      "sourceSize": [
+        1200,
+        1200
+      ]
+    },
+    {
+      "id": "sony-바디-sony-e-ilce-1",
+      "status": "not-found",
+      "error": "HTTPSConnectionPool(host='www.sony.co.kr', port=443): Read timed out. (read timeout=18)"
+    },
+    {
+      "id": "sony-바디-sony-e-ilce-1m2",
+      "status": "not-found",
+      "error": "공식 고해상도 제품 페이지를 찾지 못했습니다."
+    },
+    {
+      "id": "sony-바디-sony-e-zv-e10m2-ilce-zve10m2",
+      "status": "updated",
+      "source": "https://www.sony.co.kr/interchangeable-lens-cameras/products/zv-e10",
+      "sourceSize": [
+        1200,
+        1200
+      ]
+    },
+    {
+      "id": "sony-바디-sony-e-ilme-fx3a",
+      "status": "not-found",
+      "error": "공식 고해상도 제품 페이지를 찾지 못했습니다."
+    },
+    {
+      "id": "sony-바디-sony-e-ilme-fx30",
+      "status": "updated",
+      "source": "https://www.sony.co.kr/interchangeable-lens-cameras/products/ilme-fx30",
+      "sourceSize": [
+        1200,
+        1200
+      ]
+    },
+    {
+      "id": "sony-바디-sony-e-ilme-fx2-ilme-fx2b",
+      "status": "not-found",
+      "error": "공식 고해상도 제품 페이지를 찾지 못했습니다."
+    },
+    {
+      "id": "sony-렌즈-sony-e-sel16f18g",
+      "status": "not-found",
+      "error": "공식 고해상도 제품 페이지를 찾지 못했습니다."
+    },
+    {
+      "id": "sony-렌즈-sony-e-sel85f14gm2",
+      "status": "not-found",
+      "error": "공식 고해상도 제품 페이지를 찾지 못했습니다."
+    },
+    {
+      "id": "sony-렌즈-sony-e-sel1625g",
+      "status": "not-found",
+      "error": "공식 고해상도 제품 페이지를 찾지 못했습니다."
+    },
+    {
+      "id": "sony-렌즈-sony-e-sel2470gm",
+      "status": "not-found",
+      "error": "공식 고해상도 제품 페이지를 찾지 못했습니다."
+    },
+    {
+      "id": "sony-렌즈-sony-e-sel24105g",
+      "status": "not-found",
+      "error": "공식 고해상도 제품 페이지를 찾지 못했습니다."
+    },
+    {
+      "id": "sony-렌즈-sony-e-sel28702",
+      "status": "not-found",
+      "error": "공식 고해상도 제품 페이지를 찾지 못했습니다."
+    },
+    {
+      "id": "sony-렌즈-sony-e-sel50150gm",
+      "status": "not-found",
+      "error": "공식 고해상도 제품 페이지를 찾지 못했습니다."
+    },
+    {
+      "id": "sony-렌즈-sony-e-sel70200gm",
+      "status": "not-found",
+      "error": "공식 고해상도 제품 페이지를 찾지 못했습니다."
+    },
+    {
+      "id": "sony-렌즈-sony-e-sel100400mc",
+      "status": "not-found",
+      "error": "공식 고해상도 제품 페이지를 찾지 못했습니다."
+    },
+    {
+      "id": "sony-렌즈-sony-e-sel400800g",
+      "status": "not-found",
+      "error": "공식 고해상도 제품 페이지를 찾지 못했습니다."
+    },
+    {
+      "id": "ext-sony-sony-fx6",
+      "status": "not-found",
+      "error": "공식 고해상도 제품 페이지를 찾지 못했습니다."
+    },
+    {
+      "id": "ext-sony-burano-mpc-2610",
+      "status": "not-found",
+      "error": "공식 고해상도 제품 페이지를 찾지 못했습니다."
+    }
+  ]
+}

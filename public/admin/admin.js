@@ -2,18 +2,25 @@ const PATHS = {
   products: "public/data/products.json",
   expansion: "public/data/system-expansion.json",
   partners: "public/data/official-partner-products.json",
+  hasselblad: "public/data/hasselblad-products.json",
   prices: "public/data/korea-prices.json",
   images: "public/data/product-images.json",
   batteries: "public/data/batteries.json",
   adapters: "public/data/mount-adapters.json",
   home: "public/data/home-config.json",
   manufacturerOrder: "public/data/manufacturer-order.json",
+  filterOrder: "public/data/filter-order.json",
+  flashes: "public/data/flashes.json",
+  memoryCards: "public/data/memory-cards.json",
+  tripods: "public/data/tripods.json",
+  heads: "public/data/heads.json",
+  plates: "public/data/plates.json",
 };
-const PRODUCT_PATHS = [PATHS.products, PATHS.expansion, PATHS.partners];
+const PRODUCT_PATHS = [PATHS.products, PATHS.expansion, PATHS.partners, PATHS.hasselblad];
 const PAGE_SIZE = 50;
 const VIEW_TITLES = {
   dashboard: "대시보드", products: "제품 관리", prices: "가격 관리", images: "이미지 관리",
-  accessories: "액세서리", home: "홈 관리", manufacturers: "제조사 순서", audit: "DB 검수",
+  accessories: "액세서리", home: "홈 관리", manufacturers: "제조사 순서", filters: "필터 순서", audit: "DB 검수",
 };
 const PRICE_POLICY = "한국 공식 사이트/공식 유통사 정상가·정가만 사용. 최저가·병행수입·해외가격 제외.";
 
@@ -39,6 +46,7 @@ let pages = { products: 1, prices: 1, images: 1 };
 let currentEditor = null;
 let toastTimer = null;
 let manufacturerDraft = [];
+let filterDraft = null;
 const pendingChanges = new Map();
 const pendingMessages = [];
 
@@ -72,8 +80,10 @@ function toast(message) {
 }
 
 function sourceLabel(path) {
-  return ({ [PATHS.products]: "기본 DB", [PATHS.expansion]: "확장 DB", [PATHS.partners]: "공식 파트너" })[path] || basename(path);
+  return ({ [PATHS.products]: "기본 DB", [PATHS.expansion]: "확장 DB", [PATHS.partners]: "공식 파트너", [PATHS.hasselblad]: "Hasselblad" })[path] || basename(path);
 }
+
+function isActive(product) { return product?.active !== false && product?.enabled !== false && product?.visibility !== "hidden"; }
 
 function rebuildIndexes() {
   products = PRODUCT_PATHS.flatMap((sourceFile) => (files[sourceFile] || []).map((product, sourceIndex) => ({ ...product, _sourceFile: sourceFile, _sourceIndex: sourceIndex })));
@@ -107,7 +117,7 @@ function priceValue(row) {
 }
 
 function imageFor(product) {
-  const raw = (files[PATHS.images] || {})[label(product)];
+  const raw = (files[PATHS.images] || {})[product?.id] || (files[PATHS.images] || {})[label(product)];
   if (typeof raw === "string") return { src: raw };
   return raw && typeof raw === "object" ? raw : null;
 }
@@ -236,10 +246,11 @@ function renderProducts() {
   const query = $("#productSearch").value;
   const brand = $("#productBrand").value;
   const type = $("#productType").value;
+  const visibility = $("#productVisibility").value;
   const source = $("#productSource").value;
-  const filtered = products.filter((product) => filterText(product, query) && (!brand || product.manufacturer === brand) && (!type || product.type === type) && (!source || product._sourceFile === source));
+  const filtered = products.filter((product) => filterText(product, query) && (!brand || product.manufacturer === brand) && (!type || product.type === type) && (!visibility || (visibility === "active" ? isActive(product) : !isActive(product))) && (!source || product._sourceFile === source));
   const page = paged(filtered, "products");
-  $("#productRows").innerHTML = page.rows.map((product) => `<tr><td><div class="product-cell"><strong>${esc(label(product))}</strong><span>${esc(product.id)}</span></div></td><td>${esc(product.manufacturer || "-")}</td><td>${esc(product.type || "-")}</td><td>${esc(product.mount || "-")}</td><td>${esc(product.modelCode || "-")}</td><td><span class="status ${product.currentSale === "예" ? "good" : product.currentSale === "아니오" ? "bad" : "warn"}">${esc(product.saleStatus || product.currentSale || "확인 필요")}</span></td><td>${esc(sourceLabel(product._sourceFile))}</td><td class="row-actions"><button data-edit-product data-source="${esc(product._sourceFile)}" data-index="${product._sourceIndex}" type="button">수정</button></td></tr>`).join("") || `<tr><td colspan="8" class="empty-state">검색 결과가 없습니다.</td></tr>`;
+  $("#productRows").innerHTML = page.rows.map((product) => `<tr class="${isActive(product) ? "" : "inactive-row"}"><td><div class="product-cell"><strong>${esc(label(product))}</strong><span>${esc(product.id)}</span></div></td><td>${esc(product.manufacturer || "-")}</td><td>${esc(product.type || "-")}</td><td>${esc(product.mount || "-")}</td><td>${esc(product.modelCode || "-")}</td><td><span class="status ${isActive(product) ? "good" : "bad"}">${isActive(product) ? "표시" : "비활성"}</span></td><td><span class="status ${product.currentSale === "예" ? "good" : product.currentSale === "아니오" ? "bad" : "warn"}">${esc(product.saleStatus || product.currentSale || "확인 필요")}</span></td><td>${esc(sourceLabel(product._sourceFile))}</td><td class="row-actions"><button data-toggle-product data-source="${esc(product._sourceFile)}" data-index="${product._sourceIndex}" type="button">${isActive(product) ? "비활성화" : "다시 표시"}</button><button data-edit-product data-source="${esc(product._sourceFile)}" data-index="${product._sourceIndex}" type="button">수정</button></td></tr>`).join("") || `<tr><td colspan="9" class="empty-state">검색 결과가 없습니다.</td></tr>`;
   renderPagination("#productPagination", "products", page.totalPages, renderProducts);
 }
 
@@ -279,17 +290,26 @@ function renderImages() {
 function renderAccessories() {
   const kind = $("#accessoryKind").value;
   const query = $("#accessorySearch").value.toLowerCase();
-  const path = kind === "batteries" ? PATHS.batteries : PATHS.adapters;
+  const path = PATHS[kind];
   const rows = (files[path] || []).map((row, index) => ({ row, index })).filter(({ row }) => [row.id, row.officialName, row.manufacturer].join(" ").toLowerCase().includes(query));
   if (kind === "batteries") {
     $("#accessoryHead").innerHTML = `<tr><th>배터리</th><th>제조사</th><th>호환 제품</th><th>현재 가격</th><th>판매 상태</th><th></th></tr>`;
     $("#accessoryRows").innerHTML = rows.map(({ row, index }) => `<tr><td><div class="product-cell"><strong>${esc(row.officialName)}</strong><span>${esc(row.id)}</span></div></td><td>${esc(row.manufacturer || "-")}</td><td>${formatCount((row.compatibleNames || []).length)}개</td><td>${esc(formatMoney(row.currentPriceKrw))}</td><td><span class="status ${row.currentSale === "예" ? "good" : "warn"}">${esc(row.currentSale || "확인 필요")}</span></td><td><button class="text-button" data-edit-accessory data-kind="batteries" data-index="${index}" type="button">수정</button></td></tr>`).join("");
-  } else {
+  } else if (kind === "adapters") {
     $("#accessoryHead").innerHTML = `<tr><th>마운트 어댑터</th><th>제조사</th><th>변환</th><th>AF</th><th>조리개 제어</th><th></th></tr>`;
     $("#accessoryRows").innerHTML = rows.map(({ row, index }) => `<tr><td><div class="product-cell"><strong>${esc(row.officialName)}</strong><span>${esc(row.id)}</span></div></td><td>${esc(row.manufacturer || "-")}</td><td>${esc(row.fromMount || "-")} → ${esc(row.toMount || "-")}</td><td>${esc(row.afSupport || "-")}</td><td>${esc(row.apertureControl || "-")}</td><td><button class="text-button" data-edit-accessory data-kind="adapters" data-index="${index}" type="button">수정</button></td></tr>`).join("");
   }
+  else {
+    const kindLabel = ({ memoryCards: "메모리 카드", flashes: "플래시", tripods: "삼각대 다리", heads: "볼헤드", plates: "플레이트" })[kind] || "액세서리";
+    $("#accessoryHead").innerHTML = `<tr><th>${kindLabel}</th><th>제조사</th><th>핵심 규격</th><th>한국 구매</th><th>판매 상태</th><th></th></tr>`;
+    $("#accessoryRows").innerHTML = rows.map(({ row, index }) => {
+      const spec = kind === "memoryCards" ? `${row.cardType || "-"} · ${row.speedClass || row.bus || "-"}` : kind === "flashes" ? `${row.system || "-"} · GN ${row.guideNumber || "-"}` : kind === "plates" ? `${row.standard || "-"} · ${row.plateType || "-"}` : `허용 ${row.maxLoadKg || "-"}kg · 자체 ${row.weightKg || "-"}kg`;
+      return `<tr><td><div class="product-cell"><strong>${esc(row.officialName || "-")}</strong><span>${esc(row.id || "")}</span></div></td><td>${esc(row.manufacturer || "-")}</td><td>${esc(spec)}</td><td>${row.koreaPurchasable === false ? "확인 필요" : "가능/확인"}</td><td>${esc(row.currentSale || "확인 필요")}</td><td><button class="text-button" data-edit-accessory data-kind="${kind}" data-index="${index}" type="button">수정</button></td></tr>`;
+    }).join("");
+  }
   if (!rows.length) $("#accessoryRows").innerHTML = `<tr><td colspan="6" class="empty-state">검색 결과가 없습니다.</td></tr>`;
-  $("#addAccessory").textContent = kind === "batteries" ? "+ 배터리 추가" : "+ 어댑터 추가";
+  const addLabel = ({ batteries: "배터리", adapters: "어댑터", memoryCards: "메모리 카드", flashes: "플래시", tripods: "삼각대 다리", heads: "볼헤드", plates: "플레이트" })[kind] || "액세서리";
+  $("#addAccessory").textContent = `+ ${addLabel} 추가`;
 }
 
 function defaultHome() {
@@ -335,6 +355,37 @@ async function saveManufacturerOrder() {
   await commit([{ path: PATHS.manufacturerOrder, value: [...manufacturerDraft] }], "Admin: update manufacturer display order");
 }
 
+const FILTER_LABELS = {
+  sensorFormat: "센서 포맷", cameraSystem: "카메라 방식", manufacturer: "제조사", mount: "마운트",
+  ibis: "손떨림 보정", releaseGroup: "출시 시기", lensFormat: "렌즈 포맷", lensType: "렌즈 유형",
+  focalGroup: "초점거리", apertureGroup: "최대 조리개", stabilization: "렌즈 손떨림 보정",
+};
+
+function defaultFilterOrder() {
+  return { version: 1, bodyRows: ["sensorFormat", "cameraSystem", "manufacturer", "mount", "ibis", "releaseGroup"], lensRows: ["cameraSystem", "manufacturer", "mount", "lensFormat", "lensType", "focalGroup", "apertureGroup", "stabilization"], options: {} };
+}
+
+function renderFilterOrder(reset = false) {
+  if (reset || !filterDraft) filterDraft = clone(files[PATHS.filterOrder] || defaultFilterOrder());
+  const renderRows = (selector, key) => {
+    const rows = filterDraft[key] || [];
+    $(selector).innerHTML = rows.map((name, index) => `<div class="manufacturer-order-row"><span>${index + 1}</span><strong>${esc(FILTER_LABELS[name] || name)}</strong><div class="manufacturer-order-controls"><button data-filter-move="up" data-filter-key="${key}" data-filter-index="${index}" type="button" ${index === 0 ? "disabled" : ""}>▲</button><button data-filter-move="down" data-filter-key="${key}" data-filter-index="${index}" type="button" ${index === rows.length - 1 ? "disabled" : ""}>▼</button></div></div>`).join("");
+  };
+  renderRows("#bodyFilterOrder", "bodyRows");
+  renderRows("#lensFilterOrder", "lensRows");
+  const optionKeys = [...new Set([...(filterDraft.bodyRows || []), ...(filterDraft.lensRows || [])])];
+  $("#filterOptionOrder").innerHTML = optionKeys.map((key) => `<div class="field"><label>${esc(FILTER_LABELS[key] || key)} 선택지 순서</label><textarea data-filter-option="${esc(key)}" placeholder="비워두면 데이터 기준 자동 정렬">${esc((filterDraft.options?.[key] || []).join("\n"))}</textarea></div>`).join("");
+}
+
+async function saveFilterOrder() {
+  const next = clone(filterDraft || defaultFilterOrder());
+  next.options = next.options || {};
+  $$('[data-filter-option]').forEach((textarea) => { next.options[textarea.dataset.filterOption] = lines(textarea.value); });
+  next.version = 1;
+  filterDraft = next;
+  await commit([{ path: PATHS.filterOrder, value: next }], "Admin: update catalog filter order");
+}
+
 function featuredSelects(name, selected, options) {
   return [0, 1, 2, 3].map((index) => `<select name="${name}${index}"><option value="">선택 안 함</option>${options.map((product) => `<option value="${esc(product.id)}" ${selected[index] === product.id ? "selected" : ""}>${esc(product.manufacturer)} · ${esc(label(product))}</option>`).join("")}</select>`).join("");
 }
@@ -360,7 +411,7 @@ function renderAll() {
   fillSelect("#priceBrand", brands, "전체 제조사");
   fillSelect("#imageBrand", brands, "전체 제조사");
   $("#productSource").innerHTML = `<option value="">전체 데이터 파일</option>${PRODUCT_PATHS.map((path) => `<option value="${esc(path)}">${esc(sourceLabel(path))}</option>`).join("")}`;
-  renderDashboard(); renderProducts(); renderPrices(); renderImages(); renderAccessories(); renderHome(); renderManufacturerOrder(); renderAudit();
+  renderDashboard(); renderProducts(); renderPrices(); renderImages(); renderAccessories(); renderHome(); renderManufacturerOrder(); renderFilterOrder(); renderAudit();
 }
 
 async function loadState(showLoader = true) {
@@ -369,6 +420,7 @@ async function loadState(showLoader = true) {
     snapshot = await api("state");
     files = snapshot.files;
     manufacturerDraft = [];
+    filterDraft = null;
     rebuildIndexes();
     renderAll();
     $("#readonlyNotice").hidden = snapshot.writable;
@@ -464,6 +516,7 @@ function openProductEditor(record = null, draft = null) {
     ${field("id", "제품 ID", product.id || "")}
     ${field("manufacturer", "제조사", product.manufacturer || "")}${field("cameraSystem", "카메라 방식", product.cameraSystem || "")}
     ${field("type", "제품 종류", product.type || "", { type: "select", values: ["바디", "렌즈"] })}${field("mount", "마운트", product.mount || "")}
+    ${field("active", "사이트 표시", isActive(product) ? "true" : "false", { type: "select", values: [["true", "표시"], ["false", "비활성화"]] })}${field("dataGrade", "데이터 등급", product.dataGrade || "D", { type: "select", values: ["A", "B", "C", "D"] })}
     ${field("officialName", "정식 제품명", product.officialName || "", { full: true })}
     ${field("model", "모델명", product.model || "")}${field("modelCode", "모델 코드", product.modelCode || "")}
     ${field("series", "시리즈", product.series || "")}${field("releaseDate", "출시일", product.releaseDate || "")}
@@ -506,6 +559,8 @@ async function saveProduct() {
   stringFields.forEach((key) => { const value = dialogValue(key).trim(); product[key] = value || null; });
   product.releaseYear = numOrNull(dialogValue("releaseYear"));
   product.weightG = numOrNull(dialogValue("weightG"));
+  product.active = dialogValue("active") !== "false";
+  product.dataGrade = dialogValue("dataGrade") || "D";
   product.specs = specs;
   Object.assign(product.specs, {
     "제조사": product.manufacturer,
@@ -555,9 +610,10 @@ async function saveProduct() {
       });
       changed.set(PATHS.prices, priceRows);
     }
-    if (oldName !== newName && Object.prototype.hasOwnProperty.call(files[PATHS.images], oldName)) {
+    if ((oldName !== newName || record.id !== product.id) && (Object.prototype.hasOwnProperty.call(files[PATHS.images], record.id) || Object.prototype.hasOwnProperty.call(files[PATHS.images], oldName))) {
       const mapping = clone(files[PATHS.images]);
-      mapping[newName] = mapping[oldName];
+      mapping[product.id] = mapping[record.id] || mapping[oldName];
+      delete mapping[record.id];
       delete mapping[oldName];
       changed.set(PATHS.images, mapping);
     }
@@ -570,6 +626,15 @@ async function saveProduct() {
     }
   }
   await commit([...changed].map(([path, value]) => ({ path, value })), `Admin: ${record ? "update" : "add"} product ${product.officialName || product.id}`);
+}
+
+async function toggleProductVisibility(record) {
+  if (!record) return;
+  const rows = clone(files[record._sourceFile]);
+  const next = clone(rows[record._sourceIndex]);
+  next.active = !isActive(record);
+  rows[record._sourceIndex] = next;
+  await commit([{ path: record._sourceFile, value: rows }], `Admin: ${next.active ? "activate" : "deactivate"} product ${label(record)}`);
 }
 
 async function deleteProduct(record) {
@@ -586,6 +651,7 @@ async function deleteProduct(record) {
   const image = imageFor(record);
   if (image) {
     const mapping = clone(files[PATHS.images]);
+    delete mapping[record.id];
     delete mapping[label(record)];
     changes.push({ path: PATHS.images, value: mapping });
     const imagePath = localRepoPath(image.src);
@@ -663,6 +729,8 @@ function openImageEditor(product) {
   const body = `${image.src ? `<div class="preview-large"><img src="${esc(image.src)}" alt="${esc(label(product))}"></div>` : ""}<div class="form-grid">
     ${field("imageSrc", "사이트 이미지 경로", image.src || "", { full: true, placeholder: "/assets/images/products/..." })}
     <div class="field full"><label>새 이미지 파일</label><input name="imageFile" type="file" accept="image/webp,image/png,image/jpeg,image/avif"></div>
+    <label class="field-check"><input name="removeWhiteBackground" type="checkbox">가장자리와 연결된 흰 배경을 투명 WEBP로 변환</label>
+    ${field("backgroundTolerance", "흰색 허용 오차(0~40)", 18, { type: "number" })}
     ${field("sourcePage", "공식 이미지 출처 페이지", image.sourcePage || image.source || "", { full: true })}
     ${field("sourceImage", "원본 이미지 URL", image.sourceImage || "", { full: true })}
     ${field("method", "수집/등록 방식", image.method || "manual-admin")}${field("fetchedAt", "등록일", image.fetchedAt || new Date().toISOString())}
@@ -712,6 +780,28 @@ async function imageDimensions(file) {
   catch { return { width: null, height: null }; }
 }
 
+async function transparentProductWebp(file, tolerance = 18) {
+  if (!file?.size) throw new Error("선택한 이미지가 비어 있습니다.");
+  const bitmap = await createImageBitmap(file);
+  try {
+    if (Math.max(bitmap.width, bitmap.height) < 500) throw new Error("배경 투명화 원본은 긴 변이 500px 이상이어야 합니다.");
+    if (bitmap.width * bitmap.height > 18_000_000) throw new Error("이미지가 너무 큽니다. 18MP 이하 파일을 사용하세요.");
+    const canvas = document.createElement("canvas"); canvas.width = bitmap.width; canvas.height = bitmap.height;
+    const context = canvas.getContext("2d", { willReadFrequently: true }); context.drawImage(bitmap, 0, 0);
+    const image = context.getImageData(0, 0, canvas.width, canvas.height); const data = image.data;
+    const count = canvas.width * canvas.height; const visited = new Uint8Array(count); const queue = new Int32Array(count); let head = 0; let tail = 0;
+    const threshold = 255 - Math.max(0, Math.min(40, Number(tolerance) || 18));
+    const add = (index) => { if (index < 0 || index >= count || visited[index]) return; visited[index] = 1; const offset = index * 4; if (data[offset] >= threshold && data[offset + 1] >= threshold && data[offset + 2] >= threshold) queue[tail++] = index; };
+    for (let x = 0; x < canvas.width; x += 1) { add(x); add((canvas.height - 1) * canvas.width + x); }
+    for (let y = 0; y < canvas.height; y += 1) { add(y * canvas.width); add(y * canvas.width + canvas.width - 1); }
+    while (head < tail) { const index = queue[head++]; data[index * 4 + 3] = 0; const x = index % canvas.width; if (x) add(index - 1); if (x < canvas.width - 1) add(index + 1); add(index - canvas.width); add(index + canvas.width); }
+    context.putImageData(image, 0, 0);
+    const blob = await new Promise((resolve) => canvas.toBlob(resolve, "image/webp", .92));
+    if (!blob?.size) throw new Error("투명 WEBP 변환에 실패했습니다.");
+    return { base64: await fileBase64(blob), width: canvas.width, height: canvas.height };
+  } finally { bitmap.close(); }
+}
+
 async function saveImage() {
   const { product, image: previous } = currentEditor;
   const mapping = clone(files[PATHS.images]);
@@ -720,37 +810,45 @@ async function saveImage() {
   const changes = [];
   let dimensions = { width: previous.width || null, height: previous.height || null };
   if (file) {
+    const removeBackground = $(`[name="removeWhiteBackground"]`, $("#dialogBody")).checked;
     const extRaw = file.name.split(".").pop().toLowerCase();
-    const ext = extRaw === "jpeg" ? "jpg" : extRaw;
+    const ext = removeBackground ? "webp" : (extRaw === "jpeg" ? "jpg" : extRaw);
     if (!["webp", "png", "jpg", "avif"].includes(ext)) return toast("WEBP, PNG, JPG, AVIF 이미지만 사용할 수 있습니다.");
     const repoPath = `public/assets/images/products/${slug(product.manufacturer)}/${slug(product.id)}.${ext}`;
     src = repoPath.replace(/^public/, "");
-    dimensions = await imageDimensions(file);
-    changes.push({ path: repoPath, base64: await fileBase64(file) });
+    if (removeBackground) {
+      const converted = await transparentProductWebp(file, dialogValue("backgroundTolerance"));
+      dimensions = { width: converted.width, height: converted.height };
+      changes.push({ path: repoPath, base64: converted.base64 });
+    } else {
+      dimensions = await imageDimensions(file);
+      changes.push({ path: repoPath, base64: await fileBase64(file) });
+    }
     const oldPath = localRepoPath(previous.src);
     if (oldPath && oldPath !== repoPath) changes.push({ path: oldPath, delete: true });
   }
   if (!src) return toast("사이트 이미지 경로나 새 이미지 파일이 필요합니다.");
-  mapping[label(product)] = {
+  mapping[product.id] = {
     src, sourcePage: dialogValue("sourcePage").trim(), sourceImage: dialogValue("sourceImage").trim(),
     method: dialogValue("method").trim() || "manual-admin", fetchedAt: dialogValue("fetchedAt").trim() || new Date().toISOString(),
     width: dimensions.width, height: dimensions.height,
     usageReviewRequired: $(`[name="usageReview"]`, $("#dialogBody")).checked,
   };
+  delete mapping[label(product)];
   changes.unshift({ path: PATHS.images, value: mapping });
   await commit(changes, `Admin: update product image ${label(product)}`);
 }
 
 async function deleteImage(product, image) {
   if (!confirm(`${label(product)}의 이미지 매핑과 로컬 파일을 제거할까요?`)) return;
-  const mapping = clone(files[PATHS.images]); delete mapping[label(product)];
+  const mapping = clone(files[PATHS.images]); delete mapping[product.id]; delete mapping[label(product)];
   const changes = [{ path: PATHS.images, value: mapping }];
   const path = localRepoPath(image.src); if (path) changes.push({ path, delete: true });
   await commit(changes, `Admin: delete product image ${label(product)}`);
 }
 
 function openAccessoryEditor(kind, index = null) {
-  const path = kind === "batteries" ? PATHS.batteries : PATHS.adapters;
+  const path = PATHS[kind];
   const record = index === null ? {} : clone(files[path][index]);
   currentEditor = { type: "accessory", kind, index, path };
   const body = kind === "batteries" ? `<div class="form-grid">
@@ -761,16 +859,19 @@ function openAccessoryEditor(kind, index = null) {
     ${field("compatibleNames", "호환 제품명 · 한 줄에 하나", (record.compatibleNames || []).join("\n"), { type: "textarea", full: true })}
     ${field("compatibleModelCodes", "호환 모델코드 · 한 줄에 하나", (record.compatibleModelCodes || []).join("\n"), { type: "textarea", full: true })}
     ${field("compatiblePrefixes", "호환 접두어 · 한 줄에 하나", (record.compatiblePrefixes || []).join("\n"), { type: "textarea", full: true })}${field("note", "비고", record.note || "", { type: "textarea", full: true })}
-  </div>` : `<div class="form-grid">
+  </div>` : kind === "adapters" ? `<div class="form-grid">
     ${field("id", "ID", record.id || "")}${field("manufacturer", "제조사", record.manufacturer || "")}${field("officialName", "어댑터명", record.officialName || "", { full: true })}
     ${field("fromMount", "렌즈 측 마운트", record.fromMount || "")}${field("toMount", "바디 측 마운트", record.toMount || "")}
     ${field("afSupport", "AF 지원", record.afSupport || "확인 필요", { type: "select", values: ["예", "아니오", "확인 필요"] })}${field("apertureControl", "조리개 제어", record.apertureControl || "확인 필요", { type: "select", values: ["예", "아니오", "확인 필요"] })}
     ${field("exifSupport", "EXIF", record.exifSupport || "확인 필요")}${field("stabilizationLink", "손떨림 연동", record.stabilizationLink || "확인 필요")}
     ${field("weatherSealing", "방진방적", record.weatherSealing || "확인 필요")}${field("focalReducer", "포컬 리듀서", record.focalReducer || "아니오")}
     ${field("magnification", "배율", record.magnification ?? 1, { type: "number" })}${field("note", "비고", record.note || "", { type: "textarea", full: true })}
+  </div>` : `<div class="form-grid">
+    ${field("id", "ID", record.id || "")}${field("manufacturer", "제조사", record.manufacturer || "")}${field("officialName", "제품명", record.officialName || "", { full: true })}
+    ${field("rawJson", "전체 데이터 JSON", JSON.stringify(record, null, 2), { type: "textarea", full: true })}
   </div>`;
   const danger = index === null ? "" : `<button id="deleteAccessory" class="button danger" type="button">삭제</button>`;
-  openDialog(index === null ? "액세서리 추가" : "액세서리 수정", kind === "batteries" ? "BATTERY" : "MOUNT ADAPTER", body, saveAccessory, danger);
+  openDialog(index === null ? "액세서리 추가" : "액세서리 수정", kind === "batteries" ? "BATTERY" : kind === "adapters" ? "MOUNT ADAPTER" : "ACCESSORY DATA", body, saveAccessory, danger);
   if (index !== null) $("#deleteAccessory").onclick = deleteAccessory;
 }
 
@@ -786,13 +887,19 @@ async function saveAccessory() {
       compatibleNames: lines(dialogValue("compatibleNames")), compatibleModelCodes: lines(dialogValue("compatibleModelCodes")),
       compatiblePrefixes: lines(dialogValue("compatiblePrefixes")), note: dialogValue("note").trim(),
     });
-  } else {
+  } else if (kind === "adapters") {
     ["id", "manufacturer", "officialName", "fromMount", "toMount", "afSupport", "apertureControl", "exifSupport", "stabilizationLink", "weatherSealing", "focalReducer", "note"].forEach((key) => { record[key] = dialogValue(key).trim(); });
     record.magnification = numOrNull(dialogValue("magnification"));
+  } else {
+    try { Object.assign(record, JSON.parse(dialogValue("rawJson") || "{}")); }
+    catch { return toast("전체 데이터 JSON 형식이 올바르지 않습니다."); }
+    record.id = dialogValue("id").trim() || record.id;
+    record.manufacturer = dialogValue("manufacturer").trim() || record.manufacturer;
+    record.officialName = dialogValue("officialName").trim() || record.officialName;
   }
   if (!record.id || !record.officialName) return toast("ID와 제품명은 필수입니다.");
   if (index === null) rows.push(record); else rows[index] = record;
-  await commit([{ path, value: rows }], `Admin: ${index === null ? "add" : "update"} ${kind === "batteries" ? "battery" : "mount adapter"} ${record.officialName}`);
+  await commit([{ path, value: rows }], `Admin: ${index === null ? "add" : "update"} ${kind} ${record.officialName}`);
 }
 
 async function deleteAccessory() {
@@ -800,7 +907,7 @@ async function deleteAccessory() {
   const record = files[path][index];
   if (!confirm(`${record.officialName}을(를) 삭제할까요?`)) return;
   const rows = clone(files[path]); rows.splice(index, 1);
-  await commit([{ path, value: rows }], `Admin: delete ${kind === "batteries" ? "battery" : "mount adapter"} ${record.officialName}`);
+  await commit([{ path, value: rows }], `Admin: delete ${kind} ${record.officialName}`);
 }
 
 async function saveHome() {
@@ -851,8 +958,9 @@ function bindEvents() {
   $("#deployPending").addEventListener("click", deployPending);
   $("#discardPending").addEventListener("click", discardPending);
   $("#saveManufacturerOrder").addEventListener("click", saveManufacturerOrder);
+  $("#saveFilterOrder").addEventListener("click", saveFilterOrder);
   $("#resetManufacturerOrder").addEventListener("click", () => { manufacturerDraft = [...manufacturerDraft].sort((a, b) => a.localeCompare(b, "ko")); renderManufacturerOrder(); });
-  [["#productSearch", renderProducts], ["#productBrand", renderProducts], ["#productType", renderProducts], ["#productSource", renderProducts], ["#priceSearch", renderPrices], ["#priceBrand", renderPrices], ["#priceStatus", renderPrices], ["#imageSearch", renderImages], ["#imageBrand", renderImages], ["#imageStatus", renderImages], ["#accessoryKind", renderAccessories], ["#accessorySearch", renderAccessories], ["#auditType", renderAudit], ["#auditSearch", renderAudit]].forEach(([selector, renderer]) => {
+  [["#productSearch", renderProducts], ["#productBrand", renderProducts], ["#productType", renderProducts], ["#productVisibility", renderProducts], ["#productSource", renderProducts], ["#priceSearch", renderPrices], ["#priceBrand", renderPrices], ["#priceStatus", renderPrices], ["#imageSearch", renderImages], ["#imageBrand", renderImages], ["#imageStatus", renderImages], ["#accessoryKind", renderAccessories], ["#accessorySearch", renderAccessories], ["#auditType", renderAudit], ["#auditSearch", renderAudit]].forEach(([selector, renderer]) => {
     $(selector).addEventListener($(selector).tagName === "INPUT" ? "input" : "change", () => { pages.products = pages.prices = pages.images = 1; renderer(); });
   });
   $("#addProduct").addEventListener("click", () => openProductEditor());
@@ -861,6 +969,8 @@ function bindEvents() {
   document.addEventListener("click", (event) => {
     const productButton = event.target.closest("[data-edit-product]");
     if (productButton) return openProductEditor(getProduct(productButton.dataset.source, productButton.dataset.index));
+    const toggleButton = event.target.closest("[data-toggle-product]");
+    if (toggleButton) return toggleProductVisibility(getProduct(toggleButton.dataset.source, toggleButton.dataset.index));
     const priceButton = event.target.closest("[data-edit-price]");
     if (priceButton) return openPriceEditor(getProduct(priceButton.dataset.source, priceButton.dataset.index));
     const imageButton = event.target.closest("[data-edit-image]");
@@ -873,6 +983,15 @@ function bindEvents() {
       const target = index + (manufacturerMove.dataset.manufacturerMove === "up" ? -1 : 1);
       if (target >= 0 && target < manufacturerDraft.length) [manufacturerDraft[index], manufacturerDraft[target]] = [manufacturerDraft[target], manufacturerDraft[index]];
       renderManufacturerOrder(); return;
+    }
+    const filterMove = event.target.closest("[data-filter-move]");
+    if (filterMove) {
+      $$('[data-filter-option]').forEach((textarea) => { filterDraft.options[textarea.dataset.filterOption] = lines(textarea.value); });
+      const rows = filterDraft[filterMove.dataset.filterKey];
+      const index = Number(filterMove.dataset.filterIndex);
+      const target = index + (filterMove.dataset.filterMove === "up" ? -1 : 1);
+      if (target >= 0 && target < rows.length) [rows[index], rows[target]] = [rows[target], rows[index]];
+      renderFilterOrder(); return;
     }
     const accessoryButton = event.target.closest("[data-edit-accessory]");
     if (accessoryButton) return openAccessoryEditor(accessoryButton.dataset.kind, Number(accessoryButton.dataset.index));
