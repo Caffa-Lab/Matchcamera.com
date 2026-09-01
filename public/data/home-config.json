@@ -18,9 +18,9 @@
     {
       "slot": 3,
       "src": "/assets/images/banner/Banner3.webp",
-      "href": "",
+      "href": "https://tuti.today/",
       "alt": "Matchcamera Banner 3",
-      "enabled": false
+      "enabled": true
     },
     {
       "slot": 4,
@@ -42,5 +42,5 @@
     "nikon-렌즈-nikon-z-nikkor-z-24-70mm-f2-8-s-ii",
     "fujifilm-렌즈-fujifilm-x-xf16-55mmf2-8-2"
   ],
-  "updatedAt": "2026-08-30T10:16:11.867Z"
+  "updatedAt": "2026-09-01T03:07:10.977Z"
 }
