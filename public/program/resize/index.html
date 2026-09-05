@@ -4,71 +4,45 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>사진 리사이즈·장비 워터마크 | Matchcamera</title>
-  <meta name="description" content="사진을 브라우저에서 일괄 리사이즈하고 EXIF 기반 카메라·렌즈 워터마크를 합성합니다.">
-  <link rel="preconnect" href="https://unpkg.com" crossorigin>
+  <meta name="description" content="사진을 일괄 리사이즈·자르기하고 EXIF 기반 카메라와 렌즈 이미지를 합성합니다.">
   <link rel="stylesheet" href="/assets/css/site.css">
   <link rel="stylesheet" href="/assets/css/site-enhancements.css">
-  <link rel="stylesheet" href="/assets/css/resize.css">
+  <link rel="stylesheet" href="/assets/css/resize.css?v=20260905-full">
   <link rel="icon" href="/assets/images/matchcamera/symbol.png" type="image/png">
-  <script defer src="https://unpkg.com/exifr@7.1.3/dist/full.umd.js"></script>
-  <script defer src="https://unpkg.com/jszip@3.10.1/dist/jszip.min.js"></script>
+  <script defer src="/assets/vendor/jszip.min.js"></script>
 </head>
 <body class="resize-page">
   <div data-header></div>
   <main class="resize-main">
     <section class="resize-hero">
-      <div>
-        <span>MATCHCAMERA PROGRAM</span>
-        <h1>사진 리사이즈·장비 워터마크</h1>
-        <p>여러 사진의 크기와 품질을 한 번에 바꾸고, EXIF에 기록된 바디·렌즈를 찾아 사진 아래에 합성합니다.</p>
-      </div>
+      <div><span>MATCHCAMERA PROGRAM</span><h1>사진 리사이즈·장비 워터마크</h1><p>비율·테두리·워터마크·용량을 일괄 조정하고, EXIF에 기록된 바디와 렌즈를 결과 사진에 합성합니다.</p></div>
       <strong>브라우저에서만 처리 · 서버 업로드 없음</strong>
     </section>
-
-    <section class="resize-layout">
-      <aside class="resize-sidebar">
-        <label id="resizeDropzone" class="resize-dropzone">
-          <input id="resizeFiles" type="file" accept="image/jpeg,image/png,image/webp,image/avif" multiple>
-          <b>사진 선택 또는 드롭</b><span>JPG · PNG · WEBP · AVIF</span>
-        </label>
-        <div class="resize-controls">
-          <h2>출력 설정</h2>
-          <label>긴 변 크기(px)<input id="longEdge" type="number" min="320" max="12000" step="10" value="2048"></label>
-          <div class="resize-two"><label>형식<select id="outputFormat"><option value="image/jpeg">JPG</option><option value="image/webp">WEBP</option><option value="image/png">PNG</option></select></label><label>품질<input id="outputQuality" type="number" min="10" max="100" value="90"></label></div>
-          <label>파일명 접미사<input id="filenameSuffix" type="text" value="_matchcamera"></label>
-          <label class="resize-check"><input id="equipmentEnabled" type="checkbox" checked> 장비 정보 패널 넣기</label>
-          <label class="resize-check"><input id="equipmentImages" type="checkbox" checked> 바디·렌즈 제품 이미지 넣기</label>
-          <label class="resize-check"><input id="settingsEnabled" type="checkbox" checked> 조리개·셔터·ISO·초점거리 표시</label>
-          <label>패널 색상<select id="panelTheme"><option value="light">흰색</option><option value="dark">검은색</option></select></label>
-        </div>
-        <div class="resize-controls resize-equipment">
-          <h2>현재 사진 장비</h2>
-          <label>바디<input id="bodySearch" list="bodyOptions" placeholder="EXIF 자동 인식 또는 검색"></label>
-          <datalist id="bodyOptions"></datalist>
-          <label>렌즈<input id="lensSearch" list="lensOptions" placeholder="EXIF 자동 인식 또는 검색"></label>
-          <datalist id="lensOptions"></datalist>
-          <p id="exifSummary">사진을 선택하면 EXIF를 확인합니다.</p>
-          <button id="applyEquipmentAll" type="button">이 장비를 모든 사진에 적용</button>
-        </div>
-      </aside>
-
-      <section class="resize-workspace">
-        <div class="resize-toolbar"><div><b id="resizeCount">0개</b><span id="resizeStatus" aria-live="polite">사진을 선택하세요.</span></div><button id="clearResize" type="button" disabled>전체 지우기</button></div>
-        <div id="resizePreview" class="resize-preview"><div class="resize-empty"><b>완성 이미지를 여기서 미리봅니다.</b><span>왼쪽에서 사진을 선택하세요.</span></div></div>
-        <div id="resizeQueue" class="resize-queue"></div>
+    <div class="mobile-warning">데스크톱 Chrome 또는 Edge 사용을 권장합니다. 고해상도 사진은 모바일 브라우저에서 제한될 수 있습니다.</div>
+    <section class="app-layout">
+      <section class="panel files-panel">
+        <header class="panel-header"><h2>파일</h2><button class="button danger" type="button" data-clear-all>전체 초기화</button></header>
+        <div class="panel-body"><input type="file" accept="image/jpeg,image/png,image/webp" multiple hidden data-file-input><div class="drop-zone" tabindex="0" role="button" data-drop-zone><div><strong>사진을 드래그하거나 클릭</strong><span>JPEG · PNG · WebP · 여러 장 선택 가능</span></div></div><div class="file-list" data-file-list></div></div>
       </section>
-
-      <aside class="resize-export">
-        <h2>내보내기</h2>
-        <div class="resize-export-summary"><span>선택 사진</span><b id="exportCount">0개</b><span>예상 출력</span><b id="exportSize">-</b></div>
-        <button id="downloadCurrent" type="button" disabled>현재 사진 저장</button>
-        <button id="downloadAll" class="primary" type="button" disabled>전체 ZIP 저장</button>
-        <p>원본 파일은 변경되지 않습니다. 출력 파일은 개인정보 보호를 위해 새 캔버스로 생성되어 일부 메타데이터가 제거됩니다.</p>
-      </aside>
+      <section class="panel preview-panel">
+        <header class="panel-header"><h2>미리보기</h2><div class="row"><button class="button" type="button" data-rotate>↻ 시계방향 90°</button></div></header>
+        <div class="preview-stage" data-preview-stage><canvas class="preview-canvas" data-preview-canvas hidden></canvas><div class="preview-empty" data-preview-empty>사진을 추가하면 미리보기가 표시됩니다.</div></div>
+        <div class="preview-toolbar"><button class="button" type="button" data-prev>← 이전</button><span class="preview-count" data-preview-count>0 / 0</span><button class="button" type="button" data-next>다음 →</button></div>
+      </section>
+      <section class="panel controls-panel">
+        <header class="panel-header"><h2>편집 및 저장</h2><button class="button" type="button" data-open-metadata>메타데이터 ⚙</button></header>
+        <div class="panel-body">
+          <section class="control-section stack"><h3>비율 조정</h3><div class="ratio-mode-row"><label class="check"><input type="checkbox" data-crop-enabled> 자르기</label><label class="check"><input type="checkbox" data-border-enabled> 테두리 만들기</label></div><label class="field"><span>비율</span><select data-crop-ratio><option value="none">없음</option><option value="auto">자동 적용</option><optgroup label="세로 사진"><option value="4:5">4:5</option><option value="3:4">3:4</option></optgroup><optgroup label="가로 사진"><option value="5:4">5:4</option><option value="4:3">4:3</option></optgroup></select></label><div class="border-color-field" data-border-color-field><span class="field-label">여백 색상</span><div class="segmented border-colors"><label><input type="radio" name="border-color" value="white" checked><span>흰색</span></label><label><input type="radio" name="border-color" value="black"><span>검정색</span></label></div></div><label class="field border-size-field" data-border-size-field><span>테두리 크기 <strong data-border-size-value>5%</strong></span><input type="range" min="1" max="30" step="1" value="5" data-border-size></label><label class="check"><input type="checkbox" data-grid-enabled> 3분할 격자</label><div class="notice">자르기와 테두리는 동시에 사용할 수 없습니다. 자르기 위치는 미리보기에서 마우스 휠로 조정합니다.</div></section>
+          <section class="control-section stack"><h3>이미지 워터마크</h3><label class="check"><input type="checkbox" data-watermark-enabled> 워터마크 사용</label><input type="file" accept="image/png,image/jpeg,image/webp" hidden data-watermark-input><button class="button watermark-drop" type="button" data-watermark-select>워터마크 이미지 선택</button><div class="segmented four"><label><input type="radio" name="wm-position" value="left"><span>좌</span></label><label><input type="radio" name="wm-position" value="center" checked><span>중앙</span></label><label><input type="radio" name="wm-position" value="right"><span>우</span></label><label><input type="radio" name="wm-position" value="custom"><span>커스텀</span></label></div><label class="field"><span>크기 <strong data-watermark-size-value>18%</strong></span><input type="range" min="5" max="60" value="18" data-watermark-size></label><label class="field"><span>여백 <strong data-watermark-margin-value>3%</strong></span><input type="range" min="0" max="20" value="3" data-watermark-margin></label><label class="check"><input type="checkbox" data-watermark-all checked> 전체 사진에 동일 위치 적용</label><div class="notice">커스텀을 선택하면 미리보기에서 워터마크를 드래그할 수 있습니다.</div></section>
+          <section class="control-section stack equipment-section"><h3>촬영 장비 합성</h3><label class="check"><input type="checkbox" data-equipment-enabled> 사진 아래에 장비 패널 추가</label><div class="two-col"><label class="check"><input type="checkbox" data-equipment-images checked> 제품 사진 표시</label><label class="check"><input type="checkbox" data-equipment-settings checked> 촬영 설정 표시</label></div><label class="field"><span>패널 색상</span><select data-equipment-theme><option value="light">흰색</option><option value="dark">검정색</option></select></label><label class="field"><span>바디 검색·선택</span><input type="text" list="equipment-body-options" placeholder="EXIF 자동 인식" data-equipment-body></label><datalist id="equipment-body-options" data-equipment-body-options></datalist><label class="field"><span>렌즈 검색·선택</span><input type="text" list="equipment-lens-options" placeholder="EXIF 자동 인식" data-equipment-lens></label><datalist id="equipment-lens-options" data-equipment-lens-options></datalist><div class="equipment-detected" data-equipment-detected>사진을 선택하면 EXIF 장비 정보를 확인합니다.</div><button class="button" type="button" data-equipment-apply-all>현재 장비를 전체 사진에 적용</button></section>
+          <section class="control-section stack"><h3>저장</h3><div class="segmented"><label><input type="radio" name="save-mode" value="quality" checked><span>최대화질</span></label><label><input type="radio" name="save-mode" value="size"><span>목표 용량</span></label></div><label class="field"><span>목표 용량(MB)</span><input type="number" min="0.5" max="100" step="0.5" value="19" data-target-size></label><label class="check"><input type="checkbox" data-remove-metadata checked> 선택한 메타데이터 제거</label><div class="row wrap"><button class="button primary" type="button" data-process>처리 시작</button><button class="button" type="button" data-download-zip disabled>ZIP 다운로드</button></div><div class="progress"><span data-progress-bar></span></div><div class="progress-text" data-progress-text>대기 중</div><div class="output-list" data-output-list></div></section>
+        </div>
+      </section>
     </section>
   </main>
   <div data-footer></div>
-  <script type="module" src="/assets/js/common.js?v=20260902-programs"></script>
-  <script type="module" src="/assets/js/resize.js?v=20260902"></script>
+  <div class="modal" data-metadata-modal aria-hidden="true"><section class="modal-card" role="dialog" aria-modal="true" aria-labelledby="metadata-title"><header class="modal-header"><strong id="metadata-title">메타데이터 제거 설정</strong><button class="button" type="button" data-close-metadata>닫기</button></header><div class="modal-body stack"><div class="notice">체크한 항목을 결과 JPEG에서 제거합니다. 체크하지 않은 지원 항목은 원본에서 보존합니다.</div><div class="metadata-grid" data-metadata-options><label class="check"><input type="checkbox" value="gps" checked> GPS</label><label class="check"><input type="checkbox" value="datetime" checked> 촬영시간</label><label class="check"><input type="checkbox" value="camera" checked> 카메라</label><label class="check"><input type="checkbox" value="lens" checked> 렌즈</label><label class="check"><input type="checkbox" value="serial" checked> 시리얼</label><label class="check"><input type="checkbox" value="copyright" checked> 저작권</label><label class="check"><input type="checkbox" value="iptc" checked> IPTC</label><label class="check"><input type="checkbox" value="xmp" checked> XMP</label><label class="check"><input type="checkbox" value="exif" checked> EXIF</label><label class="check"><input type="checkbox" value="keywords" checked> 키워드</label><label class="check"><input type="checkbox" value="rating" checked> 평점</label><label class="check"><input type="checkbox" value="label" checked> 색상레이블</label><label class="check"><input type="checkbox" value="lightroom" checked> Lightroom</label><label class="check"><input type="checkbox" value="photoshop" checked> Photoshop</label><label class="check"><input type="checkbox" value="thumbnail" checked> 썸네일</label><label class="check"><input type="checkbox" value="icc"> ICC 색상 프로파일</label></div></div><footer class="modal-footer"><button class="button danger" type="button" data-reset-metadata>초기화</button><button class="button primary" type="button" data-save-metadata>현재 설정 저장</button></footer></section></div>
+  <script type="module" src="/assets/js/common.js?v=20260905-resize"></script>
+  <script type="module" src="/assets/js/resize/app.js?v=20260905-full"></script>
 </body>
 </html>

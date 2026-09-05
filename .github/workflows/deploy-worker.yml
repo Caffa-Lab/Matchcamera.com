@@ -28,7 +28,9 @@ jobs:
           node --check public/admin/admin.js
           node --check public/assets/js/home.js
           node --check public/assets/js/builder.js
-          node --check public/assets/js/resize.js
+          node --check public/assets/js/resize/app.js
+          node --check public/assets/js/resize/image-utils.js
+          node --check public/program/resize/workers/image-worker.js
           node --check worker/index.js
           node scripts/test_admin_worker.mjs
           node scripts/test_programs.mjs
