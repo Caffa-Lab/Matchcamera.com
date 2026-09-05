@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>RAW 별점·색상 레이블 자동화 | Matchcamera</title>
+  <meta name="description" content="선택한 RAW 파일의 XMP 별점과 Lightroom 색상 레이블을 브라우저에서 일괄 변경합니다.">
+  <link rel="stylesheet" href="/assets/css/site.css">
+  <link rel="stylesheet" href="/assets/css/site-enhancements.css">
+  <link rel="stylesheet" href="/assets/css/rating.css?v=20260905-label-language">
+  <link rel="icon" href="/assets/images/matchcamera/symbol.png" type="image/png">
+</head>
+<body class="rating-page">
+  <div data-header></div>
+  <main class="rating-main">
+    <section class="rating-hero">
+      <div><span>MATCHCAMERA PROGRAM · BETA</span><h1>RAW 별점·색상 레이블 자동화</h1><p>RAW 원본은 그대로 두고 같은 폴더의 XMP 사이드카만 안전하게 변경합니다.</p></div>
+      <strong>브라우저 로컬 처리 · 서버 업로드 없음</strong>
+    </section>
+    <div class="mobile-warning">실제 파일 수정은 데스크톱 Chrome 또는 Edge에서만 지원됩니다.</div>
+    <section class="privacy-notice"><strong>파일은 서버로 전송되지 않습니다.</strong><span>선택한 폴더와 하위 폴더를 브라우저 내부에서만 검색하며, RAW 원본은 수정하지 않습니다.</span></section>
+
+    <div class="rating-grid">
+      <div>
+        <section class="rating-card">
+          <header class="card-header"><h2>1. 상위 폴더 및 파일 규칙</h2><span class="count-pill" data-folder-status>선택 안 됨</span></header>
+          <div class="card-body stack">
+            <div class="folder-box"><div><strong>검색할 상위 폴더</strong><div class="folder-name" data-folder-name>폴더를 선택하세요.</div></div><button class="rating-button" type="button" data-select-folder>상위 폴더 선택</button></div>
+            <div class="two-col"><label class="field"><span>파일명 앞부분</span><input type="text" value="DSC0" data-prefix></label><label class="field"><span>RAW 확장자</span><input type="text" value=".ARW" data-extension></label></div>
+          </div>
+        </section>
+
+        <section class="rating-card">
+          <header class="card-header"><h2>2. 촬영 번호 목록</h2><span class="count-pill" data-number-count>0개</span></header>
+          <div class="card-body stack"><label class="field"><span>줄바꿈, 공백 또는 쉼표로 구분</span><textarea placeholder="2790&#10;2801&#10;2802" data-number-input></textarea></label><p class="field-help">숫자가 아닌 값은 무시하고 로그에 표시합니다. 중복 번호는 자동으로 제거됩니다.</p></div>
+        </section>
+
+        <section class="rating-card">
+          <header class="card-header"><h2>3. 적용 설정</h2></header>
+          <div class="card-body stack">
+            <div class="two-col"><label class="field"><span>별점</span><select data-rating><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5" selected>5</option></select></label><label class="field"><span>색상 레이블</span><select data-label-color><option value="unchanged">변경 안 함</option><option value="red">빨강</option><option value="yellow">노랑</option><option value="green">초록</option><option value="blue">파랑</option><option value="purple">보라</option><option value="clear">레이블 제거</option></select></label></div>
+            <div class="two-col"><label class="field"><span>Lightroom 레이블 언어</span><select data-label-language><option value="ko">한국어</option><option value="en">English</option><option value="custom">사용자 지정</option></select></label><label class="field"><span>사용자 지정 레이블 문자열</span><input type="text" placeholder="Lightroom에 설정된 정확한 레이블 이름" disabled data-label-custom></label></div>
+            <div class="label-preview"><span>XMP에 저장될 값</span><strong data-label-preview>변경 안 함</strong><small data-label-warning>한국어판 Lightroom 기본 레이블 세트 기준입니다.</small></div>
+            <div class="row wrap"><label class="check"><input type="checkbox" data-rating-unchanged> 별점 변경 안 함</label><label class="check"><input type="checkbox" checked data-backup> 기존 XMP 백업 생성</label></div>
+            <div class="action-bar"><button class="rating-button primary" type="button" data-run>실행</button><button class="rating-button danger" type="button" disabled data-stop>중지</button><button class="rating-button" type="button" data-reset>초기화</button></div>
+          </div>
+        </section>
+
+        <section class="rating-card">
+          <header class="card-header"><h2>진행 상태</h2><span class="count-pill" data-current-file>대기 중</span></header>
+          <div class="card-body stack"><div class="progress"><span data-progress-bar></span></div><div class="progress-meta"><span data-progress-text>0 / 0</span><span data-elapsed>0.0초</span></div></div>
+        </section>
+      </div>
+
+      <aside>
+        <section class="rating-card">
+          <header class="card-header"><h2>실시간 로그</h2><button class="rating-button" type="button" data-clear-log>로그 지우기</button></header>
+          <div class="card-body"><div class="log" data-log aria-live="polite"></div></div>
+        </section>
+        <section class="rating-card">
+          <header class="card-header"><h2>완료 결과 요약</h2></header>
+          <div class="card-body stack"><div class="summary-grid" data-summary></div><div class="complete-note" data-complete-note hidden>Lightroom Classic에서 해당 사진을 선택한 뒤<br><strong>메타데이터 → 파일에서 메타데이터 읽기</strong>를 실행하세요.</div></div>
+        </section>
+      </aside>
+    </div>
+  </main>
+  <div data-footer></div>
+
+  <div class="rating-modal" data-confirm-modal aria-hidden="true"><section class="modal-card" role="dialog" aria-modal="true" aria-labelledby="confirm-title"><header class="modal-header"><strong id="confirm-title">실행 전 확인</strong><button class="rating-button" type="button" data-confirm-cancel>닫기</button></header><div class="modal-body" data-confirm-body></div><footer class="modal-footer"><button class="rating-button" type="button" data-confirm-cancel-2>취소</button><button class="rating-button primary" type="button" data-confirm-run>확인 후 실행</button></footer></section></div>
+
+  <script type="module" src="/assets/js/common.js?v=20260905-rating"></script>
+  <script type="module" src="/assets/js/rating/app.js?v=20260905-label-language"></script>
+</body>
+</html>

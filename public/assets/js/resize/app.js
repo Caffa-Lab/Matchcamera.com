@@ -1,5 +1,5 @@
 import { createPhotoState, disposePhotoState, loadSettings, saveSettings, defaultSettings } from './state.js?v=20260905-full';
-import { renderPreview, clearImageCache } from './image-utils.js?v=20260905-full';
+import { renderPreview, clearImageCache } from './image-utils.js?v=20260905-render-match';
 import { applyMetadataPolicy } from './metadata.js?v=20260905-full';
 import { parse as parseExif } from '/assets/vendor/exifr-full.esm.js';
 import { loadProductIndex } from '../data.js?v=20260902-performance';
@@ -384,7 +384,7 @@ async function processAll() {
   outputs = [];
   renderAll();
   lockControls(true);
-  const worker = new Worker('/program/resize/workers/image-worker.js?v=20260905-full');
+  const worker = new Worker('/program/resize/workers/image-worker.js?v=20260905-render-match');
 
   try {
     for (let index = 0; index < photos.length; index += 1) {

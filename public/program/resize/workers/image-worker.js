@@ -28,24 +28,18 @@ self.onmessage = async (event) => {
       editedCanvas = new OffscreenCanvas(Math.max(1, Math.round(crop.width)), Math.max(1, Math.round(crop.height)));
       editedCtx = editedCanvas.getContext('2d', { alpha: false });
       editedCtx.drawImage(fullCanvas, crop.x, crop.y, crop.width, crop.height, 0, 0, editedCanvas.width, editedCanvas.height);
-    } else if (options.borderEnabled && ratio) {
+    } else if (options.borderEnabled) {
       const frame = calculateBorderFrame(rotatedWidth, rotatedHeight, ratio);
-      editedCanvas = new OffscreenCanvas(Math.max(1, Math.round(frame.width)), Math.max(1, Math.round(frame.height)));
+      const placement = calculateBorderPlacement(frame.width, frame.height, rotatedWidth, rotatedHeight, options.borderSize);
+      const visibleHeight = options.equipmentEnabled ? placement.y + placement.height : frame.height;
+      editedCanvas = new OffscreenCanvas(Math.max(1, Math.round(frame.width)), Math.max(1, Math.round(visibleHeight)));
       editedCtx = editedCanvas.getContext('2d', { alpha: false });
       editedCtx.imageSmoothingEnabled = true;
       editedCtx.imageSmoothingQuality = 'high';
       editedCtx.fillStyle = options.borderColor === 'black' ? '#000' : '#fff';
       editedCtx.fillRect(0, 0, editedCanvas.width, editedCanvas.height);
 
-      const borderFraction = clampBorderFraction(options.borderSize);
-      const innerWidth = editedCanvas.width * (1 - borderFraction * 2);
-      const innerHeight = editedCanvas.height * (1 - borderFraction * 2);
-      const imageScale = Math.min(innerWidth / rotatedWidth, innerHeight / rotatedHeight);
-      const drawWidth = rotatedWidth * imageScale;
-      const drawHeight = rotatedHeight * imageScale;
-      const x = (editedCanvas.width - drawWidth) / 2;
-      const y = (editedCanvas.height - drawHeight) / 2;
-      editedCtx.drawImage(fullCanvas, x, y, drawWidth, drawHeight);
+      editedCtx.drawImage(fullCanvas, placement.x, placement.y, placement.width, placement.height);
     } else {
       editedCanvas = new OffscreenCanvas(rotatedWidth, rotatedHeight);
       editedCtx = editedCanvas.getContext('2d', { alpha: false });
@@ -99,6 +93,21 @@ function calculateBorderFrame(width, height, ratio) {
   if (sourceRatio > ratio) return { width, height: width / ratio };
   if (sourceRatio < ratio) return { width: height * ratio, height };
   return { width, height };
+}
+
+function calculateBorderPlacement(frameWidth, frameHeight, sourceWidth, sourceHeight, borderSize) {
+  const borderFraction = clampBorderFraction(borderSize);
+  const innerWidth = frameWidth * (1 - borderFraction * 2);
+  const innerHeight = frameHeight * (1 - borderFraction * 2);
+  const imageScale = Math.min(innerWidth / sourceWidth, innerHeight / sourceHeight);
+  const width = sourceWidth * imageScale;
+  const height = sourceHeight * imageScale;
+  return {
+    x: (frameWidth - width) / 2,
+    y: (frameHeight - height) / 2,
+    width,
+    height
+  };
 }
 
 function clampBorderFraction(value) {
@@ -170,7 +179,7 @@ async function createScaledCanvas(canvas, scale) {
 
 async function appendEquipmentPanel(sourceCanvas, options) {
   const width = sourceCanvas.width;
-  const height = Math.min(620, Math.max(180, Math.round(width * .18)));
+  const height = Math.max(1, Math.round(width * .18));
   const output = new OffscreenCanvas(width, sourceCanvas.height + height);
   const ctx = output.getContext('2d', { alpha: false });
   const dark = options.equipmentTheme === 'dark';
@@ -178,28 +187,29 @@ async function appendEquipmentPanel(sourceCanvas, options) {
   ctx.fillRect(0, 0, output.width, output.height);
   ctx.drawImage(sourceCanvas, 0, 0);
   const top = sourceCanvas.height;
-  const pad = Math.max(32, width * .035);
+  const pad = width * .035;
   const imageArea = options.equipmentImages ? width * .34 : 0;
   const textWidth = width - pad * 2 - imageArea;
   const bodyName = options.bodyName || '카메라 정보 없음';
   const lensName = options.lensName || '렌즈 정보 없음';
   const equipment = `${bodyName} & ${lensName}`;
   ctx.fillStyle = dark ? '#fff' : '#090c10';
-  ctx.font = `700 ${Math.max(28, height * .16)}px Arial,sans-serif`;
+  ctx.font = `700 ${height * .16}px Arial,sans-serif`;
   ctx.fillText('Shot on', pad, top + height * .27);
-  const equipmentSize = fitFont(ctx, equipment, textWidth, Math.max(38, height * .21), 20);
+  const equipmentSize = fitFont(ctx, equipment, textWidth, height * .21);
   ctx.font = `900 ${equipmentSize}px Arial,sans-serif`;
   ctx.fillText(equipment, pad, top + height * .57);
   if (options.equipmentSettings) {
     ctx.fillStyle = dark ? '#b9c1cc' : '#52606d';
-    ctx.font = `500 ${Math.max(20, height * .095)}px Arial,sans-serif`;
+    ctx.font = `500 ${height * .095}px Arial,sans-serif`;
     ctx.fillText(options.settingsText || 'EXIF 촬영 설정 없음', pad, top + height * .80);
   }
   if (options.equipmentImages) {
     const [bodyImage, lensImage] = await Promise.all([fetchBitmap(options.bodyImageSrc), fetchBitmap(options.lensImageSrc)]);
     const each = imageArea / 2;
-    if (bodyImage) drawContain(ctx, bodyImage, width - imageArea, top + 12, each, height - 24);
-    if (lensImage) drawContain(ctx, lensImage, width - each, top + 12, each, height - 24);
+    const inset = height * .032;
+    if (bodyImage) drawContain(ctx, bodyImage, width - imageArea, top + inset, each, height - inset * 2);
+    if (lensImage) drawContain(ctx, lensImage, width - each, top + inset, each, height - inset * 2);
     bodyImage?.close(); lensImage?.close();
   }
   return output;
@@ -211,10 +221,10 @@ async function fetchBitmap(src) {
   catch { return null; }
 }
 
-function fitFont(ctx, text, maxWidth, initial, minimum) {
-  let size = initial;
-  while (size > minimum) { ctx.font = `900 ${size}px Arial,sans-serif`; if (ctx.measureText(text).width <= maxWidth) break; size -= 2; }
-  return size;
+function fitFont(ctx, text, maxWidth, initial) {
+  ctx.font = '900 100px Arial,sans-serif';
+  const measured = ctx.measureText(text).width || 1;
+  return Math.min(initial, maxWidth * 100 / measured);
 }
 
 function drawContain(ctx, image, x, y, width, height) {

@@ -1,5 +1,6 @@
 const imageCache = new Map();
 const productImageCache = new Map();
+const EQUIPMENT_PANEL_RATIO = .18;
 
 export async function loadHtmlImage(photo) {
   if (imageCache.has(photo.id)) return imageCache.get(photo.id);
@@ -51,6 +52,21 @@ export function calculateBorderFrame(width, height, ratio) {
   };
 }
 
+function calculateBorderPlacement(frameWidth, frameHeight, sourceWidth, sourceHeight, borderSize) {
+  const borderFraction = clampBorderFraction(borderSize);
+  const innerWidth = frameWidth * (1 - borderFraction * 2);
+  const innerHeight = frameHeight * (1 - borderFraction * 2);
+  const imageScale = Math.min(innerWidth / sourceWidth, innerHeight / sourceHeight);
+  const width = sourceWidth * imageScale;
+  const height = sourceHeight * imageScale;
+  return {
+    x: (frameWidth - width) / 2,
+    y: (frameHeight - height) / 2,
+    width,
+    height
+  };
+}
+
 export async function renderPreview({ canvas, stage, photo, settings, watermarkImage, shouldRender = () => true }) {
   const image = await loadHtmlImage(photo);
   if (!shouldRender()) return null;
@@ -73,11 +89,17 @@ export async function renderPreview({ canvas, stage, photo, settings, watermarkI
 
   const frameWidth = settings.cropEnabled ? crop.width : borderFrame.width;
   const frameHeight = settings.cropEnabled ? crop.height : borderFrame.height;
-  const panelEstimate = settings.equipmentEnabled ? Math.min(190, Math.max(90, availableWidth * .18)) : 0;
-  const scale = Math.min(availableWidth / frameWidth, Math.max(120, availableHeight - panelEstimate) / frameHeight);
+  const borderPlacement = settings.borderEnabled
+    ? calculateBorderPlacement(borderFrame.width, borderFrame.height, sourceWidth, sourceHeight, settings.borderSize)
+    : null;
+  const visibleFrameHeight = settings.borderEnabled && settings.equipmentEnabled
+    ? borderPlacement.y + borderPlacement.height
+    : frameHeight;
+  const totalHeightAtSourceScale = visibleFrameHeight + (settings.equipmentEnabled ? frameWidth * EQUIPMENT_PANEL_RATIO : 0);
+  const scale = Math.min(availableWidth / frameWidth, availableHeight / totalHeightAtSourceScale);
   const displayWidth = Math.max(1, Math.round(frameWidth * scale));
-  const displayHeight = Math.max(1, Math.round(frameHeight * scale));
-  const equipmentHeight = settings.equipmentEnabled ? Math.min(190, Math.max(90, Math.round(displayWidth * .18))) : 0;
+  const displayHeight = Math.max(1, Math.round(visibleFrameHeight * scale));
+  const equipmentHeight = settings.equipmentEnabled ? Math.max(1, Math.round(displayWidth * EQUIPMENT_PANEL_RATIO)) : 0;
 
   canvas.width = Math.max(1, Math.round(displayWidth * dpr));
   canvas.height = Math.max(1, Math.round((displayHeight + equipmentHeight) * dpr));
@@ -86,7 +108,7 @@ export async function renderPreview({ canvas, stage, photo, settings, watermarkI
 
   const ctx = canvas.getContext('2d', { alpha: true });
   ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
-  ctx.clearRect(0, 0, displayWidth, displayHeight);
+  ctx.clearRect(0, 0, displayWidth, displayHeight + equipmentHeight);
   ctx.imageSmoothingEnabled = true;
   ctx.imageSmoothingQuality = 'high';
 
@@ -99,20 +121,16 @@ export async function renderPreview({ canvas, stage, photo, settings, watermarkI
   ctx.save();
   ctx.scale(scale, scale);
   if (settings.borderEnabled) {
-    const borderFraction = clampBorderFraction(settings.borderSize);
-    const innerWidth = borderFrame.width * (1 - borderFraction * 2);
-    const innerHeight = borderFrame.height * (1 - borderFraction * 2);
-    const imageScale = Math.min(innerWidth / sourceWidth, innerHeight / sourceHeight);
-    const drawWidth = sourceWidth * imageScale;
-    const drawHeight = sourceHeight * imageScale;
-    const drawX = (borderFrame.width - drawWidth) / 2;
-    const drawY = (borderFrame.height - drawHeight) / 2;
-
-    ctx.translate(drawX + drawWidth / 2, drawY + drawHeight / 2);
-    ctx.scale(imageScale, imageScale);
+    ctx.translate(borderPlacement.x + borderPlacement.width / 2, borderPlacement.y + borderPlacement.height / 2);
+    ctx.scale(borderPlacement.width / sourceWidth, borderPlacement.height / sourceHeight);
     ctx.rotate(photo.rotation * Math.PI / 180);
     ctx.drawImage(image, -image.naturalWidth / 2, -image.naturalHeight / 2);
-    imageRect = { x: drawX * scale, y: drawY * scale, width: drawWidth * scale, height: drawHeight * scale };
+    imageRect = {
+      x: borderPlacement.x * scale,
+      y: borderPlacement.y * scale,
+      width: borderPlacement.width * scale,
+      height: borderPlacement.height * scale
+    };
   } else {
     const originX = settings.cropEnabled ? crop.x : 0;
     const originY = settings.cropEnabled ? crop.y : 0;
@@ -214,35 +232,36 @@ async function drawEquipmentPanel(ctx, photo, settings, width, top, height) {
   const dark = settings.equipmentTheme === 'dark';
   const bodyName = photo.body?.officialName || photo.body?.model || photo.bodyRaw || '카메라 정보 없음';
   const lensName = photo.lens?.officialName || photo.lens?.model || photo.lensRaw || '렌즈 정보 없음';
-  const pad = Math.max(18, width * .035);
+  const pad = width * .035;
   const imageArea = settings.equipmentImages ? width * .34 : 0;
   const textWidth = width - pad * 2 - imageArea;
   ctx.save();
   ctx.fillStyle = dark ? '#0b0d10' : '#fff';
   ctx.fillRect(0, top, width, height);
   ctx.fillStyle = dark ? '#fff' : '#090c10';
-  ctx.font = `700 ${Math.max(15, height * .16)}px Inter,Arial,sans-serif`;
+  ctx.font = `700 ${height * .16}px Arial,sans-serif`;
   ctx.fillText('Shot on', pad, top + height * .27);
-  ctx.font = `900 ${fitFont(ctx, `${bodyName} & ${lensName}`, textWidth, Math.max(18, height * .21), 11)}px Inter,Arial,sans-serif`;
+  ctx.font = `900 ${fitFont(ctx, `${bodyName} & ${lensName}`, textWidth, height * .21)}px Arial,sans-serif`;
   ctx.fillText(`${bodyName} & ${lensName}`, pad, top + height * .57);
   if (settings.equipmentSettings) {
     ctx.fillStyle = dark ? '#b9c1cc' : '#52606d';
-    ctx.font = `500 ${Math.max(10, height * .095)}px Inter,Arial,sans-serif`;
+    ctx.font = `500 ${height * .095}px Arial,sans-serif`;
     ctx.fillText(photo.settingsText || 'EXIF 촬영 설정 없음', pad, top + height * .80);
   }
   if (settings.equipmentImages) {
     const [bodyImage, lensImage] = await Promise.all([loadProductImage(photo.body?.imageSrc), loadProductImage(photo.lens?.imageSrc)]);
     const each = imageArea / 2;
-    if (bodyImage) drawContain(ctx, bodyImage, width - imageArea, top + 6, each, height - 12);
-    if (lensImage) drawContain(ctx, lensImage, width - each, top + 6, each, height - 12);
+    const inset = height * .032;
+    if (bodyImage) drawContain(ctx, bodyImage, width - imageArea, top + inset, each, height - inset * 2);
+    if (lensImage) drawContain(ctx, lensImage, width - each, top + inset, each, height - inset * 2);
   }
   ctx.restore();
 }
 
-function fitFont(ctx, text, maxWidth, initial, minimum) {
-  let size = initial;
-  while (size > minimum) { ctx.font = `900 ${size}px Inter,Arial,sans-serif`; if (ctx.measureText(text).width <= maxWidth) break; size -= 1; }
-  return size;
+function fitFont(ctx, text, maxWidth, initial) {
+  ctx.font = '900 100px Arial,sans-serif';
+  const measured = ctx.measureText(text).width || 1;
+  return Math.min(initial, maxWidth * 100 / measured);
 }
 
 function drawContain(ctx, image, x, y, width, height) {
