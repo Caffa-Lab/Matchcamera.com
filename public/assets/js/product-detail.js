@@ -3,6 +3,20 @@ import {brandLogoUrl, money, productLabel} from './data.js?v=20260901-all';
 const esc=(value='')=>String(value).replace(/[&<>"']/g,char=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
 const hasValue=value=>value!==null&&value!==undefined&&String(value).trim()!=='';
 
+function lensFilterDetails(p){
+  if(p.type!=='렌즈')return [];
+  const specs=p.specs||{};
+  const rawDiameter=p.filterDiameterMm??specs['필터 구경(mm)']??specs['필터 구경']??specs['Filter diameter'];
+  const frontStatus=p.frontFilterStatus??specs['전면 필터 장착 가능 여부'];
+  let diameter='정보 미확인';
+  if(Number(rawDiameter)>0)diameter=`${Number(rawDiameter)}mm`;
+  else if(rawDiameter===0||/없음|불가|none/i.test(String(rawDiameter||''))||/없음|불가/i.test(String(frontStatus||'')))diameter='필터 장착 불가';
+  else if(hasValue(rawDiameter))diameter=String(rawDiameter);
+  const rows=[['필터 구경',diameter]];
+  if(hasValue(frontStatus))rows.push(['전면 필터',String(frontStatus)]);
+  return rows;
+}
+
 function ensureDialog(){
   let dialog=document.querySelector('#matchcameraProductDialog');
   if(dialog)return dialog;
@@ -30,8 +44,9 @@ function specificationRows(p){
     ['센서 포맷',p.sensorFormat],['렌즈 포맷',p.lensFormat],['모델 코드',p.modelCode],
     ['제품 종류',p.type],['시리즈',p.series],['출시년도',p.releaseYear],
     ['초점거리',p.focalLength],['최대 조리개',p.maxAperture],
+    ...lensFilterDetails(p),
   ];
-  const seen=new Set(base.map(([key])=>key));
+  const seen=new Set([...base.map(([key])=>key),'필터 구경(mm)','Filter diameter','전면 필터 장착 가능 여부']);
   const hiddenKey=/(?:usd|미국\s*(?:가격|출시가|판매가|정가|소비자가)|us\s*(?:price|msrp))/i;
   return [
     ...base.filter(([,value])=>hasValue(value)),

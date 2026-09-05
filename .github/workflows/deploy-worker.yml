@@ -24,10 +24,14 @@ jobs:
 
       - name: Validate admin and homepage
         run: |
+          node scripts/build_product_index.mjs
           node --check public/admin/admin.js
           node --check public/assets/js/home.js
+          node --check public/assets/js/builder.js
+          node --check public/assets/js/resize.js
           node --check worker/index.js
           node scripts/test_admin_worker.mjs
+          node scripts/test_programs.mjs
           python3 scripts/check_homepage.py
 
       - name: Deploy Worker

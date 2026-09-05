@@ -223,4 +223,6 @@
 .builder-page .price-breakdown-row.is-missing>strong{color:#d35c50;font-size:11px}
 .builder-page .summary-line.major span,
 .builder-page .summary-line.major strong{color:#ef3e36}
+.builder-page .catalog-more{width:100%;min-height:42px;border:0;border-bottom:1px solid #dce3ea;background:#f7fafc;color:#087a9b;font-weight:800;cursor:pointer}
+.builder-page .catalog-more:hover{background:#ecf8fb}
 .builder-page .build-accessory-select{width:100%;height:36px;border:1px solid #d6dde5;background:#fff;border-radius:7px;padding:0 9px;font-size:11px;color:#27313d}.builder-page .accessory-compat-note{display:block;margin-top:5px;font-size:9px;color:#75808d;line-height:1.35}.builder-page .accessory-compat-note.good{color:#087a57}.builder-page .accessory-compat-note.warn{color:#b36d00}.builder-page .accessory-compat-note.bad{color:#c7384c}.builder-page .load-grade{font-weight:900}.builder-page .load-grade.impossible{color:#c7384c}.builder-page .load-grade.danger{color:#e35935}.builder-page .load-grade.normal{color:#c38300}.builder-page .load-grade.ample{color:#087a57}

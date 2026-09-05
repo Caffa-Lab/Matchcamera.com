@@ -485,7 +485,7 @@ function field(name, title, value = "", options = {}) {
   const full = options.full ? " full" : "";
   if (options.type === "textarea") return `<div class="field${full}"><label>${esc(title)}</label><textarea name="${esc(name)}" ${options.placeholder ? `placeholder="${esc(options.placeholder)}"` : ""}>${esc(value ?? "")}</textarea></div>`;
   if (options.type === "select") return `<div class="field${full}"><label>${esc(title)}</label><select name="${esc(name)}">${options.values.map((item) => { const pair = Array.isArray(item) ? item : [item, item]; return `<option value="${esc(pair[0])}" ${String(value ?? "") === String(pair[0]) ? "selected" : ""}>${esc(pair[1])}</option>`; }).join("")}</select></div>`;
-  return `<div class="field${full}"><label>${esc(title)}</label><input name="${esc(name)}" type="${esc(options.type || "text")}" value="${esc(value ?? "")}" ${options.placeholder ? `placeholder="${esc(options.placeholder)}"` : ""}></div>`;
+  return `<div class="field${full}"><label>${esc(title)}</label><input name="${esc(name)}" type="${esc(options.type || "text")}" value="${esc(value ?? "")}" ${options.type === "number" ? `step="${esc(options.step || "any")}"` : ""} ${options.placeholder ? `placeholder="${esc(options.placeholder)}"` : ""}></div>`;
 }
 
 function dialogValue(name) { return $(`[name="${name}"]`, $("#dialogBody"))?.value ?? ""; }
@@ -525,6 +525,7 @@ function openProductEditor(record = null, draft = null) {
     ${field("saleStatus", "판매 상태", product.saleStatus || "")}${field("sensorFormat", "센서 포맷", product.sensorFormat || "")}
     ${field("lensFormat", "렌즈 포맷", product.lensFormat || "")}${field("compatibleSensorFormat", "호환 센서 포맷", product.compatibleSensorFormat || "")}
     ${field("focalLength", "초점거리", product.focalLength || "")}${field("maxAperture", "최대 조리개", product.maxAperture || "")}
+    ${field("filterDiameterMm", "필터 구경(mm) · 렌즈 전용", product.filterDiameterMm ?? product.specs?.["필터 구경(mm)"] ?? "", { type: "number" })}${field("frontFilterStatus", "전면 필터 장착 · 렌즈 전용", product.frontFilterStatus ?? product.specs?.["전면 필터 장착 가능 여부"] ?? "정보 미확인", { type: "select", values: ["있음", "없음", "후면 필터", "드롭인 필터", "정보 미확인"] })}
     ${field("officialSource", "공식 출처 URL", product.officialSource || "", { full: true })}
     ${field("verifiedAt", "검증일", product.verifiedAt || "")}${field("verification", "검증 상태", product.verification || "")}
     ${field("note", "비고", product.note || "", { type: "textarea", full: true })}
@@ -559,6 +560,8 @@ async function saveProduct() {
   stringFields.forEach((key) => { const value = dialogValue(key).trim(); product[key] = value || null; });
   product.releaseYear = numOrNull(dialogValue("releaseYear"));
   product.weightG = numOrNull(dialogValue("weightG"));
+  product.filterDiameterMm = product.type === "렌즈" ? numOrNull(dialogValue("filterDiameterMm")) : null;
+  product.frontFilterStatus = product.type === "렌즈" ? dialogValue("frontFilterStatus").trim() || "정보 미확인" : null;
   product.active = dialogValue("active") !== "false";
   product.dataGrade = dialogValue("dataGrade") || "D";
   product.specs = specs;
@@ -580,6 +583,8 @@ async function saveProduct() {
     "호환 센서 포맷": product.compatibleSensorFormat,
     "초점거리": product.focalLength,
     "최대 조리개": product.maxAperture,
+    "필터 구경(mm)": product.filterDiameterMm,
+    "전면 필터 장착 가능 여부": product.frontFilterStatus,
     "무게(g)": product.weightG,
     "판매 상태": product.saleStatus,
     "비고": product.note,

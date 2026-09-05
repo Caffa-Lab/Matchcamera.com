@@ -1,4 +1,4 @@
-import {loadProducts, money, productLabel, brandLogoUrl} from './data.js?v=20260901-all';
+import {loadProductIndex, loadProducts, money, productLabel, brandLogoUrl} from './data.js?v=20260902-performance';
 import {openProductDetail} from './product-detail.js';
 
 const $ = s => document.querySelector(s);
@@ -46,7 +46,7 @@ function renderBanners(config){
     const tag=item.href?'a':'div';
     const href=item.href?` href="${esc(item.href)}"`:'';
     const src=versionedBannerSrc(item.src,config?.updatedAt);
-    return `<${tag} class="banner-slide ${index===0?'active':''}"${href} data-banner-index="${index}"><img src="${esc(src)}" alt="${esc(item.alt||`Matchcamera Banner ${item.slot||index+1}`)}"></${tag}>`;
+    return `<${tag} class="banner-slide ${index===0?'active':''}"${href} data-banner-index="${index}"><img src="${esc(src)}" alt="${esc(item.alt||`Matchcamera Banner ${item.slot||index+1}`)}" loading="${index===0?'eager':'lazy'}" decoding="async"${index===0?' fetchpriority="high"':''}></${tag}>`;
   }).join('');
   $('#bannerTrack').insertAdjacentHTML('afterbegin',markup);
   slides=[...document.querySelectorAll('.banner-slide')];
@@ -112,8 +112,8 @@ function configuredProducts(products,ids,type,fallbackMap){
 }
 
 function visual(p){
-  const photo=p.imageSrc?`<img class="product-image" src="${esc(p.imageSrc)}" alt="${esc(productLabel(p))}" onerror="this.remove();this.parentElement.classList.add('show-brand')">`:'';
-  return `<div class="featured-visual ${p.imageSrc?'':'show-brand'}">${photo}<img class="brand-logo-fallback" src="${esc(brandLogoUrl(p.manufacturer))}" alt="${esc(p.manufacturer)}" onerror="this.hidden=true;this.nextElementSibling.hidden=false"><span class="featured-brand-text" hidden>${esc(p.manufacturer)}</span></div>`;
+  const photo=p.imageSrc?`<img class="product-image" src="${esc(p.imageSrc)}" alt="${esc(productLabel(p))}" loading="lazy" decoding="async" onerror="this.remove();this.parentElement.classList.add('show-brand')">`:'';
+  return `<div class="featured-visual ${p.imageSrc?'':'show-brand'}">${photo}<img class="brand-logo-fallback" src="${esc(brandLogoUrl(p.manufacturer))}" alt="${esc(p.manufacturer)}" loading="lazy" decoding="async" onerror="this.hidden=true;this.nextElementSibling.hidden=false"><span class="featured-brand-text" hidden>${esc(p.manufacturer)}</span></div>`;
 }
 function card(p){
   const format=p.type==='바디'?(p.sensorFormat||p.cameraSystem||''):(p.focalLength||p.lensFormat||'');
@@ -121,15 +121,22 @@ function card(p){
 }
 
 try{
-  const [config,products]=await Promise.all([loadHomeConfig(),loadProducts()]);
+  const [config,products]=await Promise.all([loadHomeConfig(),loadProductIndex()]);
   renderBanners(config);
   const bodies=configuredProducts(products,config.featuredBodyIds,'바디',preferredBodies);
   const lenses=configuredProducts(products,config.featuredLensIds,'렌즈',preferredLenses);
   $('#featuredBodies').innerHTML=bodies.map(card).join('');
   $('#featuredLenses').innerHTML=lenses.map(card).join('');
-  const openFromCard=target=>{
+  let fullProductsPromise=null;
+  const openFromCard=async target=>{
     const card=target.closest('[data-product-detail]');
-    if(card)openProductDetail(products.find(p=>p.id===card.dataset.productDetail));
+    if(!card)return;
+    const lite=products.find(p=>p.id===card.dataset.productDetail);
+    try{
+      fullProductsPromise ||= loadProducts();
+      const full=await fullProductsPromise;
+      openProductDetail(full.find(p=>p.id===card.dataset.productDetail)||lite);
+    }catch{openProductDetail(lite)}
   };
   document.addEventListener('click',event=>openFromCard(event.target));
   document.addEventListener('keydown',event=>{

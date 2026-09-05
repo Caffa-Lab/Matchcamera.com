@@ -8,6 +8,7 @@ let memoryCardCache;
 let tripodCache;
 let headCache;
 let plateCache;
+let productIndexCache;
 
 const PRODUCT_URL = '/data/products.json';
 const EXPANSION_URL = '/data/system-expansion.json';
@@ -24,15 +25,31 @@ const MEMORY_CARD_URL = '/data/memory-cards.json';
 const TRIPOD_URL = '/data/tripods.json';
 const HEAD_URL = '/data/heads.json';
 const PLATE_URL = '/data/plates.json';
+const PRODUCT_INDEX_URL = '/data/product-index.json';
 
 async function optionalJson(url, fallback){
   try{
-    const r = await fetch(url, {cache:'no-cache'});
+    const r = await fetch(url);
     if(!r.ok) return fallback;
     return await r.json();
   }catch(e){
     console.warn(`${url} 로드 실패`, e);
     return fallback;
+  }
+}
+
+export async function loadProductIndex(){
+  if(productIndexCache) return productIndexCache;
+  try{
+    const response = await fetch(PRODUCT_INDEX_URL);
+    if(!response.ok) throw new Error('경량 제품 목록을 불러오지 못했습니다.');
+    const rows = await response.json();
+    productIndexCache = (Array.isArray(rows) ? rows : []).filter(p => p?.active !== false && p?.enabled !== false && p?.visibility !== 'hidden');
+    return productIndexCache;
+  }catch(error){
+    console.warn(`${PRODUCT_INDEX_URL} 로드 실패 · 전체 DB로 대체`, error);
+    productIndexCache = await loadProducts();
+    return productIndexCache;
   }
 }
 

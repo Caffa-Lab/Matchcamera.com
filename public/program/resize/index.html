@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>사진 리사이즈·장비 워터마크 | Matchcamera</title>
+  <meta name="description" content="사진을 브라우저에서 일괄 리사이즈하고 EXIF 기반 카메라·렌즈 워터마크를 합성합니다.">
+  <link rel="preconnect" href="https://unpkg.com" crossorigin>
+  <link rel="stylesheet" href="/assets/css/site.css">
+  <link rel="stylesheet" href="/assets/css/site-enhancements.css">
+  <link rel="stylesheet" href="/assets/css/resize.css">
+  <link rel="icon" href="/assets/images/matchcamera/symbol.png" type="image/png">
+  <script defer src="https://unpkg.com/exifr@7.1.3/dist/full.umd.js"></script>
+  <script defer src="https://unpkg.com/jszip@3.10.1/dist/jszip.min.js"></script>
+</head>
+<body class="resize-page">
+  <div data-header></div>
+  <main class="resize-main">
+    <section class="resize-hero">
+      <div>
+        <span>MATCHCAMERA PROGRAM</span>
+        <h1>사진 리사이즈·장비 워터마크</h1>
+        <p>여러 사진의 크기와 품질을 한 번에 바꾸고, EXIF에 기록된 바디·렌즈를 찾아 사진 아래에 합성합니다.</p>
+      </div>
+      <strong>브라우저에서만 처리 · 서버 업로드 없음</strong>
+    </section>
+
+    <section class="resize-layout">
+      <aside class="resize-sidebar">
+        <label id="resizeDropzone" class="resize-dropzone">
+          <input id="resizeFiles" type="file" accept="image/jpeg,image/png,image/webp,image/avif" multiple>
+          <b>사진 선택 또는 드롭</b><span>JPG · PNG · WEBP · AVIF</span>
+        </label>
+        <div class="resize-controls">
+          <h2>출력 설정</h2>
+          <label>긴 변 크기(px)<input id="longEdge" type="number" min="320" max="12000" step="10" value="2048"></label>
+          <div class="resize-two"><label>형식<select id="outputFormat"><option value="image/jpeg">JPG</option><option value="image/webp">WEBP</option><option value="image/png">PNG</option></select></label><label>품질<input id="outputQuality" type="number" min="10" max="100" value="90"></label></div>
+          <label>파일명 접미사<input id="filenameSuffix" type="text" value="_matchcamera"></label>
+          <label class="resize-check"><input id="equipmentEnabled" type="checkbox" checked> 장비 정보 패널 넣기</label>
+          <label class="resize-check"><input id="equipmentImages" type="checkbox" checked> 바디·렌즈 제품 이미지 넣기</label>
+          <label class="resize-check"><input id="settingsEnabled" type="checkbox" checked> 조리개·셔터·ISO·초점거리 표시</label>
+          <label>패널 색상<select id="panelTheme"><option value="light">흰색</option><option value="dark">검은색</option></select></label>
+        </div>
+        <div class="resize-controls resize-equipment">
+          <h2>현재 사진 장비</h2>
+          <label>바디<input id="bodySearch" list="bodyOptions" placeholder="EXIF 자동 인식 또는 검색"></label>
+          <datalist id="bodyOptions"></datalist>
+          <label>렌즈<input id="lensSearch" list="lensOptions" placeholder="EXIF 자동 인식 또는 검색"></label>
+          <datalist id="lensOptions"></datalist>
+          <p id="exifSummary">사진을 선택하면 EXIF를 확인합니다.</p>
+          <button id="applyEquipmentAll" type="button">이 장비를 모든 사진에 적용</button>
+        </div>
+      </aside>
+
+      <section class="resize-workspace">
+        <div class="resize-toolbar"><div><b id="resizeCount">0개</b><span id="resizeStatus" aria-live="polite">사진을 선택하세요.</span></div><button id="clearResize" type="button" disabled>전체 지우기</button></div>
+        <div id="resizePreview" class="resize-preview"><div class="resize-empty"><b>완성 이미지를 여기서 미리봅니다.</b><span>왼쪽에서 사진을 선택하세요.</span></div></div>
+        <div id="resizeQueue" class="resize-queue"></div>
+      </section>
+
+      <aside class="resize-export">
+        <h2>내보내기</h2>
+        <div class="resize-export-summary"><span>선택 사진</span><b id="exportCount">0개</b><span>예상 출력</span><b id="exportSize">-</b></div>
+        <button id="downloadCurrent" type="button" disabled>현재 사진 저장</button>
+        <button id="downloadAll" class="primary" type="button" disabled>전체 ZIP 저장</button>
+        <p>원본 파일은 변경되지 않습니다. 출력 파일은 개인정보 보호를 위해 새 캔버스로 생성되어 일부 메타데이터가 제거됩니다.</p>
+      </aside>
+    </section>
+  </main>
+  <div data-footer></div>
+  <script type="module" src="/assets/js/common.js?v=20260902-programs"></script>
+  <script type="module" src="/assets/js/resize.js?v=20260902"></script>
+</body>
+</html>

@@ -12,6 +12,11 @@ jobs:
         with:
           python-version: '3.12'
       - name: Validate product JSON
-        run: python -m json.tool public/data/products.json > /dev/null
+        run: |
+          node scripts/build_product_index.mjs
+          python -m json.tool public/data/products.json > /dev/null
+          python -m json.tool public/data/product-index.json > /dev/null
       - name: Check required files
-        run: test -f public/index.html && test -f public/builder/index.html && test -f public/database/index.html
+        run: test -f public/index.html && test -f public/builder/index.html && test -f public/database/index.html && test -f public/program/resize/index.html
+      - name: Validate programs
+        run: node scripts/test_programs.mjs
