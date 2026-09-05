@@ -11,6 +11,8 @@ Matchcamera Rating + Resize 수정 적용 안내
 - 고해상도 다운로드 장비 패널의 620px 상한 제거
 - 테두리와 장비 패널 동시 사용 시 패널 쪽 하단 테두리 제거
 - 비율 '없음'에서도 다운로드 테두리가 적용되도록 수정
+- 최대화질 선택 시 목표 용량 입력 영역 회색 비활성 표시
+- 저장 방식의 '목표 용량'을 '용량 맞추기'로 변경
 - 프로그램 목록에서 Resize와 Rating을 베타로 표시
 
 1. PowerShell에서 저장소 최신화
@@ -21,7 +23,7 @@ git pull --rebase origin main
 
 2. 다운로드한 ZIP 확인 및 덮어쓰기
 
-$programFixZip = "C:\Users\Caffa\Desktop\다운로드\Matchcamera_Program_Rating_Resize_Fix_2026-09-05.zip"
+$programFixZip = "C:\Users\Caffa\Desktop\다운로드\Matchcamera_Program_Rating_Resize_Fix_v2_2026-09-05.zip"
 Test-Path -LiteralPath $programFixZip
 Expand-Archive -LiteralPath $programFixZip -DestinationPath "D:\Matchcamera" -Force
 
@@ -37,7 +39,7 @@ node scripts\test_programs.mjs
 
 4. GitHub 반영
 
-git add public/program/index.html public/program/resize/index.html public/program/resize/workers/image-worker.js public/assets/js/resize/app.js public/assets/js/resize/image-utils.js public/program/rating/index.html public/assets/css/rating.css public/assets/js/rating/app.js public/assets/js/rating/scanner.js public/assets/js/rating/xmp.js public/sitemap.xml scripts/test_programs.mjs PROGRAM_FIX_APPLY_README_KO.txt
+git add public/program/index.html public/program/resize/index.html public/program/resize/workers/image-worker.js public/assets/css/resize.css public/assets/js/resize/app.js public/assets/js/resize/image-utils.js public/program/rating/index.html public/assets/css/rating.css public/assets/js/rating/app.js public/assets/js/rating/scanner.js public/assets/js/rating/xmp.js public/sitemap.xml scripts/test_programs.mjs PROGRAM_FIX_APPLY_README_KO.txt
 git commit -m "Fix program rendering and Lightroom labels"
 git pull --rebase origin main
 git push origin main

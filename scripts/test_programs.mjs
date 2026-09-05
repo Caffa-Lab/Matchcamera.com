@@ -11,6 +11,8 @@ assert.match(hub,/href="\/program\/resize\/"/,'리사이즈 도구 링크가 필
 assert.match(hub,/href="\/program\/rating\/"/,'Rating 도구 링크가 필요합니다.');
 assert.match(resize,/data-file-input/,'다중 파일 입력이 필요합니다.');
 assert.match(resize,/data-preview-canvas/,'미리보기 영역이 필요합니다.');
+assert.match(resize,/용량 맞추기/,'저장 방식 이름은 용량 맞추기여야 합니다.');
+assert.match(resize,/data-target-size-field/,'목표 용량 영역의 비활성 상태 표시가 필요합니다.');
 assert.match(resize,/\/assets\/vendor\/jszip\.min\.js/,'로컬 ZIP 라이브러리가 필요합니다.');
 assert.doesNotMatch(resize,/unpkg\.com|cdn\.jsdelivr\.net/,'프로그램은 외부 CDN에 의존하지 않아야 합니다.');
 assert.match(resizeJs,/loadProductIndex/,'경량 제품 인덱스를 사용해야 합니다.');
@@ -20,6 +22,7 @@ assert.match(resizeJs,/cropEnabled/,'비율 자르기 기능이 필요합니다.
 assert.match(resizeJs,/borderEnabled/,'테두리 기능이 필요합니다.');
 assert.match(resizeJs,/watermarkEnabled/,'워터마크 기능이 필요합니다.');
 assert.match(resizeJs,/applyMetadataPolicy/,'메타데이터 정책 기능이 필요합니다.');
+assert.match(resizeJs,/targetSizeField\?\.classList\.toggle\('is-disabled'/,'최대화질에서 목표 용량 영역을 회색 처리해야 합니다.');
 assert.match(worker,/appendEquipmentPanel/,'장비 사진 합성 기능이 필요합니다.');
 assert.match(previewRenderer,/Math\.round\(displayWidth \* EQUIPMENT_PANEL_RATIO\)/,'미리보기 장비 패널은 폭 기준 비율을 사용해야 합니다.');
 assert.match(worker,/Math\.round\(width \* \.18\)/,'다운로드 장비 패널은 미리보기와 같은 폭 기준 비율을 사용해야 합니다.');

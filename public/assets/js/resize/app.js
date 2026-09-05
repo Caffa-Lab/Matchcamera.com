@@ -32,6 +32,7 @@ const refs = {
   watermarkMargin: document.querySelector('[data-watermark-margin]'),
   watermarkMarginValue: document.querySelector('[data-watermark-margin-value]'),
   watermarkAll: document.querySelector('[data-watermark-all]'),
+  targetSizeField: document.querySelector('[data-target-size-field]'),
   targetSize: document.querySelector('[data-target-size]'),
   removeMetadata: document.querySelector('[data-remove-metadata]'),
   process: document.querySelector('[data-process]'),
@@ -198,6 +199,7 @@ function updateControlLabels() {
   refs.borderSizeValue.textContent = `${clampBorderSize(settings.borderSize)}%`;
   refs.watermarkMarginValue.textContent = `${settings.watermarkMargin}%`;
   refs.targetSize.disabled = settings.saveMode !== 'size';
+  refs.targetSizeField?.classList.toggle('is-disabled', settings.saveMode !== 'size');
   const ratioModeEnabled = settings.cropEnabled || settings.borderEnabled;
   refs.cropRatio.disabled = !ratioModeEnabled;
   if (refs.borderColorField) {
