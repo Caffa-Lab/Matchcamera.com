@@ -7,6 +7,7 @@
   <meta name="description" content="마운트 어댑터, 메모리 카드, 배터리, 플래시, 삼각대 등 카메라 액세서리를 확인합니다.">
   <link rel="stylesheet" href="/assets/css/site.css?v=20260911-price-details">
   <link rel="stylesheet" href="/assets/css/site-enhancements.css">
+  <link rel="stylesheet" href="/assets/css/support.css?v=20260911">
   <link rel="icon" href="/assets/images/matchcamera/symbol.png" type="image/png">
 </head>
 <body>
@@ -15,7 +16,7 @@
     <section class="simple-hero">
       <div class="container">
         <h1>액세서리</h1>
-        <p>기존 액세서리 항목을 유지하면서 마운트 어댑터 호환성까지 함께 제공합니다.</p>
+        <p>촬영 액세서리를 찾고, 삼각대·헤드·플레이트의 연결 규격을 확인하세요.</p>
       </div>
     </section>
 
@@ -38,10 +39,10 @@
           <span>핫슈 · TTL · 무선 플래시 호환성</span>
         </button>
         <button class="accessory-category" type="button" data-accessory-category="tripod">
-          <strong>삼각대 다리</strong>
-          <span>허용 하중 · 높이 · 자체 무게</span>
+          <strong>삼각대</strong>
+          <span>다리 단품 · 헤드 포함 세트</span>
         </button>
-        <button class="accessory-category" type="button" data-accessory-category="head"><strong>볼헤드</strong><span>허용 하중 · 볼 지름 · 클램프 규격</span></button>
+        <button class="accessory-category" type="button" data-accessory-category="head"><strong>삼각대 헤드</strong><span>볼헤드 · 영상용 헤드 · 체결 규격</span></button>
         <button class="accessory-category" type="button" data-accessory-category="plate"><strong>플레이트</strong><span>범용·전용 플레이트와 Arca 규격</span></button>
       </div>
 
@@ -79,14 +80,22 @@
       </div>
 
       <div class="accessory-panel hidden" data-accessory-panel="tripod">
-        <p class="muted tiny"><b id="tripodCount">0</b>개 삼각대 다리</p><div id="tripodList" class="accessory-data-grid"></div>
+        <div class="toolbar"><input id="tripodSearch" class="control" aria-label="삼각대 검색" placeholder="브랜드·제품명 검색"><select id="tripodBrand" class="control" aria-label="삼각대 브랜드"></select><select id="tripodKind" class="control" aria-label="삼각대 구성"><option value="all">모든 구성</option><option value="tripod-legs">다리 단품</option><option value="tripod-kit">헤드 포함 세트</option></select></div>
+        <p class="muted tiny"><b id="tripodCount">0</b>개 삼각대 · 대표 모델부터 수록하며 확인된 사양만 표시합니다.</p><div id="tripodList" class="accessory-data-grid"></div>
       </div>
-      <div class="accessory-panel hidden" data-accessory-panel="head"><p class="muted tiny"><b id="headCount">0</b>개 볼헤드</p><div id="headList" class="accessory-data-grid"></div></div>
+      <div class="accessory-panel hidden" data-accessory-panel="head"><div class="toolbar"><input id="headSearch" class="control" aria-label="헤드 검색" placeholder="브랜드·제품명·체결 규격 검색"><select id="headBrand" class="control" aria-label="헤드 브랜드"></select><select id="headType" class="control" aria-label="헤드 종류"><option value="all">모든 종류</option><option value="ball-head">볼헤드</option><option value="fluid-head">영상용 유체 헤드</option></select></div><p class="muted tiny"><b id="headCount">0</b>개 헤드 단품</p><div id="headList" class="accessory-data-grid"></div></div>
       <div class="accessory-panel hidden" data-accessory-panel="plate"><p class="muted tiny"><b id="plateCount">0</b>개 플레이트</p><div id="plateList" class="accessory-data-grid"></div></div>
+      <section id="supportChecker" class="accessory-panel hidden" aria-labelledby="supportTitle">
+        <h2 id="supportTitle">삼각대·헤드 조합 확인</h2>
+        <p>다른 브랜드도 체결 규격이 맞으면 연결할 수 있습니다. 다리↔헤드와 헤드↔플레이트를 각각 확인하세요.</p>
+        <div class="toolbar"><label>삼각대<select id="checkTripod" class="control"></select></label><label>별도 헤드<select id="checkHead" class="control"></select></label><label>플레이트<select id="checkPlate" class="control"></select></label></div>
+        <div id="supportResult" aria-live="polite"></div>
+        <p class="muted tiny">허용 하중은 촬영 장비와 헤드 무게를 함께 고려해야 합니다. 영상용 헤드는 무게중심·카운터밸런스 조건도 확인하세요. <a href="/builder/">견적에서 장비와 함께 검사 →</a></p>
+      </section>
     </section>
   </main>
   <div data-footer></div>
   <script type="module" src="/assets/js/common.js?v=20260831-logo-filter-fix"></script>
-  <script type="module" src="/assets/js/accessories.js?v=20260901-accessory-db"></script>
+  <script type="module" src="/assets/js/accessories.js?v=20260911-support"></script>
 </body>
 </html>

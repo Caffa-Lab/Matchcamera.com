@@ -1,0 +1,11 @@
+# Tripods and cross-brand head compatibility
+
+Added 13 representative tripod/kit products and 6 separate heads across Manfrotto, Gitzo, Leofoto, Benro, SIRUI, Peak Design, SmallRig, SLIK, Velbon, Vanguard and Sachtler. Existing PhotoClam products are preserved: 16 tripods/kits and 9 separate heads in total. This is an initial representative catalog, not an exhaustive list of every model.
+
+Every entry links to manufacturer or official regional/distributor documentation and records the verification date. Numeric specifications are populated only where directly confirmed. Missing mount details, weights, load ratings and Korean prices remain explicitly unconfirmed. TTOR34C's Korean distributor lists 400,000 KRW for legs only; the kit is a separate record. Velbon's recommended kit load is 3kg, not its 8kg legs-only maximum. Foreign prices are not converted to Korean official prices.
+
+The accessory catalog has search, ordered brand filters, legs/kit filters, head-type filters, links into the builder and a three-part compatibility checker. The builder uses the same compatibility functions and automatically recognizes included heads without duplicating the purchase or weight.
+
+Compatibility is based on the lower head mount and upper tripod mount, never manufacturer identity. Known 3/8 and 1/4 thread variants are normalized. Different threads, bowl diameters, flat/bowl structures, and Peak Design Travel Tripod's dedicated adapter produce conditional results. Absent or unrecognized mounts never produce a compatible result. Plate/clamp compatibility is assessed separately; an Arca family match requires checking actual clamp tolerances and safety features. Matching a named manufacturer-specified plate is stronger evidence. Payload, camera center of gravity, locking components and mechanical clearance are separate from a mount match.
+
+Validation: unit regression checks cover cross-brand attachment, missing mounts, adapters, bowls, Arca/RC2 differences, kits and catalog provenance. A real headless Chrome test exercised accessory filters, Korean legs-only pricing, cross-brand selection, Peak Design adapter guidance, default included heads, builder purchase totals, mobile overflow and JavaScript errors. Desktop and mobile screenshots were inspected. Existing catalog/admin/price/program/homepage checks pass.

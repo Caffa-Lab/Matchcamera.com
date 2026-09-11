@@ -1,0 +1,17 @@
+[data-accessory-panel="tripod"] .toolbar,
+[data-accessory-panel="head"] .toolbar,
+#supportChecker .toolbar{grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+#supportChecker{border:1px solid var(--line);border-radius:16px;background:#fff;padding:24px;margin-bottom:40px}
+#supportChecker h2{margin-top:0;font-size:21px}
+#supportChecker p{line-height:1.7;font-size:13px}
+#supportChecker label{display:grid;gap:8px;min-width:0;font-size:12px;font-weight:700}
+#supportChecker select,[data-accessory-panel="tripod"] .control,[data-accessory-panel="head"] .control{width:100%;min-width:0}
+#supportResult{background:#f5f7fa;border-radius:10px;padding:4px 16px;margin-top:16px}
+.accessory-data-card dd{min-width:0;overflow-wrap:anywhere}
+.accessory-data-card a+a{margin-left:16px}
+@media(max-width:700px){
+ .accessory-category-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .accessory-category{padding:14px;min-height:84px}
+ [data-accessory-panel="tripod"] .toolbar,[data-accessory-panel="head"] .toolbar,#supportChecker .toolbar{grid-template-columns:minmax(0,1fr)}
+ #supportChecker{padding:18px}
+}

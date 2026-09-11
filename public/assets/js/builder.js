@@ -1,3 +1,4 @@
+import {SUPPORT_KINDS,supportSort,tripodHeadCompatibility,plateHeadCompatibility,supportHead} from './support-compatibility.js?v=20260911';
 import {loadProducts,loadAdapters,loadBatteries,loadManufacturerOrder,loadFilterOrder,loadFlashes,loadMemoryCards,loadTripods,loadHeads,loadPlates,sortManufacturers,publicManufacturer,findBatteriesForBody,memoryCardCompatibility,supportLoadGrade,money,productLabel,productKey,matchesSearch,brandLogoUrl} from './data.js?v=20260902-performance';
 import {checkCompatibility,findMountAdapters} from './compatibility.js?v=20260831-filter-fix';
 import {openProductDetail} from './product-detail.js?v=20260831-builder-filter-v4';
@@ -114,7 +115,7 @@ function renderBatterySlot(){
 
 const accessoryLabel=item=>item?.officialName||item?.id||'';
 function accessoryOptions(rows,selected,label='선택 안 함'){
-  return `<option value="">${label}</option>`+rows.map(item=>`<option value="${esc(item.id)}" ${selected?.id===item.id?'selected':''}>${esc(item.manufacturer||'')} · ${esc(accessoryLabel(item))}</option>`).join('');
+  return `<option value="">${label}</option>`+rows.map(item=>`<option value="${esc(item.id)}" ${selected?.id===item.id?'selected':''}>${esc(item.manufacturer||'')} · ${esc(accessoryLabel(item))}${item.kind?' · '+esc(SUPPORT_KINDS[item.kind]||''):''}</option>`).join('');
 }
 function flashCompatibility(flash,body){
   if(!flash||!body)return {level:'unknown',label:'판정 불가',reason:'바디와 플래시를 선택하세요.'};
@@ -136,12 +137,12 @@ function mountedPayloadKg(){
 function stabilityDowngrade(){const lens=heaviestLens();if(!lens)return false;const max=Number(lens.focalMaxMm||String(lens.focalLength||'').match(/(\d+(?:\.\d+)?)\s*mm(?!.*mm)/i)?.[1]||0);const collar=JSON.stringify(lens.specs||{});return max>=300&&!/삼각대 링|tripod collar|collar included|링 포함/i.test(collar);}
 function noteClass(level){return level==='compatible'||level==='ample'?'good':level==='incompatible'||level==='impossible'?'bad':'warn';}
 function renderAccessorySlots(){
-  $('#memorySelect').innerHTML=accessoryOptions(state.memoryCards,state.memory);$('#flashSelect').innerHTML=accessoryOptions(state.flashes,state.flash);$('#plateSelect').innerHTML=accessoryOptions(state.plates,state.plate);$('#headSelect').innerHTML=accessoryOptions(state.heads,state.head);$('#tripodSelect').innerHTML=accessoryOptions(state.tripods,state.tripod);
+  $('#memorySelect').innerHTML=accessoryOptions(state.memoryCards,state.memory);$('#flashSelect').innerHTML=accessoryOptions(state.flashes,state.flash);$('#plateSelect').innerHTML=accessoryOptions(state.plates,state.plate);$('#headSelect').innerHTML=accessoryOptions(supportSort(state.heads),state.head,state.tripod?.includedHead?'세트 포함 헤드 사용':'선택 안 함');$('#tripodSelect').innerHTML=accessoryOptions(supportSort(state.tripods),state.tripod);
   const memory=state.memory?memoryCardCompatibility(state.memory,state.body):{level:'unknown',label:'',reason:'바디 선택 후 슬롯 규격과 기록 속도를 검사합니다.'};$('#memoryCompat').className=`accessory-compat-note ${noteClass(memory.level)}`;$('#memoryCompat').textContent=state.memory?`${memory.label} · ${memory.reason}`:memory.reason;
   const flash=state.flash?flashCompatibility(state.flash,state.body):{level:'unknown',reason:'바디를 선택하면 TTL/HSS 시스템을 검사합니다.'};$('#flashCompat').className=`accessory-compat-note ${noteClass(flash.level)}`;$('#flashCompat').textContent=state.flash?`${flash.label} · ${flash.reason}`:flash.reason;
   const plate=state.plate?plateCompatibility(state.plate,state.body):{level:'unknown',reason:'전용/범용 플레이트와 바디 간섭 여부를 검사합니다.'};$('#plateCompat').className=`accessory-compat-note ${noteClass(plate.level)}`;$('#plateCompat').textContent=state.plate?`${plate.label} · ${plate.reason}`:plate.reason;
   const payload=mountedPayloadKg();const downgrade=stabilityDowngrade();
-  const headGrade=state.head&&state.body?supportLoadGrade(state.head.maxLoadKg,payload,{downgrade}):null;$('#headLoad').className=`accessory-compat-note ${headGrade?noteClass(headGrade.level):''}`;$('#headLoad').innerHTML=headGrade?`<span class="load-grade ${headGrade.level}">${headGrade.label}</span> · ${esc(headGrade.reason)}`:'바디 + 가장 무거운 렌즈 + 플래시 + 플레이트 하중을 검사합니다.';
+  const headGrade=state.head&&state.body?supportLoadGrade(state.head.maxLoadKg,payload,{downgrade}):null;$('#headLoad').className=`accessory-compat-note ${headGrade?noteClass(headGrade.level):''}`;$('#headLoad').innerHTML=headGrade?`<span class="load-grade ${headGrade.level}">${headGrade.label}</span> · ${esc(headGrade.reason)}`:(state.tripod?.includedHead&&!state.head?'세트 포함 헤드: '+esc(state.tripod.includedHead.officialName)+' · 하중은 세트 기준으로 검사합니다.':'바디 + 가장 무거운 렌즈 + 플래시 + 플레이트 하중을 검사합니다.');
   const tripodPayload=payload+Number(state.head?.weightKg||0);const tripodGrade=state.tripod&&state.body?supportLoadGrade(state.tripod.maxLoadKg,tripodPayload,{downgrade}):null;$('#tripodLoad').className=`accessory-compat-note ${tripodGrade?noteClass(tripodGrade.level):''}`;$('#tripodLoad').innerHTML=tripodGrade?`<span class="load-grade ${tripodGrade.level}">${tripodGrade.label}</span> · ${esc(tripodGrade.reason)}`:'삼각대 다리는 선택한 헤드 무게까지 더해 검사합니다.';
 }
 
@@ -152,8 +153,8 @@ function renderSummary(){
     ...(state.memory?[{label:'메모리 카드',product:state.memory}]:[]),
     ...(state.flash?[{label:'플래시',product:state.flash}]:[]),
     ...(state.plate?[{label:'플레이트',product:state.plate}]:[]),
-    ...(state.head?[{label:'볼헤드',product:state.head}]:[]),
-    ...(state.tripod?[{label:'삼각대 다리',product:state.tripod}]:[])
+    ...(state.head?[{label:'삼각대 헤드',product:state.head}]:[]),
+    ...(state.tripod?[{label:SUPPORT_KINDS[state.tripod.kind]||'삼각대',product:state.tripod}]:[])
   ];
   const items=priceItems.map(item=>item.product);
   const priceOf=product=>{
@@ -185,10 +186,12 @@ function renderSummary(){
   if(state.flash)results.push({name:`플래시 · ${accessoryLabel(state.flash)}`,c:flashCompatibility(state.flash,state.body)});
   if(state.plate)results.push({name:`플레이트 · ${accessoryLabel(state.plate)}`,c:plateCompatibility(state.plate,state.body)});
   const payload=mountedPayloadKg();const downgrade=stabilityDowngrade();
-  if(state.head)results.push({name:`볼헤드 · ${accessoryLabel(state.head)}`,c:state.body?supportLoadGrade(state.head.maxLoadKg,payload,{downgrade}):{level:'unknown',label:'판정 불가',reason:'바디를 먼저 선택하세요.'}});
+  if(state.head)results.push({name:`헤드 · ${accessoryLabel(state.head)}`,c:state.body?supportLoadGrade(state.head.maxLoadKg,payload,{downgrade}):{level:'unknown',label:'판정 불가',reason:'바디를 먼저 선택하세요.'}});
   if(state.tripod)results.push({name:`삼각대 · ${accessoryLabel(state.tripod)}`,c:state.body?supportLoadGrade(state.tripod.maxLoadKg,payload+Number(state.head?.weightKg||0),{downgrade}):{level:'unknown',label:'판정 불가',reason:'바디를 먼저 선택하세요.'}});
-  if(state.plate&&state.head){const ok=String(state.plate.standard||'').toLowerCase()===String(state.head.plateStandard||'').toLowerCase();results.push({name:'플레이트 ↔ 볼헤드',c:{level:ok?'compatible':'incompatible',label:ok?'규격 일치':'규격 불일치',reason:ok?`${state.plate.standard} 규격이 일치합니다.`:`${state.plate.standard||'플레이트'}와 ${state.head.plateStandard||'헤드'} 규격이 다릅니다.`}});}
-  if(state.head&&state.tripod){const ok=String(state.head.tripodMount||'').toLowerCase()===String(state.tripod.headMount||'').toLowerCase();results.push({name:'볼헤드 ↔ 삼각대 다리',c:{level:ok?'compatible':'conditional',label:ok?'나사 규격 일치':'어댑터 확인',reason:ok?`${state.head.tripodMount} 체결 규격이 일치합니다.`:`${state.head.tripodMount||'헤드'}와 ${state.tripod.headMount||'삼각대'} 체결 규격을 확인하세요.`}});}
+  const effectiveHead=supportHead(state.tripod,state.head);
+  if(state.plate&&effectiveHead)results.push({name:'플레이트 ↔ 헤드',c:plateHeadCompatibility(state.plate,effectiveHead)});
+  if(state.head&&state.tripod)results.push({name:'헤드 ↔ 삼각대',c:tripodHeadCompatibility(state.tripod,state.head)});
+  if(state.tripod?.includedHead&&!state.head)results.push({name:'세트 포함 헤드 · '+state.tripod.includedHead.officialName,c:{level:'compatible',label:'포함 헤드 사용',reason:'별도 헤드 구입 없이 기본 구성을 사용합니다. 하중은 세트 허용 하중으로 확인합니다.'}});
   if(!results.length){
     $('#compatOverall').className='compat-pill neutral';$('#compatOverall').textContent=state.body?.cameraSystem==='일체형 카메라'?'렌즈 고정형':'선택 필요';$('#compatDetails').innerHTML='<p class="empty-summary">제품과 액세서리를 선택하면 항목별 호환성을 확인합니다.</p>';return;
   }

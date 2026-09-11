@@ -1,4 +1,5 @@
 import {loadAdapters,loadBatteries,loadFlashes,loadMemoryCards,loadTripods,loadHeads,loadPlates,loadManufacturerOrder,sortManufacturers,money} from './data.js?v=20260901-accessories';
+import {SUPPORT_KINDS,HEAD_TYPES,supportSort,tripodHeadCompatibility,plateHeadCompatibility,supportHead} from './support-compatibility.js?v=20260911';
 
 const $=s=>document.querySelector(s);
 const esc=(v='')=>String(v).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -7,6 +8,7 @@ const options=(values,label)=>`<option value="all">${label}</option>`+values.map
 const hay=(row)=>JSON.stringify(row).toLowerCase();
 
 function showCategory(category){
+  $('#supportChecker').classList.toggle('hidden',!['tripod','head','plate'].includes(category));
   document.querySelectorAll('[data-accessory-category]').forEach(button=>button.classList.toggle('active',button.dataset.accessoryCategory===category));
   document.querySelectorAll('[data-accessory-panel]').forEach(panel=>panel.classList.toggle('hidden',panel.dataset.accessoryPanel!==category));
   const url=new URL(location.href);if(category==='adapter')url.searchParams.delete('category');else url.searchParams.set('category',category);history.replaceState(null,'',url);
@@ -36,13 +38,52 @@ function dataCard(item,rows){return `<article class="accessory-data-card"><small
 function renderData(){
   const memories=state.memoryCards.filter(item=>!state.memoryQ||hay(item).includes(state.memoryQ.toLowerCase()));$('#memoryCount').textContent=memories.length;$('#memoryList').innerHTML=memories.map(item=>dataCard(item,[['규격',item.cardType],['버스',item.bus],['속도 등급',item.speedClass],['용량',item.capacityGb?`${item.capacityGb}GB`:null],['읽기',item.readMbps?`${item.readMbps}MB/s`:null],['쓰기',item.writeMbps?`${item.writeMbps}MB/s`:null]])).join('');
   const flashes=state.flashes.filter(item=>!state.flashQ||hay(item).includes(state.flashQ.toLowerCase()));$('#flashCount').textContent=flashes.length;$('#flashList').innerHTML=flashes.map(item=>dataCard(item,[['시스템',item.system],['TTL',item.ttlSystem],['가이드 넘버',item.guideNumber],['HSS',item.hss?'지원':'확인 필요'],['무선',item.wireless],['무게',item.weightG?`${item.weightG}g`:null]])).join('');
-  $('#tripodCount').textContent=state.tripods.length;$('#tripodList').innerHTML=state.tripods.map(item=>dataCard(item,[['허용 하중',item.maxLoadKg?`${item.maxLoadKg}kg`:null],['자체 무게',item.weightKg?`${item.weightKg}kg`:null],['최대 높이',item.maxHeightMm?`${item.maxHeightMm}mm`:null],['접은 길이',item.foldedLengthMm?`${item.foldedLengthMm}mm`:null],['헤드 체결',item.headMount]])).join('');
-  $('#headCount').textContent=state.heads.length;$('#headList').innerHTML=state.heads.map(item=>dataCard(item,[['종류','볼헤드'],['허용 하중',item.maxLoadKg?`${item.maxLoadKg}kg`:null],['자체 무게',item.weightKg?`${item.weightKg}kg`:null],['볼 지름',item.ballDiameterMm?`${item.ballDiameterMm}mm`:null],['플레이트',item.plateStandard],['삼각대 체결',item.tripodMount]])).join('');
+  renderSupports();
   $('#plateCount').textContent=state.plates.length;$('#plateList').innerHTML=state.plates.map(item=>dataCard(item,[['종류',item.plateType],['규격',item.standard],['카메라 체결',item.cameraMount],['무게',item.weightG?`${item.weightG}g`:null],['한국 구매',item.koreaPurchasable===false?'확인 필요':'가능/확인']])).join('');
 }
 
+const mountLabel=value=>value?.startsWith('bowl-')?`${value.slice(5)}mm 볼`:value||'미확인';
+function supportCard(item){
+ const tripod=Boolean(item.kind);
+ const rows=[['구성',tripod?SUPPORT_KINDS[item.kind]:'헤드 단품'],['종류',HEAD_TYPES[item.headType||item.includedHead?.headType]],['포함 헤드',item.includedHead?.officialName],['허용 하중',item.maxLoadKg?`${item.maxLoadKg}kg`:'미확인'],['무게',item.weightKg?`${item.weightKg}kg`:'미확인'],['최대 높이',item.maxHeightMm?`${item.maxHeightMm}mm`:null],['접은 길이',item.foldedLengthMm?`${item.foldedLengthMm}mm`:null],['다리↔헤드',mountLabel(tripod?item.headMount:item.tripodMount)],['플레이트',item.plateStandard||item.includedHead?.plateStandard],['한국 가격',money(item.currentPriceKrw)],['가격 기준',item.koreaPriceStatus],['확인일',item.verifiedAt],['참고',item.note]];
+ const card=dataCard(item,rows);
+ return card.replace('</article>',`<a href="/builder/?${tripod?'tripod':'head'}=${encodeURIComponent(item.id)}">견적에 담기 →</a></article>`);
+}
+function renderSupports(){
+ for(const [key,rows] of [['tripod',state.tripods],['head',state.heads]]){
+  const q=$(`#${key}Search`).value.trim().toLowerCase(),brand=$(`#${key}Brand`).value;
+  const type=$(key==='tripod'?'#tripodKind':'#headType').value;
+  const selected=rows.filter(r=>(!q||hay(r).includes(q))&&(brand==='all'||r.manufacturer===brand)&&(type==='all'||(key==='tripod'?r.kind:r.headType)===type));
+  $(`#${key}Count`).textContent=selected.length;
+  $(`#${key}List`).innerHTML=selected.map(supportCard).join('')||'<p class="empty">조건에 맞는 제품이 없습니다.</p>';
+ }
+}
+function renderSupportCheck(){
+ const tripod=state.tripods.find(r=>r.id===$('#checkTripod').value);
+ const head=state.heads.find(r=>r.id===$('#checkHead').value);
+ const plate=state.plates.find(r=>r.id===$('#checkPlate').value);
+ const checks=[];
+ if(tripod?.includedHead&&!head)checks.push({label:'포함 헤드 사용',reason:tripod.includedHead.officialName+' · 별도 헤드를 추가하지 않아도 됩니다.'});
+ else checks.push(tripodHeadCompatibility(tripod,head));
+ if(plate)checks.push(plateHeadCompatibility(plate,supportHead(tripod,head)));
+ $('#supportResult').innerHTML=checks.map(r=>`<p><strong>${esc(r.label)}</strong> · ${esc(r.reason)}</p>`).join('');
+}
+function setupSupports(){
+ state.tripods=supportSort(state.tripods);state.heads=supportSort(state.heads);
+ for(const [key,rows] of [['tripod',state.tripods],['head',state.heads]]){
+  $(`#${key}Brand`).innerHTML=options([...new Set(rows.map(r=>r.manufacturer))],'모든 브랜드');
+  $(`#${key}Search`).addEventListener('input',renderSupports);$(`#${key}Brand`).addEventListener('change',renderSupports);
+ }
+ $('#tripodKind').addEventListener('change',renderSupports);$('#headType').addEventListener('change',renderSupports);
+ for(const [id,rows,label] of [['#checkTripod',state.tripods,'삼각대 선택'],['#checkHead',state.heads,'별도 헤드 없음 / 세트 포함 헤드'],['#checkPlate',state.plates,'플레이트 선택']]){
+  $(id).innerHTML=`<option value="">${label}</option>`+rows.map(r=>`<option value="${esc(r.id)}">${esc(r.manufacturer)} · ${esc(r.officialName)}</option>`).join('');
+  $(id).addEventListener('change',renderSupportCheck);
+ }
+ renderSupportCheck();
+}
+
 [state.adapters,state.batteries,state.flashes,state.memoryCards,state.tripods,state.heads,state.plates,state.manufacturerOrder]=await Promise.all([loadAdapters(),loadBatteries(),loadFlashes(),loadMemoryCards(),loadTripods(),loadHeads(),loadPlates(),loadManufacturerOrder()]);
-setup();renderAdapters();renderBatteries();renderData();
+setup();setupSupports();renderAdapters();renderBatteries();renderData();
 const requested=new URLSearchParams(location.search).get('category');showCategory(['adapter','memory','battery','flash','tripod','head','plate'].includes(requested)?requested:'adapter');
 document.addEventListener('click',event=>{const button=event.target.closest('[data-accessory-category]');if(button)showCategory(button.dataset.accessoryCategory);});
 $('#adapterSearch').addEventListener('input',event=>{state.adapterQ=event.target.value;renderAdapters();});$('#adapterBrand').addEventListener('change',event=>{state.adapterBrand=event.target.value;renderAdapters();});$('#adapterFrom').addEventListener('change',event=>{state.from=event.target.value;renderAdapters();});$('#adapterTo').addEventListener('change',event=>{state.to=event.target.value;renderAdapters();});
