@@ -6,3 +6,5 @@
 @media(max-width:520px){.compare-tabs{display:grid;grid-template-columns:1fr 1fr;width:100%}.compare-tab{min-width:0}.compare-product-card{grid-template-columns:1fr}.compare-product-visual{min-height:190px}.compare-product-price{margin-top:13px}.compare-page .page-head h1{font-size:27px}}
 
 .compare-product-fallback img{width:100%!important;height:100%!important;max-width:none!important;max-height:none!important;object-fit:contain;padding:12px;opacity:1!important}
+
+.compare-tabs{width:fit-content;max-width:100%;flex-wrap:wrap}.compare-tab{white-space:nowrap}#accessoryCompareControls{margin:0 0 24px}#accessoryCompareControls select{display:block;margin:8px 0;padding:10px 14px;border:1px solid #dce2eb;border-radius:10px;background:white;font:inherit;max-width:100%}#accessoryCompareControls p{font-size:13px;color:#657386}.compare-table td{overflow-wrap:anywhere}

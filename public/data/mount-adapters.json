@@ -20,7 +20,10 @@
     "imageWidth": 362,
     "imageHeight": 320,
     "imageMethod": "official-exact-model",
-    "imageUsageReviewRequired": true
+    "imageUsageReviewRequired": true,
+    "active": false,
+    "disabledReason": "DSLR 관련 마운트 어댑터 제외",
+    "disabledAt": "2026-09-12"
   },
   {
     "id": "canon-control-ring-ef-eos-r",
@@ -43,7 +46,10 @@
     "imageWidth": 362,
     "imageHeight": 320,
     "imageMethod": "official-exact-model",
-    "imageUsageReviewRequired": true
+    "imageUsageReviewRequired": true,
+    "active": false,
+    "disabledReason": "DSLR 관련 마운트 어댑터 제외",
+    "disabledAt": "2026-09-12"
   },
   {
     "id": "canon-drop-in-ef-eos-r",
@@ -67,7 +73,10 @@
     "imageHeight": 320,
     "imageMethod": "official-exact-model",
     "imageUsageReviewRequired": true,
-    "imageNote": "가변 ND 필터 장착 예시"
+    "imageNote": "가변 ND 필터 장착 예시",
+    "active": false,
+    "disabledReason": "DSLR 관련 마운트 어댑터 제외",
+    "disabledAt": "2026-09-12"
   },
   {
     "id": "canon-ef-eos-m",
@@ -90,7 +99,10 @@
     "imageWidth": 400,
     "imageHeight": 280,
     "imageMethod": "official-exact-model",
-    "imageUsageReviewRequired": true
+    "imageUsageReviewRequired": true,
+    "active": false,
+    "disabledReason": "DSLR 관련 마운트 어댑터 제외",
+    "disabledAt": "2026-09-12"
   },
   {
     "id": "nikon-ftz",
@@ -113,7 +125,10 @@
     "imageWidth": 900,
     "imageHeight": 555,
     "imageMethod": "official-exact-model",
-    "imageUsageReviewRequired": true
+    "imageUsageReviewRequired": true,
+    "active": false,
+    "disabledReason": "DSLR 관련 마운트 어댑터 제외",
+    "disabledAt": "2026-09-12"
   },
   {
     "id": "nikon-ftz-ii",
@@ -136,7 +151,10 @@
     "imageWidth": 900,
     "imageHeight": 555,
     "imageMethod": "official-exact-model",
-    "imageUsageReviewRequired": true
+    "imageUsageReviewRequired": true,
+    "active": false,
+    "disabledReason": "DSLR 관련 마운트 어댑터 제외",
+    "disabledAt": "2026-09-12"
   },
   {
     "id": "nikon-ft1",
@@ -159,7 +177,10 @@
     "imageWidth": 900,
     "imageHeight": 675,
     "imageMethod": "official-exact-model",
-    "imageUsageReviewRequired": true
+    "imageUsageReviewRequired": true,
+    "active": false,
+    "disabledReason": "DSLR 관련 마운트 어댑터 제외",
+    "disabledAt": "2026-09-12"
   },
   {
     "id": "sony-la-ea5",
@@ -182,7 +203,10 @@
     "imageWidth": 626,
     "imageHeight": 470,
     "imageMethod": "official-exact-model",
-    "imageUsageReviewRequired": true
+    "imageUsageReviewRequired": true,
+    "active": false,
+    "disabledReason": "DSLR 관련 마운트 어댑터 제외",
+    "disabledAt": "2026-09-12"
   },
   {
     "id": "sony-la-ea4",
@@ -205,7 +229,10 @@
     "imageWidth": 740,
     "imageHeight": 555,
     "imageMethod": "official-exact-model",
-    "imageUsageReviewRequired": true
+    "imageUsageReviewRequired": true,
+    "active": false,
+    "disabledReason": "DSLR 관련 마운트 어댑터 제외",
+    "disabledAt": "2026-09-12"
   },
   {
     "id": "sigma-mc11-ef-e",
@@ -228,7 +255,10 @@
     "imageWidth": 900,
     "imageHeight": 900,
     "imageMethod": "official-exact-model",
-    "imageUsageReviewRequired": true
+    "imageUsageReviewRequired": true,
+    "active": false,
+    "disabledReason": "DSLR 관련 마운트 어댑터 제외",
+    "disabledAt": "2026-09-12"
   },
   {
     "id": "sigma-mc11-sa-e",
@@ -251,7 +281,10 @@
     "imageWidth": 900,
     "imageHeight": 900,
     "imageMethod": "official-exact-model",
-    "imageUsageReviewRequired": true
+    "imageUsageReviewRequired": true,
+    "active": false,
+    "disabledReason": "DSLR 관련 마운트 어댑터 제외",
+    "disabledAt": "2026-09-12"
   },
   {
     "id": "sigma-mc21-ef-l",
@@ -274,7 +307,10 @@
     "imageWidth": 900,
     "imageHeight": 900,
     "imageMethod": "official-exact-model",
-    "imageUsageReviewRequired": true
+    "imageUsageReviewRequired": true,
+    "active": false,
+    "disabledReason": "DSLR 관련 마운트 어댑터 제외",
+    "disabledAt": "2026-09-12"
   },
   {
     "id": "sigma-mc21-sa-l",
@@ -298,7 +334,10 @@
     "imageHeight": 900,
     "imageMethod": "official-series-representative",
     "imageUsageReviewRequired": true,
-    "imageNote": "MC-21 시리즈 대표 이미지 · 마운트별 접점은 다릅니다."
+    "imageNote": "MC-21 시리즈 대표 이미지 · 마운트별 접점은 다릅니다.",
+    "active": false,
+    "disabledReason": "DSLR 관련 마운트 어댑터 제외",
+    "disabledAt": "2026-09-12"
   },
   {
     "id": "olympus-mmf3",
@@ -320,7 +359,10 @@
     "imageFetchedAt": "2026-09-11",
     "imageMethod": "retailer-exact-model",
     "imageWidth": 235,
-    "imageHeight": 200
+    "imageHeight": 200,
+    "active": false,
+    "disabledReason": "DSLR 관련 마운트 어댑터 제외",
+    "disabledAt": "2026-09-12"
   },
   {
     "id": "panasonic-dmw-ma1",
@@ -343,7 +385,10 @@
     "imageWidth": 900,
     "imageHeight": 473,
     "imageMethod": "official-exact-model",
-    "imageUsageReviewRequired": true
+    "imageUsageReviewRequired": true,
+    "active": false,
+    "disabledReason": "DSLR 관련 마운트 어댑터 제외",
+    "disabledAt": "2026-09-12"
   },
   {
     "id": "leica-m-adapter-l",
@@ -389,6 +434,9 @@
     "imageWidth": 350,
     "imageHeight": 240,
     "imageMethod": "official-exact-model",
-    "imageUsageReviewRequired": true
+    "imageUsageReviewRequired": true,
+    "active": false,
+    "disabledReason": "DSLR 관련 마운트 어댑터 제외",
+    "disabledAt": "2026-09-12"
   }
 ]

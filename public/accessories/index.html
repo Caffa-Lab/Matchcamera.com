@@ -28,7 +28,7 @@
         </button>
         <button class="accessory-category" type="button" data-accessory-category="memory">
           <strong>메모리 카드</strong>
-          <span>SD · CFexpress · XQD 등 바디별 규격</span>
+          <span>CFA · CFB · SD UHS-II 이상</span>
         </button>
         <button class="accessory-category" type="button" data-accessory-category="battery">
           <strong>배터리</strong>
@@ -44,7 +44,9 @@
         </button>
         <button class="accessory-category" type="button" data-accessory-category="head"><strong>삼각대 헤드</strong><span>볼헤드 · 영상용 헤드 · 체결 규격</span></button>
         <button class="accessory-category" type="button" data-accessory-category="plate"><strong>플레이트</strong><span>범용·전용 플레이트와 Arca 규격</span></button>
+        <button class="accessory-category" type="button" data-accessory-category="care"><strong>관리용품</strong><span>아직 개발 중입니다.</span></button>
       </div>
+      <div class="accessory-panel hidden" data-accessory-panel="care"><h2>관리용품</h2><p>아직 개발 중입니다.</p></div>
 
       <div class="accessory-panel" data-accessory-panel="adapter">
         <div class="toolbar adapter-toolbar">
@@ -58,7 +60,7 @@
       </div>
 
       <div class="accessory-panel hidden" data-accessory-panel="memory">
-        <div class="toolbar"><input id="memorySearch" class="control grow" placeholder="카드명·규격·속도 검색"></div><p class="muted tiny"><b id="memoryCount">0</b>개 메모리 카드</p><div id="memoryList" class="accessory-data-grid"></div>
+        <div class="toolbar"><input id="memorySearch" class="control grow" aria-label="메모리 카드 검색" placeholder="브랜드·카드명·규격 검색"><select id="memoryType" class="control" aria-label="카드 규격"><option value="all">모든 규격</option><option value="CFexpress Type A">CFA</option><option value="CFexpress Type B">CFB</option><option value="SD">SD UHS-II 이상</option></select><select id="memoryBrand" class="control" aria-label="메모리 카드 브랜드"></select></div><p class="muted tiny"><b id="memoryCount">0</b>개 메모리 카드</p><div id="memoryList" class="accessory-data-grid"></div>
       </div>
 
       <div class="accessory-panel hidden" data-accessory-panel="battery">
@@ -84,7 +86,7 @@
         <p class="muted tiny"><b id="tripodCount">0</b>개 삼각대 · 대표 모델부터 수록하며 확인된 사양만 표시합니다.</p><div id="tripodList" class="accessory-data-grid"></div>
       </div>
       <div class="accessory-panel hidden" data-accessory-panel="head"><div class="toolbar"><input id="headSearch" class="control" aria-label="헤드 검색" placeholder="브랜드·제품명·체결 규격 검색"><select id="headBrand" class="control" aria-label="헤드 브랜드"></select><select id="headType" class="control" aria-label="헤드 종류"><option value="all">모든 종류</option><option value="ball-head">볼헤드</option><option value="fluid-head">영상용 유체 헤드</option></select></div><p class="muted tiny"><b id="headCount">0</b>개 헤드 단품</p><div id="headList" class="accessory-data-grid"></div></div>
-      <div class="accessory-panel hidden" data-accessory-panel="plate"><p class="muted tiny"><b id="plateCount">0</b>개 플레이트</p><div id="plateList" class="accessory-data-grid"></div></div>
+      <div class="accessory-panel hidden" data-accessory-panel="plate"><div class="toolbar"><input id="plateSearch" class="control grow" aria-label="플레이트 검색" placeholder="브랜드·모델·호환 바디 검색"><select id="plateBrand" class="control" aria-label="플레이트 브랜드"></select></div><p class="muted tiny"><b id="plateCount">0</b>개 플레이트</p><div id="plateList" class="accessory-data-grid"></div><button id="plateMore" class="control" type="button" hidden>플레이트 더 보기</button></div>
       <section id="supportChecker" class="accessory-panel hidden" aria-labelledby="supportTitle">
         <h2 id="supportTitle">삼각대·헤드 조합 확인</h2>
         <p>다른 브랜드도 체결 규격이 맞으면 연결할 수 있습니다. 다리↔헤드와 헤드↔플레이트를 각각 확인하세요.</p>

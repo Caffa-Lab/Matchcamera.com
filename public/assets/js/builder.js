@@ -133,7 +133,10 @@ function flashCompatibility(flash,body){
 function plateCompatibility(plate,body){
   if(!plate||!body)return {level:'unknown',label:'판정 불가',reason:'바디와 플레이트를 선택하세요.'};
   const models=plate.compatibleModels||[];const hay=`${productLabel(body)} ${body.modelCode||''}`.toLowerCase();
-  if(!models.length||plate.plateType==='universal-camera')return {level:'conditional',label:'범용 플레이트',reason:'1/4인치 체결은 가능하나 회전 방지턱·배터리 도어 간섭을 확인하세요.'};
+  if(plate.plateType==='lens-plate')return {level:'unknown',label:'렌즈용 플레이트',reason:'카메라 바디가 아닌 렌즈 풋의 체결 규격을 확인하세요.'};
+  if(!models.length&&plate.plateType!=='universal-camera')return {level:'unknown',label:'판정 불가',reason:'전용 바디 또는 체결 규격의 공식 확인이 필요합니다.'};
+  if(plate.cameraMount!=='1/4-inch')return {level:'unknown',label:'판정 불가',reason:'카메라 체결 규격을 확인하세요.'};
+  if(plate.plateType==='universal-camera')return {level:'conditional',label:'범용 플레이트',reason:'1/4인치 체결은 가능하나 회전 방지턱·배터리 도어 간섭을 확인하세요.'};
   const match=models.some(model=>hay.includes(String(model).toLowerCase()));return match?{level:'compatible',label:'전용 호환',reason:'등록된 전용 바디 목록과 일치합니다.'}:{level:'incompatible',label:'모델 불일치',reason:'선택한 바디가 전용 호환 목록에 없습니다.'};
 }
 function heaviestLens(){return [...state.lenses].sort((a,b)=>Number(b.weightG||0)-Number(a.weightG||0))[0]||null;}

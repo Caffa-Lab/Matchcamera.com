@@ -1,0 +1,10 @@
+export const ACCESSORY_CATEGORIES={adapter:'마운트 어댑터',battery:'배터리',memory:'메모리 카드',flash:'플래시',tripod:'삼각대',head:'삼각대 헤드',plate:'플레이트'};
+const fields={manufacturer:'제조사',modelCode:'모델 코드',cardType:'카드 규격',bus:'버스',capacityGb:'용량(GB)',readMbps:'최대 읽기(MB/s)',writeMbps:'최대 쓰기(MB/s)',speedClass:'속도 등급',vpg:'VPG(MB/s)',capacityMah:'배터리 용량(mAh)',voltageV:'전압(V)',energyWh:'에너지(Wh)',weightG:'무게(g)',weightKg:'무게(kg)',dimensionsMm:'크기(mm)',compatibleNames:'호환 바디',compatibleModels:'전용 바디',compatibleChargers:'호환 충전기',fromMount:'렌즈 측 마운트',toMount:'바디 측 마운트',afSupport:'AF',apertureControl:'조리개 제어',exifSupport:'EXIF',system:'시스템',ttlSystem:'TTL',guideNumber:'가이드 넘버',hss:'HSS',wireless:'무선',kind:'구성',headType:'헤드 종류',maxLoadKg:'허용 하중(kg)',maxHeightMm:'최대 높이(mm)',foldedLengthMm:'접은 길이(mm)',heightMm:'높이(mm)',headMount:'헤드 체결',tripodMount:'삼각대 체결',plateStandard:'헤드의 플레이트 규격',plateType:'플레이트 종류',standard:'플레이트 규격',cameraMount:'카메라 체결',includedPlate:'포함 플레이트',officialSource:'제품 자료 출처',specificationSource:'세부 사양 출처',specificationNote:'사양 기준',priceSource:'가격 출처',verifiedAt:'사양 확인일',priceDate:'가격 확인일',note:'참고'};
+const labels={'tripod-legs':'다리 단품','tripod-kit':'헤드 포함 세트','ball-head':'볼헤드','fluid-head':'영상용 유체 헤드','universal-camera':'범용 카메라 플레이트','dedicated-l-bracket':'전용 L 브래킷','camera-plate':'카메라 플레이트','lens-plate':'렌즈 플레이트','l-bracket':'L 브래킷','1/4-inch':'1/4인치','3/8-inch':'3/8인치'};
+export function accessoryComparisonProduct(row,category){
+ const specs={};
+ for(const [key,label] of Object.entries(fields)){let value=row[key];if(value===undefined||value===null||value===''||(Array.isArray(value)&&!value.length))continue;if(Array.isArray(value))value=value.join(', ');else if(typeof value==='boolean')value=value?'지원':'미지원';specs[label]=labels[value]||value;}
+ if(row.includedHead?.officialName)specs['포함 헤드']=row.includedHead.officialName;
+ if(row.imageNote)specs['제품 사진 안내']=row.imageNote;
+ return {...row,type:'액세서리',accessoryCategory:category,mount:ACCESSORY_CATEGORIES[category],koreaPriceType:row.koreaPriceStatus||row.priceType||'국내 가격 · 기준 미확인',specs};
+}

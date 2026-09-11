@@ -16,15 +16,15 @@ const PARTNER_PRODUCT_URL = '/data/official-partner-products.json';
 const HASSELBLAD_PRODUCT_URL = '/data/hasselblad-products.json';
 const KOREA_PRICE_URL = '/data/korea-prices.json';
 const IMAGE_MAP_URL = '/data/product-images.json';
-const ADAPTER_URL = '/data/mount-adapters.json';
+const ADAPTER_URL = '/data/mount-adapters.json?v=20260912';
 const BATTERY_URL = '/data/batteries.json';
 const MANUFACTURER_ORDER_URL = '/data/manufacturer-order.json';
 const FILTER_ORDER_URL = '/data/filter-order.json';
 const FLASH_URL = '/data/flashes.json';
-const MEMORY_CARD_URL = '/data/memory-cards.json';
+const MEMORY_CARD_URL = '/data/memory-cards.json?v=20260912';
 const TRIPOD_URL = '/data/tripods.json';
 const HEAD_URL = '/data/heads.json';
-const PLATE_URL = '/data/plates.json';
+const PLATE_URL = '/data/plates.json?v=20260912';
 const PRODUCT_INDEX_URL = '/data/product-index.json';
 
 async function optionalJson(url, fallback){
@@ -98,8 +98,15 @@ function installLegacySearchAliasBridge(){
 }
 if(typeof document !== 'undefined') installLegacySearchAliasBridge();
 
+const BRAND_SEARCH_ALIASES = {"sony": ["소니"], "canon": ["캐논", "케논"], "nikon": ["니콘"], "fujifilm": ["후지필름", "후지"], "hasselblad": ["핫셀블라드", "핫셀"], "leica": ["라이카"], "panasonic": ["파나소닉", "루믹스"], "olympus": ["올림푸스"], "om system": ["오엠시스템", "om시스템"], "pentax": ["펜탁스"], "ricoh": ["리코"], "sigma": ["시그마"], "tamron": ["탐론"], "samyang": ["삼양"], "viltrox": ["빌트록스"], "tokina": ["토키나"], "laowa": ["라오와"], "zeiss": ["자이스"], "manfrotto": ["맨프로토", "만프로토"], "gitzo": ["짓조"], "leofoto": ["레오포토"], "benro": ["벤로"], "sirui": ["시루이"], "peak design": ["픽디자인"], "smallrig": ["스몰리그"], "slik": ["슬릭"], "velbon": ["벨본"], "vanguard": ["뱅가드", "뱅가드코리아"], "photoclam": ["포토클램"], "sandisk": ["샌디스크"], "lexar": ["렉사"], "prograde": ["프로그레이드"], "angelbird": ["앤젤버드", "엔젤버드"], "samsung": ["삼성"], "godox": ["고독스"], "blackmagic design": ["블랙매직디자인", "블랙매직"], "ttartisan": ["티티아티산"], "7artisans": ["세븐아티산"], "sachtler": ["셔틀러", "자흐틀러", "사흐틀러"]};
+function brandSearch(value){
+ let text=String(value).normalize("NFKC").toLowerCase();
+ for(const [brand,aliases] of Object.entries(BRAND_SEARCH_ALIASES))for(const alias of aliases)text=text.replaceAll(alias.toLowerCase(),brand);
+ return text;
+}
+
 export function normalizeSearch(value=''){
-  return String(value)
+  return brandSearch(value)
     .normalize('NFKC')
     .toLowerCase()
     .replace(/alpha\s*(?=\d)/g, 'a')
@@ -151,7 +158,8 @@ export function productSearchText(p){
   const values = [
     p.officialName,p.model,p.modelCode,p.series,p.category,p.manufacturer,p.mount,
     p.lensFormat,p.focalLength,p.maxAperture,p.cameraSystem,p.sensorFormat,
-    ...(p.searchAliases || []),...sonyAliases(p),
+    p.cardType,p.bus,p.speedClass,p.capacityGb,/Type A/i.test(p.cardType||'')?'CFA':/Type B/i.test(p.cardType||'')?'CFB':'',p.standard,p.plateType,p.fromMount,p.toMount,p.system,p.ttlSystem,p.headType,p.kind,p.note,
+    ...(p.compatibleNames||[]),...(p.compatibleModels||[]),...(p.searchAliases || []),...sonyAliases(p),
   ].filter(Boolean);
   return {
     spaced: values.map(normalizeSearch).join(' '),
@@ -164,7 +172,7 @@ export function matchesSearch(p, query=''){
   if(!q1) return true;
   const q2 = compactSearch(query);
   const hay = productSearchText(p);
-  return hay.spaced.includes(q1) || (q2 && hay.compact.includes(q2));
+  return hay.spaced.includes(q1) || (q2 && hay.compact.includes(q2)) || q1.split(" ").every(token=>hay.spaced.includes(token)||hay.compact.includes(token));
 }
 
 function mergeProductLists(base, extra){
@@ -256,9 +264,10 @@ export function isProductActive(product){
 }
 
 export async function loadAdapters(){
-  if(adapterCache) return adapterCache;
-  adapterCache = await optionalJson(ADAPTER_URL, []);
-  return Array.isArray(adapterCache) ? adapterCache : [];
+  if(adapterCache) return adapterCache.filter(isProductActive);
+  const rows = await optionalJson(ADAPTER_URL, []);
+  adapterCache = Array.isArray(rows) ? rows : [];
+  return Array.isArray(adapterCache) ? adapterCache.filter(isProductActive) : [];
 }
 
 export async function loadBatteries(){
@@ -282,7 +291,7 @@ export async function loadFilterOrder(){
 
 async function loadArray(url,cacheName){
   const value=await optionalJson(url,[]);
-  const rows=Array.isArray(value)?value.filter(item=>item?.active!==false):[];
+  const rows=Array.isArray(value)?value.filter(isProductActive):[];
   if(cacheName==='flash')flashCache=rows;
   if(cacheName==='memory')memoryCardCache=rows;
   if(cacheName==='tripod')tripodCache=rows;
@@ -291,7 +300,8 @@ async function loadArray(url,cacheName){
   return rows;
 }
 export async function loadFlashes(){return flashCache||loadArray(FLASH_URL,'flash')}
-export async function loadMemoryCards(){return memoryCardCache||loadArray(MEMORY_CARD_URL,'memory')}
+export function isSupportedMemoryCard(card){return isProductActive(card)&&(/^(CFexpress Type [AB])$/i.test(card.cardType||'')||(/^SD(?:HC|XC|UC)?$/i.test(card.cardType||'')&&/^UHS-(?:II|III)$/i.test(card.bus||'')));}
+export async function loadMemoryCards(){return (memoryCardCache||await loadArray(MEMORY_CARD_URL,'memory')).filter(isSupportedMemoryCard)}
 export function hasVerifiedSupportLoad(item){return isProductActive(item)&&Number.isFinite(item?.maxLoadKg)&&item.maxLoadKg>0;}
 export async function loadTripods(){return (tripodCache||await loadArray(TRIPOD_URL,'tripod')).filter(hasVerifiedSupportLoad)}
 export async function loadHeads(){return (headCache||await loadArray(HEAD_URL,'head')).filter(hasVerifiedSupportLoad)}

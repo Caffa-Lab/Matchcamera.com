@@ -1,18 +1,24 @@
-import {brandLogoUrl,loadProducts,loadManufacturerOrder,matchesSearch,money,productLabel} from './data.js?v=20260901-all';
+import {ACCESSORY_CATEGORIES,accessoryComparisonProduct} from './accessory-compare.js';
+import {brandLogoUrl,loadAdapters,loadBatteries,loadMemoryCards,loadFlashes,loadTripods,loadHeads,loadPlates,loadProducts,loadManufacturerOrder,matchesSearch,money,productLabel} from './data.js?v=20260901-all';
 
 const $=selector=>document.querySelector(selector);
 const esc=(value='')=>String(value).replace(/[&<>"']/g,char=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
 const hasValue=value=>value!==null&&value!==undefined&&String(value).trim()!=='';
-const [products,manufacturerOrder]=await Promise.all([loadProducts(),loadManufacturerOrder()]);
+const [baseProducts,manufacturerOrder]=await Promise.all([loadProducts(),loadManufacturerOrder()]);
+const accessoryGroups=await Promise.all([loadAdapters(),loadBatteries(),loadMemoryCards(),loadFlashes(),loadTripods(),loadHeads(),loadPlates()]);
+const products=[...baseProducts];
+['adapter','battery','memory','flash','tripod','head','plate'].forEach((category,index)=>products.push(...accessoryGroups[index].map(row=>accessoryComparisonProduct(row,category))));
 const manufacturerRanks=new Map(manufacturerOrder.map((brand,index)=>[brand,index]));
-const state={type:'바디',a:null,b:null};
+const state={type:'바디',category:'memory',a:null,b:null};
+$('#accessoryCompareCategory').innerHTML=Object.entries(ACCESSORY_CATEGORIES).map(([key,label])=>`<option value="${key}">${label}</option>`).join('');
+$('#accessoryCompareCategory').value=state.category;
 const pickers={
   a:{root:$('[data-picker="a"]'),input:$('#compareSearchA'),results:$('#compareResultsA')},
   b:{root:$('[data-picker="b"]'),input:$('#compareSearchB'),results:$('#compareResultsB')},
 };
 
 function typeProducts(){
-  return products.filter(product=>product.type===state.type).sort((a,b)=>{
+  return products.filter(product=>product.type===state.type&&(state.type!=='액세서리'||product.accessoryCategory===state.category)).sort((a,b)=>{
     const currentA=a.currentSale==='예'?1:0;
     const currentB=b.currentSale==='예'?1:0;
     return (manufacturerRanks.get(a.manufacturer)??Number.MAX_SAFE_INTEGER)-(manufacturerRanks.get(b.manufacturer)??Number.MAX_SAFE_INTEGER)||currentB-currentA||(b.releaseYear||0)-(a.releaseYear||0)||productLabel(a).localeCompare(productLabel(b),'ko');
@@ -46,6 +52,7 @@ function specValue(product,key){
 }
 
 function comparisonKeys(){
+  if(state.type==='액세서리')return [...new Set(['제조사',...[state.a,state.b].filter(Boolean).flatMap(p=>Object.keys(p.specs||{})),'한국 가격'])];
   const base=state.type==='바디'
     ?['제조사','카메라 방식','마운트','센서 포맷','모델 코드','출시년도','유효 화소(MP)','총 화소(MP)','센서 종류','이미지 프로세서','손떨림 보정(IBIS) 여부','AF 방식','AF 위상차 포인트','AF 콘트라스트 포인트','최고 연속촬영 속도(fps)','최고 동영상 해상도','최고 동영상 프레임레이트(fps)','RAW 지원 여부','가로 크기(mm)','세로 크기(mm)','두께(mm)','무게(g)','판매 상태','한국 가격']
     :['제조사','카메라 방식','마운트','렌즈 포맷','모델 코드','출시년도','초점거리','최대 조리개','렌즈 유형','조리개 날 수','최단 촬영 거리(m)','최대 촬영 배율','필터 구경(mm)','손떨림 보정(OSS) 여부','AF 지원 여부','방진방적 여부','길이(mm)','최대 지름(mm)','무게(g)','판매 상태','한국 가격'];
@@ -58,7 +65,7 @@ function comparisonKeys(){
   return [...base,...[...extra].filter(key=>!base.includes(key))];
 }
 
-const displayValue=(value,product)=>!product?'<span class="compare-missing">제품 선택 필요</span>':hasValue(value)?esc(String(value)):'<span class="compare-missing">공식 정보 미확인</span>';
+const displayValue=(value,product)=>!product?'<span class="compare-missing">제품 선택 필요</span>':hasValue(value)?(/^https?:\/\/[^\s]+$/.test(String(value))?`<a href="${esc(value)}" target="_blank" rel="noopener">출처 보기 ↗</a>`:esc(String(value))):'<span class="compare-missing">공식 정보 미확인</span>';
 
 function renderComparison(){
   $('#compareProducts').innerHTML=productCard('a')+productCard('b');
@@ -86,7 +93,7 @@ function showResults(key){
 }
 
 function selectProduct(key,id){
-  const product=products.find(item=>item.id===id&&item.type===state.type);
+  const product=products.find(item=>item.id===id&&item.type===state.type&&(state.type!=='액세서리'||item.accessoryCategory===state.category));
   if(!product)return;
   state[key]=product;
   pickers[key].input.value=productLabel(product);
@@ -115,7 +122,7 @@ for(const [key,picker] of Object.entries(pickers)){
 document.addEventListener('click',event=>{
   const tab=event.target.closest('[data-compare-type]');
   if(tab){
-    state.type=tab.dataset.compareType;state.a=null;state.b=null;
+    state.type=tab.dataset.compareType;state.a=null;state.b=null;$('#accessoryCompareControls').hidden=state.type!=='액세서리';
     for(const [key,picker] of Object.entries(pickers)){picker.input.value='';closeResults(key);}
     document.querySelectorAll('[data-compare-type]').forEach(button=>{const active=button===tab;button.classList.toggle('active',active);button.setAttribute('aria-selected',String(active));});
     renderComparison();return;
@@ -128,3 +135,9 @@ document.addEventListener('click',event=>{
 });
 
 renderComparison();
+
+$('#accessoryCompareCategory').addEventListener('change',event=>{state.category=event.target.value;clearPicker('a');clearPicker('b');});
+const category=new URLSearchParams(location.search).get('category');
+if(ACCESSORY_CATEGORIES[category]){state.category=category;$('#accessoryCompareCategory').value=category;document.querySelector('[data-compare-type="액세서리"]').click();}
+
+const initialA=new URLSearchParams(location.search).get('a');if(initialA)selectProduct('a',initialA);
