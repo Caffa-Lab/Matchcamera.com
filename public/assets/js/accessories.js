@@ -1,3 +1,4 @@
+if(new URLSearchParams(location.search).get('category')==='care')location.replace('/care/');
 import {loadAdapters,loadBatteries,loadFlashes,loadMemoryCards,loadTripods,loadHeads,loadPlates,loadManufacturerOrder,sortManufacturers,matchesSearch,money} from './data.js?v=20260901-accessories';
 import {SUPPORT_KINDS,HEAD_TYPES,supportSort,tripodHeadCompatibility,plateHeadCompatibility,supportHead} from './support-compatibility.js?v=20260911';
 
@@ -87,9 +88,9 @@ function setupSupports(){
 [state.adapters,state.batteries,state.flashes,state.memoryCards,state.tripods,state.heads,state.plates,state.manufacturerOrder]=await Promise.all([loadAdapters(),loadBatteries(),loadFlashes(),loadMemoryCards(),loadTripods(),loadHeads(),loadPlates(),loadManufacturerOrder()]);
 for(const [key,rows] of [['memory',state.memoryCards],['plate',state.plates]]){ $(`#${key}Brand`).innerHTML=options(sortManufacturers([...new Set(rows.map(r=>r.manufacturer))],state.manufacturerOrder),'모든 브랜드');$(`#${key}Brand`).addEventListener('change',renderData); }
 $('#plateSearch').addEventListener('input',()=>{state.plateLimit=48;renderData();});$('#plateMore').addEventListener('click',()=>{state.plateLimit+=48;renderData();});$('#memoryType').addEventListener('change',renderData);
-for(const panel of document.querySelectorAll('[data-accessory-panel]')){const category=panel.dataset.accessoryPanel;if(category!=='care')panel.insertAdjacentHTML('afterbegin',`<p><a href="/compare/?category=${category}">이 종류 제품 비교 →</a></p>`);}
+for(const panel of document.querySelectorAll('[data-accessory-panel]')){const category=panel.dataset.accessoryPanel;panel.insertAdjacentHTML('afterbegin',`<p><a href="/compare/?category=${category}">이 종류 제품 비교 →</a></p>`);}
 setup();setupSupports();renderAdapters();renderBatteries();renderData();
-const requested=new URLSearchParams(location.search).get('category');showCategory(['adapter','memory','battery','flash','tripod','head','plate','care'].includes(requested)?requested:'adapter');
+const requested=new URLSearchParams(location.search).get('category');showCategory(['adapter','memory','battery','flash','tripod','head','plate'].includes(requested)?requested:'adapter');
 document.addEventListener('click',event=>{const button=event.target.closest('[data-accessory-category]');if(button)showCategory(button.dataset.accessoryCategory);});
 $('#adapterSearch').addEventListener('input',event=>{state.adapterQ=event.target.value;renderAdapters();});$('#adapterBrand').addEventListener('change',event=>{state.adapterBrand=event.target.value;renderAdapters();});$('#adapterFrom').addEventListener('change',event=>{state.from=event.target.value;renderAdapters();});$('#adapterTo').addEventListener('change',event=>{state.to=event.target.value;renderAdapters();});
 $('#batterySearch').addEventListener('input',event=>{state.batteryQ=event.target.value;renderBatteries();});$('#batteryBrand').addEventListener('change',event=>{state.batteryBrand=event.target.value;renderBatteries();});$('#batterySale').addEventListener('change',event=>{state.batterySale=event.target.value;renderBatteries();});$('#memorySearch').addEventListener('input',event=>{state.memoryQ=event.target.value;renderData();});$('#flashSearch').addEventListener('input',event=>{state.flashQ=event.target.value;renderData();});

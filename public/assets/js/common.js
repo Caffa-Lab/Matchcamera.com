@@ -109,6 +109,7 @@ const nav = [
   ['/compare/', '비교', here.startsWith('/compare/')],
   ['/database/', '제품 DB', here.startsWith('/database/')],
   ['/accessories/', '액세서리', here.startsWith('/accessories/')],
+  ['/care/', '관리용품', here.startsWith('/care/')],
   ['/program/', '프로그램', here.startsWith('/program/')],
   ['/contact/', '문의하기', here.startsWith('/contact/')],
 ];
