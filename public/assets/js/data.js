@@ -241,6 +241,7 @@ export async function loadProducts(){
       koreaPriceSource: kr?.['가격 출처 URL'] || p.koreaPriceSource || '',
       koreaPriceVerification: kr?.['가격 검증 상태'] || p.koreaPriceVerification || '',
       koreaPriceNote: kr?.['비고'] || p.koreaPriceNote || '',
+      koreaPriceDetails: kr?.['가격 상세'] || null,
       imageSrc,
       imageSourcePage: typeof img === 'object' ? img?.sourcePage || img?.source || '' : '',
       imageSourceUrl: typeof img === 'object' ? img?.sourceImage || '' : '',

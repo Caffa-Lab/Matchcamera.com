@@ -3,6 +3,31 @@ import {brandLogoUrl, money, productLabel} from './data.js?v=20260901-all';
 const esc=(value='')=>String(value).replace(/[&<>"']/g,char=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
 const hasValue=value=>value!==null&&value!==undefined&&String(value).trim()!=='';
 
+const safeSource=value=>{
+  try{const url=new URL(value);return /^https?:$/.test(url.protocol)?url.href:'';}catch{return '';}
+};
+
+export function priceDetailsMarkup(p){
+  const details=p.koreaPriceDetails;
+  const labels={current:'한국 공식 현재가',launch:'한국 출시가',historical:'과거 공식 가격',unverified:'이전 기록 · 재확인 필요'};
+  const offers=Array.isArray(details?.offers)?details.offers:[];
+  const cards=offers.map(offer=>{
+    const url=safeSource(offer.sourceUrl);
+    return `<div class="product-price-record"><div><span>${esc(labels[offer.kind]||'한국 가격')}</span><strong>${esc(money(offer.amount))}</strong></div>
+      <p>${esc(offer.configuration||'제품 단품')}${offer.availability?` · ${esc(offer.availability)}`:''}</p>
+      ${offer.asOf?`<p>가격 적용일 ${esc(offer.asOf)}</p>`:''}
+      ${offer.checkedAt?`<p>출처 확인일 ${esc(offer.checkedAt)}</p>`:''}
+      ${url?`<a href="${esc(url)}" target="_blank" rel="noopener noreferrer">${esc(offer.sourceName||'공식 출처')} ↗</a>`:''}</div>`;
+  }).join('');
+  const fallbackUrl=safeSource(p.koreaPriceSource);
+  const status=details?.statusLabel||p.koreaPriceVerification||'한국 공식 가격 미확인';
+  return `<section class="product-price-details" aria-label="한국 가격 상세"><h3>한국 가격 상세</h3>
+    <p class="product-price-verification">${esc(status)}${details?.reviewedAt?` · 검토일 ${esc(details.reviewedAt)}`:''}</p>
+    ${cards?`<div class="product-price-records">${cards}</div>`:`<p>${esc(p.koreaPriceNote||'공식 현재가와 국내 출시가를 확인하지 못했습니다.')}</p>${fallbackUrl?`<a href="${esc(fallbackUrl)}" target="_blank" rel="noopener noreferrer">가격 출처 확인 ↗</a>`:''}`}
+    ${details?.notes?`<p class="product-price-note">${esc(details.notes)}</p>`:''}
+    <p class="product-price-policy">원화 기준이며, 쿠폰·캐시백·중고·병행수입 가격은 포함하지 않습니다. 출시가와 과거 가격은 현재 구매가와 다를 수 있습니다.</p></section>`;
+}
+
 function lensFilterDetails(p){
   if(p.type!=='렌즈')return [];
   const specs=p.specs||{};
@@ -47,7 +72,7 @@ function specificationRows(p){
     ...lensFilterDetails(p),
   ];
   const seen=new Set([...base.map(([key])=>key),'필터 구경(mm)','Filter diameter','전면 필터 장착 가능 여부']);
-  const hiddenKey=/(?:usd|미국\s*(?:가격|출시가|판매가|정가|소비자가)|us\s*(?:price|msrp))/i;
+  const hiddenKey=/(?:usd|미국\s*(?:가격|출시가|판매가|정가|소비자가)|us\s*(?:price|msrp)|한국.*(?:가격|정가|출고가|출시가))/i;
   return [
     ...base.filter(([,value])=>hasValue(value)),
     ...Object.entries(p.specs||{}).filter(([key,value])=>hasValue(value)&&!seen.has(key)&&!hiddenKey.test(key)),
@@ -78,6 +103,7 @@ export function openProductDetail(p){
           ${p.koreaPriceDate?`<em>가격 기준일 ${esc(p.koreaPriceDate)}</em>`:''}
         </div>
       </section>
+      ${priceDetailsMarkup(p)}
       <section class="product-detail-specifications" aria-label="상세 사양">
         <h3>상세 사양</h3>
         <div class="product-detail-spec-grid">${rows.map(([key,value])=>`<div class="product-detail-spec"><span>${esc(key)}</span><strong>${esc(String(value))}</strong></div>`).join('')}</div>

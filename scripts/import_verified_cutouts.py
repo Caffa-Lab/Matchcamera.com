@@ -13,6 +13,7 @@ def main():
     parser.add_argument('manifest',type=Path)
     parser.add_argument('processing',type=Path)
     parser.add_argument('--reviewed',action='store_true',help='Confirm that the generated QA sheets have been inspected')
+    parser.add_argument('--report',type=Path,default=ROOT/'docs/official-image-refresh-20260911.json')
     args=parser.parse_args()
     if not args.reviewed:parser.error('Inspect the QA sheets, then pass --reviewed')
     manifest=read(args.manifest)
@@ -64,7 +65,7 @@ def main():
         target.parent.mkdir(parents=True,exist_ok=True)
         target.write_bytes(content)
     write(DATA/'product-images.json',mapping)
-    write(ROOT/'docs/official-image-refresh-20260911.json',{'verifiedAt':'2026-09-11','count':len(records),'lowResolution':sum(r['lowResolution'] for r in records),'images':records})
+    write(args.report,{'verifiedAt':'2026-09-11','count':len(records),'lowResolution':sum(r['lowResolution'] for r in records),'images':records})
     print(f"Imported {len(records)} product mappings; {sum(r['lowResolution'] for r in records)} native low-resolution originals")
 
 if __name__=='__main__':main()

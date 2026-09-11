@@ -22,3 +22,5 @@ jobs:
         run: node scripts/test_programs.mjs
       - name: Validate catalog visibility and admin toggles
         run: node scripts/test_catalog_visibility.mjs
+      - name: Validate price details
+        run: node scripts/test_price_details.mjs

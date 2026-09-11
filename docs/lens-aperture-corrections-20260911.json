@@ -1,0 +1,733 @@
+{
+  "count": 104,
+  "records": [
+    {
+      "id": "canon-렌즈-canon-rf-rf7-14mm",
+      "name": "Canon RF7-14mm F2.8-3.5 L Fisheye STM",
+      "before": "F7-14",
+      "after": "F2.8-3.5",
+      "evidence": "Official model name aperture following mm; excludes RF/XF/GF focal-length prefix"
+    },
+    {
+      "id": "canon-렌즈-canon-rf-rf10-20mm",
+      "name": "Canon RF10-20mm F4 L IS STM",
+      "before": "F10-20",
+      "after": "F4",
+      "evidence": "Official model name aperture following mm; excludes RF/XF/GF focal-length prefix"
+    },
+    {
+      "id": "canon-렌즈-canon-rf-rf14-35mm",
+      "name": "Canon RF14-35mm F4 L IS USM",
+      "before": "F14-35",
+      "after": "F4",
+      "evidence": "Official model name aperture following mm; excludes RF/XF/GF focal-length prefix"
+    },
+    {
+      "id": "canon-렌즈-canon-rf-rf15-30mm",
+      "name": "Canon RF15-30mm F4.5-6.3 IS STM",
+      "before": "F15-30",
+      "after": "F4.5-6.3",
+      "evidence": "Official model name aperture following mm; excludes RF/XF/GF focal-length prefix"
+    },
+    {
+      "id": "canon-렌즈-canon-rf-rf15-35mm",
+      "name": "Canon RF15-35mm F2.8 L IS USM",
+      "before": "F15-35",
+      "after": "F2.8",
+      "evidence": "Official model name aperture following mm; excludes RF/XF/GF focal-length prefix"
+    },
+    {
+      "id": "canon-렌즈-canon-rf-rf16-28mm",
+      "name": "Canon RF16-28mm F2.8 IS STM",
+      "before": "F16-28",
+      "after": "F2.8",
+      "evidence": "Official model name aperture following mm; excludes RF/XF/GF focal-length prefix"
+    },
+    {
+      "id": "canon-렌즈-canon-rf-rf24-50mm",
+      "name": "Canon RF24-50mm F4.5-6.3 IS STM",
+      "before": "F24-50",
+      "after": "F4.5-6.3",
+      "evidence": "Official model name aperture following mm; excludes RF/XF/GF focal-length prefix"
+    },
+    {
+      "id": "canon-렌즈-canon-rf-rf24-70mm",
+      "name": "Canon RF24-70mm F2.8 L IS USM",
+      "before": "F24-70",
+      "after": "F2.8",
+      "evidence": "Official model name aperture following mm; excludes RF/XF/GF focal-length prefix"
+    },
+    {
+      "id": "canon-렌즈-canon-rf-rf24-105mm",
+      "name": "Canon RF24-105mm F2.8 L IS USM Z",
+      "before": "F24-105",
+      "after": "F2.8",
+      "evidence": "Official model name aperture following mm; excludes RF/XF/GF focal-length prefix"
+    },
+    {
+      "id": "canon-렌즈-canon-rf-rf24-105mm-2",
+      "name": "Canon RF24-105mm F4 L IS USM",
+      "before": "F24-105",
+      "after": "F4",
+      "evidence": "Official model name aperture following mm; excludes RF/XF/GF focal-length prefix"
+    },
+    {
+      "id": "canon-렌즈-canon-rf-rf24-105mm-3",
+      "name": "Canon RF24-105mm F4-7.1 IS STM",
+      "before": "F24-105",
+      "after": "F4-7.1",
+      "evidence": "Official model name aperture following mm; excludes RF/XF/GF focal-length prefix"
+    },
+    {
+      "id": "canon-렌즈-canon-rf-rf24-240mm",
+      "name": "Canon RF24-240mm F4-6.3 IS USM",
+      "before": "F24-240",
+      "after": "F4-6.3",
+      "evidence": "Official model name aperture following mm; excludes RF/XF/GF focal-length prefix"
+    },
+    {
+      "id": "canon-렌즈-canon-rf-rf28-70mm",
+      "name": "Canon RF28-70mm F2 L USM",
+      "before": "F28-70",
+      "after": "F2",
+      "evidence": "Official model name aperture following mm; excludes RF/XF/GF focal-length prefix"
+    },
+    {
+      "id": "canon-렌즈-canon-rf-rf28-70mm-2",
+      "name": "Canon RF28-70mm F2.8 IS STM",
+      "before": "F28-70",
+      "after": "F2.8",
+      "evidence": "Official model name aperture following mm; excludes RF/XF/GF focal-length prefix"
+    },
+    {
+      "id": "canon-렌즈-canon-rf-rf70-200mm",
+      "name": "Canon RF70-200mm F2.8 L IS USM",
+      "before": "F70-200",
+      "after": "F2.8",
+      "evidence": "Official model name aperture following mm; excludes RF/XF/GF focal-length prefix"
+    },
+    {
+      "id": "canon-렌즈-canon-rf-rf70-200mm-2",
+      "name": "Canon RF70-200mm F2.8 L IS USM Z",
+      "before": "F70-200",
+      "after": "F2.8",
+      "evidence": "Official model name aperture following mm; excludes RF/XF/GF focal-length prefix"
+    },
+    {
+      "id": "canon-렌즈-canon-rf-rf70-200mm-3",
+      "name": "Canon RF70-200mm F4 L IS USM",
+      "before": "F70-200",
+      "after": "F4",
+      "evidence": "Official model name aperture following mm; excludes RF/XF/GF focal-length prefix"
+    },
+    {
+      "id": "canon-렌즈-canon-rf-rf100-300mm",
+      "name": "Canon RF100-300mm F2.8 L IS USM",
+      "before": "F100-300",
+      "after": "F2.8",
+      "evidence": "Official model name aperture following mm; excludes RF/XF/GF focal-length prefix"
+    },
+    {
+      "id": "canon-렌즈-canon-rf-rf100-400mm",
+      "name": "Canon RF100-400mm F5.6-8 IS USM",
+      "before": "F100-400",
+      "after": "F5.6-8",
+      "evidence": "Official model name aperture following mm; excludes RF/XF/GF focal-length prefix"
+    },
+    {
+      "id": "canon-렌즈-canon-rf-rf100-500mm",
+      "name": "Canon RF100-500mm F4.5-7.1 L IS USM",
+      "before": "F100-500",
+      "after": "F4.5-7.1",
+      "evidence": "Official model name aperture following mm; excludes RF/XF/GF focal-length prefix"
+    },
+    {
+      "id": "canon-렌즈-canon-rf-rf200-800mm",
+      "name": "Canon RF200-800mm F6.3-9 IS USM",
+      "before": "F200-800",
+      "after": "F6.3-9",
+      "evidence": "Official model name aperture following mm; excludes RF/XF/GF focal-length prefix"
+    },
+    {
+      "id": "canon-렌즈-canon-rf-rf14mm",
+      "name": "Canon RF14mm F1.4 L VCM",
+      "before": "F14",
+      "after": "F1.4",
+      "evidence": "Official model name aperture following mm; excludes RF/XF/GF focal-length prefix"
+    },
+    {
+      "id": "canon-렌즈-canon-rf-rf16mm",
+      "name": "Canon RF16mm F2.8 STM",
+      "before": "F16",
+      "after": "F2.8",
+      "evidence": "Official model name aperture following mm; excludes RF/XF/GF focal-length prefix"
+    },
+    {
+      "id": "canon-렌즈-canon-rf-rf24mm",
+      "name": "Canon RF24mm F1.4 L VCM",
+      "before": "F24",
+      "after": "F1.4",
+      "evidence": "Official model name aperture following mm; excludes RF/XF/GF focal-length prefix"
+    },
+    {
+      "id": "canon-렌즈-canon-rf-rf24mm-2",
+      "name": "Canon RF24mm F1.8 MACRO IS STM",
+      "before": "F24",
+      "after": "F1.8",
+      "evidence": "Official model name aperture following mm; excludes RF/XF/GF focal-length prefix"
+    },
+    {
+      "id": "canon-렌즈-canon-rf-rf28mm",
+      "name": "Canon RF28mm F2.8 STM",
+      "before": "F28",
+      "after": "F2.8",
+      "evidence": "Official model name aperture following mm; excludes RF/XF/GF focal-length prefix"
+    },
+    {
+      "id": "canon-렌즈-canon-rf-rf35mm",
+      "name": "Canon RF35mm F1.4 L VCM",
+      "before": "F35",
+      "after": "F1.4",
+      "evidence": "Official model name aperture following mm; excludes RF/XF/GF focal-length prefix"
+    },
+    {
+      "id": "canon-렌즈-canon-rf-rf35mm-2",
+      "name": "Canon RF35mm F1.8 Macro IS STM",
+      "before": "F35",
+      "after": "F1.8",
+      "evidence": "Official model name aperture following mm; excludes RF/XF/GF focal-length prefix"
+    },
+    {
+      "id": "canon-렌즈-canon-rf-rf50mm",
+      "name": "Canon RF50mm F1.2 L USM",
+      "before": "F50",
+      "after": "F1.2",
+      "evidence": "Official model name aperture following mm; excludes RF/XF/GF focal-length prefix"
+    },
+    {
+      "id": "canon-렌즈-canon-rf-rf50mm-2",
+      "name": "Canon RF50mm F1.4 L VCM",
+      "before": "F50",
+      "after": "F1.4",
+      "evidence": "Official model name aperture following mm; excludes RF/XF/GF focal-length prefix"
+    },
+    {
+      "id": "canon-렌즈-canon-rf-rf50mm-3",
+      "name": "Canon RF50mm F1.8 STM",
+      "before": "F50",
+      "after": "F1.8",
+      "evidence": "Official model name aperture following mm; excludes RF/XF/GF focal-length prefix"
+    },
+    {
+      "id": "canon-렌즈-canon-rf-rf85mm",
+      "name": "Canon RF85mm F2 Macro IS STM",
+      "before": "F85",
+      "after": "F2",
+      "evidence": "Official model name aperture following mm; excludes RF/XF/GF focal-length prefix"
+    },
+    {
+      "id": "canon-렌즈-canon-rf-rf85mm-2",
+      "name": "Canon RF85mm F1.2 L USM",
+      "before": "F85",
+      "after": "F1.2",
+      "evidence": "Official model name aperture following mm; excludes RF/XF/GF focal-length prefix"
+    },
+    {
+      "id": "canon-렌즈-canon-rf-rf85mm-3",
+      "name": "Canon RF85mm F1.2 L USM DS",
+      "before": "F85",
+      "after": "F1.2",
+      "evidence": "Official model name aperture following mm; excludes RF/XF/GF focal-length prefix"
+    },
+    {
+      "id": "canon-렌즈-canon-rf-rf100mm",
+      "name": "Canon RF100mm F2.8 L Macro IS USM",
+      "before": "F100",
+      "after": "F2.8",
+      "evidence": "Official model name aperture following mm; excludes RF/XF/GF focal-length prefix"
+    },
+    {
+      "id": "canon-렌즈-canon-rf-rf135mm",
+      "name": "Canon RF135mm F1.8 L IS USM",
+      "before": "F135",
+      "after": "F1.8",
+      "evidence": "Official model name aperture following mm; excludes RF/XF/GF focal-length prefix"
+    },
+    {
+      "id": "canon-렌즈-canon-rf-rf400mm",
+      "name": "Canon RF400mm F2.8 L IS USM",
+      "before": "F400",
+      "after": "F2.8",
+      "evidence": "Official model name aperture following mm; excludes RF/XF/GF focal-length prefix"
+    },
+    {
+      "id": "canon-렌즈-canon-rf-rf600mm",
+      "name": "Canon RF600mm F4 L IS USM",
+      "before": "F600",
+      "after": "F4",
+      "evidence": "Official model name aperture following mm; excludes RF/XF/GF focal-length prefix"
+    },
+    {
+      "id": "canon-렌즈-canon-rf-rf600mm-2",
+      "name": "Canon RF600mm F11 IS STM",
+      "before": "F600",
+      "after": "F11",
+      "evidence": "Official model name aperture following mm; excludes RF/XF/GF focal-length prefix"
+    },
+    {
+      "id": "canon-렌즈-canon-rf-rf800mm",
+      "name": "Canon RF800mm F5.6 L IS USM",
+      "before": "F800",
+      "after": "F5.6",
+      "evidence": "Official model name aperture following mm; excludes RF/XF/GF focal-length prefix"
+    },
+    {
+      "id": "canon-렌즈-canon-rf-rf800mm-2",
+      "name": "Canon RF800mm F11 IS STM",
+      "before": "F800",
+      "after": "F11",
+      "evidence": "Official model name aperture following mm; excludes RF/XF/GF focal-length prefix"
+    },
+    {
+      "id": "canon-렌즈-canon-rf-rf1200mm",
+      "name": "Canon RF1200mm F8 L IS USM",
+      "before": "F1200",
+      "after": "F8",
+      "evidence": "Official model name aperture following mm; excludes RF/XF/GF focal-length prefix"
+    },
+    {
+      "id": "canon-렌즈-canon-rf-rf5-2mm",
+      "name": "Canon RF5.2mm F2.8 L Dual Fisheye",
+      "before": "F5.2",
+      "after": "F2.8",
+      "evidence": "Official model name aperture following mm; excludes RF/XF/GF focal-length prefix"
+    },
+    {
+      "id": "fujifilm-렌즈-fujifilm-x-xf8mmf3-5",
+      "name": "Fujifilm XF8mmF3.5 R WR",
+      "before": "F8",
+      "after": "F3.5",
+      "evidence": "Official model name aperture following mm; excludes RF/XF/GF focal-length prefix"
+    },
+    {
+      "id": "fujifilm-렌즈-fujifilm-x-xf14mmf2-8",
+      "name": "Fujifilm XF14mmF2.8 R",
+      "before": "F14",
+      "after": "F2.8",
+      "evidence": "Official model name aperture following mm; excludes RF/XF/GF focal-length prefix"
+    },
+    {
+      "id": "fujifilm-렌즈-fujifilm-x-xf16mmf1-4",
+      "name": "Fujifilm XF16mmF1.4 R WR",
+      "before": "F16",
+      "after": "F1.4",
+      "evidence": "Official model name aperture following mm; excludes RF/XF/GF focal-length prefix"
+    },
+    {
+      "id": "fujifilm-렌즈-fujifilm-x-xf16mmf2-8",
+      "name": "Fujifilm XF16mmF2.8 R WR",
+      "before": "F16",
+      "after": "F2.8",
+      "evidence": "Official model name aperture following mm; excludes RF/XF/GF focal-length prefix"
+    },
+    {
+      "id": "fujifilm-렌즈-fujifilm-x-xf18mmf1-4",
+      "name": "Fujifilm XF18mmF1.4 R LM WR",
+      "before": "F18",
+      "after": "F1.4",
+      "evidence": "Official model name aperture following mm; excludes RF/XF/GF focal-length prefix"
+    },
+    {
+      "id": "fujifilm-렌즈-fujifilm-x-xf18mmf2",
+      "name": "Fujifilm XF18mmF2 R",
+      "before": "F18",
+      "after": "F2",
+      "evidence": "Official model name aperture following mm; excludes RF/XF/GF focal-length prefix"
+    },
+    {
+      "id": "fujifilm-렌즈-fujifilm-x-xf23mmf1-4",
+      "name": "Fujifilm XF23mmF1.4 R",
+      "before": "F23",
+      "after": "F1.4",
+      "evidence": "Official model name aperture following mm; excludes RF/XF/GF focal-length prefix"
+    },
+    {
+      "id": "fujifilm-렌즈-fujifilm-x-xf23mmf1-4-2",
+      "name": "Fujifilm XF23mmF1.4 R LM WR",
+      "before": "F23",
+      "after": "F1.4",
+      "evidence": "Official model name aperture following mm; excludes RF/XF/GF focal-length prefix"
+    },
+    {
+      "id": "fujifilm-렌즈-fujifilm-x-xf23mmf2",
+      "name": "Fujifilm XF23mmF2 R WR",
+      "before": "F23",
+      "after": "F2",
+      "evidence": "Official model name aperture following mm; excludes RF/XF/GF focal-length prefix"
+    },
+    {
+      "id": "fujifilm-렌즈-fujifilm-x-xf23mmf2-8",
+      "name": "Fujifilm XF23mmF2.8 R WR",
+      "before": "F23",
+      "after": "F2.8",
+      "evidence": "Official model name aperture following mm; excludes RF/XF/GF focal-length prefix"
+    },
+    {
+      "id": "fujifilm-렌즈-fujifilm-x-xf27mmf2-8",
+      "name": "Fujifilm XF27mmF2.8",
+      "before": "F27",
+      "after": "F2.8",
+      "evidence": "Official model name aperture following mm; excludes RF/XF/GF focal-length prefix"
+    },
+    {
+      "id": "fujifilm-렌즈-fujifilm-x-xf27mmf2-8-2",
+      "name": "Fujifilm XF27mmF2.8 R WR",
+      "before": "F27",
+      "after": "F2.8",
+      "evidence": "Official model name aperture following mm; excludes RF/XF/GF focal-length prefix"
+    },
+    {
+      "id": "fujifilm-렌즈-fujifilm-x-xf30mmf2-8",
+      "name": "Fujifilm XF30mmF2.8 R LM WR Macro",
+      "before": "F30",
+      "after": "F2.8",
+      "evidence": "Official model name aperture following mm; excludes RF/XF/GF focal-length prefix"
+    },
+    {
+      "id": "fujifilm-렌즈-fujifilm-x-xf33mmf1-4",
+      "name": "Fujifilm XF33mmF1.4 R LM WR",
+      "before": "F33",
+      "after": "F1.4",
+      "evidence": "Official model name aperture following mm; excludes RF/XF/GF focal-length prefix"
+    },
+    {
+      "id": "fujifilm-렌즈-fujifilm-x-xf35mmf1-4",
+      "name": "Fujifilm XF35mmF1.4 R",
+      "before": "F35",
+      "after": "F1.4",
+      "evidence": "Official model name aperture following mm; excludes RF/XF/GF focal-length prefix"
+    },
+    {
+      "id": "fujifilm-렌즈-fujifilm-x-xf35mmf2",
+      "name": "Fujifilm XF35mmF2 R WR",
+      "before": "F35",
+      "after": "F2",
+      "evidence": "Official model name aperture following mm; excludes RF/XF/GF focal-length prefix"
+    },
+    {
+      "id": "fujifilm-렌즈-fujifilm-x-xf50mmf1-0",
+      "name": "Fujifilm XF50mmF1.0 R WR",
+      "before": "F50",
+      "after": "F1.0",
+      "evidence": "Official model name aperture following mm; excludes RF/XF/GF focal-length prefix"
+    },
+    {
+      "id": "fujifilm-렌즈-fujifilm-x-xf50mmf2",
+      "name": "Fujifilm XF50mmF2 R WR",
+      "before": "F50",
+      "after": "F2",
+      "evidence": "Official model name aperture following mm; excludes RF/XF/GF focal-length prefix"
+    },
+    {
+      "id": "fujifilm-렌즈-fujifilm-x-xf56mmf1-2",
+      "name": "Fujifilm XF56mmF1.2 R",
+      "before": "F56",
+      "after": "F1.2",
+      "evidence": "Official model name aperture following mm; excludes RF/XF/GF focal-length prefix"
+    },
+    {
+      "id": "fujifilm-렌즈-fujifilm-x-xf56mmf1-2-2",
+      "name": "Fujifilm XF56mmF1.2 R APD",
+      "before": "F56",
+      "after": "F1.2",
+      "evidence": "Official model name aperture following mm; excludes RF/XF/GF focal-length prefix"
+    },
+    {
+      "id": "fujifilm-렌즈-fujifilm-x-xf56mmf1-2-3",
+      "name": "Fujifilm XF56mmF1.2 R WR",
+      "before": "F56",
+      "after": "F1.2",
+      "evidence": "Official model name aperture following mm; excludes RF/XF/GF focal-length prefix"
+    },
+    {
+      "id": "fujifilm-렌즈-fujifilm-x-xf60mmf2-4",
+      "name": "Fujifilm XF60mmF2.4 R Macro",
+      "before": "F60",
+      "after": "F2.4",
+      "evidence": "Official model name aperture following mm; excludes RF/XF/GF focal-length prefix"
+    },
+    {
+      "id": "fujifilm-렌즈-fujifilm-x-xf80mmf2-8",
+      "name": "Fujifilm XF80mmF2.8 R LM OIS WR Macro",
+      "before": "F80",
+      "after": "F2.8",
+      "evidence": "Official model name aperture following mm; excludes RF/XF/GF focal-length prefix"
+    },
+    {
+      "id": "fujifilm-렌즈-fujifilm-x-xf90mmf2",
+      "name": "Fujifilm XF90mmF2 R LM WR",
+      "before": "F90",
+      "after": "F2",
+      "evidence": "Official model name aperture following mm; excludes RF/XF/GF focal-length prefix"
+    },
+    {
+      "id": "fujifilm-렌즈-fujifilm-x-xf200mmf2",
+      "name": "Fujifilm XF200mmF2 R LM OIS WR",
+      "before": "F200",
+      "after": "F2",
+      "evidence": "Official model name aperture following mm; excludes RF/XF/GF focal-length prefix"
+    },
+    {
+      "id": "fujifilm-렌즈-fujifilm-x-xf500mmf5-6",
+      "name": "Fujifilm XF500mmF5.6 R LM OIS WR",
+      "before": "F500",
+      "after": "F5.6",
+      "evidence": "Official model name aperture following mm; excludes RF/XF/GF focal-length prefix"
+    },
+    {
+      "id": "fujifilm-렌즈-fujifilm-x-xf8-16mmf2-8",
+      "name": "Fujifilm XF8-16mmF2.8 R LM WR",
+      "before": "F8-16",
+      "after": "F2.8",
+      "evidence": "Official model name aperture following mm; excludes RF/XF/GF focal-length prefix"
+    },
+    {
+      "id": "fujifilm-렌즈-fujifilm-x-xf10-24mmf4",
+      "name": "Fujifilm XF10-24mmF4 R OIS",
+      "before": "F10-24",
+      "after": "F4",
+      "evidence": "Official model name aperture following mm; excludes RF/XF/GF focal-length prefix"
+    },
+    {
+      "id": "fujifilm-렌즈-fujifilm-x-xf10-24mmf4-2",
+      "name": "Fujifilm XF10-24mmF4 R OIS WR",
+      "before": "F10-24",
+      "after": "F4",
+      "evidence": "Official model name aperture following mm; excludes RF/XF/GF focal-length prefix"
+    },
+    {
+      "id": "fujifilm-렌즈-fujifilm-x-xf16-50mmf2-8-4-8",
+      "name": "Fujifilm XF16-50mmF2.8-4.8 R LM WR",
+      "before": "F16-50",
+      "after": "F2.8-4.8",
+      "evidence": "Official model name aperture following mm; excludes RF/XF/GF focal-length prefix"
+    },
+    {
+      "id": "fujifilm-렌즈-fujifilm-x-xf16-55mmf2-8",
+      "name": "Fujifilm XF16-55mmF2.8 R LM WR",
+      "before": "F16-55",
+      "after": "F2.8",
+      "evidence": "Official model name aperture following mm; excludes RF/XF/GF focal-length prefix"
+    },
+    {
+      "id": "fujifilm-렌즈-fujifilm-x-xf16-55mmf2-8-2",
+      "name": "Fujifilm XF16-55mmF2.8 R LM WR II",
+      "before": "F16-55",
+      "after": "F2.8",
+      "evidence": "Official model name aperture following mm; excludes RF/XF/GF focal-length prefix"
+    },
+    {
+      "id": "fujifilm-렌즈-fujifilm-x-xf16-80mmf4",
+      "name": "Fujifilm XF16-80mmF4 R OIS WR",
+      "before": "F16-80",
+      "after": "F4",
+      "evidence": "Official model name aperture following mm; excludes RF/XF/GF focal-length prefix"
+    },
+    {
+      "id": "fujifilm-렌즈-fujifilm-x-xf18-55mmf2-8-4",
+      "name": "Fujifilm XF18-55mmF2.8-4 R LM OIS",
+      "before": "F18-55",
+      "after": "F2.8-4",
+      "evidence": "Official model name aperture following mm; excludes RF/XF/GF focal-length prefix"
+    },
+    {
+      "id": "fujifilm-렌즈-fujifilm-x-xf18-120mmf4",
+      "name": "Fujifilm XF18-120mmF4 LM PZ WR",
+      "before": "F18-120",
+      "after": "F4",
+      "evidence": "Official model name aperture following mm; excludes RF/XF/GF focal-length prefix"
+    },
+    {
+      "id": "fujifilm-렌즈-fujifilm-x-xf18-135mmf3-5-5-6",
+      "name": "Fujifilm XF18-135mmF3.5-5.6 R LM OIS WR",
+      "before": "F18-135",
+      "after": "F3.5-5.6",
+      "evidence": "Official model name aperture following mm; excludes RF/XF/GF focal-length prefix"
+    },
+    {
+      "id": "fujifilm-렌즈-fujifilm-x-xf50-140mmf2-8",
+      "name": "Fujifilm XF50-140mmF2.8 R LM OIS WR",
+      "before": "F50-140",
+      "after": "F2.8",
+      "evidence": "Official model name aperture following mm; excludes RF/XF/GF focal-length prefix"
+    },
+    {
+      "id": "fujifilm-렌즈-fujifilm-x-xf55-200mmf3-5-4-8",
+      "name": "Fujifilm XF55-200mmF3.5-4.8 R LM OIS",
+      "before": "F55-200",
+      "after": "F3.5-4.8",
+      "evidence": "Official model name aperture following mm; excludes RF/XF/GF focal-length prefix"
+    },
+    {
+      "id": "fujifilm-렌즈-fujifilm-x-xf70-300mmf4-5-6",
+      "name": "Fujifilm XF70-300mmF4-5.6 R LM OIS WR",
+      "before": "F70-300",
+      "after": "F4-5.6",
+      "evidence": "Official model name aperture following mm; excludes RF/XF/GF focal-length prefix"
+    },
+    {
+      "id": "fujifilm-렌즈-fujifilm-x-xf100-400mmf4-5-5-6",
+      "name": "Fujifilm XF100-400mmF4.5-5.6 R LM OIS WR",
+      "before": "F100-400",
+      "after": "F4.5-5.6",
+      "evidence": "Official model name aperture following mm; excludes RF/XF/GF focal-length prefix"
+    },
+    {
+      "id": "fujifilm-렌즈-fujifilm-x-xf150-600mmf5-6-8",
+      "name": "Fujifilm XF150-600mmF5.6-8 R LM OIS WR",
+      "before": "F150-600",
+      "after": "F5.6-8",
+      "evidence": "Official model name aperture following mm; excludes RF/XF/GF focal-length prefix"
+    },
+    {
+      "id": "fujifilm-렌즈-fujifilm-g-gf23mmf4",
+      "name": "Fujifilm GF23mmF4 R LM WR",
+      "before": "F23",
+      "after": "F4",
+      "evidence": "Official model name aperture following mm; excludes RF/XF/GF focal-length prefix"
+    },
+    {
+      "id": "fujifilm-렌즈-fujifilm-g-gf30mmf3-5",
+      "name": "Fujifilm GF30mmF3.5 R WR",
+      "before": "F30",
+      "after": "F3.5",
+      "evidence": "Official model name aperture following mm; excludes RF/XF/GF focal-length prefix"
+    },
+    {
+      "id": "fujifilm-렌즈-fujifilm-g-gf45mmf2-8",
+      "name": "Fujifilm GF45mmF2.8 R WR",
+      "before": "F45",
+      "after": "F2.8",
+      "evidence": "Official model name aperture following mm; excludes RF/XF/GF focal-length prefix"
+    },
+    {
+      "id": "fujifilm-렌즈-fujifilm-g-gf50mmf3-5",
+      "name": "Fujifilm GF50mmF3.5 R LM WR",
+      "before": "F50",
+      "after": "F3.5",
+      "evidence": "Official model name aperture following mm; excludes RF/XF/GF focal-length prefix"
+    },
+    {
+      "id": "fujifilm-렌즈-fujifilm-g-gf55mmf1-7",
+      "name": "Fujifilm GF55mmF1.7 R WR",
+      "before": "F55",
+      "after": "F1.7",
+      "evidence": "Official model name aperture following mm; excludes RF/XF/GF focal-length prefix"
+    },
+    {
+      "id": "fujifilm-렌즈-fujifilm-g-gf63mmf2-8",
+      "name": "Fujifilm GF63mmF2.8 R WR",
+      "before": "F63",
+      "after": "F2.8",
+      "evidence": "Official model name aperture following mm; excludes RF/XF/GF focal-length prefix"
+    },
+    {
+      "id": "fujifilm-렌즈-fujifilm-g-gf80mmf1-7",
+      "name": "Fujifilm GF80mmF1.7 R WR",
+      "before": "F80",
+      "after": "F1.7",
+      "evidence": "Official model name aperture following mm; excludes RF/XF/GF focal-length prefix"
+    },
+    {
+      "id": "fujifilm-렌즈-fujifilm-g-gf110mmf2",
+      "name": "Fujifilm GF110mmF2 R LM WR",
+      "before": "F110",
+      "after": "F2",
+      "evidence": "Official model name aperture following mm; excludes RF/XF/GF focal-length prefix"
+    },
+    {
+      "id": "fujifilm-렌즈-fujifilm-g-gf120mmf4",
+      "name": "Fujifilm GF120mmF4 R LM OIS WR Macro",
+      "before": "F120",
+      "after": "F4",
+      "evidence": "Official model name aperture following mm; excludes RF/XF/GF focal-length prefix"
+    },
+    {
+      "id": "fujifilm-렌즈-fujifilm-g-gf250mmf4",
+      "name": "Fujifilm GF250mmF4 R LM OIS WR",
+      "before": "F250",
+      "after": "F4",
+      "evidence": "Official model name aperture following mm; excludes RF/XF/GF focal-length prefix"
+    },
+    {
+      "id": "fujifilm-렌즈-fujifilm-g-gf500mmf5-6",
+      "name": "Fujifilm GF500mmF5.6 R LM OIS WR",
+      "before": "F500",
+      "after": "F5.6",
+      "evidence": "Official model name aperture following mm; excludes RF/XF/GF focal-length prefix"
+    },
+    {
+      "id": "fujifilm-렌즈-fujifilm-g-gf19-35mmt3-5",
+      "name": "Fujifilm GF19-35mmT3.5 PZ OIS WR",
+      "before": "F19-35",
+      "after": "T3.5",
+      "evidence": "Official model name aperture following mm; excludes RF/XF/GF focal-length prefix"
+    },
+    {
+      "id": "fujifilm-렌즈-fujifilm-g-gf20-35mmf4",
+      "name": "Fujifilm GF20-35mmF4 R WR",
+      "before": "F20-35",
+      "after": "F4",
+      "evidence": "Official model name aperture following mm; excludes RF/XF/GF focal-length prefix"
+    },
+    {
+      "id": "fujifilm-렌즈-fujifilm-g-gf32-64mmf4",
+      "name": "Fujifilm GF32-64mmF4 R LM WR",
+      "before": "F32-64",
+      "after": "F4",
+      "evidence": "Official model name aperture following mm; excludes RF/XF/GF focal-length prefix"
+    },
+    {
+      "id": "fujifilm-렌즈-fujifilm-g-gf32-90mmt3-5",
+      "name": "Fujifilm GF32-90mmT3.5 PZ OIS WR",
+      "before": "F32-90",
+      "after": "T3.5",
+      "evidence": "Official model name aperture following mm; excludes RF/XF/GF focal-length prefix"
+    },
+    {
+      "id": "fujifilm-렌즈-fujifilm-g-gf35-70mmf4-5-5-6",
+      "name": "Fujifilm GF35-70mmF4.5-5.6 WR",
+      "before": "F35-70",
+      "after": "F4.5-5.6",
+      "evidence": "Official model name aperture following mm; excludes RF/XF/GF focal-length prefix"
+    },
+    {
+      "id": "fujifilm-렌즈-fujifilm-g-gf45-100mmf4",
+      "name": "Fujifilm GF45-100mmF4 R LM OIS WR",
+      "before": "F45-100",
+      "after": "F4",
+      "evidence": "Official model name aperture following mm; excludes RF/XF/GF focal-length prefix"
+    },
+    {
+      "id": "fujifilm-렌즈-fujifilm-g-gf100-200mmf5-6",
+      "name": "Fujifilm GF100-200mmF5.6 R LM OIS WR",
+      "before": "F100-200",
+      "after": "F5.6",
+      "evidence": "Official model name aperture following mm; excludes RF/XF/GF focal-length prefix"
+    },
+    {
+      "id": "fujifilm-렌즈-fujifilm-g-gf30mmf5-6",
+      "name": "Fujifilm GF30mmF5.6 T/S",
+      "before": "F30",
+      "after": "F5.6",
+      "evidence": "Official model name aperture following mm; excludes RF/XF/GF focal-length prefix"
+    },
+    {
+      "id": "fujifilm-렌즈-fujifilm-g-gf110mmf5-6",
+      "name": "Fujifilm GF110mmF5.6 T/S Macro",
+      "before": "F110",
+      "after": "F5.6",
+      "evidence": "Official model name aperture following mm; excludes RF/XF/GF focal-length prefix"
+    }
+  ]
+}
