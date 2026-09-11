@@ -24,3 +24,5 @@ jobs:
         run: node scripts/test_catalog_visibility.mjs
       - name: Validate price details
         run: node scripts/test_price_details.mjs
+      - name: Validate body and lens manufacturer filters
+        run: node scripts/test_catalog_filter_order.mjs
