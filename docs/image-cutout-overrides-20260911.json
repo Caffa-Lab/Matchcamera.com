@@ -1,0 +1,57 @@
+{
+  "sony-렌즈-sony-e-sel1670z": {
+    "sourceSha256": "1db5c594d295c3e055e5ee7f955c59aa27d8b9ef8a785f9b9f93551a899db239",
+    "method": "border-white-mask",
+    "reason": "Visual QA: preserve product opacity / remove detached badge"
+  },
+  "sony-렌즈-sony-e-sel100400gm": {
+    "sourceSha256": "211f748b71c7385845e31f9e71c32c4bd8f51366db4db730a23b379efadf1c2a",
+    "method": "border-white-mask",
+    "reason": "Visual QA: preserve product opacity / remove detached badge"
+  },
+  "canon-바디-canon-ef-m-eos-m100": {
+    "sourceSha256": "11c4d95dc16c38c6409eb622c69724accb0461165d7ddd356cbfed854d2cb68d",
+    "method": "border-white-mask",
+    "reason": "Visual QA: preserve product opacity / remove detached badge"
+  },
+  "canon-바디-canon-ef-m-eos-m200": {
+    "sourceSha256": "59fbcc2b91d0fa7329d0dbcdb2dc166fc8f75eeb20043e7189b803ee85541323",
+    "method": "border-white-mask",
+    "reason": "Visual QA: preserve product opacity / remove detached badge"
+  },
+  "canon-렌즈-canon-ef-m-32mm": {
+    "sourceSha256": "07e576f2c2a99b95fb49ccaae6b99a590b11d31e85304db1cb8153b0b72072bd",
+    "method": "border-white-mask",
+    "reason": "Visual QA: preserve product opacity / remove detached badge"
+  },
+  "ext-canon-canon-powershot-g5-x-mark-ii": {
+    "sourceSha256": "144f80b81bf58b44e0b052d03b12917abb7dc7eee2b7c3e9278ade2eaea72af6",
+    "method": "border-white-mask",
+    "reason": "Visual QA: preserve product opacity / remove detached badge"
+  },
+  "ext-sony-sony-fx6": {
+    "sourceSha256": "f0554e3f83cd020ffbd6685fabb55fa5f394a379606e8764a8d8a0195c780a78",
+    "method": "largest-component",
+    "reason": "Visual QA: preserve product opacity / remove detached badge"
+  },
+  "nikon-바디-nikon-1-nikon-1-s2": {
+    "sourceSha256": "ffa0eb2507647ccd0e6e629fc14eef07c4ac7e7ffa139b28b80723003b246b8d",
+    "method": "border-white-mask",
+    "reason": "Visual QA: retain light-colored body/lens surfaces"
+  },
+  "canon-렌즈-canon-ef-m-18-55mm": {
+    "sourceSha256": "1c19f0ddd41605cfcd0fac9626ae6dd6b4cdc40e8eff0c0e91ed436bef9eb1f2",
+    "method": "border-white-mask",
+    "reason": "Visual QA: retain light-colored body/lens surfaces"
+  },
+  "canon-렌즈-canon-ef-m-22mm": {
+    "sourceSha256": "3340fcc60eb3b967675fac2c66d209e15edb7aa54ba5116928212019a77dc4fa",
+    "method": "border-white-mask",
+    "reason": "Visual QA: retain light-colored body/lens surfaces"
+  },
+  "canon-렌즈-canon-ef-m-55-200mm": {
+    "sourceSha256": "4757f290e3521055e5c42cef77543fecc10f23058b81e48e4b6e3c49faa95334",
+    "method": "border-white-mask",
+    "reason": "Visual QA: retain light-colored body/lens surfaces"
+  }
+}

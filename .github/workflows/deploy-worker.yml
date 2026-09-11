@@ -33,6 +33,7 @@ jobs:
           node --check public/program/resize/workers/image-worker.js
           node --check worker/index.js
           node scripts/test_admin_worker.mjs
+          node scripts/test_catalog_visibility.mjs
           node scripts/test_programs.mjs
           python3 scripts/check_homepage.py
 

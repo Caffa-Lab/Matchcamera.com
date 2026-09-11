@@ -41,7 +41,8 @@
       "출시년도": 2020,
       "센서 포맷": "Full Frame",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-canon-canon-eos-1d-x-mark-ii",
@@ -85,7 +86,8 @@
       "출시년도": 2016,
       "센서 포맷": "Full Frame",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-canon-canon-eos-1d-x",
@@ -129,7 +131,8 @@
       "출시년도": 2012,
       "센서 포맷": "Full Frame",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-canon-canon-eos-1ds-mark-iii",
@@ -173,7 +176,8 @@
       "출시년도": 2007,
       "센서 포맷": "Full Frame",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-canon-canon-eos-1ds-mark-ii",
@@ -217,7 +221,8 @@
       "출시년도": 2004,
       "센서 포맷": "Full Frame",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-canon-canon-eos-1ds",
@@ -261,7 +266,8 @@
       "출시년도": 2002,
       "센서 포맷": "Full Frame",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-canon-canon-eos-1d-mark-iv",
@@ -305,7 +311,8 @@
       "출시년도": 2009,
       "센서 포맷": "APS-H",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-canon-canon-eos-1d-mark-iii",
@@ -349,7 +356,8 @@
       "출시년도": 2007,
       "센서 포맷": "APS-H",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-canon-canon-eos-1d-mark-ii-n",
@@ -393,7 +401,8 @@
       "출시년도": 2005,
       "센서 포맷": "APS-H",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-canon-canon-eos-1d-mark-ii",
@@ -437,7 +446,8 @@
       "출시년도": 2004,
       "센서 포맷": "APS-H",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-canon-canon-eos-1d",
@@ -481,7 +491,8 @@
       "출시년도": 2001,
       "센서 포맷": "APS-H",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-canon-canon-eos-5d-mark-iv",
@@ -525,7 +536,8 @@
       "출시년도": 2016,
       "센서 포맷": "Full Frame",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-canon-canon-eos-5ds-r",
@@ -569,7 +581,8 @@
       "출시년도": 2015,
       "센서 포맷": "Full Frame",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-canon-canon-eos-5ds",
@@ -613,7 +626,8 @@
       "출시년도": 2015,
       "센서 포맷": "Full Frame",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-canon-canon-eos-5d-mark-iii",
@@ -657,7 +671,8 @@
       "출시년도": 2012,
       "센서 포맷": "Full Frame",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-canon-canon-eos-5d-mark-ii",
@@ -701,7 +716,8 @@
       "출시년도": 2008,
       "센서 포맷": "Full Frame",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-canon-canon-eos-5d",
@@ -745,7 +761,8 @@
       "출시년도": 2005,
       "센서 포맷": "Full Frame",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-canon-canon-eos-6d-mark-ii",
@@ -789,7 +806,8 @@
       "출시년도": 2017,
       "센서 포맷": "Full Frame",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-canon-canon-eos-6d",
@@ -833,7 +851,8 @@
       "출시년도": 2012,
       "센서 포맷": "Full Frame",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-canon-canon-eos-7d-mark-ii",
@@ -877,7 +896,8 @@
       "출시년도": 2014,
       "센서 포맷": "APS-C",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-canon-canon-eos-7d",
@@ -921,7 +941,8 @@
       "출시년도": 2009,
       "센서 포맷": "APS-C",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-canon-canon-eos-90d",
@@ -965,7 +986,8 @@
       "출시년도": 2019,
       "센서 포맷": "APS-C",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-canon-canon-eos-80d",
@@ -1009,7 +1031,8 @@
       "출시년도": 2016,
       "센서 포맷": "APS-C",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-canon-canon-eos-70d",
@@ -1053,7 +1076,8 @@
       "출시년도": 2013,
       "센서 포맷": "APS-C",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-canon-canon-eos-60d",
@@ -1097,7 +1121,8 @@
       "출시년도": 2010,
       "센서 포맷": "APS-C",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-canon-canon-eos-50d",
@@ -1141,7 +1166,8 @@
       "출시년도": 2008,
       "센서 포맷": "APS-C",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-canon-canon-eos-40d",
@@ -1185,7 +1211,8 @@
       "출시년도": 2007,
       "센서 포맷": "APS-C",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-canon-canon-eos-30d",
@@ -1229,7 +1256,8 @@
       "출시년도": 2006,
       "센서 포맷": "APS-C",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-canon-canon-eos-20d",
@@ -1273,7 +1301,8 @@
       "출시년도": 2004,
       "센서 포맷": "APS-C",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-canon-canon-eos-10d",
@@ -1317,7 +1346,8 @@
       "출시년도": 2003,
       "센서 포맷": "APS-C",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-canon-canon-eos-850d",
@@ -1361,7 +1391,8 @@
       "출시년도": 2020,
       "센서 포맷": "APS-C",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-canon-canon-eos-800d",
@@ -1405,7 +1436,8 @@
       "출시년도": 2017,
       "센서 포맷": "APS-C",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-canon-canon-eos-77d",
@@ -1449,7 +1481,8 @@
       "출시년도": 2017,
       "센서 포맷": "APS-C",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-canon-canon-eos-760d",
@@ -1493,7 +1526,8 @@
       "출시년도": 2015,
       "센서 포맷": "APS-C",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-canon-canon-eos-750d",
@@ -1537,7 +1571,8 @@
       "출시년도": 2015,
       "센서 포맷": "APS-C",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-canon-canon-eos-700d",
@@ -1581,7 +1616,8 @@
       "출시년도": 2013,
       "센서 포맷": "APS-C",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-canon-canon-eos-650d",
@@ -1625,7 +1661,8 @@
       "출시년도": 2012,
       "센서 포맷": "APS-C",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-canon-canon-eos-600d",
@@ -1669,7 +1706,8 @@
       "출시년도": 2011,
       "센서 포맷": "APS-C",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-canon-canon-eos-550d",
@@ -1713,7 +1751,8 @@
       "출시년도": 2010,
       "센서 포맷": "APS-C",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-canon-canon-eos-500d",
@@ -1757,7 +1796,8 @@
       "출시년도": 2009,
       "센서 포맷": "APS-C",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-canon-canon-eos-450d",
@@ -1801,7 +1841,8 @@
       "출시년도": 2008,
       "센서 포맷": "APS-C",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-canon-canon-eos-400d",
@@ -1845,7 +1886,8 @@
       "출시년도": 2006,
       "센서 포맷": "APS-C",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-canon-canon-eos-350d",
@@ -1889,7 +1931,8 @@
       "출시년도": 2005,
       "센서 포맷": "APS-C",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-canon-canon-eos-300d",
@@ -1933,7 +1976,8 @@
       "출시년도": 2003,
       "센서 포맷": "APS-C",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-canon-canon-eos-250d",
@@ -1977,7 +2021,8 @@
       "출시년도": 2019,
       "센서 포맷": "APS-C",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-canon-canon-eos-200d-ii",
@@ -2021,7 +2066,8 @@
       "출시년도": 2019,
       "센서 포맷": "APS-C",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-canon-canon-eos-200d",
@@ -2065,7 +2111,8 @@
       "출시년도": 2017,
       "센서 포맷": "APS-C",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-canon-canon-eos-100d",
@@ -2109,7 +2156,8 @@
       "출시년도": 2013,
       "센서 포맷": "APS-C",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-canon-canon-eos-2000d",
@@ -2153,7 +2201,8 @@
       "출시년도": 2018,
       "센서 포맷": "APS-C",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-canon-canon-eos-1300d",
@@ -2197,7 +2246,8 @@
       "출시년도": 2016,
       "센서 포맷": "APS-C",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-canon-canon-eos-1200d",
@@ -2241,7 +2291,8 @@
       "출시년도": 2014,
       "센서 포맷": "APS-C",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-canon-canon-eos-1100d",
@@ -2285,7 +2336,8 @@
       "출시년도": 2011,
       "센서 포맷": "APS-C",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-canon-canon-eos-1000d",
@@ -2329,7 +2381,8 @@
       "출시년도": 2008,
       "센서 포맷": "APS-C",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-canon-canon-eos-d60",
@@ -2373,7 +2426,8 @@
       "출시년도": 2002,
       "센서 포맷": "APS-C",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-canon-canon-eos-d30",
@@ -2417,7 +2471,8 @@
       "출시년도": 2000,
       "센서 포맷": "APS-C",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-nikon-nikon-d6",
@@ -2461,7 +2516,8 @@
       "출시년도": 2020,
       "센서 포맷": "Full Frame",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-nikon-nikon-d5",
@@ -2505,7 +2561,8 @@
       "출시년도": 2016,
       "센서 포맷": "Full Frame",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-nikon-nikon-d4s",
@@ -2549,7 +2606,8 @@
       "출시년도": 2014,
       "센서 포맷": "Full Frame",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-nikon-nikon-d4",
@@ -2593,7 +2651,8 @@
       "출시년도": 2012,
       "센서 포맷": "Full Frame",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-nikon-nikon-d3s",
@@ -2637,7 +2696,8 @@
       "출시년도": 2009,
       "센서 포맷": "Full Frame",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-nikon-nikon-d3x",
@@ -2681,7 +2741,8 @@
       "출시년도": 2008,
       "센서 포맷": "Full Frame",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-nikon-nikon-d3",
@@ -2725,7 +2786,8 @@
       "출시년도": 2007,
       "센서 포맷": "Full Frame",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-nikon-nikon-d850",
@@ -2769,7 +2831,8 @@
       "출시년도": 2017,
       "센서 포맷": "Full Frame",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-nikon-nikon-d810a",
@@ -2813,7 +2876,8 @@
       "출시년도": 2015,
       "센서 포맷": "Full Frame",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-nikon-nikon-d810",
@@ -2857,7 +2921,8 @@
       "출시년도": 2014,
       "센서 포맷": "Full Frame",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-nikon-nikon-d800e",
@@ -2901,7 +2966,8 @@
       "출시년도": 2012,
       "센서 포맷": "Full Frame",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-nikon-nikon-d800",
@@ -2945,7 +3011,8 @@
       "출시년도": 2012,
       "센서 포맷": "Full Frame",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-nikon-nikon-d780",
@@ -2989,7 +3056,8 @@
       "출시년도": 2020,
       "센서 포맷": "Full Frame",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-nikon-nikon-d750",
@@ -3033,7 +3101,8 @@
       "출시년도": 2014,
       "센서 포맷": "Full Frame",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-nikon-nikon-d700",
@@ -3077,7 +3146,8 @@
       "출시년도": 2008,
       "센서 포맷": "Full Frame",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-nikon-nikon-d610",
@@ -3121,7 +3191,8 @@
       "출시년도": 2013,
       "센서 포맷": "Full Frame",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-nikon-nikon-d600",
@@ -3165,7 +3236,8 @@
       "출시년도": 2012,
       "센서 포맷": "Full Frame",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-nikon-nikon-d500",
@@ -3209,7 +3281,8 @@
       "출시년도": 2016,
       "센서 포맷": "APS-C",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-nikon-nikon-d300s",
@@ -3253,7 +3326,8 @@
       "출시년도": 2009,
       "센서 포맷": "APS-C",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-nikon-nikon-d300",
@@ -3297,7 +3371,8 @@
       "출시년도": 2007,
       "센서 포맷": "APS-C",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-nikon-nikon-d200",
@@ -3341,7 +3416,8 @@
       "출시년도": 2005,
       "센서 포맷": "APS-C",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-nikon-nikon-d100",
@@ -3385,7 +3461,8 @@
       "출시년도": 2002,
       "센서 포맷": "APS-C",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-nikon-nikon-d7500",
@@ -3429,7 +3506,8 @@
       "출시년도": 2017,
       "센서 포맷": "APS-C",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-nikon-nikon-d7200",
@@ -3473,7 +3551,8 @@
       "출시년도": 2015,
       "센서 포맷": "APS-C",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-nikon-nikon-d7100",
@@ -3517,7 +3596,8 @@
       "출시년도": 2013,
       "센서 포맷": "APS-C",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-nikon-nikon-d7000",
@@ -3561,7 +3641,8 @@
       "출시년도": 2010,
       "센서 포맷": "APS-C",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-nikon-nikon-d90",
@@ -3605,7 +3686,8 @@
       "출시년도": 2008,
       "센서 포맷": "APS-C",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-nikon-nikon-d80",
@@ -3649,7 +3731,8 @@
       "출시년도": 2006,
       "센서 포맷": "APS-C",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-nikon-nikon-d70s",
@@ -3693,7 +3776,8 @@
       "출시년도": 2005,
       "센서 포맷": "APS-C",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-nikon-nikon-d70",
@@ -3737,7 +3821,8 @@
       "출시년도": 2004,
       "센서 포맷": "APS-C",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-nikon-nikon-d60",
@@ -3781,7 +3866,8 @@
       "출시년도": 2008,
       "센서 포맷": "APS-C",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-nikon-nikon-d50",
@@ -3825,7 +3911,8 @@
       "출시년도": 2005,
       "센서 포맷": "APS-C",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-nikon-nikon-d40x",
@@ -3869,7 +3956,8 @@
       "출시년도": 2007,
       "센서 포맷": "APS-C",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-nikon-nikon-d40",
@@ -3913,7 +4001,8 @@
       "출시년도": 2006,
       "센서 포맷": "APS-C",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-nikon-nikon-d5600",
@@ -3957,7 +4046,8 @@
       "출시년도": 2016,
       "센서 포맷": "APS-C",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-nikon-nikon-d5500",
@@ -4001,7 +4091,8 @@
       "출시년도": 2015,
       "센서 포맷": "APS-C",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-nikon-nikon-d5300",
@@ -4045,7 +4136,8 @@
       "출시년도": 2013,
       "센서 포맷": "APS-C",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-nikon-nikon-d5200",
@@ -4089,7 +4181,8 @@
       "출시년도": 2012,
       "센서 포맷": "APS-C",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-nikon-nikon-d5100",
@@ -4133,7 +4226,8 @@
       "출시년도": 2011,
       "센서 포맷": "APS-C",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-nikon-nikon-d5000",
@@ -4177,7 +4271,8 @@
       "출시년도": 2009,
       "센서 포맷": "APS-C",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-nikon-nikon-d3500",
@@ -4221,7 +4316,8 @@
       "출시년도": 2018,
       "센서 포맷": "APS-C",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-nikon-nikon-d3400",
@@ -4265,7 +4361,8 @@
       "출시년도": 2016,
       "센서 포맷": "APS-C",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-nikon-nikon-d3300",
@@ -4309,7 +4406,8 @@
       "출시년도": 2014,
       "센서 포맷": "APS-C",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-nikon-nikon-d3200",
@@ -4353,7 +4451,8 @@
       "출시년도": 2012,
       "센서 포맷": "APS-C",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-nikon-nikon-d3100",
@@ -4397,7 +4496,8 @@
       "출시년도": 2010,
       "센서 포맷": "APS-C",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-nikon-nikon-d3000",
@@ -4441,7 +4541,8 @@
       "출시년도": 2009,
       "센서 포맷": "APS-C",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-pentax-pentax-k-1-mark-ii",
@@ -4485,7 +4586,8 @@
       "출시년도": 2018,
       "센서 포맷": "Full Frame",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-pentax-pentax-k-1",
@@ -4529,7 +4631,8 @@
       "출시년도": 2016,
       "센서 포맷": "Full Frame",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-pentax-pentax-k-3-mark-iii-monochrome",
@@ -4573,7 +4676,8 @@
       "출시년도": 2023,
       "센서 포맷": "APS-C",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-pentax-pentax-k-3-mark-iii",
@@ -4617,7 +4721,8 @@
       "출시년도": 2021,
       "센서 포맷": "APS-C",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-pentax-pentax-k-3-ii",
@@ -4661,7 +4766,8 @@
       "출시년도": 2015,
       "센서 포맷": "APS-C",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-pentax-pentax-k-3",
@@ -4705,7 +4811,8 @@
       "출시년도": 2013,
       "센서 포맷": "APS-C",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-pentax-pentax-kp",
@@ -4749,7 +4856,8 @@
       "출시년도": 2017,
       "센서 포맷": "APS-C",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-pentax-pentax-kf",
@@ -4793,7 +4901,8 @@
       "출시년도": 2022,
       "센서 포맷": "APS-C",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-pentax-pentax-k-70",
@@ -4837,7 +4946,8 @@
       "출시년도": 2016,
       "센서 포맷": "APS-C",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-pentax-pentax-k-s2",
@@ -4881,7 +4991,8 @@
       "출시년도": 2015,
       "센서 포맷": "APS-C",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-pentax-pentax-k-s1",
@@ -4925,7 +5036,8 @@
       "출시년도": 2014,
       "센서 포맷": "APS-C",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-pentax-pentax-k-5-iis",
@@ -4969,7 +5081,8 @@
       "출시년도": 2012,
       "센서 포맷": "APS-C",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-pentax-pentax-k-5-ii",
@@ -5013,7 +5126,8 @@
       "출시년도": 2012,
       "센서 포맷": "APS-C",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-pentax-pentax-k-5",
@@ -5057,7 +5171,8 @@
       "출시년도": 2010,
       "센서 포맷": "APS-C",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-pentax-pentax-k-7",
@@ -5101,7 +5216,8 @@
       "출시년도": 2009,
       "센서 포맷": "APS-C",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-pentax-pentax-k20d",
@@ -5145,7 +5261,8 @@
       "출시년도": 2008,
       "센서 포맷": "APS-C",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-pentax-pentax-k10d",
@@ -5189,7 +5306,8 @@
       "출시년도": 2006,
       "센서 포맷": "APS-C",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-pentax-pentax-k200d",
@@ -5233,7 +5351,8 @@
       "출시년도": 2008,
       "센서 포맷": "APS-C",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-pentax-pentax-k100d-super",
@@ -5277,7 +5396,8 @@
       "출시년도": 2007,
       "센서 포맷": "APS-C",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-pentax-pentax-k100d",
@@ -5321,7 +5441,8 @@
       "출시년도": 2006,
       "센서 포맷": "APS-C",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-pentax-pentax-ist-ds2",
@@ -5365,7 +5486,8 @@
       "출시년도": 2005,
       "센서 포맷": "APS-C",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-pentax-pentax-ist-ds",
@@ -5409,7 +5531,8 @@
       "출시년도": 2004,
       "센서 포맷": "APS-C",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-pentax-pentax-ist-d",
@@ -5453,7 +5576,8 @@
       "출시년도": 2003,
       "센서 포맷": "APS-C",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-sony-sony-99-ii",
@@ -5497,7 +5621,8 @@
       "출시년도": 2016,
       "센서 포맷": "Full Frame",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-sony-sony-99",
@@ -5541,7 +5666,8 @@
       "출시년도": 2012,
       "센서 포맷": "Full Frame",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-sony-sony-77-ii",
@@ -5585,7 +5711,8 @@
       "출시년도": 2014,
       "센서 포맷": "APS-C",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-sony-sony-77",
@@ -5629,7 +5756,8 @@
       "출시년도": 2011,
       "센서 포맷": "APS-C",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-sony-sony-68",
@@ -5673,7 +5801,8 @@
       "출시년도": 2015,
       "센서 포맷": "APS-C",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-sony-sony-65",
@@ -5717,7 +5846,8 @@
       "출시년도": 2011,
       "센서 포맷": "APS-C",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-sony-sony-58",
@@ -5761,7 +5891,8 @@
       "출시년도": 2013,
       "센서 포맷": "APS-C",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-sony-sony-57",
@@ -5805,7 +5936,8 @@
       "출시년도": 2012,
       "센서 포맷": "APS-C",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-sony-sony-55",
@@ -5849,7 +5981,8 @@
       "출시년도": 2010,
       "센서 포맷": "APS-C",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-sony-sony-37",
@@ -5893,7 +6026,8 @@
       "출시년도": 2012,
       "센서 포맷": "APS-C",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-sony-sony-35",
@@ -5937,7 +6071,8 @@
       "출시년도": 2011,
       "센서 포맷": "APS-C",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-sony-sony-33",
@@ -5981,7 +6116,8 @@
       "출시년도": 2010,
       "센서 포맷": "APS-C",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-sony-sony-900",
@@ -6025,7 +6161,8 @@
       "출시년도": 2008,
       "센서 포맷": "Full Frame",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-sony-sony-850",
@@ -6069,7 +6206,8 @@
       "출시년도": 2009,
       "센서 포맷": "Full Frame",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-sony-sony-700",
@@ -6113,7 +6251,8 @@
       "출시년도": 2007,
       "센서 포맷": "APS-C",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-sony-sony-580",
@@ -6157,7 +6296,8 @@
       "출시년도": 2010,
       "센서 포맷": "APS-C",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-sony-sony-560",
@@ -6201,7 +6341,8 @@
       "출시년도": 2010,
       "센서 포맷": "APS-C",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-sony-sony-550",
@@ -6245,7 +6386,8 @@
       "출시년도": 2009,
       "센서 포맷": "APS-C",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-sony-sony-500",
@@ -6289,7 +6431,8 @@
       "출시년도": 2009,
       "센서 포맷": "APS-C",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-sony-sony-450",
@@ -6333,7 +6476,8 @@
       "출시년도": 2010,
       "센서 포맷": "APS-C",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-sony-sony-390",
@@ -6377,7 +6521,8 @@
       "출시년도": 2010,
       "센서 포맷": "APS-C",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-sony-sony-380",
@@ -6421,7 +6566,8 @@
       "출시년도": 2009,
       "센서 포맷": "APS-C",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-sony-sony-350",
@@ -6465,7 +6611,8 @@
       "출시년도": 2008,
       "센서 포맷": "APS-C",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-sony-sony-330",
@@ -6509,7 +6656,8 @@
       "출시년도": 2009,
       "센서 포맷": "APS-C",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-sony-sony-300",
@@ -6553,7 +6701,8 @@
       "출시년도": 2008,
       "센서 포맷": "APS-C",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-sony-sony-290",
@@ -6597,7 +6746,8 @@
       "출시년도": 2010,
       "센서 포맷": "APS-C",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-sony-sony-230",
@@ -6641,7 +6791,8 @@
       "출시년도": 2009,
       "센서 포맷": "APS-C",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-sony-sony-200",
@@ -6685,7 +6836,8 @@
       "출시년도": 2008,
       "센서 포맷": "APS-C",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-sony-sony-100",
@@ -6729,7 +6881,8 @@
       "출시년도": 2006,
       "센서 포맷": "APS-C",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-olympus-olympus-e-5",
@@ -6773,7 +6926,8 @@
       "출시년도": 2010,
       "센서 포맷": "Four Thirds",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-olympus-olympus-e-3",
@@ -6817,7 +6971,8 @@
       "출시년도": 2007,
       "센서 포맷": "Four Thirds",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-olympus-olympus-e-1",
@@ -6861,7 +7016,8 @@
       "출시년도": 2003,
       "센서 포맷": "Four Thirds",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-olympus-olympus-e-620",
@@ -6905,7 +7061,8 @@
       "출시년도": 2009,
       "센서 포맷": "Four Thirds",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-olympus-olympus-e-600",
@@ -6949,7 +7106,8 @@
       "출시년도": 2009,
       "센서 포맷": "Four Thirds",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-olympus-olympus-e-520",
@@ -6993,7 +7151,8 @@
       "출시년도": 2008,
       "센서 포맷": "Four Thirds",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-olympus-olympus-e-510",
@@ -7037,7 +7196,8 @@
       "출시년도": 2007,
       "센서 포맷": "Four Thirds",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-olympus-olympus-e-500",
@@ -7081,7 +7241,8 @@
       "출시년도": 2005,
       "센서 포맷": "Four Thirds",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-olympus-olympus-e-450",
@@ -7125,7 +7286,8 @@
       "출시년도": 2009,
       "센서 포맷": "Four Thirds",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-olympus-olympus-e-420",
@@ -7169,7 +7331,8 @@
       "출시년도": 2008,
       "센서 포맷": "Four Thirds",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-olympus-olympus-e-410",
@@ -7213,7 +7376,8 @@
       "출시년도": 2007,
       "센서 포맷": "Four Thirds",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-olympus-olympus-e-400",
@@ -7257,7 +7421,8 @@
       "출시년도": 2006,
       "센서 포맷": "Four Thirds",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-olympus-olympus-e-330",
@@ -7301,7 +7466,8 @@
       "출시년도": 2006,
       "센서 포맷": "Four Thirds",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-olympus-olympus-e-300",
@@ -7345,7 +7511,8 @@
       "출시년도": 2004,
       "센서 포맷": "Four Thirds",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-panasonic-panasonic-lumix-dmc-l10",
@@ -7389,7 +7556,8 @@
       "출시년도": 2007,
       "센서 포맷": "Four Thirds",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-panasonic-panasonic-lumix-dmc-l1",
@@ -7433,7 +7601,8 @@
       "출시년도": 2006,
       "센서 포맷": "Four Thirds",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-leica-leica-digilux-3",
@@ -7477,7 +7646,8 @@
       "출시년도": 2006,
       "센서 포맷": "Four Thirds",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-fujifilm-fujifilm-finepix-s5-pro",
@@ -7521,7 +7691,8 @@
       "출시년도": 2006,
       "센서 포맷": "APS-C",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-fujifilm-fujifilm-finepix-s3-pro",
@@ -7565,7 +7736,8 @@
       "출시년도": 2004,
       "센서 포맷": "APS-C",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-fujifilm-fujifilm-finepix-s2-pro",
@@ -7609,7 +7781,8 @@
       "출시년도": 2002,
       "센서 포맷": "APS-C",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-fujifilm-fujifilm-finepix-s1-pro",
@@ -7653,7 +7826,8 @@
       "출시년도": 2000,
       "센서 포맷": "APS-C",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-sigma-sigma-sd1-merrill",
@@ -7697,7 +7871,8 @@
       "출시년도": 2012,
       "센서 포맷": "APS-C",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-sigma-sigma-sd1",
@@ -7741,7 +7916,8 @@
       "출시년도": 2011,
       "센서 포맷": "APS-C",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-sigma-sigma-sd15",
@@ -7785,7 +7961,8 @@
       "출시년도": 2010,
       "센서 포맷": "APS-C",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-sigma-sigma-sd14",
@@ -7829,7 +8006,8 @@
       "출시년도": 2006,
       "센서 포맷": "APS-C",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-sigma-sigma-sd10",
@@ -7873,7 +8051,8 @@
       "출시년도": 2003,
       "센서 포맷": "APS-C",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-sigma-sigma-sd9",
@@ -7917,7 +8096,8 @@
       "출시년도": 2002,
       "센서 포맷": "APS-C",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-canon-canon-ef-canon-ef-11-24mm-f-4l-usm",
@@ -7963,7 +8143,8 @@
       "초점거리": "11-24mm",
       "최대 조리개": "F4",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-canon-canon-ef-canon-ef-16-35mm-f-2-8l-iii-usm",
@@ -8009,7 +8190,8 @@
       "초점거리": "16-35mm",
       "최대 조리개": "F2.8",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-canon-canon-ef-canon-ef-16-35mm-f-4l-is-usm",
@@ -8055,7 +8237,8 @@
       "초점거리": "16-35mm",
       "최대 조리개": "F4",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-canon-canon-ef-canon-ef-24-70mm-f-2-8l-ii-usm",
@@ -8101,7 +8284,8 @@
       "초점거리": "24-70mm",
       "최대 조리개": "F2.8",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-canon-canon-ef-canon-ef-24-105mm-f-4l-is-ii-usm",
@@ -8147,7 +8331,8 @@
       "초점거리": "24-105mm",
       "최대 조리개": "F4",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-canon-canon-ef-canon-ef-70-200mm-f-2-8l-is-iii-usm",
@@ -8193,7 +8378,8 @@
       "초점거리": "70-200mm",
       "최대 조리개": "F2.8",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-canon-canon-ef-canon-ef-70-200mm-f-4l-is-ii-usm",
@@ -8239,7 +8425,8 @@
       "초점거리": "70-200mm",
       "최대 조리개": "F4",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-canon-canon-ef-canon-ef-100-400mm-f-4-5-5-6l-is-ii-usm",
@@ -8285,7 +8472,8 @@
       "초점거리": "100-400mm",
       "최대 조리개": "F4.5-5.6",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-canon-canon-ef-canon-ef-35mm-f-1-4l-ii-usm",
@@ -8331,7 +8519,8 @@
       "초점거리": "35mm",
       "최대 조리개": "F1.4",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-canon-canon-ef-canon-ef-50mm-f-1-2l-usm",
@@ -8377,7 +8566,8 @@
       "초점거리": "50mm",
       "최대 조리개": "F1.2",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-canon-canon-ef-canon-ef-50mm-f-1-4-usm",
@@ -8423,7 +8613,8 @@
       "초점거리": "50mm",
       "최대 조리개": "F1.4",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-canon-canon-ef-canon-ef-85mm-f-1-4l-is-usm",
@@ -8469,7 +8660,8 @@
       "초점거리": "85mm",
       "최대 조리개": "F1.4",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-canon-canon-ef-canon-ef-85mm-f-1-2l-ii-usm",
@@ -8515,7 +8707,8 @@
       "초점거리": "85mm",
       "최대 조리개": "F1.2",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-canon-canon-ef-canon-ef-100mm-f-2-8l-macro-is-usm",
@@ -8561,7 +8754,8 @@
       "초점거리": "100mm",
       "최대 조리개": "F2.8",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-canon-canon-ef-canon-ef-s-10-18mm-f-4-5-5-6-is-stm",
@@ -8607,7 +8801,8 @@
       "초점거리": "10-18mm",
       "최대 조리개": "F4.5-5.6",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-canon-canon-ef-canon-ef-s-10-22mm-f-3-5-4-5-usm",
@@ -8653,7 +8848,8 @@
       "초점거리": "10-22mm",
       "최대 조리개": "F3.5-4.5",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-canon-canon-ef-canon-ef-s-17-55mm-f-2-8-is-usm",
@@ -8699,7 +8895,8 @@
       "초점거리": "17-55mm",
       "최대 조리개": "F2.8",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-canon-canon-ef-canon-ef-s-18-55mm-f-4-5-6-is-stm",
@@ -8745,7 +8942,8 @@
       "초점거리": "18-55mm",
       "최대 조리개": "F4-5.6",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-canon-canon-ef-canon-ef-s-18-135mm-f-3-5-5-6-is-usm",
@@ -8791,7 +8989,8 @@
       "초점거리": "18-135mm",
       "최대 조리개": "F3.5-5.6",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-canon-canon-ef-canon-ef-s-55-250mm-f-4-5-6-is-stm",
@@ -8837,7 +9036,8 @@
       "초점거리": "55-250mm",
       "최대 조리개": "F4-5.6",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-nikon-nikon-f-nikon-af-s-nikkor-14-24mm-f-2-8g-ed",
@@ -8883,7 +9083,8 @@
       "초점거리": "14-24mm",
       "최대 조리개": "F2.8",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-nikon-nikon-f-nikon-af-s-nikkor-16-35mm-f-4g-ed-vr",
@@ -8929,7 +9130,8 @@
       "초점거리": "16-35mm",
       "최대 조리개": "F4",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-nikon-nikon-f-nikon-af-s-nikkor-24-70mm-f-2-8e-ed-vr",
@@ -8975,7 +9177,8 @@
       "초점거리": "24-70mm",
       "최대 조리개": "F2.8",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-nikon-nikon-f-nikon-af-s-nikkor-24-120mm-f-4g-ed-vr",
@@ -9021,7 +9224,8 @@
       "초점거리": "24-120mm",
       "최대 조리개": "F4",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-nikon-nikon-f-nikon-af-s-nikkor-70-200mm-f-2-8e-fl-ed-vr",
@@ -9067,7 +9271,8 @@
       "초점거리": "70-200mm",
       "최대 조리개": "F2.8",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-nikon-nikon-f-nikon-af-s-nikkor-80-400mm-f-4-5-5-6g-ed-vr",
@@ -9113,7 +9318,8 @@
       "초점거리": "80-400mm",
       "최대 조리개": "F4.5-5.6",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-nikon-nikon-f-nikon-af-s-nikkor-200-500mm-f-5-6e-ed-vr",
@@ -9159,7 +9365,8 @@
       "초점거리": "200-500mm",
       "최대 조리개": "F5.6",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-nikon-nikon-f-nikon-af-s-nikkor-35mm-f-1-4g",
@@ -9205,7 +9412,8 @@
       "초점거리": "35mm",
       "최대 조리개": "F1.4",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-nikon-nikon-f-nikon-af-s-nikkor-50mm-f-1-4g",
@@ -9251,7 +9459,8 @@
       "초점거리": "50mm",
       "최대 조리개": "F1.4",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-nikon-nikon-f-nikon-af-s-nikkor-50mm-f-1-8g",
@@ -9297,7 +9506,8 @@
       "초점거리": "50mm",
       "최대 조리개": "F1.8",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-nikon-nikon-f-nikon-af-s-nikkor-85mm-f-1-4g",
@@ -9343,7 +9553,8 @@
       "초점거리": "85mm",
       "최대 조리개": "F1.4",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-nikon-nikon-f-nikon-af-s-nikkor-105mm-f-1-4e-ed",
@@ -9389,7 +9600,8 @@
       "초점거리": "105mm",
       "최대 조리개": "F1.4",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-nikon-nikon-f-nikon-af-s-vr-micro-nikkor-105mm-f-2-8g-if-ed",
@@ -9435,7 +9647,8 @@
       "초점거리": "105mm",
       "최대 조리개": "F2.8",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-nikon-nikon-f-nikon-af-p-dx-nikkor-10-20mm-f-4-5-5-6g-vr",
@@ -9481,7 +9694,8 @@
       "초점거리": "10-20mm",
       "최대 조리개": "F4.5-5.6",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-nikon-nikon-f-nikon-af-s-dx-nikkor-16-80mm-f-2-8-4e-ed-vr",
@@ -9527,7 +9741,8 @@
       "초점거리": "16-80mm",
       "최대 조리개": "F2.8-4",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-nikon-nikon-f-nikon-af-s-dx-nikkor-18-140mm-f-3-5-5-6g-ed-vr",
@@ -9573,7 +9788,8 @@
       "초점거리": "18-140mm",
       "최대 조리개": "F3.5-5.6",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-nikon-nikon-f-nikon-af-s-dx-nikkor-35mm-f-1-8g",
@@ -9619,7 +9835,8 @@
       "초점거리": "35mm",
       "최대 조리개": "F1.8",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-nikon-nikon-f-nikon-af-p-dx-nikkor-18-55mm-f-3-5-5-6g-vr",
@@ -9665,7 +9882,8 @@
       "초점거리": "18-55mm",
       "최대 조리개": "F3.5-5.6",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-pentax-pentax-k-hd-pentax-d-fa-15-30mm-f2-8ed-sdm-wr",
@@ -9711,7 +9929,8 @@
       "초점거리": "15-30mm",
       "최대 조리개": "F2.8",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-pentax-pentax-k-hd-pentax-d-fa-24-70mm-f2-8ed-sdm-wr",
@@ -9757,7 +9976,8 @@
       "초점거리": "24-70mm",
       "최대 조리개": "F2.8",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-pentax-pentax-k-hd-pentax-d-fa-70-200mm-f2-8ed-dc-aw",
@@ -9803,7 +10023,8 @@
       "초점거리": "70-200mm",
       "최대 조리개": "F2.8",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-pentax-pentax-k-hd-pentax-d-fa-50mm-f1-4-sdm-aw",
@@ -9849,7 +10070,8 @@
       "초점거리": "50mm",
       "최대 조리개": "F1.4",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-pentax-pentax-k-hd-pentax-d-fa-85mm-f1-4ed-sdm-aw",
@@ -9895,7 +10117,8 @@
       "초점거리": "85mm",
       "최대 조리개": "F1.4",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-pentax-pentax-k-hd-pentax-da-16-50mm-f2-8ed-plm-aw",
@@ -9941,7 +10164,8 @@
       "초점거리": "16-50mm",
       "최대 조리개": "F2.8",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-pentax-pentax-k-smc-pentax-da-50-135mm-f2-8ed-if-sdm",
@@ -9987,7 +10211,8 @@
       "초점거리": "50-135mm",
       "최대 조리개": "F2.8",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-pentax-pentax-k-smc-pentax-da-18-135mm-f3-5-5-6ed-al-if-dc-wr",
@@ -10033,7 +10258,8 @@
       "초점거리": "18-135mm",
       "최대 조리개": "F3.5-5.6",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-pentax-pentax-k-hd-pentax-da-55-300mm-f4-5-6-3ed-plm-wr-re",
@@ -10079,7 +10305,8 @@
       "초점거리": "55-300mm",
       "최대 조리개": "F4.5-6.3",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-pentax-pentax-k-smc-pentax-da-35mm-f2-4-al",
@@ -10125,7 +10352,8 @@
       "초점거리": "35mm",
       "최대 조리개": "F2.4",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-sony-sony-a-sony-vario-sonnar-t-16-35mm-f2-8-za-ssm-ii",
@@ -10171,7 +10399,8 @@
       "초점거리": "16-35mm",
       "최대 조리개": "F2.8",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-sony-sony-a-sony-vario-sonnar-t-24-70mm-f2-8-za-ssm-ii",
@@ -10217,7 +10446,8 @@
       "초점거리": "24-70mm",
       "최대 조리개": "F2.8",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-sony-sony-a-sony-70-200mm-f2-8-g-ssm-ii",
@@ -10263,7 +10493,8 @@
       "초점거리": "70-200mm",
       "최대 조리개": "F2.8",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-sony-sony-a-sony-70-400mm-f4-5-6-g-ssm-ii",
@@ -10309,7 +10540,8 @@
       "초점거리": "70-400mm",
       "최대 조리개": "F4-5.6",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-sony-sony-a-sony-planar-t-50mm-f1-4-za-ssm",
@@ -10355,7 +10587,8 @@
       "초점거리": "50mm",
       "최대 조리개": "F1.4",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-sony-sony-a-sony-planar-t-85mm-f1-4-za",
@@ -10401,7 +10634,8 @@
       "초점거리": "85mm",
       "최대 조리개": "F1.4",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-sony-sony-a-sony-sonnar-t-135mm-f1-8-za",
@@ -10447,7 +10681,8 @@
       "초점거리": "135mm",
       "최대 조리개": "F1.8",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-sony-sony-a-sony-dt-16-50mm-f2-8-ssm",
@@ -10493,7 +10728,8 @@
       "초점거리": "16-50mm",
       "최대 조리개": "F2.8",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-sony-sony-a-sony-dt-18-135mm-f3-5-5-6-sam",
@@ -10539,7 +10775,8 @@
       "초점거리": "18-135mm",
       "최대 조리개": "F3.5-5.6",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-olympus-four-thirds-olympus-zuiko-digital-ed-7-14mm-f4-0",
@@ -10585,7 +10822,8 @@
       "초점거리": "7-14mm",
       "최대 조리개": "F4",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-olympus-four-thirds-olympus-zuiko-digital-ed-12-60mm-f2-8-4-0-swd",
@@ -10631,7 +10869,8 @@
       "초점거리": "12-60mm",
       "최대 조리개": "F2.8-4",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-olympus-four-thirds-olympus-zuiko-digital-ed-14-35mm-f2-0-swd",
@@ -10677,7 +10916,8 @@
       "초점거리": "14-35mm",
       "최대 조리개": "F2",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-olympus-four-thirds-olympus-zuiko-digital-ed-35-100mm-f2-0",
@@ -10723,7 +10963,8 @@
       "초점거리": "35-100mm",
       "최대 조리개": "F2",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-olympus-four-thirds-olympus-zuiko-digital-ed-50-200mm-f2-8-3-5-swd",
@@ -10769,7 +11010,8 @@
       "초점거리": "50-200mm",
       "최대 조리개": "F2.8-3.5",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-sigma-sigma-sa-sigma-14-24mm-f2-8-dg-hsm-art-sa",
@@ -10815,7 +11057,8 @@
       "초점거리": "14-24mm",
       "최대 조리개": "F2.8",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-sigma-sigma-sa-sigma-24-70mm-f2-8-dg-os-hsm-art-sa",
@@ -10861,7 +11104,8 @@
       "초점거리": "24-70mm",
       "최대 조리개": "F2.8",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-sigma-sigma-sa-sigma-70-200mm-f2-8-dg-os-hsm-sports-sa",
@@ -10907,7 +11151,8 @@
       "초점거리": "70-200mm",
       "최대 조리개": "F2.8",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-sigma-sigma-sa-sigma-50mm-f1-4-dg-hsm-art-sa",
@@ -10953,7 +11198,8 @@
       "초점거리": "50mm",
       "최대 조리개": "F1.4",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-sigma-sigma-sa-sigma-85mm-f1-4-dg-hsm-art-sa",
@@ -10999,7 +11245,8 @@
       "초점거리": "85mm",
       "최대 조리개": "F1.4",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-sony-sony-rx1r-ii",
@@ -11797,7 +12044,6 @@
       "최고 동영상 해상도": "4K",
       "최고 동영상 프레임레이트(fps)": 120,
       "다이나믹 레인지": "15+ 스톱",
-      "마운트": "Sony E",
       "무게(g)": 890,
       "배터리 모델": "BP-U35",
       "현재 판매 여부": "예",
@@ -12489,7 +12735,8 @@
       "초점거리": "14-24mm",
       "최대 조리개": "F2.8",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-sigma-canon-ef-sigma-24-70mm-f2-8-dg-os-hsm-art-canon-ef",
@@ -12535,7 +12782,8 @@
       "초점거리": "24-70mm",
       "최대 조리개": "F2.8",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-sigma-canon-ef-sigma-70-200mm-f2-8-dg-os-hsm-sports-canon-ef",
@@ -12581,7 +12829,8 @@
       "초점거리": "70-200mm",
       "최대 조리개": "F2.8",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-sigma-canon-ef-sigma-35mm-f1-4-dg-hsm-art-canon-ef",
@@ -12627,7 +12876,8 @@
       "초점거리": "35mm",
       "최대 조리개": "F1.4",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-sigma-canon-ef-sigma-50mm-f1-4-dg-hsm-art-canon-ef",
@@ -12673,7 +12923,8 @@
       "초점거리": "50mm",
       "최대 조리개": "F1.4",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-sigma-canon-ef-sigma-85mm-f1-4-dg-hsm-art-canon-ef",
@@ -12719,7 +12970,8 @@
       "초점거리": "85mm",
       "최대 조리개": "F1.4",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-sigma-canon-ef-sigma-150-600mm-f5-6-3-dg-os-hsm-sports-canon-ef",
@@ -12765,7 +13017,8 @@
       "초점거리": "150-600mm",
       "최대 조리개": "F5-6.3",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-sigma-nikon-f-sigma-14-24mm-f2-8-dg-hsm-art-nikon-f",
@@ -12811,7 +13064,8 @@
       "초점거리": "14-24mm",
       "최대 조리개": "F2.8",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-sigma-nikon-f-sigma-24-70mm-f2-8-dg-os-hsm-art-nikon-f",
@@ -12857,7 +13111,8 @@
       "초점거리": "24-70mm",
       "최대 조리개": "F2.8",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-sigma-nikon-f-sigma-70-200mm-f2-8-dg-os-hsm-sports-nikon-f",
@@ -12903,7 +13158,8 @@
       "초점거리": "70-200mm",
       "최대 조리개": "F2.8",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-sigma-nikon-f-sigma-35mm-f1-4-dg-hsm-art-nikon-f",
@@ -12949,7 +13205,8 @@
       "초점거리": "35mm",
       "최대 조리개": "F1.4",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-sigma-nikon-f-sigma-50mm-f1-4-dg-hsm-art-nikon-f",
@@ -12995,7 +13252,8 @@
       "초점거리": "50mm",
       "최대 조리개": "F1.4",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-sigma-nikon-f-sigma-85mm-f1-4-dg-hsm-art-nikon-f",
@@ -13041,7 +13299,8 @@
       "초점거리": "85mm",
       "최대 조리개": "F1.4",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-sigma-nikon-f-sigma-150-600mm-f5-6-3-dg-os-hsm-sports-nikon-f",
@@ -13087,7 +13346,8 @@
       "초점거리": "150-600mm",
       "최대 조리개": "F5-6.3",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-tamron-canon-ef-tamron-sp-15-30mm-f-2-8-di-vc-usd-g2-canon-ef",
@@ -13133,7 +13393,8 @@
       "초점거리": "15-30mm",
       "최대 조리개": "F2.8",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-tamron-canon-ef-tamron-sp-24-70mm-f-2-8-di-vc-usd-g2-canon-ef",
@@ -13179,7 +13440,8 @@
       "초점거리": "24-70mm",
       "최대 조리개": "F2.8",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-tamron-canon-ef-tamron-sp-70-200mm-f-2-8-di-vc-usd-g2-canon-ef",
@@ -13225,7 +13487,8 @@
       "초점거리": "70-200mm",
       "최대 조리개": "F2.8",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-tamron-canon-ef-tamron-sp-35mm-f-1-4-di-usd-canon-ef",
@@ -13271,7 +13534,8 @@
       "초점거리": "35mm",
       "최대 조리개": "F1.4",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-tamron-canon-ef-tamron-sp-90mm-f-2-8-di-macro-1-1-vc-usd-canon-ef",
@@ -13317,7 +13581,8 @@
       "초점거리": "90mm",
       "최대 조리개": "F2.8",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-tamron-canon-ef-tamron-100-400mm-f-4-5-6-3-di-vc-usd-canon-ef",
@@ -13363,7 +13628,8 @@
       "초점거리": "100-400mm",
       "최대 조리개": "F4.5-6.3",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-tamron-canon-ef-tamron-sp-150-600mm-f-5-6-3-di-vc-usd-g2-canon-ef",
@@ -13409,7 +13675,8 @@
       "초점거리": "150-600mm",
       "최대 조리개": "F5-6.3",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-tamron-nikon-f-tamron-sp-15-30mm-f-2-8-di-vc-usd-g2-nikon-f",
@@ -13455,7 +13722,8 @@
       "초점거리": "15-30mm",
       "최대 조리개": "F2.8",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-tamron-nikon-f-tamron-sp-24-70mm-f-2-8-di-vc-usd-g2-nikon-f",
@@ -13501,7 +13769,8 @@
       "초점거리": "24-70mm",
       "최대 조리개": "F2.8",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-tamron-nikon-f-tamron-sp-70-200mm-f-2-8-di-vc-usd-g2-nikon-f",
@@ -13547,7 +13816,8 @@
       "초점거리": "70-200mm",
       "최대 조리개": "F2.8",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-tamron-nikon-f-tamron-sp-35mm-f-1-4-di-usd-nikon-f",
@@ -13593,7 +13863,8 @@
       "초점거리": "35mm",
       "최대 조리개": "F1.4",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-tamron-nikon-f-tamron-sp-90mm-f-2-8-di-macro-1-1-vc-usd-nikon-f",
@@ -13639,7 +13910,8 @@
       "초점거리": "90mm",
       "최대 조리개": "F2.8",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-tamron-nikon-f-tamron-100-400mm-f-4-5-6-3-di-vc-usd-nikon-f",
@@ -13685,7 +13957,8 @@
       "초점거리": "100-400mm",
       "최대 조리개": "F4.5-6.3",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   },
   {
     "id": "ext-tamron-nikon-f-tamron-sp-150-600mm-f-5-6-3-di-vc-usd-g2-nikon-f",
@@ -13731,6 +14004,7 @@
       "초점거리": "150-600mm",
       "최대 조리개": "F5-6.3",
       "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+    },
+    "active": false
   }
 ]

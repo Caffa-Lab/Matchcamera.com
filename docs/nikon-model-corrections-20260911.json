@@ -1,0 +1,22 @@
+[
+  {
+    "productId": "nikon-렌즈-nikon-1-1-nikkor-10-100mm-f4-5-5-6-vr",
+    "oldName": "Nikon 1 NIKKOR 10-100mm F4.5-5.6 VR",
+    "correctOfficialName": "Nikon 1 NIKKOR VR 10-100mm F4-5.6",
+    "correctModelCode": "1 NIKKOR VR 10-100mm F4-5.6",
+    "correctMaxAperture": "F4-5.6",
+    "reason": "Existing releaseYear and PD designation identify intended lens; aperture was swapped between two rows.",
+    "sourcePage": "https://nij.nikon.com/products/lineup/nikkor/1mount/1_nikkor_vr_10-100mm_f4-56/",
+    "sourceSpecs": "https://nij.nikon.com/products/lineup/nikkor/1mount/1_nikkor_vr_10-100mm_f4-56/spec.html"
+  },
+  {
+    "productId": "nikon-렌즈-nikon-1-1-nikkor-10-100mm-f4-5-6-vr-pd-zoom",
+    "oldName": "Nikon 1 NIKKOR 10-100mm F4-5.6 VR PD-ZOOM",
+    "correctOfficialName": "Nikon 1 NIKKOR VR 10-100mm F4.5-5.6 PD-ZOOM",
+    "correctModelCode": "1 NIKKOR VR 10-100mm F4.5-5.6 PD-ZOOM",
+    "correctMaxAperture": "F4.5-5.6",
+    "reason": "Existing releaseYear and PD designation identify intended lens; aperture was swapped between two rows.",
+    "sourcePage": "https://nij.nikon.com/products/lineup/nikkor/1mount/1_nikkor_vr_10-100mm_f45-56_pd-zoom/",
+    "sourceSpecs": "https://nij.nikon.com/products/lineup/nikkor/1mount/1_nikkor_vr_10-100mm_f45-56_pd-zoom/spec.html"
+  }
+]

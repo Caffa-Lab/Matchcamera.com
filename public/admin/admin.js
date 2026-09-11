@@ -84,6 +84,12 @@ function sourceLabel(path) {
 }
 
 function isActive(product) { return product?.active !== false && product?.enabled !== false && product?.visibility !== "hidden"; }
+// Match the public catalog's merge identity across the source files.
+function productIdentity(product) { return [label(product), product.modelCode || "", product.type || ""].map((value) => String(value).trim()).join("||"); }
+function setProductActive(product, active) {
+  product.active = active;
+  if (active) { delete product.enabled; delete product.visibility; }
+}
 
 function rebuildIndexes() {
   products = PRODUCT_PATHS.flatMap((sourceFile) => (files[sourceFile] || []).map((product, sourceIndex) => ({ ...product, _sourceFile: sourceFile, _sourceIndex: sourceIndex })));
@@ -250,7 +256,7 @@ function renderProducts() {
   const source = $("#productSource").value;
   const filtered = products.filter((product) => filterText(product, query) && (!brand || product.manufacturer === brand) && (!type || product.type === type) && (!visibility || (visibility === "active" ? isActive(product) : !isActive(product))) && (!source || product._sourceFile === source));
   const page = paged(filtered, "products");
-  $("#productRows").innerHTML = page.rows.map((product) => `<tr class="${isActive(product) ? "" : "inactive-row"}"><td><div class="product-cell"><strong>${esc(label(product))}</strong><span>${esc(product.id)}</span></div></td><td>${esc(product.manufacturer || "-")}</td><td>${esc(product.type || "-")}</td><td>${esc(product.mount || "-")}</td><td>${esc(product.modelCode || "-")}</td><td><span class="status ${isActive(product) ? "good" : "bad"}">${isActive(product) ? "표시" : "비활성"}</span></td><td><span class="status ${product.currentSale === "예" ? "good" : product.currentSale === "아니오" ? "bad" : "warn"}">${esc(product.saleStatus || product.currentSale || "확인 필요")}</span></td><td>${esc(sourceLabel(product._sourceFile))}</td><td class="row-actions"><button data-toggle-product data-source="${esc(product._sourceFile)}" data-index="${product._sourceIndex}" type="button">${isActive(product) ? "비활성화" : "다시 표시"}</button><button data-edit-product data-source="${esc(product._sourceFile)}" data-index="${product._sourceIndex}" type="button">수정</button></td></tr>`).join("") || `<tr><td colspan="9" class="empty-state">검색 결과가 없습니다.</td></tr>`;
+  $("#productRows").innerHTML = page.rows.map((product) => `<tr class="${isActive(product) ? "" : "inactive-row"}"><td><div class="product-cell"><strong>${esc(label(product))}</strong><span>${esc(product.id)}</span></div></td><td>${esc(product.manufacturer || "-")}</td><td>${esc(product.type || "-")}</td><td>${esc(product.mount || "-")}</td><td>${esc(product.modelCode || "-")}</td><td><span class="status ${isActive(product) ? "good" : "bad"}">${isActive(product) ? "표시" : "비활성"}</span></td><td><span class="status ${product.currentSale === "예" ? "good" : product.currentSale === "아니오" ? "bad" : "warn"}">${esc(product.saleStatus || product.currentSale || "확인 필요")}</span></td><td>${esc(sourceLabel(product._sourceFile))}</td><td class="row-actions"><button data-toggle-product data-source="${esc(product._sourceFile)}" data-index="${product._sourceIndex}" type="button">${isActive(product) ? "비활성화" : "활성화"}</button><button data-edit-product data-source="${esc(product._sourceFile)}" data-index="${product._sourceIndex}" type="button">수정</button></td></tr>`).join("") || `<tr><td colspan="9" class="empty-state">검색 결과가 없습니다.</td></tr>`;
   renderPagination("#productPagination", "products", page.totalPages, renderProducts);
 }
 
@@ -562,7 +568,7 @@ async function saveProduct() {
   product.weightG = numOrNull(dialogValue("weightG"));
   product.filterDiameterMm = product.type === "렌즈" ? numOrNull(dialogValue("filterDiameterMm")) : null;
   product.frontFilterStatus = product.type === "렌즈" ? dialogValue("frontFilterStatus").trim() || "정보 미확인" : null;
-  product.active = dialogValue("active") !== "false";
+  setProductActive(product, dialogValue("active") !== "false");
   product.dataGrade = dialogValue("dataGrade") || "D";
   product.specs = specs;
   Object.assign(product.specs, {
@@ -601,6 +607,17 @@ async function saveProduct() {
   const targetRows = changed.has(sourceFile) ? changed.get(sourceFile) : clone(files[sourceFile]);
   targetRows.push(product);
   changed.set(sourceFile, targetRows);
+  // A later duplicate would otherwise override the visibility selected here.
+  for (const path of PRODUCT_PATHS) {
+    const rows = clone(changed.get(path) || files[path] || []);
+    let updated = false;
+    for (const row of rows) {
+      if (productIdentity(row) === productIdentity(product)) {
+        setProductActive(row, product.active); updated = true;
+      }
+    }
+    if (updated) changed.set(path, rows);
+  }
   if (record) {
     const oldName = label(record);
     const newName = label(product);
@@ -635,11 +652,18 @@ async function saveProduct() {
 
 async function toggleProductVisibility(record) {
   if (!record) return;
-  const rows = clone(files[record._sourceFile]);
-  const next = clone(rows[record._sourceIndex]);
-  next.active = !isActive(record);
-  rows[record._sourceIndex] = next;
-  await commit([{ path: record._sourceFile, value: rows }], `Admin: ${next.active ? "activate" : "deactivate"} product ${label(record)}`);
+  const active = !isActive(record);
+  const identity = productIdentity(record);
+  const changes = [];
+  for (const path of PRODUCT_PATHS) {
+    const rows = clone(files[path] || []);
+    let updated = false;
+    for (const row of rows) {
+      if (productIdentity(row) === identity) { setProductActive(row, active); updated = true; }
+    }
+    if (updated) changes.push({ path, value: rows });
+  }
+  await commit(changes, `Admin: ${active ? "activate" : "deactivate"} product ${label(record)}`);
 }
 
 async function deleteProduct(record) {
