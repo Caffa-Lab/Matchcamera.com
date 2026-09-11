@@ -1,341 +1,214 @@
 {
   "_meta": {
-    "updatedAt": "2026-08-29T17:11:02.290573+00:00",
-    "totalProducts": 843,
-    "selected": 618,
-    "okThisRun": 1,
-    "skippedThisRun": 556,
-    "failedThisRun": 61,
-    "blockedHostsThisRun": [
-      "www.panasonic.com"
-    ],
-    "host403CountsThisRun": {
-      "www.panasonic.com": 2
-    }
+    "updatedAt": "2026-09-11T14:17:50.652475+00:00",
+    "totalProducts": 844,
+    "selected": 844,
+    "okThisRun": 0,
+    "skippedThisRun": 844,
+    "failedThisRun": 0,
+    "blockedHostsThisRun": [],
+    "host403CountsThisRun": {}
   },
   "items": {
     "Sony NEX-3": {
-      "status": "failed",
-      "label": "Sony NEX-3",
-      "reason": "page https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs: HTTPError: 403 Client Error: Forbidden for url: https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs",
-      "errors": [
-        "browser official page search returned no result",
-        "page https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs: HTTPError: 403 Client Error: Forbidden for url: https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs"
-      ]
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sony NEX-3"
     },
     "Sony NEX-5": {
-      "status": "failed",
-      "label": "Sony NEX-5",
-      "reason": "page https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs: HTTPError: 403 Client Error: Forbidden for url: https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs",
-      "errors": [
-        "browser official page search returned no result",
-        "page https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs: HTTPError: 403 Client Error: Forbidden for url: https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs"
-      ]
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sony NEX-5"
     },
     "Sony NEX-C3": {
-      "status": "failed",
-      "label": "Sony NEX-C3",
-      "reason": "blocked host skipped: www.sony.com",
-      "errors": [
-        "browser official page search returned no result",
-        "blocked host skipped: www.sony.com"
-      ]
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sony NEX-C3"
     },
     "Sony NEX-5N": {
-      "status": "failed",
-      "label": "Sony NEX-5N",
-      "reason": "page https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs: HTTPError: 403 Client Error: Forbidden for url: https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs",
-      "errors": [
-        "page https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs: HTTPError: 403 Client Error: Forbidden for url: https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs"
-      ]
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sony NEX-5N"
     },
     "Sony NEX-7": {
-      "status": "failed",
-      "label": "Sony NEX-7",
-      "reason": "page https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs: HTTPError: 403 Client Error: Forbidden for url: https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs",
-      "errors": [
-        "page https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs: HTTPError: 403 Client Error: Forbidden for url: https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs"
-      ]
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sony NEX-7"
     },
     "Sony NEX-F3": {
-      "status": "failed",
-      "label": "Sony NEX-F3",
-      "reason": "page https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs: HTTPError: 403 Client Error: Forbidden for url: https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs",
-      "errors": [
-        "page https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs: HTTPError: 403 Client Error: Forbidden for url: https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs"
-      ]
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sony NEX-F3"
     },
     "Sony NEX-5R": {
-      "status": "failed",
-      "label": "Sony NEX-5R",
-      "reason": "page https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs: HTTPError: 403 Client Error: Forbidden for url: https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs",
-      "errors": [
-        "page https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs: HTTPError: 403 Client Error: Forbidden for url: https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs"
-      ]
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sony NEX-5R"
     },
     "Sony NEX-6": {
-      "status": "failed",
-      "label": "Sony NEX-6",
-      "reason": "page https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs: HTTPError: 403 Client Error: Forbidden for url: https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs",
-      "errors": [
-        "page https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs: HTTPError: 403 Client Error: Forbidden for url: https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs"
-      ]
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sony NEX-6"
     },
     "Sony NEX-3N": {
-      "status": "failed",
-      "label": "Sony NEX-3N",
-      "reason": "page https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs: HTTPError: 403 Client Error: Forbidden for url: https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs",
-      "errors": [
-        "page https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs: HTTPError: 403 Client Error: Forbidden for url: https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs"
-      ]
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sony NEX-3N"
     },
     "Sony NEX-5T": {
-      "status": "failed",
-      "label": "Sony NEX-5T",
-      "reason": "page https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs: HTTPError: 403 Client Error: Forbidden for url: https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs",
-      "errors": [
-        "page https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs: HTTPError: 403 Client Error: Forbidden for url: https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs"
-      ]
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sony NEX-5T"
     },
     "Sony α3000": {
-      "status": "failed",
-      "label": "Sony α3000",
-      "reason": "page https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs: HTTPError: 403 Client Error: Forbidden for url: https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs",
-      "errors": [
-        "page https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs: HTTPError: 403 Client Error: Forbidden for url: https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs"
-      ]
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sony α3000"
     },
     "Sony α3500": {
-      "status": "failed",
-      "label": "Sony α3500",
-      "reason": "page https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs: HTTPError: 403 Client Error: Forbidden for url: https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs",
-      "errors": [
-        "page https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs: HTTPError: 403 Client Error: Forbidden for url: https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs"
-      ]
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sony α3500"
     },
     "Sony α5000": {
-      "status": "failed",
-      "label": "Sony α5000",
-      "reason": "page https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs: HTTPError: 403 Client Error: Forbidden for url: https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs",
-      "errors": [
-        "page https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs: HTTPError: 403 Client Error: Forbidden for url: https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs"
-      ]
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sony α5000"
     },
     "Sony α5100": {
-      "status": "failed",
-      "label": "Sony α5100",
-      "reason": "page https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs: HTTPError: 403 Client Error: Forbidden for url: https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs",
-      "errors": [
-        "page https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs: HTTPError: 403 Client Error: Forbidden for url: https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs"
-      ]
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sony α5100"
     },
     "Sony α6000": {
-      "status": "failed",
-      "label": "Sony α6000",
-      "reason": "page https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs: HTTPError: 403 Client Error: Forbidden for url: https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs",
-      "errors": [
-        "page https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs: HTTPError: 403 Client Error: Forbidden for url: https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs"
-      ]
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sony α6000"
     },
     "Sony α6100": {
-      "status": "failed",
-      "label": "Sony α6100",
-      "reason": "page https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs: HTTPError: 403 Client Error: Forbidden for url: https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs",
-      "errors": [
-        "page https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs: HTTPError: 403 Client Error: Forbidden for url: https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs"
-      ]
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sony α6100"
     },
     "Sony α6300": {
-      "status": "failed",
-      "label": "Sony α6300",
-      "reason": "page https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs: HTTPError: 403 Client Error: Forbidden for url: https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs",
-      "errors": [
-        "page https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs: HTTPError: 403 Client Error: Forbidden for url: https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs"
-      ]
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sony α6300"
     },
     "Sony α6400": {
-      "status": "failed",
-      "label": "Sony α6400",
-      "reason": "page https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs: HTTPError: 403 Client Error: Forbidden for url: https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs",
-      "errors": [
-        "page https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs: HTTPError: 403 Client Error: Forbidden for url: https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs"
-      ]
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sony α6400"
     },
     "Sony α6500": {
-      "status": "failed",
-      "label": "Sony α6500",
-      "reason": "page https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs: HTTPError: 403 Client Error: Forbidden for url: https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs",
-      "errors": [
-        "page https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs: HTTPError: 403 Client Error: Forbidden for url: https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs"
-      ]
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sony α6500"
     },
     "Sony α6600": {
-      "status": "failed",
-      "label": "Sony α6600",
-      "reason": "page https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs: HTTPError: 403 Client Error: Forbidden for url: https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs",
-      "errors": [
-        "page https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs: HTTPError: 403 Client Error: Forbidden for url: https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs"
-      ]
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sony α6600"
     },
     "Sony α6700": {
-      "status": "failed",
-      "label": "Sony α6700",
-      "reason": "page https://electronics.sony.com/imaging/interchangeable-lens-cameras/c/all-interchangeable-lens-cameras: HTTPError: 403 Client Error: Forbidden for url: https://electronics.sony.com/imaging/interchangeable-lens-cameras/c/all-interchangeable-lens-cameras",
-      "errors": [
-        "page https://electronics.sony.com/imaging/interchangeable-lens-cameras/c/all-interchangeable-lens-cameras: HTTPError: 403 Client Error: Forbidden for url: https://electronics.sony.com/imaging/interchangeable-lens-cameras/c/all-interchangeable-lens-cameras"
-      ]
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sony α6700"
     },
     "Sony α7": {
-      "status": "failed",
-      "label": "Sony α7",
-      "reason": "page https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs: HTTPError: 403 Client Error: Forbidden for url: https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs",
-      "errors": [
-        "page https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs: HTTPError: 403 Client Error: Forbidden for url: https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs"
-      ]
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sony α7"
     },
     "Sony α7 II": {
-      "status": "failed",
-      "label": "Sony α7 II",
-      "reason": "page https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs: HTTPError: 403 Client Error: Forbidden for url: https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs",
-      "errors": [
-        "page https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs: HTTPError: 403 Client Error: Forbidden for url: https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs"
-      ]
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sony α7 II"
     },
     "Sony α7 III": {
-      "status": "failed",
-      "label": "Sony α7 III",
-      "reason": "page https://electronics.sony.com/imaging/interchangeable-lens-cameras/c/all-interchangeable-lens-cameras: HTTPError: 403 Client Error: Forbidden for url: https://electronics.sony.com/imaging/interchangeable-lens-cameras/c/all-interchangeable-lens-cameras",
-      "errors": [
-        "page https://electronics.sony.com/imaging/interchangeable-lens-cameras/c/all-interchangeable-lens-cameras: HTTPError: 403 Client Error: Forbidden for url: https://electronics.sony.com/imaging/interchangeable-lens-cameras/c/all-interchangeable-lens-cameras"
-      ]
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sony α7 III"
     },
     "Sony α7 IV": {
-      "status": "ok",
-      "label": "Sony α7 IV",
-      "src": "/assets/images/products/sony/sony-sony-e-ilce-7m4.webp",
-      "sourcePage": "https://commons.wikimedia.org/wiki/File:Sony_A7_IV_(ILCE-7M4)_-_by_Henry_S%C3%B6derlund_(51739988735).jpg",
-      "sourceImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Sony_A7_IV_%28ILCE-7M4%29_-_by_Henry_S%C3%B6derlund_%2851739988735%29.jpg/960px-Sony_A7_IV_%28ILCE-7M4%29_-_by_Henry_S%C3%B6derlund_%2851739988735%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "method": "wikimedia-commons"
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sony α7 IV"
     },
     "Sony α7 V": {
-      "status": "failed",
-      "label": "Sony α7 V",
-      "reason": "page https://electronics.sony.com/imaging/interchangeable-lens-cameras/c/all-interchangeable-lens-cameras: HTTPError: 403 Client Error: Forbidden for url: https://electronics.sony.com/imaging/interchangeable-lens-cameras/c/all-interchangeable-lens-cameras",
-      "errors": [
-        "page https://electronics.sony.com/imaging/interchangeable-lens-cameras/c/all-interchangeable-lens-cameras: HTTPError: 403 Client Error: Forbidden for url: https://electronics.sony.com/imaging/interchangeable-lens-cameras/c/all-interchangeable-lens-cameras"
-      ]
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sony α7 V"
     },
     "Sony α7R": {
-      "status": "failed",
-      "label": "Sony α7R",
-      "reason": "page https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs: HTTPError: 403 Client Error: Forbidden for url: https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs",
-      "errors": [
-        "page https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs: HTTPError: 403 Client Error: Forbidden for url: https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs"
-      ]
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sony α7R"
     },
     "Sony α7R II": {
-      "status": "failed",
-      "label": "Sony α7R II",
-      "reason": "page https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs: HTTPError: 403 Client Error: Forbidden for url: https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs",
-      "errors": [
-        "page https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs: HTTPError: 403 Client Error: Forbidden for url: https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs"
-      ]
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sony α7R II"
     },
     "Sony α7R III": {
-      "status": "failed",
-      "label": "Sony α7R III",
-      "reason": "page https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs: HTTPError: 403 Client Error: Forbidden for url: https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs",
-      "errors": [
-        "page https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs: HTTPError: 403 Client Error: Forbidden for url: https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs"
-      ]
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sony α7R III"
     },
     "Sony α7R IIIA": {
-      "status": "failed",
-      "label": "Sony α7R IIIA",
-      "reason": "page https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs: HTTPError: 403 Client Error: Forbidden for url: https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs",
-      "errors": [
-        "page https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs: HTTPError: 403 Client Error: Forbidden for url: https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs"
-      ]
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sony α7R IIIA"
     },
     "Sony α7R IV": {
-      "status": "failed",
-      "label": "Sony α7R IV",
-      "reason": "page https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs: HTTPError: 403 Client Error: Forbidden for url: https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs",
-      "errors": [
-        "page https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs: HTTPError: 403 Client Error: Forbidden for url: https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs"
-      ]
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sony α7R IV"
     },
     "Sony α7R IVA": {
-      "status": "failed",
-      "label": "Sony α7R IVA",
-      "reason": "page https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs: HTTPError: 403 Client Error: Forbidden for url: https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs",
-      "errors": [
-        "page https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs: HTTPError: 403 Client Error: Forbidden for url: https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs"
-      ]
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sony α7R IVA"
     },
     "Sony α7R V": {
-      "status": "failed",
-      "label": "Sony α7R V",
-      "reason": "page https://electronics.sony.com/imaging/interchangeable-lens-cameras/c/all-interchangeable-lens-cameras: HTTPError: 403 Client Error: Forbidden for url: https://electronics.sony.com/imaging/interchangeable-lens-cameras/c/all-interchangeable-lens-cameras",
-      "errors": [
-        "page https://electronics.sony.com/imaging/interchangeable-lens-cameras/c/all-interchangeable-lens-cameras: HTTPError: 403 Client Error: Forbidden for url: https://electronics.sony.com/imaging/interchangeable-lens-cameras/c/all-interchangeable-lens-cameras"
-      ]
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sony α7R V"
     },
     "Sony α7R VI": {
-      "status": "failed",
-      "label": "Sony α7R VI",
-      "reason": "page https://electronics.sony.com/imaging/interchangeable-lens-cameras/c/all-interchangeable-lens-cameras: HTTPError: 403 Client Error: Forbidden for url: https://electronics.sony.com/imaging/interchangeable-lens-cameras/c/all-interchangeable-lens-cameras",
-      "errors": [
-        "page https://electronics.sony.com/imaging/interchangeable-lens-cameras/c/all-interchangeable-lens-cameras: HTTPError: 403 Client Error: Forbidden for url: https://electronics.sony.com/imaging/interchangeable-lens-cameras/c/all-interchangeable-lens-cameras"
-      ]
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sony α7R VI"
     },
     "Sony α7S": {
-      "status": "failed",
-      "label": "Sony α7S",
-      "reason": "page https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs: HTTPError: 403 Client Error: Forbidden for url: https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs",
-      "errors": [
-        "page https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs: HTTPError: 403 Client Error: Forbidden for url: https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs"
-      ]
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sony α7S"
     },
     "Sony α7S II": {
-      "status": "failed",
-      "label": "Sony α7S II",
-      "reason": "page https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs: HTTPError: 403 Client Error: Forbidden for url: https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs",
-      "errors": [
-        "page https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs: HTTPError: 403 Client Error: Forbidden for url: https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs"
-      ]
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sony α7S II"
     },
     "Sony α7S III": {
-      "status": "failed",
-      "label": "Sony α7S III",
-      "reason": "page https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs: HTTPError: 403 Client Error: Forbidden for url: https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs",
-      "errors": [
-        "page https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs: HTTPError: 403 Client Error: Forbidden for url: https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs"
-      ]
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sony α7S III"
     },
     "Sony α7C": {
-      "status": "failed",
-      "label": "Sony α7C",
-      "reason": "page https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs: HTTPError: 403 Client Error: Forbidden for url: https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs",
-      "errors": [
-        "page https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs: HTTPError: 403 Client Error: Forbidden for url: https://www.sony.com/electronics/support/interchangeable-lens-cameras-e-mount-body/faqs"
-      ]
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sony α7C"
     },
     "Sony α7C II": {
-      "status": "failed",
-      "label": "Sony α7C II",
-      "reason": "page https://electronics.sony.com/imaging/interchangeable-lens-cameras/c/all-interchangeable-lens-cameras: HTTPError: 403 Client Error: Forbidden for url: https://electronics.sony.com/imaging/interchangeable-lens-cameras/c/all-interchangeable-lens-cameras",
-      "errors": [
-        "page https://electronics.sony.com/imaging/interchangeable-lens-cameras/c/all-interchangeable-lens-cameras: HTTPError: 403 Client Error: Forbidden for url: https://electronics.sony.com/imaging/interchangeable-lens-cameras/c/all-interchangeable-lens-cameras"
-      ]
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sony α7C II"
     },
     "Sony α7CR": {
-      "status": "failed",
-      "label": "Sony α7CR",
-      "reason": "page https://electronics.sony.com/imaging/interchangeable-lens-cameras/c/all-interchangeable-lens-cameras: HTTPError: 403 Client Error: Forbidden for url: https://electronics.sony.com/imaging/interchangeable-lens-cameras/c/all-interchangeable-lens-cameras",
-      "errors": [
-        "page https://electronics.sony.com/imaging/interchangeable-lens-cameras/c/all-interchangeable-lens-cameras: HTTPError: 403 Client Error: Forbidden for url: https://electronics.sony.com/imaging/interchangeable-lens-cameras/c/all-interchangeable-lens-cameras"
-      ]
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sony α7CR"
     },
     "Nikon Z 6": {
       "status": "skipped",
@@ -353,31 +226,19 @@
       "label": "Nikon Z 50"
     },
     "Canon EOS M": {
-      "status": "failed",
-      "label": "Canon EOS M",
-      "reason": "page https://www.usa.canon.com/digital-cameras/eos-r-system: HTTPError: 403 Client Error: Forbidden for url: https://www.usa.canon.com/digital-cameras/eos-r-system",
-      "errors": [
-        "browser official page search returned no result",
-        "page https://www.usa.canon.com/digital-cameras/eos-r-system: HTTPError: 403 Client Error: Forbidden for url: https://www.usa.canon.com/digital-cameras/eos-r-system"
-      ]
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Canon EOS M"
     },
     "Canon EOS M2": {
-      "status": "failed",
-      "label": "Canon EOS M2",
-      "reason": "page https://www.usa.canon.com/digital-cameras/eos-r-system: HTTPError: 403 Client Error: Forbidden for url: https://www.usa.canon.com/digital-cameras/eos-r-system",
-      "errors": [
-        "browser official page search returned no result",
-        "page https://www.usa.canon.com/digital-cameras/eos-r-system: HTTPError: 403 Client Error: Forbidden for url: https://www.usa.canon.com/digital-cameras/eos-r-system"
-      ]
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Canon EOS M2"
     },
     "Canon EOS M3": {
-      "status": "failed",
-      "label": "Canon EOS M3",
-      "reason": "blocked host skipped: www.usa.canon.com",
-      "errors": [
-        "browser official page search returned no result",
-        "blocked host skipped: www.usa.canon.com"
-      ]
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Canon EOS M3"
     },
     "Fujifilm X-Pro1": {
       "status": "skipped",
@@ -500,51 +361,24 @@
       "label": "Canon EOS R5"
     },
     "Canon EOS R5 C": {
-      "status": "ok",
-      "label": "Canon EOS R5 C",
-      "src": "/assets/images/products/canon/canon-canon-rf-eos-r5-c.webp",
-      "sourcePage": "https://commons.wikimedia.org/wiki/File:Canon_EOS_R5_(cropped).jpg",
-      "sourceImage": "https://upload.wikimedia.org/wikipedia/commons/7/74/Canon_EOS_R5_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "method": "wikimedia-commons"
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Canon EOS R5 C"
     },
     "Canon EOS R50": {
-      "status": "failed",
-      "label": "Canon EOS R50",
-      "reason": "commons https://upload.wikimedia.org/wikipedia/commons/e/ea/Canon_R50_without_lens.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original: HTTPError: 429 Client Error: Too many requests. Please contact noc@wikimedia.org for further information (0068e25) for url: https://upload.wikimedia.org/wikipedia/commons/e/ea/Canon_R50_without_lens.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "errors": [
-        "commons https://upload.wikimedia.org/wikipedia/commons/3/39/Canon_EOS_R50%2C_White%2C_10.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original: HTTPError: 429 Client Error: Too many requests. Please contact noc@wikimedia.org for further information (0068e25) for url: https://upload.wikimedia.org/wikipedia/commons/3/39/Canon_EOS_R50%2C_White%2C_10.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "commons https://upload.wikimedia.org/wikipedia/commons/e/e0/Canon_EOS_R50%2C_White%2C_11.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original: HTTPError: 429 Client Error: Too many requests. Please contact noc@wikimedia.org for further information (0068e25) for url: https://upload.wikimedia.org/wikipedia/commons/e/e0/Canon_EOS_R50%2C_White%2C_11.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "commons https://upload.wikimedia.org/wikipedia/commons/8/85/Canon_EOS_R50%2C_White%2C_12.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original: HTTPError: 429 Client Error: Too many requests. Please contact noc@wikimedia.org for further information (0068e25) for url: https://upload.wikimedia.org/wikipedia/commons/8/85/Canon_EOS_R50%2C_White%2C_12.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "commons https://upload.wikimedia.org/wikipedia/commons/e/ea/Canon_EOS_R50%2C_White%2C_4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original: HTTPError: 429 Client Error: Too many requests. Please contact noc@wikimedia.org for further information (0068e25) for url: https://upload.wikimedia.org/wikipedia/commons/e/ea/Canon_EOS_R50%2C_White%2C_4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "commons https://upload.wikimedia.org/wikipedia/commons/6/62/Canon_EOS_R50_Black.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original: HTTPError: 429 Client Error: Too many requests. Please contact noc@wikimedia.org for further information (0068e25) for url: https://upload.wikimedia.org/wikipedia/commons/6/62/Canon_EOS_R50_Black.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "commons https://upload.wikimedia.org/wikipedia/commons/e/ee/New_Canon_EOS_R51.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original: HTTPError: 429 Client Error: Too many requests. Please contact noc@wikimedia.org for further information (0068e25) for url: https://upload.wikimedia.org/wikipedia/commons/e/ee/New_Canon_EOS_R51.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "commons https://upload.wikimedia.org/wikipedia/commons/2/2b/Canon_R50_without_lens_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original: HTTPError: 429 Client Error: Too many requests. Please contact noc@wikimedia.org for further information (0068e25) for url: https://upload.wikimedia.org/wikipedia/commons/2/2b/Canon_R50_without_lens_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "commons https://upload.wikimedia.org/wikipedia/commons/e/ea/Canon_R50_without_lens.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original: HTTPError: 429 Client Error: Too many requests. Please contact noc@wikimedia.org for further information (0068e25) for url: https://upload.wikimedia.org/wikipedia/commons/e/ea/Canon_R50_without_lens.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Canon EOS R50"
     },
     "Canon EOS R5 Mark II": {
-      "status": "failed",
-      "label": "Canon EOS R5 Mark II",
-      "reason": "commons https://upload.wikimedia.org/wikipedia/commons/8/88/Canon_EOS_R5.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original: HTTPError: 429 Client Error: Too many requests. Please contact noc@wikimedia.org for further information (0068e25) for url: https://upload.wikimedia.org/wikipedia/commons/8/88/Canon_EOS_R5.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "errors": [
-        "commons https://upload.wikimedia.org/wikipedia/commons/a/ac/Canon_EOS_R5_Mark_II-8787.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original: HTTPError: 429 Client Error: Too many requests. Please contact noc@wikimedia.org for further information (0068e25) for url: https://upload.wikimedia.org/wikipedia/commons/a/ac/Canon_EOS_R5_Mark_II-8787.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "commons https://upload.wikimedia.org/wikipedia/commons/5/57/Canon_EOS_R5_Mark_II_%28front%2C_no_body_cap%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original: HTTPError: 429 Client Error: Too many requests. Please contact noc@wikimedia.org for further information (0068e25) for url: https://upload.wikimedia.org/wikipedia/commons/5/57/Canon_EOS_R5_Mark_II_%28front%2C_no_body_cap%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "commons https://upload.wikimedia.org/wikipedia/commons/9/9f/Canon_EOS_R5_Mark_II_%28back%2C_screen_closed%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original: HTTPError: 429 Client Error: Too many requests. Please contact noc@wikimedia.org for further information (0068e25) for url: https://upload.wikimedia.org/wikipedia/commons/9/9f/Canon_EOS_R5_Mark_II_%28back%2C_screen_closed%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "commons https://upload.wikimedia.org/wikipedia/commons/9/9c/Canon_EOS_R5_Mark_II%2BRF_24-105mm_F4L_IS_USM.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original: HTTPError: 429 Client Error: Too many requests. Please contact noc@wikimedia.org for further information (0068e25) for url: https://upload.wikimedia.org/wikipedia/commons/9/9c/Canon_EOS_R5_Mark_II%2BRF_24-105mm_F4L_IS_USM.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "commons https://upload.wikimedia.org/wikipedia/commons/1/15/Canon_RF_35mm_F1.8%2BR5_Mark_II-8812.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original: HTTPError: 429 Client Error: Too many requests. Please contact noc@wikimedia.org for further information (0068e25) for url: https://upload.wikimedia.org/wikipedia/commons/1/15/Canon_RF_35mm_F1.8%2BR5_Mark_II-8812.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "commons https://upload.wikimedia.org/wikipedia/commons/f/ff/Canon_RF_35mm_F1.8%2BR5_Mark_II-8810.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original: HTTPError: 429 Client Error: Too many requests. Please contact noc@wikimedia.org for further information (0068e25) for url: https://upload.wikimedia.org/wikipedia/commons/f/ff/Canon_RF_35mm_F1.8%2BR5_Mark_II-8810.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "commons https://upload.wikimedia.org/wikipedia/commons/7/7f/Canon_RF_35mm_F1.8%2BR5_Mark_II-8813.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original: HTTPError: 429 Client Error: Too many requests. Please contact noc@wikimedia.org for further information (0068e25) for url: https://upload.wikimedia.org/wikipedia/commons/7/7f/Canon_RF_35mm_F1.8%2BR5_Mark_II-8813.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "commons https://upload.wikimedia.org/wikipedia/commons/8/88/Canon_EOS_R5.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original: HTTPError: 429 Client Error: Too many requests. Please contact noc@wikimedia.org for further information (0068e25) for url: https://upload.wikimedia.org/wikipedia/commons/8/88/Canon_EOS_R5.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Canon EOS R5 Mark II"
     },
     "Canon EOS R50 V": {
-      "status": "failed",
-      "label": "Canon EOS R50 V",
-      "reason": "blocked host skipped: www.usa.canon.com",
-      "errors": [
-        "browser official page search returned no result",
-        "blocked host skipped: www.usa.canon.com"
-      ]
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Canon EOS R50 V"
     },
     "Nikon Z 5": {
       "status": "skipped",
@@ -617,16 +451,14 @@
       "label": "Nikon Nikon 1 V1"
     },
     "Nikon Nikon 1 J2": {
-      "status": "failed",
-      "label": "Nikon Nikon 1 J2",
-      "reason": "no usable image",
-      "errors": []
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Nikon Nikon 1 J2"
     },
     "Nikon Nikon 1 J3": {
-      "status": "failed",
-      "label": "Nikon Nikon 1 J3",
-      "reason": "no usable image",
-      "errors": []
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Nikon Nikon 1 J3"
     },
     "Nikon Nikon 1 S1": {
       "status": "skipped",
@@ -664,34 +496,29 @@
       "label": "Nikon Nikon 1 J5"
     },
     "Nikon 1 NIKKOR 6.7-13mm F3.5-5.6 VR": {
-      "status": "failed",
-      "label": "Nikon 1 NIKKOR 6.7-13mm F3.5-5.6 VR",
-      "reason": "no usable image",
-      "errors": []
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Nikon 1 NIKKOR 6.7-13mm F3.5-5.6 VR"
     },
     "Nikon 1 NIKKOR 10mm F2.8": {
-      "status": "failed",
-      "label": "Nikon 1 NIKKOR 10mm F2.8",
-      "reason": "no usable image",
-      "errors": []
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Nikon 1 NIKKOR 10mm F2.8"
     },
     "Nikon 1 NIKKOR 10-30mm F3.5-5.6 VR": {
-      "status": "failed",
-      "label": "Nikon 1 NIKKOR 10-30mm F3.5-5.6 VR",
-      "reason": "no usable image",
-      "errors": []
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Nikon 1 NIKKOR 10-30mm F3.5-5.6 VR"
     },
     "Nikon 1 NIKKOR VR 10-30mm F3.5-5.6 PD-ZOOM": {
-      "status": "failed",
-      "label": "Nikon 1 NIKKOR VR 10-30mm F3.5-5.6 PD-ZOOM",
-      "reason": "no usable image",
-      "errors": []
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Nikon 1 NIKKOR VR 10-30mm F3.5-5.6 PD-ZOOM"
     },
     "Nikon 1 NIKKOR 11-27.5mm F3.5-5.6": {
-      "status": "failed",
-      "label": "Nikon 1 NIKKOR 11-27.5mm F3.5-5.6",
-      "reason": "no usable image",
-      "errors": []
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Nikon 1 NIKKOR 11-27.5mm F3.5-5.6"
     },
     "Nikon 1 NIKKOR 18.5mm F1.8": {
       "status": "skipped",
@@ -699,16 +526,14 @@
       "label": "Nikon 1 NIKKOR 18.5mm F1.8"
     },
     "Nikon 1 NIKKOR 30-110mm F3.8-5.6 VR": {
-      "status": "failed",
-      "label": "Nikon 1 NIKKOR 30-110mm F3.8-5.6 VR",
-      "reason": "no usable image",
-      "errors": []
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Nikon 1 NIKKOR 30-110mm F3.8-5.6 VR"
     },
     "Nikon 1 NIKKOR 32mm F1.2": {
-      "status": "failed",
-      "label": "Nikon 1 NIKKOR 32mm F1.2",
-      "reason": "no usable image",
-      "errors": []
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Nikon 1 NIKKOR 32mm F1.2"
     },
     "Nikon 1 NIKKOR 10-100mm F4.5-5.6 VR": {
       "status": "failed",
@@ -728,16 +553,14 @@
       "label": "Nikon 1 NIKKOR 70-300mm F4.5-5.6 VR"
     },
     "Nikon 1 NIKKOR AW 10mm F2.8": {
-      "status": "failed",
-      "label": "Nikon 1 NIKKOR AW 10mm F2.8",
-      "reason": "no usable image",
-      "errors": []
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Nikon 1 NIKKOR AW 10mm F2.8"
     },
     "Nikon 1 NIKKOR AW 11-27.5mm F3.5-5.6": {
-      "status": "failed",
-      "label": "Nikon 1 NIKKOR AW 11-27.5mm F3.5-5.6",
-      "reason": "no usable image",
-      "errors": []
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Nikon 1 NIKKOR AW 11-27.5mm F3.5-5.6"
     },
     "Nikon NIKKOR Z DX 12-28mm F3.5-5.6 PZ VR": {
       "status": "skipped",
@@ -1785,12 +1608,9 @@
       "label": "Panasonic LUMIX S 14-28mm F4-5.6 MACRO"
     },
     "Panasonic LUMIX S PRO 16-35mm F4": {
-      "status": "failed",
-      "label": "Panasonic LUMIX S PRO 16-35mm F4",
-      "reason": "page https://www.panasonic.com/global/consumer/lumix/s/L-Mount.html: HTTPError: 403 Client Error: Forbidden for url: https://www.panasonic.com/global/consumer/lumix/s/L-Mount.html",
-      "errors": [
-        "page https://www.panasonic.com/global/consumer/lumix/s/L-Mount.html: HTTPError: 403 Client Error: Forbidden for url: https://www.panasonic.com/global/consumer/lumix/s/L-Mount.html"
-      ]
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Panasonic LUMIX S PRO 16-35mm F4"
     },
     "Panasonic LUMIX S 18-40mm F4.5-6.3": {
       "status": "skipped",
@@ -1803,12 +1623,9 @@
       "label": "Panasonic LUMIX S 20-60mm F3.5-5.6"
     },
     "Panasonic LUMIX S 24-60mm F2.8": {
-      "status": "failed",
-      "label": "Panasonic LUMIX S 24-60mm F2.8",
-      "reason": "page https://www.panasonic.com/global/consumer/lumix/s/L-Mount.html: HTTPError: 403 Client Error: Forbidden for url: https://www.panasonic.com/global/consumer/lumix/s/L-Mount.html",
-      "errors": [
-        "page https://www.panasonic.com/global/consumer/lumix/s/L-Mount.html: HTTPError: 403 Client Error: Forbidden for url: https://www.panasonic.com/global/consumer/lumix/s/L-Mount.html"
-      ]
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Panasonic LUMIX S 24-60mm F2.8"
     },
     "Panasonic LUMIX S PRO 24-70mm F2.8": {
       "status": "skipped",
@@ -1821,12 +1638,9 @@
       "label": "Panasonic LUMIX S 24-105mm F4 MACRO O.I.S."
     },
     "Panasonic LUMIX S PRO 70-200mm F2.8 O.I.S.": {
-      "status": "failed",
-      "label": "Panasonic LUMIX S PRO 70-200mm F2.8 O.I.S.",
-      "reason": "blocked host skipped: www.panasonic.com",
-      "errors": [
-        "blocked host skipped: www.panasonic.com"
-      ]
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Panasonic LUMIX S PRO 70-200mm F2.8 O.I.S."
     },
     "Panasonic LUMIX S PRO 70-200mm F4 O.I.S.": {
       "status": "skipped",
@@ -1839,44 +1653,29 @@
       "label": "Panasonic LUMIX S 70-300mm F4.5-5.6 MACRO O.I.S."
     },
     "Panasonic LUMIX S 100-500mm F5-7.1 O.I.S.": {
-      "status": "failed",
-      "label": "Panasonic LUMIX S 100-500mm F5-7.1 O.I.S.",
-      "reason": "blocked host skipped: www.panasonic.com",
-      "errors": [
-        "blocked host skipped: www.panasonic.com"
-      ]
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Panasonic LUMIX S 100-500mm F5-7.1 O.I.S."
     },
     "Panasonic LUMIX S 28-200mm F4-7.1 MACRO O.I.S.": {
-      "status": "failed",
-      "label": "Panasonic LUMIX S 28-200mm F4-7.1 MACRO O.I.S.",
-      "reason": "blocked host skipped: www.panasonic.com",
-      "errors": [
-        "blocked host skipped: www.panasonic.com"
-      ]
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Panasonic LUMIX S 28-200mm F4-7.1 MACRO O.I.S."
     },
     "Panasonic LUMIX S 18mm F1.8": {
-      "status": "failed",
-      "label": "Panasonic LUMIX S 18mm F1.8",
-      "reason": "blocked host skipped: www.panasonic.com",
-      "errors": [
-        "blocked host skipped: www.panasonic.com"
-      ]
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Panasonic LUMIX S 18mm F1.8"
     },
     "Panasonic LUMIX S 24mm F1.8": {
-      "status": "failed",
-      "label": "Panasonic LUMIX S 24mm F1.8",
-      "reason": "blocked host skipped: www.panasonic.com",
-      "errors": [
-        "blocked host skipped: www.panasonic.com"
-      ]
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Panasonic LUMIX S 24mm F1.8"
     },
     "Panasonic LUMIX S 26mm F8": {
-      "status": "failed",
-      "label": "Panasonic LUMIX S 26mm F8",
-      "reason": "blocked host skipped: www.panasonic.com",
-      "errors": [
-        "blocked host skipped: www.panasonic.com"
-      ]
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Panasonic LUMIX S 26mm F8"
     },
     "Panasonic LUMIX S 35mm F1.8": {
       "status": "skipped",
@@ -1889,12 +1688,9 @@
       "label": "Panasonic LUMIX S 40mm F2"
     },
     "Panasonic LUMIX S PRO 50mm F1.4": {
-      "status": "failed",
-      "label": "Panasonic LUMIX S PRO 50mm F1.4",
-      "reason": "blocked host skipped: www.panasonic.com",
-      "errors": [
-        "blocked host skipped: www.panasonic.com"
-      ]
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Panasonic LUMIX S PRO 50mm F1.4"
     },
     "Panasonic LUMIX S 50mm F1.8": {
       "status": "skipped",
@@ -1907,30 +1703,24 @@
       "label": "Panasonic LUMIX S 85mm F1.8"
     },
     "Panasonic LUMIX S 100mm F2.8 MACRO": {
-      "status": "failed",
-      "label": "Panasonic LUMIX S 100mm F2.8 MACRO",
-      "reason": "blocked host skipped: www.panasonic.com",
-      "errors": [
-        "blocked host skipped: www.panasonic.com"
-      ]
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Panasonic LUMIX S 100mm F2.8 MACRO"
     },
     "Panasonic LUMIX G FISHEYE 8mm F3.5": {
-      "status": "failed",
-      "label": "Panasonic LUMIX G FISHEYE 8mm F3.5",
-      "reason": "no usable image",
-      "errors": []
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Panasonic LUMIX G FISHEYE 8mm F3.5"
     },
     "Panasonic LEICA DG SUMMILUX 9mm F1.7 ASPH.": {
-      "status": "failed",
-      "label": "Panasonic LEICA DG SUMMILUX 9mm F1.7 ASPH.",
-      "reason": "no usable image",
-      "errors": []
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Panasonic LEICA DG SUMMILUX 9mm F1.7 ASPH."
     },
     "Panasonic LEICA DG VARIO-ELMARIT 8-18mm F2.8-4 ASPH.": {
-      "status": "failed",
-      "label": "Panasonic LEICA DG VARIO-ELMARIT 8-18mm F2.8-4 ASPH.",
-      "reason": "no usable image",
-      "errors": []
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Panasonic LEICA DG VARIO-ELMARIT 8-18mm F2.8-4 ASPH."
     },
     "Panasonic LUMIX G VARIO 7-14mm F4 ASPH.": {
       "status": "skipped",
@@ -1943,16 +1733,14 @@
       "label": "Panasonic LEICA DG VARIO-SUMMILUX 10-25mm F1.7 ASPH."
     },
     "Panasonic LEICA DG SUMMILUX 12mm F1.4 ASPH.": {
-      "status": "failed",
-      "label": "Panasonic LEICA DG SUMMILUX 12mm F1.4 ASPH.",
-      "reason": "no usable image",
-      "errors": []
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Panasonic LEICA DG SUMMILUX 12mm F1.4 ASPH."
     },
     "Panasonic LUMIX G VARIO 12-32mm F3.5-5.6 ASPH. MEGA O.I.S.": {
-      "status": "failed",
-      "label": "Panasonic LUMIX G VARIO 12-32mm F3.5-5.6 ASPH. MEGA O.I.S.",
-      "reason": "no usable image",
-      "errors": []
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Panasonic LUMIX G VARIO 12-32mm F3.5-5.6 ASPH. MEGA O.I.S."
     },
     "Panasonic LUMIX G X VARIO 12-35mm F2.8 POWER O.I.S.": {
       "status": "skipped",
@@ -1960,16 +1748,14 @@
       "label": "Panasonic LUMIX G X VARIO 12-35mm F2.8 POWER O.I.S."
     },
     "Panasonic LUMIX G X VARIO 12-35mm F2.8 II POWER O.I.S.": {
-      "status": "failed",
-      "label": "Panasonic LUMIX G X VARIO 12-35mm F2.8 II POWER O.I.S.",
-      "reason": "no usable image",
-      "errors": []
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Panasonic LUMIX G X VARIO 12-35mm F2.8 II POWER O.I.S."
     },
     "Panasonic LEICA DG VARIO-ELMARIT 12-35mm F2.8 ASPH. POWER O.I.S.": {
-      "status": "failed",
-      "label": "Panasonic LEICA DG VARIO-ELMARIT 12-35mm F2.8 ASPH. POWER O.I.S.",
-      "reason": "no usable image",
-      "errors": []
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Panasonic LEICA DG VARIO-ELMARIT 12-35mm F2.8 ASPH. POWER O.I.S."
     },
     "Panasonic LUMIX G VARIO 12-60mm F3.5-5.6 ASPH. POWER O.I.S.": {
       "status": "skipped",
@@ -1977,10 +1763,9 @@
       "label": "Panasonic LUMIX G VARIO 12-60mm F3.5-5.6 ASPH. POWER O.I.S."
     },
     "Panasonic LEICA DG VARIO-ELMARIT 12-60mm F2.8-4 ASPH. POWER O.I.S.": {
-      "status": "failed",
-      "label": "Panasonic LEICA DG VARIO-ELMARIT 12-60mm F2.8-4 ASPH. POWER O.I.S.",
-      "reason": "no usable image",
-      "errors": []
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Panasonic LEICA DG VARIO-ELMARIT 12-60mm F2.8-4 ASPH. POWER O.I.S."
     },
     "Panasonic LUMIX G 14mm F2.5 ASPH.": {
       "status": "skipped",
@@ -1988,10 +1773,9 @@
       "label": "Panasonic LUMIX G 14mm F2.5 ASPH."
     },
     "Panasonic LUMIX G 14mm F2.5 II ASPH.": {
-      "status": "failed",
-      "label": "Panasonic LUMIX G 14mm F2.5 II ASPH.",
-      "reason": "no usable image",
-      "errors": []
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Panasonic LUMIX G 14mm F2.5 II ASPH."
     },
     "Panasonic LUMIX G VARIO 14-42mm F3.5-5.6 ASPH. MEGA O.I.S.": {
       "status": "skipped",
@@ -2029,12 +1813,9 @@
       "label": "Panasonic LUMIX G VARIO 14-140mm F3.5-5.6 II ASPH. POWER O.I.S."
     },
     "Panasonic LEICA DG SUMMILUX 15mm F1.7 ASPH.": {
-      "status": "ok",
-      "label": "Panasonic LEICA DG SUMMILUX 15mm F1.7 ASPH.",
-      "src": "/assets/images/products/panasonic/panasonic-micro-four-thirds-leica-dg-summilux-15mm-f1-7-asph.webp",
-      "sourcePage": "https://commons.wikimedia.org/wiki/File:Panasonic_LUMIX_DMC-GX80_et_DG_SUMMILUX_15_mm.jpg",
-      "sourceImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Panasonic_LUMIX_DMC-GX80_et_DG_SUMMILUX_15_mm.jpg/960px-Panasonic_LUMIX_DMC-GX80_et_DG_SUMMILUX_15_mm.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "method": "wikimedia-commons"
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Panasonic LEICA DG SUMMILUX 15mm F1.7 ASPH."
     },
     "Panasonic LUMIX G 20mm F1.7 ASPH.": {
       "status": "skipped",
@@ -2052,10 +1833,9 @@
       "label": "Panasonic LEICA DG SUMMILUX 25mm F1.4 ASPH."
     },
     "Panasonic LEICA DG SUMMILUX 25mm F1.4 II ASPH.": {
-      "status": "failed",
-      "label": "Panasonic LEICA DG SUMMILUX 25mm F1.4 II ASPH.",
-      "reason": "no usable image",
-      "errors": []
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Panasonic LEICA DG SUMMILUX 25mm F1.4 II ASPH."
     },
     "Panasonic LUMIX G 25mm F1.7 ASPH.": {
       "status": "skipped",
@@ -2063,34 +1843,29 @@
       "label": "Panasonic LUMIX G 25mm F1.7 ASPH."
     },
     "Panasonic LEICA DG VARIO-SUMMILUX 25-50mm F1.7 ASPH.": {
-      "status": "failed",
-      "label": "Panasonic LEICA DG VARIO-SUMMILUX 25-50mm F1.7 ASPH.",
-      "reason": "no usable image",
-      "errors": []
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Panasonic LEICA DG VARIO-SUMMILUX 25-50mm F1.7 ASPH."
     },
     "Panasonic LUMIX G MACRO 30mm F2.8 ASPH. MEGA O.I.S.": {
-      "status": "failed",
-      "label": "Panasonic LUMIX G MACRO 30mm F2.8 ASPH. MEGA O.I.S.",
-      "reason": "no usable image",
-      "errors": []
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Panasonic LUMIX G MACRO 30mm F2.8 ASPH. MEGA O.I.S."
     },
     "Panasonic LUMIX G X VARIO 35-100mm F2.8 POWER O.I.S.": {
-      "status": "failed",
-      "label": "Panasonic LUMIX G X VARIO 35-100mm F2.8 POWER O.I.S.",
-      "reason": "no usable image",
-      "errors": []
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Panasonic LUMIX G X VARIO 35-100mm F2.8 POWER O.I.S."
     },
     "Panasonic LUMIX G X VARIO 35-100mm F2.8 II POWER O.I.S.": {
-      "status": "failed",
-      "label": "Panasonic LUMIX G X VARIO 35-100mm F2.8 II POWER O.I.S.",
-      "reason": "no usable image",
-      "errors": []
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Panasonic LUMIX G X VARIO 35-100mm F2.8 II POWER O.I.S."
     },
     "Panasonic LUMIX G VARIO 35-100mm F4-5.6 ASPH. MEGA O.I.S.": {
-      "status": "failed",
-      "label": "Panasonic LUMIX G VARIO 35-100mm F4-5.6 ASPH. MEGA O.I.S.",
-      "reason": "no usable image",
-      "errors": []
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Panasonic LUMIX G VARIO 35-100mm F4-5.6 ASPH. MEGA O.I.S."
     },
     "Panasonic LEICA DG NOCTICRON 42.5mm F1.2 ASPH. POWER O.I.S.": {
       "status": "skipped",
@@ -2098,10 +1873,9 @@
       "label": "Panasonic LEICA DG NOCTICRON 42.5mm F1.2 ASPH. POWER O.I.S."
     },
     "Panasonic LUMIX G 42.5mm F1.7 ASPH. POWER O.I.S.": {
-      "status": "failed",
-      "label": "Panasonic LUMIX G 42.5mm F1.7 ASPH. POWER O.I.S.",
-      "reason": "no usable image",
-      "errors": []
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Panasonic LUMIX G 42.5mm F1.7 ASPH. POWER O.I.S."
     },
     "Panasonic LEICA DG MACRO-ELMARIT 45mm F2.8 ASPH. MEGA O.I.S.": {
       "status": "skipped",
@@ -2114,10 +1888,9 @@
       "label": "Panasonic LUMIX G VARIO 45-150mm F4-5.6 ASPH. MEGA O.I.S."
     },
     "Panasonic LUMIX G X VARIO PZ 45-175mm F4-5.6 POWER O.I.S.": {
-      "status": "failed",
-      "label": "Panasonic LUMIX G X VARIO PZ 45-175mm F4-5.6 POWER O.I.S.",
-      "reason": "no usable image",
-      "errors": []
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Panasonic LUMIX G X VARIO PZ 45-175mm F4-5.6 POWER O.I.S."
     },
     "Panasonic LUMIX G VARIO 45-200mm F4-5.6 MEGA O.I.S.": {
       "status": "skipped",
@@ -2125,16 +1898,14 @@
       "label": "Panasonic LUMIX G VARIO 45-200mm F4-5.6 MEGA O.I.S."
     },
     "Panasonic LUMIX G VARIO 45-200mm F4-5.6 II POWER O.I.S.": {
-      "status": "failed",
-      "label": "Panasonic LUMIX G VARIO 45-200mm F4-5.6 II POWER O.I.S.",
-      "reason": "no usable image",
-      "errors": []
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Panasonic LUMIX G VARIO 45-200mm F4-5.6 II POWER O.I.S."
     },
     "Panasonic LEICA DG VARIO-ELMARIT 50-200mm F2.8-4 ASPH. POWER O.I.S.": {
-      "status": "failed",
-      "label": "Panasonic LEICA DG VARIO-ELMARIT 50-200mm F2.8-4 ASPH. POWER O.I.S.",
-      "reason": "no usable image",
-      "errors": []
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Panasonic LEICA DG VARIO-ELMARIT 50-200mm F2.8-4 ASPH. POWER O.I.S."
     },
     "Panasonic LUMIX G VARIO 100-300mm F4-5.6 MEGA O.I.S.": {
       "status": "skipped",
@@ -2142,28 +1913,24 @@
       "label": "Panasonic LUMIX G VARIO 100-300mm F4-5.6 MEGA O.I.S."
     },
     "Panasonic LUMIX G VARIO 100-300mm F4-5.6 II POWER O.I.S.": {
-      "status": "failed",
-      "label": "Panasonic LUMIX G VARIO 100-300mm F4-5.6 II POWER O.I.S.",
-      "reason": "no usable image",
-      "errors": []
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Panasonic LUMIX G VARIO 100-300mm F4-5.6 II POWER O.I.S."
     },
     "Panasonic LEICA DG VARIO-ELMAR 100-400mm F4-6.3 ASPH. POWER O.I.S.": {
-      "status": "failed",
-      "label": "Panasonic LEICA DG VARIO-ELMAR 100-400mm F4-6.3 ASPH. POWER O.I.S.",
-      "reason": "no usable image",
-      "errors": []
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Panasonic LEICA DG VARIO-ELMAR 100-400mm F4-6.3 ASPH. POWER O.I.S."
     },
     "Panasonic LEICA DG VARIO-ELMAR 100-400mm F4-6.3 II ASPH. POWER O.I.S.": {
-      "status": "failed",
-      "label": "Panasonic LEICA DG VARIO-ELMAR 100-400mm F4-6.3 II ASPH. POWER O.I.S.",
-      "reason": "no usable image",
-      "errors": []
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Panasonic LEICA DG VARIO-ELMAR 100-400mm F4-6.3 II ASPH. POWER O.I.S."
     },
     "Panasonic LEICA DG ELMARIT 200mm F2.8 POWER O.I.S.": {
-      "status": "failed",
-      "label": "Panasonic LEICA DG ELMARIT 200mm F2.8 POWER O.I.S.",
-      "reason": "no usable image",
-      "errors": []
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Panasonic LEICA DG ELMARIT 200mm F2.8 POWER O.I.S."
     },
     "Olympus PEN E-P5": {
       "status": "skipped",
@@ -2211,22 +1978,19 @@
       "label": "Olympus PEN E-PL7"
     },
     "Olympus PEN E-PL8": {
-      "status": "failed",
-      "label": "Olympus PEN E-PL8",
-      "reason": "no usable image",
-      "errors": []
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Olympus PEN E-PL8"
     },
     "Olympus PEN E-PL9": {
-      "status": "failed",
-      "label": "Olympus PEN E-PL9",
-      "reason": "no usable image",
-      "errors": []
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Olympus PEN E-PL9"
     },
     "Olympus PEN E-PL10": {
-      "status": "failed",
-      "label": "Olympus PEN E-PL10",
-      "reason": "no usable image",
-      "errors": []
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Olympus PEN E-PL10"
     },
     "Olympus PEN E-PM1": {
       "status": "skipped",
@@ -2334,10 +2098,9 @@
       "label": "OM SYSTEM M.Zuiko Digital ED 9-18mm F4-5.6 II"
     },
     "Olympus M.Zuiko Digital ED 7-14mm F2.8 PRO": {
-      "status": "failed",
-      "label": "Olympus M.Zuiko Digital ED 7-14mm F2.8 PRO",
-      "reason": "no usable image",
-      "errors": []
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Olympus M.Zuiko Digital ED 7-14mm F2.8 PRO"
     },
     "Olympus M.Zuiko Digital ED 8-25mm F4 PRO": {
       "status": "skipped",
@@ -2365,10 +2128,9 @@
       "label": "Olympus M.Zuiko Digital 17mm F2.8"
     },
     "Olympus M.Zuiko Digital ED 20mm F1.4 PRO": {
-      "status": "failed",
-      "label": "Olympus M.Zuiko Digital ED 20mm F1.4 PRO",
-      "reason": "no usable image",
-      "errors": []
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Olympus M.Zuiko Digital ED 20mm F1.4 PRO"
     },
     "Olympus M.Zuiko Digital ED 25mm F1.2 PRO": {
       "status": "skipped",
@@ -2431,10 +2193,9 @@
       "label": "OM SYSTEM M.Zuiko Digital ED 12-40mm F2.8 PRO II"
     },
     "Olympus M.Zuiko Digital ED 12-45mm F4 PRO": {
-      "status": "failed",
-      "label": "Olympus M.Zuiko Digital ED 12-45mm F4 PRO",
-      "reason": "no usable image",
-      "errors": []
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Olympus M.Zuiko Digital ED 12-45mm F4 PRO"
     },
     "Olympus M.Zuiko Digital ED 12-50mm F3.5-6.3 EZ": {
       "status": "skipped",
@@ -2472,16 +2233,14 @@
       "label": "Olympus M.Zuiko Digital ED 14-42mm F3.5-5.6 EZ"
     },
     "Olympus M.Zuiko Digital ED 14-150mm F4-5.6": {
-      "status": "failed",
-      "label": "Olympus M.Zuiko Digital ED 14-150mm F4-5.6",
-      "reason": "no usable image",
-      "errors": []
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Olympus M.Zuiko Digital ED 14-150mm F4-5.6"
     },
     "Olympus M.Zuiko Digital ED 14-150mm F4-5.6 II": {
-      "status": "failed",
-      "label": "Olympus M.Zuiko Digital ED 14-150mm F4-5.6 II",
-      "reason": "no usable image",
-      "errors": []
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Olympus M.Zuiko Digital ED 14-150mm F4-5.6 II"
     },
     "Olympus M.Zuiko Digital ED 40-150mm F2.8 PRO": {
       "status": "skipped",
@@ -2499,10 +2258,9 @@
       "label": "Olympus M.Zuiko Digital ED 40-150mm F4-5.6"
     },
     "Olympus M.Zuiko Digital ED 40-150mm F4-5.6 R": {
-      "status": "failed",
-      "label": "Olympus M.Zuiko Digital ED 40-150mm F4-5.6 R",
-      "reason": "no usable image",
-      "errors": []
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Olympus M.Zuiko Digital ED 40-150mm F4-5.6 R"
     },
     "OM SYSTEM M.Zuiko Digital ED 50-200mm F2.8 IS PRO": {
       "status": "skipped",
@@ -2570,22 +2328,19 @@
       "label": "Leica Leica SL3-S"
     },
     "Leica Super-Vario-Elmar-TL 11-23mm F3.5-4.5 ASPH.": {
-      "status": "failed",
-      "label": "Leica Super-Vario-Elmar-TL 11-23mm F3.5-4.5 ASPH.",
-      "reason": "no usable image",
-      "errors": []
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Leica Super-Vario-Elmar-TL 11-23mm F3.5-4.5 ASPH."
     },
     "Leica Vario-Elmar-TL 18-56mm F3.5-5.6 ASPH.": {
-      "status": "failed",
-      "label": "Leica Vario-Elmar-TL 18-56mm F3.5-5.6 ASPH.",
-      "reason": "no usable image",
-      "errors": []
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Leica Vario-Elmar-TL 18-56mm F3.5-5.6 ASPH."
     },
     "Leica APO-Vario-Elmar-TL 55-135mm F3.5-4.5 ASPH.": {
-      "status": "failed",
-      "label": "Leica APO-Vario-Elmar-TL 55-135mm F3.5-4.5 ASPH.",
-      "reason": "no usable image",
-      "errors": []
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Leica APO-Vario-Elmar-TL 55-135mm F3.5-4.5 ASPH."
     },
     "Leica Elmarit-TL 18mm F2.8 ASPH.": {
       "status": "skipped",
@@ -2593,22 +2348,19 @@
       "label": "Leica Elmarit-TL 18mm F2.8 ASPH."
     },
     "Leica Summicron-TL 23mm F2 ASPH.": {
-      "status": "failed",
-      "label": "Leica Summicron-TL 23mm F2 ASPH.",
-      "reason": "no usable image",
-      "errors": []
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Leica Summicron-TL 23mm F2 ASPH."
     },
     "Leica Summilux-TL 35mm F1.4 ASPH.": {
-      "status": "failed",
-      "label": "Leica Summilux-TL 35mm F1.4 ASPH.",
-      "reason": "no usable image",
-      "errors": []
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Leica Summilux-TL 35mm F1.4 ASPH."
     },
     "Leica APO-Macro-Elmarit-TL 60mm F2.8 ASPH.": {
-      "status": "failed",
-      "label": "Leica APO-Macro-Elmarit-TL 60mm F2.8 ASPH.",
-      "reason": "no usable image",
-      "errors": []
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Leica APO-Macro-Elmarit-TL 60mm F2.8 ASPH."
     },
     "Leica Super-Vario-Elmarit-SL 14-24mm F2.8 ASPH.": {
       "status": "skipped",
@@ -3129,6 +2881,906 @@
       "status": "skipped",
       "reason": "already exists",
       "label": "Tamron 18-300mm F3.5-6.3 Di III-A VC VXD"
+    },
+    "Sony α9": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sony α9"
+    },
+    "Sony α9 II": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sony α9 II"
+    },
+    "Sony α9 III": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sony α9 III"
+    },
+    "Sony α1": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sony α1"
+    },
+    "Sony α1 II": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sony α1 II"
+    },
+    "Sony α QX1": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sony α QX1"
+    },
+    "Sony ZV-E10": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sony ZV-E10"
+    },
+    "Sony ZV-E10 II": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sony ZV-E10 II"
+    },
+    "Sony ZV-E1": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sony ZV-E1"
+    },
+    "Sony Cinema Line FX3": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sony Cinema Line FX3"
+    },
+    "Sony Cinema Line FX3A": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sony Cinema Line FX3A"
+    },
+    "Sony Cinema Line FX30": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sony Cinema Line FX30"
+    },
+    "Sony Cinema Line FX2": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sony Cinema Line FX2"
+    },
+    "Sony E 11mm F1.8": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sony E 11mm F1.8"
+    },
+    "Sony E 15mm F1.4 G": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sony E 15mm F1.4 G"
+    },
+    "Sony E 16mm F2.8": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sony E 16mm F2.8"
+    },
+    "Sony E 20mm F2.8": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sony E 20mm F2.8"
+    },
+    "Sony Sonnar T* E 24mm F1.8 ZA": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sony Sonnar T* E 24mm F1.8 ZA"
+    },
+    "Sony E 30mm F3.5 Macro": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sony E 30mm F3.5 Macro"
+    },
+    "Sony E 35mm F1.8 OSS": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sony E 35mm F1.8 OSS"
+    },
+    "Sony E 50mm F1.8 OSS": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sony E 50mm F1.8 OSS"
+    },
+    "Sony FE 14mm F1.8 GM": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sony FE 14mm F1.8 GM"
+    },
+    "Sony FE 16mm F1.8 G": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sony FE 16mm F1.8 G"
+    },
+    "Sony FE 20mm F1.8 G": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sony FE 20mm F1.8 G"
+    },
+    "Sony FE 24mm F1.4 GM": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sony FE 24mm F1.4 GM"
+    },
+    "Sony FE 24mm F2.8 G": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sony FE 24mm F2.8 G"
+    },
+    "Sony FE 28mm F2": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sony FE 28mm F2"
+    },
+    "Sony FE 35mm F1.4 GM": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sony FE 35mm F1.4 GM"
+    },
+    "Sony Distagon T* FE 35mm F1.4 ZA": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sony Distagon T* FE 35mm F1.4 ZA"
+    },
+    "Sony FE 35mm F1.8": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sony FE 35mm F1.8"
+    },
+    "Sony Sonnar T* FE 35mm F2.8 ZA": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sony Sonnar T* FE 35mm F2.8 ZA"
+    },
+    "Sony FE 40mm F2.5 G": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sony FE 40mm F2.5 G"
+    },
+    "Sony FE 50mm F1.2 GM": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sony FE 50mm F1.2 GM"
+    },
+    "Sony FE 50mm F1.4 GM": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sony FE 50mm F1.4 GM"
+    },
+    "Sony Planar T* FE 50mm F1.4 ZA": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sony Planar T* FE 50mm F1.4 ZA"
+    },
+    "Sony FE 50mm F1.8": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sony FE 50mm F1.8"
+    },
+    "Sony FE 50mm F2.5 G": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sony FE 50mm F2.5 G"
+    },
+    "Sony FE 50mm F2.8 Macro": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sony FE 50mm F2.8 Macro"
+    },
+    "Sony Sonnar T* FE 55mm F1.8 ZA": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sony Sonnar T* FE 55mm F1.8 ZA"
+    },
+    "Sony FE 85mm F1.4 GM": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sony FE 85mm F1.4 GM"
+    },
+    "Sony FE 85mm F1.4 GM II": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sony FE 85mm F1.4 GM II"
+    },
+    "Sony FE 85mm F1.8": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sony FE 85mm F1.8"
+    },
+    "Sony FE 90mm F2.8 Macro G OSS": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sony FE 90mm F2.8 Macro G OSS"
+    },
+    "Sony FE 100mm F2.8 STF GM OSS": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sony FE 100mm F2.8 STF GM OSS"
+    },
+    "Sony FE 100mm F2.8 Macro GM OSS": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sony FE 100mm F2.8 Macro GM OSS"
+    },
+    "Sony FE 135mm F1.8 GM": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sony FE 135mm F1.8 GM"
+    },
+    "Sony FE 300mm F2.8 GM OSS": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sony FE 300mm F2.8 GM OSS"
+    },
+    "Sony FE 400mm F2.8 GM OSS": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sony FE 400mm F2.8 GM OSS"
+    },
+    "Sony FE 600mm F4 GM OSS": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sony FE 600mm F4 GM OSS"
+    },
+    "Sony E 10-18mm F4 OSS": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sony E 10-18mm F4 OSS"
+    },
+    "Sony E PZ 10-20mm F4 G": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sony E PZ 10-20mm F4 G"
+    },
+    "Sony E PZ 16-50mm F3.5-5.6 OSS": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sony E PZ 16-50mm F3.5-5.6 OSS"
+    },
+    "Sony E PZ 16-50mm F3.5-5.6 OSS II": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sony E PZ 16-50mm F3.5-5.6 OSS II"
+    },
+    "Sony E 16-55mm F2.8 G": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sony E 16-55mm F2.8 G"
+    },
+    "Sony Vario-Tessar T* E 16-70mm F4 ZA OSS": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sony Vario-Tessar T* E 16-70mm F4 ZA OSS"
+    },
+    "Sony E 18-50mm F4-5.6": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sony E 18-50mm F4-5.6"
+    },
+    "Sony E 18-55mm F3.5-5.6 OSS": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sony E 18-55mm F3.5-5.6 OSS"
+    },
+    "Sony E PZ 18-105mm F4 G OSS": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sony E PZ 18-105mm F4 G OSS"
+    },
+    "Sony E PZ 18-110mm F4 G OSS": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sony E PZ 18-110mm F4 G OSS"
+    },
+    "Sony E 18-135mm F3.5-5.6 OSS": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sony E 18-135mm F3.5-5.6 OSS"
+    },
+    "Sony E 18-200mm F3.5-6.3 OSS": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sony E 18-200mm F3.5-6.3 OSS"
+    },
+    "Sony E 18-200mm F3.5-6.3 OSS LE": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sony E 18-200mm F3.5-6.3 OSS LE"
+    },
+    "Sony E PZ 18-200mm F3.5-6.3 OSS": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sony E PZ 18-200mm F3.5-6.3 OSS"
+    },
+    "Sony E 55-210mm F4.5-6.3 OSS": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sony E 55-210mm F4.5-6.3 OSS"
+    },
+    "Sony E 70-350mm F4.5-6.3 G OSS": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sony E 70-350mm F4.5-6.3 G OSS"
+    },
+    "Sony FE 12-24mm F2.8 GM": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sony FE 12-24mm F2.8 GM"
+    },
+    "Sony FE 12-24mm F4 G": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sony FE 12-24mm F4 G"
+    },
+    "Sony FE 16-25mm F2.8 G": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sony FE 16-25mm F2.8 G"
+    },
+    "Sony FE 16-35mm F2.8 GM": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sony FE 16-35mm F2.8 GM"
+    },
+    "Sony FE 16-35mm F2.8 GM II": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sony FE 16-35mm F2.8 GM II"
+    },
+    "Sony FE C 16-35mm T3.1 G": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sony FE C 16-35mm T3.1 G"
+    },
+    "Sony Vario-Tessar T* FE 16-35mm F4 ZA OSS": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sony Vario-Tessar T* FE 16-35mm F4 ZA OSS"
+    },
+    "Sony FE PZ 16-35mm F4 G": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sony FE PZ 16-35mm F4 G"
+    },
+    "Sony FE 20-70mm F4 G": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sony FE 20-70mm F4 G"
+    },
+    "Sony FE 24-50mm F2.8 G": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sony FE 24-50mm F2.8 G"
+    },
+    "Sony FE 24-70mm F2.8 GM": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sony FE 24-70mm F2.8 GM"
+    },
+    "Sony FE 24-70mm F2.8 GM II": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sony FE 24-70mm F2.8 GM II"
+    },
+    "Sony Vario-Tessar T* FE 24-70mm F4 ZA OSS": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sony Vario-Tessar T* FE 24-70mm F4 ZA OSS"
+    },
+    "Sony FE 24-105mm F4 G OSS": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sony FE 24-105mm F4 G OSS"
+    },
+    "Sony FE 24-240mm F3.5-6.3 OSS": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sony FE 24-240mm F3.5-6.3 OSS"
+    },
+    "Sony FE 28-60mm F4-5.6": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sony FE 28-60mm F4-5.6"
+    },
+    "Sony FE 28-70mm F2 GM": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sony FE 28-70mm F2 GM"
+    },
+    "Sony FE 28-70mm F3.5-5.6 OSS": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sony FE 28-70mm F3.5-5.6 OSS"
+    },
+    "Sony FE 28-70mm F3.5-5.6 OSS II": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sony FE 28-70mm F3.5-5.6 OSS II"
+    },
+    "Sony FE PZ 28-135mm F4 G OSS": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sony FE PZ 28-135mm F4 G OSS"
+    },
+    "Sony FE 50-150mm F2 GM": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sony FE 50-150mm F2 GM"
+    },
+    "Sony FE 70-200mm F2.8 GM OSS": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sony FE 70-200mm F2.8 GM OSS"
+    },
+    "Sony FE 70-200mm F2.8 GM OSS II": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sony FE 70-200mm F2.8 GM OSS II"
+    },
+    "Sony FE 70-200mm F4 G OSS": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sony FE 70-200mm F4 G OSS"
+    },
+    "Sony FE 70-200mm F4 Macro G OSS II": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sony FE 70-200mm F4 Macro G OSS II"
+    },
+    "Sony FE 70-300mm F4.5-5.6 G OSS": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sony FE 70-300mm F4.5-5.6 G OSS"
+    },
+    "Sony FE 100-400mm F4.5-5.6 GM OSS": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sony FE 100-400mm F4.5-5.6 GM OSS"
+    },
+    "Sony FE 100-400mm F4.5 GM OSS": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sony FE 100-400mm F4.5 GM OSS"
+    },
+    "Sony FE 100-400mm F5.6-8 OSS": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sony FE 100-400mm F5.6-8 OSS"
+    },
+    "Sony FE 200-600mm F5.6-6.3 G OSS": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sony FE 200-600mm F5.6-6.3 G OSS"
+    },
+    "Sony FE 400-800mm F6.3-8 G OSS": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sony FE 400-800mm F6.3-8 G OSS"
+    },
+    "Canon EOS M10": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Canon EOS M10"
+    },
+    "Canon EOS M5": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Canon EOS M5"
+    },
+    "Canon EOS M6": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Canon EOS M6"
+    },
+    "Canon EOS M100": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Canon EOS M100"
+    },
+    "Canon EOS M50": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Canon EOS M50"
+    },
+    "Canon EOS M6 Mark II": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Canon EOS M6 Mark II"
+    },
+    "Canon EOS M200": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Canon EOS M200"
+    },
+    "Canon EOS M50 Mark II": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Canon EOS M50 Mark II"
+    },
+    "Canon EOS R": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Canon EOS R"
+    },
+    "Canon EOS RP": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Canon EOS RP"
+    },
+    "Canon EOS Ra": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Canon EOS Ra"
+    },
+    "Canon EOS R6": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Canon EOS R6"
+    },
+    "Canon EOS R3": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Canon EOS R3"
+    },
+    "Canon EOS R7": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Canon EOS R7"
+    },
+    "Canon EOS R10": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Canon EOS R10"
+    },
+    "Canon EOS R6 Mark II": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Canon EOS R6 Mark II"
+    },
+    "Canon EOS R8": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Canon EOS R8"
+    },
+    "Canon EOS R100": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Canon EOS R100"
+    },
+    "Canon EOS R1": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Canon EOS R1"
+    },
+    "Canon EOS R6 Mark III": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Canon EOS R6 Mark III"
+    },
+    "Canon EOS C70": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Canon EOS C70"
+    },
+    "Canon EOS C400": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Canon EOS C400"
+    },
+    "Canon EOS C80": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Canon EOS C80"
+    },
+    "Canon EOS C50": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Canon EOS C50"
+    },
+    "Canon EF-M 11-22mm F4-5.6 IS STM": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Canon EF-M 11-22mm F4-5.6 IS STM"
+    },
+    "Canon EF-M 15-45mm F3.5-6.3 IS STM": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Canon EF-M 15-45mm F3.5-6.3 IS STM"
+    },
+    "Canon EF-M 18-55mm F3.5-5.6 IS STM": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Canon EF-M 18-55mm F3.5-5.6 IS STM"
+    },
+    "Canon EF-M 18-150mm F3.5-6.3 IS STM": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Canon EF-M 18-150mm F3.5-6.3 IS STM"
+    },
+    "Canon EF-M 22mm F2 STM": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Canon EF-M 22mm F2 STM"
+    },
+    "Canon EF-M 28mm F3.5 Macro IS STM": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Canon EF-M 28mm F3.5 Macro IS STM"
+    },
+    "Canon EF-M 32mm F1.4 STM": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Canon EF-M 32mm F1.4 STM"
+    },
+    "Canon EF-M 55-200mm F4.5-6.3 IS STM": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Canon EF-M 55-200mm F4.5-6.3 IS STM"
+    },
+    "Canon RF7-14mm F2.8-3.5 L Fisheye STM": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Canon RF7-14mm F2.8-3.5 L Fisheye STM"
+    },
+    "Canon RF10-20mm F4 L IS STM": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Canon RF10-20mm F4 L IS STM"
+    },
+    "Canon RF14-35mm F4 L IS USM": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Canon RF14-35mm F4 L IS USM"
+    },
+    "Canon RF15-30mm F4.5-6.3 IS STM": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Canon RF15-30mm F4.5-6.3 IS STM"
+    },
+    "Canon RF15-35mm F2.8 L IS USM": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Canon RF15-35mm F2.8 L IS USM"
+    },
+    "Canon RF16-28mm F2.8 IS STM": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Canon RF16-28mm F2.8 IS STM"
+    },
+    "Canon RF24-50mm F4.5-6.3 IS STM": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Canon RF24-50mm F4.5-6.3 IS STM"
+    },
+    "Canon RF24-70mm F2.8 L IS USM": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Canon RF24-70mm F2.8 L IS USM"
+    },
+    "Canon RF24-105mm F2.8 L IS USM Z": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Canon RF24-105mm F2.8 L IS USM Z"
+    },
+    "Canon RF24-105mm F4 L IS USM": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Canon RF24-105mm F4 L IS USM"
+    },
+    "Canon RF24-105mm F4-7.1 IS STM": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Canon RF24-105mm F4-7.1 IS STM"
+    },
+    "Canon RF24-240mm F4-6.3 IS USM": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Canon RF24-240mm F4-6.3 IS USM"
+    },
+    "Canon RF28-70mm F2 L USM": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Canon RF28-70mm F2 L USM"
+    },
+    "Canon RF28-70mm F2.8 IS STM": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Canon RF28-70mm F2.8 IS STM"
+    },
+    "Canon RF70-200mm F2.8 L IS USM": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Canon RF70-200mm F2.8 L IS USM"
+    },
+    "Canon RF70-200mm F2.8 L IS USM Z": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Canon RF70-200mm F2.8 L IS USM Z"
+    },
+    "Canon RF70-200mm F4 L IS USM": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Canon RF70-200mm F4 L IS USM"
+    },
+    "Canon RF100-300mm F2.8 L IS USM": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Canon RF100-300mm F2.8 L IS USM"
+    },
+    "Canon RF100-400mm F5.6-8 IS USM": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Canon RF100-400mm F5.6-8 IS USM"
+    },
+    "Canon RF100-500mm F4.5-7.1 L IS USM": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Canon RF100-500mm F4.5-7.1 L IS USM"
+    },
+    "Canon RF200-800mm F6.3-9 IS USM": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Canon RF200-800mm F6.3-9 IS USM"
+    },
+    "Canon RF-S10-18mm F4.5-6.3 IS STM": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Canon RF-S10-18mm F4.5-6.3 IS STM"
+    },
+    "Canon RF-S18-45mm F4.5-6.3 IS STM": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Canon RF-S18-45mm F4.5-6.3 IS STM"
+    },
+    "Canon RF-S18-150mm F3.5-6.3 IS STM": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Canon RF-S18-150mm F3.5-6.3 IS STM"
+    },
+    "Canon RF-S55-210mm F5-7.1 IS STM": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Canon RF-S55-210mm F5-7.1 IS STM"
+    },
+    "Canon RF14mm F1.4 L VCM": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Canon RF14mm F1.4 L VCM"
+    },
+    "Canon RF16mm F2.8 STM": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Canon RF16mm F2.8 STM"
+    },
+    "Canon RF24mm F1.4 L VCM": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Canon RF24mm F1.4 L VCM"
+    },
+    "Canon RF24mm F1.8 MACRO IS STM": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Canon RF24mm F1.8 MACRO IS STM"
+    },
+    "Canon RF28mm F2.8 STM": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Canon RF28mm F2.8 STM"
+    },
+    "Canon RF35mm F1.4 L VCM": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Canon RF35mm F1.4 L VCM"
+    },
+    "Canon RF35mm F1.8 Macro IS STM": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Canon RF35mm F1.8 Macro IS STM"
+    },
+    "Canon RF50mm F1.2 L USM": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Canon RF50mm F1.2 L USM"
+    },
+    "Canon RF50mm F1.4 L VCM": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Canon RF50mm F1.4 L VCM"
+    },
+    "Canon RF50mm F1.8 STM": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Canon RF50mm F1.8 STM"
+    },
+    "Canon RF85mm F2 Macro IS STM": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Canon RF85mm F2 Macro IS STM"
+    },
+    "Canon RF85mm F1.2 L USM": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Canon RF85mm F1.2 L USM"
+    },
+    "Canon RF85mm F1.2 L USM DS": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Canon RF85mm F1.2 L USM DS"
+    },
+    "Canon RF100mm F2.8 L Macro IS USM": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Canon RF100mm F2.8 L Macro IS USM"
+    },
+    "Canon RF135mm F1.8 L IS USM": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Canon RF135mm F1.8 L IS USM"
+    },
+    "Canon RF400mm F2.8 L IS USM": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Canon RF400mm F2.8 L IS USM"
+    },
+    "Canon RF600mm F4 L IS USM": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Canon RF600mm F4 L IS USM"
+    },
+    "Canon RF600mm F11 IS STM": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Canon RF600mm F11 IS STM"
+    },
+    "Canon RF800mm F5.6 L IS USM": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Canon RF800mm F5.6 L IS USM"
+    },
+    "Canon RF800mm F11 IS STM": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Canon RF800mm F11 IS STM"
+    },
+    "Canon RF1200mm F8 L IS USM": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Canon RF1200mm F8 L IS USM"
+    },
+    "Canon RF-S3.9mm F3.5 STM DUAL FISHEYE": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Canon RF-S3.9mm F3.5 STM DUAL FISHEYE"
+    },
+    "Canon RF-S7.8mm F4 STM DUAL": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Canon RF-S7.8mm F4 STM DUAL"
+    },
+    "Canon RF5.2mm F2.8 L Dual Fisheye": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Canon RF5.2mm F2.8 L Dual Fisheye"
+    },
+    "Nikon 1 NIKKOR VR 10-100mm F4-5.6": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Nikon 1 NIKKOR VR 10-100mm F4-5.6"
+    },
+    "Nikon 1 NIKKOR VR 10-100mm F4.5-5.6 PD-ZOOM": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Nikon 1 NIKKOR VR 10-100mm F4.5-5.6 PD-ZOOM"
+    },
+    "Sony FE 8-14mm F3.5 Fisheye G": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sony FE 8-14mm F3.5 Fisheye G"
     }
   }
 }
