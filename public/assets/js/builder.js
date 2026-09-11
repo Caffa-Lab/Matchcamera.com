@@ -1,10 +1,10 @@
 import {SUPPORT_KINDS,supportSort,tripodHeadCompatibility,plateHeadCompatibility,supportHead} from './support-compatibility.js?v=20260911';
-import {loadProducts,loadAdapters,loadBatteries,loadManufacturerOrder,loadFilterOrder,loadFlashes,loadMemoryCards,loadTripods,loadHeads,loadPlates,sortManufacturers,publicManufacturer,findBatteriesForBody,memoryCardCompatibility,supportLoadGrade,money,productLabel,productKey,matchesSearch,brandLogoUrl} from './data.js?v=20260902-performance';
+import {loadProducts,loadAdapters,loadBatteries,loadManufacturerOrder,loadFilterOrder,loadFlashes,loadMemoryCards,loadTripods,loadHeads,loadPlates,sortManufacturers,publicManufacturer,findBatteriesForBody,memoryCardCompatibility,supportLoadGrade,money,productLabel,productKey,matchesSearch,brandLogoUrl} from './data.js?v=20260911-battery';
 import {checkCompatibility,findMountAdapters} from './compatibility.js?v=20260831-filter-fix';
 import {openProductDetail} from './product-detail.js?v=20260831-builder-filter-v4';
 const $=s=>document.querySelector(s);const PAGE_SIZE=40;
 let catalogLimit=PAGE_SIZE;let catalogKey='';let catalogObserver=null;
-const state={products:[],adapters:[],batteries:[],manufacturerOrder:[],filterOrder:null,flashes:[],memoryCards:[],tripods:[],heads:[],plates:[],body:null,lenses:[],memory:null,flash:null,tripod:null,head:null,plate:null,mode:'body',query:'',system:'all',manufacturer:'all',mount:'all',format:'all',lensType:'all',focalRange:'all',sale:'all',compatOnly:true};
+const state={products:[],adapters:[],batteries:[],manufacturerOrder:[],filterOrder:null,flashes:[],memoryCards:[],tripods:[],heads:[],plates:[],body:null,lenses:[],battery:null,memory:null,flash:null,tripod:null,head:null,plate:null,mode:'body',query:'',system:'all',manufacturer:'all',mount:'all',format:'all',lensType:'all',focalRange:'all',sale:'all',compatOnly:true};
 const esc=(v='')=>String(v).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const isSale=p=>p.currentSale==='예'||p.saleStatus==='현재 판매';const keyOf=p=>p?.id||productKey(p);
 function toast(m){const el=$('#toast');el.textContent=m;el.classList.add('show');clearTimeout(toast.t);toast.t=setTimeout(()=>el.classList.remove('show'),1700)}
@@ -72,8 +72,8 @@ function updateBodyVisual(){
 }
 
 function compatBadge(c){const cls=c.level==='compatible'?'good':c.level==='conditional'?'conditional':c.level==='incompatible'?'bad':'neutral';return `<span class="mini-compat ${cls}">${esc(c.label)}</span>`}
-function hydrate(){const q=new URLSearchParams(location.search);const mode=q.get('mode');if(mode==='lens'||mode==='body')state.mode=mode;const bodyKey=q.get('body');const lensKeys=(q.get('lenses')||'').split(',').filter(Boolean);if(bodyKey)state.body=state.products.find(p=>p.id===bodyKey||productKey(p)===bodyKey)||null;state.lenses=lensKeys.map(k=>state.products.find(p=>p.id===k||productKey(p)===k)).filter(Boolean);for(const [key,rows,param] of [['memory',state.memoryCards,'memory'],['flash',state.flashes,'flash'],['plate',state.plates,'plate'],['head',state.heads,'head'],['tripod',state.tripods,'tripod']])state[key]=rows.find(item=>item.id===q.get(param))||null;if(state.body&&!mode&&state.body.cameraSystem!=='일체형 카메라')state.mode='lens'}
-function syncUrl(){const q=new URLSearchParams();q.set('mode',state.mode);if(state.body)q.set('body',keyOf(state.body));if(state.lenses.length)q.set('lenses',state.lenses.map(keyOf).join(','));for(const key of ['memory','flash','plate','head','tripod'])if(state[key])q.set(key,state[key].id);history.replaceState(null,'',`${location.pathname}?${q}`)}
+function hydrate(){const q=new URLSearchParams(location.search);const mode=q.get('mode');if(mode==='lens'||mode==='body')state.mode=mode;const bodyKey=q.get('body');const lensKeys=(q.get('lenses')||'').split(',').filter(Boolean);if(bodyKey)state.body=state.products.find(p=>p.id===bodyKey||productKey(p)===bodyKey)||null;state.lenses=lensKeys.map(k=>state.products.find(p=>p.id===k||productKey(p)===k)).filter(Boolean);for(const [key,rows,param] of [['battery',state.batteries,'battery'],['memory',state.memoryCards,'memory'],['flash',state.flashes,'flash'],['plate',state.plates,'plate'],['head',state.heads,'head'],['tripod',state.tripods,'tripod']])state[key]=rows.find(item=>item.id===q.get(param))||null;if(state.body&&!mode&&state.body.cameraSystem!=='일체형 카메라')state.mode='lens'}
+function syncUrl(){const q=new URLSearchParams();q.set('mode',state.mode);if(state.body)q.set('body',keyOf(state.body));if(state.lenses.length)q.set('lenses',state.lenses.map(keyOf).join(','));for(const key of ['battery','memory','flash','plate','head','tripod'])if(state[key])q.set(key,state[key].id);history.replaceState(null,'',`${location.pathname}?${q}`)}
 function refreshFilters(){const source=state.products.filter(p=>p.type===(state.mode==='body'?'바디':'렌즈'));const systems=[...new Set(source.map(p=>p.cameraSystem).filter(Boolean))].sort((a,b)=>['미러리스','DSLR','일체형 카메라','시네마'].indexOf(a)-['미러리스','DSLR','일체형 카메라','시네마'].indexOf(b));$('#systemFilter').innerHTML=optionList(systems,'모든 카메라 방식');if(!systems.includes(state.system))state.system='all';$('#systemFilter').value=state.system;
 let sysSource=source.filter(p=>state.system==='all'||p.cameraSystem===state.system);const brands=sortManufacturers([...new Set(sysSource.map(p=>publicManufacturer(p.manufacturer)).filter(Boolean))],state.manufacturerOrder.map(publicManufacturer));$('#manufacturerFilter').innerHTML=optionList(brands,'모든 제조사');if(!brands.includes(state.manufacturer))state.manufacturer='all';$('#manufacturerFilter').value=state.manufacturer;
 let mountSource=sysSource.filter(p=>state.manufacturer==='all'||publicManufacturer(p.manufacturer)===state.manufacturer);if(state.mode==='lens'&&state.body&&state.compatOnly)mountSource=mountSource.filter(p=>checkCompatibility(state.body,p,state.adapters).level!=='incompatible');const mounts=[...new Set(mountSource.map(p=>p.mount).filter(Boolean))].sort();$('#mountFilter').innerHTML=optionList(mounts,state.mode==='body'?'모든 바디 마운트':'모든 렌즈 마운트');if(!mounts.includes(state.mount))state.mount='all';$('#mountFilter').value=state.mount;
@@ -97,20 +97,27 @@ function renderLensSlots(){const el=$('#lensSlots');if(state.body?.cameraSystem=
 function renderAdapterSlot(){const el=$('#adapterSlot');if(!state.body||!state.lenses.length){el.textContent='바디와 렌즈를 선택하면 필요한 어댑터를 자동 안내합니다.';return}const needed=[];for(const l of state.lenses){const a=findMountAdapters(state.body,l,state.adapters);if(a.length)needed.push(...a.slice(0,1).map(x=>`${productLabel(l)} → ${x.officialName}`))}el.innerHTML=needed.length?needed.map(x=>`<div style="margin:2px 0"><b style="color:#5960df">${esc(x)}</b></div>`).join(''):'선택한 렌즈는 직접 장착 가능하거나 등록된 어댑터가 없습니다.'}
 
 function renderBatterySlot(){
-  const el=$('#batterySlot');
-  if(!el)return;
+  const select=$('#batterySelect'),note=$('#batteryCompat');
+  const matches=state.body?findBatteriesForBody(state.body,state.batteries):[];
+  if(state.battery&&!matches.some(item=>item.id===state.battery.id)){
+    state.battery=null;
+    toast('선택한 바디의 호환 목록에 없는 추가 배터리를 해제했습니다.');
+  }
+  select.innerHTML=accessoryOptions(matches,state.battery,'추가 배터리 선택 안 함');
+  select.disabled=!matches.length;
+  note.className=`accessory-compat-note ${state.battery?'good':''}`;
   if(!state.body){
-    el.textContent='바디를 선택하면 등록된 배터리를 자동 안내합니다.';
+    note.textContent='바디를 선택하면 호환되는 추가 배터리를 선택할 수 있습니다.';
     return;
   }
-  const matches=findBatteriesForBody(state.body,state.batteries);
   if(!matches.length){
-    el.innerHTML=`<span>등록된 배터리 정보를 찾지 못했습니다. <a href="/accessories/?category=battery">배터리 DB에서 확인</a></span>`;
+    note.textContent='등록된 호환 배터리가 없습니다. 배터리 DB에서 확인해 주세요.';
     return;
   }
-  el.innerHTML=matches.slice(0,2).map(x=>
-    `<div style="margin:2px 0"><b style="color:#5960df">${esc(x.manufacturer)} ${esc(x.officialName)}</b>${x.note?` <small style="color:#7a8290">· ${esc(x.note)}</small>`:''}</div>`
-  ).join('');
+  const included=matches.some(item=>(item.includedWithNames||[]).includes(productLabel(state.body)));
+  note.textContent=state.battery
+    ? `호환 확인 · 추가 1개 · ${money(state.battery.currentPriceKrw)}${state.battery.weightG?` · ${state.battery.weightG}g`:''}${included?' · 바디 기본 포함분은 별도 합산하지 않습니다.':''}`
+    : `${matches.map(item=>item.officialName).join(' / ')} 호환${included?' · 기본 배터리 1개 포함':''}. 선택 시 추가 1개를 견적에 합산합니다.`;
 }
 
 const accessoryLabel=item=>item?.officialName||item?.id||'';
@@ -151,6 +158,7 @@ function renderSummary(){
     ...(state.body?[{label:'바디',product:state.body}]:[]),
     ...state.lenses.map((product,index)=>({label:`렌즈 ${index+1}`,product})),
     ...(state.memory?[{label:'메모리 카드',product:state.memory}]:[]),
+    ...(state.battery?[{label:'추가 배터리 1개',product:state.battery}]:[]),
     ...(state.flash?[{label:'플래시',product:state.flash}]:[]),
     ...(state.plate?[{label:'플레이트',product:state.plate}]:[]),
     ...(state.head?[{label:'삼각대 헤드',product:state.head}]:[]),
@@ -183,6 +191,7 @@ function renderSummary(){
 
   const results=state.body?state.lenses.map(product=>({name:productLabel(product),c:checkCompatibility(state.body,product,state.adapters)})):[];
   if(state.memory)results.push({name:`메모리 · ${accessoryLabel(state.memory)}`,c:memoryCardCompatibility(state.memory,state.body)});
+  if(state.battery)results.push({name:`배터리 · ${accessoryLabel(state.battery)}`,c:{level:'compatible',label:'호환 확인',reason:'선택한 바디의 배터리 규격 또는 등록된 호환 목록과 일치합니다. 추가 배터리 1개입니다.'}});
   if(state.flash)results.push({name:`플래시 · ${accessoryLabel(state.flash)}`,c:flashCompatibility(state.flash,state.body)});
   if(state.plate)results.push({name:`플레이트 · ${accessoryLabel(state.plate)}`,c:plateCompatibility(state.plate,state.body)});
   const payload=mountedPayloadKg();const downgrade=stabilityDowngrade();
@@ -219,8 +228,8 @@ async function initializeBuilder(){
 }
 await initializeBuilder();
 $('#catalogMode').addEventListener('change',e=>switchMode(e.target.value));$('#search').addEventListener('input',e=>{state.query=e.target.value.trim();renderCatalog()});$('#clearSearch').addEventListener('click',()=>{state.query='';$('#search').value='';renderCatalog()});$('#systemFilter').addEventListener('change',e=>{state.system=e.target.value;state.manufacturer='all';state.mount='all';state.format='all';state.lensType='all';state.focalRange='all';render()});$('#manufacturerFilter').addEventListener('change',e=>{state.manufacturer=e.target.value;state.mount='all';state.format='all';state.lensType='all';state.focalRange='all';render()});$('#mountFilter').addEventListener('change',e=>{state.mount=e.target.value;state.format='all';state.lensType='all';state.focalRange='all';render()});$('#formatFilter').addEventListener('change',e=>{state.format=e.target.value;state.lensType='all';state.focalRange='all';render()});$('#lensTypeFilter').addEventListener('change',e=>{state.lensType=e.target.value;state.focalRange='all';render()});$('#focalLengthFilter').addEventListener('change',e=>{state.focalRange=e.target.value;render()});$('#saleFilter').addEventListener('change',e=>{state.sale=e.target.value;renderCatalog()});$('#compatOnly').addEventListener('change',e=>{state.compatOnly=e.target.checked;state.mount='all';state.format='all';state.lensType='all';state.focalRange='all';render()});
-for(const [selector,key,rows] of [['#memorySelect','memory','memoryCards'],['#flashSelect','flash','flashes'],['#plateSelect','plate','plates'],['#headSelect','head','heads'],['#tripodSelect','tripod','tripods']])$(selector).addEventListener('change',e=>{state[key]=state[rows].find(item=>item.id===e.target.value)||null;render()});
+for(const [selector,key,rows] of [['#batterySelect','battery','batteries'],['#memorySelect','memory','memoryCards'],['#flashSelect','flash','flashes'],['#plateSelect','plate','plates'],['#headSelect','head','heads'],['#tripodSelect','tripod','tripods']])$(selector).addEventListener('change',e=>{state[key]=state[rows].find(item=>item.id===e.target.value)||null;render()});
 function showProductDetail(id){openProductDetail(state.products.find(product=>product.id===id))}
 document.addEventListener('click',e=>{if(e.target.closest('[data-catalog-more]')){showMoreCatalog();return}const b=e.target.closest('[data-body]');if(b){selectBody(b.dataset.body);return}const l=e.target.closest('[data-lens]');if(l){toggleLens(l.dataset.lens);return}if(e.target.closest('[data-remove-body]')){state.body=null;state.lenses=[];state.mode='body';render();return}const rl=e.target.closest('[data-remove-lens]');if(rl){state.lenses=state.lenses.filter(x=>x.id!==rl.dataset.removeLens);render();return}const detail=e.target.closest('[data-product-detail]');if(detail){showProductDetail(detail.dataset.productDetail);return}const slot=e.target.closest('[data-slot-mode]');if(slot){switchMode(slot.dataset.slotMode);document.querySelector('.catalog-pane')?.scrollIntoView({behavior:'smooth',block:'start'})}});
 document.addEventListener('keydown',e=>{if((e.key==='Enter'||e.key===' ')&&e.target.matches('[data-product-detail]')){e.preventDefault();showProductDetail(e.target.dataset.productDetail)}});
-$('#resetBtn').addEventListener('click',()=>{state.body=null;state.lenses=[];state.memory=null;state.flash=null;state.plate=null;state.head=null;state.tripod=null;state.mode='body';state.query='';state.system='all';state.manufacturer='all';state.mount='all';state.format='all';state.lensType='all';state.focalRange='all';state.sale='all';$('#search').value='';render();toast('구성을 초기화했습니다.')});$('#shareBtn').addEventListener('click',async()=>{try{await navigator.clipboard.writeText(location.href);toast('공유 링크를 복사했습니다.')}catch{toast('주소창의 URL을 복사해 주세요.')}});
+$('#resetBtn').addEventListener('click',()=>{state.body=null;state.lenses=[];state.battery=null;state.memory=null;state.flash=null;state.plate=null;state.head=null;state.tripod=null;state.mode='body';state.query='';state.system='all';state.manufacturer='all';state.mount='all';state.format='all';state.lensType='all';state.focalRange='all';state.sale='all';$('#search').value='';render();toast('구성을 초기화했습니다.')});$('#shareBtn').addEventListener('click',async()=>{try{await navigator.clipboard.writeText(location.href);toast('공유 링크를 복사했습니다.')}catch{toast('주소창의 URL을 복사해 주세요.')}});

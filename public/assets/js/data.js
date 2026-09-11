@@ -336,6 +336,11 @@ export function sortManufacturers(values,order=[]){
 
 export function batteryMatchesBody(battery, body){
   if(!battery || !body) return false;
+  const declared=String(body.specs?.['배터리 모델']||'').trim();
+  if(declared&&normalizeSearch(battery.manufacturer||'')===normalizeSearch(body.manufacturer||'')){
+    const models=declared.split(/[,/;|\n]+/).map(normalizeSearch);
+    if(models.includes(normalizeSearch(battery.modelCode||battery.officialName||'')))return true;
+  }
   const label = normalizeSearch(productLabel(body));
   const modelCode = normalizeSearch(body.modelCode || '');
   const names = Array.isArray(battery.compatibleNames) ? battery.compatibleNames : [];

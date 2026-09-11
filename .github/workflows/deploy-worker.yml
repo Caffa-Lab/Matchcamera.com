@@ -38,6 +38,7 @@ jobs:
           node scripts/test_price_details.mjs
           node scripts/test_remaining_catalog.mjs
           node scripts/test_support_compatibility.mjs
+          node scripts/test_battery_compatibility.mjs
           node scripts/test_programs.mjs
           python3 scripts/check_homepage.py
 

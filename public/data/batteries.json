@@ -4,14 +4,17 @@
     "manufacturer": "Sony",
     "officialName": "NP-SA100",
     "compatibleNames": [
-      "Sony α7R VI"
+      "Sony α7R VI",
+      "Sony Cinema Line FX5"
     ],
     "compatibleModelCodes": [
-      "ILCE-7RM6"
+      "ILCE-7RM6",
+      "ILME-FX5"
     ],
     "compatiblePrefixes": [],
     "includedWithNames": [
-      "Sony α7R VI"
+      "Sony α7R VI",
+      "Sony Cinema Line FX5"
     ],
     "capacityMah": 2670,
     "voltageV": 7.82,
@@ -28,12 +31,12 @@
       "DC-C2"
     ],
     "currentSale": "예",
-    "note": "Sony 차세대 α용 고용량 배터리. α7R VI 기본 구성품이며 NP-FZ100과는 별도 규격입니다.",
+    "note": "Sony SA 시리즈 고용량 배터리. α7R VI·FX5 기본 구성품이며 NP-FZ100과는 별도 규격입니다.",
     "currentPriceKrw": 149000,
     "priceType": "한국 공식 판매가",
     "priceSourceName": "Sony Korea",
-    "priceSource": "https://www.sony.co.kr/electronics/interchangeable-lens-cameras-batteries-chargers/np-sa100",
-    "priceDate": "2026-08-30",
+    "priceSource": "https://www.sony.co.kr/electronics/interchangeable-lens-cameras/ilce-7rm6?locale=ko_KR",
+    "priceDate": "2026-09-11",
     "priceVerification": "한국 공식 사이트 확인",
     "imageSrc": "/assets/images/accessories/batteries/sony/sony-np-sa100.webp",
     "imageSourcePage": "https://support.d-imaging.sony.co.jp/www/cscs/accessories/?area=ap&lang=ko&mdl=NP-SA100",
@@ -43,7 +46,14 @@
     "imageWidth": 144,
     "imageHeight": 108,
     "imageFetchedAt": "2026-08-30T00:00:00+00:00",
-    "imageUsageReviewRequired": true
+    "imageUsageReviewRequired": true,
+    "modelCode": "NP-SA100",
+    "officialSource": "https://www.sony.co.kr/electronics/interchangeable-lens-cameras-batteries-chargers/np-sa100",
+    "verifiedAt": "2026-09-11",
+    "compatibilitySources": [
+      "https://www.sony.co.kr/electronics/interchangeable-lens-cameras/ilce-7rm6/specifications",
+      "https://www.sony.co.kr/electronics/interchangeable-lens-cameras/ilme-fx5/specifications"
+    ]
   },
   {
     "id": "sony-np-fz100",

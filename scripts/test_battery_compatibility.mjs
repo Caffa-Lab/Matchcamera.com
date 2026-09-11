@@ -1,0 +1,25 @@
+import assert from 'node:assert/strict';
+import {readFile} from 'node:fs/promises';
+import {batteryMatchesBody,findBatteriesForBody} from '../public/assets/js/data.js';
+
+const read=async name=>JSON.parse(await readFile(new URL(`../public/data/${name}.json`,import.meta.url),'utf8'));
+const batteries=await read('batteries'),products=await read('products');
+const sa=batteries.find(b=>b.id==='sony-np-sa100');
+const fz=batteries.find(b=>b.id==='sony-np-fz100');
+const body=code=>products.find(p=>p.type==='바디'&&p.modelCode===code);
+assert.equal(batteries.filter(b=>b.id==='sony-np-sa100').length,1);
+assert.equal(sa.currentPriceKrw,149000);
+assert.equal(sa.capacityMah,2670);
+assert.equal(sa.weightG,89);
+assert.equal(batteryMatchesBody(sa,body('ILCE-7RM6')),true);
+assert.equal(batteryMatchesBody(fz,body('ILCE-7RM6')),false,'SA and Z series must not interchange');
+assert.equal(batteryMatchesBody(sa,body('ILCE-7RM5')),false);
+assert.equal(batteryMatchesBody(fz,body('ILCE-7RM5')),true);
+assert(findBatteriesForBody({manufacturer:'Sony',modelCode:'unlisted',specs:{'배터리 모델':'NP-FZ100'}},batteries).includes(fz),'explicit battery specifications support bodies missing from legacy name lists');
+assert.equal(batteryMatchesBody(sa,{manufacturer:'Sony',modelCode:'ILME-FX5'}),true);
+assert.equal(batteryMatchesBody(sa,{manufacturer:'Sony',modelCode:'ILCE-7RM60'}),false,'no model-prefix guesses');
+assert.equal(batteryMatchesBody(sa,{manufacturer:'Canon',specs:{'배터리 모델':'NP-SA100'}}),false);
+assert.equal(batteryMatchesBody(sa,null),false);
+assert.deepEqual(findBatteriesForBody({manufacturer:'Sony',officialName:'Unknown'},batteries),[]);
+assert((await readFile(new URL('../public'+sa.imageSrc,import.meta.url))).length>0);
+console.log('Battery compatibility: OK');
