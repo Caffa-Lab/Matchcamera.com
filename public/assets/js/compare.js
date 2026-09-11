@@ -58,7 +58,7 @@ function comparisonKeys(){
   return [...base,...[...extra].filter(key=>!base.includes(key))];
 }
 
-const displayValue=value=>hasValue(value)?esc(String(value)):'<span class="compare-missing">-</span>';
+const displayValue=value=>hasValue(value)?esc(String(value)):'<span class="compare-missing">공식 정보 미확인</span>';
 
 function renderComparison(){
   $('#compareProducts').innerHTML=productCard('a')+productCard('b');

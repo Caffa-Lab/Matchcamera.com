@@ -11,7 +11,15 @@
     "weightG": 439,
     "currentSale": "확인 필요",
     "officialSource": "https://www.sony.co.kr/electronics/interchangeable-lens-cameras-flashes-lights/hvl-f60rm2",
-    "verifiedAt": "2026-09-01"
+    "verifiedAt": "2026-09-01",
+    "imageSrc": "/assets/images/accessories/verified/sony-hvl-f60rm2.webp",
+    "imageSourcePage": "https://www.sony.jp/ichigan/products/HVL-F60RM2/",
+    "imageSourceUrl": "https://www.sony.jp/products/picture/HVL-F60RM2.jpg",
+    "imageFetchedAt": "2026-09-11",
+    "imageWidth": 626,
+    "imageHeight": 470,
+    "imageMethod": "official-exact-model",
+    "imageUsageReviewRequired": true
   },
   {
     "id": "sony-hvl-f46rm",
@@ -25,7 +33,15 @@
     "weightG": 308,
     "currentSale": "확인 필요",
     "officialSource": "https://www.sony.co.kr/electronics/interchangeable-lens-cameras-flashes-lights/hvl-f46rm",
-    "verifiedAt": "2026-09-01"
+    "verifiedAt": "2026-09-01",
+    "imageSrc": "/assets/images/accessories/verified/sony-hvl-f46rm.webp",
+    "imageSourcePage": "https://www.sony.jp/ichigan/products/HVL-F46RM/",
+    "imageSourceUrl": "https://www.sony.jp/products/picture/HVL-F46RM.jpg",
+    "imageFetchedAt": "2026-09-11",
+    "imageWidth": 626,
+    "imageHeight": 470,
+    "imageMethod": "official-exact-model",
+    "imageUsageReviewRequired": true
   },
   {
     "id": "canon-speedlite-el-5",
@@ -39,7 +55,15 @@
     "weightG": 491,
     "currentSale": "확인 필요",
     "officialSource": "https://www.canon-europe.com/cameras/speedlite-flash-el-5/",
-    "verifiedAt": "2026-09-01"
+    "verifiedAt": "2026-09-01",
+    "imageSrc": "/assets/images/accessories/verified/canon-speedlite-el-5.webp",
+    "imageSourcePage": "https://asia.canon/en/consumer/speedlite-el-5/main/product",
+    "imageSourceUrl": "https://asia.canon/media/image/2022/10/30/0b3831745cc44c74ba1d2b9e9560360f_01_EL-5_TheFront.png",
+    "imageFetchedAt": "2026-09-11",
+    "imageWidth": 362,
+    "imageHeight": 320,
+    "imageMethod": "official-exact-model",
+    "imageUsageReviewRequired": true
   },
   {
     "id": "nikon-sb-5000",
@@ -53,7 +77,15 @@
     "weightG": 420,
     "currentSale": "확인 필요",
     "officialSource": "https://imaging.nikon.com/imaging/lineup/speedlights/sb-5000/",
-    "verifiedAt": "2026-09-01"
+    "verifiedAt": "2026-09-01",
+    "imageSrc": "/assets/images/accessories/verified/nikon-sb-5000.webp",
+    "imageSourcePage": "https://imaging.nikon.com/imaging/lineup/speedlights/sb-5000/",
+    "imageSourceUrl": "https://imaging.nikon.com/imaging/lineup/speedlights/sb-5000/img/product_01_01.jpg",
+    "imageFetchedAt": "2026-09-11",
+    "imageWidth": 900,
+    "imageHeight": 555,
+    "imageMethod": "official-exact-model",
+    "imageUsageReviewRequired": true
   },
   {
     "id": "fujifilm-ef-x500",
@@ -67,7 +99,15 @@
     "weightG": 380,
     "currentSale": "확인 필요",
     "officialSource": "https://fujifilm-x.com/global/products/accessories/ef-x500/",
-    "verifiedAt": "2026-09-01"
+    "verifiedAt": "2026-09-01",
+    "imageSrc": "/assets/images/accessories/verified/fujifilm-ef-x500.webp",
+    "imageSourcePage": "https://www.fujifilm-x.com/global/products/accessories/ef-x500/",
+    "imageSourceUrl": "https://fujifilm-x.b-cdn.net/wp-content/uploads/2019/10/shoe-mount-flash-ef-x500_thum.jpg",
+    "imageFetchedAt": "2026-09-11",
+    "imageWidth": 480,
+    "imageHeight": 480,
+    "imageMethod": "official-exact-model",
+    "imageUsageReviewRequired": true
   },
   {
     "id": "panasonic-dmw-fl580l",
@@ -81,7 +121,15 @@
     "weightG": 340,
     "currentSale": "확인 필요",
     "officialSource": "https://panasonic.jp/dc/products/accessories/dmw_fl580l.html",
-    "verifiedAt": "2026-09-01"
+    "verifiedAt": "2026-09-01",
+    "imageSrc": "/assets/images/accessories/verified/panasonic-dmw-fl580l.webp",
+    "imageSourcePage": "https://panasonic.jp/consumables/products/DMW-FL580L.html",
+    "imageSourceUrl": "https://panasonicjp.scene7.com/is/image/panasonicjp/DMW-FL580L_720712?wid=1200&hei=630",
+    "imageFetchedAt": "2026-09-11",
+    "imageWidth": 900,
+    "imageHeight": 473,
+    "imageMethod": "official-exact-model",
+    "imageUsageReviewRequired": true
   },
   {
     "id": "om-system-fl-700wr",
@@ -95,7 +143,15 @@
     "weightG": 303,
     "currentSale": "확인 필요",
     "officialSource": "https://explore.omsystem.com/kr/ko/fl-700wr",
-    "verifiedAt": "2026-09-01"
+    "verifiedAt": "2026-09-01",
+    "imageSrc": "/assets/images/accessories/verified/om-system-fl-700wr.webp",
+    "imageSourcePage": "https://explore.omsystem.com/us/en/fl-700wr-electronic-flash",
+    "imageSourceUrl": "https://nala.explore.omsystem.com/media/catalog/product/transparent/f/l/fl-700wr_01_0_85.webp?width=800&height=&optimize=medium&fit=bounds",
+    "imageFetchedAt": "2026-09-11",
+    "imageWidth": 800,
+    "imageHeight": 800,
+    "imageMethod": "official-exact-model",
+    "imageUsageReviewRequired": true
   },
   {
     "id": "godox-v1pro-s",
@@ -108,8 +164,17 @@
     "guideNumber": null,
     "weightG": 580,
     "currentSale": "확인 필요",
-    "officialSource": "https://www.godox.com/product-a/V1Pro.html",
-    "verifiedAt": "2026-09-01"
+    "officialSource": "https://www.godox.com/product-b/V1Pro.html",
+    "verifiedAt": "2026-09-01",
+    "imageSrc": "/assets/images/accessories/verified/godox-v1pro-s.webp",
+    "imageSourcePage": "https://www.godox.com/product-b/V1Pro.html",
+    "imageSourceUrl": "https://www.godox.com/static/upload/image/20240119/1705632520588116.jpg",
+    "imageFetchedAt": "2026-09-11",
+    "imageWidth": 285,
+    "imageHeight": 240,
+    "imageMethod": "official-series-representative",
+    "imageUsageReviewRequired": true,
+    "imageNote": "V1Pro 시리즈 대표 이미지 · 카메라별 접점은 다릅니다."
   },
   {
     "id": "godox-v1pro-c",
@@ -122,8 +187,17 @@
     "guideNumber": null,
     "weightG": 580,
     "currentSale": "확인 필요",
-    "officialSource": "https://www.godox.com/product-a/V1Pro.html",
-    "verifiedAt": "2026-09-01"
+    "officialSource": "https://www.godox.com/product-b/V1Pro.html",
+    "verifiedAt": "2026-09-01",
+    "imageSrc": "/assets/images/accessories/verified/godox-v1pro-c.webp",
+    "imageSourcePage": "https://www.godox.com/product-b/V1Pro.html",
+    "imageSourceUrl": "https://www.godox.com/static/upload/image/20240119/1705632520588116.jpg",
+    "imageFetchedAt": "2026-09-11",
+    "imageWidth": 285,
+    "imageHeight": 240,
+    "imageMethod": "official-series-representative",
+    "imageUsageReviewRequired": true,
+    "imageNote": "V1Pro 시리즈 대표 이미지 · 카메라별 접점은 다릅니다."
   },
   {
     "id": "godox-v1pro-n",
@@ -136,8 +210,17 @@
     "guideNumber": null,
     "weightG": 580,
     "currentSale": "확인 필요",
-    "officialSource": "https://www.godox.com/product-a/V1Pro.html",
-    "verifiedAt": "2026-09-01"
+    "officialSource": "https://www.godox.com/product-b/V1Pro.html",
+    "verifiedAt": "2026-09-01",
+    "imageSrc": "/assets/images/accessories/verified/godox-v1pro-n.webp",
+    "imageSourcePage": "https://www.godox.com/product-b/V1Pro.html",
+    "imageSourceUrl": "https://www.godox.com/static/upload/image/20240119/1705632520588116.jpg",
+    "imageFetchedAt": "2026-09-11",
+    "imageWidth": 285,
+    "imageHeight": 240,
+    "imageMethod": "official-series-representative",
+    "imageUsageReviewRequired": true,
+    "imageNote": "V1Pro 시리즈 대표 이미지 · 카메라별 접점은 다릅니다."
   },
   {
     "id": "godox-v1pro-f",
@@ -150,8 +233,17 @@
     "guideNumber": null,
     "weightG": 580,
     "currentSale": "확인 필요",
-    "officialSource": "https://www.godox.com/product-a/V1Pro.html",
-    "verifiedAt": "2026-09-01"
+    "officialSource": "https://www.godox.com/product-b/V1Pro.html",
+    "verifiedAt": "2026-09-01",
+    "imageSrc": "/assets/images/accessories/verified/godox-v1pro-f.webp",
+    "imageSourcePage": "https://www.godox.com/product-b/V1Pro.html",
+    "imageSourceUrl": "https://www.godox.com/static/upload/image/20240119/1705632520588116.jpg",
+    "imageFetchedAt": "2026-09-11",
+    "imageWidth": 285,
+    "imageHeight": 240,
+    "imageMethod": "official-series-representative",
+    "imageUsageReviewRequired": true,
+    "imageNote": "V1Pro 시리즈 대표 이미지 · 카메라별 접점은 다릅니다."
   },
   {
     "id": "godox-v1pro-o",
@@ -164,7 +256,16 @@
     "guideNumber": null,
     "weightG": 580,
     "currentSale": "확인 필요",
-    "officialSource": "https://www.godox.com/product-a/V1Pro.html",
-    "verifiedAt": "2026-09-01"
+    "officialSource": "https://www.godox.com/product-b/V1Pro.html",
+    "verifiedAt": "2026-09-01",
+    "imageSrc": "/assets/images/accessories/verified/godox-v1pro-o.webp",
+    "imageSourcePage": "https://www.godox.com/product-b/V1Pro.html",
+    "imageSourceUrl": "https://www.godox.com/static/upload/image/20240119/1705632520588116.jpg",
+    "imageFetchedAt": "2026-09-11",
+    "imageWidth": 285,
+    "imageHeight": 240,
+    "imageMethod": "official-series-representative",
+    "imageUsageReviewRequired": true,
+    "imageNote": "V1Pro 시리즈 대표 이미지 · 카메라별 접점은 다릅니다."
   }
 ]

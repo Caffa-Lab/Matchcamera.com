@@ -4662,7 +4662,7 @@
     "currentSale": "아니오",
     "currentPriceKrw": null,
     "imageSrc": "/assets/images/products/canon/verified-4846bf253372e4ea.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 55,
     "exifAliases": [
       "canon-렌즈-canon-ef-m-11-22mm",
       "Canon EF-M 11-22mm F4-5.6 IS STM",
@@ -4718,7 +4718,7 @@
     "currentSale": "아니오",
     "currentPriceKrw": null,
     "imageSrc": "/assets/images/products/canon/verified-48fc1f960bb690a2.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 52,
     "exifAliases": [
       "canon-렌즈-canon-ef-m-18-55mm",
       "Canon EF-M 18-55mm F3.5-5.6 IS STM",
@@ -4774,7 +4774,7 @@
     "currentSale": "아니오",
     "currentPriceKrw": null,
     "imageSrc": "/assets/images/products/canon/verified-35536e1dcb9882b7.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 43,
     "exifAliases": [
       "canon-렌즈-canon-ef-m-22mm",
       "Canon EF-M 22mm F2 STM",
@@ -4830,7 +4830,7 @@
     "currentSale": "아니오",
     "currentPriceKrw": null,
     "imageSrc": "/assets/images/products/canon/verified-2f232810564f9f1f.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 43,
     "exifAliases": [
       "canon-렌즈-canon-ef-m-32mm",
       "Canon EF-M 32mm F1.4 STM",
@@ -4858,7 +4858,7 @@
     "currentSale": "아니오",
     "currentPriceKrw": null,
     "imageSrc": "/assets/images/products/canon/verified-5d21b4ac668ca13d.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 52,
     "exifAliases": [
       "canon-렌즈-canon-ef-m-55-200mm",
       "Canon EF-M 55-200mm F4.5-6.3 IS STM",
@@ -4886,7 +4886,7 @@
     "currentSale": "예",
     "currentPriceKrw": 2299000,
     "imageSrc": "/assets/images/products/canon/verified-1ca95071e72f52f4.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 3,
     "exifAliases": [
       "canon-렌즈-canon-rf-rf7-14mm",
       "Canon RF7-14mm F2.8-3.5 L Fisheye STM",
@@ -4942,7 +4942,7 @@
     "currentSale": "예",
     "currentPriceKrw": 1929000,
     "imageSrc": "/assets/images/products/canon/verified-4d827a06437c1ff7.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 77,
     "exifAliases": [
       "canon-렌즈-canon-rf-rf14-35mm",
       "Canon RF14-35mm F4 L IS USM",
@@ -4970,7 +4970,7 @@
     "currentSale": "예",
     "currentPriceKrw": 759000,
     "imageSrc": "/assets/images/products/canon/verified-ccb43181ace95d3f.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 67,
     "exifAliases": [
       "canon-렌즈-canon-rf-rf15-30mm",
       "Canon RF15-30mm F4.5-6.3 IS STM",
@@ -4998,7 +4998,7 @@
     "currentSale": "예",
     "currentPriceKrw": 3209000,
     "imageSrc": "/assets/images/products/canon/verified-2085bc241e58ffdc.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 82,
     "exifAliases": [
       "canon-렌즈-canon-rf-rf15-35mm",
       "Canon RF15-35mm F2.8 L IS USM",
@@ -5026,7 +5026,7 @@
     "currentSale": "예",
     "currentPriceKrw": 1579000,
     "imageSrc": "/assets/images/products/canon/verified-71f5c1454689fd4c.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 67,
     "exifAliases": [
       "canon-렌즈-canon-rf-rf16-28mm",
       "Canon RF16-28mm F2.8 IS STM",
@@ -5054,7 +5054,7 @@
     "currentSale": "예",
     "currentPriceKrw": 439000,
     "imageSrc": "/assets/images/products/canon/verified-92aecde38273860a.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 58,
     "exifAliases": [
       "canon-렌즈-canon-rf-rf24-50mm",
       "Canon RF24-50mm F4.5-6.3 IS STM",
@@ -5082,7 +5082,7 @@
     "currentSale": "예",
     "currentPriceKrw": 3299000,
     "imageSrc": "/assets/images/products/canon/verified-8b452d3e8012f0de.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 82,
     "exifAliases": [
       "canon-렌즈-canon-rf-rf24-70mm",
       "Canon RF24-70mm F2.8 L IS USM",
@@ -5110,7 +5110,7 @@
     "currentSale": "예",
     "currentPriceKrw": 4299000,
     "imageSrc": "/assets/images/products/canon/verified-719ca6fcc1c96e43.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 82,
     "exifAliases": [
       "canon-렌즈-canon-rf-rf24-105mm",
       "Canon RF24-105mm F2.8 L IS USM Z",
@@ -5138,7 +5138,7 @@
     "currentSale": "예",
     "currentPriceKrw": 1759000,
     "imageSrc": "/assets/images/products/canon/verified-95dd7838bd074fdc.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 77,
     "exifAliases": [
       "canon-렌즈-canon-rf-rf24-105mm-2",
       "Canon RF24-105mm F4 L IS USM",
@@ -5166,7 +5166,7 @@
     "currentSale": "예",
     "currentPriceKrw": 575000,
     "imageSrc": "/assets/images/products/canon/verified-9ead6866cf4fba97.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 67,
     "exifAliases": [
       "canon-렌즈-canon-rf-rf24-105mm-3",
       "Canon RF24-105mm F4-7.1 IS STM",
@@ -5194,7 +5194,7 @@
     "currentSale": "예",
     "currentPriceKrw": 1405000,
     "imageSrc": "/assets/images/products/canon/verified-2261c323714d5ca3.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 72,
     "exifAliases": [
       "canon-렌즈-canon-rf-rf24-240mm",
       "Canon RF24-240mm F4-6.3 IS USM",
@@ -5222,7 +5222,7 @@
     "currentSale": "예",
     "currentPriceKrw": 4159000,
     "imageSrc": "/assets/images/products/canon/verified-3d0b7c997e2d3536.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 95,
     "exifAliases": [
       "canon-렌즈-canon-rf-rf28-70mm",
       "Canon RF28-70mm F2 L USM",
@@ -5250,7 +5250,7 @@
     "currentSale": "예",
     "currentPriceKrw": null,
     "imageSrc": "/assets/images/products/canon/verified-a200aa0b1b8f833a.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 67,
     "exifAliases": [
       "canon-렌즈-canon-rf-rf28-70mm-2",
       "Canon RF28-70mm F2.8 IS STM",
@@ -5278,7 +5278,7 @@
     "currentSale": "예",
     "currentPriceKrw": 3799000,
     "imageSrc": "/assets/images/products/canon/verified-742be59437a08a22.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 77,
     "exifAliases": [
       "canon-렌즈-canon-rf-rf70-200mm",
       "Canon RF70-200mm F2.8 L IS USM",
@@ -5334,7 +5334,7 @@
     "currentSale": "예",
     "currentPriceKrw": 2199000,
     "imageSrc": "/assets/images/products/canon/verified-e61e9f64042f052e.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 77,
     "exifAliases": [
       "canon-렌즈-canon-rf-rf70-200mm-3",
       "Canon RF70-200mm F4 L IS USM",
@@ -5362,7 +5362,7 @@
     "currentSale": "예",
     "currentPriceKrw": 13299000,
     "imageSrc": "/assets/images/products/canon/verified-79e183d90e412332.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 112,
     "exifAliases": [
       "canon-렌즈-canon-rf-rf100-300mm",
       "Canon RF100-300mm F2.8 L IS USM",
@@ -5390,7 +5390,7 @@
     "currentSale": "예",
     "currentPriceKrw": 1099000,
     "imageSrc": "/assets/images/products/canon/verified-d7a537b635b8ba27.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 67,
     "exifAliases": [
       "canon-렌즈-canon-rf-rf100-400mm",
       "Canon RF100-400mm F5.6-8 IS USM",
@@ -5418,7 +5418,7 @@
     "currentSale": "예",
     "currentPriceKrw": 3895000,
     "imageSrc": "/assets/images/products/canon/verified-efc31002b0448946.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 77,
     "exifAliases": [
       "canon-렌즈-canon-rf-rf100-500mm",
       "Canon RF100-500mm F4.5-7.1 L IS USM",
@@ -5446,7 +5446,7 @@
     "currentSale": "예",
     "currentPriceKrw": null,
     "imageSrc": "/assets/images/products/canon/verified-0aea458de092e2bd.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 95,
     "exifAliases": [
       "canon-렌즈-canon-rf-rf200-800mm",
       "Canon RF200-800mm F6.3-9 IS USM",
@@ -5474,7 +5474,7 @@
     "currentSale": "예",
     "currentPriceKrw": 479000,
     "imageSrc": "/assets/images/products/canon/verified-4d3e71ef03858dcb.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 49,
     "exifAliases": [
       "canon-렌즈-canon-rf-rf-s10-18mm",
       "Canon RF-S10-18mm F4.5-6.3 IS STM",
@@ -5502,7 +5502,7 @@
     "currentSale": "예",
     "currentPriceKrw": 399000,
     "imageSrc": "/assets/images/products/canon/verified-aa7bfb2b1e9688d9.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 49,
     "exifAliases": [
       "canon-렌즈-canon-rf-rf-s18-45mm",
       "Canon RF-S18-45mm F4.5-6.3 IS STM",
@@ -5530,7 +5530,7 @@
     "currentSale": "예",
     "currentPriceKrw": 649000,
     "imageSrc": "/assets/images/products/canon/verified-de11447fa998f097.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 55,
     "exifAliases": [
       "canon-렌즈-canon-rf-rf-s18-150mm",
       "Canon RF-S18-150mm F3.5-6.3 IS STM",
@@ -5558,7 +5558,7 @@
     "currentSale": "예",
     "currentPriceKrw": 499000,
     "imageSrc": "/assets/images/products/canon/verified-3bb1463efb10e66d.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 55,
     "exifAliases": [
       "canon-렌즈-canon-rf-rf-s55-210mm",
       "Canon RF-S55-210mm F5-7.1 IS STM",
@@ -5614,7 +5614,7 @@
     "currentSale": "예",
     "currentPriceKrw": 379000,
     "imageSrc": "/assets/images/products/canon/verified-c18690605e23dd56.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 43,
     "exifAliases": [
       "canon-렌즈-canon-rf-rf16mm",
       "Canon RF16mm F2.8 STM",
@@ -5642,7 +5642,7 @@
     "currentSale": "예",
     "currentPriceKrw": 2099000,
     "imageSrc": "/assets/images/products/canon/verified-67dbfe92d147e7c3.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 67,
     "exifAliases": [
       "canon-렌즈-canon-rf-rf24mm",
       "Canon RF24mm F1.4 L VCM",
@@ -5670,7 +5670,7 @@
     "currentSale": "예",
     "currentPriceKrw": 829000,
     "imageSrc": "/assets/images/products/canon/verified-5bf569420ab38b80.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 52,
     "exifAliases": [
       "canon-렌즈-canon-rf-rf24mm-2",
       "Canon RF24mm F1.8 MACRO IS STM",
@@ -5698,7 +5698,7 @@
     "currentSale": "예",
     "currentPriceKrw": 425000,
     "imageSrc": "/assets/images/products/canon/verified-5bc5c96ba14e3b09.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 55,
     "exifAliases": [
       "canon-렌즈-canon-rf-rf28mm",
       "Canon RF28mm F2.8 STM",
@@ -5726,7 +5726,7 @@
     "currentSale": "예",
     "currentPriceKrw": 2099000,
     "imageSrc": "/assets/images/products/canon/verified-c3ae642c8be75453.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 67,
     "exifAliases": [
       "canon-렌즈-canon-rf-rf35mm",
       "Canon RF35mm F1.4 L VCM",
@@ -5754,7 +5754,7 @@
     "currentSale": "예",
     "currentPriceKrw": 809000,
     "imageSrc": "/assets/images/products/canon/verified-fc897335d04109af.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 52,
     "exifAliases": [
       "canon-렌즈-canon-rf-rf35mm-2",
       "Canon RF35mm F1.8 Macro IS STM",
@@ -5782,7 +5782,7 @@
     "currentSale": "예",
     "currentPriceKrw": 3199000,
     "imageSrc": "/assets/images/products/canon/verified-d6f7cac61344c607.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 77,
     "exifAliases": [
       "canon-렌즈-canon-rf-rf50mm",
       "Canon RF50mm F1.2 L USM",
@@ -5810,7 +5810,7 @@
     "currentSale": "예",
     "currentPriceKrw": 1999000,
     "imageSrc": "/assets/images/products/canon/verified-412e8f6d111e6d4a.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 67,
     "exifAliases": [
       "canon-렌즈-canon-rf-rf50mm-2",
       "Canon RF50mm F1.4 L VCM",
@@ -7311,7 +7311,7 @@
     "currentSale": "확인 필요",
     "currentPriceKrw": 498000,
     "imageSrc": "/assets/images/products/nikon/verified-7ebf8da2bbc9c69b.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 67,
     "exifAliases": [
       "nikon-렌즈-nikon-z-nikkor-z-dx-12-28mm-f3-5-5-6-pz-vr",
       "Nikon NIKKOR Z DX 12-28mm F3.5-5.6 PZ VR",
@@ -7338,7 +7338,7 @@
     "currentSale": "확인 필요",
     "currentPriceKrw": 3240000,
     "imageSrc": "/assets/images/products/nikon/verified-69e5b950eabb84fb.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 112,
     "exifAliases": [
       "nikon-렌즈-nikon-z-nikkor-z-14-24mm-f2-8-s",
       "Nikon NIKKOR Z 14-24mm F2.8 S",
@@ -7365,7 +7365,7 @@
     "currentSale": "확인 필요",
     "currentPriceKrw": 1480000,
     "imageSrc": "/assets/images/products/nikon/verified-ebc25c18365fd786.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 82,
     "exifAliases": [
       "nikon-렌즈-nikon-z-nikkor-z-14-30mm-f4-s",
       "Nikon NIKKOR Z 14-30mm F4 S",
@@ -7392,7 +7392,7 @@
     "currentSale": "확인 필요",
     "currentPriceKrw": 1160000,
     "imageSrc": "/assets/images/products/nikon/verified-f6d0f88766374454.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 67,
     "exifAliases": [
       "nikon-렌즈-nikon-z-nikkor-z-dx-16-50mm-f2-8-vr",
       "Nikon NIKKOR Z DX 16-50mm F2.8 VR",
@@ -7419,7 +7419,7 @@
     "currentSale": "확인 필요",
     "currentPriceKrw": 398000,
     "imageSrc": "/assets/images/products/nikon/verified-fdc6278041ea4559.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 46,
     "exifAliases": [
       "nikon-렌즈-nikon-z-nikkor-z-dx-16-50mm-f3-5-6-3-vr",
       "Nikon NIKKOR Z DX 16-50mm F3.5-6.3 VR",
@@ -7446,7 +7446,7 @@
     "currentSale": "확인 필요",
     "currentPriceKrw": 1580000,
     "imageSrc": "/assets/images/products/nikon/verified-67885c061f4dcfd5.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 67,
     "exifAliases": [
       "nikon-렌즈-nikon-z-nikkor-z-17-28mm-f2-8",
       "Nikon NIKKOR Z 17-28mm F2.8",
@@ -7473,7 +7473,7 @@
     "currentSale": "확인 필요",
     "currentPriceKrw": 778000,
     "imageSrc": "/assets/images/products/nikon/verified-1c7f789e60e83b32.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 62,
     "exifAliases": [
       "nikon-렌즈-nikon-z-nikkor-z-dx-18-140mm-f3-5-6-3-vr",
       "Nikon NIKKOR Z DX 18-140mm F3.5-6.3 VR",
@@ -7500,7 +7500,7 @@
     "currentSale": "확인 필요",
     "currentPriceKrw": 1348000,
     "imageSrc": "/assets/images/products/nikon/verified-63bb5e485ca087b4.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 77,
     "exifAliases": [
       "nikon-렌즈-nikon-z-nikkor-z-20mm-f1-8-s",
       "Nikon NIKKOR Z 20mm F1.8 S",
@@ -7527,7 +7527,7 @@
     "currentSale": "확인 필요",
     "currentPriceKrw": 1298000,
     "imageSrc": "/assets/images/products/nikon/verified-515396cae84ff772.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 72,
     "exifAliases": [
       "nikon-렌즈-nikon-z-nikkor-z-24mm-f1-8-s",
       "Nikon NIKKOR Z 24mm F1.8 S",
@@ -7554,7 +7554,7 @@
     "currentSale": "확인 필요",
     "currentPriceKrw": 398000,
     "imageSrc": "/assets/images/products/nikon/verified-5d9b66530db4fbf9.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 46,
     "exifAliases": [
       "nikon-렌즈-nikon-z-nikkor-z-dx-24mm-f1-7",
       "Nikon NIKKOR Z DX 24mm F1.7",
@@ -7581,7 +7581,7 @@
     "currentSale": "확인 필요",
     "currentPriceKrw": 498000,
     "imageSrc": "/assets/images/products/nikon/verified-46aa790ee580c265.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 52,
     "exifAliases": [
       "nikon-렌즈-nikon-z-nikkor-z-24-50mm-f4-6-3",
       "Nikon NIKKOR Z 24-50mm F4-6.3",
@@ -7608,7 +7608,7 @@
     "currentSale": "확인 필요",
     "currentPriceKrw": null,
     "imageSrc": "/assets/images/products/nikon/verified-0602b0f17475807f.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 82,
     "exifAliases": [
       "nikon-렌즈-nikon-z-nikkor-z-24-70mm-f2-8-s",
       "Nikon NIKKOR Z 24-70mm F2.8 S",
@@ -7635,7 +7635,7 @@
     "currentSale": "확인 필요",
     "currentPriceKrw": 3600000,
     "imageSrc": "/assets/images/products/nikon/verified-2dac12891f6d37e9.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 77,
     "exifAliases": [
       "nikon-렌즈-nikon-z-nikkor-z-24-70mm-f2-8-s-ii",
       "Nikon NIKKOR Z 24-70mm F2.8 S II",
@@ -7662,7 +7662,7 @@
     "currentSale": "확인 필요",
     "currentPriceKrw": 1100000,
     "imageSrc": "/assets/images/products/nikon/verified-99598d5952b84e27.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 72,
     "exifAliases": [
       "nikon-렌즈-nikon-z-nikkor-z-24-70mm-f4-s",
       "Nikon NIKKOR Z 24-70mm F4 S",
@@ -7689,7 +7689,7 @@
     "currentSale": "확인 필요",
     "currentPriceKrw": 780000,
     "imageSrc": "/assets/images/products/nikon/verified-29c3bff140b207cf.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 67,
     "exifAliases": [
       "nikon-렌즈-nikon-z-nikkor-z-24-105mm-f4-7-1",
       "Nikon NIKKOR Z 24-105mm F4-7.1",
@@ -7716,7 +7716,7 @@
     "currentSale": "확인 필요",
     "currentPriceKrw": 1358000,
     "imageSrc": "/assets/images/products/nikon/verified-93ffa8dedf026b6c.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 77,
     "exifAliases": [
       "nikon-렌즈-nikon-z-nikkor-z-24-120mm-f4-s",
       "Nikon NIKKOR Z 24-120mm F4 S",
@@ -7743,7 +7743,7 @@
     "currentSale": "확인 필요",
     "currentPriceKrw": 1298000,
     "imageSrc": "/assets/images/products/nikon/verified-7b0cd20d95da9987.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 67,
     "exifAliases": [
       "nikon-렌즈-nikon-z-nikkor-z-24-200mm-f4-6-3-vr",
       "Nikon NIKKOR Z 24-200mm F4-6.3 VR",
@@ -7770,7 +7770,7 @@
     "currentSale": "확인 필요",
     "currentPriceKrw": 698000,
     "imageSrc": "/assets/images/products/nikon/verified-f20b071ca3a82d70.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 52,
     "exifAliases": [
       "nikon-렌즈-nikon-z-nikkor-z-26mm-f2-8",
       "Nikon NIKKOR Z 26mm F2.8",
@@ -7797,7 +7797,7 @@
     "currentSale": "확인 필요",
     "currentPriceKrw": 368000,
     "imageSrc": "/assets/images/products/nikon/verified-2cc0edd1bb6dcae4.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 52,
     "exifAliases": [
       "nikon-렌즈-nikon-z-nikkor-z-28mm-f2-8",
       "Nikon NIKKOR Z 28mm F2.8",
@@ -7824,7 +7824,7 @@
     "currentSale": "확인 필요",
     "currentPriceKrw": 398000,
     "imageSrc": "/assets/images/products/nikon/verified-921ea8f968de5b94.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 52,
     "exifAliases": [
       "nikon-렌즈-nikon-z-nikkor-z-28mm-f2-8-se",
       "Nikon NIKKOR Z 28mm F2.8 SE",
@@ -7851,7 +7851,7 @@
     "currentSale": "확인 필요",
     "currentPriceKrw": 1238000,
     "imageSrc": "/assets/images/products/nikon/verified-2a8447217dd371b0.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 67,
     "exifAliases": [
       "nikon-렌즈-nikon-z-nikkor-z-28-75mm-f2-8",
       "Nikon NIKKOR Z 28-75mm F2.8",
@@ -7878,7 +7878,7 @@
     "currentSale": "확인 필요",
     "currentPriceKrw": 3080000,
     "imageSrc": "/assets/images/products/nikon/verified-dc309cb32f8ae207.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 95,
     "exifAliases": [
       "nikon-렌즈-nikon-z-nikkor-z-28-135mm-f4-pz",
       "Nikon NIKKOR Z 28-135mm F4 PZ",
@@ -7905,7 +7905,7 @@
     "currentSale": "확인 필요",
     "currentPriceKrw": 1980000,
     "imageSrc": "/assets/images/products/nikon/verified-375d2302390624d6.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 77,
     "exifAliases": [
       "nikon-렌즈-nikon-z-nikkor-z-28-400mm-f4-8-vr",
       "Nikon NIKKOR Z 28-400mm F4-8 VR",
@@ -7932,7 +7932,7 @@
     "currentSale": "확인 필요",
     "currentPriceKrw": 3980000,
     "imageSrc": "/assets/images/products/nikon/verified-4e80d3c2f32b5f52.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 82,
     "exifAliases": [
       "nikon-렌즈-nikon-z-nikkor-z-35mm-f1-2-s",
       "Nikon NIKKOR Z 35mm F1.2 S",
@@ -7959,7 +7959,7 @@
     "currentSale": "확인 필요",
     "currentPriceKrw": 890000,
     "imageSrc": "/assets/images/products/nikon/verified-a127ae10e062dcbd.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 62,
     "exifAliases": [
       "nikon-렌즈-nikon-z-nikkor-z-35mm-f1-4",
       "Nikon NIKKOR Z 35mm F1.4",
@@ -7986,7 +7986,7 @@
     "currentSale": "확인 필요",
     "currentPriceKrw": 980000,
     "imageSrc": "/assets/images/products/nikon/verified-5cb245a9c87049c2.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 62,
     "exifAliases": [
       "nikon-렌즈-nikon-z-nikkor-z-35mm-f1-8-s",
       "Nikon NIKKOR Z 35mm F1.8 S",
@@ -8013,7 +8013,7 @@
     "currentSale": "확인 필요",
     "currentPriceKrw": 590000,
     "imageSrc": "/assets/images/products/nikon/verified-c8c4ec238cc177b4.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 52,
     "exifAliases": [
       "nikon-렌즈-nikon-z-nikkor-z-dx-mc-35mm-f1-7",
       "Nikon NIKKOR Z DX MC 35mm F1.7",
@@ -8040,7 +8040,7 @@
     "currentSale": "확인 필요",
     "currentPriceKrw": 368000,
     "imageSrc": "/assets/images/products/nikon/verified-4b472d2365c15624.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 52,
     "exifAliases": [
       "nikon-렌즈-nikon-z-nikkor-z-40mm-f2",
       "Nikon NIKKOR Z 40mm F2",
@@ -8067,7 +8067,7 @@
     "currentSale": "확인 필요",
     "currentPriceKrw": 398000,
     "imageSrc": "/assets/images/products/nikon/verified-af8f11ce5fbbcdd9.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 52,
     "exifAliases": [
       "nikon-렌즈-nikon-z-nikkor-z-40mm-f2-se",
       "Nikon NIKKOR Z 40mm F2 SE",
@@ -8094,7 +8094,7 @@
     "currentSale": "확인 필요",
     "currentPriceKrw": 2780000,
     "imageSrc": "/assets/images/products/nikon/verified-7b92dfcfd9365b97.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 82,
     "exifAliases": [
       "nikon-렌즈-nikon-z-nikkor-z-50mm-f1-2-s",
       "Nikon NIKKOR Z 50mm F1.2 S",
@@ -8121,7 +8121,7 @@
     "currentSale": "확인 필요",
     "currentPriceKrw": 650000,
     "imageSrc": "/assets/images/products/nikon/verified-29c303a6a54f8042.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 62,
     "exifAliases": [
       "nikon-렌즈-nikon-z-nikkor-z-50mm-f1-4",
       "Nikon NIKKOR Z 50mm F1.4",
@@ -8148,7 +8148,7 @@
     "currentSale": "확인 필요",
     "currentPriceKrw": 748000,
     "imageSrc": "/assets/images/products/nikon/verified-ff79397d0953f321.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 62,
     "exifAliases": [
       "nikon-렌즈-nikon-z-nikkor-z-50mm-f1-8-s",
       "Nikon NIKKOR Z 50mm F1.8 S",
@@ -8175,7 +8175,7 @@
     "currentSale": "확인 필요",
     "currentPriceKrw": 798000,
     "imageSrc": "/assets/images/products/nikon/verified-f39bf384948a026e.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 46,
     "exifAliases": [
       "nikon-렌즈-nikon-z-nikkor-z-mc-50mm-f2-8",
       "Nikon NIKKOR Z MC 50mm F2.8",
@@ -8202,7 +8202,7 @@
     "currentSale": "확인 필요",
     "currentPriceKrw": 478000,
     "imageSrc": "/assets/images/products/nikon/verified-759e3ab6a1566a0a.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 62,
     "exifAliases": [
       "nikon-렌즈-nikon-z-nikkor-z-dx-50-250mm-f4-5-6-3-vr",
       "Nikon NIKKOR Z DX 50-250mm F4.5-6.3 VR",
@@ -8229,7 +8229,7 @@
     "currentSale": "확인 필요",
     "currentPriceKrw": 9998000,
     "imageSrc": "/assets/images/products/nikon/verified-1b051e4d96aa3e73.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 82,
     "exifAliases": [
       "nikon-렌즈-nikon-z-nikkor-z-58mm-f0-95-s-noct",
       "Nikon NIKKOR Z 58mm F0.95 S Noct",
@@ -8256,7 +8256,7 @@
     "currentSale": "확인 필요",
     "currentPriceKrw": 1698000,
     "imageSrc": "/assets/images/products/nikon/verified-1ec244088f75696e.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 67,
     "exifAliases": [
       "nikon-렌즈-nikon-z-nikkor-z-70-180mm-f2-8",
       "Nikon NIKKOR Z 70-180mm F2.8",
@@ -8283,7 +8283,7 @@
     "currentSale": "확인 필요",
     "currentPriceKrw": null,
     "imageSrc": "/assets/images/products/nikon/verified-491d2cea2306fcec.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 77,
     "exifAliases": [
       "nikon-렌즈-nikon-z-nikkor-z-70-200mm-f2-8-vr-s",
       "Nikon NIKKOR Z 70-200mm F2.8 VR S",
@@ -8310,7 +8310,7 @@
     "currentSale": "확인 필요",
     "currentPriceKrw": 4350000,
     "imageSrc": "/assets/images/products/nikon/verified-4665d2a2d2c87342.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 77,
     "exifAliases": [
       "nikon-렌즈-nikon-z-nikkor-z-70-200mm-f2-8-vr-s-ii",
       "Nikon NIKKOR Z 70-200mm F2.8 VR S II",
@@ -8337,7 +8337,7 @@
     "currentSale": "확인 필요",
     "currentPriceKrw": 3680000,
     "imageSrc": "/assets/images/products/nikon/verified-db525afb96d5320d.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 82,
     "exifAliases": [
       "nikon-렌즈-nikon-z-nikkor-z-85mm-f1-2-s",
       "Nikon NIKKOR Z 85mm F1.2 S",
@@ -8364,7 +8364,7 @@
     "currentSale": "확인 필요",
     "currentPriceKrw": 980000,
     "imageSrc": "/assets/images/products/nikon/verified-552d2afb19efd3ac.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 67,
     "exifAliases": [
       "nikon-렌즈-nikon-z-nikkor-z-85mm-f1-8-s",
       "Nikon NIKKOR Z 85mm F1.8 S",
@@ -8391,7 +8391,7 @@
     "currentSale": "확인 필요",
     "currentPriceKrw": 3298000,
     "imageSrc": "/assets/images/products/nikon/verified-ba431f0f156a776a.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 77,
     "exifAliases": [
       "nikon-렌즈-nikon-z-nikkor-z-100-400mm-f4-5-5-6-vr-s",
       "Nikon NIKKOR Z 100-400mm F4.5-5.6 VR S",
@@ -8418,7 +8418,7 @@
     "currentSale": "확인 필요",
     "currentPriceKrw": 1340000,
     "imageSrc": "/assets/images/products/nikon/verified-3c3caeb00a775742.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 62,
     "exifAliases": [
       "nikon-렌즈-nikon-z-nikkor-z-mc-105mm-f2-8-vr-s",
       "Nikon NIKKOR Z MC 105mm F2.8 VR S",
@@ -8445,7 +8445,7 @@
     "currentSale": "확인 필요",
     "currentPriceKrw": 3540000,
     "imageSrc": "/assets/images/products/nikon/verified-dc23333cb02141ec.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 82,
     "exifAliases": [
       "nikon-렌즈-nikon-z-nikkor-z-135mm-f1-8-s-plena",
       "Nikon NIKKOR Z 135mm F1.8 S Plena",
@@ -8472,7 +8472,7 @@
     "currentSale": "확인 필요",
     "currentPriceKrw": 2690000,
     "imageSrc": "/assets/images/products/nikon/verified-603212113673ee28.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 95,
     "exifAliases": [
       "nikon-렌즈-nikon-z-nikkor-z-180-600mm-f5-6-6-3-vr",
       "Nikon NIKKOR Z 180-600mm F5.6-6.3 VR",
@@ -8499,7 +8499,7 @@
     "currentSale": "확인 필요",
     "currentPriceKrw": null,
     "imageSrc": "/assets/images/products/nikon/verified-9b3507f51f267996.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 46,
     "exifAliases": [
       "nikon-렌즈-nikon-z-nikkor-z-400mm-f2-8-tc-vr-s",
       "Nikon NIKKOR Z 400mm F2.8 TC VR S",
@@ -8526,7 +8526,7 @@
     "currentSale": "확인 필요",
     "currentPriceKrw": 4180000,
     "imageSrc": "/assets/images/products/nikon/verified-86af3d10c21ba7aa.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 95,
     "exifAliases": [
       "nikon-렌즈-nikon-z-nikkor-z-400mm-f4-5-vr-s",
       "Nikon NIKKOR Z 400mm F4.5 VR S",
@@ -8553,7 +8553,7 @@
     "currentSale": "확인 필요",
     "currentPriceKrw": 20980000,
     "imageSrc": "/assets/images/products/nikon/verified-818495f1498a817b.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 46,
     "exifAliases": [
       "nikon-렌즈-nikon-z-nikkor-z-600mm-f4-tc-vr-s",
       "Nikon NIKKOR Z 600mm F4 TC VR S",
@@ -8580,7 +8580,7 @@
     "currentSale": "확인 필요",
     "currentPriceKrw": 6540000,
     "imageSrc": "/assets/images/products/nikon/verified-6e4bc26e372ee891.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 95,
     "exifAliases": [
       "nikon-렌즈-nikon-z-nikkor-z-600mm-f6-3-vr-s",
       "Nikon NIKKOR Z 600mm F6.3 VR S",
@@ -8607,7 +8607,7 @@
     "currentSale": "확인 필요",
     "currentPriceKrw": 7980000,
     "imageSrc": "/assets/images/products/nikon/verified-52e255e3ff1bd0aa.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 46,
     "exifAliases": [
       "nikon-렌즈-nikon-z-nikkor-z-800mm-f6-3-vr-s",
       "Nikon NIKKOR Z 800mm F6.3 VR S",
@@ -9822,7 +9822,7 @@
     "currentSale": "예",
     "currentPriceKrw": 1099000,
     "imageSrc": "/assets/images/products/fujifilm/verified-595ee07de102fd1a.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 62,
     "exifAliases": [
       "fujifilm-렌즈-fujifilm-x-xf8mmf3-5",
       "Fujifilm XF8mmF3.5 R WR",
@@ -9878,7 +9878,7 @@
     "currentSale": "예",
     "currentPriceKrw": 1299000,
     "imageSrc": "/assets/images/products/fujifilm/verified-febadbf7f08cd990.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 67,
     "exifAliases": [
       "fujifilm-렌즈-fujifilm-x-xf16mmf1-4",
       "Fujifilm XF16mmF1.4 R WR",
@@ -9906,7 +9906,7 @@
     "currentSale": "예",
     "currentPriceKrw": 499000,
     "imageSrc": "/assets/images/products/fujifilm/verified-817c725188d8192b.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 49,
     "exifAliases": [
       "fujifilm-렌즈-fujifilm-x-xf16mmf2-8",
       "Fujifilm XF16mmF2.8 R WR",
@@ -10018,7 +10018,7 @@
     "currentSale": "예",
     "currentPriceKrw": 1199000,
     "imageSrc": "/assets/images/products/fujifilm/verified-96c779db24e7c3ba.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 58,
     "exifAliases": [
       "fujifilm-렌즈-fujifilm-x-xf23mmf1-4-2",
       "Fujifilm XF23mmF1.4 R LM WR",
@@ -10046,7 +10046,7 @@
     "currentSale": "예",
     "currentPriceKrw": 599000,
     "imageSrc": "/assets/images/products/fujifilm/verified-021c7e6945daacee.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 43,
     "exifAliases": [
       "fujifilm-렌즈-fujifilm-x-xf23mmf2",
       "Fujifilm XF23mmF2 R WR",
@@ -10157,7 +10157,7 @@
     "currentSale": "예",
     "currentPriceKrw": 899000,
     "imageSrc": "/assets/images/products/fujifilm/verified-af27794f0f5bb3fb.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 43,
     "exifAliases": [
       "fujifilm-렌즈-fujifilm-x-xf30mmf2-8",
       "Fujifilm XF30mmF2.8 R LM WR Macro",
@@ -10185,7 +10185,7 @@
     "currentSale": "예",
     "currentPriceKrw": 1099000,
     "imageSrc": "/assets/images/products/fujifilm/verified-de7b4dd06ae3762c.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 58,
     "exifAliases": [
       "fujifilm-렌즈-fujifilm-x-xf33mmf1-4",
       "Fujifilm XF33mmF1.4 R LM WR",
@@ -10241,7 +10241,7 @@
     "currentSale": "예",
     "currentPriceKrw": 499000,
     "imageSrc": "/assets/images/products/fujifilm/verified-51defe028fdcf96c.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 43,
     "exifAliases": [
       "fujifilm-렌즈-fujifilm-x-xf35mmf2",
       "Fujifilm XF35mmF2 R WR",
@@ -10297,7 +10297,7 @@
     "currentSale": "예",
     "currentPriceKrw": 599000,
     "imageSrc": "/assets/images/products/fujifilm/verified-263b7ac609a20160.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 46,
     "exifAliases": [
       "fujifilm-렌즈-fujifilm-x-xf50mmf2",
       "Fujifilm XF50mmF2 R WR",
@@ -10353,7 +10353,7 @@
     "currentSale": "아니오",
     "currentPriceKrw": 1799000,
     "imageSrc": "/assets/images/products/fujifilm/verified-d04b1b1af9e4cd77.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 62,
     "exifAliases": [
       "fujifilm-렌즈-fujifilm-x-xf56mmf1-2-2",
       "Fujifilm XF56mmF1.2 R APD",
@@ -10437,7 +10437,7 @@
     "currentSale": "예",
     "currentPriceKrw": 1499000,
     "imageSrc": "/assets/images/products/fujifilm/verified-f60826320aacb33b.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 62,
     "exifAliases": [
       "fujifilm-렌즈-fujifilm-x-xf80mmf2-8",
       "Fujifilm XF80mmF2.8 R LM OIS WR Macro",
@@ -10465,7 +10465,7 @@
     "currentSale": "예",
     "currentPriceKrw": 1099000,
     "imageSrc": "/assets/images/products/fujifilm/verified-6c671771fecac8ae.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 62,
     "exifAliases": [
       "fujifilm-렌즈-fujifilm-x-xf90mmf2",
       "Fujifilm XF90mmF2 R LM WR",
@@ -10493,7 +10493,7 @@
     "currentSale": "예",
     "currentPriceKrw": 7299000,
     "imageSrc": "/assets/images/products/fujifilm/verified-0508f09813813331.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 105,
     "exifAliases": [
       "fujifilm-렌즈-fujifilm-x-xf200mmf2",
       "Fujifilm XF200mmF2 R LM OIS WR",
@@ -10521,7 +10521,7 @@
     "currentSale": "예",
     "currentPriceKrw": 4399000,
     "imageSrc": "/assets/images/products/fujifilm/verified-568342029f1d4826.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 95,
     "exifAliases": [
       "fujifilm-렌즈-fujifilm-x-xf500mmf5-6",
       "Fujifilm XF500mmF5.6 R LM OIS WR",
@@ -10549,7 +10549,7 @@
     "currentSale": "예",
     "currentPriceKrw": 249000,
     "imageSrc": "/assets/images/products/fujifilm/verified-87571b545cf1a8eb.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 43,
     "exifAliases": [
       "fujifilm-렌즈-fujifilm-x-xc35mmf2",
       "Fujifilm XC35mmF2",
@@ -10632,7 +10632,7 @@
     "currentSale": "예",
     "currentPriceKrw": 1299000,
     "imageSrc": "/assets/images/products/fujifilm/verified-ef5a96961a4c8cbd.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 72,
     "exifAliases": [
       "fujifilm-렌즈-fujifilm-x-xf10-24mmf4-2",
       "Fujifilm XF10-24mmF4 R OIS WR",
@@ -10660,7 +10660,7 @@
     "currentSale": "예",
     "currentPriceKrw": 999000,
     "imageSrc": "/assets/images/products/fujifilm/verified-9c6a0eb83d3516d3.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 58,
     "exifAliases": [
       "fujifilm-렌즈-fujifilm-x-xf16-50mmf2-8-4-8",
       "Fujifilm XF16-50mmF2.8-4.8 R LM WR",
@@ -10716,7 +10716,7 @@
     "currentSale": "예",
     "currentPriceKrw": 1699000,
     "imageSrc": "/assets/images/products/fujifilm/verified-ceeccc03783433bc.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 72,
     "exifAliases": [
       "fujifilm-렌즈-fujifilm-x-xf16-55mmf2-8-2",
       "Fujifilm XF16-55mmF2.8 R LM WR II",
@@ -10744,7 +10744,7 @@
     "currentSale": "예",
     "currentPriceKrw": 1049000,
     "imageSrc": "/assets/images/products/fujifilm/verified-6f6dc78c5f781706.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 72,
     "exifAliases": [
       "fujifilm-렌즈-fujifilm-x-xf16-80mmf4",
       "Fujifilm XF16-80mmF4 R OIS WR",
@@ -10800,7 +10800,7 @@
     "currentSale": "예",
     "currentPriceKrw": 1299000,
     "imageSrc": "/assets/images/products/fujifilm/verified-6057a39ca144836f.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 72,
     "exifAliases": [
       "fujifilm-렌즈-fujifilm-x-xf18-120mmf4",
       "Fujifilm XF18-120mmF4 LM PZ WR",
@@ -10828,7 +10828,7 @@
     "currentSale": "예",
     "currentPriceKrw": 1199000,
     "imageSrc": "/assets/images/products/fujifilm/verified-c072367f8b032392.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 67,
     "exifAliases": [
       "fujifilm-렌즈-fujifilm-x-xf18-135mmf3-5-5-6",
       "Fujifilm XF18-135mmF3.5-5.6 R LM OIS WR",
@@ -10856,7 +10856,7 @@
     "currentSale": "예",
     "currentPriceKrw": 2099000,
     "imageSrc": "/assets/images/products/fujifilm/verified-7e5c5df3cef5f85f.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 72,
     "exifAliases": [
       "fujifilm-렌즈-fujifilm-x-xf50-140mmf2-8",
       "Fujifilm XF50-140mmF2.8 R LM OIS WR",
@@ -10912,7 +10912,7 @@
     "currentSale": "예",
     "currentPriceKrw": 999000,
     "imageSrc": "/assets/images/products/fujifilm/verified-612466dd5751cb86.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 67,
     "exifAliases": [
       "fujifilm-렌즈-fujifilm-x-xf70-300mmf4-5-6",
       "Fujifilm XF70-300mmF4-5.6 R LM OIS WR",
@@ -10940,7 +10940,7 @@
     "currentSale": "예",
     "currentPriceKrw": 2399000,
     "imageSrc": "/assets/images/products/fujifilm/verified-fb90c3a04904434a.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 77,
     "exifAliases": [
       "fujifilm-렌즈-fujifilm-x-xf100-400mmf4-5-5-6",
       "Fujifilm XF100-400mmF4.5-5.6 R LM OIS WR",
@@ -10968,7 +10968,7 @@
     "currentSale": "예",
     "currentPriceKrw": 2699000,
     "imageSrc": "/assets/images/products/fujifilm/verified-1649a2949a608242.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 82,
     "exifAliases": [
       "fujifilm-렌즈-fujifilm-x-xf150-600mmf5-6-8",
       "Fujifilm XF150-600mmF5.6-8 R LM OIS WR",
@@ -11024,7 +11024,7 @@
     "currentSale": "예",
     "currentPriceKrw": 349000,
     "imageSrc": "/assets/images/products/fujifilm/verified-009125155e5c4ca6.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 52,
     "exifAliases": [
       "fujifilm-렌즈-fujifilm-x-xc15-45mmf3-5-5-6",
       "Fujifilm XC15-45mmF3.5-5.6 OIS PZ",
@@ -11164,7 +11164,7 @@
     "currentSale": "예",
     "currentPriceKrw": 4999000,
     "imageSrc": "/assets/images/products/fujifilm/verified-3a4f346785c47542.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 82,
     "exifAliases": [
       "fujifilm-렌즈-fujifilm-x-mkx18-55mmt2-9",
       "Fujifilm MKX18-55mmT2.9",
@@ -11191,7 +11191,7 @@
     "currentSale": "예",
     "currentPriceKrw": 5299000,
     "imageSrc": "/assets/images/products/fujifilm/verified-11fdeda0f787e6b1.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 82,
     "exifAliases": [
       "fujifilm-렌즈-fujifilm-x-mkx50-135mmt2-9",
       "Fujifilm MKX50-135mmT2.9",
@@ -11218,7 +11218,7 @@
     "currentSale": "예",
     "currentPriceKrw": 3299000,
     "imageSrc": "/assets/images/products/fujifilm/verified-fb800df9d2febc84.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 82,
     "exifAliases": [
       "fujifilm-렌즈-fujifilm-g-gf23mmf4",
       "Fujifilm GF23mmF4 R LM WR",
@@ -11246,7 +11246,7 @@
     "currentSale": "예",
     "currentPriceKrw": 2199000,
     "imageSrc": "/assets/images/products/fujifilm/verified-85ac4bda37ce8b64.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 58,
     "exifAliases": [
       "fujifilm-렌즈-fujifilm-g-gf30mmf3-5",
       "Fujifilm GF30mmF3.5 R WR",
@@ -11274,7 +11274,7 @@
     "currentSale": "예",
     "currentPriceKrw": 2199000,
     "imageSrc": "/assets/images/products/fujifilm/verified-322976d76bd9330f.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 62,
     "exifAliases": [
       "fujifilm-렌즈-fujifilm-g-gf45mmf2-8",
       "Fujifilm GF45mmF2.8 R WR",
@@ -11302,7 +11302,7 @@
     "currentSale": "예",
     "currentPriceKrw": 1299000,
     "imageSrc": "/assets/images/products/fujifilm/verified-2c4b7ee5b675c07e.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 62,
     "exifAliases": [
       "fujifilm-렌즈-fujifilm-g-gf50mmf3-5",
       "Fujifilm GF50mmF3.5 R LM WR",
@@ -11330,7 +11330,7 @@
     "currentSale": "예",
     "currentPriceKrw": 3299000,
     "imageSrc": "/assets/images/products/fujifilm/verified-6e49df212d17a6a1.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 77,
     "exifAliases": [
       "fujifilm-렌즈-fujifilm-g-gf55mmf1-7",
       "Fujifilm GF55mmF1.7 R WR",
@@ -11358,7 +11358,7 @@
     "currentSale": "예",
     "currentPriceKrw": 1999000,
     "imageSrc": "/assets/images/products/fujifilm/verified-d85f213b1c476b59.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 62,
     "exifAliases": [
       "fujifilm-렌즈-fujifilm-g-gf63mmf2-8",
       "Fujifilm GF63mmF2.8 R WR",
@@ -11386,7 +11386,7 @@
     "currentSale": "예",
     "currentPriceKrw": 2999000,
     "imageSrc": "/assets/images/products/fujifilm/verified-8935b3808f3f8570.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 77,
     "exifAliases": [
       "fujifilm-렌즈-fujifilm-g-gf80mmf1-7",
       "Fujifilm GF80mmF1.7 R WR",
@@ -11414,7 +11414,7 @@
     "currentSale": "예",
     "currentPriceKrw": 3499000,
     "imageSrc": "/assets/images/products/fujifilm/verified-70a38a5b23aa7531.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 77,
     "exifAliases": [
       "fujifilm-렌즈-fujifilm-g-gf110mmf2",
       "Fujifilm GF110mmF2 R LM WR",
@@ -11442,7 +11442,7 @@
     "currentSale": "예",
     "currentPriceKrw": 3399000,
     "imageSrc": "/assets/images/products/fujifilm/verified-767f4a2fc56fc510.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 72,
     "exifAliases": [
       "fujifilm-렌즈-fujifilm-g-gf120mmf4",
       "Fujifilm GF120mmF4 R LM OIS WR Macro",
@@ -11470,7 +11470,7 @@
     "currentSale": "예",
     "currentPriceKrw": 3999000,
     "imageSrc": "/assets/images/products/fujifilm/verified-171495660773083e.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 82,
     "exifAliases": [
       "fujifilm-렌즈-fujifilm-g-gf250mmf4",
       "Fujifilm GF250mmF4 R LM OIS WR",
@@ -11498,7 +11498,7 @@
     "currentSale": "예",
     "currentPriceKrw": 5199000,
     "imageSrc": "/assets/images/products/fujifilm/verified-03171de0529d0b46.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 95,
     "exifAliases": [
       "fujifilm-렌즈-fujifilm-g-gf500mmf5-6",
       "Fujifilm GF500mmF5.6 R LM OIS WR",
@@ -11582,7 +11582,7 @@
     "currentSale": "예",
     "currentPriceKrw": 2899000,
     "imageSrc": "/assets/images/products/fujifilm/verified-7a439df505fcc5a1.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 77,
     "exifAliases": [
       "fujifilm-렌즈-fujifilm-g-gf32-64mmf4",
       "Fujifilm GF32-64mmF4 R LM WR",
@@ -11610,7 +11610,7 @@
     "currentSale": "예",
     "currentPriceKrw": 7599000,
     "imageSrc": "/assets/images/products/fujifilm/verified-e948bb9706d6c264.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 111,
     "exifAliases": [
       "fujifilm-렌즈-fujifilm-g-gf32-90mmt3-5",
       "Fujifilm GF32-90mmT3.5 PZ OIS WR",
@@ -11638,7 +11638,7 @@
     "currentSale": "예",
     "currentPriceKrw": 1299000,
     "imageSrc": "/assets/images/products/fujifilm/verified-8aec54d3c64823ca.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 62,
     "exifAliases": [
       "fujifilm-렌즈-fujifilm-g-gf35-70mmf4-5-5-6",
       "Fujifilm GF35-70mmF4.5-5.6 WR",
@@ -11666,7 +11666,7 @@
     "currentSale": "예",
     "currentPriceKrw": 2899000,
     "imageSrc": "/assets/images/products/fujifilm/verified-b3a9a16ddcc7f8c4.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 82,
     "exifAliases": [
       "fujifilm-렌즈-fujifilm-g-gf45-100mmf4",
       "Fujifilm GF45-100mmF4 R LM OIS WR",
@@ -11694,7 +11694,7 @@
     "currentSale": "예",
     "currentPriceKrw": 2399000,
     "imageSrc": "/assets/images/products/fujifilm/verified-60a82935e7e19d8c.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 67,
     "exifAliases": [
       "fujifilm-렌즈-fujifilm-g-gf100-200mmf5-6",
       "Fujifilm GF100-200mmF5.6 R LM OIS WR",
@@ -11722,7 +11722,7 @@
     "currentSale": "예",
     "currentPriceKrw": 5799000,
     "imageSrc": "/assets/images/products/fujifilm/verified-4d231f352d009c3f.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 105,
     "exifAliases": [
       "fujifilm-렌즈-fujifilm-g-gf30mmf5-6",
       "Fujifilm GF30mmF5.6 T/S",
@@ -11750,7 +11750,7 @@
     "currentSale": "예",
     "currentPriceKrw": 5099000,
     "imageSrc": "/assets/images/products/fujifilm/verified-f3de5fc6521f4610.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 72,
     "exifAliases": [
       "fujifilm-렌즈-fujifilm-g-gf110mmf5-6",
       "Fujifilm GF110mmF5.6 T/S Macro",
@@ -13153,7 +13153,7 @@
     "currentSale": "예",
     "currentPriceKrw": null,
     "imageSrc": "/assets/images/products/panasonic/verified-8a6390b8eff8e8e4.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 77,
     "exifAliases": [
       "panasonic-렌즈-l-mount-lumix-s-14-28mm-f4-5-6-macro",
       "Panasonic LUMIX S 14-28mm F4-5.6 MACRO",
@@ -13180,7 +13180,7 @@
     "currentSale": "예",
     "currentPriceKrw": null,
     "imageSrc": "/assets/images/products/panasonic/verified-0f487a1add4fe3cf.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 77,
     "exifAliases": [
       "panasonic-렌즈-l-mount-lumix-s-pro-16-35mm-f4",
       "Panasonic LUMIX S PRO 16-35mm F4",
@@ -13234,7 +13234,7 @@
     "currentSale": "예",
     "currentPriceKrw": null,
     "imageSrc": "/assets/images/products/panasonic/verified-b146ea9a707ebd2c.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 67,
     "exifAliases": [
       "panasonic-렌즈-l-mount-lumix-s-20-60mm-f3-5-5-6",
       "Panasonic LUMIX S 20-60mm F3.5-5.6",
@@ -13288,7 +13288,7 @@
     "currentSale": "예",
     "currentPriceKrw": null,
     "imageSrc": "/assets/images/products/panasonic/verified-a501ffc47149f441.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 82,
     "exifAliases": [
       "panasonic-렌즈-l-mount-lumix-s-pro-24-70mm-f2-8",
       "Panasonic LUMIX S PRO 24-70mm F2.8",
@@ -13315,7 +13315,7 @@
     "currentSale": "예",
     "currentPriceKrw": null,
     "imageSrc": "/assets/images/products/panasonic/verified-b7c41e1e2ac7ab03.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 77,
     "exifAliases": [
       "panasonic-렌즈-l-mount-lumix-s-24-105mm-f4-macro-o-i-s",
       "Panasonic LUMIX S 24-105mm F4 MACRO O.I.S.",
@@ -13342,7 +13342,7 @@
     "currentSale": "예",
     "currentPriceKrw": null,
     "imageSrc": "/assets/images/products/panasonic/verified-959363586f0d6a2b.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 82,
     "exifAliases": [
       "panasonic-렌즈-l-mount-lumix-s-pro-70-200mm-f2-8-o-i-s",
       "Panasonic LUMIX S PRO 70-200mm F2.8 O.I.S.",
@@ -13369,7 +13369,7 @@
     "currentSale": "예",
     "currentPriceKrw": null,
     "imageSrc": "/assets/images/products/panasonic/verified-b79e5ae20891028c.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 77,
     "exifAliases": [
       "panasonic-렌즈-l-mount-lumix-s-pro-70-200mm-f4-o-i-s",
       "Panasonic LUMIX S PRO 70-200mm F4 O.I.S.",
@@ -13396,7 +13396,7 @@
     "currentSale": "예",
     "currentPriceKrw": null,
     "imageSrc": "/assets/images/products/panasonic/verified-6802e73c8b53da87.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 77,
     "exifAliases": [
       "panasonic-렌즈-l-mount-lumix-s-70-300mm-f4-5-5-6-macro-o-i-s",
       "Panasonic LUMIX S 70-300mm F4.5-5.6 MACRO O.I.S.",
@@ -13423,7 +13423,7 @@
     "currentSale": "예",
     "currentPriceKrw": 2590000,
     "imageSrc": "/assets/images/products/panasonic/verified-0d474c1e12430308.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 82,
     "exifAliases": [
       "panasonic-렌즈-l-mount-lumix-s-100-500mm-f5-7-1-o-i-s",
       "Panasonic LUMIX S 100-500mm F5-7.1 O.I.S.",
@@ -13477,7 +13477,7 @@
     "currentSale": "예",
     "currentPriceKrw": 1159000,
     "imageSrc": "/assets/images/products/panasonic/verified-d67f57781849709d.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 67,
     "exifAliases": [
       "panasonic-렌즈-l-mount-lumix-s-18mm-f1-8",
       "Panasonic LUMIX S 18mm F1.8",
@@ -13504,7 +13504,7 @@
     "currentSale": "예",
     "currentPriceKrw": 1149000,
     "imageSrc": "/assets/images/products/panasonic/verified-e00280fab27401be.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 67,
     "exifAliases": [
       "panasonic-렌즈-l-mount-lumix-s-24mm-f1-8",
       "Panasonic LUMIX S 24mm F1.8",
@@ -13558,7 +13558,7 @@
     "currentSale": "예",
     "currentPriceKrw": 799000,
     "imageSrc": "/assets/images/products/panasonic/verified-4c3db6ef3d96b07c.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 67,
     "exifAliases": [
       "panasonic-렌즈-l-mount-lumix-s-35mm-f1-8",
       "Panasonic LUMIX S 35mm F1.8",
@@ -13585,7 +13585,7 @@
     "currentSale": "예",
     "currentPriceKrw": 549000,
     "imageSrc": "/assets/images/products/panasonic/verified-9cc682e9e9be9f02.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 62,
     "exifAliases": [
       "panasonic-렌즈-l-mount-lumix-s-40mm-f2",
       "Panasonic LUMIX S 40mm F2",
@@ -13612,7 +13612,7 @@
     "currentSale": "예",
     "currentPriceKrw": null,
     "imageSrc": "/assets/images/products/panasonic/verified-566bc87c5f95ce8c.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 77,
     "exifAliases": [
       "panasonic-렌즈-l-mount-lumix-s-pro-50mm-f1-4",
       "Panasonic LUMIX S PRO 50mm F1.4",
@@ -13639,7 +13639,7 @@
     "currentSale": "예",
     "currentPriceKrw": 579000,
     "imageSrc": "/assets/images/products/panasonic/verified-298cd8c038702548.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 67,
     "exifAliases": [
       "panasonic-렌즈-l-mount-lumix-s-50mm-f1-8",
       "Panasonic LUMIX S 50mm F1.8",
@@ -13666,7 +13666,7 @@
     "currentSale": "예",
     "currentPriceKrw": null,
     "imageSrc": "/assets/images/products/panasonic/verified-20425441dc25f3fb.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 67,
     "exifAliases": [
       "panasonic-렌즈-l-mount-lumix-s-85mm-f1-8",
       "Panasonic LUMIX S 85mm F1.8",
@@ -13693,7 +13693,7 @@
     "currentSale": "예",
     "currentPriceKrw": null,
     "imageSrc": "/assets/images/products/panasonic/verified-dae6eab4c26cf5e3.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 67,
     "exifAliases": [
       "panasonic-렌즈-l-mount-lumix-s-100mm-f2-8-macro",
       "Panasonic LUMIX S 100mm F2.8 MACRO",
@@ -18120,7 +18120,7 @@
     "currentSale": "아니오",
     "currentPriceKrw": null,
     "imageSrc": "/assets/images/products/pentax/verified-f74d0fd0ec688ba0.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 40.5,
     "exifAliases": [
       "pentax-렌즈-pentax-q-01",
       "Pentax 01 STANDARD PRIME 8.5mm F1.9",
@@ -18148,7 +18148,7 @@
     "currentSale": "아니오",
     "currentPriceKrw": null,
     "imageSrc": "/assets/images/products/pentax/verified-8e6158e3506177a5.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 40.5,
     "exifAliases": [
       "pentax-렌즈-pentax-q-02",
       "Pentax 02 STANDARD ZOOM 5-15mm F2.8-4.5",
@@ -18260,7 +18260,7 @@
     "currentSale": "아니오",
     "currentPriceKrw": null,
     "imageSrc": "/assets/images/products/pentax/verified-8e65178cfb1f6af6.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 40.5,
     "exifAliases": [
       "pentax-렌즈-pentax-q-06",
       "Pentax 06 TELEPHOTO ZOOM 15-45mm F2.8",
@@ -18316,7 +18316,7 @@
     "currentSale": "아니오",
     "currentPriceKrw": null,
     "imageSrc": "/assets/images/products/pentax/verified-4c61230e5411da3d.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 49,
     "exifAliases": [
       "pentax-렌즈-pentax-q-08",
       "Pentax 08 WIDE ZOOM 3.8-5.9mm F3.7-4.0",
@@ -18479,7 +18479,7 @@
     "currentSale": "아니오",
     "currentPriceKrw": null,
     "imageSrc": "/assets/images/products/sigma/verified-be34e2c222921d8f.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 46,
     "exifAliases": [
       "sigma-렌즈-sony-e-19mm-f2-8-ex-dn-sony-e",
       "Sigma 19mm F2.8 EX DN",
@@ -18507,7 +18507,7 @@
     "currentSale": "아니오",
     "currentPriceKrw": null,
     "imageSrc": "/assets/images/products/sigma/verified-be34e2c222921d8f.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 46,
     "exifAliases": [
       "sigma-렌즈-micro-four-thirds-19mm-f2-8-ex-dn-micro-four-thirds",
       "Sigma 19mm F2.8 EX DN",
@@ -18535,7 +18535,7 @@
     "currentSale": "아니오",
     "currentPriceKrw": null,
     "imageSrc": "/assets/images/products/sigma/verified-dbc2427cba749df6.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 46,
     "exifAliases": [
       "sigma-렌즈-sony-e-30mm-f2-8-ex-dn-sony-e",
       "Sigma 30mm F2.8 EX DN",
@@ -18563,7 +18563,7 @@
     "currentSale": "아니오",
     "currentPriceKrw": null,
     "imageSrc": "/assets/images/products/sigma/verified-dbc2427cba749df6.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 46,
     "exifAliases": [
       "sigma-렌즈-micro-four-thirds-30mm-f2-8-ex-dn-micro-four-thirds",
       "Sigma 30mm F2.8 EX DN",
@@ -18591,7 +18591,7 @@
     "currentSale": "아니오",
     "currentPriceKrw": null,
     "imageSrc": "/assets/images/products/sigma/verified-348b34815c62bca6.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 46,
     "exifAliases": [
       "sigma-렌즈-sony-e-19mm-f2-8-dn-art-sony-e",
       "Sigma 19mm F2.8 DN | Art",
@@ -18619,7 +18619,7 @@
     "currentSale": "아니오",
     "currentPriceKrw": null,
     "imageSrc": "/assets/images/products/sigma/verified-348b34815c62bca6.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 46,
     "exifAliases": [
       "sigma-렌즈-micro-four-thirds-19mm-f2-8-dn-art-micro-four-thirds",
       "Sigma 19mm F2.8 DN | Art",
@@ -18647,7 +18647,7 @@
     "currentSale": "아니오",
     "currentPriceKrw": null,
     "imageSrc": "/assets/images/products/sigma/verified-a714d53645e919cb.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 46,
     "exifAliases": [
       "sigma-렌즈-sony-e-30mm-f2-8-dn-art-sony-e",
       "Sigma 30mm F2.8 DN | Art",
@@ -18675,7 +18675,7 @@
     "currentSale": "아니오",
     "currentPriceKrw": null,
     "imageSrc": "/assets/images/products/sigma/verified-a714d53645e919cb.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 46,
     "exifAliases": [
       "sigma-렌즈-micro-four-thirds-30mm-f2-8-dn-art-micro-four-thirds",
       "Sigma 30mm F2.8 DN | Art",
@@ -18703,7 +18703,7 @@
     "currentSale": "아니오",
     "currentPriceKrw": null,
     "imageSrc": "/assets/images/products/sigma/verified-36949b6118cab349.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 46,
     "exifAliases": [
       "sigma-렌즈-sony-e-60mm-f2-8-dn-art-sony-e",
       "Sigma 60mm F2.8 DN | Art",
@@ -18731,7 +18731,7 @@
     "currentSale": "아니오",
     "currentPriceKrw": null,
     "imageSrc": "/assets/images/products/sigma/verified-36949b6118cab349.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 46,
     "exifAliases": [
       "sigma-렌즈-micro-four-thirds-60mm-f2-8-dn-art-micro-four-thirds",
       "Sigma 60mm F2.8 DN | Art",
@@ -18759,7 +18759,7 @@
     "currentSale": "확인 필요",
     "currentPriceKrw": 950000,
     "imageSrc": "/assets/images/products/sigma/verified-fa4a5ea7637f5361.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 62,
     "exifAliases": [
       "sigma-렌즈-sony-e-12mm-f1-4-dc-contemporary-sony-e",
       "Sigma 12mm F1.4 DC | Contemporary",
@@ -18787,7 +18787,7 @@
     "currentSale": "확인 필요",
     "currentPriceKrw": 950000,
     "imageSrc": "/assets/images/products/sigma/verified-fa4a5ea7637f5361.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 62,
     "exifAliases": [
       "sigma-렌즈-canon-rf-12mm-f1-4-dc-contemporary-canon-rf",
       "Sigma 12mm F1.4 DC | Contemporary",
@@ -18815,7 +18815,7 @@
     "currentSale": "확인 필요",
     "currentPriceKrw": 950000,
     "imageSrc": "/assets/images/products/sigma/verified-fa4a5ea7637f5361.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 62,
     "exifAliases": [
       "sigma-렌즈-fujifilm-x-12mm-f1-4-dc-contemporary-fujifilm-x",
       "Sigma 12mm F1.4 DC | Contemporary",
@@ -18843,7 +18843,7 @@
     "currentSale": "확인 필요",
     "currentPriceKrw": 899000,
     "imageSrc": "/assets/images/products/sigma/verified-6726b77945376524.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 58,
     "exifAliases": [
       "sigma-렌즈-sony-e-15mm-f1-4-dc-contemporary-sony-e",
       "Sigma 15mm F1.4 DC | Contemporary",
@@ -18871,7 +18871,7 @@
     "currentSale": "확인 필요",
     "currentPriceKrw": 899000,
     "imageSrc": "/assets/images/products/sigma/verified-6726b77945376524.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 58,
     "exifAliases": [
       "sigma-렌즈-canon-rf-15mm-f1-4-dc-contemporary-canon-rf",
       "Sigma 15mm F1.4 DC | Contemporary",
@@ -18899,7 +18899,7 @@
     "currentSale": "확인 필요",
     "currentPriceKrw": 899000,
     "imageSrc": "/assets/images/products/sigma/verified-6726b77945376524.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 58,
     "exifAliases": [
       "sigma-렌즈-fujifilm-x-15mm-f1-4-dc-contemporary-fujifilm-x",
       "Sigma 15mm F1.4 DC | Contemporary",
@@ -18927,7 +18927,7 @@
     "currentSale": "확인 필요",
     "currentPriceKrw": null,
     "imageSrc": "/assets/images/products/sigma/verified-02ee0e3b173b0b05.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 67,
     "exifAliases": [
       "sigma-렌즈-sony-e-16mm-f1-4-dc-dn-contemporary-sony-e",
       "Sigma 16mm F1.4 DC DN | Contemporary",
@@ -18955,7 +18955,7 @@
     "currentSale": "확인 필요",
     "currentPriceKrw": null,
     "imageSrc": "/assets/images/products/sigma/verified-02ee0e3b173b0b05.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 67,
     "exifAliases": [
       "sigma-렌즈-l-mount-16mm-f1-4-dc-dn-contemporary-l-mount",
       "Sigma 16mm F1.4 DC DN | Contemporary",
@@ -18983,7 +18983,7 @@
     "currentSale": "확인 필요",
     "currentPriceKrw": null,
     "imageSrc": "/assets/images/products/sigma/verified-02ee0e3b173b0b05.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 67,
     "exifAliases": [
       "sigma-렌즈-micro-four-thirds-16mm-f1-4-dc-dn-contemporary-micro-four-thirds",
       "Sigma 16mm F1.4 DC DN | Contemporary",
@@ -19011,7 +19011,7 @@
     "currentSale": "아니오",
     "currentPriceKrw": null,
     "imageSrc": "/assets/images/products/sigma/verified-02ee0e3b173b0b05.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 67,
     "exifAliases": [
       "sigma-렌즈-canon-ef-m-16mm-f1-4-dc-dn-contemporary-canon-ef-m",
       "Sigma 16mm F1.4 DC DN | Contemporary",
@@ -19039,7 +19039,7 @@
     "currentSale": "확인 필요",
     "currentPriceKrw": null,
     "imageSrc": "/assets/images/products/sigma/verified-02ee0e3b173b0b05.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 67,
     "exifAliases": [
       "sigma-렌즈-fujifilm-x-16mm-f1-4-dc-dn-contemporary-fujifilm-x",
       "Sigma 16mm F1.4 DC DN | Contemporary",
@@ -19067,7 +19067,7 @@
     "currentSale": "확인 필요",
     "currentPriceKrw": 492700,
     "imageSrc": "/assets/images/products/sigma/verified-02ee0e3b173b0b05.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 67,
     "exifAliases": [
       "sigma-렌즈-nikon-z-16mm-f1-4-dc-dn-contemporary-nikon-z",
       "Sigma 16mm F1.4 DC DN | Contemporary",
@@ -19095,7 +19095,7 @@
     "currentSale": "확인 필요",
     "currentPriceKrw": null,
     "imageSrc": "/assets/images/products/sigma/verified-3f82bafda8dce5a0.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 52,
     "exifAliases": [
       "sigma-렌즈-sony-e-23mm-f1-4-dc-dn-contemporary-sony-e",
       "Sigma 23mm F1.4 DC DN | Contemporary",
@@ -19123,7 +19123,7 @@
     "currentSale": "확인 필요",
     "currentPriceKrw": null,
     "imageSrc": "/assets/images/products/sigma/verified-3f82bafda8dce5a0.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 52,
     "exifAliases": [
       "sigma-렌즈-l-mount-23mm-f1-4-dc-dn-contemporary-l-mount",
       "Sigma 23mm F1.4 DC DN | Contemporary",
@@ -19151,7 +19151,7 @@
     "currentSale": "확인 필요",
     "currentPriceKrw": null,
     "imageSrc": "/assets/images/products/sigma/verified-3f82bafda8dce5a0.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 52,
     "exifAliases": [
       "sigma-렌즈-fujifilm-x-23mm-f1-4-dc-dn-contemporary-fujifilm-x",
       "Sigma 23mm F1.4 DC DN | Contemporary",
@@ -19179,7 +19179,7 @@
     "currentSale": "확인 필요",
     "currentPriceKrw": 780000,
     "imageSrc": "/assets/images/products/sigma/verified-3f82bafda8dce5a0.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 52,
     "exifAliases": [
       "sigma-렌즈-canon-rf-23mm-f1-4-dc-dn-contemporary-canon-rf",
       "Sigma 23mm F1.4 DC DN | Contemporary",
@@ -19207,7 +19207,7 @@
     "currentSale": "확인 필요",
     "currentPriceKrw": 469440,
     "imageSrc": "/assets/images/products/sigma/verified-5d1f311de584204a.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 52,
     "exifAliases": [
       "sigma-렌즈-sony-e-30mm-f1-4-dc-dn-contemporary-sony-e",
       "Sigma 30mm F1.4 DC DN | Contemporary",
@@ -19235,7 +19235,7 @@
     "currentSale": "확인 필요",
     "currentPriceKrw": 469440,
     "imageSrc": "/assets/images/products/sigma/verified-5d1f311de584204a.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 52,
     "exifAliases": [
       "sigma-렌즈-l-mount-30mm-f1-4-dc-dn-contemporary-l-mount",
       "Sigma 30mm F1.4 DC DN | Contemporary",
@@ -19263,7 +19263,7 @@
     "currentSale": "확인 필요",
     "currentPriceKrw": 469440,
     "imageSrc": "/assets/images/products/sigma/verified-5d1f311de584204a.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 52,
     "exifAliases": [
       "sigma-렌즈-micro-four-thirds-30mm-f1-4-dc-dn-contemporary-micro-four-thirds",
       "Sigma 30mm F1.4 DC DN | Contemporary",
@@ -19291,7 +19291,7 @@
     "currentSale": "아니오",
     "currentPriceKrw": 469440,
     "imageSrc": "/assets/images/products/sigma/verified-5d1f311de584204a.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 52,
     "exifAliases": [
       "sigma-렌즈-canon-ef-m-30mm-f1-4-dc-dn-contemporary-canon-ef-m",
       "Sigma 30mm F1.4 DC DN | Contemporary",
@@ -19319,7 +19319,7 @@
     "currentSale": "확인 필요",
     "currentPriceKrw": 469440,
     "imageSrc": "/assets/images/products/sigma/verified-5d1f311de584204a.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 52,
     "exifAliases": [
       "sigma-렌즈-fujifilm-x-30mm-f1-4-dc-dn-contemporary-fujifilm-x",
       "Sigma 30mm F1.4 DC DN | Contemporary",
@@ -19347,7 +19347,7 @@
     "currentSale": "확인 필요",
     "currentPriceKrw": 582000,
     "imageSrc": "/assets/images/products/sigma/verified-5d1f311de584204a.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 52,
     "exifAliases": [
       "sigma-렌즈-nikon-z-30mm-f1-4-dc-dn-contemporary-nikon-z",
       "Sigma 30mm F1.4 DC DN | Contemporary",
@@ -19375,7 +19375,7 @@
     "currentSale": "확인 필요",
     "currentPriceKrw": null,
     "imageSrc": "/assets/images/products/sigma/verified-45cc3524b5460e5c.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 55,
     "exifAliases": [
       "sigma-렌즈-sony-e-56mm-f1-4-dc-dn-contemporary-sony-e",
       "Sigma 56mm F1.4 DC DN | Contemporary",
@@ -19403,7 +19403,7 @@
     "currentSale": "확인 필요",
     "currentPriceKrw": null,
     "imageSrc": "/assets/images/products/sigma/verified-45cc3524b5460e5c.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 55,
     "exifAliases": [
       "sigma-렌즈-l-mount-56mm-f1-4-dc-dn-contemporary-l-mount",
       "Sigma 56mm F1.4 DC DN | Contemporary",
@@ -19431,7 +19431,7 @@
     "currentSale": "확인 필요",
     "currentPriceKrw": null,
     "imageSrc": "/assets/images/products/sigma/verified-45cc3524b5460e5c.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 55,
     "exifAliases": [
       "sigma-렌즈-micro-four-thirds-56mm-f1-4-dc-dn-contemporary-micro-four-thirds",
       "Sigma 56mm F1.4 DC DN | Contemporary",
@@ -19459,7 +19459,7 @@
     "currentSale": "아니오",
     "currentPriceKrw": null,
     "imageSrc": "/assets/images/products/sigma/verified-45cc3524b5460e5c.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 55,
     "exifAliases": [
       "sigma-렌즈-canon-ef-m-56mm-f1-4-dc-dn-contemporary-canon-ef-m",
       "Sigma 56mm F1.4 DC DN | Contemporary",
@@ -19487,7 +19487,7 @@
     "currentSale": "확인 필요",
     "currentPriceKrw": null,
     "imageSrc": "/assets/images/products/sigma/verified-45cc3524b5460e5c.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 55,
     "exifAliases": [
       "sigma-렌즈-fujifilm-x-56mm-f1-4-dc-dn-contemporary-fujifilm-x",
       "Sigma 56mm F1.4 DC DN | Contemporary",
@@ -19515,7 +19515,7 @@
     "currentSale": "확인 필요",
     "currentPriceKrw": 492700,
     "imageSrc": "/assets/images/products/sigma/verified-45cc3524b5460e5c.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 55,
     "exifAliases": [
       "sigma-렌즈-nikon-z-56mm-f1-4-dc-dn-contemporary-nikon-z",
       "Sigma 56mm F1.4 DC DN | Contemporary",
@@ -19543,7 +19543,7 @@
     "currentSale": "확인 필요",
     "currentPriceKrw": 1155000,
     "imageSrc": "/assets/images/products/sigma/verified-47d42ac4a34fce3e.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 67,
     "exifAliases": [
       "sigma-렌즈-sony-e-10-18mm-f2-8-dc-dn-contemporary-sony-e",
       "Sigma 10-18mm F2.8 DC DN | Contemporary",
@@ -19571,7 +19571,7 @@
     "currentSale": "확인 필요",
     "currentPriceKrw": 1155000,
     "imageSrc": "/assets/images/products/sigma/verified-47d42ac4a34fce3e.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 67,
     "exifAliases": [
       "sigma-렌즈-l-mount-10-18mm-f2-8-dc-dn-contemporary-l-mount",
       "Sigma 10-18mm F2.8 DC DN | Contemporary",
@@ -19599,7 +19599,7 @@
     "currentSale": "확인 필요",
     "currentPriceKrw": 1155000,
     "imageSrc": "/assets/images/products/sigma/verified-47d42ac4a34fce3e.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 67,
     "exifAliases": [
       "sigma-렌즈-fujifilm-x-10-18mm-f2-8-dc-dn-contemporary-fujifilm-x",
       "Sigma 10-18mm F2.8 DC DN | Contemporary",
@@ -19627,7 +19627,7 @@
     "currentSale": "확인 필요",
     "currentPriceKrw": 1155000,
     "imageSrc": "/assets/images/products/sigma/verified-47d42ac4a34fce3e.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 67,
     "exifAliases": [
       "sigma-렌즈-canon-rf-10-18mm-f2-8-dc-dn-contemporary-canon-rf",
       "Sigma 10-18mm F2.8 DC DN | Contemporary",
@@ -19655,7 +19655,7 @@
     "currentSale": "확인 필요",
     "currentPriceKrw": 1130000,
     "imageSrc": "/assets/images/products/sigma/verified-c4a0620a0a7ec976.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 67,
     "exifAliases": [
       "sigma-렌즈-sony-e-16-300mm-f3-5-6-7-dc-os-contemporary-sony-e",
       "Sigma 16-300mm F3.5-6.7 DC OS | Contemporary",
@@ -19683,7 +19683,7 @@
     "currentSale": "확인 필요",
     "currentPriceKrw": 1130000,
     "imageSrc": "/assets/images/products/sigma/verified-c4a0620a0a7ec976.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 67,
     "exifAliases": [
       "sigma-렌즈-l-mount-16-300mm-f3-5-6-7-dc-os-contemporary-l-mount",
       "Sigma 16-300mm F3.5-6.7 DC OS | Contemporary",
@@ -19711,7 +19711,7 @@
     "currentSale": "확인 필요",
     "currentPriceKrw": 1130000,
     "imageSrc": "/assets/images/products/sigma/verified-c4a0620a0a7ec976.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 67,
     "exifAliases": [
       "sigma-렌즈-fujifilm-x-16-300mm-f3-5-6-7-dc-os-contemporary-fujifilm-x",
       "Sigma 16-300mm F3.5-6.7 DC OS | Contemporary",
@@ -19739,7 +19739,7 @@
     "currentSale": "확인 필요",
     "currentPriceKrw": 1130000,
     "imageSrc": "/assets/images/products/sigma/verified-c4a0620a0a7ec976.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 67,
     "exifAliases": [
       "sigma-렌즈-canon-rf-16-300mm-f3-5-6-7-dc-os-contemporary-canon-rf",
       "Sigma 16-300mm F3.5-6.7 DC OS | Contemporary",
@@ -19767,7 +19767,7 @@
     "currentSale": "확인 필요",
     "currentPriceKrw": 1480000,
     "imageSrc": "/assets/images/products/sigma/verified-c75b62d82661708e.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 67,
     "exifAliases": [
       "sigma-렌즈-sony-e-17-40mm-f1-8-dc-art-sony-e",
       "Sigma 17-40mm F1.8 DC | Art",
@@ -19795,7 +19795,7 @@
     "currentSale": "확인 필요",
     "currentPriceKrw": 1480000,
     "imageSrc": "/assets/images/products/sigma/verified-c75b62d82661708e.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 67,
     "exifAliases": [
       "sigma-렌즈-l-mount-17-40mm-f1-8-dc-art-l-mount",
       "Sigma 17-40mm F1.8 DC | Art",
@@ -19823,7 +19823,7 @@
     "currentSale": "확인 필요",
     "currentPriceKrw": 1480000,
     "imageSrc": "/assets/images/products/sigma/verified-c75b62d82661708e.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 67,
     "exifAliases": [
       "sigma-렌즈-fujifilm-x-17-40mm-f1-8-dc-art-fujifilm-x",
       "Sigma 17-40mm F1.8 DC | Art",
@@ -19851,7 +19851,7 @@
     "currentSale": "확인 필요",
     "currentPriceKrw": 1480000,
     "imageSrc": "/assets/images/products/sigma/verified-c75b62d82661708e.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 67,
     "exifAliases": [
       "sigma-렌즈-canon-rf-17-40mm-f1-8-dc-art-canon-rf",
       "Sigma 17-40mm F1.8 DC | Art",
@@ -19879,7 +19879,7 @@
     "currentSale": "확인 필요",
     "currentPriceKrw": 760000,
     "imageSrc": "/assets/images/products/sigma/verified-420db4df3b4189e4.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 55,
     "exifAliases": [
       "sigma-렌즈-sony-e-18-50mm-f2-8-dc-dn-contemporary-sony-e",
       "Sigma 18-50mm F2.8 DC DN | Contemporary",
@@ -19907,7 +19907,7 @@
     "currentSale": "확인 필요",
     "currentPriceKrw": 760000,
     "imageSrc": "/assets/images/products/sigma/verified-420db4df3b4189e4.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 55,
     "exifAliases": [
       "sigma-렌즈-l-mount-18-50mm-f2-8-dc-dn-contemporary-l-mount",
       "Sigma 18-50mm F2.8 DC DN | Contemporary",
@@ -19935,7 +19935,7 @@
     "currentSale": "확인 필요",
     "currentPriceKrw": 760000,
     "imageSrc": "/assets/images/products/sigma/verified-420db4df3b4189e4.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 55,
     "exifAliases": [
       "sigma-렌즈-fujifilm-x-18-50mm-f2-8-dc-dn-contemporary-fujifilm-x",
       "Sigma 18-50mm F2.8 DC DN | Contemporary",
@@ -19963,7 +19963,7 @@
     "currentSale": "확인 필요",
     "currentPriceKrw": 760000,
     "imageSrc": "/assets/images/products/sigma/verified-420db4df3b4189e4.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 55,
     "exifAliases": [
       "sigma-렌즈-canon-rf-18-50mm-f2-8-dc-dn-contemporary-canon-rf",
       "Sigma 18-50mm F2.8 DC DN | Contemporary",
@@ -20103,7 +20103,7 @@
     "currentSale": "확인 필요",
     "currentPriceKrw": 673400,
     "imageSrc": "/assets/images/products/sigma/verified-c5ec683adf111bb9.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 55,
     "exifAliases": [
       "sigma-렌즈-sony-e-17mm-f4-dg-dn-contemporary-sony-e",
       "Sigma 17mm F4 DG DN | Contemporary",
@@ -20131,7 +20131,7 @@
     "currentSale": "확인 필요",
     "currentPriceKrw": 882700,
     "imageSrc": "/assets/images/products/sigma/verified-c5ec683adf111bb9.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 55,
     "exifAliases": [
       "sigma-렌즈-l-mount-17mm-f4-dg-dn-contemporary-l-mount",
       "Sigma 17mm F4 DG DN | Contemporary",
@@ -20159,7 +20159,7 @@
     "currentSale": "확인 필요",
     "currentPriceKrw": null,
     "imageSrc": "/assets/images/products/sigma/verified-5ec200742c13c3d3.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 82,
     "exifAliases": [
       "sigma-렌즈-sony-e-20mm-f1-4-dg-dn-art-sony-e",
       "Sigma 20mm F1.4 DG DN | Art",
@@ -20187,7 +20187,7 @@
     "currentSale": "확인 필요",
     "currentPriceKrw": 1430400,
     "imageSrc": "/assets/images/products/sigma/verified-5ec200742c13c3d3.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 82,
     "exifAliases": [
       "sigma-렌즈-l-mount-20mm-f1-4-dg-dn-art-l-mount",
       "Sigma 20mm F1.4 DG DN | Art",
@@ -20215,7 +20215,7 @@
     "currentSale": "확인 필요",
     "currentPriceKrw": 716100,
     "imageSrc": "/assets/images/products/sigma/verified-3281067cb5444361.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 62,
     "exifAliases": [
       "sigma-렌즈-sony-e-20mm-f2-dg-dn-contemporary-sony-e",
       "Sigma 20mm F2 DG DN | Contemporary",
@@ -20243,7 +20243,7 @@
     "currentSale": "확인 필요",
     "currentPriceKrw": null,
     "imageSrc": "/assets/images/products/sigma/verified-3281067cb5444361.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 62,
     "exifAliases": [
       "sigma-렌즈-l-mount-20mm-f2-dg-dn-contemporary-l-mount",
       "Sigma 20mm F2 DG DN | Contemporary",
@@ -20271,7 +20271,7 @@
     "currentSale": "확인 필요",
     "currentPriceKrw": null,
     "imageSrc": "/assets/images/products/sigma/verified-323bc145504c4a11.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 72,
     "exifAliases": [
       "sigma-렌즈-sony-e-24mm-f1-4-dg-dn-art-sony-e",
       "Sigma 24mm F1.4 DG DN | Art",
@@ -20299,7 +20299,7 @@
     "currentSale": "확인 필요",
     "currentPriceKrw": 1238400,
     "imageSrc": "/assets/images/products/sigma/verified-323bc145504c4a11.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 72,
     "exifAliases": [
       "sigma-렌즈-l-mount-24mm-f1-4-dg-dn-art-l-mount",
       "Sigma 24mm F1.4 DG DN | Art",
@@ -20327,7 +20327,7 @@
     "currentSale": "확인 필요",
     "currentPriceKrw": 782400,
     "imageSrc": "/assets/images/products/sigma/verified-751de69a1f3c6216.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 62,
     "exifAliases": [
       "sigma-렌즈-sony-e-24mm-f2-dg-dn-contemporary-sony-e",
       "Sigma 24mm F2 DG DN | Contemporary",
@@ -20355,7 +20355,7 @@
     "currentSale": "확인 필요",
     "currentPriceKrw": null,
     "imageSrc": "/assets/images/products/sigma/verified-751de69a1f3c6216.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 62,
     "exifAliases": [
       "sigma-렌즈-l-mount-24mm-f2-dg-dn-contemporary-l-mount",
       "Sigma 24mm F2 DG DN | Contemporary",
@@ -20383,7 +20383,7 @@
     "currentSale": "확인 필요",
     "currentPriceKrw": 662400,
     "imageSrc": "/assets/images/products/sigma/verified-b93e5878b1973c60.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 55,
     "exifAliases": [
       "sigma-렌즈-sony-e-24mm-f3-5-dg-dn-contemporary-sony-e",
       "Sigma 24mm F3.5 DG DN | Contemporary",
@@ -20411,7 +20411,7 @@
     "currentSale": "확인 필요",
     "currentPriceKrw": null,
     "imageSrc": "/assets/images/products/sigma/verified-b93e5878b1973c60.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 55,
     "exifAliases": [
       "sigma-렌즈-l-mount-24mm-f3-5-dg-dn-contemporary-l-mount",
       "Sigma 24mm F3.5 DG DN | Contemporary",
@@ -20439,7 +20439,7 @@
     "currentSale": "아니오",
     "currentPriceKrw": null,
     "imageSrc": "/assets/images/products/sigma/verified-1054dadd54364fd5.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 82,
     "exifAliases": [
       "sigma-렌즈-sony-e-35mm-f1-2-dg-dn-art-sony-e",
       "Sigma 35mm F1.2 DG DN | Art",
@@ -20467,7 +20467,7 @@
     "currentSale": "아니오",
     "currentPriceKrw": 1872000,
     "imageSrc": "/assets/images/products/sigma/verified-1054dadd54364fd5.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 82,
     "exifAliases": [
       "sigma-렌즈-l-mount-35mm-f1-2-dg-dn-art-l-mount",
       "Sigma 35mm F1.2 DG DN | Art",
@@ -20495,7 +20495,7 @@
     "currentSale": "확인 필요",
     "currentPriceKrw": 2400000,
     "imageSrc": "/assets/images/products/sigma/verified-2bd5c690578b55dc.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 72,
     "exifAliases": [
       "sigma-렌즈-sony-e-35mm-f1-2-dg-ii-art-sony-e",
       "Sigma 35mm F1.2 DG II | Art",
@@ -20523,7 +20523,7 @@
     "currentSale": "확인 필요",
     "currentPriceKrw": 2400000,
     "imageSrc": "/assets/images/products/sigma/verified-2bd5c690578b55dc.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 72,
     "exifAliases": [
       "sigma-렌즈-l-mount-35mm-f1-2-dg-ii-art-l-mount",
       "Sigma 35mm F1.2 DG II | Art",
@@ -20551,7 +20551,7 @@
     "currentSale": "확인 필요",
     "currentPriceKrw": null,
     "imageSrc": "/assets/images/products/sigma/verified-6313921640c2a258.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 67,
     "exifAliases": [
       "sigma-렌즈-sony-e-35mm-f1-4-dg-dn-art-sony-e",
       "Sigma 35mm F1.4 DG DN | Art",
@@ -20579,7 +20579,7 @@
     "currentSale": "확인 필요",
     "currentPriceKrw": 1219200,
     "imageSrc": "/assets/images/products/sigma/verified-6313921640c2a258.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 67,
     "exifAliases": [
       "sigma-렌즈-l-mount-35mm-f1-4-dg-dn-art-l-mount",
       "Sigma 35mm F1.4 DG DN | Art",
@@ -20607,7 +20607,7 @@
     "currentSale": "확인 필요",
     "currentPriceKrw": null,
     "imageSrc": "/assets/images/products/sigma/verified-1eff343a8f04e08e.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 58,
     "exifAliases": [
       "sigma-렌즈-sony-e-35mm-f2-dg-dn-contemporary-sony-e",
       "Sigma 35mm F2 DG DN | Contemporary",
@@ -20635,7 +20635,7 @@
     "currentSale": "확인 필요",
     "currentPriceKrw": null,
     "imageSrc": "/assets/images/products/sigma/verified-1eff343a8f04e08e.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 58,
     "exifAliases": [
       "sigma-렌즈-l-mount-35mm-f2-dg-dn-contemporary-l-mount",
       "Sigma 35mm F2 DG DN | Contemporary",
@@ -20663,7 +20663,7 @@
     "currentSale": "확인 필요",
     "currentPriceKrw": 691200,
     "imageSrc": "/assets/images/products/sigma/verified-bb7e084b5071b6bf.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 55,
     "exifAliases": [
       "sigma-렌즈-sony-e-45mm-f2-8-dg-dn-contemporary-sony-e",
       "Sigma 45mm F2.8 DG DN | Contemporary",
@@ -20691,7 +20691,7 @@
     "currentSale": "확인 필요",
     "currentPriceKrw": null,
     "imageSrc": "/assets/images/products/sigma/verified-bb7e084b5071b6bf.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 55,
     "exifAliases": [
       "sigma-렌즈-l-mount-45mm-f2-8-dg-dn-contemporary-l-mount",
       "Sigma 45mm F2.8 DG DN | Contemporary",
@@ -20719,7 +20719,7 @@
     "currentSale": "확인 필요",
     "currentPriceKrw": 2350000,
     "imageSrc": "/assets/images/products/sigma/verified-a39f8cae64ae6fbd.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 72,
     "exifAliases": [
       "sigma-렌즈-sony-e-50mm-f1-2-dg-dn-art-sony-e",
       "Sigma 50mm F1.2 DG DN | Art",
@@ -20747,7 +20747,7 @@
     "currentSale": "확인 필요",
     "currentPriceKrw": 2350000,
     "imageSrc": "/assets/images/products/sigma/verified-a39f8cae64ae6fbd.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 72,
     "exifAliases": [
       "sigma-렌즈-l-mount-50mm-f1-2-dg-dn-art-l-mount",
       "Sigma 50mm F1.2 DG DN | Art",
@@ -20775,7 +20775,7 @@
     "currentSale": "확인 필요",
     "currentPriceKrw": null,
     "imageSrc": "/assets/images/products/sigma/verified-028686dedbde202a.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 72,
     "exifAliases": [
       "sigma-렌즈-sony-e-50mm-f1-4-dg-dn-art-sony-e",
       "Sigma 50mm F1.4 DG DN | Art",
@@ -20803,7 +20803,7 @@
     "currentSale": "확인 필요",
     "currentPriceKrw": 1280400,
     "imageSrc": "/assets/images/products/sigma/verified-028686dedbde202a.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 72,
     "exifAliases": [
       "sigma-렌즈-l-mount-50mm-f1-4-dg-dn-art-l-mount",
       "Sigma 50mm F1.4 DG DN | Art",
@@ -20831,7 +20831,7 @@
     "currentSale": "확인 필요",
     "currentPriceKrw": null,
     "imageSrc": "/assets/images/products/sigma/verified-85ec71b5891b9019.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 58,
     "exifAliases": [
       "sigma-렌즈-sony-e-50mm-f2-dg-dn-contemporary-sony-e",
       "Sigma 50mm F2 DG DN | Contemporary",
@@ -20859,7 +20859,7 @@
     "currentSale": "확인 필요",
     "currentPriceKrw": 989400,
     "imageSrc": "/assets/images/products/sigma/verified-85ec71b5891b9019.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 58,
     "exifAliases": [
       "sigma-렌즈-l-mount-50mm-f2-dg-dn-contemporary-l-mount",
       "Sigma 50mm F2 DG DN | Contemporary",
@@ -20887,7 +20887,7 @@
     "currentSale": "확인 필요",
     "currentPriceKrw": 892800,
     "imageSrc": "/assets/images/products/sigma/verified-fb9a1b21fb52a41e.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 62,
     "exifAliases": [
       "sigma-렌즈-sony-e-65mm-f2-dg-dn-contemporary-sony-e",
       "Sigma 65mm F2 DG DN | Contemporary",
@@ -20915,7 +20915,7 @@
     "currentSale": "확인 필요",
     "currentPriceKrw": null,
     "imageSrc": "/assets/images/products/sigma/verified-fb9a1b21fb52a41e.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 62,
     "exifAliases": [
       "sigma-렌즈-l-mount-65mm-f2-dg-dn-contemporary-l-mount",
       "Sigma 65mm F2 DG DN | Contemporary",
@@ -20943,7 +20943,7 @@
     "currentSale": "확인 필요",
     "currentPriceKrw": null,
     "imageSrc": "/assets/images/products/sigma/verified-badec71d87b39701.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 77,
     "exifAliases": [
       "sigma-렌즈-sony-e-85mm-f1-4-dg-dn-art-sony-e",
       "Sigma 85mm F1.4 DG DN | Art",
@@ -20971,7 +20971,7 @@
     "currentSale": "확인 필요",
     "currentPriceKrw": 1430400,
     "imageSrc": "/assets/images/products/sigma/verified-badec71d87b39701.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 77,
     "exifAliases": [
       "sigma-렌즈-l-mount-85mm-f1-4-dg-dn-art-l-mount",
       "Sigma 85mm F1.4 DG DN | Art",
@@ -20999,7 +20999,7 @@
     "currentSale": "확인 필요",
     "currentPriceKrw": null,
     "imageSrc": "/assets/images/products/sigma/verified-80edd80cc80de07e.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 55,
     "exifAliases": [
       "sigma-렌즈-sony-e-90mm-f2-8-dg-dn-contemporary-sony-e",
       "Sigma 90mm F2.8 DG DN | Contemporary",
@@ -21027,7 +21027,7 @@
     "currentSale": "확인 필요",
     "currentPriceKrw": null,
     "imageSrc": "/assets/images/products/sigma/verified-80edd80cc80de07e.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 55,
     "exifAliases": [
       "sigma-렌즈-l-mount-90mm-f2-8-dg-dn-contemporary-l-mount",
       "Sigma 90mm F2.8 DG DN | Contemporary",
@@ -21055,7 +21055,7 @@
     "currentSale": "확인 필요",
     "currentPriceKrw": null,
     "imageSrc": "/assets/images/products/sigma/verified-e6afc4b43f091a18.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 62,
     "exifAliases": [
       "sigma-렌즈-sony-e-105mm-f2-8-dg-dn-macro-art-sony-e",
       "Sigma 105mm F2.8 DG DN Macro | Art",
@@ -21083,7 +21083,7 @@
     "currentSale": "확인 필요",
     "currentPriceKrw": 1084800,
     "imageSrc": "/assets/images/products/sigma/verified-e6afc4b43f091a18.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 62,
     "exifAliases": [
       "sigma-렌즈-l-mount-105mm-f2-8-dg-dn-macro-art-l-mount",
       "Sigma 105mm F2.8 DG DN Macro | Art",
@@ -21111,7 +21111,7 @@
     "currentSale": "확인 필요",
     "currentPriceKrw": 4800000,
     "imageSrc": "/assets/images/products/sigma/verified-66b3d98b8eac66b0.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 105,
     "exifAliases": [
       "sigma-렌즈-sony-e-200mm-f2-dg-os-sports-sony-e",
       "Sigma 200mm F2 DG OS | Sports",
@@ -21139,7 +21139,7 @@
     "currentSale": "확인 필요",
     "currentPriceKrw": 4800000,
     "imageSrc": "/assets/images/products/sigma/verified-66b3d98b8eac66b0.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 105,
     "exifAliases": [
       "sigma-렌즈-l-mount-200mm-f2-dg-os-sports-l-mount",
       "Sigma 200mm F2 DG OS | Sports",
@@ -21167,7 +21167,7 @@
     "currentSale": "확인 필요",
     "currentPriceKrw": 4300000,
     "imageSrc": "/assets/images/products/sigma/verified-3555d1b67036ec3c.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 95,
     "exifAliases": [
       "sigma-렌즈-sony-e-500mm-f5-6-dg-dn-os-sports-sony-e",
       "Sigma 500mm F5.6 DG DN OS | Sports",
@@ -21195,7 +21195,7 @@
     "currentSale": "확인 필요",
     "currentPriceKrw": 4300000,
     "imageSrc": "/assets/images/products/sigma/verified-3555d1b67036ec3c.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 95,
     "exifAliases": [
       "sigma-렌즈-l-mount-500mm-f5-6-dg-dn-os-sports-l-mount",
       "Sigma 500mm F5.6 DG DN OS | Sports",
@@ -21279,7 +21279,7 @@
     "currentSale": "확인 필요",
     "currentPriceKrw": null,
     "imageSrc": "/assets/images/products/sigma/verified-c214a0f2219cc3f1.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 72,
     "exifAliases": [
       "sigma-렌즈-sony-e-16-28mm-f2-8-dg-dn-contemporary-sony-e",
       "Sigma 16-28mm F2.8 DG DN | Contemporary",
@@ -21307,7 +21307,7 @@
     "currentSale": "확인 필요",
     "currentPriceKrw": 1390000,
     "imageSrc": "/assets/images/products/sigma/verified-c214a0f2219cc3f1.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 72,
     "exifAliases": [
       "sigma-렌즈-l-mount-16-28mm-f2-8-dg-dn-contemporary-l-mount",
       "Sigma 16-28mm F2.8 DG DN | Contemporary",
@@ -21335,7 +21335,7 @@
     "currentSale": "확인 필요",
     "currentPriceKrw": 1390000,
     "imageSrc": "/assets/images/products/sigma/verified-e52c96300db9aa3c.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 72,
     "exifAliases": [
       "sigma-렌즈-sony-e-20-200mm-f3-5-6-3-dg-contemporary-sony-e",
       "Sigma 20-200mm F3.5-6.3 DG | Contemporary",
@@ -21363,7 +21363,7 @@
     "currentSale": "확인 필요",
     "currentPriceKrw": 1390000,
     "imageSrc": "/assets/images/products/sigma/verified-e52c96300db9aa3c.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 72,
     "exifAliases": [
       "sigma-렌즈-l-mount-20-200mm-f3-5-6-3-dg-contemporary-l-mount",
       "Sigma 20-200mm F3.5-6.3 DG | Contemporary",
@@ -21391,7 +21391,7 @@
     "currentSale": "아니오",
     "currentPriceKrw": null,
     "imageSrc": "/assets/images/products/sigma/verified-4e65a11a455b907b.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 82,
     "exifAliases": [
       "sigma-렌즈-sony-e-24-70mm-f2-8-dg-dn-art-sony-e",
       "Sigma 24-70mm F2.8 DG DN | Art",
@@ -21419,7 +21419,7 @@
     "currentSale": "아니오",
     "currentPriceKrw": 1440000,
     "imageSrc": "/assets/images/products/sigma/verified-4e65a11a455b907b.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 82,
     "exifAliases": [
       "sigma-렌즈-l-mount-24-70mm-f2-8-dg-dn-art-l-mount",
       "Sigma 24-70mm F2.8 DG DN | Art",
@@ -21447,7 +21447,7 @@
     "currentSale": "확인 필요",
     "currentPriceKrw": 1881000,
     "imageSrc": "/assets/images/products/sigma/verified-4ca516b1d842c548.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 82,
     "exifAliases": [
       "sigma-렌즈-sony-e-24-70mm-f2-8-dg-dn-ii-art-sony-e",
       "Sigma 24-70mm F2.8 DG DN II | Art",
@@ -21475,7 +21475,7 @@
     "currentSale": "확인 필요",
     "currentPriceKrw": 1881000,
     "imageSrc": "/assets/images/products/sigma/verified-4ca516b1d842c548.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 82,
     "exifAliases": [
       "sigma-렌즈-l-mount-24-70mm-f2-8-dg-dn-ii-art-l-mount",
       "Sigma 24-70mm F2.8 DG DN II | Art",
@@ -21503,7 +21503,7 @@
     "currentSale": "확인 필요",
     "currentPriceKrw": 2199000,
     "imageSrc": "/assets/images/products/sigma/verified-db2d662a6e1ab6b2.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 82,
     "exifAliases": [
       "sigma-렌즈-sony-e-28-45mm-f1-8-dg-dn-art-sony-e",
       "Sigma 28-45mm F1.8 DG DN | Art",
@@ -21531,7 +21531,7 @@
     "currentSale": "확인 필요",
     "currentPriceKrw": 2199000,
     "imageSrc": "/assets/images/products/sigma/verified-db2d662a6e1ab6b2.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 82,
     "exifAliases": [
       "sigma-렌즈-l-mount-28-45mm-f1-8-dg-dn-art-l-mount",
       "Sigma 28-45mm F1.8 DG DN | Art",
@@ -21559,7 +21559,7 @@
     "currentSale": "확인 필요",
     "currentPriceKrw": null,
     "imageSrc": "/assets/images/products/sigma/verified-0d4d7dd1590dffaf.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 67,
     "exifAliases": [
       "sigma-렌즈-sony-e-28-70mm-f2-8-dg-dn-contemporary-sony-e",
       "Sigma 28-70mm F2.8 DG DN | Contemporary",
@@ -21587,7 +21587,7 @@
     "currentSale": "확인 필요",
     "currentPriceKrw": 1150000,
     "imageSrc": "/assets/images/products/sigma/verified-0d4d7dd1590dffaf.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 67,
     "exifAliases": [
       "sigma-렌즈-l-mount-28-70mm-f2-8-dg-dn-contemporary-l-mount",
       "Sigma 28-70mm F2.8 DG DN | Contemporary",
@@ -21615,7 +21615,7 @@
     "currentSale": "확인 필요",
     "currentPriceKrw": 3249500,
     "imageSrc": "/assets/images/products/sigma/verified-675902351bbf7d8b.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 105,
     "exifAliases": [
       "sigma-렌즈-sony-e-60-600mm-f4-5-6-3-dg-dn-os-sports-sony-e",
       "Sigma 60-600mm F4.5-6.3 DG DN OS | Sports",
@@ -21643,7 +21643,7 @@
     "currentSale": "확인 필요",
     "currentPriceKrw": 3249500,
     "imageSrc": "/assets/images/products/sigma/verified-675902351bbf7d8b.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 105,
     "exifAliases": [
       "sigma-렌즈-l-mount-60-600mm-f4-5-6-3-dg-dn-os-sports-l-mount",
       "Sigma 60-600mm F4.5-6.3 DG DN OS | Sports",
@@ -21671,7 +21671,7 @@
     "currentSale": "확인 필요",
     "currentPriceKrw": 2199000,
     "imageSrc": "/assets/images/products/sigma/verified-6e8f9830af35834f.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 77,
     "exifAliases": [
       "sigma-렌즈-sony-e-70-200mm-f2-8-dg-dn-os-sports-sony-e",
       "Sigma 70-200mm F2.8 DG DN OS | Sports",
@@ -21699,7 +21699,7 @@
     "currentSale": "확인 필요",
     "currentPriceKrw": 2199000,
     "imageSrc": "/assets/images/products/sigma/verified-6e8f9830af35834f.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 77,
     "exifAliases": [
       "sigma-렌즈-l-mount-70-200mm-f2-8-dg-dn-os-sports-l-mount",
       "Sigma 70-200mm F2.8 DG DN OS | Sports",
@@ -21727,7 +21727,7 @@
     "currentSale": "확인 필요",
     "currentPriceKrw": null,
     "imageSrc": "/assets/images/products/sigma/verified-7b9659e69629de5e.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 67,
     "exifAliases": [
       "sigma-렌즈-sony-e-100-400mm-f5-6-3-dg-dn-os-contemporary-sony-e",
       "Sigma 100-400mm F5-6.3 DG DN OS | Contemporary",
@@ -21755,7 +21755,7 @@
     "currentSale": "확인 필요",
     "currentPriceKrw": 1246080,
     "imageSrc": "/assets/images/products/sigma/verified-7b9659e69629de5e.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 67,
     "exifAliases": [
       "sigma-렌즈-l-mount-100-400mm-f5-6-3-dg-dn-os-contemporary-l-mount",
       "Sigma 100-400mm F5-6.3 DG DN OS | Contemporary",
@@ -21783,7 +21783,7 @@
     "currentSale": "확인 필요",
     "currentPriceKrw": null,
     "imageSrc": "/assets/images/products/sigma/verified-d835d3f8e440733e.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 95,
     "exifAliases": [
       "sigma-렌즈-sony-e-150-600mm-f5-6-3-dg-dn-os-sports-sony-e",
       "Sigma 150-600mm F5-6.3 DG DN OS | Sports",
@@ -21811,7 +21811,7 @@
     "currentSale": "확인 필요",
     "currentPriceKrw": 1919040,
     "imageSrc": "/assets/images/products/sigma/verified-d835d3f8e440733e.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 95,
     "exifAliases": [
       "sigma-렌즈-l-mount-150-600mm-f5-6-3-dg-dn-os-sports-l-mount",
       "Sigma 150-600mm F5-6.3 DG DN OS | Sports",
@@ -21839,7 +21839,7 @@
     "currentSale": "확인 필요",
     "currentPriceKrw": 9900000,
     "imageSrc": "/assets/images/products/sigma/verified-0e49e43f2188f6c1.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 40.5,
     "exifAliases": [
       "sigma-렌즈-sony-e-300-600mm-f4-dg-os-sports-sony-e",
       "Sigma 300-600mm F4 DG OS | Sports",
@@ -21867,7 +21867,7 @@
     "currentSale": "확인 필요",
     "currentPriceKrw": 9900000,
     "imageSrc": "/assets/images/products/sigma/verified-0e49e43f2188f6c1.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 40.5,
     "exifAliases": [
       "sigma-렌즈-l-mount-300-600mm-f4-dg-os-sports-l-mount",
       "Sigma 300-600mm F4 DG OS | Sports",
@@ -21951,7 +21951,7 @@
     "currentSale": "예",
     "currentPriceKrw": 1447000,
     "imageSrc": "/assets/images/products/tamron/verified-c4d24ce58d45faac.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 67,
     "exifAliases": [
       "tamron-렌즈-sony-e-a064-sony-e",
       "Tamron 16-30mm F2.8 Di III VXD G2",
@@ -21979,7 +21979,7 @@
     "currentSale": "예",
     "currentPriceKrw": 1447000,
     "imageSrc": "/assets/images/products/tamron/verified-968e1b81f9b2e8fa.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 67,
     "exifAliases": [
       "tamron-렌즈-nikon-z-a064-nikon-z",
       "Tamron 16-30mm F2.8 Di III VXD G2",
@@ -22007,7 +22007,7 @@
     "currentSale": "예",
     "currentPriceKrw": null,
     "imageSrc": "/assets/images/products/tamron/verified-e842030db3ca6998.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 67,
     "exifAliases": [
       "tamron-렌즈-sony-e-a046-sony-e",
       "Tamron 17-28mm F2.8 Di III RXD",
@@ -22035,7 +22035,7 @@
     "currentSale": "예",
     "currentPriceKrw": 968000,
     "imageSrc": "/assets/images/products/tamron/verified-1134fb70ea54833a.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 67,
     "exifAliases": [
       "tamron-렌즈-sony-e-a068-sony-e",
       "Tamron 17-50mm F4 Di III VXD",
@@ -22063,7 +22063,7 @@
     "currentSale": "예",
     "currentPriceKrw": 324000,
     "imageSrc": "/assets/images/products/tamron/verified-9c933640613aed21.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 67,
     "exifAliases": [
       "tamron-렌즈-sony-e-f050-sony-e",
       "Tamron 20mm F2.8 Di III OSD M1:2",
@@ -22091,7 +22091,7 @@
     "currentSale": "예",
     "currentPriceKrw": 1036000,
     "imageSrc": "/assets/images/products/tamron/verified-1d4c4e82bd7a4e0f.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 67,
     "exifAliases": [
       "tamron-렌즈-sony-e-a062-sony-e",
       "Tamron 20-40mm F2.8 Di III VXD",
@@ -22119,7 +22119,7 @@
     "currentSale": "예",
     "currentPriceKrw": 302000,
     "imageSrc": "/assets/images/products/tamron/verified-b31432678486f11a.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 67,
     "exifAliases": [
       "tamron-렌즈-sony-e-f051-sony-e",
       "Tamron 24mm F2.8 Di III OSD M1:2",
@@ -22147,7 +22147,7 @@
     "currentSale": "예",
     "currentPriceKrw": 1350000,
     "imageSrc": "/assets/images/products/tamron/verified-558c52291093202d.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 67,
     "exifAliases": [
       "tamron-렌즈-sony-e-a075-sony-e",
       "Tamron 25-200mm F2.8-5.6 Di III VXD G2",
@@ -22175,7 +22175,7 @@
     "currentSale": "아니오",
     "currentPriceKrw": null,
     "imageSrc": "/assets/images/products/tamron/verified-da945cc942d2bbfc.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 67,
     "exifAliases": [
       "tamron-렌즈-sony-e-a036-sony-e",
       "Tamron 28-75mm F2.8 Di III RXD",
@@ -22203,7 +22203,7 @@
     "currentSale": "예",
     "currentPriceKrw": 1188000,
     "imageSrc": "/assets/images/products/tamron/verified-ae70cb0fd8853c63.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 67,
     "exifAliases": [
       "tamron-렌즈-sony-e-a063-sony-e",
       "Tamron 28-75mm F2.8 Di III VXD G2",
@@ -22231,7 +22231,7 @@
     "currentSale": "예",
     "currentPriceKrw": 1173000,
     "imageSrc": "/assets/images/products/tamron/verified-510bd00632b4e236.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 67,
     "exifAliases": [
       "tamron-렌즈-nikon-z-a063-nikon-z",
       "Tamron 28-75mm F2.8 Di III VXD G2",
@@ -22259,7 +22259,7 @@
     "currentSale": "예",
     "currentPriceKrw": 907000,
     "imageSrc": "/assets/images/products/tamron/verified-abdf761fb4cc5818.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 67,
     "exifAliases": [
       "tamron-렌즈-sony-e-a071-sony-e",
       "Tamron 28-200mm F2.8-5.6 Di III RXD",
@@ -22287,7 +22287,7 @@
     "currentSale": "예",
     "currentPriceKrw": 1159000,
     "imageSrc": "/assets/images/products/tamron/verified-ee1e9fb2ac028ba9.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 67,
     "exifAliases": [
       "tamron-렌즈-sony-e-a074-sony-e",
       "Tamron 28-300mm F4-7.1 Di III VC VXD",
@@ -22315,7 +22315,7 @@
     "currentSale": "예",
     "currentPriceKrw": 302000,
     "imageSrc": "/assets/images/products/tamron/verified-3d606ac3d523e6dc.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 67,
     "exifAliases": [
       "tamron-렌즈-sony-e-f053-sony-e",
       "Tamron 35mm F2.8 Di III OSD M1:2",
@@ -22343,7 +22343,7 @@
     "currentSale": "예",
     "currentPriceKrw": 1573000,
     "imageSrc": "/assets/images/products/tamron/verified-23813084ae691436.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 67,
     "exifAliases": [
       "tamron-렌즈-sony-e-a078-sony-e",
       "Tamron 35-100mm F2.8 Di III VXD",
@@ -22371,7 +22371,7 @@
     "currentSale": "예",
     "currentPriceKrw": 1624000,
     "imageSrc": "/assets/images/products/tamron/verified-9b4a6b33a52250a7.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 67,
     "exifAliases": [
       "tamron-렌즈-nikon-z-a078-nikon-z",
       "Tamron 35-100mm F2.8 Di III VXD",
@@ -22399,7 +22399,7 @@
     "currentSale": "예",
     "currentPriceKrw": 2167000,
     "imageSrc": "/assets/images/products/tamron/verified-aecac1c71d0a31d7.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 82,
     "exifAliases": [
       "tamron-렌즈-sony-e-a058-sony-e",
       "Tamron 35-150mm F2-2.8 Di III VXD",
@@ -22427,7 +22427,7 @@
     "currentSale": "예",
     "currentPriceKrw": 2325000,
     "imageSrc": "/assets/images/products/tamron/verified-4dad74c8f8ed5958.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 82,
     "exifAliases": [
       "tamron-렌즈-nikon-z-a058-nikon-z",
       "Tamron 35-150mm F2-2.8 Di III VXD",
@@ -22455,7 +22455,7 @@
     "currentSale": "예",
     "currentPriceKrw": 1159000,
     "imageSrc": "/assets/images/products/tamron/verified-2da46d8e87493259.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 67,
     "exifAliases": [
       "tamron-렌즈-sony-e-a069-sony-e",
       "Tamron 50-300mm F4.5-6.3 Di III VC VXD",
@@ -22483,7 +22483,7 @@
     "currentSale": "예",
     "currentPriceKrw": 1807000,
     "imageSrc": "/assets/images/products/tamron/verified-a1f4a650bb9bd684.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 67,
     "exifAliases": [
       "tamron-렌즈-sony-e-a067-sony-e",
       "Tamron 50-400mm F4.5-6.3 Di III VC VXD",
@@ -22511,7 +22511,7 @@
     "currentSale": "예",
     "currentPriceKrw": 1828000,
     "imageSrc": "/assets/images/products/tamron/verified-36136ce6a18fa310.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 67,
     "exifAliases": [
       "tamron-렌즈-nikon-z-a067-nikon-z",
       "Tamron 50-400mm F4.5-6.3 Di III VC VXD",
@@ -22539,7 +22539,7 @@
     "currentSale": "아니오",
     "currentPriceKrw": null,
     "imageSrc": "/assets/images/products/tamron/verified-9d1ea7d5f2e82a4c.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 67,
     "exifAliases": [
       "tamron-렌즈-sony-e-a056-sony-e",
       "Tamron 70-180mm F2.8 Di III VXD",
@@ -22567,7 +22567,7 @@
     "currentSale": "예",
     "currentPriceKrw": 1656000,
     "imageSrc": "/assets/images/products/tamron/verified-5445d2706dcaecf1.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 67,
     "exifAliases": [
       "tamron-렌즈-sony-e-a065-sony-e",
       "Tamron 70-180mm F2.8 Di III VC VXD G2",
@@ -22595,7 +22595,7 @@
     "currentSale": "예",
     "currentPriceKrw": 1656000,
     "imageSrc": "/assets/images/products/tamron/verified-f9d0819bd03f9a52.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 67,
     "exifAliases": [
       "tamron-렌즈-nikon-z-a065-nikon-z",
       "Tamron 70-180mm F2.8 Di III VC VXD G2",
@@ -22623,7 +22623,7 @@
     "currentSale": "예",
     "currentPriceKrw": 518000,
     "imageSrc": "/assets/images/products/tamron/verified-87f23a91c65abf03.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 67,
     "exifAliases": [
       "tamron-렌즈-sony-e-a047-sony-e",
       "Tamron 70-300mm F4.5-6.3 Di III RXD",
@@ -22651,7 +22651,7 @@
     "currentSale": "예",
     "currentPriceKrw": 817000,
     "imageSrc": "/assets/images/products/tamron/verified-1e0d303d88e950fe.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 67,
     "exifAliases": [
       "tamron-렌즈-nikon-z-a047-nikon-z",
       "Tamron 70-300mm F4.5-6.3 Di III RXD",
@@ -22679,7 +22679,7 @@
     "currentSale": "예",
     "currentPriceKrw": 1058000,
     "imageSrc": "/assets/images/products/tamron/verified-af529bc17b085e20.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 67,
     "exifAliases": [
       "tamron-렌즈-sony-e-f072-sony-e",
       "Tamron 90mm F2.8 Di III MACRO VXD",
@@ -22707,7 +22707,7 @@
     "currentSale": "예",
     "currentPriceKrw": 1058000,
     "imageSrc": "/assets/images/products/tamron/verified-bffef1e92b885550.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 67,
     "exifAliases": [
       "tamron-렌즈-nikon-z-f072-nikon-z",
       "Tamron 90mm F2.8 Di III MACRO VXD",
@@ -22735,7 +22735,7 @@
     "currentSale": "예",
     "currentPriceKrw": 1447000,
     "imageSrc": "/assets/images/products/tamron/verified-b2d746781118755a.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 82,
     "exifAliases": [
       "tamron-렌즈-sony-e-a057-sony-e",
       "Tamron 150-500mm F5-6.7 Di III VC VXD",
@@ -22763,7 +22763,7 @@
     "currentSale": "예",
     "currentPriceKrw": 1782000,
     "imageSrc": "/assets/images/products/tamron/verified-79330f1cf8220ffc.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 82,
     "exifAliases": [
       "tamron-렌즈-nikon-z-a057-nikon-z",
       "Tamron 150-500mm F5-6.7 Di III VC VXD",
@@ -22791,7 +22791,7 @@
     "currentSale": "예",
     "currentPriceKrw": 1962000,
     "imageSrc": "/assets/images/products/tamron/verified-b637eb5de8d6cd3b.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 82,
     "exifAliases": [
       "tamron-렌즈-fujifilm-x-a057-fujifilm-x",
       "Tamron 150-500mm F5-6.7 Di III VC VXD",
@@ -22819,7 +22819,7 @@
     "currentSale": "예",
     "currentPriceKrw": 842000,
     "imageSrc": "/assets/images/products/tamron/verified-d139a8b67d4e2ab3.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 67,
     "exifAliases": [
       "tamron-렌즈-sony-e-b060-sony-e",
       "Tamron 11-20mm F2.8 Di III-A RXD",
@@ -22847,7 +22847,7 @@
     "currentSale": "예",
     "currentPriceKrw": 1036000,
     "imageSrc": "/assets/images/products/tamron/verified-d7dba617a10c884b.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 67,
     "exifAliases": [
       "tamron-렌즈-fujifilm-x-b060-fujifilm-x",
       "Tamron 11-20mm F2.8 Di III-A RXD",
@@ -22875,7 +22875,7 @@
     "currentSale": "예",
     "currentPriceKrw": 1051000,
     "imageSrc": "/assets/images/products/tamron/verified-6abac7dea03fefc0.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 67,
     "exifAliases": [
       "tamron-렌즈-canon-rf-b060-canon-rf",
       "Tamron 11-20mm F2.8 Di III-A RXD",
@@ -22903,7 +22903,7 @@
     "currentSale": "아니오",
     "currentPriceKrw": null,
     "imageSrc": "/assets/images/products/tamron/verified-7481088701273109.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 52,
     "exifAliases": [
       "tamron-렌즈-micro-four-thirds-c001-micro-four-thirds",
       "Tamron 14-150mm F3.5-5.8 Di III",
@@ -22931,7 +22931,7 @@
     "currentSale": "예",
     "currentPriceKrw": 908000,
     "imageSrc": "/assets/images/products/tamron/verified-76057a51eae6dc1f.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 67,
     "exifAliases": [
       "tamron-렌즈-sony-e-b070-sony-e",
       "Tamron 17-70mm F2.8 Di III-A VC RXD",
@@ -22959,7 +22959,7 @@
     "currentSale": "예",
     "currentPriceKrw": 950000,
     "imageSrc": "/assets/images/products/tamron/verified-283e4fad4f6f4460.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 67,
     "exifAliases": [
       "tamron-렌즈-fujifilm-x-b070-fujifilm-x",
       "Tamron 17-70mm F2.8 Di III-A VC RXD",
@@ -22987,7 +22987,7 @@
     "currentSale": "예",
     "currentPriceKrw": 999000,
     "imageSrc": "/assets/images/products/tamron/verified-026da0696987fd01.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 67,
     "exifAliases": [
       "tamron-렌즈-nikon-z-b070-nikon-z",
       "Tamron 17-70mm F2.8 Di III-A VC RXD",
@@ -23015,7 +23015,7 @@
     "currentSale": "예",
     "currentPriceKrw": 999000,
     "imageSrc": "/assets/images/products/tamron/verified-2a553b13e5624f91.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 67,
     "exifAliases": [
       "tamron-렌즈-canon-rf-b070-canon-rf",
       "Tamron 17-70mm F2.8 Di III-A VC RXD",
@@ -23043,7 +23043,7 @@
     "currentSale": "아니오",
     "currentPriceKrw": null,
     "imageSrc": "/assets/images/products/tamron/verified-1fc50ef107d14efd.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 62,
     "exifAliases": [
       "tamron-렌즈-sony-e-b011-sony-e",
       "Tamron 18-200mm F3.5-6.3 Di III VC",
@@ -23071,7 +23071,7 @@
     "currentSale": "예",
     "currentPriceKrw": 799000,
     "imageSrc": "/assets/images/products/tamron/verified-7c0bed5986c9036a.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 67,
     "exifAliases": [
       "tamron-렌즈-sony-e-b061-sony-e",
       "Tamron 18-300mm F3.5-6.3 Di III-A VC VXD",
@@ -23099,7 +23099,7 @@
     "currentSale": "예",
     "currentPriceKrw": 799000,
     "imageSrc": "/assets/images/products/tamron/verified-2d0354afcd976b5e.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 67,
     "exifAliases": [
       "tamron-렌즈-fujifilm-x-b061-fujifilm-x",
       "Tamron 18-300mm F3.5-6.3 Di III-A VC VXD",
@@ -23127,7 +23127,7 @@
     "currentSale": "예",
     "currentPriceKrw": 910000,
     "imageSrc": "/assets/images/products/tamron/verified-a0b42719ffadd9c2.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 67,
     "exifAliases": [
       "tamron-렌즈-nikon-z-b061-nikon-z",
       "Tamron 18-300mm F3.5-6.3 Di III-A VC VXD",
@@ -23155,7 +23155,7 @@
     "currentSale": "예",
     "currentPriceKrw": 910000,
     "imageSrc": "/assets/images/products/tamron/verified-f98d80eb4c0985b1.webp",
-    "filterDiameterMm": null,
+    "filterDiameterMm": 67,
     "exifAliases": [
       "tamron-렌즈-canon-rf-b061-canon-rf",
       "Tamron 18-300mm F3.5-6.3 Di III-A VC VXD",

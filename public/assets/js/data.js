@@ -292,8 +292,9 @@ async function loadArray(url,cacheName){
 }
 export async function loadFlashes(){return flashCache||loadArray(FLASH_URL,'flash')}
 export async function loadMemoryCards(){return memoryCardCache||loadArray(MEMORY_CARD_URL,'memory')}
-export async function loadTripods(){return tripodCache||loadArray(TRIPOD_URL,'tripod')}
-export async function loadHeads(){return headCache||loadArray(HEAD_URL,'head')}
+export function hasVerifiedSupportLoad(item){return isProductActive(item)&&Number.isFinite(item?.maxLoadKg)&&item.maxLoadKg>0;}
+export async function loadTripods(){return (tripodCache||await loadArray(TRIPOD_URL,'tripod')).filter(hasVerifiedSupportLoad)}
+export async function loadHeads(){return (headCache||await loadArray(HEAD_URL,'head')).filter(hasVerifiedSupportLoad)}
 export async function loadPlates(){return plateCache||loadArray(PLATE_URL,'plate')}
 
 export function publicManufacturer(name=''){

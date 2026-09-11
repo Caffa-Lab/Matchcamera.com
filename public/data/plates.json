@@ -11,7 +11,15 @@
     "koreaPurchasable": true,
     "currentSale": "확인 필요",
     "officialSource": "https://photoclam.com/category/universal-plate/52/",
-    "verifiedAt": "2026-09-01"
+    "verifiedAt": "2026-09-01",
+    "imageSrc": "/assets/images/accessories/verified/photoclam-pc-59-up4.webp",
+    "imageSourcePage": "https://photoclam.com/category/universal-plate/52/",
+    "imageSourceUrl": "https://photoclam.com/web/product/medium/202307/9e620f37272e1e971882f8cb8202e3da.jpg",
+    "imageFetchedAt": "2026-09-11",
+    "imageWidth": 300,
+    "imageHeight": 300,
+    "imageMethod": "official-exact-model",
+    "imageUsageReviewRequired": true
   },
   {
     "id": "photoclam-pc-69-up4",
@@ -25,7 +33,15 @@
     "koreaPurchasable": true,
     "currentSale": "확인 필요",
     "officialSource": "https://photoclam.com/category/universal-plate/52/",
-    "verifiedAt": "2026-09-01"
+    "verifiedAt": "2026-09-01",
+    "imageSrc": "/assets/images/accessories/verified/photoclam-pc-69-up4.webp",
+    "imageSourcePage": "https://photoclam.com/category/universal-plate/52/",
+    "imageSourceUrl": "https://photoclam.com/web/product/medium/202307/eed0822112bb8c6635d68e397babaafd.jpg",
+    "imageFetchedAt": "2026-09-11",
+    "imageWidth": 300,
+    "imageHeight": 300,
+    "imageMethod": "official-exact-model",
+    "imageUsageReviewRequired": true
   },
   {
     "id": "photoclam-pc-m59-up3",
@@ -39,7 +55,15 @@
     "koreaPurchasable": true,
     "currentSale": "확인 필요",
     "officialSource": "https://photoclam.com/product/photoclam-pc-m59-up3-camera-plate-for-mirrorless/290/",
-    "verifiedAt": "2026-09-01"
+    "verifiedAt": "2026-09-01",
+    "imageSrc": "/assets/images/accessories/verified/photoclam-pc-m59-up3.webp",
+    "imageSourcePage": "https://photoclam.com/product/photoclam-pc-m59-up3-camera-plate-for-mirrorless/290/",
+    "imageSourceUrl": "https://photoclam.com/web/product/big/202307/2f81207955eb80f00e421d40ca614016.jpg",
+    "imageFetchedAt": "2026-09-11",
+    "imageWidth": 900,
+    "imageHeight": 900,
+    "imageMethod": "official-exact-model",
+    "imageUsageReviewRequired": true
   },
   {
     "id": "photoclam-pc-102-up",
@@ -54,7 +78,15 @@
     "koreaPurchasable": true,
     "currentSale": "확인 필요",
     "officialSource": "https://photoclam.com/product/photoclam-pc-102-up-102mm-telephoto-lens-plate/246/",
-    "verifiedAt": "2026-09-01"
+    "verifiedAt": "2026-09-01",
+    "imageSrc": "/assets/images/accessories/verified/photoclam-pc-102-up.webp",
+    "imageSourcePage": "https://photoclam.com/product/photoclam-pc-102-up-102mm-telephoto-lens-plate/246/",
+    "imageSourceUrl": "https://photoclam.com/web/product/big/20200210/f5dc14d25541b2b61824cd72b33002de.jpg",
+    "imageFetchedAt": "2026-09-11",
+    "imageWidth": 900,
+    "imageHeight": 900,
+    "imageMethod": "official-exact-model",
+    "imageUsageReviewRequired": true
   },
   {
     "id": "photoclam-lb-h-x2d",
@@ -64,11 +96,21 @@
     "standard": "Arca-Swiss",
     "cameraMount": "1/4-inch",
     "weightG": 123,
-    "compatibleModels": ["Hasselblad X2D 100C"],
+    "compatibleModels": [
+      "Hasselblad X2D 100C"
+    ],
     "koreaPurchasable": true,
     "currentSale": "확인 필요",
     "officialSource": "https://photoclam.com/product/photoclam-lb-h-x2d-hasselblad-x2d-l-plate/282/",
-    "verifiedAt": "2026-09-01"
+    "verifiedAt": "2026-09-01",
+    "imageSrc": "/assets/images/accessories/verified/photoclam-lb-h-x2d.webp",
+    "imageSourcePage": "https://photoclam.com/product/photoclam-lb-h-x2d-hasselblad-x2d-l-plate/282/",
+    "imageSourceUrl": "https://photoclam.com/web/product/big/202302/9f6a0ab6f3ca7ed4331e3215be1ad07c.jpg",
+    "imageFetchedAt": "2026-09-11",
+    "imageWidth": 900,
+    "imageHeight": 900,
+    "imageMethod": "official-exact-model",
+    "imageUsageReviewRequired": true
   },
   {
     "id": "photoclam-lb-z8-up",
@@ -78,10 +120,20 @@
     "standard": "Arca-Swiss",
     "cameraMount": "1/4-inch",
     "weightG": 141,
-    "compatibleModels": ["Nikon Z8"],
+    "compatibleModels": [
+      "Nikon Z8"
+    ],
     "koreaPurchasable": true,
     "currentSale": "확인 필요",
     "officialSource": "https://photoclam.com/product/photoclam-lb-z8-up-nikon-z8-l-plate/301/",
-    "verifiedAt": "2026-09-01"
+    "verifiedAt": "2026-09-01",
+    "imageSrc": "/assets/images/accessories/verified/photoclam-lb-z8-up.webp",
+    "imageSourcePage": "https://photoclam.com/product/photoclam-lb-z8-up-nikon-z8-l-plate/301/",
+    "imageSourceUrl": "https://photoclam.com/web/product/big/202308/404dcf55d6c00fc2620419b1d6275b76.jpg",
+    "imageFetchedAt": "2026-09-11",
+    "imageWidth": 900,
+    "imageHeight": 900,
+    "imageMethod": "official-exact-model",
+    "imageUsageReviewRequired": true
   }
 ]

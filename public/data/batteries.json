@@ -181,7 +181,15 @@
     "priceSourceName": "",
     "priceSource": "",
     "priceDate": "2026-08-28",
-    "priceVerification": "미확인"
+    "priceVerification": "미확인",
+    "imageSrc": "/assets/images/accessories/verified/canon-lp-e6nh.webp",
+    "imageSourcePage": "https://asia.canon/en/consumer/battery-pack-lp-e6nh/main/product",
+    "imageSourceUrl": "https://asia.canon/media/image/2020/07/04/1f53b66f6195431999eb4d716774b04a_LP-E6NH.png",
+    "imageFetchedAt": "2026-09-11",
+    "imageWidth": 362,
+    "imageHeight": 320,
+    "imageMethod": "official-exact-model",
+    "imageUsageReviewRequired": true
   },
   {
     "id": "canon-lp-e17",
@@ -241,7 +249,15 @@
     "priceSourceName": "니콘이미징코리아 E Shop",
     "priceSource": "https://eshop.nikc.nikon.com/product/NK0002895",
     "priceDate": "2026-08-28",
-    "priceVerification": "한국 공식 사이트 확인"
+    "priceVerification": "한국 공식 사이트 확인",
+    "imageSrc": "/assets/images/accessories/verified/nikon-en-el15c.webp",
+    "imageSourcePage": "https://nij.nikon.com/products/lineup/accessory/power_supply/en-el15c/",
+    "imageSourceUrl": "https://nij.nikon.com/cms/products/accessory/power_supply/en-el15c/img/index/product_01.jpg",
+    "imageFetchedAt": "2026-09-11",
+    "imageWidth": 900,
+    "imageHeight": 675,
+    "imageMethod": "official-exact-model",
+    "imageUsageReviewRequired": true
   },
   {
     "id": "nikon-en-el25",
@@ -260,7 +276,15 @@
     "priceSourceName": "",
     "priceSource": "",
     "priceDate": "2026-08-28",
-    "priceVerification": "미확인"
+    "priceVerification": "미확인",
+    "imageSrc": "/assets/images/accessories/verified/nikon-en-el25.webp",
+    "imageSourcePage": "https://nij.nikon.com/products/lineup/accessory/power_supply/en-el25/",
+    "imageSourceUrl": "https://nij.nikon.com/cms/products/accessory/power_supply/en-el25/img/index/product_01.jpg",
+    "imageFetchedAt": "2026-09-11",
+    "imageWidth": 900,
+    "imageHeight": 675,
+    "imageMethod": "official-exact-model",
+    "imageUsageReviewRequired": true
   },
   {
     "id": "nikon-en-el25a",
@@ -277,7 +301,15 @@
     "priceSourceName": "니콘이미징코리아 E Shop",
     "priceSource": "https://eshop.nikc.nikon.com/product/NK0003165",
     "priceDate": "2026-08-28",
-    "priceVerification": "한국 공식 사이트 확인"
+    "priceVerification": "한국 공식 사이트 확인",
+    "imageSrc": "/assets/images/accessories/verified/nikon-en-el25a.webp",
+    "imageSourcePage": "https://nij.nikon.com/products/lineup/accessory/power_supply/en-el25a/",
+    "imageSourceUrl": "https://nij.nikon.com/cms/products/accessory/power_supply/en-el25a/img/index/product_01.jpg",
+    "imageFetchedAt": "2026-09-11",
+    "imageWidth": 900,
+    "imageHeight": 675,
+    "imageMethod": "official-exact-model",
+    "imageUsageReviewRequired": true
   },
   {
     "id": "fujifilm-np-w235",
@@ -300,7 +332,15 @@
     "priceSourceName": "후지필름 코리아",
     "priceSource": "https://www.fujifilm-korea.co.kr/products/id/1074",
     "priceDate": "2026-08-28",
-    "priceVerification": "한국 공식 사이트 확인"
+    "priceVerification": "한국 공식 사이트 확인",
+    "imageSrc": "/assets/images/accessories/verified/fujifilm-np-w235.webp",
+    "imageSourcePage": "https://www.fujifilm-x.com/global/products/accessories/np-w235/",
+    "imageSourceUrl": "https://fujifilm-x.b-cdn.net/wp-content/uploads/2020/02/np-w235_thum.jpg",
+    "imageFetchedAt": "2026-09-11",
+    "imageWidth": 480,
+    "imageHeight": 480,
+    "imageMethod": "official-exact-model",
+    "imageUsageReviewRequired": true
   },
   {
     "id": "fujifilm-np-w126s",
@@ -321,7 +361,15 @@
     "priceSourceName": "후지필름 코리아",
     "priceSource": "https://fujifilm-korea.co.kr/products/id/1075",
     "priceDate": "2026-08-28",
-    "priceVerification": "한국 공식 사이트 확인"
+    "priceVerification": "한국 공식 사이트 확인",
+    "imageSrc": "/assets/images/accessories/verified/fujifilm-np-w126s.webp",
+    "imageSourcePage": "https://www.fujifilm-x.com/global/products/accessories/np-w126s/",
+    "imageSourceUrl": "https://fujifilm-x.b-cdn.net/wp-content/uploads/2019/10/np-w126s_thum.jpg",
+    "imageFetchedAt": "2026-09-11",
+    "imageWidth": 480,
+    "imageHeight": 480,
+    "imageMethod": "official-exact-model",
+    "imageUsageReviewRequired": true
   },
   {
     "id": "panasonic-dmw-blk22",
@@ -344,7 +392,15 @@
     "priceSourceName": "",
     "priceSource": "",
     "priceDate": "2026-08-28",
-    "priceVerification": "미확인"
+    "priceVerification": "미확인",
+    "imageSrc": "/assets/images/accessories/verified/panasonic-dmw-blk22.webp",
+    "imageSourcePage": "https://shop.panasonic.com/products/rechargeable-lithium-ion-battery-dmw-blk22",
+    "imageSourceUrl": "https://cdn.shopify.com/s/files/1/0724/5371/8324/products/sthggui5yf9nyw14gshs.jpg?v=1779299542",
+    "imageFetchedAt": "2026-09-11",
+    "imageWidth": 900,
+    "imageHeight": 900,
+    "imageMethod": "official-exact-model",
+    "imageUsageReviewRequired": true
   },
   {
     "id": "om-system-blx-1",
@@ -363,7 +419,15 @@
     "priceSourceName": "",
     "priceSource": "",
     "priceDate": "2026-08-28",
-    "priceVerification": "미확인"
+    "priceVerification": "미확인",
+    "imageSrc": "/assets/images/accessories/verified/om-system-blx-1.webp",
+    "imageSourcePage": "https://explore.omsystem.com/us/en/blx-1-lithium-ion-rechargeable-battery",
+    "imageSourceUrl": "https://nala.explore.omsystem.com/media/catalog/product/transparent/b/a/battery_blx-1.webp?width=800&height=&optimize=medium&fit=bounds",
+    "imageFetchedAt": "2026-09-11",
+    "imageWidth": 800,
+    "imageHeight": 800,
+    "imageMethod": "official-exact-model",
+    "imageUsageReviewRequired": true
   },
   {
     "id": "om-system-bls-50",
@@ -382,7 +446,15 @@
     "priceSourceName": "",
     "priceSource": "",
     "priceDate": "2026-08-28",
-    "priceVerification": "미확인"
+    "priceVerification": "미확인",
+    "imageSrc": "/assets/images/accessories/verified/om-system-bls-50.webp",
+    "imageSourcePage": "https://explore.omsystem.com/us/en/bls-50-lithium-ion-rechargeable-battery",
+    "imageSourceUrl": "https://nala.explore.omsystem.com/media/catalog/product/transparent/m/i/microsoftteams-image_2_1_.webp?width=800&height=&optimize=medium&fit=bounds",
+    "imageFetchedAt": "2026-09-11",
+    "imageWidth": 800,
+    "imageHeight": 800,
+    "imageMethod": "official-exact-model",
+    "imageUsageReviewRequired": true
   },
   {
     "id": "pentax-d-li90",
@@ -401,7 +473,15 @@
     "priceSourceName": "",
     "priceSource": "",
     "priceDate": "2026-08-28",
-    "priceVerification": "미확인"
+    "priceVerification": "미확인",
+    "imageSrc": "/assets/images/accessories/verified/pentax-d-li90.webp",
+    "imageSourcePage": "https://www.ricoh-imaging.co.jp/english/products/645z/accessories/",
+    "imageSourceUrl": "https://www.ricoh-imaging.co.jp/english/products/645z/accessories/img/pic-d-li90p.jpg",
+    "imageFetchedAt": "2026-09-11",
+    "imageWidth": 300,
+    "imageHeight": 140,
+    "imageMethod": "official-exact-model",
+    "imageUsageReviewRequired": true
   },
   {
     "id": "sigma-bp-51",
@@ -421,6 +501,14 @@
     "priceSourceName": "",
     "priceSource": "",
     "priceDate": "2026-08-28",
-    "priceVerification": "미확인"
+    "priceVerification": "미확인",
+    "imageSrc": "/assets/images/accessories/verified/sigma-bp-51.webp",
+    "imageSourcePage": "https://www.sigma-italia.it/en/products/li-ion-battery-bp-51",
+    "imageSourceUrl": "http://www.sigma-italia.it/cdn/shop/files/sigma_battery_bp-51.jpg?v=1761131581",
+    "imageFetchedAt": "2026-09-11",
+    "imageWidth": 900,
+    "imageHeight": 900,
+    "imageMethod": "official-exact-model",
+    "imageUsageReviewRequired": true
   }
 ]

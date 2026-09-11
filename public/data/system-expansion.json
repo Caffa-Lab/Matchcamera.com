@@ -11289,8 +11289,23 @@
       "정식 제품명": "Sony RX1R II",
       "출시년도": 2015,
       "센서 포맷": "Full Frame",
-      "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+      "검증 상태": "추가 사양은 모델별 공식 자료 확인 · 미확인 항목은 별도 표시",
+      "총 화소(MP)": 43.6,
+      "유효 화소(MP)": 42.4,
+      "사양 확인일": "2026-09-11",
+      "공식 사양 출처": "https://www.sony.jp/cyber-shot/products/DSC-RX1RM2/spec.html"
+    },
+    "specSources": {
+      "총 화소(MP)": {
+        "url": "https://www.sony.jp/cyber-shot/products/DSC-RX1RM2/spec.html",
+        "checkedAt": "2026-09-11"
+      },
+      "유효 화소(MP)": {
+        "url": "https://www.sony.jp/cyber-shot/products/DSC-RX1RM2/spec.html",
+        "checkedAt": "2026-09-11"
+      }
+    },
+    "megapixels": 42.4
   },
   {
     "id": "ext-sony-sony-rx100-vii",
@@ -11333,8 +11348,23 @@
       "정식 제품명": "Sony RX100 VII",
       "출시년도": 2019,
       "센서 포맷": "1-inch",
-      "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+      "검증 상태": "추가 사양은 모델별 공식 자료 확인 · 미확인 항목은 별도 표시",
+      "총 화소(MP)": 21.0,
+      "유효 화소(MP)": 20.1,
+      "사양 확인일": "2026-09-11",
+      "공식 사양 출처": "https://www.sony.jp/cyber-shot/products/DSC-RX100M7/spec.html"
+    },
+    "specSources": {
+      "총 화소(MP)": {
+        "url": "https://www.sony.jp/cyber-shot/products/DSC-RX100M7/spec.html",
+        "checkedAt": "2026-09-11"
+      },
+      "유효 화소(MP)": {
+        "url": "https://www.sony.jp/cyber-shot/products/DSC-RX100M7/spec.html",
+        "checkedAt": "2026-09-11"
+      }
+    },
+    "megapixels": 20.1
   },
   {
     "id": "ext-sony-sony-rx100-vi",
@@ -11377,8 +11407,23 @@
       "정식 제품명": "Sony RX100 VI",
       "출시년도": 2018,
       "센서 포맷": "1-inch",
-      "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+      "검증 상태": "추가 사양은 모델별 공식 자료 확인 · 미확인 항목은 별도 표시",
+      "총 화소(MP)": 21.0,
+      "유효 화소(MP)": 20.1,
+      "사양 확인일": "2026-09-11",
+      "공식 사양 출처": "https://www.sony.jp/cyber-shot/products/DSC-RX100M6/spec.html"
+    },
+    "specSources": {
+      "총 화소(MP)": {
+        "url": "https://www.sony.jp/cyber-shot/products/DSC-RX100M6/spec.html",
+        "checkedAt": "2026-09-11"
+      },
+      "유효 화소(MP)": {
+        "url": "https://www.sony.jp/cyber-shot/products/DSC-RX100M6/spec.html",
+        "checkedAt": "2026-09-11"
+      }
+    },
+    "megapixels": 20.1
   },
   {
     "id": "ext-sony-sony-rx100-v-a",
@@ -11421,8 +11466,23 @@
       "정식 제품명": "Sony RX100 V A",
       "출시년도": 2018,
       "센서 포맷": "1-inch",
-      "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+      "검증 상태": "추가 사양은 모델별 공식 자료 확인 · 미확인 항목은 별도 표시",
+      "총 화소(MP)": 21.0,
+      "유효 화소(MP)": 20.1,
+      "사양 확인일": "2026-09-11",
+      "공식 사양 출처": "https://www.sony.jp/cyber-shot/products/DSC-RX100M5A/spec.html"
+    },
+    "specSources": {
+      "총 화소(MP)": {
+        "url": "https://www.sony.jp/cyber-shot/products/DSC-RX100M5A/spec.html",
+        "checkedAt": "2026-09-11"
+      },
+      "유효 화소(MP)": {
+        "url": "https://www.sony.jp/cyber-shot/products/DSC-RX100M5A/spec.html",
+        "checkedAt": "2026-09-11"
+      }
+    },
+    "megapixels": 20.1
   },
   {
     "id": "ext-canon-canon-powershot-g1-x-mark-iii",
@@ -11597,8 +11657,58 @@
       "정식 제품명": "Fujifilm X100VI",
       "출시년도": 2024,
       "센서 포맷": "APS-C",
-      "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+      "검증 상태": "추가 사양은 모델별 공식 자료 확인 · 미확인 항목은 별도 표시",
+      "센서 종류": "컬러 필터를 포함한 23.5mm x 15.7mm (APS-C) X-Trans CMOS 5 HR 센서",
+      "이미지 프로세서": "X-Processor 5",
+      "렌즈 구성": "6군 8매 (비구면렌즈 2매 내장)",
+      "치수 상세": "가로: 128.0mm 높이: 74.8mm 두께: 55.3mm (최소두께: 33.2mm)",
+      "무게 상세": "배터리 및 메모리카드 포함: 약521g 배터리 및 메모리카드 제외: 약471g",
+      "사양 확인일": "2026-09-11",
+      "공식 사양 출처": "https://fujifilm-korea.co.kr/products/id/1330",
+      "유효 화소(MP)": 40.2,
+      "사진 RAW 상세": "14bit RAW (RAF 오리지널 포맷)",
+      "RAW 지원 여부": "있음",
+      "HDMI 종류": "HDMI Micro 커넥터 (Type D)"
+    },
+    "specSources": {
+      "센서 종류": {
+        "url": "https://fujifilm-korea.co.kr/products/id/1330",
+        "checkedAt": "2026-09-11"
+      },
+      "이미지 프로세서": {
+        "url": "https://fujifilm-korea.co.kr/products/id/1330",
+        "checkedAt": "2026-09-11"
+      },
+      "렌즈 구성": {
+        "url": "https://fujifilm-korea.co.kr/products/id/1330",
+        "checkedAt": "2026-09-11"
+      },
+      "치수 상세": {
+        "url": "https://fujifilm-korea.co.kr/products/id/1330",
+        "checkedAt": "2026-09-11"
+      },
+      "무게 상세": {
+        "url": "https://fujifilm-korea.co.kr/products/id/1330",
+        "checkedAt": "2026-09-11"
+      },
+      "유효 화소(MP)": {
+        "url": "https://fujifilm-korea.co.kr/products/id/1330",
+        "checkedAt": "2026-09-11"
+      },
+      "사진 RAW 상세": {
+        "url": "https://fujifilm-korea.co.kr/products/id/1330",
+        "checkedAt": "2026-09-11"
+      },
+      "RAW 지원 여부": {
+        "url": "https://fujifilm-korea.co.kr/products/id/1330",
+        "checkedAt": "2026-09-11"
+      },
+      "HDMI 종류": {
+        "url": "https://fujifilm-korea.co.kr/products/id/1330",
+        "checkedAt": "2026-09-11"
+      }
+    },
+    "megapixels": 40.2
   },
   {
     "id": "ext-fujifilm-fujifilm-x100v",
@@ -11773,8 +11883,48 @@
       "정식 제품명": "Ricoh GR III",
       "출시년도": 2019,
       "센서 포맷": "APS-C",
-      "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+      "검증 상태": "추가 사양은 모델별 공식 자료 확인 · 미확인 항목은 별도 표시",
+      "유효 화소(MP)": 24.24,
+      "ISO 감도": "ISO100～102400: Auto (ISO Auto Lower/Upper Limit and Minimum Shutter Speed can be set), Manual",
+      "손떨림 보정 상세": "Sensor-shift shake reduction (SR)(3-axis)",
+      "손떨림 보정(IBIS) 여부": "있음",
+      "동영상 기록 상세": "File Format: MPEG4 AVC/H.264 (MOV)\nRecorded Pixels: Full HD (1920x1080, 60p/30p/24p), Sound: Built-in stereo microphone\nRecording Time: Up to 25 minutes or 4GB; automatically stops recording if the internal temperature of the camera becomes high.",
+      "메모리카드 종류": "Internal Memory (Approx. 2GB), SD/SDHC/SDXC Memory Card (Conforms to UHS-I standards)",
+      "셔터 속도": "1/4000 sec. - 30 sec. (Limit by aperture setting F2.8: 1/2500 sec, F5.6 or greater: 1/4000 sec.)\nTimed Exposure (10sec. - 20min.), Bulb, Time",
+      "사양 확인일": "2026-09-11",
+      "공식 사양 출처": "https://www.ricoh-imaging.co.jp/english/products/gr-3/spec/"
+    },
+    "specSources": {
+      "유효 화소(MP)": {
+        "url": "https://www.ricoh-imaging.co.jp/english/products/gr-3/spec/",
+        "checkedAt": "2026-09-11"
+      },
+      "ISO 감도": {
+        "url": "https://www.ricoh-imaging.co.jp/english/products/gr-3/spec/",
+        "checkedAt": "2026-09-11"
+      },
+      "손떨림 보정 상세": {
+        "url": "https://www.ricoh-imaging.co.jp/english/products/gr-3/spec/",
+        "checkedAt": "2026-09-11"
+      },
+      "손떨림 보정(IBIS) 여부": {
+        "url": "https://www.ricoh-imaging.co.jp/english/products/gr-3/spec/",
+        "checkedAt": "2026-09-11"
+      },
+      "동영상 기록 상세": {
+        "url": "https://www.ricoh-imaging.co.jp/english/products/gr-3/spec/",
+        "checkedAt": "2026-09-11"
+      },
+      "메모리카드 종류": {
+        "url": "https://www.ricoh-imaging.co.jp/english/products/gr-3/spec/",
+        "checkedAt": "2026-09-11"
+      },
+      "셔터 속도": {
+        "url": "https://www.ricoh-imaging.co.jp/english/products/gr-3/spec/",
+        "checkedAt": "2026-09-11"
+      }
+    },
+    "megapixels": 24.24
   },
   {
     "id": "ext-leica-leica-q3-43",
@@ -11949,8 +12099,28 @@
       "정식 제품명": "Panasonic LUMIX LX100 II",
       "출시년도": 2018,
       "센서 포맷": "Micro Four Thirds",
-      "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+      "검증 상태": "추가 사양은 모델별 공식 자료 확인 · 미확인 항목은 별도 표시",
+      "손떨림 보정 상세": "○",
+      "유효 화소(MP)": 17.0,
+      "센서 종류": "4/3型MOSセンサー　総画素2177万画素　 原色カラーフィルタ",
+      "사양 확인일": "2026-09-11",
+      "공식 사양 출처": "https://panasonic.jp/dc/products/DC-LX100M2/spec.html"
+    },
+    "specSources": {
+      "손떨림 보정 상세": {
+        "url": "https://panasonic.jp/dc/products/DC-LX100M2/spec.html",
+        "checkedAt": "2026-09-11"
+      },
+      "유효 화소(MP)": {
+        "url": "https://panasonic.jp/dc/products/DC-LX100M2/spec.html",
+        "checkedAt": "2026-09-11"
+      },
+      "센서 종류": {
+        "url": "https://panasonic.jp/dc/products/DC-LX100M2/spec.html",
+        "checkedAt": "2026-09-11"
+      }
+    },
+    "megapixels": 17.0
   },
   {
     "id": "ext-nikon-nikon-coolpix-p1000",
@@ -11993,8 +12163,83 @@
       "정식 제품명": "Nikon COOLPIX P1000",
       "출시년도": 2018,
       "센서 포맷": "1/2.3-inch",
-      "검증 상태": "확장 DB — 세부 사양 확인 필요"
-    }
+      "검증 상태": "추가 사양은 모델별 공식 자료 확인 · 미확인 항목은 별도 표시",
+      "유효 화소(MP)": 16.0,
+      "센서 종류": "1/2.3-in. type CMOS Total pixels: approx. 16.79 million",
+      "손떨림 보정 상세": "Lens shift (still images) Combination of lens shift and electronic VR (movies)",
+      "AF 방식": "Contrast-detect AF",
+      "뷰파인더 상세": "Electronic viewfinder, 1 cm (0.39-in.), approx. 2359k-dot OLED with the diopter adjustment function (-3- +3 m -1 )",
+      "모니터 상세": "8.1 cm ( 3.2 -in.), approx. 921k-dot (RGB) wide viewing angle TFT LCD with anti-reflection coating and 5-level brightness adjustment, vari-angle TFT LCD",
+      "메모리카드 종류": "SD ,  SDHC ,  SDXC",
+      "셔터 속도": "1/4000 * -1 s 1/4000 * -30 s (when ISO sensitivity is 100 in M mode) * At wide-angle position, with largest f-number setting (smallest aperture) Bulb and Time setting (can be set when ISO sensitivity is 100 in M mode): Up to 60 seconds 1/8000-1/30 s (when recording movies)",
+      "치수 상세": "Approx. 146.3 x 118.8 x 181.3 mm (5.8 x 4.7 x 7.2 in.) (excluding projections)",
+      "가로 크기(mm)": 146.3,
+      "세로 크기(mm)": 118.8,
+      "두께(mm)": 181.3,
+      "무게 상세": "Approx. 1415 g (3 lb 2 oz) (including battery and memory card)",
+      "동봉 액세서리": "Strap, LC-77 Lens Cap, EN-EL20a Rechargeable Li-ion Battery, EH-73P Charging AC Adapter *3 *4 , UC-E21 USB Cable, HB-CP1 Bayonet Lens Hood",
+      "사양 확인일": "2026-09-11",
+      "공식 사양 출처": "https://imaging.nikon.com/imaging/lineup/coolpix/p/p1000/"
+    },
+    "specSources": {
+      "유효 화소(MP)": {
+        "url": "https://imaging.nikon.com/imaging/lineup/coolpix/p/p1000/",
+        "checkedAt": "2026-09-11"
+      },
+      "센서 종류": {
+        "url": "https://imaging.nikon.com/imaging/lineup/coolpix/p/p1000/",
+        "checkedAt": "2026-09-11"
+      },
+      "손떨림 보정 상세": {
+        "url": "https://imaging.nikon.com/imaging/lineup/coolpix/p/p1000/",
+        "checkedAt": "2026-09-11"
+      },
+      "AF 방식": {
+        "url": "https://imaging.nikon.com/imaging/lineup/coolpix/p/p1000/",
+        "checkedAt": "2026-09-11"
+      },
+      "뷰파인더 상세": {
+        "url": "https://imaging.nikon.com/imaging/lineup/coolpix/p/p1000/",
+        "checkedAt": "2026-09-11"
+      },
+      "모니터 상세": {
+        "url": "https://imaging.nikon.com/imaging/lineup/coolpix/p/p1000/",
+        "checkedAt": "2026-09-11"
+      },
+      "메모리카드 종류": {
+        "url": "https://imaging.nikon.com/imaging/lineup/coolpix/p/p1000/",
+        "checkedAt": "2026-09-11"
+      },
+      "셔터 속도": {
+        "url": "https://imaging.nikon.com/imaging/lineup/coolpix/p/p1000/",
+        "checkedAt": "2026-09-11"
+      },
+      "치수 상세": {
+        "url": "https://imaging.nikon.com/imaging/lineup/coolpix/p/p1000/",
+        "checkedAt": "2026-09-11"
+      },
+      "가로 크기(mm)": {
+        "url": "https://imaging.nikon.com/imaging/lineup/coolpix/p/p1000/",
+        "checkedAt": "2026-09-11"
+      },
+      "세로 크기(mm)": {
+        "url": "https://imaging.nikon.com/imaging/lineup/coolpix/p/p1000/",
+        "checkedAt": "2026-09-11"
+      },
+      "두께(mm)": {
+        "url": "https://imaging.nikon.com/imaging/lineup/coolpix/p/p1000/",
+        "checkedAt": "2026-09-11"
+      },
+      "무게 상세": {
+        "url": "https://imaging.nikon.com/imaging/lineup/coolpix/p/p1000/",
+        "checkedAt": "2026-09-11"
+      },
+      "동봉 액세서리": {
+        "url": "https://imaging.nikon.com/imaging/lineup/coolpix/p/p1000/",
+        "checkedAt": "2026-09-11"
+      }
+    },
+    "megapixels": 16.0
   },
   {
     "id": "ext-sony-sony-fx6",
@@ -12040,7 +12285,7 @@
       "모델 코드": "ILME-FX6V",
       "출시년도": 2020,
       "센서 포맷": "Full Frame",
-      "센서 종류": "Exmor R CMOS",
+      "센서 종류": "35mmフルサイズ相当単板CMOSイメージセンサー",
       "최고 동영상 해상도": "4K",
       "최고 동영상 프레임레이트(fps)": 120,
       "다이나믹 레인지": "15+ 스톱",
@@ -12050,7 +12295,25 @@
       "공식 출처 URL": "https://pro.sony/ko_KR/products/handheld-camcorders/ilme-fx6",
       "가격 출처 URL": "https://store.sony.co.kr/product-view/102263858",
       "데이터 기준일": "2026-08-30",
-      "검증 상태": "Sony Pro / Sony Store Korea 공식 자료 확인"
+      "검증 상태": "추가 사양은 모델별 공식 자료 확인 · 미확인 항목은 별도 표시",
+      "손떨림 보정 상세": "レンズ内手ブレ補正方式",
+      "USB 종류": "USBタイプC×1、マルチ/マイクロB×1",
+      "사양 확인일": "2026-09-11",
+      "공식 사양 출처": "https://www.sony.jp/pro-cam/products/ILME-FX6V/specification.html"
+    },
+    "specSources": {
+      "센서 종류": {
+        "url": "https://www.sony.jp/pro-cam/products/ILME-FX6V/specification.html",
+        "checkedAt": "2026-09-11"
+      },
+      "손떨림 보정 상세": {
+        "url": "https://www.sony.jp/pro-cam/products/ILME-FX6V/specification.html",
+        "checkedAt": "2026-09-11"
+      },
+      "USB 종류": {
+        "url": "https://www.sony.jp/pro-cam/products/ILME-FX6V/specification.html",
+        "checkedAt": "2026-09-11"
+      }
     }
   },
   {

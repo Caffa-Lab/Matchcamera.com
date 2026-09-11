@@ -28,6 +28,9 @@ jobs:
           node --check public/admin/admin.js
           node --check public/assets/js/home.js
           node --check public/assets/js/builder.js
+          node --check public/assets/js/accessories.js
+          node --check public/assets/js/filename/app.js
+          node --check public/assets/js/filename/renderer.js
           node --check public/assets/js/resize/app.js
           node --check public/assets/js/resize/image-utils.js
           node --check public/program/resize/workers/image-worker.js
@@ -38,6 +41,8 @@ jobs:
           node scripts/test_price_details.mjs
           node scripts/test_remaining_catalog.mjs
           node scripts/test_support_compatibility.mjs
+          node scripts/test_support_visibility.mjs
+          node scripts/test_spec_refresh.mjs
           node scripts/test_battery_compatibility.mjs
           node scripts/test_programs.mjs
           python3 scripts/check_homepage.py

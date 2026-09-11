@@ -226,3 +226,11 @@
 .builder-page .catalog-more{width:100%;min-height:42px;border:0;border-bottom:1px solid #dce3ea;background:#f7fafc;color:#087a9b;font-weight:800;cursor:pointer}
 .builder-page .catalog-more:hover{background:#ecf8fb}
 .builder-page .build-accessory-select{width:100%;height:36px;border:1px solid #d6dde5;background:#fff;border-radius:7px;padding:0 9px;font-size:11px;color:#27313d}.builder-page .accessory-compat-note{display:block;margin-top:5px;font-size:9px;color:#75808d;line-height:1.35}.builder-page .accessory-compat-note.good{color:#087a57}.builder-page .accessory-compat-note.warn{color:#b36d00}.builder-page .accessory-compat-note.bad{color:#c7384c}.builder-page .load-grade{font-weight:900}.builder-page .load-grade.impossible{color:#c7384c}.builder-page .load-grade.danger{color:#e35935}.builder-page .load-grade.normal{color:#c38300}.builder-page .load-grade.ample{color:#087a57}
+/* Keep short compatibility badges at their intrinsic height beside wrapped descriptions. */
+.compat-detail-row{align-items:start}
+.compat-detail-row>.mini-compat{align-self:start;justify-self:end;display:inline-flex;align-items:center;justify-content:center;white-space:nowrap;height:auto;min-height:0;line-height:1.4;padding:4px 7px}
+.compat-detail-row>div{align-content:start}
+.accessory-product-photo{display:block;width:100%;height:160px;object-fit:contain;margin:0 0 14px;background:#fff;border-radius:8px}
+.adapter-card .accessory-product-photo{width:100px;height:100px;margin:0 14px 0 0}
+.accessory-photo-missing{font-size:12px;color:#697580}
+.accessory-image-note{font-size:12px;color:#65758b;line-height:1.5;margin:0 0 12px}
