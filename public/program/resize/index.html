@@ -7,7 +7,7 @@
   <meta name="description" content="사진을 일괄 리사이즈·자르기하고 EXIF 기반 카메라와 렌즈 이미지를 합성합니다.">
   <link rel="stylesheet" href="/assets/css/site.css?v=20260911-price-details">
   <link rel="stylesheet" href="/assets/css/site-enhancements.css">
-  <link rel="stylesheet" href="/assets/css/resize.css?v=20260905-save-mode-ui">
+  <link rel="stylesheet" href="/assets/css/resize.css?v=20260911-preview">
   <link rel="icon" href="/assets/images/matchcamera/symbol.png" type="image/png">
   <script defer src="/assets/vendor/jszip.min.js"></script>
 </head>
@@ -24,9 +24,9 @@
         <header class="panel-header"><h2>파일</h2><button class="button danger" type="button" data-clear-all>전체 초기화</button></header>
         <div class="panel-body"><input type="file" accept="image/jpeg,image/png,image/webp" multiple hidden data-file-input><div class="drop-zone" tabindex="0" role="button" data-drop-zone><div><strong>사진을 드래그하거나 클릭</strong><span>JPEG · PNG · WebP · 여러 장 선택 가능</span></div></div><div class="file-list" data-file-list></div></div>
       </section>
-      <section class="panel preview-panel">
+      <section class="panel preview-panel resize-preview-panel">
         <header class="panel-header"><h2>미리보기</h2><div class="row"><button class="button" type="button" data-rotate>↻ 시계방향 90°</button></div></header>
-        <div class="preview-stage" data-preview-stage><canvas class="preview-canvas" data-preview-canvas hidden></canvas><div class="preview-empty" data-preview-empty>사진을 추가하면 미리보기가 표시됩니다.</div></div>
+        <div class="preview-stage" data-preview-stage><canvas class="preview-canvas" data-preview-canvas hidden></canvas><div class="preview-empty" data-preview-empty><strong>사진을 추가하면 여기에 표시됩니다</strong><span>리사이즈와 워터마크 적용 결과를 미리 확인할 수 있어요.</span></div></div>
         <div class="preview-toolbar"><button class="button" type="button" data-prev>← 이전</button><span class="preview-count" data-preview-count>0 / 0</span><button class="button" type="button" data-next>다음 →</button></div>
       </section>
       <section class="panel controls-panel">

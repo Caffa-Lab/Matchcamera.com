@@ -71,8 +71,8 @@ export async function renderPreview({ canvas, stage, photo, settings, watermarkI
   const image = await loadHtmlImage(photo);
   if (!shouldRender()) return null;
   const dpr = Math.min(window.devicePixelRatio || 1, 2);
-  const availableWidth = Math.max(280, stage.clientWidth - 28);
-  const availableHeight = Math.max(280, stage.clientHeight - 28);
+  const availableWidth = Math.max(1, stage.clientWidth - 32);
+  const availableHeight = Math.max(1, stage.clientHeight - 32);
 
   const rotated = photo.rotation % 180 !== 0;
   const sourceWidth = rotated ? image.naturalHeight : image.naturalWidth;

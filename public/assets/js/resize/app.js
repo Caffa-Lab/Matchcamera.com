@@ -68,6 +68,7 @@ let outputs = [];
 let isDraggingWatermark = false;
 let processing = false;
 let previewRequestId = 0;
+const previewEmptyMarkup = refs.empty.innerHTML;
 let products = [];
 let bodies = [];
 let lenses = [];
@@ -297,6 +298,7 @@ async function renderPreviewOnly() {
   const photo = currentPhoto();
   if (!photo) {
     refs.canvas.hidden = true;
+    refs.empty.innerHTML = previewEmptyMarkup;
     refs.empty.hidden = false;
     previewGeometry = null;
     return;
@@ -317,6 +319,8 @@ async function renderPreviewOnly() {
     previewGeometry = geometry;
   } catch (error) {
     if (requestId !== previewRequestId) return;
+    refs.canvas.hidden = true;
+    previewGeometry = null;
     refs.empty.hidden = false;
     refs.empty.textContent = `미리보기 오류: ${error instanceof Error ? error.message : String(error)}`;
   }
