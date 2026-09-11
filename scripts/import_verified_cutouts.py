@@ -44,7 +44,7 @@ def main():
             buffer=io.BytesIO();normalized.save(buffer,'WEBP',quality=92,method=4)
             content=buffer.getvalue()
         output_hash=hashlib.sha256(content).hexdigest()[:16]
-        relative=f"/assets/images/products/{product['manufacturer'].lower()}/verified-{output_hash}.webp"
+        relative=f"/assets/images/products/{product['manufacturer'].lower().replace(' ', '-')}/verified-{output_hash}.webp"
         target=ROOT/'public'/relative.lstrip('/')
         entry={
             'src':relative,'sourcePage':candidate['sourcePage'],'sourceImage':candidate['sourceImage'],

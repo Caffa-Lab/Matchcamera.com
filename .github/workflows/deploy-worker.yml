@@ -36,6 +36,7 @@ jobs:
           node scripts/test_catalog_visibility.mjs
           node scripts/test_catalog_filter_order.mjs
           node scripts/test_price_details.mjs
+          node scripts/test_remaining_catalog.mjs
           node scripts/test_programs.mjs
           python3 scripts/check_homepage.py
 

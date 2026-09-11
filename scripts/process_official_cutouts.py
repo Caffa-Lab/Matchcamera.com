@@ -12,7 +12,10 @@ from scipy import ndimage
 
 def white_background_mask(im):
     """Remove border-connected white only; retain white product surfaces/glass."""
-    rgb=np.asarray(im.convert('RGB'))
+    # Composite transparent margins to white so a white inset canvas remains
+    # connected to the border without erasing enclosed white product details.
+    rgba=im.convert('RGBA')
+    rgb=np.asarray(Image.alpha_composite(Image.new('RGBA',rgba.size,'white'),rgba).convert('RGB'))
     background=(rgb.min(axis=2)>=245)&((rgb.max(axis=2).astype(int)-rgb.min(axis=2))<12)
     seed=np.zeros(background.shape,bool)
     seed[0,:]=background[0,:]; seed[-1,:]=background[-1,:]
@@ -43,18 +46,20 @@ def main():
             raise ValueError(f"QA override source changed: {row['productId']}; review the new original")
         if old and old.get('sourceSha256')==digest and old.get('qaOverride')==override: continue
         im=ImageOps.exif_transpose(Image.open(original)).convert('RGBA')
+        if override.get('crop'):
+            im=im.crop(tuple(override['crop']))
         alpha=np.asarray(im.getchannel('A'))
         native=(alpha<250).mean()>0.01 and (alpha>250).mean()>0.01
         if override.get('method')=='border-white-mask':
             result=im.copy();result.putalpha(white_background_mask(im));method='border-white-mask'
-        elif native:
+        elif native and override.get('method')!='rembg' and not override.get('forceRemoveBackground'):
             result=im; method='official-native-alpha'
         else:
             if session is None: session=new_session('isnet-general-use',providers=['CPUExecutionProvider'])
             # rembg produces only a mask; keep the manufacturer's original color pixels.
             mask=remove(im.convert('RGB'),session=session,only_mask=True)
             result=im.copy(); result.putalpha(mask.convert('L')); method='rembg-isnet-general-use-mask'
-        if override.get('method')=='largest-component':
+        if override.get('method')=='largest-component' or override.get('keepLargest'):
             alpha=np.asarray(result.getchannel('A')).copy()
             labels,count=ndimage.label(alpha>32)
             areas=np.bincount(labels.ravel());areas[0]=0

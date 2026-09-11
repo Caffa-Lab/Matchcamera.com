@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="480" viewBox="0 0 480 480" role="img" aria-label="이미지 준비 중">
+  <g fill="none" stroke="#94a3b8" stroke-width="8" stroke-linejoin="round">
+    <rect x="132" y="150" width="216" height="154" rx="20"/>
+    <path d="M188 150l18-26h68l18 26"/>
+    <circle cx="240" cy="225" r="45"/>
+  </g>
+  <text x="240" y="362" text-anchor="middle" fill="#64748b" font-family="sans-serif" font-size="26">이미지 준비 중</text>
+</svg>
