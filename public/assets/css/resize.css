@@ -121,7 +121,7 @@ input[type="text"],input[type="number"],select,.drop-zone,.file-item,.segmented,
 @media(max-width:780px){.resize-hero{padding:23px 16px;align-items:flex-start;flex-direction:column}.resize-hero h1{font-size:23px}.app-layout{display:block;padding:8px}.controls-panel .panel-body{display:block}.equipment-section{padding:14px 0;background:transparent}.preview-stage{min-height:55vh}}
 
 /* Resize preview uses a stable frame; the renderer sizes the canvas and drag coordinates. */
-.resize-preview-panel{grid-template-rows:auto auto auto;align-content:start}
+.resize-preview-panel{grid-template-rows:auto auto auto;align-content:start;align-self:start}
 [data-preview-stage]{height:clamp(280px,55vh,600px);min-height:0;border-radius:10px;background-size:20px 20px;background-position:0 0,0 10px,10px -10px,-10px 0}
 [data-preview-stage]:has([data-preview-canvas][hidden]){background:#f6f8fc}
 [data-preview-canvas]{max-height:none;box-shadow:0 4px 18px rgba(30,45,65,.14)}
