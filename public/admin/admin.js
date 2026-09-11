@@ -1,3 +1,4 @@
+import {buildCatalogReview,REVIEW_TYPES} from './catalog-review.js';
 const PATHS = {
   products: "public/data/products.json",
   expansion: "public/data/system-expansion.json",
@@ -129,37 +130,13 @@ function imageFor(product) {
 }
 
 function buildIssues() {
-  const result = [];
-  const ids = new Map();
-  const models = new Map();
-  for (const product of products) {
-    const id = String(product.id || "").trim();
-    const model = String(product.modelCode || "").trim().toLowerCase();
-    if (id) {
-      if (!ids.has(id)) ids.set(id, []);
-      ids.get(id).push(product);
-    }
-    if (model) {
-      if (!models.has(model)) models.set(model, []);
-      models.get(model).push(product);
-    }
-    if (!priceValue(priceFor(product)?.row)) result.push(issue("missing-price", "가격 없음", product, "한국 공식/기준 가격이 비어 있습니다."));
-    if (!imageFor(product)?.src) result.push(issue("missing-image", "이미지 없음", product, "product-images.json에 이미지가 없습니다."));
-    if (!String(product.mount || "").trim()) result.push(issue("missing-mount", "마운트 없음", product, "마운트 필드가 비어 있습니다."));
-    const missing = ["id", "manufacturer", "type", "officialName"].filter((key) => !String(product[key] || "").trim());
-    if (missing.length) result.push(issue("invalid", "필수 필드 오류", product, `누락: ${missing.join(", ")}`));
-  }
-  for (const [id, records] of ids) {
-    if (records.length > 1) records.forEach((product) => result.push(issue("duplicate-id", "중복 ID", product, `${id}가 ${records.length}개 제품에 사용됨`)));
-  }
-  for (const [model, records] of models) {
-    if (records.length > 1) records.forEach((product) => result.push(issue("duplicate-model", "모델코드 중복", product, `${model}가 ${records.length}개 제품에 사용됨`)));
-  }
-  return result;
+  const accessoryRows=['batteries','adapters','flashes','memoryCards','tripods','heads','plates'].flatMap(kind=>(files[PATHS[kind]]||[]).map((p,index)=>({...p,_kind:kind,_sourceFile:PATHS[kind],_sourceIndex:index})));
+  return buildCatalogReview([...products,...accessoryRows],{imageFor,priceFor});
 }
-
-function issue(type, title, product, detail) {
-  return { type, title, detail, product, sourceFile: product._sourceFile, sourceIndex: product._sourceIndex };
+function reviewAction(item){
+  if(item.kind)return `<button class="text-button" data-edit-accessory data-kind="${esc(item.kind)}" data-index="${item.sourceIndex}" type="button">수정</button>`;
+  const action=['price','image'].includes(item.action)?item.action:'product';
+  return `<button class="text-button" data-edit-${action} data-source="${esc(item.sourceFile)}" data-index="${item.sourceIndex}" type="button">수정</button>`;
 }
 
 function configuredManufacturerOrder() {
@@ -223,7 +200,7 @@ function renderDashboard() {
     ["데이터 원본", snapshot.source === "github" ? "GitHub 최신 커밋" : "로컬 정적 파일"],
     ["쓰기 상태", snapshot.writable ? "저장 가능" : "읽기 전용"],
   ].map(([key, value]) => `<div class="repository-row"><span>${esc(key)}</span><b>${esc(value)}</b></div>`).join("");
-  $("#dashboardIssues").innerHTML = issues.slice(0, 8).map((item) => `<div class="compact-row"><span class="status ${item.type.includes("missing") ? "warn" : "bad"}">${esc(item.title)}</span><b>${esc(label(item.product))}</b><span>${esc(item.detail)}</span><button class="text-button" data-edit-product data-source="${esc(item.sourceFile)}" data-index="${item.sourceIndex}" type="button">수정</button></div>`).join("") || `<div class="empty-state">검수 항목이 없습니다.</div>`;
+  $("#dashboardIssues").innerHTML = issues.slice(0, 8).map((item) => `<div class="compact-row"><span class="status ${item.type.includes("missing") ? "warn" : "bad"}">${esc(item.title)}</span><b>${esc(label(item.product))}</b><span>${esc(item.detail)}</span>${reviewAction(item)}</div>`).join("") || `<div class="empty-state">검수 항목이 없습니다.</div>`;
   renderAuditCards(counts);
 }
 
@@ -397,18 +374,25 @@ function featuredSelects(name, selected, options) {
 }
 
 function renderAuditCards(counts = issueCounts()) {
-  const items = [
-    ["중복 ID", "duplicate-id"], ["모델코드 중복", "duplicate-model"], ["가격 없음", "missing-price"],
-    ["이미지 없음", "missing-image"], ["마운트 없음", "missing-mount"], ["필수 필드 오류", "invalid"],
-  ];
-  $("#auditCards").innerHTML = items.map(([name, type]) => statCard(name, counts.get(type) || 0, "검수 목록", counts.get(type) ? "warn" : "good")).join("");
+  $("#auditCards").innerHTML = ['missing-image','missing-specs','missing-price','missing-source','missing-load','stale-price'].map(type=>statCard(REVIEW_TYPES[type],counts.get(type)||0,"전체 원본 검수",counts.get(type)?"warn":"good")).join('');
+  const value=$("#auditType").value;
+  $("#auditType").innerHTML='<option value="">전체 검수 항목</option>'+Object.entries(REVIEW_TYPES).map(([key,label])=>`<option value="${key}">${label} (${counts.get(key)||0})</option>`).join('');
+  $("#auditType").value=value;
 }
-
+function filteredIssues(){
+  const type=$("#auditType").value,query=$("#auditSearch").value.toLowerCase(),visibility=$("#auditVisibility").value,severity=$("#auditSeverity").value;
+  return issues.filter(item=>(!type||item.type===type)&&(!severity||item.severity===severity)&&(!visibility||item.visible===(visibility==='active'))&&[item.title,item.detail,label(item.product),item.product.id,item.product.manufacturer].join(' ').toLowerCase().includes(query));
+}
 function renderAudit() {
-  const type = $("#auditType").value;
-  const query = $("#auditSearch").value.toLowerCase();
-  const filtered = issues.filter((item) => (!type || item.type === type) && [item.title, item.detail, label(item.product), item.product.manufacturer].join(" ").toLowerCase().includes(query));
-  $("#auditRows").innerHTML = filtered.slice(0, 500).map((item) => `<tr><td><span class="status ${item.type.includes("missing") ? "warn" : "bad"}">${esc(item.title)}</span></td><td><div class="product-cell"><strong>${esc(label(item.product))}</strong><span>${esc(item.product.modelCode || item.product.id)}</span></div></td><td>${esc(item.product.manufacturer || "-")}</td><td>${esc(item.detail)}</td><td>${esc(sourceLabel(item.sourceFile))}</td><td><button class="text-button" data-edit-product data-source="${esc(item.sourceFile)}" data-index="${item.sourceIndex}" type="button">수정</button></td></tr>`).join("") || `<tr><td colspan="6" class="empty-state">검수 항목이 없습니다.</td></tr>`;
+  const filtered=filteredIssues(),page=paged(filtered,'audit');
+  $("#auditCount").textContent=`${filtered.length.toLocaleString()}개 항목 · 제품 ${new Set(filtered.map(item=>item.sourceFile+':'+item.sourceIndex)).size.toLocaleString()}개`;
+  $("#auditRows").innerHTML=page.rows.map(item=>`<tr><td><span class="status ${item.severity==='high'?'bad':'warn'}">${esc(item.title)}</span><small class="audit-meta">${{high:'우선 확인',medium:'확인 필요',low:'추가 검토'}[item.severity]} · ${item.visible?'공개':'비공개'}</small></td><td><div class="product-cell"><strong>${esc(label(item.product))}</strong><span>${esc(item.product.modelCode||item.product.id)}</span></div></td><td>${esc(item.product.manufacturer||'-')}</td><td>${esc(item.detail)}</td><td>${esc(sourceLabel(item.sourceFile))}</td><td>${reviewAction(item)}</td></tr>`).join('')||'<tr><td colspan="6" class="empty-state">검수 항목이 없습니다.</td></tr>';
+  renderPagination('#auditPagination','audit',page.totalPages,renderAudit);
+}
+function exportReview(){
+  const data=filteredIssues().map(({product,...item})=>({...item,id:product.id,name:label(product),manufacturer:product.manufacturer}));
+  const blob=new Blob([JSON.stringify({reviewedAt:new Date().toISOString(),items:data},null,2)],{type:'application/json'}),url=URL.createObjectURL(blob),a=document.createElement('a');
+  a.href=url;a.download='matchcamera-review.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);
 }
 
 function renderAll() {
@@ -978,6 +962,7 @@ function showView(view) {
 }
 
 function bindEvents() {
+  $("#exportReview").addEventListener("click",exportReview);
   $$(".side-nav button").forEach((button) => button.addEventListener("click", () => showView(button.dataset.view)));
   $$('[data-go]').forEach((button) => button.addEventListener("click", () => showView(button.dataset.go)));
   $("#refreshButton").addEventListener("click", () => {
@@ -989,8 +974,8 @@ function bindEvents() {
   $("#saveManufacturerOrder").addEventListener("click", saveManufacturerOrder);
   $("#saveFilterOrder").addEventListener("click", saveFilterOrder);
   $("#resetManufacturerOrder").addEventListener("click", () => { manufacturerDraft = [...manufacturerDraft].sort((a, b) => a.localeCompare(b, "ko")); renderManufacturerOrder(); });
-  [["#productSearch", renderProducts], ["#productBrand", renderProducts], ["#productType", renderProducts], ["#productVisibility", renderProducts], ["#productSource", renderProducts], ["#priceSearch", renderPrices], ["#priceBrand", renderPrices], ["#priceStatus", renderPrices], ["#imageSearch", renderImages], ["#imageBrand", renderImages], ["#imageStatus", renderImages], ["#accessoryKind", renderAccessories], ["#accessorySearch", renderAccessories], ["#auditType", renderAudit], ["#auditSearch", renderAudit]].forEach(([selector, renderer]) => {
-    $(selector).addEventListener($(selector).tagName === "INPUT" ? "input" : "change", () => { pages.products = pages.prices = pages.images = 1; renderer(); });
+  [["#productSearch", renderProducts], ["#productBrand", renderProducts], ["#productType", renderProducts], ["#productVisibility", renderProducts], ["#productSource", renderProducts], ["#priceSearch", renderPrices], ["#priceBrand", renderPrices], ["#priceStatus", renderPrices], ["#imageSearch", renderImages], ["#imageBrand", renderImages], ["#imageStatus", renderImages], ["#accessoryKind", renderAccessories], ["#accessorySearch", renderAccessories], ["#auditType", renderAudit], ["#auditSearch", renderAudit], ["#auditVisibility",renderAudit], ["#auditSeverity",renderAudit]].forEach(([selector, renderer]) => {
+    $(selector).addEventListener($(selector).tagName === "INPUT" ? "input" : "change", () => { pages.products = pages.prices = pages.images = pages.audit = 1; renderer(); });
   });
   $("#addProduct").addEventListener("click", () => openProductEditor());
   $("#addAccessory").addEventListener("click", () => openAccessoryEditor($("#accessoryKind").value));

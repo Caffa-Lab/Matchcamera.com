@@ -26,6 +26,7 @@ jobs:
         run: |
           node scripts/build_product_index.mjs
           node --check public/admin/admin.js
+          node --check public/admin/catalog-review.js
           node --check public/assets/js/home.js
           node --check public/assets/js/builder.js
           node --check public/assets/js/accessories.js
@@ -43,6 +44,7 @@ jobs:
           node scripts/test_support_compatibility.mjs
           node scripts/test_support_visibility.mjs
           node scripts/test_spec_refresh.mjs
+          node scripts/test_quality_review.mjs
           node scripts/test_battery_compatibility.mjs
           node scripts/test_programs.mjs
           python3 scripts/check_homepage.py

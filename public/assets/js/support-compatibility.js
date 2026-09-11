@@ -3,6 +3,19 @@ export const SUPPORT_KINDS={'tripod-legs':'다리 단품','tripod-kit':'헤드 �
 export const HEAD_TYPES={'ball-head':'볼헤드','fluid-head':'영상용 유체 헤드','pan-tilt-head':'팬·틸트 헤드','gimbal-head':'짐벌 헤드'};
 const result=(level,label,reason)=>({level,label,reason});
 const unknown=reason=>result('unknown','확인 필요',reason);
+export function equipmentWeightKg(item){
+  for(const [value,scale] of [[item?.weightG,.001],[item?.weightKg,1]]){
+    if(value===null||value===undefined||String(value).trim()==='')continue;
+    const number=Number(value);if(Number.isFinite(number)&&number>0)return number*scale;
+  }
+  return null;
+}
+export function equipmentPayloadKg({body,lenses=[],flash,plate,head}){
+  if(!body)return null;
+  const selected=[body,...lenses,flash,plate,head].filter(Boolean);
+  if(selected.some(item=>equipmentWeightKg(item)===null))return null;
+  return equipmentWeightKg(body)+Math.max(0,...lenses.map(equipmentWeightKg))+[flash,plate,head].filter(Boolean).reduce((sum,item)=>sum+equipmentWeightKg(item),0);
+}
 export function supportSort(rows){return [...rows].sort((a,b)=>(SUPPORT_BRANDS.indexOf(a.manufacturer)<0?999:SUPPORT_BRANDS.indexOf(a.manufacturer))-(SUPPORT_BRANDS.indexOf(b.manufacturer)<0?999:SUPPORT_BRANDS.indexOf(b.manufacturer))||a.officialName.localeCompare(b.officialName));}
 export function normalizeSupportMount(value){
   const s=String(value||'').toLowerCase().trim().replace(/[″”"]/g,'').replace(/\s+/g,'');

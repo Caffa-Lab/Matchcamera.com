@@ -234,3 +234,10 @@
 .adapter-card .accessory-product-photo{width:100px;height:100px;margin:0 14px 0 0}
 .accessory-photo-missing{font-size:12px;color:#697580}
 .accessory-image-note{font-size:12px;color:#65758b;line-height:1.5;margin:0 0 12px}
+
+/* Fit the estimate columns before their minimum widths overflow the viewport. */
+@media(min-width:1051px) and (max-width:1520px){.builder-page .app-frame{grid-template-columns:360px minmax(0,1fr)}.builder-page .summary-pane{grid-column:1/-1;position:static;min-height:auto}}
+@media(max-width:1050px){.builder-page .app-frame{grid-template-columns:minmax(0,1fr)}.builder-page .catalog-pane{position:static;max-height:none}.builder-page .summary-pane{grid-column:1;position:static;min-height:auto}}
+.accessories-page .toolbar{grid-template-columns:repeat(auto-fit,minmax(180px,1fr))}
+.accessories-page .control{width:100%;min-width:0}
+@media(max-width:700px){.accessories-page .toolbar{grid-template-columns:minmax(0,1fr)}}

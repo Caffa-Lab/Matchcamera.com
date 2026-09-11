@@ -58,7 +58,7 @@ function comparisonKeys(){
   return [...base,...[...extra].filter(key=>!base.includes(key))];
 }
 
-const displayValue=value=>hasValue(value)?esc(String(value)):'<span class="compare-missing">공식 정보 미확인</span>';
+const displayValue=(value,product)=>!product?'<span class="compare-missing">제품 선택 필요</span>':hasValue(value)?esc(String(value)):'<span class="compare-missing">공식 정보 미확인</span>';
 
 function renderComparison(){
   $('#compareProducts').innerHTML=productCard('a')+productCard('b');
@@ -71,7 +71,7 @@ function renderComparison(){
     return;
   }
   const rows=comparisonKeys().filter(key=>hasValue(specValue(state.a,key))||hasValue(specValue(state.b,key)));
-  $('#compareTable').innerHTML=`<table class="compare-table"><thead><tr><th>비교 항목</th><th>${esc(state.a?productLabel(state.a):'제품 A')}</th><th>${esc(state.b?productLabel(state.b):'제품 B')}</th></tr></thead><tbody>${rows.map(key=>`<tr><th>${esc(key)}</th><td>${displayValue(specValue(state.a,key))}</td><td>${displayValue(specValue(state.b,key))}</td></tr>`).join('')}</tbody></table>`;
+  $('#compareTable').innerHTML=`<table class="compare-table"><thead><tr><th>비교 항목</th><th>${esc(state.a?productLabel(state.a):'제품 A')}</th><th>${esc(state.b?productLabel(state.b):'제품 B')}</th></tr></thead><tbody>${rows.map(key=>`<tr><th>${esc(key)}</th><td>${displayValue(specValue(state.a,key),state.a)}</td><td>${displayValue(specValue(state.b,key),state.b)}</td></tr>`).join('')}</tbody></table>`;
 }
 
 function closeResults(key){pickers[key].results.hidden=true;pickers[key].input.setAttribute('aria-expanded','false');}

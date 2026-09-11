@@ -1,0 +1,32 @@
+import assert from 'node:assert/strict';
+import {checkCompatibility,findMountAdapters} from '../public/assets/js/compatibility.js';
+import {equipmentWeightKg,equipmentPayloadKg} from '../public/assets/js/support-compatibility.js';
+import {supportLoadGrade} from '../public/assets/js/data.js';
+import {buildCatalogReview} from '../public/admin/catalog-review.js';
+const body={type:'바디',mount:'Sony E',sensorFormat:'Full Frame',weightG:700},lens={type:'렌즈',mount:'Sony E',compatibleSensorFormat:'Full Frame',weightG:500};
+assert.equal(checkCompatibility({...body,mount:null},{...lens,mount:null}).level,'unknown');
+assert.equal(checkCompatibility(body,{...lens,compatibleSensorFormat:null}).level,'unknown');
+assert.equal(checkCompatibility(body,lens).level,'compatible');
+assert(!checkCompatibility(body,{...lens,focalMinMm:null,focalMaxMm:null}).reason.includes('0mm'));
+assert.equal(checkCompatibility(body,{...lens,compatibleSensorFormat:'APS-C'}).level,'conditional');
+assert.equal(checkCompatibility({...body,sensorFormat:'Super 35'},{...lens,compatibleSensorFormat:'APS-C'}).level,'conditional');
+assert.equal(findMountAdapters(body,{...lens,mount:'Canon EF'},[{fromMount:'Canon EF',toMount:'Sony E',active:false}]).length,0);
+assert.equal(equipmentWeightKg({weightG:null,weightKg:.5}),.5);
+assert.equal(equipmentPayloadKg({body,lenses:[lens,{weightG:800}]}),1.5,'only the heaviest selected lens is mounted');
+for(const weight of [null,undefined,'',0,NaN]){
+ assert.equal(equipmentPayloadKg({body,lenses:[lens,{weightG:weight}]}),null);
+ assert.equal(equipmentPayloadKg({body,lenses:[lens],head:{weightKg:weight}}),null);
+}
+for(const payload of [null,undefined,'',NaN])assert.equal(supportLoadGrade(10,payload).level,'unknown');
+const fixture={id:'a',officialName:'A',modelCode:'A',type:'렌즈',manufacturer:'Test',mount:'E',specs:{},_sourceFile:'test',_sourceIndex:0};
+const now=Date.parse('2026-09-11');
+let issues=buildCatalogReview([fixture,{...fixture,id:'b',mount:'Z'}],{now,imageFor:()=>({src:'/image-pending.svg',method:'image-pending'})});
+assert(!issues.some(i=>i.type==='duplicate-model'),'different mounts are legitimate variants');
+assert(issues.some(i=>i.type==='missing-image'));assert(issues.some(i=>i.type==='missing-specs'));
+issues=buildCatalogReview([{...fixture,_kind:'tripods',maxLoadKg:null,imageSrc:'/image.webp'}],{now});
+assert(issues.find(i=>i.type==='missing-load')?.visible===false);
+issues=buildCatalogReview([fixture],{now,priceFor:()=>({row:{'한국 기준 가격(원)':100,'가격 유형':'한국 출시 가격','가격 기준일':'2020-01-01','가격 출처 URL':'https://example.com'}})});
+assert(!issues.some(i=>i.type==='stale-price'),'historic launch prices do not expire');
+issues=buildCatalogReview([fixture],{now,priceFor:()=>({row:{'한국 기준 가격(원)':100,'가격 기준일':'2026-02-30'}})});
+assert(issues.some(i=>i.type==='invalid-date'));
+console.log('PASS missing mount/format/weight, adapter visibility, payload composition and review queue rules');

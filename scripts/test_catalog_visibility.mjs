@@ -1,3 +1,4 @@
+import {buildCatalogReview,REVIEW_TYPES} from '../public/admin/catalog-review.js';
 import assert from 'node:assert/strict';
 import fs from 'node:fs/promises';
 import path from 'node:path';
@@ -44,8 +45,8 @@ if(snapshot)assert.equal(index.find(p=>p.modelCode==='SEL814G').currentPriceKrw,
 
 // Run actual admin handlers, replacing only UI boot and persistence boundary.
 const script=await fs.readFile(path.join(root,'public/admin/admin.js'),'utf8');
-const context=vm.createContext({structuredClone,console,window:{addEventListener(){}},setTimeout,clearTimeout});
-vm.runInContext(script.replace(/\nboot\(\);\s*$/,'\n'),context);
+const context=vm.createContext({buildCatalogReview,REVIEW_TYPES,structuredClone,console,window:{addEventListener(){}},setTimeout,clearTimeout});
+vm.runInContext(script.replace(/^import .*catalog-review.*\r?\n/,'').replace(/\nboot\(\);\s*$/,'\n'),context);
 vm.runInContext(`commit=async changes=>{for(const change of changes) files[change.path]=change.value;};`,context);
 context.fixture={id:'fixture-dslr',manufacturer:'Test',type:'바디',cameraSystem:'DSLR',mount:'Test Mount',officialName:'Test DSLR',model:'Test DSLR',modelCode:'DSLR1',specs:{'센서':'Full Frame'}};
 for(const legacy of [{},{enabled:false},{visibility:'hidden'},{enabled:false,visibility:'hidden'}]){

@@ -318,7 +318,7 @@ export function memoryCardCompatibility(card,body){
 
 export function supportLoadGrade(capacityKg,payloadKg,{downgrade=false}={}){
   const capacity=Number(capacityKg);const payload=Number(payloadKg);
-  if(!Number.isFinite(capacity)||capacity<=0||!Number.isFinite(payload)||payload<0)return {level:'unknown',label:'판정 불가',reserveKg:null,reason:'허용 하중 또는 탑재 중량 정보가 없습니다.'};
+  if(capacityKg===null||payloadKg===null||String(payloadKg??'').trim()===''||!Number.isFinite(capacity)||capacity<=0||!Number.isFinite(payload)||payload<0)return {level:'unknown',label:'판정 불가',reserveKg:null,reason:'허용 하중 또는 선택 장비의 무게가 미확인입니다. 누락된 무게를 0g으로 계산하지 않습니다.'};
   const reserve=capacity-payload;
   const dangerMargin=Math.max(.2,payload*.25);
   const ampleMargin=Math.max(1,payload);
