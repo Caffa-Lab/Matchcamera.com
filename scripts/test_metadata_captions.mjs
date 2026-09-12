@@ -28,8 +28,14 @@ for (const [make, model, expected] of [
 assert.ok(!tags(caption({ Make: 'RICOH', Model: 'WG-6' })).includes('#grsnaps'), 'GR tags require a confirmed GR model.');
 
 const sony = caption({ Make: 'SONY', Model: 'ILCE-7M4', LensModel: 'FE 24-70mm F2.8 GM II' });
-assert.deepEqual(tags(sony), ['#sony', '#sonyalpha', '#sonykorea', '#a7m4', '#fe2470f28gmii']);
-assert.match(sony.instagram, /^📷𝗮𝟳𝗺𝟰 \+ 𝙛𝙚𝟮𝟰𝟳𝟬𝙛𝟮𝟴𝙜𝙢𝙞𝙞/);
+assert.equal(sony.instagram, '📷𝗮𝟳𝗺𝟰 + 𝙨𝙚𝙡𝟮𝟰𝟳𝟬𝙜𝙢𝟮\n\n#sony #sonyalpha #sonykorea\n#a7m4 #sel2470gm2', 'Preserve the original Sony caption, tag order, line breaks and styling.');
+for (const [model, lens, expectedBody, expectedLens] of [
+  ['ILCE-7RM5', 'FE 70-200mm F2.8 GM OSS II', '#a7r5', '#sel70200gm2'],
+  ['ILCE-1', 'FE 50mm F1.2 GM', '#a1', '#sel50gm'],
+  ['ILCE-9M3', 'FE 85mm F1.4 GM', '#a9iii', '#sel85gm'],
+  ['ILCE-7M3', 'FE 24-105mm F4 G OSS', '#ilce7m3', '#sel24105'],
+  ['ILCE-7M4', 'FE 24-70mm f/2.8 GM', '#a7m4', '#sel2470gm'],
+]) assert.deepEqual(tags(caption({ Make: 'SONY', Model: model, LensModel: lens })), ['#sony', '#sonyalpha', '#sonykorea', expectedBody, expectedLens]);
 assert.deepEqual(tags(caption({ Make: 'SONY', Model: 'ILCE-7RM5', LensModel: 'SEL2470GM2' })), ['#sony', '#sonyalpha', '#sonykorea', '#a7r5', '#sel2470gm2']);
 assert.deepEqual(tags(caption({ Make: 'SONY', Model: 'ILCE-7M4', LensMake: 'SIGMA', LensModel: '24-70mm F2.8 DG DN | Art' })), ['#sony', '#sonyalpha', '#sonykorea', '#a7m4', '#sigma2470f28dgdnart']);
 const tamron = caption({ Make: 'SONY', Model: 'ILCE-7M4', LensMake: 'TAMRON', LensModel: '28-75mm F/2.8 Di III VXD G2' });

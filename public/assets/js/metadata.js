@@ -1,4 +1,4 @@
-import { buildMetadataCaptions } from './metadata-captions.js?v=20260912';
+import { buildMetadataCaptions } from './metadata-captions.js?v=20260912-sony-restore';
 
 const dropzone=document.querySelector('#dropzone');
 const fileInput=document.querySelector('#fileInput');

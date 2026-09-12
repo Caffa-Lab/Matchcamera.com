@@ -97,7 +97,7 @@ function bodyTag(model, brand) {
       ilce7rm5: 'a7r5', a7rv: 'a7r5', a7r5: 'a7r5',
       ilce1: 'a1', a1: 'a1', ilce9m3: 'a9iii', a9iii: 'a9iii',
     };
-    return aliases[tag(value)] || tag(value).replace(/^ilce(?=\d)/, 'a');
+    return aliases[tag(value)] || tag(model);
   }
   if (brand === 'canon') {
     const numerals = { I: 1, II: 2, III: 3, IV: 4, V: 5, VI: 6, VII: 7, VIII: 8, IX: 9, X: 10 };
@@ -115,16 +115,26 @@ function lensModel(exif) {
     .find(value => /\d/.test(value) && !/^\d+$/.test(value) && !/^unknown\b/i.test(value)) || '';
 }
 
-function lensTag(model, make) {
+function lensTag(model, make, brand) {
   if (!model) return '';
   let value = model;
   const knownMaker = /\b(sigma|tamron|viltrox|samyang|rokinon|tokina|laowa|ttartisan|7artisans|zeiss|voigtlander|voigtländer|meike|sirui)\b/i;
   const thirdParty = make.match(knownMaker)?.[1] || model.match(knownMaker)?.[1];
+  if (brand === 'sony' && !thirdParty && (!make || /^sony\b/i.test(make))) {
+    const code = model.match(/\bSEL[A-Z0-9]+\b/i)?.[0];
+    if (code) return tag(code);
+    const range = model.match(/(\d{2,3})\s*-\s*(\d{2,3})\s*MM/i);
+    const prime = model.match(/(\d{2,3})\s*MM/i);
+    // Keep the existing Sony caption shorthand and its familiar SEL tags.
+    const gm = /\bGM\b/i.test(model) ? 'gm' : '';
+    const mark = /\bII\b|(?:^|\s)2(?=\s|$)/i.test(model) ? '2' : '';
+    if (range) return `sel${range[1]}${range[2]}${gm}${mark}`;
+    if (prime) return `sel${prime[1]}${gm}${mark}`;
+  }
   if (thirdParty && !tag(value).startsWith(tag(thirdParty))) value = `${thirdParty} ${value}`;
   // Keep the familiar short caption for this unambiguous Canon kit lens.
   if (!thirdParty && /^(?:canon\s+)?rf-s\s*18\s*-\s*45\s*mm\s*f\s*\/?\s*4\.5\s*-\s*6\.3\s+is\s+stm$/i.test(value)) return 'rf1845';
-  // Preserve focal length, aperture and generation instead of inferring a SEL code.
-  // For example, f/2.8 must never be interpreted as a second-generation lens.
+  // Keep other brands' focal length, aperture, manufacturer and generation.
   if (!thirdParty && make && !/^(?:sony|canon|nikon|fujifilm|olympus|om system|panasonic|leica|hasselblad|pentax|ricoh)\b/i.test(make) && !tag(value).startsWith(tag(make))) value = `${make} ${value}`;
   return tag(value.replace(/(\d)(?:\.0)?\s*mm(?=\b|f[\d/])/gi, '$1').replace(/(\d+)\.0(?=\s*[-–])/g, '$1'));
 }
@@ -180,7 +190,7 @@ export function buildMetadataCaptions(exif = {}) {
   if (!hasMetadata) return { instagram: '', blog: '', hasMetadata: false };
 
   const body = phone ? phone.body : bodyTag(model, brand);
-  const shortLens = phone ? '' : lensTag(lens, text(exif.LensMake));
+  const shortLens = phone ? '' : lensTag(lens, text(exif.LensMake), brand);
   const baseTags = phone ? [phone.maker] : (BRAND_TAGS[brand] || []);
   const equipmentTags = [body, shortLens];
   const seen = new Set();
