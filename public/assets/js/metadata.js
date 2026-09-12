@@ -1,3 +1,5 @@
+import { buildMetadataCaptions } from './metadata-captions.js?v=20260912';
+
 const dropzone=document.querySelector('#dropzone');
 const fileInput=document.querySelector('#fileInput');
 const list=document.querySelector('#list');
@@ -5,137 +7,36 @@ const status=document.querySelector('#status');
 const resultCount=document.querySelector('#resultCount');
 const emptyResults=document.querySelector('#emptyResults');
 const clearResults=document.querySelector('#clearResults');
+const previewUrls=new Set();
 let renderedCount=0;
+let generation=0;
+let activeBatches=0;
+let exifLibrary;
 
-const boldMap={a:'𝗮',b:'𝗯',c:'𝗰',d:'𝗱',e:'𝗲',f:'𝗳',g:'𝗴',h:'𝗵',i:'𝗶',j:'𝗷',k:'𝗸',l:'𝗹',m:'𝗺',n:'𝗻',o:'𝗼',p:'𝗽',q:'𝗾',r:'𝗿',s:'𝘀',t:'𝘁',u:'𝘂',v:'𝘃',w:'𝘄',x:'𝘅',y:'𝘆',z:'𝘇','0':'𝟬','1':'𝟭','2':'𝟮','3':'𝟯','4':'𝟰','5':'𝟱','6':'𝟲','7':'𝟳','8':'𝟴','9':'𝟵'};
-const italicMap={a:'𝙖',b:'𝙗',c:'𝙘',d:'𝙙',e:'𝙚',f:'𝙛',g:'𝙜',h:'𝙝',i:'𝙞',j:'𝙟',k:'𝙠',l:'𝙡',m:'𝙢',n:'𝙣',o:'𝙤',p:'𝙥',q:'𝙦',r:'𝙧',s:'𝙨',t:'𝙩',u:'𝙪',v:'𝙫',w:'𝙬',x:'𝙭',y:'𝙮',z:'𝙯'};
-const mapText=(text,letters,digits=letters)=>String(text||'').toLowerCase().split('').map(char=>letters[char]||digits[char]||char).join('');
-const bold=text=>mapText(text,boldMap);
-const italic=text=>mapText(text,italicMap,{});
-const italicBoldDigits=text=>mapText(text,italicMap,boldMap);
-const compact=text=>String(text||'').toLowerCase().replace(/[^a-z0-9]/g,'');
-
-function numberValue(value){
-  if(value&&typeof value==='object'&&'numerator'in value&&'denominator'in value)return value.numerator/value.denominator;
-  return Number(value);
-}
-function exposure(value){
-  const n=numberValue(value);
-  if(!Number.isFinite(n)||n<=0)return '—';
-  return n>=1?`${Math.round(n*10)/10} s`:`1/${Math.round(1/n)} s`;
-}
-function aperture(value){
-  const n=numberValue(value);
-  return Number.isFinite(n)&&n>0?`f/${Math.round(n*10)/10}`:'—';
-}
-function focalLength(value){
-  const n=numberValue(value);
-  if(!Number.isFinite(n)||n<=0)return '—';
-  const rounded=Math.round(n*10)/10;
-  return `${Number.isInteger(rounded)?Math.round(rounded):rounded}mm`;
-}
-function photoDate(value){
-  if(value instanceof Date&&!Number.isNaN(value.getTime())){
-    return [value.getFullYear(),String(value.getMonth()+1).padStart(2,'0'),String(value.getDate()).padStart(2,'0')].join('.');
-  }
-  const match=String(value||'').match(/(\d{4})[:.-](\d{1,2})[:.-](\d{1,2})/);
-  return match?`${match[1]}.${match[2].padStart(2,'0')}.${match[3].padStart(2,'0')}`:'—';
-}
-function cameraName(make,model){
-  const maker=String(make||'').trim(),body=String(model||'').trim();
-  if(!body)return maker||'—';
-  if(maker&&body.toLowerCase().startsWith(maker.toLowerCase()))return body;
-  return [maker,body].filter(Boolean).join(' ');
-}
 function fileSize(bytes){
   if(bytes<1024)return `${bytes} B`;
   if(bytes<1024*1024)return `${(bytes/1024).toFixed(1)} KB`;
   return `${(bytes/1024/1024).toFixed(1)} MB`;
 }
-function cameraBrand(make,model){
-  const value=`${make||''} ${model||''}`;
-  if(/sony|ilce/i.test(value))return'sony';
-  if(/canon/i.test(value))return'canon';
-  if(/nikon/i.test(value))return'nikon';
-  if(/fujifilm/i.test(value))return'fujifilm';
-  if(/panasonic|lumix/i.test(value))return'lumix';
-  if(/leica/i.test(value))return'leica';
-  if(/olympus|om system|om-d|omd/i.test(value))return'omsystem';
-  if(/hasselblad/i.test(value))return'hasselblad';
-  return'other';
-}
-function shortBody(model){
-  const value=String(model||'').toUpperCase().trim();
-  if(/ILCE-7M4|A7M4|A7 IV/.test(value))return'a7m4';
-  if(/ILCE-7RM5|A7R ?V|A7R5/.test(value))return'a7r5';
-  if(/ILCE-1\b|\bA1\b/.test(value))return'a1';
-  if(/ILCE-9M3|A9 ?III/.test(value))return'a9iii';
-  if(/EOS\s*R[A-Z0-9]/i.test(value)){
-    const base=value.replace(/^CANON\s*/,'').replace(/\s+/g,'').toLowerCase();
-    const mark=base.match(/mark(i{1,3}|iv|v)/i);
-    if(mark){
-      const numeral={I:'1',II:'2',III:'3',IV:'4',V:'5'}[mark[1].toUpperCase()]||'';
-      return base.replace(/mark(i{1,3}|iv|v)/i,`m${numeral}`);
-    }
-    return base.replace(/[^a-z0-9]/g,'');
-  }
-  return value.replace(/[^A-Z0-9]/g,'').toLowerCase()||'camera';
-}
-function shortLens(lens,brand){
-  const value=String(lens||'').toUpperCase();
-  const range=value.match(/(\d{2,3})\s*-\s*(\d{2,3})\s*MM/);
-  const prime=value.match(/(\d{2,3})\s*MM/);
-  if(brand==='sony'){
-    const gm=/\bGM\b/.test(value)?'gm':'';
-    const mark=/\bII\b|\b2\b/.test(value)?'2':'';
-    if(range)return`sel${range[1]}${range[2]}${gm}${mark}`.toLowerCase();
-    if(prime)return`sel${prime[1]}${gm}${mark}`.toLowerCase();
-  }
-  if(brand==='canon'){
-    const l=/\bL\b/.test(value)?'l':'';
-    if(/RF\s*/.test(value))return(range?`rf${range[1]}${range[2]}${l}`:prime?`rf${prime[1]}${l}`:'lens').toLowerCase();
-    if(/EF(-S)?\s*/.test(value)){
-      const prefix=/EF-S/.test(value)?'efs':'ef';
-      return(range?`${prefix}${range[1]}${range[2]}${l}`:prime?`${prefix}${prime[1]}${l}`:'lens').toLowerCase();
-    }
-  }
-  if(range)return`${range[1]}${range[2]}`;
-  if(prime)return prime[1];
-  return value.replace(/[^A-Z0-9]/g,'').toLowerCase()||'lens';
-}
-function isPhone(make,model){return/(iphone|apple|samsung|galaxy|pixel|google|huawei|xiaomi|mi\s|redmi|oneplus|oppo|vivo|honor)/i.test(`${make||''} ${model||''}`);}
-function phoneInfo(make,model){
-  const mk=String(make||'').toLowerCase(),md=String(model||'').toLowerCase();
-  const samsungCodes={'sm-f700':'galaxyzflip','sm-f707':'galaxyzflip5g','sm-f711':'galaxyzflip3','sm-f721':'galaxyzflip4','sm-f731':'galaxyzflip5','sm-f741':'galaxyzflip6','sm-f916':'galaxyzfold2','sm-f926':'galaxyzfold3','sm-f936':'galaxyzfold4','sm-f946':'galaxyzfold5','sm-f956':'galaxyzfold6','sm-s911':'galaxys23','sm-s916':'galaxys23plus','sm-s918':'galaxys23ultra','sm-s921':'galaxys24','sm-s926':'galaxys24plus','sm-s928':'galaxys24ultra'};
-  if(mk.includes('samsung')||/galaxy/i.test(model||'')){
-    const code=(md.match(/sm-[a-z0-9]+/i)||[''])[0].toLowerCase();
-    const name=samsungCodes[code]||(md.includes('fold')?'galaxyzfold':md.includes('flip')?'galaxyzflip':compact(model)||'galaxy');
-    return{display:name,tags:`#samsung #${name}`};
-  }
-  if(mk.includes('apple')||/iphone/i.test(model||'')){const name=`iphone${compact(String(model||'').replace(/apple|iphone/gi,''))}`;return{display:name||'iphone',tags:`#apple #${name||'iphone'}`};}
-  if(mk.includes('google')||/pixel/i.test(model||'')){const name=`pixel${compact(String(model||'').replace(/google|pixel/gi,''))}`;return{display:name||'pixel',tags:`#google #${name||'pixel'}`};}
-  const brand=compact(make)||'phone',name=compact(model)||'phone';
-  return{display:name,tags:`#${brand} #${name}`};
-}
-function brandTags(brand){
-  if(brand==='sony')return'#sony #sonyalpha #sonykorea';
-  if(brand==='canon')return'#canon #canonphotography #canonkr';
-  if(brand==='hasselblad')return'#hasselblad #hasselbladxsystem';
-  return'';
-}
-function row(label,value='읽는 중…'){
-  const element=document.createElement('div');element.className='metadata-row';
-  const name=document.createElement('span');name.className='metadata-label';name.textContent=label;
-  const content=document.createElement('span');content.className='metadata-value';content.textContent=value;
-  element.append(name,content);return element;
-}
+function releasePreview(url){URL.revokeObjectURL(url);previewUrls.delete(url);}
 function feedback(button,label){
   button.textContent='복사됨';button.classList.add('copied');
   setTimeout(()=>{button.textContent=label;button.classList.remove('copied');},1400);
 }
 async function copy(text,button,label){
+  if(!text)return;
   try{await navigator.clipboard.writeText(text);feedback(button,label);}
-  catch{button.textContent='실패';setTimeout(()=>button.textContent=label,1400);}
+  catch{button.textContent='복사 실패';setTimeout(()=>button.textContent=label,1400);}
+}
+function captionBlock(label,fileName){
+  const block=document.createElement('section');block.className=`metadata-caption metadata-caption-${label}`;
+  block.setAttribute('aria-label',label==='insta'?'인스타그램 문구':'블로그 문구');
+  const preview=document.createElement('p');preview.className='metadata-caption-text';preview.textContent='메타데이터를 읽는 중입니다…';
+  const button=document.createElement('button');button.className='metadata-action';button.type='button';button.textContent=label;button.disabled=true;
+  button.setAttribute('aria-label',`${fileName} ${label==='insta'?'인스타그램':'블로그'} 문구 복사`);
+  button.addEventListener('click',()=>copy(preview.textContent,button,label));
+  block.append(preview,button);
+  return {block,preview,button};
 }
 function updateResultState(){
   resultCount.textContent=`${renderedCount}개`;
@@ -143,80 +44,61 @@ function updateResultState(){
   clearResults.hidden=renderedCount===0;
 }
 function waitForExif(){
-  if(globalThis.exifr?.parse)return Promise.resolve(globalThis.exifr);
-  return new Promise((resolve,reject)=>{
-    let attempts=0;
-    const timer=setInterval(()=>{
-      if(globalThis.exifr?.parse){clearInterval(timer);resolve(globalThis.exifr);}
-      else if(++attempts>50){clearInterval(timer);reject(new Error('메타데이터 분석 라이브러리를 불러오지 못했습니다.'));}
-    },100);
+  return exifLibrary ||= import('../vendor/exifr-full.esm.js').catch(()=>{
+    exifLibrary=null;
+    throw new Error('메타데이터 분석 라이브러리를 불러오지 못했습니다. 다시 시도해 주세요.');
   });
 }
-async function renderFile(file,exifr){
-  const objectUrl=URL.createObjectURL(file);
-  const item=document.createElement('article');item.className='metadata-item';
-  const actions=document.createElement('div');actions.className='metadata-actions';
-  const blogButton=document.createElement('button');blogButton.className='metadata-action';blogButton.type='button';blogButton.textContent='blog';
-  const instaButton=document.createElement('button');instaButton.className='metadata-action';instaButton.type='button';instaButton.textContent='insta';
-  const copyButton=document.createElement('button');copyButton.className='metadata-action';copyButton.type='button';copyButton.textContent='복사';
-  actions.append(blogButton,instaButton,copyButton);
+async function renderFile(file,exifr,batchGeneration){
+  const objectUrl=URL.createObjectURL(file);previewUrls.add(objectUrl);
+  const item=document.createElement('article');item.className='metadata-item';item.setAttribute('aria-busy','true');
   const head=document.createElement('div');head.className='metadata-filehead';
-  const image=document.createElement('img');image.className='metadata-thumb';image.src=objectUrl;image.alt='';
-  image.addEventListener('error',()=>{image.removeAttribute('src');image.alt='미리보기 없음';},{once:true});
+  const image=document.createElement('img');image.className='metadata-thumb';image.alt='';
+  image.addEventListener('load',()=>releasePreview(objectUrl),{once:true});
+  image.addEventListener('error',()=>{image.removeAttribute('src');image.alt='미리보기 없음';releasePreview(objectUrl);},{once:true});
+  image.src=objectUrl;
   const fileInfo=document.createElement('div');fileInfo.className='metadata-file-info';
-  const filename=document.createElement('div');filename.className='metadata-filename';filename.textContent=file.name;
+  const filename=document.createElement('h3');filename.className='metadata-filename';filename.textContent=file.name;
   const details=document.createElement('div');details.className='metadata-file-meta';details.textContent=`${file.type||'이미지 파일'} · ${fileSize(file.size)}`;
   fileInfo.append(filename,details);head.append(image,fileInfo);
-  const body=document.createElement('div');
-  ['카메라','렌즈','ISO','셔터스피드','조리개'].forEach(label=>body.append(row(label)));
-  item.append(actions,head,body);list.prepend(item);renderedCount++;updateResultState();
+  const insta=captionBlock('insta',file.name),blog=captionBlock('blog',file.name);
+  item.append(head,insta.block,blog.block);list.append(item);renderedCount++;updateResultState();
   try{
     const exif=await exifr.parse(file,{exif:true,tiff:true,ifd0:true});
-    const make=exif?.Make||'',model=exif?.Model||'';
-    const lens=exif?.LensModel||exif?.LensMake||exif?.Lens||'';
-    const iso=exif?.ISO?String(exif.ISO):'—';
-    const rawShutter=exif?.ExposureTime??exif?.ShutterSpeedValue;
-    const rawAperture=exif?.FNumber??exif?.ApertureValue;
-    const shutter=exposure(rawShutter);
-    const fNumber=aperture(rawAperture);
-    const focal=focalLength(exif?.FocalLength);
-    const takenAt=photoDate(exif?.DateTimeOriginal??exif?.CreateDate??exif?.DateTime??exif?.ModifyDate);
-    const phone=isPhone(make,model)?phoneInfo(make,model):null;
-    const brand=cameraBrand(make,model),hasLens=Boolean(lens&&lens!=='—');
-    const camera=cameraName(make,model);
-    const displayLens=phone?'—':hasLens?lens:'—';
-    const values=[camera,displayLens,iso,shutter,fNumber];
-    body.querySelectorAll('.metadata-value').forEach((element,index)=>element.textContent=values[index]);
-    copyButton.addEventListener('click',()=>copy(`파일명: ${file.name}\n카메라: ${camera}\n렌즈: ${displayLens}\nISO: ${iso}\n셔터스피드: ${shutter}\n조리개: ${fNumber}`,copyButton,'복사'));
-    instaButton.addEventListener('click',()=>{
-      if(phone)return copy(`📷${bold(phone.display)}\n\n${phone.tags}`,instaButton,'insta');
-      const cameraShort=shortBody(model||camera),lensShort=hasLens?shortLens(lens,brand):'';
-      const tags=[brandTags(brand),`#${cameraShort}${hasLens?` #${lensShort}`:''}`].filter(Boolean).join('\n');
-      copy(`📷${bold(cameraShort)}${hasLens?` + ${italicBoldDigits(lensShort)}`:''}\n\n${tags}`,instaButton,'insta');
-    });
-    blogButton.addEventListener('click',()=>{
-      const title=phone?camera:`${camera}${hasLens?` + ${lens}`:''}`;
-      const blogAperture=Number.isFinite(numberValue(rawAperture))?`F ${Math.round(numberValue(rawAperture)*10)/10}`:'F —';
-      const blogShutter=shutter==='—'?'SS —':`SS ${shutter.replace(/\s+/g,'')}`;
-      const payload=`${title}\n${blogAperture} | ${blogShutter} | ISO ${iso} | ${focal} (${takenAt})`;
-      copy(payload,blogButton,'blog');
-    });
+    if(batchGeneration!==generation)return;
+    const captions=buildMetadataCaptions(exif);
+    if(!captions.hasMetadata){
+      insta.preview.textContent='이 사진에 저장된 카메라·렌즈 정보가 없습니다.';
+      blog.preview.textContent='이 사진에 저장된 촬영 정보가 없습니다.';
+      item.classList.add('is-empty');
+      return;
+    }
+    insta.preview.textContent=captions.instagram||'이 사진에 저장된 카메라·렌즈 정보가 없습니다.';
+    blog.preview.textContent=captions.blog||'이 사진에 저장된 촬영 정보가 없습니다.';
+    insta.button.disabled=!captions.instagram;
+    blog.button.disabled=!captions.blog;
   }catch(error){
-    body.querySelectorAll('.metadata-value').forEach(element=>element.textContent='—');
+    if(batchGeneration!==generation)return;
     item.classList.add('is-error');
-    const message=document.createElement('div');message.className='metadata-error';message.textContent='이 파일에서 EXIF 메타데이터를 읽지 못했습니다. 파일 형식 또는 메타데이터 포함 여부를 확인해 주세요.';item.append(message);
+    insta.preview.textContent='이 파일의 메타데이터를 읽지 못했습니다.';
+    blog.preview.textContent='파일 형식 또는 촬영 정보 포함 여부를 확인해 주세요.';
     console.error(error);
-  }finally{setTimeout(()=>URL.revokeObjectURL(objectUrl),10000);}
+  }finally{item.setAttribute('aria-busy','false');}
 }
 async function handleFiles(files){
-  const images=[...files].filter(file=>file.type.startsWith('image/')||/\.(heic|heif|tif|tiff|arw|cr2|nef)$/i.test(file.name));
+  const images=[...files].filter(file=>file.type.startsWith('image/')||/\.(heic|heif|tif|tiff|arw|cr2|cr3|nef|nrw|raf|orf|rw2|pef|dng)$/i.test(file.name));
   if(!images.length){status.textContent='지원하는 이미지 파일이 없습니다.';return;}
+  const batchGeneration=generation;activeBatches++;
   status.textContent=`${images.length}개 파일 처리 중…`;
   try{
     const exifr=await waitForExif();
-    for(const file of images)await renderFile(file,exifr);
-    status.textContent='완료';
-  }catch(error){status.textContent=error.message||'처리하지 못했습니다.';}
+    for(const file of images){
+      if(batchGeneration!==generation)break;
+      await renderFile(file,exifr,batchGeneration);
+    }
+    if(batchGeneration===generation&&activeBatches===1)status.textContent='완료';
+  }catch(error){if(batchGeneration===generation)status.textContent=error.message||'처리하지 못했습니다.';}
+  finally{if(batchGeneration===generation)activeBatches--;}
 }
 function prevent(event){event.preventDefault();event.stopPropagation();}
 ['dragenter','dragover','dragleave','drop'].forEach(name=>dropzone.addEventListener(name,prevent));
@@ -226,5 +108,8 @@ dropzone.addEventListener('drop',event=>{dropzone.classList.remove('dragover');h
 dropzone.addEventListener('keydown',event=>{if((event.key==='Enter'||event.key===' ')&&!event.target.closest('label')){event.preventDefault();fileInput.click();}});
 dropzone.addEventListener('click',event=>{if(!event.target.closest('label'))fileInput.click();});
 fileInput.addEventListener('change',event=>{handleFiles(event.target.files);fileInput.value='';});
-clearResults.addEventListener('click',()=>{list.replaceChildren();renderedCount=0;status.textContent='준비됨';updateResultState();});
+clearResults.addEventListener('click',()=>{
+  generation++;activeBatches=0;previewUrls.forEach(releasePreview);
+  list.replaceChildren();renderedCount=0;status.textContent='준비됨';updateResultState();
+});
 updateResultState();

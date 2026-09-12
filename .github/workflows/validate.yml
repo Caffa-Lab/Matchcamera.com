@@ -21,6 +21,8 @@ jobs:
       - name: Validate programs
         run: |
           node scripts/test_programs.mjs
+          node --check public/assets/js/metadata.js
+          node scripts/test_metadata_captions.mjs
           node scripts/test_accessory_expansion.mjs
       - name: Validate catalog visibility and admin toggles
         run: node scripts/test_catalog_visibility.mjs

@@ -5,12 +5,10 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>사진 메타데이터 추출기 | Matchcamera</title>
   <meta name="description" content="사진의 카메라, 렌즈, ISO, 셔터스피드, 조리개 메타데이터를 브라우저에서 확인합니다.">
-  <link rel="preconnect" href="https://unpkg.com" crossorigin>
   <link rel="stylesheet" href="/assets/css/site.css?v=20260911-price-details">
   <link rel="stylesheet" href="/assets/css/site-enhancements.css">
-  <link rel="stylesheet" href="/assets/css/metadata.css">
+  <link rel="stylesheet" href="/assets/css/metadata.css?v=20260912-captions">
   <link rel="icon" href="/assets/images/matchcamera/symbol.png" type="image/png">
-  <script defer src="https://unpkg.com/exifr@7.1.3/dist/full.umd.js"></script>
 </head>
 <body class="metadata-page">
   <div data-header></div>
@@ -20,7 +18,7 @@
         <div>
           <span class="metadata-eyebrow">MATCHCAMERA PROGRAM</span>
           <h1>사진 메타데이터 추출기</h1>
-          <p>사진을 드래그하거나 선택하면 카메라·렌즈·ISO·셔터스피드·조리개를 바로 확인합니다.</p>
+          <p>사진을 선택하면 장비와 촬영 정보가 담긴 인스타그램·블로그 문구를 확인하고 복사할 수 있습니다.</p>
         </div>
         <div class="metadata-privacy"><span aria-hidden="true">✓</span> 브라우저에서만 처리 · 서버 업로드 없음</div>
       </div>
@@ -32,8 +30,8 @@
           <svg viewBox="0 0 24 24"><path d="M12 16V4m0 0L7.5 8.5M12 4l4.5 4.5"></path><path d="M5 13v5a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-5"></path></svg>
         </div>
         <strong>여기로 사진을 드롭하세요</strong>
-        <span>JPG · PNG · HEIC · TIFF · ARW · CR2 · NEF 등 여러 파일을 한 번에 선택할 수 있습니다.</span>
-        <label class="metadata-file-button">사진 선택<input id="fileInput" type="file" accept="image/*,.heic,.heif,.tif,.tiff,.arw,.cr2,.nef" multiple></label>
+        <span>JPG · PNG · HEIC · TIFF와 RAW 파일을 여러 장 선택할 수 있습니다. 파일 형식에 따라 미리보기나 촬영 정보가 없을 수 있습니다.</span>
+        <label class="metadata-file-button">사진 선택<input id="fileInput" type="file" accept="image/*,.heic,.heif,.tif,.tiff,.arw,.cr2,.cr3,.nef,.nrw,.raf,.orf,.rw2,.pef,.dng" multiple></label>
       </div>
 
       <div class="metadata-results-head">
@@ -46,6 +44,6 @@
   </main>
   <div data-footer></div>
   <script type="module" src="/assets/js/common.js?v=20260831-logo-filter-fix"></script>
-  <script type="module" src="/assets/js/metadata.js"></script>
+  <script type="module" src="/assets/js/metadata.js?v=20260912-captions"></script>
 </body>
 </html>
