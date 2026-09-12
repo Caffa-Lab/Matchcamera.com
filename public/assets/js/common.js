@@ -132,5 +132,5 @@ if(header){
 
 const footer = document.querySelector('[data-footer]');
 if(footer){
-  footer.innerHTML = `<footer class="footer"><div class="footer-inner"><span>© ${new Date().getFullYear()} Matchcamera</span><span>제품 사양·가격·호환성은 제조사 자료를 우선하며 구매 전 재확인을 권장합니다.</span><a href="mailto:admin@matchcamera.com">admin@matchcamera.com</a></div></footer>`;
+  footer.innerHTML = `<footer class="footer"><div class="footer-inner"><span>© ${new Date().getFullYear()} Matchcamera</span><span>제품 사양·가격·호환성은 제조사 자료를 우선하며 구매 전 재확인을 권장합니다.</span><a href="mailto:admin@matchcamera.com">admin@matchcamera.com</a><a href="/privacy/">개인정보처리방침</a></div></footer>`;
 }
