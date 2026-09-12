@@ -71,6 +71,8 @@ brandStyles.textContent = `
     width:20px!important;height:20px!important;
     fill:none!important;stroke:currentColor!important;stroke-width:2!important;stroke-linecap:round!important;
   }
+  .footer .privacy-settings{border:0;padding:0;background:transparent;color:inherit;font:inherit;text-decoration:underline;cursor:pointer}
+  .footer .privacy-settings[hidden]{display:none!important}
 
   @media(max-width:1450px){
     .top-nav{gap:10px!important}
@@ -132,5 +134,26 @@ if(header){
 
 const footer = document.querySelector('[data-footer]');
 if(footer){
-  footer.innerHTML = `<footer class="footer"><div class="footer-inner"><span>© ${new Date().getFullYear()} Matchcamera</span><span>제품 사양·가격·호환성은 제조사 자료를 우선하며 구매 전 재확인을 권장합니다.</span><a href="mailto:admin@matchcamera.com">admin@matchcamera.com</a><a href="/privacy/">개인정보처리방침</a></div></footer>`;
+  footer.innerHTML = `<footer class="footer"><div class="footer-inner"><span>© ${new Date().getFullYear()} Matchcamera</span><span>제품 사양·가격·호환성은 제조사 자료를 우선하며 구매 전 재확인을 권장합니다.</span><a href="mailto:admin@matchcamera.com">admin@matchcamera.com</a><a href="/privacy/">개인정보처리방침</a><button class="privacy-settings" type="button" hidden>개인정보 및 쿠키 설정</button></div></footer>`;
+
+  const privacyButton = footer.querySelector('.privacy-settings');
+  const hasAdSense = document.querySelector('script[src^="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"]');
+  if (hasAdSense || window.googlefc?.callbackQueue) {
+    window.googlefc = window.googlefc || {};
+    window.googlefc.callbackQueue = window.googlefc.callbackQueue || [];
+    // Google CMP exposes revocation only after its consent API is ready.
+    window.googlefc.callbackQueue.push({ CONSENT_API_READY: () => {
+      if (typeof window.googlefc.showRevocationMessage !== 'function' || typeof window.__tcfapi !== 'function') return;
+      window.__tcfapi('addEventListener', 0, (data, success) => {
+        privacyButton.hidden = !(success && data?.gdprApplies === true && typeof window.googlefc.showRevocationMessage === 'function');
+      });
+    } });
+    privacyButton.addEventListener('click', () => {
+      if (typeof window.googlefc?.showRevocationMessage !== 'function') {
+        privacyButton.hidden = true;
+        return;
+      }
+      window.googlefc.callbackQueue.push({ CONSENT_API_READY: () => window.googlefc.showRevocationMessage() });
+    });
+  }
 }

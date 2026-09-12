@@ -48,6 +48,7 @@ jobs:
           node scripts/test_battery_compatibility.mjs
           node scripts/test_programs.mjs
           node scripts/test_accessory_expansion.mjs
+          node scripts/test_adsense_integration.mjs
           python3 scripts/check_homepage.py
 
       - name: Deploy Worker

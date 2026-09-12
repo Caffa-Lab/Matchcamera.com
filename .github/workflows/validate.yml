@@ -28,3 +28,5 @@ jobs:
         run: node scripts/test_price_details.mjs
       - name: Validate body and lens manufacturer filters
         run: node scripts/test_catalog_filter_order.mjs
+      - name: Validate AdSense scope and consent controls
+        run: node scripts/test_adsense_integration.mjs
