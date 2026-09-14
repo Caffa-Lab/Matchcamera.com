@@ -98,7 +98,7 @@ function installLegacySearchAliasBridge(){
 }
 if(typeof document !== 'undefined') installLegacySearchAliasBridge();
 
-const BRAND_SEARCH_ALIASES = {"sony": ["소니"], "canon": ["캐논", "케논"], "nikon": ["니콘"], "fujifilm": ["후지필름", "후지"], "hasselblad": ["핫셀블라드", "핫셀"], "leica": ["라이카"], "panasonic": ["파나소닉", "루믹스"], "olympus": ["올림푸스"], "om system": ["오엠시스템", "om시스템"], "pentax": ["펜탁스"], "ricoh": ["리코"], "sigma": ["시그마"], "tamron": ["탐론"], "samyang": ["삼양"], "viltrox": ["빌트록스"], "tokina": ["토키나"], "laowa": ["라오와"], "zeiss": ["자이스"], "manfrotto": ["맨프로토", "만프로토"], "gitzo": ["짓조"], "leofoto": ["레오포토"], "benro": ["벤로"], "sirui": ["시루이"], "peak design": ["픽디자인"], "smallrig": ["스몰리그"], "slik": ["슬릭"], "velbon": ["벨본"], "vanguard": ["뱅가드", "뱅가드코리아"], "photoclam": ["포토클램"], "sandisk": ["샌디스크"], "lexar": ["렉사"], "prograde": ["프로그레이드"], "angelbird": ["앤젤버드", "엔젤버드"], "samsung": ["삼성"], "godox": ["고독스"], "blackmagic design": ["블랙매직디자인", "블랙매직"], "ttartisan": ["티티아티산"], "7artisans": ["세븐아티산"], "sachtler": ["셔틀러", "자흐틀러", "사흐틀러"]};
+const BRAND_SEARCH_ALIASES = {"kodak": ["코닥"], "sony": ["소니"], "canon": ["캐논", "케논"], "nikon": ["니콘"], "fujifilm": ["후지필름", "후지"], "hasselblad": ["핫셀블라드", "핫셀"], "leica": ["라이카"], "panasonic": ["파나소닉", "루믹스"], "olympus": ["올림푸스"], "om system": ["오엠시스템", "om시스템"], "pentax": ["펜탁스"], "ricoh": ["리코"], "sigma": ["시그마"], "tamron": ["탐론"], "samyang": ["삼양"], "viltrox": ["빌트록스"], "tokina": ["토키나"], "laowa": ["라오와"], "zeiss": ["자이스"], "manfrotto": ["맨프로토", "만프로토"], "gitzo": ["짓조"], "leofoto": ["레오포토"], "benro": ["벤로"], "sirui": ["시루이"], "peak design": ["픽디자인"], "smallrig": ["스몰리그"], "slik": ["슬릭"], "velbon": ["벨본"], "vanguard": ["뱅가드", "뱅가드코리아"], "photoclam": ["포토클램"], "sandisk": ["샌디스크"], "lexar": ["렉사"], "prograde": ["프로그레이드"], "angelbird": ["앤젤버드", "엔젤버드"], "samsung": ["삼성"], "godox": ["고독스"], "blackmagic design": ["블랙매직디자인", "블랙매직"], "ttartisan": ["티티아티산"], "7artisans": ["세븐아티산"], "sachtler": ["셔틀러", "자흐틀러", "사흐틀러"]};
 function brandSearch(value){
  let text=String(value).normalize("NFKC").toLowerCase();
  for(const [brand,aliases] of Object.entries(BRAND_SEARCH_ALIASES))for(const alias of aliases)text=text.replaceAll(alias.toLowerCase(),brand);
@@ -318,8 +318,16 @@ export function memoryCardCompatibility(card,body){
   if(!hay)return {level:'unknown',label:'판정 불가',reason:'바디의 메모리 카드 슬롯 규격이 등록되지 않았습니다.'};
   const type=String(card.cardType||'').toLowerCase();
   const aliases=type.includes('cfexpress type a')?['cfexpress type a','cfexpress a']:type.includes('cfexpress type b')?['cfexpress type b','cfexpress b']:type.includes('sd')?['sd','sdhc','sdxc']:type.includes('xqd')?['xqd']:[type];
-  const compatible=aliases.some(alias=>alias&&hay.includes(alias));
+  const standardSd=/\bsd(?:hc|xc|uc)?(?=[^a-z]|$)/i.test(hay.replace(/\bmicro[-\s]*sd(?:hc|xc|uc)?\b/gi,''));
+  const compatible=type.startsWith('sd')?standardSd:aliases.some(alias=>alias&&hay.includes(alias));
   if(!compatible)return {level:'incompatible',label:'사용 불가',reason:`바디 슬롯 규격과 ${card.cardType||'카드'}가 일치하지 않습니다.`};
+  if(type.startsWith('sd')){
+    const media=hay.replace(/\bmicro[-\s]*sd(?:hc|xc|uc)?\b/gi,'');
+    if(type.includes('sdxc')&&!/\bsdxc\b/.test(media))return /\bsdhc\b/.test(media)?{level:'incompatible',label:'사용 불가',reason:'이 카메라의 공식 기록 매체는 SD/SDHC이며 SDXC 카드를 지원하지 않습니다.'}:{level:'unknown',label:'규격 확인 필요',reason:'SD 슬롯은 있지만 SDXC 지원 여부가 확인되지 않았습니다.'};
+    const limit=hay.match(/(?:up to|max(?:imum)?|최대)\s*(\d+(?:\.\d+)?)\s*(gb|tb)/i);
+    const maxGb=limit?Number(limit[1])*(limit[2].toLowerCase()==='tb'?1024:1):Number(body.maxCardCapacityGb||0);
+    if(maxGb&&Number(card.capacityGb)>maxGb)return {level:'incompatible',label:'용량 초과',reason:`이 카메라의 공식 지원 용량은 최대 ${maxGb}GB입니다.`};
+  }
   const videoNeed=Number(body.minimumVpg||body.minimumVideoMbps||0);
   const cardVpg=Number(card.vpg||String(card.speedClass||'').match(/(?:VPG|V)(\d+)/i)?.[1]||0);
   if(videoNeed&&cardVpg&&cardVpg<videoNeed)return {level:'conditional',label:'속도 주의',reason:`카드 보장 속도 ${cardVpg}MB/s가 바디 권장 ${videoNeed}MB/s보다 낮습니다.`};

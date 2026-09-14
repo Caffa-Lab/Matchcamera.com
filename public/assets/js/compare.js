@@ -1,5 +1,5 @@
 import {ACCESSORY_CATEGORIES,accessoryComparisonProduct} from './accessory-compare.js';
-import {brandLogoUrl,loadAdapters,loadBatteries,loadMemoryCards,loadFlashes,loadTripods,loadHeads,loadPlates,loadProducts,loadManufacturerOrder,matchesSearch,money,productLabel} from './data.js?v=20260901-all';
+import {brandLogoUrl,loadAdapters,loadBatteries,loadMemoryCards,loadFlashes,loadTripods,loadHeads,loadPlates,loadProducts,loadManufacturerOrder,matchesSearch,money,productLabel} from './data.js?v=20260914-fixed-lens';
 
 const $=selector=>document.querySelector(selector);
 const esc=(value='')=>String(value).replace(/[&<>"']/g,char=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
@@ -54,7 +54,7 @@ function specValue(product,key){
 function comparisonKeys(){
   if(state.type==='액세서리')return [...new Set(['제조사',...[state.a,state.b].filter(Boolean).flatMap(p=>Object.keys(p.specs||{})),'한국 가격'])];
   const base=state.type==='바디'
-    ?['제조사','카메라 방식','마운트','센서 포맷','모델 코드','출시년도','유효 화소(MP)','총 화소(MP)','센서 종류','이미지 프로세서','손떨림 보정(IBIS) 여부','AF 방식','AF 위상차 포인트','AF 콘트라스트 포인트','최고 연속촬영 속도(fps)','최고 동영상 해상도','최고 동영상 프레임레이트(fps)','RAW 지원 여부','가로 크기(mm)','세로 크기(mm)','두께(mm)','무게(g)','판매 상태','한국 가격']
+    ?['제조사','카메라 방식','마운트','센서 포맷','내장 렌즈','35mm 환산 초점거리','최대 조리개','모델 코드','출시년도','유효 화소(MP)','총 화소(MP)','센서 종류','이미지 프로세서','손떨림 보정(IBIS) 여부','AF 방식','AF 위상차 포인트','AF 콘트라스트 포인트','최고 연속촬영 속도(fps)','최고 동영상 해상도','최고 동영상 프레임레이트(fps)','RAW 지원 여부','가로 크기(mm)','세로 크기(mm)','두께(mm)','무게(g)','판매 상태','한국 가격']
     :['제조사','카메라 방식','마운트','렌즈 포맷','모델 코드','출시년도','초점거리','최대 조리개','렌즈 유형','조리개 날 수','최단 촬영 거리(m)','최대 촬영 배율','필터 구경(mm)','손떨림 보정(OSS) 여부','AF 지원 여부','방진방적 여부','길이(mm)','최대 지름(mm)','무게(g)','판매 상태','한국 가격'];
   const extra=new Set();
   for(const product of [state.a,state.b].filter(Boolean)){

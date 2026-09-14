@@ -48,6 +48,7 @@ jobs:
           node scripts/test_spec_refresh.mjs
           node scripts/test_quality_review.mjs
           node scripts/test_battery_compatibility.mjs
+          node scripts/test_fixed_lens_catalog.mjs
           node scripts/test_programs.mjs
           node scripts/test_metadata_captions.mjs
           node scripts/test_accessory_expansion.mjs

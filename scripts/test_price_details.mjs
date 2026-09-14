@@ -26,7 +26,7 @@ assert.match(unsafe,/이전 기록 · 재확인 필요/);
 if(process.argv.includes('--snapshot')){
   const rows=JSON.parse(await fs.readFile(path.join(root,'public/data/korea-prices.json'),'utf8'));
   const target=rows.filter(r=>['Sony','Canon','Nikon','Fujifilm'].includes(r['제조사'])&&['바디','렌즈'].includes(r['제품 종류']));
-  assert.equal(target.length,628);
+  assert(target.length>=628,'previous price coverage must be retained as new cameras are added');
   for(const row of target){
     const d=row['가격 상세'];assert(d?.status&&d.reviewedAt,'each target price needs a review result');
     for(const offer of d.offers){

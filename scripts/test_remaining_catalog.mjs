@@ -7,7 +7,7 @@ const read=async name=>JSON.parse(await fs.readFile(path.join(root,'public/data'
 const prices=await read('korea-prices.json');
 const four=new Set(['Sony','Canon','Nikon','Fujifilm']);
 const remaining=prices.filter(p=>!four.has(p['제조사'])&&['바디','렌즈'].includes(p['제품 종류']));
-assert.equal(remaining.length,557);
+assert(remaining.length>=557,'previous price review coverage must be retained as the catalog grows');
 for(const row of remaining){
   const detail=row['가격 상세'];
   assert(detail?.reviewedAt&&detail.status);
@@ -40,9 +40,13 @@ for(const product of full.filter(p=>!four.has(p.manufacturer)&&['바디','렌즈
   const image=images[product.id];
   assert(image?.src&&image.verifiedAt);
   await fs.access(path.join(root,'public',image.src));
-  if(image.method==='official-reviewed-cutout')reviewed++;
+  if(product.cameraSystem==='일체형 카메라'){
+    assert(image.sourcePage?.startsWith('https://')&&image.sourceImage?.startsWith('https://'),'compact camera photos need their original source');
+    reviewed++;
+  }
+  else if(image.method==='official-reviewed-cutout')reviewed++;
   else{assert.equal(image.method,'image-pending');pending++;}
 }
-assert.equal(reviewed,456);
+assert(reviewed>=456,'new camera photos must extend the reviewed image coverage');
 assert.equal(pending,3);
-console.log('Remaining catalog passed: 557 price reviews, exact mounts/body configurations, 456 photos, 3 placeholders and matching catalog/index data.');
+console.log(`Remaining catalog passed: ${remaining.length} price reviews, exact mounts/body configurations, ${reviewed} photos, ${pending} placeholders and matching catalog/index data.`);

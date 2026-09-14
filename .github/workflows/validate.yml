@@ -26,6 +26,8 @@ jobs:
           node scripts/test_accessory_expansion.mjs
       - name: Validate catalog visibility and admin toggles
         run: node scripts/test_catalog_visibility.mjs
+      - name: Validate fixed-lens cameras
+        run: node scripts/test_fixed_lens_catalog.mjs
       - name: Validate price details
         run: node scripts/test_price_details.mjs
       - name: Validate body and lens manufacturer filters
