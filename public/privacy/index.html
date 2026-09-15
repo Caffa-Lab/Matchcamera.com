@@ -17,7 +17,7 @@
     <section class="simple-hero">
       <div class="container">
         <h1>개인정보처리방침</h1>
-        <p>시행일: 2026년 9월 12일 · 운영: Matchcamera</p>
+        <p>시행일: 2026년 9월 15일 · 운영: Matchcamera</p>
       </div>
     </section>
     <article class="privacy-content" aria-label="개인정보 처리 안내">
@@ -38,7 +38,8 @@
       </section>
       <section aria-labelledby="privacy-contact">
         <h2 id="privacy-contact">4. 이메일 문의</h2>
-        <p>문의하기 화면에서 이름, 회신 이메일, 문의 유형, 제목과 내용을 입력한 뒤 메일 보내기를 누르면 이용자의 기본 메일 앱이 열립니다. 입력 내용은 이 양식을 통해 Matchcamera 서버에 저장되지 않습니다.</p>
+        <p>문의하기 화면에서 문의 유형·제목·내용을 작성하고, 필요한 경우 이름과 회신 이메일을 선택적으로 입력합니다. 제품 상세에서 이동하면 공개된 제품명·제품 ID·이용 페이지 경로가 채워질 수 있습니다. 문의 본문과 연락처는 페이지 주소에 넣지 않습니다.</p>
+        <p>‘메일 앱에서 보내기’는 이용자의 메일 앱을 여는 기능입니다. ‘문의 내용 복사’는 기기의 클립보드로 내용을 복사하거나 직접 선택해 복사할 수 있게 합니다. 실제 메일을 전송하기 전에는 접수되지 않습니다. 작성한 문의는 이 양식을 통해 Matchcamera 서버에 저장되지 않습니다.</p>
         <p>이용자가 메일 앱에서 실제로 전송한 내용은 운영자의 이메일로 전달되며 문의 확인과 답변에 사용됩니다. 이메일 내용의 확인·정정·삭제에 관한 요청은 <a href="mailto:admin@matchcamera.com">admin@matchcamera.com</a>으로 보내 주세요. 문의와 관계없는 민감한 정보는 작성하지 않는 것을 권장합니다.</p>
       </section>
       <section aria-labelledby="privacy-network">
@@ -59,8 +60,17 @@
         <p>Google 동의 관리 기능이 제공되는 경우 적용 지역의 이용자에게 동의, 거부 및 선택 관리 메시지가 표시됩니다. 쿠키와 관련 저장 기술은 Google의 처리 방식 및 이용자가 선택한 동의 상태에 따라 사용될 수 있습니다.</p>
         <p>Google의 동의 변경 기능을 사용할 수 있는 페이지에서는 하단의 <strong>개인정보 및 쿠키 설정</strong>을 눌러 이전 선택을 변경할 수 있습니다. 이 버튼은 동의 관리 기능이 준비되고 해당 지역 규정이 적용되는 경우에 표시됩니다. 광고 운영 방식이 달라지면 이 방침도 갱신하겠습니다.</p>
       </section>
+      <section aria-labelledby="privacy-usage">
+        <h2 id="privacy-usage">7. 기능 이용 횟수 측정</h2>
+        <p>서비스 개선을 위해 페이지 종류와 기능의 시작·완료·실패·중단·복사·다운로드 요청 같은 정해진 동작 코드를 Matchcamera 서버로 보냅니다. 사진 원본, 파일명, EXIF, 위치·시리얼 정보, 검색어, 문의 내용과 개인 식별자는 이 측정 데이터에 포함하지 않습니다. 다운로드 요청은 기기에 저장이 완료되었다는 뜻이 아닙니다.</p>
+        <p>이용 횟수 데이터는 기존 호스팅 업체인 Cloudflare의 Analytics Engine에서 처리하며 현재 서비스 보관 기간은 최대 3개월입니다. 동작 횟수를 집계하므로 서로 다른 사람 수나 개인별 재방문 기록은 측정하지 않습니다. 네트워크 연결 과정의 접속 정보 처리는 위 5항과 같습니다.</p>
+        <p>측정 요청의 과도한 반복을 제한하기 위해 IP 주소를 서버 메모리의 분 단위 임시 제한에 사용할 수 있습니다. 이 값은 이용 횟수 데이터나 응답에 포함하지 않으며 다음 분의 요청 처리 때 이전 제한 기록을 비웁니다.</p>
+        <p>측정에 사용자 식별용 쿠키를 사용하지 않습니다. 브라우저의 추적 거부(DNT) 또는 Global Privacy Control 신호가 켜져 있으면 측정 요청을 보내지 않습니다. 아래 선택은 이 브라우저의 로컬 저장소에만 보관됩니다.</p>
+        <label class="check"><input type="checkbox" id="usageOptOut"> 기능 이용 횟수 측정 끄기</label>
+        <p id="usagePreferenceStatus" role="status" aria-live="polite"></p>
+      </section>
       <section aria-labelledby="privacy-changes">
-        <h2 id="privacy-changes">7. 문의와 변경 안내</h2>
+        <h2 id="privacy-changes">8. 문의와 변경 안내</h2>
         <p>개인정보 관련 문의 및 요청: <a href="mailto:admin@matchcamera.com">admin@matchcamera.com</a></p>
         <p>서비스의 처리 방식이 바뀌면 이 페이지의 내용과 시행일을 갱신해 안내합니다.</p>
       </section>
@@ -68,5 +78,6 @@
   </main>
   <div data-footer></div>
   <script type="module" src="/assets/js/common.js?v=20260912-privacy"></script>
+  <script type="module" src="/assets/js/usage-preference.js?v=20260915-phase1"></script>
 </body>
 </html>

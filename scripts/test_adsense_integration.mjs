@@ -44,7 +44,7 @@ function loadFooter(hasAdSense) {
     head: { appendChild() {} },
     querySelector: selector => selector === '[data-footer]' ? footer : selector.startsWith('script[') && hasAdSense ? {} : null,
   };
-  vm.runInNewContext(common, { window, document, location: { pathname: '/body/' } });
+  vm.runInNewContext(common.replace(/^import .*;\r?\n/gm, ''), { window, document, location: { pathname: '/body/' }, trackUsage: () => Promise.resolve(true) });
   assert.match(footer.innerHTML, /href="\/privacy\/"/);
   return { window, button, handlers };
 }

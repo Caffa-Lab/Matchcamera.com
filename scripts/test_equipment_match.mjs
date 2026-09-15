@@ -37,6 +37,7 @@ let finishExif;
 const delayedExif=new Promise(resolve=>{finishExif=resolve;});
 let renders=0;
 const context=vm.createContext({
+  trackUsage:()=>Promise.resolve(true),
   equipmentText,productName,findProduct,bodies,lenses,photo,photos:[photo],outputs:[{name:'old-output.jpg'}],
   parseExif:()=>delayedExif,formatExifSettings:()=>'',currentPhoto:()=>photo,
   renderAll:()=>{renders++;},refs:{equipmentBody:{value:'EOS R50'},equipmentLens:{value:''},equipmentDetected:{}},console,

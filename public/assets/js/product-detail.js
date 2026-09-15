@@ -1,4 +1,5 @@
 import {brandLogoUrl, money, productLabel} from './data.js?v=20260901-all';
+import {correctionUrl} from './product-feedback.js?v=20260915-phase1';
 
 const esc=(value='')=>String(value).replace(/[&<>"']/g,char=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
 const hasValue=value=>value!==null&&value!==undefined&&String(value).trim()!=='';
@@ -104,6 +105,7 @@ export function openProductDetail(p){
         </div>
       </section>
       ${priceDetailsMarkup(p)}
+      <p><a href="${esc(correctionUrl(p,globalThis.location?.pathname||'/'))}">제품 정보 수정 제보</a> · <a href="/trust/">정보 확인·수정 기준</a></p>
       <section class="product-detail-specifications" aria-label="상세 사양">
         <h3>상세 사양</h3>
         <div class="product-detail-spec-grid">${rows.map(([key,value])=>`<div class="product-detail-spec"><span>${esc(key)}</span><strong>${esc(String(value))}</strong></div>`).join('')}</div>

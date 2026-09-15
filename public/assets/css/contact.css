@@ -1,0 +1,16 @@
+.contact-intro{margin:0 0 22px;line-height:1.7;color:#556170;font-size:14px}
+.contact-product-context{margin-bottom:24px;padding:18px;border:1px solid #dcdcf7;border-radius:12px;background:#f6f5ff}
+.contact-product-context h2{margin:0 0 8px;font-size:14px}
+.contact-product-context p{margin:0 0 8px;white-space:pre-wrap;overflow-wrap:anywhere;line-height:1.7;font-size:13px}
+.contact-field label span,.contact-field small,.contact-product-context small{color:#647080;font-weight:400;font-size:12px;line-height:1.6}
+.contact-actions{justify-content:flex-start;flex-wrap:wrap}
+.contact-actions button{cursor:pointer;min-height:44px}
+.contact-copy-button{padding:0 20px;border:1px solid #cdd4df;border-radius:22px;background:#fff;color:#283549;font-weight:700}
+.contact-status{font-size:13px;line-height:1.7;color:#4c5870}
+.contact-status:empty{display:none}
+.contact-status.is-error{color:#b42318}
+.contact-copy-panel{margin-top:16px}
+.contact-copy-panel textarea{min-height:230px;font-size:13px;line-height:1.6}
+.contact-note{margin:20px 0 0;font-size:12px;line-height:1.8;color:#647080}
+.contact-shell [hidden]{display:none!important}
+@media(max-width:620px){.contact-actions{align-items:stretch}.contact-actions button{width:100%}.contact-field input,.contact-field select,.contact-field textarea{font-size:16px}}

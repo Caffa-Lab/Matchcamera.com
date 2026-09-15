@@ -1,4 +1,5 @@
 import { buildMetadataCaptions } from './metadata-captions.js?v=20260912-sony-restore';
+import {trackUsage} from './usage-events.js?v=20260915-phase1';
 
 const dropzone=document.querySelector('#dropzone');
 const fileInput=document.querySelector('#fileInput');
@@ -25,7 +26,7 @@ function feedback(button,label){
 }
 async function copy(text,button,label){
   if(!text)return;
-  try{await navigator.clipboard.writeText(text);feedback(button,label);}
+  try{await navigator.clipboard.writeText(text);feedback(button,label);void trackUsage('tool_copy','metadata');}
   catch{button.textContent='복사 실패';setTimeout(()=>button.textContent=label,1400);}
 }
 function captionBlock(label,fileName){
@@ -63,10 +64,12 @@ async function renderFile(file,exifr,batchGeneration){
   fileInfo.append(filename,details);head.append(image,fileInfo);
   const insta=captionBlock('insta',file.name),blog=captionBlock('blog',file.name);
   item.append(head,insta.block,blog.block);list.append(item);renderedCount++;updateResultState();
+  void trackUsage('tool_start','metadata');
   try{
     const exif=await exifr.parse(file,{exif:true,tiff:true,ifd0:true});
-    if(batchGeneration!==generation)return;
+    if(batchGeneration!==generation){void trackUsage('tool_cancelled','metadata');return;}
     const captions=buildMetadataCaptions(exif);
+    void trackUsage('tool_success','metadata');
     if(!captions.hasMetadata){
       insta.preview.textContent='이 사진에 저장된 카메라·렌즈 정보가 없습니다.';
       blog.preview.textContent='이 사진에 저장된 촬영 정보가 없습니다.';
@@ -78,7 +81,8 @@ async function renderFile(file,exifr,batchGeneration){
     insta.button.disabled=!captions.instagram;
     blog.button.disabled=!captions.blog;
   }catch(error){
-    if(batchGeneration!==generation)return;
+    if(batchGeneration!==generation){void trackUsage('tool_cancelled','metadata');return;}
+    void trackUsage('tool_failure','metadata');
     item.classList.add('is-error');
     insta.preview.textContent='이 파일의 메타데이터를 읽지 못했습니다.';
     blog.preview.textContent='파일 형식 또는 촬영 정보 포함 여부를 확인해 주세요.';

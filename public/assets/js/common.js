@@ -1,4 +1,9 @@
+import {trackUsage} from './usage-events.js?v=20260915-phase1';
+
 const here = location.pathname;
+const usageSurfaces={'/':'home','/body/':'body','/lens/':'lens','/database/':'database','/accessories/':'accessories','/compare/':'compare','/builder/':'builder','/program/resize/':'resize','/program/filename/':'filename','/program/metadata/':'metadata','/program/rating/':'rating','/contact/':'contact','/trust/':'trust'};
+const usageSurface=usageSurfaces[here.replace(/index\.html$/,'')];
+if(usageSurface)void trackUsage('page_view',usageSurface);
 const isHome = here === '/';
 const header = document.querySelector('[data-header]');
 
@@ -134,7 +139,7 @@ if(header){
 
 const footer = document.querySelector('[data-footer]');
 if(footer){
-  footer.innerHTML = `<footer class="footer"><div class="footer-inner"><span>© ${new Date().getFullYear()} Matchcamera</span><span>제품 사양·가격·호환성은 제조사 자료를 우선하며 구매 전 재확인을 권장합니다.</span><a href="mailto:admin@matchcamera.com">admin@matchcamera.com</a><a href="/privacy/">개인정보처리방침</a><button class="privacy-settings" type="button" hidden>개인정보 및 쿠키 설정</button></div></footer>`;
+  footer.innerHTML = `<footer class="footer"><div class="footer-inner"><span>© ${new Date().getFullYear()} Matchcamera</span><span>제품 사양·가격·호환성은 제조사 자료를 우선하며 구매 전 재확인을 권장합니다.</span><a href="/trust/">정보 기준·수정 안내</a><a href="mailto:admin@matchcamera.com">admin@matchcamera.com</a><a href="/privacy/">개인정보처리방침</a><button class="privacy-settings" type="button" hidden>개인정보 및 쿠키 설정</button></div></footer>`;
 
   const privacyButton = footer.querySelector('.privacy-settings');
   const hasAdSense = document.querySelector('script[src^="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"]');

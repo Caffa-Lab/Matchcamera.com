@@ -32,6 +32,12 @@ jobs:
         run: node scripts/test_fixed_lens_catalog.mjs
       - name: Validate price details
         run: node scripts/test_price_details.mjs
+      - name: Validate estimate price context
+        run: node scripts/test_estimate_price_context.mjs
+      - name: Validate minimal usage events
+        run: node scripts/test_usage_events.mjs
+      - name: Validate product correction feedback
+        run: node scripts/test_product_feedback.mjs
       - name: Validate body and lens manufacturer filters
         run: node scripts/test_catalog_filter_order.mjs
       - name: Validate AdSense scope and consent controls

@@ -1,3 +1,5 @@
+import { handleUsage } from './usage-events.js';
+
 const ADMIN_PREFIX = "/admin/";
 const ADMIN_API_PREFIX = "/admin/api/";
 const GITHUB_API_VERSION = "2022-11-28";
@@ -478,6 +480,7 @@ async function serveAssetOrNotFound(request, env) {
 export default {
   async fetch(request, env) {
     const url = new URL(request.url);
+    if (url.pathname === "/api/usage") return handleUsage(request, env);
     if (url.pathname === "/api/health") {
       return Response.json({ ok: true, service: "matchcamera", platform: "cloudflare-workers", time: new Date().toISOString() }, { headers: { "Cache-Control": "no-store" } });
     }

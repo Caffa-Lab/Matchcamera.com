@@ -1,0 +1,7 @@
+.builder-page .catalog-price small{font-size:10px;color:#66727f}
+.builder-page .price-context-meta{display:flex;flex-wrap:wrap;align-items:baseline;gap:3px 8px;margin-top:4px;color:#697581;font-size:10px;line-height:1.5;overflow-wrap:anywhere}
+.builder-page .price-context-meta a{color:#326b91;text-decoration:underline;text-underline-offset:2px}
+.builder-page .price-breakdown-row .price-context-meta{font-size:11px}
+.builder-page .price-breakdown-row .price-context-meta span{font-size:inherit;color:inherit}
+.builder-page .price-context-meta .price-excluded{color:#a74738}
+.builder-page .price-summary #priceNote{text-align:left;font-size:11px;line-height:1.6;color:#64717e}

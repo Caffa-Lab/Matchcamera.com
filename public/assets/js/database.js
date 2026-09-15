@@ -1,5 +1,5 @@
 import {loadProducts,loadManufacturerOrder,sortManufacturers,publicManufacturer,productLabel,matchesSearch} from './data.js?v=20260901-all';
-import {openProductDetail} from './product-detail.js';
+import {openProductDetail} from './product-detail.js?v=20260915-phase1';
 const $=s=>document.querySelector(s);const state={all:[],manufacturerOrder:[],q:'',system:'all',manufacturer:'all',mount:'all',type:'all',sensor:'all',lens:'all',sale:'all'};
 const esc=(v='')=>String(v).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 function options(values,label){return `<option value="all">${label}</option>`+values.map(v=>`<option value="${esc(v)}">${esc(v)}</option>`).join('')}

@@ -1,6 +1,8 @@
 import {ACCESSORY_CATEGORIES,accessoryComparisonProduct} from './accessory-compare.js';
 import {brandLogoUrl,loadAdapters,loadBatteries,loadMemoryCards,loadFlashes,loadTripods,loadHeads,loadPlates,loadProducts,loadManufacturerOrder,matchesSearch,money,productLabel} from './data.js?v=20260914-fixed-lens';
 
+import {trackUsage} from './usage-events.js?v=20260915-phase1';
+const comparedPairs=new Set();
 const $=selector=>document.querySelector(selector);
 const esc=(value='')=>String(value).replace(/[&<>"']/g,char=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
 const hasValue=value=>value!==null&&value!==undefined&&String(value).trim()!=='';
@@ -68,6 +70,10 @@ function comparisonKeys(){
 const displayValue=(value,product)=>!product?'<span class="compare-missing">제품 선택 필요</span>':hasValue(value)?(/^https?:\/\/[^\s]+$/.test(String(value))?`<a href="${esc(value)}" target="_blank" rel="noopener">출처 보기 ↗</a>`:esc(String(value))):'<span class="compare-missing">공식 정보 미확인</span>';
 
 function renderComparison(){
+  if(state.a&&state.b){
+    const signature=[state.type,state.category,...[state.a.id,state.b.id].sort()].join('|');
+    if(!comparedPairs.has(signature)){comparedPairs.add(signature);void trackUsage('compare_ready','compare');}
+  }
   $('#compareProducts').innerHTML=productCard('a')+productCard('b');
   document.querySelectorAll('.compare-product-photo').forEach(image=>image.addEventListener('error',()=>{
     image.closest('.compare-product-visual')?.classList.remove('has-photo');

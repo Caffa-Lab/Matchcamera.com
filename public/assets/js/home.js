@@ -1,5 +1,5 @@
 import {loadProductIndex, loadProducts, money, productLabel, brandLogoUrl} from './data.js?v=20260902-performance';
-import {openProductDetail} from './product-detail.js';
+import {openProductDetail} from './product-detail.js?v=20260915-phase1';
 
 const $ = s => document.querySelector(s);
 const esc = (v='') => String(v).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));

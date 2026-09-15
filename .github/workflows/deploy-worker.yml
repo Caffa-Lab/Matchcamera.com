@@ -42,6 +42,9 @@ jobs:
           node scripts/test_catalog_visibility.mjs
           node scripts/test_catalog_filter_order.mjs
           node scripts/test_price_details.mjs
+          node scripts/test_estimate_price_context.mjs
+          node scripts/test_usage_events.mjs
+          node scripts/test_product_feedback.mjs
           node scripts/test_remaining_catalog.mjs
           node scripts/test_support_compatibility.mjs
           node scripts/test_support_visibility.mjs

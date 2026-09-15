@@ -1,5 +1,5 @@
 import {loadProducts,loadManufacturerOrder,loadFilterOrder,sortManufacturers,publicManufacturer,money,productLabel,productKey,matchesSearch,brandLogoUrl} from './data.js?v=20260914-fixed-lens';
-import {openProductDetail} from './product-detail.js';
+import {openProductDetail} from './product-detail.js?v=20260915-phase1';
 const $=s=>document.querySelector(s);
 const type=document.body.dataset.catalogType==='lens'?'렌즈':'바디';
 const typeKey=type==='렌즈'?'lens':'body';

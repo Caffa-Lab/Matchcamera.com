@@ -4,6 +4,7 @@ import { equipmentText, productName, findProduct } from './equipment-match.js?v=
 import { applyMetadataPolicy } from './metadata.js?v=20260905-full';
 import { parse as parseExif } from '/assets/vendor/exifr-full.esm.js';
 import { loadWatermarkEquipment } from '../data.js?v=20260915-watermark-equipment';
+import { trackUsage } from '../usage-events.js?v=20260915-phase1';
 
 const refs = {
   fileInput: document.querySelector('[data-file-input]'),
@@ -391,9 +392,10 @@ async function processAll() {
   outputs = [];
   renderAll();
   lockControls(true);
-  const worker = new Worker('/program/resize/workers/image-worker.js?v=20260905-render-match');
-
+  let worker;
+  void trackUsage('tool_start','resize');
   try {
+    worker = new Worker('/program/resize/workers/image-worker.js?v=20260905-render-match');
     await Promise.all([productsReady, ...photos.map(photo => photo.equipmentReady)]);
     for (let index = 0; index < photos.length; index += 1) {
       const photo = photos[index];
@@ -406,10 +408,12 @@ async function processAll() {
       renderOutputList();
     }
     updateProgress(1, `완료 — ${outputs.length}개 파일`);
+    void trackUsage('tool_success','resize');
   } catch (error) {
+    void trackUsage('tool_failure','resize');
     updateProgress(0, `실패: ${error instanceof Error ? error.message : String(error)}`);
   } finally {
-    worker.terminate();
+    worker?.terminate();
     processing = false;
     lockControls(false);
     renderAll();
@@ -507,7 +511,7 @@ function readMetadataOptions() { settings.metadataOptions = [...(refs.metadataOp
 function updateProgress(value, text) { refs.progressBar.style.width = `${Math.max(0, Math.min(1, value)) * 100}%`; refs.progressText.textContent = text; }
 function lockControls(locked) { document.querySelectorAll('input, select, button').forEach((element) => { if (element === refs.downloadZip) return; element.disabled = locked; }); }
 function outputName(name) { const base = name.replace(/\.[^.]+$/, ''); return `${base}_Matchcamera.jpg`; }
-function downloadBlob(blob, name) { const url = URL.createObjectURL(blob); const anchor = document.createElement('a'); anchor.href = url; anchor.download = name; document.body.append(anchor); anchor.click(); anchor.remove(); setTimeout(() => URL.revokeObjectURL(url), 1000); }
+function downloadBlob(blob, name) { const url = URL.createObjectURL(blob); const anchor = document.createElement('a'); anchor.href = url; anchor.download = name; document.body.append(anchor); anchor.click(); anchor.remove(); void trackUsage('tool_download','resize'); setTimeout(() => URL.revokeObjectURL(url), 1000); }
 function timestamp() { const d = new Date(); return `${d.getFullYear()}${String(d.getMonth()+1).padStart(2,'0')}${String(d.getDate()).padStart(2,'0')}_${String(d.getHours()).padStart(2,'0')}${String(d.getMinutes()).padStart(2,'0')}`; }
 function formatBytes(value) { if (value < 1024) return `${value} B`; const units = ['KB','MB','GB']; let size = value / 1024; let index = 0; while (size >= 1024 && index < units.length - 1) { size /= 1024; index += 1; } return `${size.toFixed(size >= 10 ? 1 : 2)} ${units[index]}`; }
 function escapeHtml(value) { return String(value).replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;').replaceAll('"','&quot;').replaceAll("'",'&#039;'); }
