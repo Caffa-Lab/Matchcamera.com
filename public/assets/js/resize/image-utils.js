@@ -70,6 +70,11 @@ function calculateBorderPlacement(frameWidth, frameHeight, sourceWidth, sourceHe
 export async function renderPreview({ canvas, stage, photo, settings, watermarkImage, shouldRender = () => true }) {
   const image = await loadHtmlImage(photo);
   if (!shouldRender()) return null;
+  const equipmentImages = settings.equipmentEnabled && settings.equipmentImages
+    ? await Promise.all([loadProductImage(photo.body?.imageSrc), loadProductImage(photo.lens?.imageSrc)])
+    : [];
+  // Finish asynchronous loading before touching the shared preview canvas.
+  if (!shouldRender()) return null;
   const dpr = Math.min(window.devicePixelRatio || 1, 2);
   const availableWidth = Math.max(1, stage.clientWidth - 32);
   const availableHeight = Math.max(1, stage.clientHeight - 32);
@@ -156,7 +161,7 @@ export async function renderPreview({ canvas, stage, photo, settings, watermarkI
   if (settings.watermarkEnabled && watermarkImage) {
     watermarkRect = drawWatermark(ctx, watermarkImage, outputRect, photo, settings);
   }
-  if (settings.equipmentEnabled) await drawEquipmentPanel(ctx, photo, settings, displayWidth, displayHeight, equipmentHeight);
+  if (settings.equipmentEnabled) drawEquipmentPanel(ctx, photo, settings, displayWidth, displayHeight, equipmentHeight, equipmentImages);
 
   canvas.hidden = false;
   return {
@@ -228,7 +233,7 @@ async function loadProductImage(src) {
   return promise;
 }
 
-async function drawEquipmentPanel(ctx, photo, settings, width, top, height) {
+function drawEquipmentPanel(ctx, photo, settings, width, top, height, equipmentImages) {
   const dark = settings.equipmentTheme === 'dark';
   const bodyName = photo.body?.officialName || photo.body?.model || photo.bodyRaw || '카메라 정보 없음';
   const lensName = photo.lens?.officialName || photo.lens?.model || photo.lensRaw || '렌즈 정보 없음';
@@ -249,7 +254,7 @@ async function drawEquipmentPanel(ctx, photo, settings, width, top, height) {
     ctx.fillText(photo.settingsText || 'EXIF 촬영 설정 없음', pad, top + height * .80);
   }
   if (settings.equipmentImages) {
-    const [bodyImage, lensImage] = await Promise.all([loadProductImage(photo.body?.imageSrc), loadProductImage(photo.lens?.imageSrc)]);
+    const [bodyImage, lensImage] = equipmentImages;
     const each = imageArea / 2;
     const inset = height * .032;
     if (bodyImage) drawContain(ctx, bodyImage, width - imageArea, top + inset, each, height - inset * 2);

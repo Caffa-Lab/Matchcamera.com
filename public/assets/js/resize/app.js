@@ -1,5 +1,6 @@
 import { createPhotoState, disposePhotoState, loadSettings, saveSettings, defaultSettings } from './state.js?v=20260905-full';
-import { renderPreview, clearImageCache } from './image-utils.js?v=20260905-render-match';
+import { renderPreview, clearImageCache } from './image-utils.js?v=20260915-equipment-match';
+import { equipmentText, productName, findProduct } from './equipment-match.js?v=20260915';
 import { applyMetadataPolicy } from './metadata.js?v=20260905-full';
 import { parse as parseExif } from '/assets/vendor/exifr-full.esm.js';
 import { loadProductIndex } from '../data.js?v=20260902-performance';
@@ -76,7 +77,7 @@ let lenses = [];
 hydrateControls();
 bindEvents();
 renderAll();
-initializeProducts();
+const productsReady = initializeProducts();
 
 function bindEvents() {
   refs.dropZone?.addEventListener('click', () => refs.fileInput?.click());
@@ -219,7 +220,7 @@ function addFiles(fileList) {
   accepted.forEach((file) => {
     const photo = createPhotoState(file);
     photos.push(photo);
-    readPhotoEquipment(photo);
+    photo.equipmentReady = readPhotoEquipment(photo);
   });
   if (activeIndex < 0) activeIndex = 0;
   outputs = [];
@@ -393,6 +394,7 @@ async function processAll() {
   const worker = new Worker('/program/resize/workers/image-worker.js?v=20260905-render-match');
 
   try {
+    await Promise.all([productsReady, ...photos.map(photo => photo.equipmentReady)]);
     for (let index = 0; index < photos.length; index += 1) {
       const photo = photos[index];
       updateProgress(index / photos.length, `${photo.file.name} 처리 중`);
@@ -529,8 +531,8 @@ async function initializeProducts() {
 async function readPhotoEquipment(photo) {
   try {
     photo.exif = await parseExif(photo.file, { tiff: true, exif: true, gps: false, icc: false, iptc: false, xmp: false }) || {};
-    photo.bodyRaw = photo.exif.Model || photo.exif.CameraModelName || '';
-    photo.lensRaw = photo.exif.LensModel || photo.exif.Lens || '';
+    if (!photo.bodyManual) photo.bodyRaw = equipmentText(photo.exif.Model) || equipmentText(photo.exif.CameraModelName);
+    if (!photo.lensManual) photo.lensRaw = equipmentText(photo.exif.LensModel) || equipmentText(photo.exif.Lens);
     photo.settingsText = formatExifSettings(photo.exif);
     matchPhotoEquipment(photo);
   } catch (error) {
@@ -540,8 +542,9 @@ async function readPhotoEquipment(photo) {
 }
 
 function matchPhotoEquipment(photo) {
-  if (!photo.body) photo.body = findProduct(photo.bodyRaw, bodies);
-  if (!photo.lens) photo.lens = findProduct(photo.lensRaw, lenses);
+  photo.body = findProduct(photo.bodyRaw, bodies);
+  photo.lens = photo.body?.cameraSystem === '일체형 카메라' && !photo.lensManual
+    ? null : findProduct(photo.lensRaw, lenses, photo.body);
 }
 
 function syncEquipmentControls() {
@@ -554,16 +557,17 @@ function syncEquipmentControls() {
   }
   refs.equipmentBody.value = productName(photo.body) || photo.bodyRaw || '';
   refs.equipmentLens.value = productName(photo.lens) || photo.lensRaw || '';
-  const detected = [photo.bodyRaw && `바디 EXIF: ${photo.bodyRaw}`, photo.lensRaw && `렌즈 EXIF: ${photo.lensRaw}`, photo.settingsText].filter(Boolean);
+  const detected = [photo.bodyRaw && `바디 ${photo.bodyManual ? '직접 지정' : 'EXIF'}: ${photo.bodyRaw}`, photo.lensRaw && `렌즈 ${photo.lensManual ? '직접 지정' : 'EXIF'}: ${photo.lensRaw}`, photo.settingsText].filter(Boolean);
+  if (!photo.lens) detected.push(photo.lensRaw ? '렌즈 모델을 확정할 수 없어 렌즈 사진은 생략합니다. 정확한 제품을 직접 선택할 수 있습니다.' : '렌즈 정보 없음 · 렌즈 사진은 생략합니다.');
   refs.equipmentDetected.textContent = detected.join(' · ') || '장비 EXIF가 없습니다. 검색창에 직접 입력해 주세요.';
 }
 
 function selectEquipment(kind) {
   const photo = currentPhoto(); if (!photo) return;
   const input = kind === 'body' ? refs.equipmentBody : refs.equipmentLens;
-  const list = kind === 'body' ? bodies : lenses;
-  photo[kind] = findProduct(input.value, list);
-  photo[`${kind}Raw`] = input.value.trim();
+  photo[`${kind}Raw`] = equipmentText(input.value);
+  photo[`${kind}Manual`] = true;
+  matchPhotoEquipment(photo);
   outputs = [];
   renderAll();
 }
@@ -573,25 +577,11 @@ function applyEquipmentToAll() {
   photos.forEach((item) => {
     item.body = photo.body; item.lens = photo.lens;
     item.bodyRaw = photo.bodyRaw; item.lensRaw = photo.lensRaw;
+    item.bodyManual = true; item.lensManual = true;
   });
-  refs.equipmentDetected.textContent = '현재 바디와 렌즈를 모든 사진에 적용했습니다.';
   outputs = [];
-  renderPreviewOnly();
-}
-
-function productName(product) { return product?.officialName || product?.model || product?.modelCode || ''; }
-function normalize(value) { return String(value || '').toLowerCase().replaceAll('α', 'a').replace(/[^a-z0-9가-힣]+/g, ''); }
-function findProduct(raw, list) {
-  const target = normalize(raw); if (!target) return null;
-  let winner = null; let score = 0;
-  list.forEach((product) => {
-    const aliases = [productName(product), product.model, product.modelCode, ...(product.exifAliases || [])].map(normalize).filter(Boolean);
-    aliases.forEach((alias) => {
-      const next = alias === target ? 1000 + alias.length : alias.includes(target) || target.includes(alias) ? 100 + Math.min(alias.length, target.length) : 0;
-      if (next > score) { score = next; winner = product; }
-    });
-  });
-  return score >= 100 ? winner : null;
+  renderAll();
+  refs.equipmentDetected.textContent = '현재 바디와 렌즈를 모든 사진에 적용했습니다.';
 }
 
 function formatExifSettings(exif) {

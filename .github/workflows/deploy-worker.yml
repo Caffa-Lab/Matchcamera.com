@@ -50,6 +50,8 @@ jobs:
           node scripts/test_battery_compatibility.mjs
           node scripts/test_fixed_lens_catalog.mjs
           node scripts/test_programs.mjs
+          node scripts/test_equipment_match.mjs
+          node scripts/test_equipment_preview.mjs
           node scripts/test_metadata_captions.mjs
           node scripts/test_accessory_expansion.mjs
           node scripts/test_adsense_integration.mjs
