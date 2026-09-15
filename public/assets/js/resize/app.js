@@ -3,7 +3,7 @@ import { renderPreview, clearImageCache } from './image-utils.js?v=20260915-equi
 import { equipmentText, productName, findProduct } from './equipment-match.js?v=20260915';
 import { applyMetadataPolicy } from './metadata.js?v=20260905-full';
 import { parse as parseExif } from '/assets/vendor/exifr-full.esm.js';
-import { loadWatermarkEquipment } from '../data.js?v=20260915-watermark-equipment';
+import { loadWatermarkEquipment } from '../data.js?v=20260915-ef1635';
 import { trackUsage } from '../usage-events.js?v=20260915-phase1';
 
 const refs = {

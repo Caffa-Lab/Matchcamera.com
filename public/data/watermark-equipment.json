@@ -39,5 +39,27 @@
     ],
     "active": false,
     "watermarkEnabled": true
+  },
+  {
+    "id": "ext-canon-canon-ef-canon-ef-16-35mm-f-4l-is-usm",
+    "manufacturer": "Canon",
+    "type": "렌즈",
+    "officialName": "Canon EF 16-35mm f/4L IS USM",
+    "model": "Canon EF 16-35mm f/4L IS USM",
+    "modelCode": "Canon EF 16-35mm f/4L IS USM",
+    "mount": "Canon EF",
+    "cameraSystem": "DSLR",
+    "sensorFormat": null,
+    "lensFormat": "Full Frame",
+    "focalLength": "16-35mm",
+    "maxAperture": "F4",
+    "imageSrc": "/assets/images/products/canon/ef-16-35mm-f4l-is-usm-20260915.webp",
+    "exifAliases": [
+      "Canon EF 16-35mm f/4L IS USM",
+      "EF16-35mm f/4L IS USM",
+      "EF16-35mm F4 L IS USM"
+    ],
+    "active": false,
+    "watermarkEnabled": true
   }
 ]

@@ -27,7 +27,7 @@ const TRIPOD_URL = '/data/tripods.json';
 const HEAD_URL = '/data/heads.json';
 const PLATE_URL = '/data/plates.json?v=20260912';
 const PRODUCT_INDEX_URL = '/data/product-index.json';
-const WATERMARK_EQUIPMENT_URL = '/data/watermark-equipment.json';
+const WATERMARK_EQUIPMENT_URL = '/data/watermark-equipment.json?v=20260915-ef1635';
 
 async function optionalJson(url, fallback){
   try{
