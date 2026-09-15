@@ -22,6 +22,12 @@ for (const event of ['tool_copy', 'tool_cancelled']) {
   assert.equal((await handleUsage(request({ event, surface: 'metadata' }), env)).status, 202);
   assert.equal(writes.pop().blobs[1], event);
 }
+for (const surface of ['carousel', 'exposure']) {
+  for (const event of ['page_view', 'tool_start', 'tool_success', 'tool_failure', ...(surface === 'carousel' ? ['tool_download'] : [])]) {
+    assert.equal((await handleUsage(request({ event, surface }), env)).status, 202);
+    assert.deepEqual(writes.pop(), { blobs: ['v1', event, surface], doubles: [1], indexes: [surface] });
+  }
+}
 assert.equal((await handleUsage(request(valid, { method: 'GET' }), env)).status, 405);
 assert.equal((await handleUsage(request(valid, { method: 'OPTIONS' }), env)).status, 405);
 assert.equal((await handleUsage(request(valid, { headers: { Origin: '' } }), env)).status, 403);
@@ -39,6 +45,10 @@ for (const payload of [
   { ...valid, url: 'https://matchcamera.com/?q=private' }, { ...valid, userId: 'visitor' },
   { event: valid.event }, { ...valid, event: 'private.jpg' }, { ...valid, surface: '/program/resize/?q=private' },
   { ...valid, event: ['tool_success'] }, { ...valid, surface: { name: 'resize' } },
+  { event: 'tool_success', surface: 'carousel', filename: 'private.jpg' },
+  { event: 'tool_success', surface: 'carousel', settings: { watermark: 'private', position: .5 } },
+  { event: 'tool_success', surface: 'exposure', input: { iso: 400, aperture: 2.8 } },
+  { event: 'tool_success', surface: 'exposure', result: 8 },
 ]) {
   assert.equal((await handleUsage(request(payload), env)).status, 400, `reject non-schema data: ${JSON.stringify(payload)}`);
 }
@@ -78,6 +88,14 @@ assert.equal(options.mode, 'cors', 'no-referrer POST needs cors mode to preserve
 assert.equal(options.redirect, 'error');
 assert.equal(options.keepalive, true);
 assert.deepEqual(Object.keys(options.headers), ['Content-Type']);
+for (const surface of ['carousel', 'exposure']) {
+  context.newSurface = surface;
+  assert.equal(await vm.runInContext("trackUsage('tool_success', newSurface)", context), true);
+  const [target, sent] = fetches.pop();
+  assert.equal(target, '/api/usage');
+  assert.deepEqual(JSON.parse(sent.body), { event: 'tool_success', surface });
+  assert.equal(sent.referrerPolicy, 'no-referrer');
+}
 for (const choice of ['1', 'true']) {
   optOut = choice;
   assert.equal(await vm.runInContext("trackUsage('tool_success', 'resize')", context), false);

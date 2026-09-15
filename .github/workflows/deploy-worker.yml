@@ -36,6 +36,10 @@ jobs:
           node --check public/assets/js/filename/renderer.js
           node --check public/assets/js/resize/app.js
           node --check public/assets/js/resize/image-utils.js
+          node --check public/assets/js/carousel/renderer.js
+          node --check public/assets/js/carousel/app.js
+          node --check public/assets/js/exposure/calculations.js
+          node --check public/assets/js/exposure/app.js
           node --check public/program/resize/workers/image-worker.js
           node --check worker/index.js
           node scripts/test_admin_worker.mjs
@@ -56,6 +60,8 @@ jobs:
           node scripts/test_equipment_match.mjs
           node scripts/test_equipment_preview.mjs
           node scripts/test_resize_crop_control.mjs
+          node scripts/test_carousel.mjs
+          node scripts/test_exposure.mjs
           node scripts/test_metadata_captions.mjs
           node scripts/test_accessory_expansion.mjs
           node scripts/test_adsense_integration.mjs

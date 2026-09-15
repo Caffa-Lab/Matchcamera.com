@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>인스타 연속 사진 만들기 | Matchcamera</title>
+  <meta name="description" content="긴 사진을 자연스럽게 이어지는 여러 장으로 나누세요. 분할 위치와 비율을 확인하고 워터마크를 넣어 JPEG와 ZIP으로 저장합니다.">
+  <link rel="canonical" href="https://matchcamera.com/program/carousel/">
+  <link rel="icon" href="/assets/images/matchcamera/symbol.png">
+  <link rel="stylesheet" href="/assets/css/site.css?v=20260915-mobile">
+  <link rel="stylesheet" href="/assets/css/site-enhancements.css">
+  <link rel="stylesheet" href="/assets/css/carousel.css?v=20260915-tools">
+  <link rel="stylesheet" href="/assets/css/responsive.css?v=20260915-mobile">
+  <script defer src="/assets/vendor/jszip.min.js"></script>
+</head>
+<body class="carousel-page">
+  <div data-header></div>
+  <main class="carousel-main">
+    <header class="carousel-hero">
+      <div><a class="tool-back" href="/program/">← 프로그램</a><h1>인스타 연속 사진 만들기</h1><p>한 장의 풍경을 여러 장으로. 넘길 때마다 자연스럽게 이어지는 사진을 만드세요.</p></div>
+      <span class="local-badge">기기에서 처리 · 서버 업로드 없음</span>
+    </header>
+    <section class="carousel-upload tool-card" aria-labelledby="uploadTitle">
+      <div class="upload-heading"><h2 id="uploadTitle">사진 선택</h2><button id="sampleButton" class="tool-button" type="button">예제로 체험</button></div>
+      <input id="photoFile" type="file" accept="image/jpeg,image/png,image/webp" hidden>
+      <button id="dropPhoto" class="photo-drop" type="button"><span class="upload-symbol" aria-hidden="true">＋</span><span><strong>사진을 놓거나 눌러서 선택하세요</strong><small>JPEG · PNG · WebP 한 장 · 최대 80MB</small></span></button>
+      <div class="photo-summary" id="photoSummary" hidden><span id="photoName"></span><button class="tool-button" type="button" id="clearPhoto">사진 비우기</button></div>
+      <p id="loadStatus" class="tool-hint" role="status" aria-live="polite">사진을 선택하거나 예제로 먼저 사용해 보세요.</p>
+    </section>
+    <nav class="carousel-jump" aria-label="작업 영역 이동"><a href="#previewPanel">미리보기</a><a href="#settingsPanel">분할·워터마크</a><a href="#exportPanel">저장</a></nav>
+    <div class="carousel-layout">
+      <section class="tool-card carousel-preview" id="previewPanel" aria-labelledby="previewTitle">
+        <div class="card-heading"><h2 id="previewTitle">미리보기</h2><span id="previewCount" class="count-chip">3장</span></div>
+        <div class="preview-tabs" role="group" aria-label="미리보기 방식"><button id="cropView" type="button" aria-pressed="true">자르는 영역</button><button id="swipeView" type="button" aria-pressed="false">넘겨보기</button></div>
+        <div id="emptyPreview" class="empty-preview"><span aria-hidden="true">▥</span><strong>이어지는 사진을 미리 확인하세요</strong><p>분할선과 잘리는 영역이 여기에 표시됩니다.</p></div>
+        <div id="cropPanel" hidden>
+          <div class="source-frame"><canvas id="cropCanvas" tabindex="0" role="img" aria-label="분할 영역 미리보기. 드래그 또는 방향키로 위치를 조정합니다."></canvas></div>
+          <p class="tool-hint">밝은 영역이 저장됩니다. 사진 위에서 드래그하거나 아래 위치 조절기를 사용하세요. 방향키로도 이동할 수 있습니다.</p>
+        </div>
+        <div id="swipePanel" hidden>
+          <div class="swipe-frame" id="swipeFrame"><canvas id="slideCanvas" role="img" aria-label="첫 번째 분할 사진"></canvas></div>
+          <div class="slide-controls"><button id="previousSlide" class="tool-button" type="button" aria-label="이전 사진">← 이전</button><output id="slideNumber" aria-live="polite">1 / 3</output><button id="nextSlide" class="tool-button" type="button" aria-label="다음 사진">다음 →</button></div>
+          <p class="tool-hint">사진을 좌우로 밀어서 다음 장을 확인하세요. 실제 게시할 때도 저장된 번호 순서로 선택해 주세요.</p>
+        </div>
+        <div id="thumbnailStrip" class="thumbnail-strip" aria-label="분할 사진 선택"></div>
+        <p id="cropInfo" class="crop-info"></p>
+      </section>
+      <section class="tool-card carousel-settings" id="settingsPanel" aria-labelledby="settingsTitle">
+        <div class="card-heading"><h2 id="settingsTitle">분할·워터마크</h2></div>
+        <fieldset id="settingsFields">
+          <legend class="sr-only">연속 사진 설정</legend>
+          <div class="field-pair"><label class="tool-field"><span>분할 장수</span><select id="panelCount"><option value="2">2장</option><option value="3" selected>3장</option><option value="4">4장</option><option value="5">5장</option><option value="6">6장</option><option value="7">7장</option><option value="8">8장</option><option value="9">9장</option><option value="10">10장</option></select></label><label class="tool-field"><span>한 장의 비율</span><select id="panelRatio"><option value="4:5">4:5 세로</option><option value="1:1">1:1 정사각형</option><option value="3:4">3:4 세로</option></select></label></div>
+          <label class="tool-field"><span>한 장의 가로 크기</span><select id="tileWidth"><option value="1080">1080px</option><option value="1440">1440px</option><option value="2160">2160px</option></select></label>
+          <div class="position-heading"><h3>자르는 위치</h3><button id="centerCrop" class="tool-button" type="button">가운데로</button></div>
+          <label class="tool-field range-field" for="offsetX"><span>가로 위치 <output id="offsetXValue" aria-hidden="true">50%</output></span><input id="offsetX" type="range" min="0" max="100" value="50" step="0.1"></label>
+          <label class="tool-field range-field" for="offsetY"><span>세로 위치 <output id="offsetYValue" aria-hidden="true">50%</output></span><input id="offsetY" type="range" min="0" max="100" value="50" step="0.1"></label>
+          <p id="positionHint" class="tool-hint">장수와 비율에 따라 조정할 수 있는 방향이 달라집니다.</p>
+          <div class="watermark-heading"><label class="tool-check"><input id="watermarkEnabled" type="checkbox">각 장에 워터마크 넣기</label></div>
+          <fieldset id="watermarkFields" disabled>
+            <legend class="sr-only">워터마크 옵션</legend>
+            <label class="tool-field"><span>워터마크 종류</span><select id="watermarkKind"><option value="text">텍스트</option><option value="image">이미지·로고</option></select></label>
+            <div id="textWatermarkFields"><label class="tool-field"><span>워터마크 문구</span><input id="watermarkText" type="text" maxlength="100" placeholder="이름 또는 @계정"></label><label class="tool-field"><span>글자 색상</span><select id="watermarkColor"><option value="white">백색</option><option value="black">흑색</option></select></label></div>
+            <div id="imageWatermarkFields" hidden><input id="watermarkFile" type="file" accept="image/png,image/webp,image/jpeg" hidden><button id="selectWatermark" class="tool-button" type="button">워터마크 이미지 선택</button><p id="watermarkName" class="tool-hint">투명 배경 PNG·WebP를 권장합니다. 최대 10MB</p></div>
+            <label class="tool-field"><span>위치</span><select id="watermarkPosition"><option value="left">왼쪽 아래</option><option value="center">가운데 아래</option><option value="right" selected>오른쪽 아래</option></select></label>
+            <label class="tool-field range-field" for="watermarkSize"><span>크기 <output id="watermarkSizeValue" aria-hidden="true">4%</output></span><input id="watermarkSize" type="range" min="1" max="30" step="0.5" value="4"></label>
+            <label class="tool-field range-field" for="watermarkMargin"><span>가장자리 여백 <output id="watermarkMarginValue" aria-hidden="true">3%</output></span><input id="watermarkMargin" type="range" min="0" max="15" step="0.5" value="3"></label>
+            <label class="tool-field range-field" for="watermarkOpacity"><span>불투명도 <output id="watermarkOpacityValue" aria-hidden="true">100%</output></span><input id="watermarkOpacity" type="range" min="10" max="100" value="100"></label>
+          </fieldset>
+        </fieldset>
+      </section>
+      <section class="tool-card carousel-export" id="exportPanel" aria-labelledby="exportTitle">
+        <div class="card-heading"><h2 id="exportTitle">저장</h2><span id="outputSize" class="tool-hint">장당 1080 × 1350px</span></div>
+        <p class="tool-hint">JPEG로 저장하며 투명한 부분은 흰색으로 채웁니다. 촬영 메타데이터는 포함하지 않습니다. 사진 비율에 따라 일부 영역이 잘릴 수 있습니다.</p>
+        <div class="export-actions"><button id="exportButton" class="tool-button primary" type="button" disabled>분할 사진 만들기</button><button id="zipButton" class="tool-button" type="button" disabled>전체 ZIP 다운로드</button><button id="cancelExport" class="tool-button" type="button" hidden>처리 중지</button></div>
+        <p id="exportStatus" class="export-status" role="status" aria-live="polite">사진을 선택하면 저장할 수 있습니다.</p>
+        <div id="outputList" class="output-list"></div>
+      </section>
+    </div>
+  </main>
+  <div data-footer></div>
+  <script type="module" src="/assets/js/common.js?v=20260915-tools"></script>
+  <script type="module" src="/assets/js/carousel/app.js?v=20260915-tools"></script>
+</body>
+</html>

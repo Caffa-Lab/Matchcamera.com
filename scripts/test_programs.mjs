@@ -2,13 +2,25 @@ import assert from 'node:assert/strict';
 import {readFile} from 'node:fs/promises';
 
 const read=path=>readFile(new URL(`../${path}`,import.meta.url),'utf8');
-const [hub,resize,resizeJs,previewRenderer,worker,rating,ratingJs,ratingXmp,index]=await Promise.all([
+const [hub,resize,resizeJs,previewRenderer,worker,rating,ratingJs,ratingXmp,index,carousel,exposure,sitemap]=await Promise.all([
   read('public/program/index.html'),read('public/program/resize/index.html'),read('public/assets/js/resize/app.js'),read('public/assets/js/resize/image-utils.js'),read('public/program/resize/workers/image-worker.js'),read('public/program/rating/index.html'),read('public/assets/js/rating/app.js'),read('public/assets/js/rating/xmp.js'),read('public/data/product-index.json'),
+  read('public/program/carousel/index.html'),read('public/program/exposure/index.html'),read('public/sitemap.xml'),
 ]);
 
 assert.match(hub,/href="\/program\/metadata\/"/,'메타데이터 도구 링크가 필요합니다.');
 assert.match(hub,/href="\/program\/resize\/"/,'리사이즈 도구 링크가 필요합니다.');
 assert.match(hub,/href="\/program\/rating\/"/,'Rating 도구 링크가 필요합니다.');
+assert.match(hub,/href="\/program\/filename\/"/,'파일명 내보내기 링크를 유지해야 합니다.');
+for(const [name,html] of [['carousel',carousel],['exposure',exposure]]){
+  assert.equal((hub.match(new RegExp(`href="/program/${name}/"`,'g'))||[]).length,1,`${name} must have one hub entry`);
+  assert.match(sitemap,new RegExp(`<loc>https://matchcamera\\.com/program/${name}/</loc>`),`${name} must be discoverable in the sitemap`);
+  assert.match(html,/name="viewport"/,'mobile viewport must be declared');
+  assert.match(html,/\/assets\/css\/responsive\.css/,'shared navigation must retain the responsive stylesheet');
+  assert.match(html,/\/assets\/js\/common\.js/,'new tools must use shared navigation');
+  assert.match(html,new RegExp(`/assets/js/${name}/app\\.js`),'the tool entry module must be linked');
+  assert.doesNotMatch(html,/unpkg\.com|cdn\.jsdelivr\.net|googlesyndication\.com/,'tools must retain local dependencies and the existing no-ad tool scope');
+}
+assert.match(carousel,/\/assets\/vendor\/jszip\.min\.js/,'carousel downloads must use the local ZIP library');
 assert.match(resize,/data-file-input/,'다중 파일 입력이 필요합니다.');
 assert.match(resize,/data-preview-canvas/,'미리보기 영역이 필요합니다.');
 assert.match(resize,/용량 맞추기/,'저장 방식 이름은 용량 맞추기여야 합니다.');

@@ -1,7 +1,7 @@
-import {trackUsage} from './usage-events.js?v=20260915-phase1';
+import {trackUsage} from './usage-events.js?v=20260915-tools';
 
 const here = location.pathname;
-const usageSurfaces={'/':'home','/body/':'body','/lens/':'lens','/database/':'database','/accessories/':'accessories','/compare/':'compare','/builder/':'builder','/program/resize/':'resize','/program/filename/':'filename','/program/metadata/':'metadata','/program/rating/':'rating','/contact/':'contact','/trust/':'trust'};
+const usageSurfaces={'/':'home','/body/':'body','/lens/':'lens','/database/':'database','/accessories/':'accessories','/compare/':'compare','/builder/':'builder','/program/resize/':'resize','/program/filename/':'filename','/program/metadata/':'metadata','/program/rating/':'rating','/program/carousel/':'carousel','/program/exposure/':'exposure','/contact/':'contact','/trust/':'trust'};
 const usageSurface=usageSurfaces[here.replace(/index\.html$/,'')];
 if(usageSurface)void trackUsage('page_view',usageSurface);
 const isHome = here === '/';

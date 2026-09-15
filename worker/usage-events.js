@@ -1,5 +1,5 @@
 const EVENTS = new Set(['page_view', 'tool_start', 'tool_success', 'tool_failure', 'tool_download', 'tool_copy', 'tool_cancelled', 'compare_ready', 'estimate_ready', 'report_open']);
-const SURFACES = new Set(['home', 'body', 'lens', 'database', 'accessories', 'compare', 'builder', 'resize', 'filename', 'metadata', 'rating', 'contact', 'trust']);
+const SURFACES = new Set(['home', 'body', 'lens', 'database', 'accessories', 'compare', 'builder', 'resize', 'filename', 'metadata', 'rating', 'carousel', 'exposure', 'contact', 'trust']);
 const MAX_BYTES = 256;
 const WINDOW_MS = 60_000;
 const MAX_PER_WINDOW = 180;
