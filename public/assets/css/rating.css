@@ -35,3 +35,52 @@
 .rating-modal{position:fixed;inset:0;z-index:1000;display:grid;place-items:center;padding:20px;background:rgba(22,31,42,.6);opacity:0;visibility:hidden;transition:.18s}.rating-modal.is-open{opacity:1;visibility:visible}.modal-card{width:min(650px,100%);border:1px solid #d9e0e7;border-radius:14px;background:#fff;box-shadow:0 20px 80px rgba(0,0,0,.22)}.modal-header,.modal-footer{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:16px 18px}.modal-header{border-bottom:1px solid #e0e5eb}.modal-body{padding:18px;font-size:12px;line-height:1.75}.modal-footer{justify-content:flex-end;border-top:1px solid #e0e5eb}
 @media(max-width:920px){.rating-grid{grid-template-columns:1fr}.rating-hero{align-items:flex-start;flex-direction:column}}
 @media(max-width:650px){.rating-main{width:calc(100% - 16px);padding-top:12px}.rating-hero{padding:20px}.rating-hero h1{font-size:23px}.mobile-warning{display:block}.two-col,.summary-grid{grid-template-columns:1fr}.folder-box{align-items:stretch;flex-direction:column}.folder-name{max-width:100%}}
+
+.rating-main,.rating-grid>div,.rating-grid>aside,.rating-card,.rating-main .field,.folder-box>div{min-width:0}
+.rating-hero>div,.rating-hero>strong{min-width:0;max-width:100%}
+.rating-hero h1,.rating-hero p,.rating-hero>strong,.label-preview strong,.complete-note,.rating-main .field-help,.rating-main .count-pill{overflow-wrap:anywhere}
+.rating-hero>strong{white-space:normal;line-height:1.6}
+.rating-main .log-line{grid-template-columns:65px minmax(0,1fr)}
+.rating-main .log-line span{overflow-wrap:anywhere}
+.rating-main .folder-name{max-width:100%}
+.rating-main .rating-button:focus-visible{outline:3px solid #b8b3ff;outline-offset:2px}
+@media(max-width:1000px){
+  .rating-main{width:calc(100% - 24px);padding-top:16px}
+  .rating-main .mobile-warning{display:block}
+  .rating-hero{padding:22px;gap:14px}
+  .rating-hero h1{font-size:clamp(22px,3.5vw,28px);line-height:1.4}
+  .rating-hero p{line-height:1.7}
+  .rating-main .card-header{min-width:0;flex-wrap:wrap;gap:8px;padding:12px}
+  .rating-main .card-body{padding:14px}
+  .rating-main .rating-button{min-height:44px;padding:10px 13px;font-size:12px;line-height:1.4}
+  .rating-main .field input[type="text"],.rating-main .field select,.rating-main .field textarea{min-height:44px;font-size:16px;min-width:0}
+  .rating-main .field textarea{min-height:180px}
+  .rating-main .check{min-height:40px;line-height:1.5}
+  .rating-main .check input{width:18px;height:18px;flex:0 0 18px}
+  .rating-main .folder-box{align-items:stretch;flex-direction:column;gap:12px}
+  .rating-main .two-col{grid-template-columns:minmax(0,1fr)}
+  .rating-main .log{height:clamp(240px,42vh,420px);height:clamp(240px,42svh,420px);padding:10px}
+  .rating-main .action-bar .rating-button{flex:1 1 70px}
+  .rating-page .rating-modal{padding:12px}
+  .rating-page .rating-modal .modal-card{max-height:calc(100vh - 24px);max-height:calc(100dvh - 24px);overflow:auto}
+  .rating-page .rating-modal .modal-header,.rating-page .rating-modal .modal-footer{flex-wrap:wrap;gap:8px;padding:12px}
+  .rating-page .rating-modal .rating-button{min-height:44px}
+}
+@media(min-width:760px) and (max-width:1000px){
+  .rating-grid{grid-template-columns:minmax(0,1.2fr) minmax(260px,.8fr);gap:12px}
+  .rating-main .summary-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(min-width:600px) and (max-width:759px){
+  .rating-grid>aside{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:12px;align-items:start}
+  .rating-grid>aside>.rating-card{margin-top:0}
+}
+@media(max-width:599px){
+  .rating-main{width:calc(100% - 20px);padding-top:12px}
+  .rating-hero{padding:18px 14px;border-radius:14px}
+  .rating-hero>strong{border-radius:12px;font-size:11px}
+  .rating-main .privacy-notice{padding:12px}
+  .rating-main .label-preview{grid-template-columns:minmax(0,1fr);gap:6px}
+  .rating-main .log-line{grid-template-columns:minmax(0,1fr);gap:0;padding:5px 0}
+  .rating-main .summary-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .rating-main .progress-meta{flex-wrap:wrap;gap:8px}
+}

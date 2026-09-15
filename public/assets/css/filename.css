@@ -9,3 +9,19 @@
 .filename-layout #empty span{font-size:13px}
 @media(max-width:780px){.filename-layout .preview-stage{height:clamp(240px,45vh,420px);padding:16px}}
 .resize-page{font-family:Arial,"Malgun Gothic",sans-serif}
+
+.filename-layout .preview-panel{grid-template-rows:auto auto auto;align-content:start;align-self:start}
+.filename-layout .filename-hint{margin:0;line-height:1.7;overflow-wrap:anywhere}
+@media(max-width:1180px){
+  .filename-layout .preview-stage{height:clamp(250px,48vh,500px);height:clamp(250px,48svh,500px);padding:16px}
+  .filename-layout .controls-panel .panel-body.stack{display:grid;grid-template-columns:minmax(0,1fr);gap:14px}
+  .filename-layout #fileList button{min-height:52px;margin:0;font-size:13px;line-height:1.5}
+  .filename-layout #previewName{max-width:65%;min-width:0;line-height:1.5}
+  .filename-layout #outputs a{min-height:44px;padding:12px 0;line-height:1.5}
+  .filename-layout #empty{max-width:100%;padding:20px 10px}
+}
+@media(max-width:599px){
+  .filename-layout .preview-stage{height:clamp(220px,44vh,400px);height:clamp(220px,44svh,400px);padding:12px}
+  .filename-layout #previewName{max-width:68%;font-size:11px}
+  .filename-layout .filename-hint{padding:12px;font-size:12px}
+}

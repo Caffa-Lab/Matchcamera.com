@@ -25,6 +25,8 @@ const refs = {
   borderSize: document.querySelector('[data-border-size]'),
   borderSizeValue: document.querySelector('[data-border-size-value]'),
   cropRatio: document.querySelector('[data-crop-ratio]'),
+  cropShift: document.querySelector('[data-crop-shift]'),
+  cropShiftValue: document.querySelector('[data-crop-shift-value]'),
   gridEnabled: document.querySelector('[data-grid-enabled]'),
   watermarkEnabled: document.querySelector('[data-watermark-enabled]'),
   watermarkInput: document.querySelector('[data-watermark-input]'),
@@ -103,6 +105,7 @@ function bindEvents() {
     syncSettings('border');
   });
   refs.cropRatio?.addEventListener('change', () => { const photo = currentPhoto(); if (photo) photo.cropShift = 0; syncSettings(); });
+  refs.cropShift?.addEventListener('input', handleCropShiftInput);
   document.querySelectorAll('input[name="border-color"]').forEach((input) => input.addEventListener('change', syncSettings));
   refs.borderSize?.addEventListener('input', syncSettings);
   refs.gridEnabled?.addEventListener('change', syncSettings);
@@ -198,6 +201,7 @@ function syncSettings(preferredMode = null) {
 }
 
 function updateControlLabels() {
+  syncCropShiftControl();
   refs.watermarkSizeValue.textContent = `${settings.watermarkSize}%`;
   refs.borderSizeValue.textContent = `${clampBorderSize(settings.borderSize)}%`;
   refs.watermarkMarginValue.textContent = `${settings.watermarkMargin}%`;
@@ -271,6 +275,7 @@ function clampBorderSize(value) {
 function currentPhoto() { return activeIndex >= 0 ? photos[activeIndex] : null; }
 
 function renderAll() {
+  syncCropShiftControl();
   renderFileList();
   renderOutputList();
   refs.count.textContent = photos.length ? `${activeIndex + 1} / ${photos.length}` : '0 / 0';
@@ -330,9 +335,30 @@ async function renderPreviewOnly() {
 
 function handleWheel(event) {
   const photo = currentPhoto();
-  if (!photo || !settings.cropEnabled || settings.cropRatio === 'none') return;
+  if (!photo || processing || !settings.cropEnabled || settings.cropRatio === 'none') return;
   event.preventDefault();
   photo.cropShift = Math.max(-1, Math.min(1, photo.cropShift + Math.sign(event.deltaY) * .06));
+  syncCropShiftControl();
+  renderPreviewOnly();
+}
+
+function syncCropShiftControl() {
+  if (!refs.cropShift) return;
+  const photo = currentPhoto();
+  const shift = Number(photo?.cropShift) || 0;
+  refs.cropShift.disabled = !photo || processing || !settings.cropEnabled || settings.cropRatio === 'none';
+  refs.cropShift.value = String(shift);
+  const label = shift === 0 ? '중앙' : `${Math.round(shift * 100)}%`;
+  refs.cropShift.setAttribute('aria-valuetext', label);
+  if (refs.cropShiftValue) refs.cropShiftValue.textContent = label;
+}
+
+function handleCropShiftInput(event) {
+  const photo = currentPhoto();
+  const value = Number(event.target.value);
+  if (!photo || processing || !settings.cropEnabled || settings.cropRatio === 'none' || !Number.isFinite(value)) return;
+  photo.cropShift = Math.max(-1, Math.min(1, value));
+  syncCropShiftControl();
   renderPreviewOnly();
 }
 

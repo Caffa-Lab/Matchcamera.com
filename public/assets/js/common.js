@@ -128,13 +128,29 @@ if(header){
     <header class="site-header">
       <div class="top-nav">
         <a class="brand" href="/" aria-label="Matchcamera 홈">${logoMark}${logoWordmark}</a>
-        <nav class="category-nav" aria-label="주요 메뉴">${nav.map(([href,label,active])=>`<a href="${href}" class="${active?'active':''}">${label}</a>`).join('')}</nav>
-        <form class="global-search" action="/database/" role="search">
+        <button class="mobile-menu-toggle" type="button" aria-expanded="false" aria-controls="siteMenu siteSearch"><span aria-hidden="true">☰</span><span data-menu-label>메뉴</span></button>
+        <nav id="siteMenu" class="category-nav" aria-label="주요 메뉴">${nav.map(([href,label,active])=>`<a href="${href}" class="${active?'active':''}"${active?' aria-current="page"':''}>${label}</a>`).join('')}</nav>
+        <form id="siteSearch" class="global-search" action="/database/" role="search">
           <input name="q" type="search" placeholder="통합 검색" aria-label="통합 검색">
           <button type="submit" aria-label="검색">${searchIcon}</button>
         </form>
       </div>
     </header>`;
+  const menuButton=header.querySelector('.mobile-menu-toggle');
+  const siteHeader=header.querySelector('.site-header');
+  const setMenuOpen=open=>{
+    siteHeader.toggleAttribute('data-menu-open',open);
+    menuButton.setAttribute('aria-expanded',String(open));
+    menuButton.querySelector('[data-menu-label]').textContent=open?'닫기':'메뉴';
+  };
+  menuButton.addEventListener('click',()=>setMenuOpen(menuButton.getAttribute('aria-expanded')!=='true'));
+  header.addEventListener('keydown',event=>{
+    if(event.key==='Escape'&&menuButton.getAttribute('aria-expanded')==='true'){
+      setMenuOpen(false);menuButton.focus();
+    }
+  });
+  const wideMenu=window.matchMedia('(min-width:1181px)');
+  wideMenu.addEventListener('change',event=>{if(event.matches)setMenuOpen(false)});
 }
 
 const footer = document.querySelector('[data-footer]');

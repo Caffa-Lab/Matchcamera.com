@@ -15,3 +15,61 @@
  [data-accessory-panel="tripod"] .toolbar,[data-accessory-panel="head"] .toolbar,#supportChecker .toolbar{grid-template-columns:minmax(0,1fr)}
  #supportChecker{padding:18px}
 }
+
+/* Accessory filters and cards also need to fit Fold cover and inner displays. */
+.accessories-page .accessory-panel,.accessories-page .accessory-category-grid,
+.accessories-page .toolbar,.accessories-page .toolbar>*{min-width:0;max-width:100%}
+.accessories-page .accessory-category{min-width:0;overflow-wrap:anywhere}
+.accessories-page .accessory-category:focus-visible{outline:3px solid #7777ef;outline-offset:3px}
+.accessories-page .control{min-height:44px;height:auto;padding:10px 12px;font-size:16px;max-width:100%}
+.accessories-page .toolbar{grid-template-columns:repeat(auto-fit,minmax(min(200px,100%),1fr));gap:10px}
+.accessories-page .accessory-panel>p>a,.accessories-page .accessory-data-card a,
+.accessories-page #supportChecker p>a{display:inline-flex;align-items:center;min-height:44px;max-width:100%;font-size:13px;overflow-wrap:anywhere;text-decoration:underline;text-underline-offset:3px}
+.accessories-page .accessory-data-card a{padding:6px 8px;margin:8px 4px 0 0}
+.accessories-page .accessory-data-card a+a{margin-left:0}
+.accessories-page .adapter-card,.accessories-page .battery-card,.accessories-page .accessory-data-card{min-width:0;overflow-wrap:anywhere}
+.accessories-page .battery-card{grid-template-columns:86px minmax(0,1.1fr) minmax(0,2fr) minmax(0,160px)!important}
+.accessories-page .adapter-card>*,.accessories-page .battery-card>*{min-width:0}
+.accessories-page .accessory-data-card dl{grid-template-columns:minmax(0,38%) minmax(0,1fr);gap:8px 12px;font-size:13px;line-height:1.6}
+.accessories-page .accessory-data-card dt,.accessories-page .accessory-data-card dd{min-width:0;overflow-wrap:anywhere}
+.accessories-page .accessory-data-card small,.accessories-page .battery-card p,.accessories-page .battery-label{font-size:12px}
+.accessories-page .accessory-data-card h2{font-size:16px;line-height:1.5}
+.accessories-page .adapter-tags span,.accessories-page .battery-tags span,.accessories-page .battery-specs span{max-width:100%;overflow-wrap:anywhere;font-size:12px}
+.accessories-page .battery-meta{min-width:0;flex-wrap:wrap;gap:8px 14px}
+.accessories-page #supportChecker .toolbar{grid-template-columns:repeat(3,minmax(0,1fr))}
+.accessories-page #supportChecker label{font-size:14px}
+.accessories-page #supportResult{overflow-wrap:anywhere}
+.accessories-page .tiny{font-size:12px;line-height:1.65}
+
+@media(min-width:600px) and (max-width:1000px){
+  .accessories-page .accessory-category-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+  .accessories-page .accessory-data-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .accessories-page .toolbar{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .accessories-page .toolbar>input{grid-column:1/-1}
+  .accessories-page .adapter-toolbar{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .accessories-page .adapter-card{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .accessories-page .adapter-card>div:first-child{grid-column:1/-1}
+  .accessories-page .battery-card{grid-template-columns:76px minmax(0,1fr)!important}
+}
+@media(min-width:840px) and (max-width:1000px){
+  .accessories-page .accessory-category-grid{grid-template-columns:repeat(4,minmax(0,1fr))}
+}
+@media(max-width:599px){
+  .accessories-page .accessory-category-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+  .accessories-page .accessory-category{padding:13px 11px;min-height:94px;border-radius:12px}
+  .accessories-page .accessory-category strong{font-size:14px;line-height:1.4}
+  .accessories-page .accessory-category span{font-size:12px;line-height:1.5}
+  .accessories-page .accessory-data-grid,.accessories-page .toolbar,
+  .accessories-page #supportChecker .toolbar{grid-template-columns:minmax(0,1fr)}
+  .accessories-page .adapter-card{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;padding:16px}
+  .accessories-page .adapter-card>div:first-child,.accessories-page .adapter-tags{grid-column:1/-1}
+  .accessories-page .adapter-card h2{font-size:16px;line-height:1.5}
+  .accessories-page .adapter-card p,.accessories-page .adapter-flow{font-size:13px;line-height:1.6}
+  .accessories-page .adapter-card .accessory-product-photo{margin:0 0 12px}
+  .accessories-page .battery-card{grid-template-columns:62px minmax(0,1fr)!important;gap:12px;padding:14px}
+  .accessories-page .battery-card h2{font-size:17px;line-height:1.45}
+  .accessories-page .accessory-panel{padding-bottom:36px}
+  .accessories-page .accessory-data-grid,.accessories-page .adapter-list,.accessories-page .battery-list{padding-bottom:28px}
+  .accessories-page #supportChecker{padding:16px}
+  .accessories-page #supportChecker h2{font-size:20px;line-height:1.45}
+}

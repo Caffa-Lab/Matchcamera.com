@@ -1,0 +1,142 @@
+/* Responsive estimate controls. The desktop layout and selection state stay intact. */
+.builder-mobile-nav{display:none}
+
+@media(max-width:1199px){
+  .builder-page{padding-bottom:calc(88px + env(safe-area-inset-bottom,0px))}
+  .builder-page .app-main{padding:12px 0 24px}
+  .builder-page .app-frame{width:calc(100% - 24px);grid-template-columns:minmax(0,1fr);gap:16px}
+  .builder-page .catalog-pane,
+  .builder-page .build-pane,
+  .builder-page .summary-pane{min-width:0;min-height:0;position:static;max-height:none;grid-column:auto;scroll-margin-top:100px;border-radius:12px}
+  .builder-page .catalog-pane{overflow:hidden}
+  .builder-page .catalog-head{padding:12px}
+  .builder-page .catalog-mode,
+  .builder-page .compact-control,
+  .builder-page .build-accessory-select{min-width:0;width:100%;height:46px;font-size:16px;line-height:1.4}
+  .builder-page .catalog-search{height:46px;grid-template-columns:minmax(0,1fr) 66px;margin:0 12px 12px}
+  .builder-page .catalog-search input{min-width:0;font-size:16px;padding:0 10px}
+  .builder-page .catalog-search button{min-height:44px;font-size:13px}
+  .builder-page .catalog-filters{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;padding:0 12px 12px}
+  .builder-page .check-row{min-height:44px;font-size:13px;line-height:1.5;margin:0 12px 12px}
+  .builder-page .check-row input{flex:0 0 auto;width:20px;height:20px}
+  .builder-page .catalog-result-head{padding:12px;font-size:13px}
+  .builder-page .catalog-result-head b{font-size:15px}
+  .builder-page .catalog-list{min-height:0;max-height:560px;max-height:clamp(280px,55svh,620px);overflow:auto;overscroll-behavior-y:auto;scroll-padding:12px}
+  .builder-page .catalog-item{grid-template-columns:56px minmax(0,1fr);gap:10px 12px;align-items:start;padding:14px 12px}
+  .builder-page .catalog-thumb{width:56px;height:56px}
+  .builder-page .catalog-product-top{flex-wrap:wrap;gap:5px}
+  .builder-page .catalog-product-top b{font-size:15px;line-height:1.45;display:block;overflow:visible;overflow-wrap:anywhere}
+  .builder-page .sale-dot{font-size:10px;padding:2px 6px}
+  .builder-page .catalog-sub{font-size:12px;line-height:1.5;white-space:normal;overflow:visible;overflow-wrap:anywhere}
+  .builder-page .catalog-meta{flex-wrap:wrap;gap:5px}
+  .builder-page .catalog-meta>span:first-child{font-size:12px;white-space:normal;overflow-wrap:anywhere}
+  .builder-page .catalog-price{font-size:15px;line-height:1.5;margin-top:7px;font-weight:700}
+  .builder-page .catalog-price small{display:block;font-size:12px;font-weight:400}
+  .builder-page .price-context-meta{font-size:12px;line-height:1.5;gap:2px 8px}
+  .builder-page .price-context-meta a{display:inline-flex;align-items:center;min-height:44px;padding:4px 2px}
+  .builder-page .catalog-add{grid-column:1/-1;width:100%;height:44px;font-size:14px;border-radius:7px}
+  .builder-page .catalog-more{min-height:46px;font-size:13px;line-height:1.5;padding:10px 12px}
+  .builder-page .catalog-empty{font-size:14px;line-height:1.6}
+  .builder-page .build-head{min-height:0;display:flex;flex-wrap:wrap;align-items:start;gap:12px;padding:16px}
+  .builder-page .build-head>div:first-child{flex:1 1 180px;min-width:0}
+  .builder-page .section-kicker{font-size:10px}
+  .builder-page .build-head h1{font-size:23px;line-height:1.3}
+  .builder-page .build-head p{font-size:14px;line-height:1.6;margin-top:8px}
+  .builder-page .small-action{height:44px;padding:0 14px;font-size:13px;border-radius:7px}
+  .builder-page .build-row{grid-template-columns:48px minmax(0,1fr) auto;grid-template-areas:"visual label action" "content content content";gap:12px 10px;min-height:0;padding:16px 14px;align-items:center}
+  .builder-page .build-row>.slot-icon{grid-area:visual;transform:none}
+  .builder-page .build-row>.slot-label{grid-area:label;min-width:0;gap:4px}
+  .builder-page .build-row>.slot-content{grid-area:content;min-width:0;width:100%}
+  .builder-page .build-row>.slot-select,
+  .builder-page .build-row>.soon-badge{grid-area:action}
+  .builder-page .slot-label strong{font-size:15px;line-height:1.4}
+  .builder-page .slot-label span{font-size:12px;line-height:1.5;color:#6f7b88}
+  .builder-page .slot-select,
+  .builder-page a.soon-badge{display:inline-flex;align-items:center;justify-content:center;min-height:44px;height:auto;min-width:64px;padding:9px 10px;font-size:13px;line-height:1.4;text-align:center;border-radius:7px}
+  .builder-page span.soon-badge{font-size:12px;padding:6px 8px}
+  .builder-page .empty-slot{min-height:56px;padding:10px;gap:5px;border-radius:7px;background:#f6f8fb}
+  .builder-page .empty-slot b,
+  .builder-page .selected-slot b{font-size:15px;line-height:1.5;white-space:normal;overflow:visible;overflow-wrap:anywhere}
+  .builder-page .empty-slot span,
+  .builder-page .selected-slot span{font-size:13px;line-height:1.6;white-space:normal;overflow:visible;overflow-wrap:anywhere}
+  .builder-page .selected-slot{min-height:64px;align-content:center;padding:8px 48px 8px 10px}
+  .builder-page .slot-remove{width:44px;height:44px;right:0;font-size:25px;display:grid;place-items:center;border-radius:7px;color:#697685}
+  .builder-page .mini-compat{font-size:12px;line-height:1.4;padding:4px 7px}
+  .builder-page .accessory-compat-note,
+  .builder-page .planned-text{font-size:13px;line-height:1.7;overflow-wrap:anywhere}
+  .builder-page .build-note{margin:14px;padding:14px}
+  .builder-page .build-note b{font-size:14px}
+  .builder-page .build-note span{font-size:12px;line-height:1.7}
+  .builder-page .summary-pane{display:block;padding:12px;background:#f4f7fa}
+  .builder-page .summary-tools{margin-bottom:12px}
+  .builder-page .summary-tools button{min-height:44px;font-size:14px;border-radius:7px}
+  .builder-page .summary-card{min-width:0;padding:14px;margin:0 0 12px;border-radius:9px}
+  .builder-page .summary-card h2{font-size:16px}
+  .builder-page .summary-line{font-size:14px;line-height:1.5;gap:10px;flex-wrap:wrap}
+  .builder-page .summary-line b,
+  .builder-page .summary-line strong{overflow-wrap:anywhere;min-width:0}
+  .builder-page .summary-line.major{font-size:15px}
+  .builder-page .summary-line.major strong{font-size:25px;line-height:1.3}
+  .builder-page .price-breakdown-row{padding:12px 0;gap:5px}
+  .builder-page .price-breakdown-row .price-breakdown-label{font-size:12px}
+  .builder-page .price-breakdown-row b{font-size:14px;line-height:1.5;overflow-wrap:anywhere}
+  .builder-page .price-breakdown-row>strong{font-size:18px;line-height:1.5;white-space:normal}
+  .builder-page .price-breakdown-row.is-missing>strong{font-size:14px}
+  .builder-page .price-breakdown-row .price-context-meta{font-size:12px}
+  .builder-page .price-summary #priceNote,
+  .builder-page .price-breakdown-empty,
+  .builder-page .empty-summary{font-size:13px;line-height:1.7}
+  .builder-page .summary-title-row{flex-wrap:wrap;gap:8px}
+  .builder-page .compat-pill{font-size:12px;padding:5px 9px}
+  .builder-page .compat-details{gap:12px}
+  .builder-page .compat-detail-row{gap:8px;padding-top:12px}
+  .builder-page .compat-detail-row b{font-size:14px;line-height:1.5;white-space:normal;overflow:visible;overflow-wrap:anywhere}
+  .builder-page .compat-detail-row span:not(.mini-compat){display:block;font-size:13px;line-height:1.7;overflow:visible;overflow-wrap:anywhere}
+  .builder-page .outline-action{min-height:44px;height:auto;padding:9px;font-size:13px;line-height:1.5;text-align:center;border-radius:7px}
+  .builder-page .toast{bottom:calc(88px + env(safe-area-inset-bottom,0px));max-width:calc(100% - 32px);font-size:13px;text-align:center}
+  .builder-mobile-nav{position:fixed;z-index:75;left:max(12px,env(safe-area-inset-left,0px));right:max(12px,env(safe-area-inset-right,0px));bottom:calc(10px + env(safe-area-inset-bottom,0px));display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px;padding:6px;border:1px solid #d5dfe8;border-radius:14px;background:rgba(255,255,255,.97);box-shadow:0 4px 22px rgba(29,43,55,.15)}
+  .builder-mobile-nav a{display:flex;align-items:center;justify-content:center;min-width:0;min-height:44px;padding:8px 5px;border-radius:8px;background:#f1f5fa;color:#314457;font-size:14px;font-weight:750;line-height:1.4;text-align:center}
+  .builder-mobile-nav a:last-child{background:#e6f5f8;color:#126d83}
+  .builder-mobile-nav a:hover{background:#e4eef6}
+  .builder-mobile-nav a:focus-visible{outline:2px solid #326b91;outline-offset:1px}
+}
+
+/* A folding display uses its available width; no device identification or reload. */
+@media(min-width:600px) and (max-width:1199px){
+  .builder-page .app-frame{grid-template-columns:minmax(0,.95fr) minmax(0,1.05fr)}
+  .builder-page .catalog-pane{grid-column:1;grid-row:1}
+  .builder-page .build-pane{grid-column:2;grid-row:1}
+  .builder-page .summary-pane{grid-column:1/-1;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+  .builder-page .summary-tools,
+  .builder-page .summary-bottom-actions{grid-column:1/-1;margin:0}
+  .builder-page .summary-card{margin:0}
+  .builder-page .price-summary{grid-row:span 2}
+  .builder-mobile-nav{max-width:620px;margin-inline:auto}
+}
+
+@media(min-width:600px) and (max-width:759px){
+  .builder-page .catalog-filters{grid-template-columns:minmax(0,1fr)}
+  .builder-page .build-row{grid-template-columns:42px minmax(0,1fr);grid-template-areas:"visual label" "content content" "action action"}
+  .builder-page .build-row>.slot-select,
+  .builder-page .build-row>a.soon-badge{width:100%}
+  .builder-page .build-row>span.soon-badge{justify-self:start}
+  .builder-page .compat-detail-row{grid-template-columns:minmax(0,1fr)}
+  .builder-page .compat-detail-row>.mini-compat{justify-self:start}
+}
+
+@media(max-width:359px){
+  .builder-page .app-frame{width:calc(100% - 16px)}
+  .builder-page .build-row{padding:14px 10px;gap:10px 8px;grid-template-columns:42px minmax(0,1fr) auto}
+  .builder-page .catalog-item{grid-template-columns:48px minmax(0,1fr);gap:10px;padding:12px 10px}
+  .builder-page .catalog-thumb{width:48px;height:48px}
+  .builder-page .slot-select,
+  .builder-page a.soon-badge{min-width:60px;padding:8px;font-size:12px}
+  .builder-page .slot-label strong{font-size:14px}
+  .builder-page .slot-label span{font-size:11px}
+  .builder-mobile-nav{left:8px;right:8px;gap:4px;padding:5px}
+  .builder-mobile-nav a{font-size:13px}
+}
+
+@media(prefers-reduced-motion:reduce){
+  html:has(>.builder-page){scroll-behavior:auto}
+}

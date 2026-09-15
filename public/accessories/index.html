@@ -7,10 +7,10 @@
   <meta name="description" content="마운트 어댑터, 메모리 카드, 배터리, 플래시, 삼각대 등 카메라 액세서리를 확인합니다.">
   <link rel="stylesheet" href="/assets/css/site.css?v=20260911-price-details">
   <link rel="stylesheet" href="/assets/css/site-enhancements.css?v=20260911-quality">
-  <link rel="stylesheet" href="/assets/css/support.css?v=20260911">
+  <link rel="stylesheet" href="/assets/css/support.css?v=20260915-mobile">
   <link rel="icon" href="/assets/images/matchcamera/symbol.png" type="image/png">
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6581176496481636" crossorigin="anonymous"></script>
-</head>
+<link rel="stylesheet" href="/assets/css/responsive.css?v=20260915-mobile"></head>
 <body class="accessories-page">
   <div data-header></div>
   <main class="simple-main">
@@ -49,10 +49,10 @@
 
       <div class="accessory-panel" data-accessory-panel="adapter">
         <div class="toolbar adapter-toolbar">
-          <input id="adapterSearch" class="control" placeholder="제품명 또는 마운트 검색">
-          <select id="adapterBrand" class="control"></select>
-          <select id="adapterFrom" class="control"></select>
-          <select id="adapterTo" class="control"></select>
+          <input id="adapterSearch" class="control" aria-label="마운트 어댑터 검색" placeholder="제품명 또는 마운트 검색">
+          <select id="adapterBrand" class="control" aria-label="어댑터 제조사"></select>
+          <select id="adapterFrom" class="control" aria-label="렌즈 측 마운트"></select>
+          <select id="adapterTo" class="control" aria-label="바디 측 마운트"></select>
         </div>
         <p class="muted tiny"><b id="adapterCount">0</b>개 어댑터</p>
         <div id="adapterList" class="adapter-list"></div>
@@ -64,9 +64,9 @@
 
       <div class="accessory-panel hidden" data-accessory-panel="battery">
         <div class="toolbar battery-toolbar">
-          <input id="batterySearch" class="control" placeholder="배터리명 또는 호환 바디 검색">
-          <select id="batteryBrand" class="control"></select>
-          <select id="batterySale" class="control">
+          <input id="batterySearch" class="control" aria-label="배터리 검색" placeholder="배터리명 또는 호환 바디 검색">
+          <select id="batteryBrand" class="control" aria-label="배터리 제조사"></select>
+          <select id="batterySale" class="control" aria-label="배터리 판매 상태">
             <option value="all">모든 판매 상태</option>
             <option value="예">현재 판매 확인</option>
             <option value="확인 필요">판매 상태 확인 필요</option>
@@ -77,7 +77,7 @@
       </div>
 
       <div class="accessory-panel hidden" data-accessory-panel="flash">
-        <div class="toolbar"><input id="flashSearch" class="control grow" placeholder="플래시명·TTL 시스템 검색"></div><p class="muted tiny"><b id="flashCount">0</b>개 플래시</p><div id="flashList" class="accessory-data-grid"></div>
+        <div class="toolbar"><input id="flashSearch" class="control grow" aria-label="플래시 검색" placeholder="플래시명·TTL 시스템 검색"></div><p class="muted tiny"><b id="flashCount">0</b>개 플래시</p><div id="flashList" class="accessory-data-grid"></div>
       </div>
 
       <div class="accessory-panel hidden" data-accessory-panel="tripod">
@@ -96,7 +96,7 @@
     </section>
   </main>
   <div data-footer></div>
-  <script type="module" src="/assets/js/common.js?v=20260831-logo-filter-fix"></script>
+  <script type="module" src="/assets/js/common.js?v=20260915-mobile"></script>
   <script type="module" src="/assets/js/accessories.js?v=20260911-support"></script>
 </body>
 </html>

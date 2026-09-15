@@ -14,7 +14,7 @@
   --font: Inter, Pretendard, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 * { box-sizing: border-box; }
-body { margin: 0; min-width: 320px; background: var(--bg); color: var(--text); font-family: var(--font); }
+body { margin: 0; min-width: 0; background: var(--bg); color: var(--text); font-family: var(--font); }
 button, input, select { font: inherit; }
 button { color: inherit; }
 .app-header { display: flex; align-items: center; justify-content: space-between; gap: 20px; min-height: 72px; padding: 0 clamp(16px, 3vw, 36px); border-bottom: 1px solid var(--line); background: rgba(9,12,16,.92); backdrop-filter: blur(12px); }
@@ -130,3 +130,77 @@ input[type="text"],input[type="number"],select,.drop-zone,.file-item,.segmented,
 [data-preview-empty] strong{font-size:16px;font-weight:600;color:#46566d}
 [data-preview-empty] span{font-size:13px}
 @media(max-width:780px){[data-preview-stage]{height:clamp(240px,45vh,420px);min-height:0}}
+
+/* Width-based layouts for phones, unfolded screens and small tablets. */
+.resize-main,.resize-hero>div,.resize-hero>strong{min-width:0}
+.resize-hero p,.resize-hero>strong,.equipment-detected,.notice,.progress-text{overflow-wrap:anywhere}
+.resize-hero>strong{max-width:100%;line-height:1.6}
+.program-jump-links{display:none}
+.resize-main [id^="program-"]{scroll-margin-top:100px}
+.resize-main .file-item>div,.resize-main .output-item{min-width:0}
+.resize-main .button:focus-visible,.resize-main .file-remove:focus-visible,.program-jump-links a:focus-visible{outline:3px solid #a49dfa;outline-offset:2px}
+.resize-main .segmented input:focus-visible+span{outline:3px solid #a49dfa;outline-offset:1px}
+@media(max-width:1180px){
+  .resize-hero{padding:24px 16px;gap:16px;align-items:flex-start;flex-wrap:wrap}
+  .resize-hero>div{flex:1 1 400px}
+  .resize-hero h1{font-size:clamp(22px,3.4vw,29px);line-height:1.4;overflow-wrap:anywhere}
+  .resize-hero p{font-size:14px;line-height:1.7}
+  .program-jump-links{display:flex;flex-wrap:wrap;gap:8px;padding:12px 12px 0;max-width:1900px;margin:auto}
+  .program-jump-links a{display:flex;align-items:center;justify-content:center;flex:1 1 90px;min-height:44px;padding:8px 12px;border:1px solid #d9deeb;border-radius:10px;background:#fff;color:#4e4aaf;font-size:13px;font-weight:700;text-decoration:none;text-align:center}
+  .resize-main .app-layout{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(260px,.9fr);grid-template-areas:"files files" "preview controls";gap:12px;padding:12px;min-height:0;align-items:start}
+  .resize-main .files-panel{grid-area:files}
+  .resize-main .preview-panel{grid-area:preview;grid-template-rows:auto auto auto;align-content:start;position:sticky;top:96px}
+  .resize-main .controls-panel{grid-area:controls;grid-column:auto}
+  .resize-main .panel{margin:0}
+  .resize-main .panel-header{gap:8px;padding:10px 12px;flex-wrap:wrap}
+  .resize-main .panel-body{padding:12px}
+  .resize-main .files-panel .panel-body{display:grid;grid-template-columns:minmax(180px,.65fr) minmax(0,1.35fr);gap:12px;align-items:start}
+  .resize-main .files-panel .panel-body:has(.file-list:empty){grid-template-columns:minmax(0,1fr)}
+  .resize-main .file-list{margin-top:0;max-height:190px;overscroll-behavior:contain}
+  .resize-main .file-list:empty{display:none}
+  .resize-main .controls-panel .panel-body{display:block}
+  .resize-main .control-section{padding:16px 0;border-right:0;border-bottom:1px solid var(--line)}
+  .resize-main .control-section:first-child{padding-top:0}
+  .resize-main .control-section:last-child{border-bottom:0}
+  .resize-main .equipment-section{margin:0;background:transparent}
+  .resize-main .button{min-height:44px;line-height:1.4;padding:9px 12px}
+  .resize-main .check{min-height:40px;line-height:1.5;cursor:pointer}
+  .resize-main .check input{width:18px;height:18px;flex:0 0 18px}
+  .resize-main input[type="text"],.resize-main input[type="number"],.resize-main select,.resize-main textarea{min-width:0;min-height:44px;font-size:16px}
+  .resize-main input[type="range"]{min-width:0;min-height:36px}
+  .resize-main .segmented{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .resize-main .segmented.four{grid-template-columns:repeat(4,minmax(0,1fr))}
+  .resize-main .segmented span{min-height:44px;padding:6px 3px;line-height:1.4}
+  .resize-main .file-item{grid-template-columns:44px minmax(0,1fr) 44px;padding:6px;gap:8px}
+  .resize-main .file-thumb{width:44px;height:44px}
+  .resize-main .file-remove{width:44px;height:44px;font-size:20px}
+  .resize-main .output-item{flex-wrap:wrap;gap:8px}
+  .resize-main .output-item>span{flex:1 1 110px}
+  .resize-main .output-item .button{flex-shrink:0}
+  .resize-main .preview-toolbar{gap:6px;padding:10px 8px}
+  .resize-main .preview-count{min-width:0;flex:1;font-size:12px}
+  .resize-main [data-preview-stage]{height:clamp(250px,48vh,500px);height:clamp(250px,48svh,500px);min-height:0}
+  .resize-main [data-preview-empty]{padding:24px 16px;max-width:100%}
+  .resize-page .modal{padding:12px}
+  .resize-page .modal-card{max-height:calc(100vh - 24px);max-height:calc(100dvh - 24px)}
+  .resize-page .modal-header,.resize-page .modal-footer{flex-wrap:wrap;padding:12px;gap:8px}
+  .resize-page .modal .button{min-height:44px}
+  .resize-page .modal .check{min-height:40px;line-height:1.5}
+}
+@media(max-width:599px){
+  .resize-hero{padding:20px 12px}
+  .resize-hero>div{flex-basis:auto}
+  .resize-hero>strong{border-radius:12px;font-size:11px;padding:8px 10px}
+  .resize-main .app-layout{grid-template-columns:minmax(0,1fr);grid-template-areas:"files" "preview" "controls";padding:10px;gap:12px}
+  .resize-main .preview-panel{position:static}
+  .resize-main .files-panel .panel-body{display:block}
+  .resize-main .file-list{margin-top:12px;max-height:220px}
+  .resize-main .drop-zone{min-height:116px;padding:16px}
+  .resize-main [data-preview-stage]{height:clamp(220px,44vh,400px);height:clamp(220px,44svh,400px)}
+  .resize-main .preview-toolbar .button{padding-inline:10px}
+  .resize-main .controls-panel .row.wrap>.button{flex:1 1 120px}
+  .resize-main .controls-panel .control-section h3{font-size:14px}
+  .resize-page .mobile-warning{font-size:12px;line-height:1.6}
+}
+@media(max-width:380px){.resize-main .two-col{grid-template-columns:minmax(0,1fr)}}
+@media(max-height:600px){.resize-main .preview-panel{position:static}}
