@@ -1,0 +1,43 @@
+[
+  {
+    "id": "ext-canon-canon-eos-5d-mark-iv",
+    "manufacturer": "Canon",
+    "type": "바디",
+    "officialName": "Canon EOS 5D Mark IV",
+    "model": "Canon EOS 5D Mark IV",
+    "modelCode": "EOS 5D Mark IV",
+    "mount": "Canon EF",
+    "cameraSystem": "DSLR",
+    "sensorFormat": "Full Frame",
+    "lensFormat": null,
+    "imageSrc": "/assets/images/products/canon/eos-5d-mark-iv-20260915.webp",
+    "exifAliases": [
+      "Canon EOS 5D Mark IV",
+      "EOS 5D Mark IV"
+    ],
+    "active": false,
+    "watermarkEnabled": true
+  },
+  {
+    "id": "ext-canon-canon-ef-canon-ef-24-70mm-f-2-8l-ii-usm",
+    "manufacturer": "Canon",
+    "type": "렌즈",
+    "officialName": "Canon EF 24-70mm f/2.8L II USM",
+    "model": "Canon EF 24-70mm f/2.8L II USM",
+    "modelCode": "Canon EF 24-70mm f/2.8L II USM",
+    "mount": "Canon EF",
+    "cameraSystem": "DSLR",
+    "sensorFormat": null,
+    "lensFormat": "Full Frame",
+    "focalLength": "24-70mm",
+    "maxAperture": "F2.8",
+    "imageSrc": "/assets/images/products/canon/ef-24-70mm-f28l-ii-usm-20260915.webp",
+    "exifAliases": [
+      "Canon EF 24-70mm f/2.8L II USM",
+      "EF24-70mm f/2.8L II USM",
+      "EF24-70mm F2.8 L II USM"
+    ],
+    "active": false,
+    "watermarkEnabled": true
+  }
+]

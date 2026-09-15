@@ -9,6 +9,7 @@ let tripodCache;
 let headCache;
 let plateCache;
 let productIndexCache;
+let watermarkEquipmentCache;
 
 const PRODUCT_URL = '/data/products.json';
 const EXPANSION_URL = '/data/system-expansion.json';
@@ -26,6 +27,7 @@ const TRIPOD_URL = '/data/tripods.json';
 const HEAD_URL = '/data/heads.json';
 const PLATE_URL = '/data/plates.json?v=20260912';
 const PRODUCT_INDEX_URL = '/data/product-index.json';
+const WATERMARK_EQUIPMENT_URL = '/data/watermark-equipment.json';
 
 async function optionalJson(url, fallback){
   try{
@@ -51,6 +53,23 @@ export async function loadProductIndex(){
     productIndexCache = await loadProducts();
     return productIndexCache;
   }
+}
+
+// Explicit image-only additions for the watermark tool. Catalog visibility stays
+// governed by loadProductIndex/loadProducts, including their fallback path.
+export async function loadWatermarkEquipment(){
+  if(watermarkEquipmentCache) return watermarkEquipmentCache;
+  const [products, additions] = await Promise.all([
+    loadProductIndex(),
+    optionalJson(WATERMARK_EQUIPMENT_URL, []),
+  ]);
+  const byId = new Map(products.map(product => [product.id, product]));
+  for(const product of Array.isArray(additions) ? additions : []){
+    if(!product?.id || !['바디', '렌즈'].includes(product.type) || !product.imageSrc || byId.has(product.id)) continue;
+    byId.set(product.id, product);
+  }
+  watermarkEquipmentCache = [...byId.values()];
+  return watermarkEquipmentCache;
 }
 
 const priceKey = (name, mount) => `${String(name || '').trim()}||${String(mount || '').trim()}`;

@@ -112,4 +112,50 @@ await vm.runInContext('runWorkerJob(worker,photo)',context);
 assert.equal(exportOptions.bodyImageSrc,canon.imageSrc);
 assert.equal(exportOptions.lensImageSrc,'');
 assert.equal(exportOptions.lensName,'EF50mm f/1.8 STM','unmatched text must not become an unrelated product name');
-console.log('Equipment matching passed: no guesses, exact models, ambiguous mounts, manual overrides and delayed EXIF.');
+
+// Disabled legacy equipment is available only through the watermark loader.
+const legacy=JSON.parse(await readFile(new URL('../public/data/watermark-equipment.json',import.meta.url),'utf8'));
+const legacyIds=['ext-canon-canon-eos-5d-mark-iv','ext-canon-canon-ef-canon-ef-24-70mm-f-2-8l-ii-usm'];
+assert.deepEqual(legacy.map(product=>product.id).sort(),[...legacyIds].sort());
+assert(legacy.every(product=>product.active===false&&product.imageSrc),'watermark additions preserve their inactive catalog status');
+assert(source.includes('products = await loadWatermarkEquipment()'),'the program must use the separate equipment loader');
+const originalFetch=globalThis.fetch;
+async function loadEquipmentCase({indexAvailable=true,extraAvailable=true,extra=legacy}={}){
+  globalThis.fetch=async url=>{
+    const path=new URL(String(url),'https://matchcamera.com').pathname;
+    if(path==='/data/product-index.json')return {ok:indexAvailable,json:async()=>[...rows,...legacy]};
+    if(path==='/data/watermark-equipment.json')return {ok:extraAvailable,json:async()=>extra};
+    try{
+      const json=JSON.parse(await readFile(new URL(`../public${path}`,import.meta.url),'utf8'));
+      return {ok:true,json:async()=>json};
+    }catch{return {ok:false};}
+  };
+  const data=await import(new URL(`../public/assets/js/data.js?equipmentTest=${randomUUID()}`,import.meta.url));
+  const equipment=await data.loadWatermarkEquipment();
+  const catalog=await data.loadProductIndex();
+  const fullCatalog=await data.loadProducts();
+  for(const id of legacyIds){
+    assert(!catalog.some(product=>product.id===id),'lightweight public catalog must keep DSLR products hidden');
+    assert(!fullCatalog.some(product=>product.id===id),'full public catalog must keep DSLR products hidden');
+  }
+  assert.equal(new Set(equipment.map(product=>product.id)).size,equipment.length,'watermark equipment must not duplicate ids');
+  return {equipment,catalog};
+}
+try{
+  for(const indexAvailable of [true,false]){
+    const {equipment}=await loadEquipmentCase({indexAvailable});
+    const body=findProduct('EOS 5D Mark IV',equipment.filter(product=>product.type==='바디'));
+    const lens=findProduct('EF24-70mm F2.8 L II USM',equipment.filter(product=>product.type==='렌즈'),body);
+    assert.equal(body?.id,legacyIds[0]);assert.equal(lens?.id,legacyIds[1]);
+    assert(body.imageSrc&&lens.imageSrc,'both identified Canon products must have a usable image path');
+    assert.equal(findProduct('EF50mm f/1.8 STM',equipment.filter(product=>product.type==='렌즈')),null,'other disabled lenses are still unavailable and cannot become the new Canon lens');
+  }
+  for(const options of [{extraAvailable:false},{extra:{invalid:'not an array'}}]){
+    const {equipment,catalog}=await loadEquipmentCase(options);
+    assert.deepEqual(equipment,catalog,'missing or malformed optional additions must preserve the active catalog');
+  }
+  const duplicate={...rows[0],active:false,imageSrc:'/duplicate-must-not-win.png'};
+  const {equipment}=await loadEquipmentCase({extra:[...legacy,duplicate]});
+  assert.equal(equipment.find(product=>product.id===rows[0].id).imageSrc,rows[0].imageSrc,'a stale supplemental record cannot replace an active product');
+}finally{globalThis.fetch=originalFetch;}
+console.log('Equipment matching passed: no guesses, exact models, manual overrides, delayed EXIF and program-only Canon legacy photos.');

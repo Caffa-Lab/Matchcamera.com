@@ -1,0 +1,53 @@
+{
+  "verifiedAt": "2026-09-15",
+  "count": 2,
+  "scope": "Watermark program only; catalog DSLR records remain inactive",
+  "images": [
+    {
+      "productId": "ext-canon-canon-eos-5d-mark-iv",
+      "officialName": "Canon EOS 5D Mark IV",
+      "src": "/assets/images/products/canon/eos-5d-mark-iv-20260915.webp",
+      "sourcePage": "https://kr.canon/product/content/detail/C4EBB347FF5F8DCECF5D028FA829ACE0",
+      "sourceImage": "https://image.kr.canon/pds/product/1471933209598_g0lIkcMECQ.jpg",
+      "sourceSha256": "ebecc71c72247f7a191f450665ed82db2400cbbfe1d4f49034d9351894cfd126",
+      "rotationDegreesClockwise": 0,
+      "manufacturer": "Canon",
+      "modelCode": "EOS 5D Mark IV",
+      "width": 960,
+      "height": 960,
+      "sourceWidth": 1414,
+      "sourceHeight": 800,
+      "method": "official-reviewed-cutout",
+      "extractMethod": "border-white-mask",
+      "fetchedAt": "2026-09-15",
+      "verifiedAt": "2026-09-15",
+      "verification": "Exact official model identity and transparent image visually reviewed",
+      "transparent": true,
+      "lowResolution": false,
+      "usageReviewRequired": true
+    },
+    {
+      "productId": "ext-canon-canon-ef-canon-ef-24-70mm-f-2-8l-ii-usm",
+      "officialName": "Canon EF 24-70mm f/2.8L II USM",
+      "src": "/assets/images/products/canon/ef-24-70mm-f28l-ii-usm-20260915.webp",
+      "sourcePage": "https://estore.kr.canon/estore/detailview/2319",
+      "sourceImage": "https://image.kr.canon/pds/product/1423740613716_NSLvjyD8U0.jpg",
+      "sourceSha256": "3a15c916bbde03991b3feb656c81aaf065740c57845436de4d977f27a1c38974",
+      "rotationDegreesClockwise": 90,
+      "manufacturer": "Canon",
+      "modelCode": "Canon EF 24-70mm f/2.8L II USM",
+      "width": 960,
+      "height": 960,
+      "sourceWidth": 1414,
+      "sourceHeight": 800,
+      "method": "official-reviewed-cutout",
+      "extractMethod": "border-white-mask",
+      "fetchedAt": "2026-09-15",
+      "verifiedAt": "2026-09-15",
+      "verification": "Exact official model identity and transparent image visually reviewed",
+      "transparent": true,
+      "lowResolution": false,
+      "usageReviewRequired": true
+    }
+  ]
+}

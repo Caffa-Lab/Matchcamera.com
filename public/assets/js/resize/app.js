@@ -3,7 +3,7 @@ import { renderPreview, clearImageCache } from './image-utils.js?v=20260915-equi
 import { equipmentText, productName, findProduct } from './equipment-match.js?v=20260915';
 import { applyMetadataPolicy } from './metadata.js?v=20260905-full';
 import { parse as parseExif } from '/assets/vendor/exifr-full.esm.js';
-import { loadProductIndex } from '../data.js?v=20260902-performance';
+import { loadWatermarkEquipment } from '../data.js?v=20260915-watermark-equipment';
 
 const refs = {
   fileInput: document.querySelector('[data-file-input]'),
@@ -515,7 +515,7 @@ function debounce(fn, wait) { let timer; return (...args) => { clearTimeout(time
 
 async function initializeProducts() {
   try {
-    products = await loadProductIndex();
+    products = await loadWatermarkEquipment();
     bodies = products.filter((product) => product.type === '바디');
     lenses = products.filter((product) => product.type === '렌즈');
     refs.equipmentBodyOptions.innerHTML = bodies.map((product) => `<option value="${escapeHtml(productName(product))}"></option>`).join('');

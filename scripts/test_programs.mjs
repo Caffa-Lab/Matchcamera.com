@@ -15,7 +15,7 @@ assert.match(resize,/용량 맞추기/,'저장 방식 이름은 용량 맞추기
 assert.match(resize,/data-target-size-field/,'목표 용량 영역의 비활성 상태 표시가 필요합니다.');
 assert.match(resize,/\/assets\/vendor\/jszip\.min\.js/,'로컬 ZIP 라이브러리가 필요합니다.');
 assert.doesNotMatch(resize,/unpkg\.com|cdn\.jsdelivr\.net/,'프로그램은 외부 CDN에 의존하지 않아야 합니다.');
-assert.match(resizeJs,/loadProductIndex/,'경량 제품 인덱스를 사용해야 합니다.');
+assert.match(resizeJs,/loadWatermarkEquipment/,'워터마크 전용 장비 목록을 사용해야 합니다.');
 assert.match(resizeJs,/parseExif/,'EXIF 판독 기능이 필요합니다.');
 assert.match(resizeJs,/JSZip/,'일괄 ZIP 저장 기능이 필요합니다.');
 assert.match(resizeJs,/cropEnabled/,'비율 자르기 기능이 필요합니다.');
