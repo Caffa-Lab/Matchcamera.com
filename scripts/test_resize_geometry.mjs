@@ -5,16 +5,16 @@ import { renderPreview } from '../public/assets/js/resize/image-utils.js';
 const near = (actual, expected, message, tolerance = 1e-7) =>
   assert.ok(Math.abs(actual - expected) <= tolerance, `${message}: ${actual} versus ${expected}`);
 const cases = [
-  { name: 'original', width: 4000, height: 3000, options: {}, output: [4000, 3000] },
+  { name: 'original', width: 4000, height: 3000, options: {}, output: [4000, 3000], panelOutput: [4000, 3720] },
   { name: 'crop portrait', width: 4000, height: 3000, options: { cropEnabled: true, cropRatio: '4:5' }, output: [2400, 3000] },
   { name: 'border portrait', width: 4000, height: 3000, options: { borderEnabled: true, cropRatio: '4:5' }, output: [4000, 5000] },
   { name: 'crop auto landscape', width: 4000, height: 3000, options: { cropEnabled: true, cropRatio: 'auto' }, output: [3750, 3000] },
   { name: 'border auto portrait', width: 3000, height: 4000, options: { borderEnabled: true, cropRatio: 'auto' }, output: [3200, 4000] },
-  { name: 'crop no ratio', width: 4000, height: 3000, options: { cropEnabled: true, cropRatio: 'none' }, output: [4000, 3000] },
-  { name: 'border no ratio', width: 4000, height: 3000, options: { borderEnabled: true, cropRatio: 'none' }, output: [4000, 3000] },
-  { name: 'inactive ratio', width: 4000, height: 3000, options: { cropRatio: '9:16' }, output: [4000, 3000] },
-  { name: 'panorama original', width: 8000, height: 400, options: { cropRatio: 'none' }, output: [8000, 400] },
-  { name: 'tall original', width: 400, height: 8000, options: { cropRatio: 'none' }, output: [400, 8000] },
+  { name: 'crop no ratio', width: 4000, height: 3000, options: { cropEnabled: true, cropRatio: 'none' }, output: [4000, 3000], panelOutput: [4000, 3720] },
+  { name: 'border no ratio', width: 4000, height: 3000, options: { borderEnabled: true, cropRatio: 'none' }, output: [4000, 3000], panelOutput: [4000, 3720] },
+  { name: 'inactive ratio', width: 4000, height: 3000, options: { cropRatio: '9:16' }, output: [4000, 3000], panelOutput: [4000, 3720] },
+  { name: 'panorama original', width: 8000, height: 400, options: { cropRatio: 'none' }, output: [8000, 400], panelOutput: [8000, 1840] },
+  { name: 'tall original', width: 400, height: 8000, options: { cropRatio: 'none' }, output: [400, 8000], panelOutput: [400, 8072] },
 ];
 
 for (const test of cases) {
@@ -22,10 +22,19 @@ for (const test of cases) {
   assert.deepEqual([off.width, off.height], test.output, `${test.name}: established output dimensions`);
   assert.equal(off.panelHeight, 0);
   const on = calculateLayout(test.width, test.height, { ...test.options, equipmentEnabled: true, borderSize: 5 });
-  assert.deepEqual([on.width, on.height], test.output, `${test.name}: a panel must not grow or reshape the final image`);
-  assert.equal(on.photoHeight + on.panelHeight, on.height, `${test.name}: the panel is inside the final canvas`);
+  assert.deepEqual([on.width, on.height], test.panelOutput || test.output, `${test.name}: final size follows the selected ratio mode`);
+  assert.equal(on.photoHeight + on.panelHeight, on.height, `${test.name}: final canvas includes the photo and panel`);
   assert.ok(on.panelHeight > 0 && on.photoHeight > 0, `${test.name}: both regions remain usable`);
-  assert.ok(on.panelHeight <= Math.ceil(on.height * .30), `${test.name}: panorama panel height is bounded by total height`);
+  if (test.panelOutput) {
+    assert.equal(on.ratio, null, `${test.name}: no active ratio constraints`);
+    assert.equal(on.photoHeight, off.photoHeight, `${test.name}: adding the panel must not shrink the photo region`);
+    assert.equal(on.panelHeight, Math.max(1, Math.round(on.width * .18)), `${test.name}: the panel is appended at its standard width-based size`);
+    assert.deepEqual(on.placement, off.placement, `${test.name}: adding the panel preserves the photo scale and position`);
+  } else {
+    assert.ok(on.ratio > 0, `${test.name}: an active ratio constrains the final canvas`);
+    assert.deepEqual([on.width, on.height], [off.width, off.height], `${test.name}: panel on/off retains the selected final ratio`);
+    assert.ok(on.panelHeight <= Math.ceil(on.height * .30), `${test.name}: constrained panel height is bounded by total height`);
+  }
   const { crop, placement } = on;
   assert.ok(crop.x >= 0 && crop.y >= 0);
   assert.ok(crop.x + crop.width <= test.width + 1e-7 && crop.y + crop.height <= test.height + 1e-7);
@@ -115,7 +124,7 @@ try {
   for (const test of cases) {
     const options = { ...baseOptions, ...test.options };
     const result = await runWorker(test.width, test.height, options);
-    assert.deepEqual([result.width, result.height], test.output, `${test.name}: actual worker output keeps the requested final ratio`);
+    assert.deepEqual([result.width, result.height], test.panelOutput || test.output, `${test.name}: actual worker output follows the selected ratio mode`);
     const canvas = new FakeCanvas();
     await renderPreview({
       canvas, stage: { clientWidth: 832, clientHeight: 632 }, settings: options, watermarkImage: null,
@@ -126,9 +135,9 @@ try {
   }
 
   const rotated = await runWorker(4000, 3000, { ...baseOptions, rotation: 90 });
-  assert.deepEqual([rotated.width, rotated.height], [3000, 4000], 'no-ratio output preserves the rotated photograph aspect ratio');
+  assert.deepEqual([rotated.width, rotated.height], [3000, 4540], 'no-ratio output appends the panel below the unshrunk rotated photo');
   const alreadySmall = await runWorker(4000, 3000, { ...baseOptions, saveMode: 'size', targetBytes: 10_000_000 });
-  assert.deepEqual([alreadySmall.width, alreadySmall.height], [4000, 3000], 'size mode retains dimensions when the first encoding already fits');
+  assert.deepEqual([alreadySmall.width, alreadySmall.height], [4000, 3720], 'size mode retains the appended panel dimensions when the first encoding already fits');
   const reduced = await runWorker(4000, 3000, { ...baseOptions, cropEnabled: true, cropRatio: '4:5', saveMode: 'size' });
   assert.ok(reduced.width < 2400 && reduced.height < 3000, 'size mode must actually exercise a smaller encoded canvas');
   assert.ok(reduced.blob.size <= baseOptions.targetBytes, 'the requested target is met for the deterministic fixture');
@@ -136,7 +145,7 @@ try {
   const qualityFallback = await runWorker(4000, 3000, { ...baseOptions, cropEnabled: true, cropRatio: '4:5', saveMode: 'size', targetBytes: 30_000 });
   assert.deepEqual([qualityFallback.width, qualityFallback.height], [432, 540], 'quality fallback reports the minimum-scale canvas dimensions');
   assert.ok(qualityFallback.blob.size <= 30_000, 'fallback quality encoding fits the deterministic fixture target');
-  console.log('Resize geometry passed: final ratios, panel containment, uncropped image preservation, crop positioning, preview/output agreement and actual encoded dimensions.');
+  console.log('Resize geometry passed: selected final ratios, no-ratio appended panels with unchanged photos, crop positioning, preview/output agreement and actual encoded dimensions.');
 } finally {
   for (const [key, descriptor] of savedGlobals) {
     if (descriptor) Object.defineProperty(globalThis, key, descriptor);

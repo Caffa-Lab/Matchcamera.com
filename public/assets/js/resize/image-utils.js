@@ -1,5 +1,5 @@
-import { calculateLayout } from './layout.js?v=20260920-ratio';
-export { getEffectiveRatio, calculateCrop, calculateBorderFrame } from './layout.js?v=20260920-ratio';
+import { calculateLayout } from './layout.js?v=20260921-ratio-none';
+export { getEffectiveRatio, calculateCrop, calculateBorderFrame } from './layout.js?v=20260921-ratio-none';
 
 const imageCache = new Map();
 const productImageCache = new Map();

@@ -21,8 +21,8 @@ export function calculateBorderFrame(width, height, ratio) {
   return { width: frameWidth, height: frameHeight, offsetX: (frameWidth - width) / 2, offsetY: (frameHeight - height) / 2 };
 }
 
-// Reserve the panel inside the final frame. Both renderers use these same
-// integer output dimensions and source/destination rectangles.
+// An active ratio reserves the panel inside the final frame. Without a ratio,
+// keep the photo area unchanged and append the panel below it.
 export function calculateLayout(sourceWidth, sourceHeight, options = {}, shift = 0) {
   if (![sourceWidth, sourceHeight].every(value => Number.isFinite(value) && value > 0)) throw new RangeError('사진 크기를 확인할 수 없습니다.');
   const ratio = options.cropEnabled || options.borderEnabled
@@ -32,10 +32,12 @@ export function calculateLayout(sourceWidth, sourceHeight, options = {}, shift =
     : options.borderEnabled ? calculateBorderFrame(sourceWidth, sourceHeight, ratio)
     : { width: sourceWidth, height: sourceHeight };
   const width = Math.max(1, Math.round(frame.width));
-  const height = Math.max(1, Math.round(frame.height));
-  const panelHeight = options.equipmentEnabled && height > 1
-    ? Math.min(height - 1, Math.max(1, Math.round(Math.min(width * EQUIPMENT_PANEL_RATIO, height * .30)))) : 0;
-  const photoHeight = height - panelHeight;
+  const frameHeight = Math.max(1, Math.round(frame.height));
+  const panelHeight = !options.equipmentEnabled ? 0 : ratio
+    ? Math.min(frameHeight - 1, Math.max(1, Math.round(Math.min(width * EQUIPMENT_PANEL_RATIO, frameHeight * .30))))
+    : Math.max(1, Math.round(width * EQUIPMENT_PANEL_RATIO));
+  const photoHeight = ratio ? frameHeight - panelHeight : frameHeight;
+  const height = photoHeight + panelHeight;
   const crop = isCrop ? calculateCrop(sourceWidth, sourceHeight, width / photoHeight, shift)
     : { x: 0, y: 0, width: sourceWidth, height: sourceHeight };
   let placement = { x: 0, y: 0, width, height: photoHeight };

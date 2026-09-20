@@ -1,5 +1,5 @@
 import { createPhotoState, disposePhotoState, loadSettings, saveSettings, defaultSettings } from './state.js?v=20260905-full';
-import { renderPreview, clearImageCache } from './image-utils.js?v=20260920-ratio';
+import { renderPreview, clearImageCache } from './image-utils.js?v=20260921-ratio-none';
 import { equipmentText, productName, findProduct } from './equipment-match.js?v=20260915';
 import { applyMetadataPolicy } from './metadata.js?v=20260905-full';
 import { parse as parseExif } from '/assets/vendor/exifr-full.esm.js';
@@ -469,7 +469,7 @@ async function processAll() {
   let worker;
   void trackUsage('tool_start','resize');
   try {
-    worker = new Worker('/program/resize/workers/image-worker.js?v=20260920-ratio', { type: 'module' });
+    worker = new Worker('/program/resize/workers/image-worker.js?v=20260921-ratio-none', { type: 'module' });
     await Promise.all([productsReady, ...photos.map(photo => photo.equipmentReady)]);
     for (let index = 0; index < photos.length; index += 1) {
       const photo = photos[index];

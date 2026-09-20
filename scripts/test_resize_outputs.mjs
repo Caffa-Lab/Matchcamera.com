@@ -185,7 +185,7 @@ assert.equal(get('crop-shift').disabled, true);
 assert.equal(get('download-zip').disabled, false);
 assert.equal(run('outputs.length'), 2);
 assert(revoked.includes('blob:old-a') && revoked.includes('blob:old-b'));
-assert.equal(workerOptions.at(-1).url, '/program/resize/workers/image-worker.js?v=20260920-ratio');
+assert.equal(workerOptions.at(-1).url, '/program/resize/workers/image-worker.js?v=20260921-ratio-none');
 assert.equal(workerOptions.at(-1).options.type, 'module');
 
 reset(); cropMode(); radio('save-mode', 'size'); run('syncSettings()');
