@@ -36,12 +36,10 @@ assert.match(resizeJs,/watermarkEnabled/,'워터마크 기능이 필요합니다
 assert.match(resizeJs,/applyMetadataPolicy/,'메타데이터 정책 기능이 필요합니다.');
 assert.match(resizeJs,/targetSizeField\?\.classList\.toggle\('is-disabled'/,'최대화질에서 목표 용량 영역을 회색 처리해야 합니다.');
 assert.match(worker,/appendEquipmentPanel/,'장비 사진 합성 기능이 필요합니다.');
-assert.match(previewRenderer,/Math\.round\(displayWidth \* EQUIPMENT_PANEL_RATIO\)/,'미리보기 장비 패널은 폭 기준 비율을 사용해야 합니다.');
-assert.match(worker,/Math\.round\(width \* \.18\)/,'다운로드 장비 패널은 미리보기와 같은 폭 기준 비율을 사용해야 합니다.');
+assert.match(previewRenderer,/import \{ calculateLayout \} from '\.\/layout\.js/,'미리보기는 공통 레이아웃을 사용해야 합니다.');
+assert.match(worker,/import \{ calculateLayout \} from .*layout\.js/,'저장도 같은 레이아웃을 사용해야 합니다.');
+assert.match(resizeJs,/new Worker\([^;]+type:\s*['"]module['"]/,'공통 레이아웃을 불러오는 모듈 Worker가 필요합니다.');
 assert.doesNotMatch(worker,/Math\.min\(620/,'고해상도 장비 패널에 고정 상한을 두면 안 됩니다.');
-assert.match(previewRenderer,/borderPlacement\.y \+ borderPlacement\.height/,'장비 패널 사용 시 하단 테두리를 제외해야 합니다.');
-assert.match(worker,/placement\.y \+ placement\.height/,'다운로드에서도 장비 패널 위 하단 테두리를 제외해야 합니다.');
-assert.match(worker,/else if \(options\.borderEnabled\)/,'비율을 선택하지 않아도 다운로드에 테두리를 적용해야 합니다.');
 assert.doesNotMatch(resizeJs,/addEventListener\(event\s*=>/,'이벤트 이름이 빠진 등록 코드는 허용되지 않습니다.');
 assert.match(rating,/data-label-language/,'Lightroom 레이블 언어 선택이 필요합니다.');
 assert.match(rating,/data-label-custom/,'사용자 지정 레이블 입력이 필요합니다.');

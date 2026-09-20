@@ -1,6 +1,9 @@
+import { calculateLayout } from './layout.js?v=20260920-ratio';
+export { getEffectiveRatio, calculateCrop, calculateBorderFrame } from './layout.js?v=20260920-ratio';
+
 const imageCache = new Map();
 const productImageCache = new Map();
-const EQUIPMENT_PANEL_RATIO = .18;
+
 
 export async function loadHtmlImage(photo) {
   if (imageCache.has(photo.id)) return imageCache.get(photo.id);
@@ -13,59 +16,6 @@ export async function loadHtmlImage(photo) {
 }
 
 export function clearImageCache(photoId) { imageCache.delete(photoId); }
-
-export function getEffectiveRatio(value, width, height) {
-  if (value === 'none') return null;
-  if (value === 'auto') return width >= height ? 5 / 4 : 4 / 5;
-  const [a, b] = String(value).split(':').map(Number);
-  return a > 0 && b > 0 ? a / b : null;
-}
-
-export function calculateCrop(width, height, ratio, shift = 0) {
-  if (!ratio) return { x: 0, y: 0, width, height };
-  let cropWidth = width;
-  let cropHeight = width / ratio;
-  if (cropHeight > height) {
-    cropHeight = height;
-    cropWidth = height * ratio;
-  }
-  const maxX = width - cropWidth;
-  const maxY = height - cropHeight;
-  const normalized = Math.max(-1, Math.min(1, Number(shift) || 0));
-  const x = maxX > 0 ? ((normalized + 1) / 2) * maxX : 0;
-  const y = maxY > 0 ? ((normalized + 1) / 2) * maxY : 0;
-  return { x, y, width: cropWidth, height: cropHeight };
-}
-
-export function calculateBorderFrame(width, height, ratio) {
-  if (!ratio) return { width, height, offsetX: 0, offsetY: 0 };
-  const sourceRatio = width / height;
-  let frameWidth = width;
-  let frameHeight = height;
-  if (sourceRatio > ratio) frameHeight = width / ratio;
-  else if (sourceRatio < ratio) frameWidth = height * ratio;
-  return {
-    width: frameWidth,
-    height: frameHeight,
-    offsetX: (frameWidth - width) / 2,
-    offsetY: (frameHeight - height) / 2
-  };
-}
-
-function calculateBorderPlacement(frameWidth, frameHeight, sourceWidth, sourceHeight, borderSize) {
-  const borderFraction = clampBorderFraction(borderSize);
-  const innerWidth = frameWidth * (1 - borderFraction * 2);
-  const innerHeight = frameHeight * (1 - borderFraction * 2);
-  const imageScale = Math.min(innerWidth / sourceWidth, innerHeight / sourceHeight);
-  const width = sourceWidth * imageScale;
-  const height = sourceHeight * imageScale;
-  return {
-    x: (frameWidth - width) / 2,
-    y: (frameHeight - height) / 2,
-    width,
-    height
-  };
-}
 
 export async function renderPreview({ canvas, stage, photo, settings, watermarkImage, shouldRender = () => true }) {
   const image = await loadHtmlImage(photo);
@@ -82,73 +32,50 @@ export async function renderPreview({ canvas, stage, photo, settings, watermarkI
   const rotated = photo.rotation % 180 !== 0;
   const sourceWidth = rotated ? image.naturalHeight : image.naturalWidth;
   const sourceHeight = rotated ? image.naturalWidth : image.naturalHeight;
-  const ratioMode = settings.cropEnabled || settings.borderEnabled;
-  const ratio = ratioMode ? getEffectiveRatio(settings.cropRatio, sourceWidth, sourceHeight) : null;
-
-  const crop = settings.cropEnabled
-    ? calculateCrop(sourceWidth, sourceHeight, ratio, photo.cropShift)
-    : { x: 0, y: 0, width: sourceWidth, height: sourceHeight };
-  const borderFrame = settings.borderEnabled
-    ? calculateBorderFrame(sourceWidth, sourceHeight, ratio)
-    : { width: sourceWidth, height: sourceHeight, offsetX: 0, offsetY: 0 };
-
-  const frameWidth = settings.cropEnabled ? crop.width : borderFrame.width;
-  const frameHeight = settings.cropEnabled ? crop.height : borderFrame.height;
-  const borderPlacement = settings.borderEnabled
-    ? calculateBorderPlacement(borderFrame.width, borderFrame.height, sourceWidth, sourceHeight, settings.borderSize)
-    : null;
-  const visibleFrameHeight = settings.borderEnabled && settings.equipmentEnabled
-    ? borderPlacement.y + borderPlacement.height
-    : frameHeight;
-  const totalHeightAtSourceScale = visibleFrameHeight + (settings.equipmentEnabled ? frameWidth * EQUIPMENT_PANEL_RATIO : 0);
-  const scale = Math.min(availableWidth / frameWidth, availableHeight / totalHeightAtSourceScale);
-  const displayWidth = Math.max(1, Math.round(frameWidth * scale));
-  const displayHeight = Math.max(1, Math.round(visibleFrameHeight * scale));
-  const equipmentHeight = settings.equipmentEnabled ? Math.max(1, Math.round(displayWidth * EQUIPMENT_PANEL_RATIO)) : 0;
+  const layout = calculateLayout(sourceWidth, sourceHeight, settings, photo.cropShift);
+  const { crop, placement } = layout;
+  const scale = Math.min(availableWidth / layout.width, availableHeight / layout.height);
+  const displayWidth = layout.width * scale;
+  const displayHeight = layout.photoHeight * scale;
+  const equipmentHeight = layout.panelHeight * scale;
+  const totalHeight = layout.height * scale;
 
   canvas.width = Math.max(1, Math.round(displayWidth * dpr));
-  canvas.height = Math.max(1, Math.round((displayHeight + equipmentHeight) * dpr));
+  canvas.height = Math.max(1, Math.round(totalHeight * dpr));
   canvas.style.width = `${displayWidth}px`;
-  canvas.style.height = `${displayHeight + equipmentHeight}px`;
+  canvas.style.height = `${totalHeight}px`;
 
   const ctx = canvas.getContext('2d', { alpha: true });
-  ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
-  ctx.clearRect(0, 0, displayWidth, displayHeight + equipmentHeight);
+  ctx.setTransform(canvas.width / displayWidth, 0, 0, canvas.height / totalHeight, 0, 0);
+  ctx.clearRect(0, 0, displayWidth, totalHeight);
   ctx.imageSmoothingEnabled = true;
   ctx.imageSmoothingQuality = 'high';
+  ctx.fillStyle = settings.borderEnabled
+    ? settings.borderColor === 'black' ? '#000' : '#fff'
+    : settings.equipmentEnabled && settings.equipmentTheme === 'dark' ? '#0b0d10' : '#fff';
+  ctx.fillRect(0, 0, displayWidth, displayHeight);
 
-  if (settings.borderEnabled) {
-    ctx.fillStyle = settings.borderColor === 'black' ? '#000' : '#fff';
-    ctx.fillRect(0, 0, displayWidth, displayHeight);
-  }
-
-  let imageRect;
   ctx.save();
+  ctx.beginPath();
+  ctx.rect(0, 0, displayWidth, displayHeight);
+  ctx.clip();
   ctx.scale(scale, scale);
-  if (settings.borderEnabled) {
-    ctx.translate(borderPlacement.x + borderPlacement.width / 2, borderPlacement.y + borderPlacement.height / 2);
-    ctx.scale(borderPlacement.width / sourceWidth, borderPlacement.height / sourceHeight);
-    ctx.rotate(photo.rotation * Math.PI / 180);
-    ctx.drawImage(image, -image.naturalWidth / 2, -image.naturalHeight / 2);
-    imageRect = {
-      x: borderPlacement.x * scale,
-      y: borderPlacement.y * scale,
-      width: borderPlacement.width * scale,
-      height: borderPlacement.height * scale
-    };
-  } else {
-    const originX = settings.cropEnabled ? crop.x : 0;
-    const originY = settings.cropEnabled ? crop.y : 0;
-    ctx.translate(-originX, -originY);
-    ctx.translate(sourceWidth / 2, sourceHeight / 2);
-    ctx.rotate(photo.rotation * Math.PI / 180);
-    ctx.drawImage(image, -image.naturalWidth / 2, -image.naturalHeight / 2);
-    imageRect = { x: -originX * scale, y: -originY * scale, width: sourceWidth * scale, height: sourceHeight * scale };
-  }
+  ctx.translate(placement.x, placement.y);
+  ctx.scale(placement.width / crop.width, placement.height / crop.height);
+  ctx.translate(-crop.x, -crop.y);
+  ctx.translate(sourceWidth / 2, sourceHeight / 2);
+  ctx.rotate(photo.rotation * Math.PI / 180);
+  ctx.drawImage(image, -image.naturalWidth / 2, -image.naturalHeight / 2);
   ctx.restore();
+  const imageRect = {
+    x: (placement.x - crop.x * placement.width / crop.width) * scale,
+    y: (placement.y - crop.y * placement.height / crop.height) * scale,
+    width: sourceWidth * placement.width / crop.width * scale,
+    height: sourceHeight * placement.height / crop.height * scale
+  };
 
   const outputRect = { x: 0, y: 0, width: displayWidth, height: displayHeight };
-  if (settings.cropEnabled && ratio) {
+  if (layout.mode === 'crop') {
     ctx.save();
     ctx.strokeStyle = '#ff4242';
     ctx.lineWidth = 2;
@@ -161,23 +88,20 @@ export async function renderPreview({ canvas, stage, photo, settings, watermarkI
   if (settings.watermarkEnabled && watermarkImage) {
     watermarkRect = drawWatermark(ctx, watermarkImage, outputRect, photo, settings);
   }
-  if (settings.equipmentEnabled) drawEquipmentPanel(ctx, photo, settings, displayWidth, displayHeight, equipmentHeight, equipmentImages);
+  if (layout.panelHeight) drawEquipmentPanel(ctx, photo, settings, displayWidth, displayHeight, equipmentHeight, equipmentImages);
 
   canvas.hidden = false;
   return {
     sourceWidth,
     sourceHeight,
     crop,
-    borderFrame,
+    borderFrame: { width: layout.width, height: layout.height },
+    layout,
     outputRect,
     equipmentHeight,
     imageRect,
     watermarkRect
   };
-}
-
-function clampBorderFraction(value) {
-  return Math.max(.01, Math.min(.30, (Number(value) || 5) / 100));
 }
 
 function drawGrid(ctx, rect) {

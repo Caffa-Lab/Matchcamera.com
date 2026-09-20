@@ -60,6 +60,9 @@ jobs:
           node scripts/test_equipment_match.mjs
           node scripts/test_equipment_preview.mjs
           node scripts/test_resize_crop_control.mjs
+          node --check public/assets/js/resize/layout.js
+          node scripts/test_resize_geometry.mjs
+          node scripts/test_resize_outputs.mjs
           node scripts/test_carousel.mjs
           node scripts/test_exposure.mjs
           node scripts/test_metadata_captions.mjs

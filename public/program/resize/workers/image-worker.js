@@ -1,3 +1,5 @@
+import { calculateLayout } from '../../../assets/js/resize/layout.js?v=20260920-ratio';
+
 self.onmessage = async (event) => {
   const { jobId, file, options, watermarkFile } = event.data;
   try {
@@ -7,8 +9,7 @@ self.onmessage = async (event) => {
     const rotated = rotation === 90 || rotation === 270;
     const rotatedWidth = rotated ? source.height : source.width;
     const rotatedHeight = rotated ? source.width : source.height;
-    const ratioMode = options.cropEnabled || options.borderEnabled;
-    const ratio = ratioMode ? effectiveRatio(options.cropRatio, rotatedWidth, rotatedHeight) : null;
+    const layout = calculateLayout(rotatedWidth, rotatedHeight, options, options.cropShift);
 
     const fullCanvas = new OffscreenCanvas(rotatedWidth, rotatedHeight);
     const fullCtx = fullCanvas.getContext('2d', { alpha: false });
@@ -20,99 +21,31 @@ self.onmessage = async (event) => {
     fullCtx.drawImage(source, -source.width / 2, -source.height / 2);
     fullCtx.restore();
 
-    let editedCanvas;
-    let editedCtx;
-
-    if (options.cropEnabled && ratio) {
-      const crop = calculateCrop(rotatedWidth, rotatedHeight, ratio, options.cropShift);
-      editedCanvas = new OffscreenCanvas(Math.max(1, Math.round(crop.width)), Math.max(1, Math.round(crop.height)));
-      editedCtx = editedCanvas.getContext('2d', { alpha: false });
-      editedCtx.drawImage(fullCanvas, crop.x, crop.y, crop.width, crop.height, 0, 0, editedCanvas.width, editedCanvas.height);
-    } else if (options.borderEnabled) {
-      const frame = calculateBorderFrame(rotatedWidth, rotatedHeight, ratio);
-      const placement = calculateBorderPlacement(frame.width, frame.height, rotatedWidth, rotatedHeight, options.borderSize);
-      const visibleHeight = options.equipmentEnabled ? placement.y + placement.height : frame.height;
-      editedCanvas = new OffscreenCanvas(Math.max(1, Math.round(frame.width)), Math.max(1, Math.round(visibleHeight)));
-      editedCtx = editedCanvas.getContext('2d', { alpha: false });
-      editedCtx.imageSmoothingEnabled = true;
-      editedCtx.imageSmoothingQuality = 'high';
-      editedCtx.fillStyle = options.borderColor === 'black' ? '#000' : '#fff';
-      editedCtx.fillRect(0, 0, editedCanvas.width, editedCanvas.height);
-
-      editedCtx.drawImage(fullCanvas, placement.x, placement.y, placement.width, placement.height);
-    } else {
-      editedCanvas = new OffscreenCanvas(rotatedWidth, rotatedHeight);
-      editedCtx = editedCanvas.getContext('2d', { alpha: false });
-      editedCtx.drawImage(fullCanvas, 0, 0);
-    }
+    let editedCanvas = new OffscreenCanvas(layout.width, layout.photoHeight);
+    const editedCtx = editedCanvas.getContext('2d', { alpha: false });
+    editedCtx.imageSmoothingEnabled = true;
+    editedCtx.imageSmoothingQuality = 'high';
+    editedCtx.fillStyle = options.borderEnabled
+      ? options.borderColor === 'black' ? '#000' : '#fff'
+      : options.equipmentEnabled && options.equipmentTheme === 'dark' ? '#0b0d10' : '#fff';
+    editedCtx.fillRect(0, 0, editedCanvas.width, editedCanvas.height);
+    const { crop, placement } = layout;
+    editedCtx.drawImage(fullCanvas, crop.x, crop.y, crop.width, crop.height, placement.x, placement.y, placement.width, placement.height);
 
     if (options.watermarkEnabled && watermark) drawWatermark(editedCtx, watermark, editedCanvas.width, editedCanvas.height, options);
-    if (options.equipmentEnabled) editedCanvas = await appendEquipmentPanel(editedCanvas, options);
+    if (layout.panelHeight) editedCanvas = await appendEquipmentPanel(editedCanvas, options, layout);
 
-    let blob;
-    if (options.saveMode === 'size') blob = await encodeTargetSize(editedCanvas, options.targetBytes);
-    else blob = await editedCanvas.convertToBlob({ type: 'image/jpeg', quality: 1 });
+    const encoded = options.saveMode === 'size'
+      ? await encodeTargetSize(editedCanvas, options.targetBytes)
+      : { blob: await editedCanvas.convertToBlob({ type: 'image/jpeg', quality: 1 }), width: editedCanvas.width, height: editedCanvas.height };
 
     source.close();
     watermark?.close();
-    self.postMessage({ jobId, ok: true, blob, width: editedCanvas.width, height: editedCanvas.height });
+    self.postMessage({ jobId, ok: true, ...encoded });
   } catch (error) {
     self.postMessage({ jobId, ok: false, error: error instanceof Error ? error.message : String(error) });
   }
 };
-
-function effectiveRatio(value, width, height) {
-  if (value === 'none') return null;
-  if (value === 'auto') return width >= height ? 5 / 4 : 4 / 5;
-  const [a, b] = String(value).split(':').map(Number);
-  return a > 0 && b > 0 ? a / b : null;
-}
-
-function calculateCrop(width, height, ratio, shift) {
-  if (!ratio) return { x: 0, y: 0, width, height };
-  let cropWidth = width;
-  let cropHeight = width / ratio;
-  if (cropHeight > height) {
-    cropHeight = height;
-    cropWidth = height * ratio;
-  }
-  const maxX = width - cropWidth;
-  const maxY = height - cropHeight;
-  const normalized = Math.max(-1, Math.min(1, Number(shift) || 0));
-  return {
-    x: maxX > 0 ? ((normalized + 1) / 2) * maxX : 0,
-    y: maxY > 0 ? ((normalized + 1) / 2) * maxY : 0,
-    width: cropWidth,
-    height: cropHeight
-  };
-}
-
-function calculateBorderFrame(width, height, ratio) {
-  if (!ratio) return { width, height };
-  const sourceRatio = width / height;
-  if (sourceRatio > ratio) return { width, height: width / ratio };
-  if (sourceRatio < ratio) return { width: height * ratio, height };
-  return { width, height };
-}
-
-function calculateBorderPlacement(frameWidth, frameHeight, sourceWidth, sourceHeight, borderSize) {
-  const borderFraction = clampBorderFraction(borderSize);
-  const innerWidth = frameWidth * (1 - borderFraction * 2);
-  const innerHeight = frameHeight * (1 - borderFraction * 2);
-  const imageScale = Math.min(innerWidth / sourceWidth, innerHeight / sourceHeight);
-  const width = sourceWidth * imageScale;
-  const height = sourceHeight * imageScale;
-  return {
-    x: (frameWidth - width) / 2,
-    y: (frameHeight - height) / 2,
-    width,
-    height
-  };
-}
-
-function clampBorderFraction(value) {
-  return Math.max(.01, Math.min(.30, (Number(value) || 5) / 100));
-}
 
 function drawWatermark(ctx, watermark, width, height, options) {
   const wmWidth = width * options.watermarkSize / 100;
@@ -134,21 +67,20 @@ function drawWatermark(ctx, watermark, width, height, options) {
 async function encodeTargetSize(canvas, targetBytes) {
   const quality = .98;
   const first = await canvas.convertToBlob({ type: 'image/jpeg', quality });
-  if (first.size <= targetBytes) return first;
+  if (first.size <= targetBytes) return { blob: first, width: canvas.width, height: canvas.height };
 
   let low = .18;
   let high = 1;
-  let bestBlob = null;
-  let bestScale = low;
+  let best = null;
   for (let i = 0; i < 8; i += 1) {
     const scale = (low + high) / 2;
     const test = await encodeScaled(canvas, scale, quality);
-    if (test.size <= targetBytes) { bestBlob = test; bestScale = scale; low = scale; }
+    if (test.blob.size <= targetBytes) { best = test; low = scale; }
     else high = scale;
   }
-  if (bestBlob) return bestBlob;
+  if (best) return best;
 
-  const minimum = await createScaledCanvas(canvas, bestScale);
+  const minimum = await createScaledCanvas(canvas, low);
   let qLow = .35;
   let qHigh = quality;
   let qualityBlob = await minimum.convertToBlob({ type: 'image/jpeg', quality: qLow });
@@ -158,12 +90,12 @@ async function encodeTargetSize(canvas, targetBytes) {
     if (test.size <= targetBytes) { qualityBlob = test; qLow = q; }
     else qHigh = q;
   }
-  return qualityBlob;
+  return { blob: qualityBlob, width: minimum.width, height: minimum.height };
 }
 
 async function encodeScaled(canvas, scale, quality) {
   const scaled = await createScaledCanvas(canvas, scale);
-  return scaled.convertToBlob({ type: 'image/jpeg', quality });
+  return { blob: await scaled.convertToBlob({ type: 'image/jpeg', quality }), width: scaled.width, height: scaled.height };
 }
 
 async function createScaledCanvas(canvas, scale) {
@@ -177,10 +109,10 @@ async function createScaledCanvas(canvas, scale) {
   return output;
 }
 
-async function appendEquipmentPanel(sourceCanvas, options) {
+async function appendEquipmentPanel(sourceCanvas, options, layout) {
   const width = sourceCanvas.width;
-  const height = Math.max(1, Math.round(width * .18));
-  const output = new OffscreenCanvas(width, sourceCanvas.height + height);
+  const height = layout.panelHeight;
+  const output = new OffscreenCanvas(layout.width, layout.height);
   const ctx = output.getContext('2d', { alpha: false });
   const dark = options.equipmentTheme === 'dark';
   ctx.fillStyle = dark ? '#0b0d10' : '#fff';

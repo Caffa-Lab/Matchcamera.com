@@ -1,5 +1,5 @@
 import { createPhotoState, disposePhotoState, loadSettings, saveSettings, defaultSettings } from './state.js?v=20260905-full';
-import { renderPreview, clearImageCache } from './image-utils.js?v=20260915-equipment-match';
+import { renderPreview, clearImageCache } from './image-utils.js?v=20260920-ratio';
 import { equipmentText, productName, findProduct } from './equipment-match.js?v=20260915';
 import { applyMetadataPolicy } from './metadata.js?v=20260905-full';
 import { parse as parseExif } from '/assets/vendor/exifr-full.esm.js';
@@ -67,8 +67,13 @@ let photos = [];
 let activeIndex = -1;
 let watermarkFile = null;
 let watermarkImage = null;
+let watermarkUrl = null;
+let watermarkLoading = false;
+let watermarkLoadId = 0;
 let previewGeometry = null;
 let outputs = [];
+let outputRevision = 0;
+let zipping = false;
 let isDraggingWatermark = false;
 let processing = false;
 let previewRequestId = 0;
@@ -92,7 +97,7 @@ function bindEvents() {
   refs.clearAll?.addEventListener('click', clearAll);
   refs.prev?.addEventListener('click', () => setActive(activeIndex - 1));
   refs.next?.addEventListener('click', () => setActive(activeIndex + 1));
-  refs.rotate?.addEventListener('click', () => { const photo = currentPhoto(); if (!photo) return; photo.rotation = (photo.rotation + 90) % 360; photo.cropShift = 0; renderAll(); });
+  refs.rotate?.addEventListener('click', rotatePhoto);
 
   refs.cropEnabled?.addEventListener('change', () => {
     setRatioMode(refs.cropEnabled.checked ? 'crop' : 'none');
@@ -139,8 +144,8 @@ function bindEvents() {
   refs.openMetadata?.addEventListener('click', openMetadataModal);
   refs.closeMetadata?.addEventListener('click', closeMetadataModal);
   refs.metadataModal?.addEventListener('click', (event) => { if (event.target === refs.metadataModal) closeMetadataModal(); });
-  refs.resetMetadata?.addEventListener('click', () => { settings.metadataOptions = [...defaultSettings.metadataOptions]; renderMetadataOptions(); });
-  refs.saveMetadata?.addEventListener('click', () => { readMetadataOptions(); saveSettings(settings); closeMetadataModal(); });
+  refs.resetMetadata?.addEventListener('click', resetMetadataOptions);
+  refs.saveMetadata?.addEventListener('click', () => { if (processing) return; readMetadataOptions(); saveSettings(settings); closeMetadataModal(); });
 }
 
 function hydrateControls() {
@@ -173,6 +178,8 @@ function hydrateControls() {
 }
 
 function syncSettings(preferredMode = null) {
+  if (processing) return;
+  const previous = outputSettingsKey(settings);
   enforceExclusiveRatioMode(preferredMode);
   settings = {
     ...settings,
@@ -195,6 +202,7 @@ function syncSettings(preferredMode = null) {
     equipmentSettings: refs.equipmentSettings.checked,
     equipmentTheme: refs.equipmentTheme.value
   };
+  if (outputSettingsKey(settings) !== previous) invalidateOutputs();
   saveSettings(settings);
   updateControlLabels();
   renderPreviewOnly();
@@ -205,21 +213,22 @@ function updateControlLabels() {
   refs.watermarkSizeValue.textContent = `${settings.watermarkSize}%`;
   refs.borderSizeValue.textContent = `${clampBorderSize(settings.borderSize)}%`;
   refs.watermarkMarginValue.textContent = `${settings.watermarkMargin}%`;
-  refs.targetSize.disabled = settings.saveMode !== 'size';
+  refs.targetSize.disabled = processing || settings.saveMode !== 'size';
   refs.targetSizeField?.classList.toggle('is-disabled', settings.saveMode !== 'size');
   const ratioModeEnabled = settings.cropEnabled || settings.borderEnabled;
-  refs.cropRatio.disabled = !ratioModeEnabled;
+  refs.cropRatio.disabled = processing || !ratioModeEnabled;
   if (refs.borderColorField) {
     refs.borderColorField.classList.toggle('is-disabled', !settings.borderEnabled);
-    refs.borderColorField.querySelectorAll('input').forEach((input) => { input.disabled = !settings.borderEnabled; });
+    refs.borderColorField.querySelectorAll('input').forEach((input) => { input.disabled = processing || !settings.borderEnabled; });
   }
   if (refs.borderSizeField) {
     refs.borderSizeField.classList.toggle('is-disabled', !settings.borderEnabled);
-    refs.borderSize.disabled = !settings.borderEnabled;
+    refs.borderSize.disabled = processing || !settings.borderEnabled;
   }
 }
 
 function addFiles(fileList) {
+  if (processing) return;
   const accepted = [...(fileList || [])].filter((file) => /^image\/(jpeg|png|webp)$/i.test(file.type));
   if (!accepted.length) return;
   accepted.forEach((file) => {
@@ -228,17 +237,18 @@ function addFiles(fileList) {
     photo.equipmentReady = readPhotoEquipment(photo);
   });
   if (activeIndex < 0) activeIndex = 0;
-  outputs = [];
+  invalidateOutputs();
   renderAll();
   refs.fileInput.value = '';
 }
 
 function removePhoto(index) {
+  if (processing) return;
   const [removed] = photos.splice(index, 1);
   if (removed) { clearImageCache(removed.id); disposePhotoState(removed); }
   if (!photos.length) activeIndex = -1;
   else activeIndex = Math.min(activeIndex, photos.length - 1);
-  outputs = [];
+  invalidateOutputs();
   renderAll();
 }
 
@@ -247,13 +257,13 @@ function clearAll() {
   photos.forEach((photo) => { clearImageCache(photo.id); disposePhotoState(photo); });
   photos = [];
   activeIndex = -1;
-  outputs.forEach((output) => URL.revokeObjectURL(output.url));
-  outputs = [];
+  invalidateOutputs(false);
+  updateProgress(0, '사진을 추가해 주세요.');
   renderAll();
 }
 
 function setActive(index) {
-  if (!photos.length) return;
+  if (processing || !photos.length) return;
   activeIndex = (index + photos.length) % photos.length;
   renderAll();
 }
@@ -274,18 +284,29 @@ function clampBorderSize(value) {
 
 function currentPhoto() { return activeIndex >= 0 ? photos[activeIndex] : null; }
 
+function rotatePhoto() {
+  const photo = currentPhoto();
+  if (!photo || processing) return;
+  photo.rotation = (photo.rotation + 90) % 360;
+  photo.cropShift = 0;
+  invalidateOutputs();
+  renderAll();
+}
+
 function renderAll() {
   syncCropShiftControl();
+  updateControlLabels();
   renderFileList();
   renderOutputList();
   refs.count.textContent = photos.length ? `${activeIndex + 1} / ${photos.length}` : '0 / 0';
-  refs.prev.disabled = !photos.length;
-  refs.next.disabled = !photos.length;
-  refs.rotate.disabled = !photos.length;
-  refs.process.disabled = !photos.length || processing;
-  refs.downloadZip.disabled = !outputs.length;
+  refs.prev.disabled = !photos.length || processing;
+  refs.next.disabled = !photos.length || processing;
+  refs.rotate.disabled = !photos.length || processing;
+  refs.process.disabled = !photos.length || processing || watermarkLoading;
+  refs.downloadZip.disabled = !outputs.length || processing || zipping;
   syncEquipmentControls();
   renderPreviewOnly();
+  if (processing) lockControls(true);
 }
 
 function renderFileList() {
@@ -337,7 +358,9 @@ function handleWheel(event) {
   const photo = currentPhoto();
   if (!photo || processing || !settings.cropEnabled || settings.cropRatio === 'none') return;
   event.preventDefault();
-  photo.cropShift = Math.max(-1, Math.min(1, photo.cropShift + Math.sign(event.deltaY) * .06));
+  const shift = Math.max(-1, Math.min(1, photo.cropShift + Math.sign(event.deltaY) * .06));
+  if (shift !== photo.cropShift) invalidateOutputs();
+  photo.cropShift = shift;
   syncCropShiftControl();
   renderPreviewOnly();
 }
@@ -357,13 +380,15 @@ function handleCropShiftInput(event) {
   const photo = currentPhoto();
   const value = Number(event.target.value);
   if (!photo || processing || !settings.cropEnabled || settings.cropRatio === 'none' || !Number.isFinite(value)) return;
-  photo.cropShift = Math.max(-1, Math.min(1, value));
+  const shift = Math.max(-1, Math.min(1, value));
+  if (shift !== photo.cropShift) invalidateOutputs();
+  photo.cropShift = shift;
   syncCropShiftControl();
   renderPreviewOnly();
 }
 
 function startWatermarkDrag(event) {
-  if (!settings.watermarkEnabled || settings.watermarkPosition !== 'custom' || !previewGeometry?.watermarkRect) return;
+  if (processing || !settings.watermarkEnabled || settings.watermarkPosition !== 'custom' || !previewGeometry?.watermarkRect) return;
   const point = canvasPoint(event);
   const rect = previewGeometry.watermarkRect;
   if (point.x >= rect.x && point.x <= rect.x + rect.width && point.y >= rect.y && point.y <= rect.y + rect.height) {
@@ -373,7 +398,7 @@ function startWatermarkDrag(event) {
 }
 
 function moveWatermarkDrag(event) {
-  if (!isDraggingWatermark || !previewGeometry) return;
+  if (processing || !isDraggingWatermark || !previewGeometry) return;
   const photo = currentPhoto();
   if (!photo) return;
   const point = canvasPoint(event);
@@ -381,8 +406,9 @@ function moveWatermarkDrag(event) {
   if (!target) return;
   const x = Math.max(0, Math.min(1, (point.x - target.x) / target.width));
   const y = Math.max(0, Math.min(1, (point.y - target.y) / target.height));
-  if (settings.watermarkAll) photos.forEach((item) => { item.watermarkX = x; item.watermarkY = y; });
-  else { photo.watermarkX = x; photo.watermarkY = y; }
+  const targets = settings.watermarkAll ? photos : [photo];
+  if (targets.some(item => item.watermarkX !== x || item.watermarkY !== y)) invalidateOutputs();
+  targets.forEach(item => { item.watermarkX = x; item.watermarkY = y; });
   renderPreviewOnly();
 }
 
@@ -398,30 +424,52 @@ function canvasPoint(event) {
 
 async function loadWatermark() {
   const file = refs.watermarkInput.files?.[0];
-  if (!file) return;
-  watermarkFile = file;
+  if (processing || !file) return;
+  const requestId = ++watermarkLoadId;
+  watermarkLoading = true;
+  refs.process.disabled = true;
   const url = URL.createObjectURL(file);
   const image = new Image();
   image.src = url;
-  try { await image.decode(); watermarkImage = image; refs.watermarkSelect.textContent = file.name; settings.watermarkEnabled = true; refs.watermarkEnabled.checked = true; syncSettings(); }
-  catch { alert('워터마크 이미지를 읽지 못했습니다.'); URL.revokeObjectURL(url); }
+  let installed = false;
+  try {
+    await image.decode();
+    if (requestId !== watermarkLoadId) return;
+    if (watermarkUrl) URL.revokeObjectURL(watermarkUrl);
+    watermarkUrl = url;
+    watermarkFile = file;
+    watermarkImage = image;
+    installed = true;
+    invalidateOutputs();
+    refs.watermarkSelect.textContent = file.name;
+    refs.watermarkEnabled.checked = true;
+    syncSettings();
+  } catch {
+    if (requestId === watermarkLoadId) alert('워터마크 이미지를 읽지 못했습니다.');
+  } finally {
+    if (!installed) URL.revokeObjectURL(url);
+    if (requestId === watermarkLoadId) {
+      watermarkLoading = false;
+      refs.watermarkInput.value = '';
+      refs.process.disabled = !photos.length || processing;
+    }
+  }
 }
 
 async function processAll() {
-  if (processing || !photos.length) return;
+  if (processing || watermarkLoading || !photos.length) return;
   enforceExclusiveRatioMode();
   syncSettings();
   if (settings.cropEnabled && settings.borderEnabled) return alert('자르기와 테두리 만들기는 동시에 사용할 수 없습니다.');
   if (settings.watermarkEnabled && !watermarkFile) return alert('워터마크가 ON이지만 워터마크 이미지가 선택되지 않았습니다.');
   processing = true;
-  outputs.forEach((output) => URL.revokeObjectURL(output.url));
-  outputs = [];
+  invalidateOutputs(false);
   renderAll();
   lockControls(true);
   let worker;
   void trackUsage('tool_start','resize');
   try {
-    worker = new Worker('/program/resize/workers/image-worker.js?v=20260905-render-match');
+    worker = new Worker('/program/resize/workers/image-worker.js?v=20260920-ratio', { type: 'module' });
     await Promise.all([productsReady, ...photos.map(photo => photo.equipmentReady)]);
     for (let index = 0; index < photos.length; index += 1) {
       const photo = photos[index];
@@ -503,6 +551,21 @@ function runWorkerJob(worker, photo) {
   });
 }
 
+function outputSettingsKey(value) {
+  const { gridEnabled, watermarkAll, metadataOptions, ...outputOptions } = value;
+  return JSON.stringify({ ...outputOptions, metadataOptions: [...(metadataOptions || [])].sort() });
+}
+
+function invalidateOutputs(notify = true) {
+  const hadOutputs = outputs.length > 0;
+  outputs.forEach(output => { if (output.url) URL.revokeObjectURL(output.url); });
+  outputs = [];
+  outputRevision += 1;
+  renderOutputList();
+  refs.downloadZip.disabled = true;
+  if (notify && hadOutputs && !processing) updateProgress(0, '설정이 바뀌었습니다. 처리 시작을 눌러 결과를 다시 만들어 주세요.');
+}
+
 function renderOutputList() {
   refs.outputList.innerHTML = '';
   outputs.forEach((output) => {
@@ -515,7 +578,9 @@ function renderOutputList() {
 }
 
 async function downloadZip() {
-  if (!outputs.length) return;
+  if (processing || zipping || !outputs.length) return;
+  const revision = outputRevision;
+  zipping = true;
   refs.downloadZip.disabled = true;
   refs.downloadZip.textContent = 'ZIP 생성 중...';
   try {
@@ -523,19 +588,38 @@ async function downloadZip() {
     if (!JSZip) throw new Error('ZIP 라이브러리를 불러오지 못했습니다. 새로고침 후 다시 시도하세요.');
     const zip = new JSZip();
     outputs.forEach((output) => zip.file(output.name, output.blob));
-    const blob = await zip.generateAsync({ type: 'blob', compression: 'DEFLATE' }, (meta) => updateProgress(meta.percent / 100, `ZIP 생성 ${meta.percent.toFixed(0)}%`));
+    const blob = await zip.generateAsync({ type: 'blob', compression: 'DEFLATE' }, (meta) => {
+      if (revision === outputRevision) updateProgress(meta.percent / 100, `ZIP 생성 ${meta.percent.toFixed(0)}%`);
+    });
+    if (revision !== outputRevision) return;
     downloadBlob(blob, `Matchcamera_Photo_${timestamp()}.zip`);
     updateProgress(1, 'ZIP 다운로드 준비 완료');
   } catch (error) { alert(error instanceof Error ? error.message : String(error)); }
-  finally { refs.downloadZip.disabled = false; refs.downloadZip.textContent = 'ZIP 다운로드'; }
+  finally { zipping = false; refs.downloadZip.disabled = processing || !outputs.length; refs.downloadZip.textContent = 'ZIP 다운로드'; }
 }
 
 function openMetadataModal() { renderMetadataOptions(); refs.metadataModal.classList.add('is-open'); refs.metadataModal.setAttribute('aria-hidden','false'); }
 function closeMetadataModal() { refs.metadataModal.classList.remove('is-open'); refs.metadataModal.setAttribute('aria-hidden','true'); }
 function renderMetadataOptions() { refs.metadataOptions?.querySelectorAll('input[type="checkbox"]').forEach((input) => { input.checked = settings.metadataOptions.includes(input.value); }); }
-function readMetadataOptions() { settings.metadataOptions = [...(refs.metadataOptions?.querySelectorAll('input:checked') || [])].map((input) => input.value); }
+function readMetadataOptions() {
+  const previous = outputSettingsKey(settings);
+  settings.metadataOptions = [...(refs.metadataOptions?.querySelectorAll('input:checked') || [])].map((input) => input.value);
+  if (outputSettingsKey(settings) !== previous) invalidateOutputs();
+}
+function resetMetadataOptions() {
+  if (processing) return;
+  const previous = outputSettingsKey(settings);
+  settings.metadataOptions = [...defaultSettings.metadataOptions];
+  if (outputSettingsKey(settings) !== previous) invalidateOutputs();
+  renderMetadataOptions();
+}
 function updateProgress(value, text) { refs.progressBar.style.width = `${Math.max(0, Math.min(1, value)) * 100}%`; refs.progressText.textContent = text; }
-function lockControls(locked) { document.querySelectorAll('input, select, button').forEach((element) => { if (element === refs.downloadZip) return; element.disabled = locked; }); }
+function lockControls(locked) {
+  document.querySelectorAll('input, select, button').forEach(element => { element.disabled = locked; });
+  if (!locked) updateControlLabels();
+  refs.downloadZip.disabled = locked || zipping || !outputs.length;
+  refs.process.disabled = locked || watermarkLoading || !photos.length;
+}
 function outputName(name) { const base = name.replace(/\.[^.]+$/, ''); return `${base}_Matchcamera.jpg`; }
 function downloadBlob(blob, name) { const url = URL.createObjectURL(blob); const anchor = document.createElement('a'); anchor.href = url; anchor.download = name; document.body.append(anchor); anchor.click(); anchor.remove(); void trackUsage('tool_download','resize'); setTimeout(() => URL.revokeObjectURL(url), 1000); }
 function timestamp() { const d = new Date(); return `${d.getFullYear()}${String(d.getMonth()+1).padStart(2,'0')}${String(d.getDate()).padStart(2,'0')}_${String(d.getHours()).padStart(2,'0')}${String(d.getMinutes()).padStart(2,'0')}`; }
@@ -593,23 +677,23 @@ function syncEquipmentControls() {
 }
 
 function selectEquipment(kind) {
-  const photo = currentPhoto(); if (!photo) return;
+  const photo = currentPhoto(); if (!photo || processing) return;
   const input = kind === 'body' ? refs.equipmentBody : refs.equipmentLens;
   photo[`${kind}Raw`] = equipmentText(input.value);
   photo[`${kind}Manual`] = true;
   matchPhotoEquipment(photo);
-  outputs = [];
+  invalidateOutputs();
   renderAll();
 }
 
 function applyEquipmentToAll() {
-  const photo = currentPhoto(); if (!photo) return;
+  const photo = currentPhoto(); if (!photo || processing) return;
   photos.forEach((item) => {
     item.body = photo.body; item.lens = photo.lens;
     item.bodyRaw = photo.bodyRaw; item.lensRaw = photo.lensRaw;
     item.bodyManual = true; item.lensManual = true;
   });
-  outputs = [];
+  invalidateOutputs();
   renderAll();
   refs.equipmentDetected.textContent = '현재 바디와 렌즈를 모든 사진에 적용했습니다.';
 }

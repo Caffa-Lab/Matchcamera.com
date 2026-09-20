@@ -9,6 +9,7 @@ assert(start >= 0 && end > start);
 const photos = [{cropShift: 0}, {cropShift: -.45}];
 let active = 0;
 let previews = 0;
+let invalidations = 0;
 const range = {value: '', disabled: false, attributes: {}, setAttribute(key, value) { this.attributes[key] = value; }};
 const label = {textContent: ''};
 const context = vm.createContext({
@@ -16,6 +17,7 @@ const context = vm.createContext({
   settings: {cropEnabled: true, cropRatio: '4:5'}, processing: false,
   currentPhoto: () => photos[active] || null,
   renderPreviewOnly: () => { previews++; },
+  invalidateOutputs: () => { invalidations++; },
 });
 vm.runInContext(source.slice(start, end), context);
 context.syncCropShiftControl();
@@ -28,6 +30,7 @@ assert.equal(range.value, '0.37');
 assert.equal(label.textContent, '37%');
 assert.equal(range.attributes['aria-valuetext'], '37%');
 assert.equal(previews, 1);
+assert.equal(invalidations, 1, 'changing the crop invalidates earlier downloads');
 
 active = 1;
 context.syncCropShiftControl();
@@ -54,10 +57,12 @@ for (const guard of ['cropOff', 'noRatio', 'processing', 'noPhoto']) {
   assert.equal(range.disabled, true, guard);
   const previous = photos[1].cropShift;
   const previousPreviews = previews;
+  const previousInvalidations = invalidations;
   context.handleCropShiftInput({target: {value: '.8'}});
   context.handleWheel({deltaY: 10, preventDefault() { throw new Error(`wheel must not capture while ${guard}`); }});
   assert.equal(photos[1].cropShift, previous, guard);
   assert.equal(previews, previousPreviews, guard);
+  assert.equal(invalidations, previousInvalidations, guard);
 }
 
 const html = await fs.readFile(new URL('../public/program/resize/index.html', import.meta.url), 'utf8');
