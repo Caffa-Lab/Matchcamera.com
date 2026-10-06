@@ -1,5 +1,5 @@
 import {ACCESSORY_CATEGORIES,accessoryComparisonProduct} from './accessory-compare.js';
-import {brandLogoUrl,loadAdapters,loadBatteries,loadMemoryCards,loadFlashes,loadTripods,loadHeads,loadPlates,loadProducts,loadManufacturerOrder,matchesSearch,money,productLabel} from './data.js?v=20260914-fixed-lens';
+import {brandLogoUrl,loadAdapters,loadBatteries,loadMemoryCards,loadFlashes,loadTripods,loadHeads,loadPlates,loadProducts,loadManufacturerOrder,matchesSearch,productMoney,productLabel} from './data.js?v=20261006-catalog';
 
 import {trackUsage} from './usage-events.js?v=20260915-phase1';
 const comparedPairs=new Set();
@@ -38,7 +38,7 @@ function productCard(key){
   const product=state[key];
   if(!product)return `<article class="compare-product-card is-empty">${imageMarkup(null)}<div class="compare-empty-copy"><b>제품 ${key.toUpperCase()}</b><span>${state.type}를 검색해 선택하세요.</span></div></article>`;
   const priceType=product.koreaPriceType||'한국 공식 정가/출고가';
-  return `<article class="compare-product-card">${imageMarkup(product)}<div class="compare-product-info"><span>${esc(product.manufacturer||'')} · ${esc(product.mount||'-')}</span><h2>${esc(productLabel(product))}</h2><small>${esc(product.modelCode||product.series||'')}</small><div class="compare-product-price"><em>${esc(priceType)}</em><strong>${esc(money(product.currentPriceKrw))}</strong></div></div></article>`;
+  return `<article class="compare-product-card">${imageMarkup(product)}<div class="compare-product-info"><span>${esc(product.manufacturer||'')} · ${esc(product.mount||'-')}</span><h2>${esc(productLabel(product))}</h2><small>${esc(product.modelCode||product.series||'')}</small><div class="compare-product-price"><em>${esc(priceType)}</em><strong>${esc(productMoney(product))}</strong></div></div></article>`;
 }
 
 function specValue(product,key){
@@ -48,7 +48,7 @@ function specValue(product,key){
     '센서 포맷':product.sensorFormat,'렌즈 포맷':product.lensFormat,'모델 코드':product.modelCode,
     '출시년도':product.releaseYear,'초점거리':product.focalLength,'최대 조리개':product.maxAperture,
     '무게(g)':product.weightG,'판매 상태':product.koreaSaleStatus||product.saleStatus||product.currentSale,
-    '한국 가격':money(product.currentPriceKrw),
+    '한국 가격':productMoney(product),
   }[key];
   return hasValue(direct)?direct:product.specs?.[key];
 }
@@ -93,7 +93,7 @@ function showResults(key){
   const picker=pickers[key];
   const query=picker.input.value.trim();
   const matches=typeProducts().filter(product=>!query||matchesSearch(product,query)).slice(0,12);
-  picker.results.innerHTML=matches.length?matches.map(product=>`<button type="button" role="option" data-select-product="${esc(product.id)}" data-picker-key="${key}"><span>${esc(product.manufacturer||'')} · ${esc(product.mount||'-')}</span><strong>${esc(productLabel(product))}</strong><small>${esc(product.modelCode||'')} · ${esc(money(product.currentPriceKrw))}</small></button>`).join(''):'<div class="compare-no-result">검색 결과가 없습니다.</div>';
+  picker.results.innerHTML=matches.length?matches.map(product=>`<button type="button" role="option" data-select-product="${esc(product.id)}" data-picker-key="${key}"><span>${esc(product.manufacturer||'')} · ${esc(product.mount||'-')}</span><strong>${esc(productLabel(product))}</strong><small>${esc(product.modelCode||'')} · ${esc(productMoney(product))}</small></button>`).join(''):'<div class="compare-no-result">검색 결과가 없습니다.</div>';
   picker.results.hidden=false;
   picker.input.setAttribute('aria-expanded','true');
 }

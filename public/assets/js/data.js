@@ -1,3 +1,6 @@
+import {productPriceStatus} from './price-format.js?v=20261006-catalog';
+export {money,productMoney} from './price-format.js?v=20261006-catalog';
+
 let cache;
 let adapterCache;
 let batteryCache;
@@ -250,7 +253,9 @@ export async function loadProducts(){
     const hasOfficial = Number.isFinite(official) && official > 0;
     const embeddedPrice = Number(p.currentPriceKrw);
     const hasEmbeddedPrice = Number.isFinite(embeddedPrice) && embeddedPrice > 0;
-    const displayKrw = hasStreet ? street : (hasOfficial ? official : (hasEmbeddedPrice ? embeddedPrice : null));
+    const priceStatus = productPriceStatus({...p,koreaPriceDetails:kr?.['가격 상세'] || p.koreaPriceDetails});
+    const pendingPrice = priceStatus === 'not-announced';
+    const displayKrw = pendingPrice ? null : (hasStreet ? street : (hasOfficial ? official : (hasEmbeddedPrice ? embeddedPrice : null)));
     const img = imageMap?.[p.id] || imageMap?.[name];
     const imageSrc = typeof img === 'string' ? img : img?.src || null;
     const cameraSystem = normalizedSystem(p);
@@ -258,9 +263,10 @@ export async function loadProducts(){
     return {
       ...p,
       cameraSystem,
+      priceStatus,
       currentPriceKrw: displayKrw,
-      koreaStreetPriceKrw: hasStreet ? street : null,
-      koreaOfficialPriceKrw: hasOfficial ? official : (hasEmbeddedPrice ? embeddedPrice : null),
+      koreaStreetPriceKrw: !pendingPrice && hasStreet ? street : null,
+      koreaOfficialPriceKrw: pendingPrice ? null : (hasOfficial ? official : (hasEmbeddedPrice ? embeddedPrice : null)),
       koreaPriceType: kr?.['가격 유형'] || p.koreaPriceType || '',
       koreaDistribution: kr?.['유통 형태'] || p.koreaDistribution || '',
       koreaSaleStatus: kr?.['국내 유통 상태'] || p.koreaSaleStatus || '',
@@ -395,10 +401,6 @@ export function findBatteriesForBody(body, batteries=[]){
   return (Array.isArray(batteries) ? batteries : []).filter(b => batteryMatchesBody(b, body));
 }
 
-export const money = v => {
-  const n = Number(v);
-  return Number.isFinite(n) && n > 0 ? `${Math.round(n).toLocaleString('ko-KR')}원` : '가격 미확인';
-};
 export const yes = v => v === '예' || v === '있음';
 export function productLabel(p){ return p.officialName || p.model || p.modelCode || p.id; }
 export function productKey(p){ return p.modelCode || p.model || p.id; }

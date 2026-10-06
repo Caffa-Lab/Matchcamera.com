@@ -66,6 +66,26 @@ def cached(url):
  return json.loads(p.read_text(encoding='utf-8')) if p.exists() else None
 def number(s):
  m=re.search(r'\d+(?:\.\d+)?',s.replace(',',''));return float(m[0]) if m else None
+def weight_grams(value,mount=None):
+ # Tamron lists mount-specific values before each parenthesized mount name.
+ # Select only the requested mount, even when HTML has collapsed line breaks.
+ markers=list(re.finditer(r'\((Sony|Nikon|FUJIFILM|Canon)\)',value,re.I))
+ if markers:
+  wanted={'Sony E':'sony','Nikon Z':'nikon','Fujifilm X':'fujifilm','Canon RF':'canon'}.get(mount)
+  segments=[];start=0
+  for marker in markers:
+   if marker[1].lower()==wanted:segments.append(value[start:marker.start()].strip())
+   start=marker.end()
+  if len(segments)!=1:return None
+  value=segments[0]
+ # Match the whole grouped number: a suffix match would turn 1,180 g into 180 g.
+ numeric=r'(?:\d{1,3}(?:,\d{3})+(?:\.\d+)?|\d+(?:\.\d+)?)'
+ match=re.search(r'(?<![\d.,])('+numeric+r')(?![\d.,])\s*g\b',value,re.I)
+ if match:return float(match[1].replace(',',''))
+ # Numeric-only rows are already labelled grams by the whitelisted source.
+ if re.fullmatch(numeric,value):return float(value.replace(',',''))
+ return None
+
 def extract(page,product):
  host=urlparse(page['url']).netloc
  if page.get('status')!=200 or host not in ALLOWED:return {}
@@ -124,10 +144,12 @@ def extract(page,product):
    continue
   out[key]=v
   if key=='무게 상세':
-   # Numeric-only rows are already labelled grams by the whitelisted source.
-   m=re.search(r'(\d+(?:\.\d+)?)\s*g\b',v,re.I) or (re.fullmatch(r'\d+(?:\.\d+)?',v))
-   if m and (product['type']=='렌즈' or host=='asia.canon'):
-    out['무게(g)']=float(m[1] if m.lastindex else m[0])
+   grams=weight_grams(v,product.get('mount'))
+   if grams is None and re.search(r'\((Sony|Nikon|FUJIFILM|Canon)\)',v,re.I):
+    # Do not replace an existing exact-mount record with another mount's text.
+    out.pop(key,None);continue
+   if grams is not None and (product['type']=='렌즈' or host=='asia.canon'):
+    out['무게(g)']=grams
     if product['type']=='바디' and host=='asia.canon':out['무게 기준']='배터리·메모리카드 포함'
   if key=='렌즈 치수 상세':
    m=re.search(r'[Øφ]?\s*(\d+(?:\.\d+)?)\s*(?:mm)?\s*[x×]\s*(\d+(?:\.\d+)?)',v,re.I)
@@ -156,7 +178,9 @@ def run():
    urls+=overrides.get(p['id'],[])
    if p['manufacturer']=='Tamron':
     code=re.search(r'\b([A-Z]\d{3})\b',p.get('modelCode',''))
-    if code:urls.append('https://www.tamron.com/global/consumer/lenses/'+code[1].lower()+'/spec.html')
+    if code:
+     slug=code[1].lower()+('x' if code[1]=='A057' and p.get('mount')=='Fujifilm X' else '')
+     urls.append('https://www.tamron.com/global/consumer/lenses/'+slug+'/spec.html')
    fields={};sources={}
    for u in dict.fromkeys(urls):
     page=cached(u)

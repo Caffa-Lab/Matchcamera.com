@@ -1,6 +1,7 @@
 import {readFile,writeFile} from 'node:fs/promises';
 import path from 'node:path';
 import {fileURLToPath} from 'node:url';
+import {productPriceStatus} from '../public/assets/js/price-format.js';
 
 const ROOT=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
 const DATA=path.join(ROOT,'public','data');
@@ -30,9 +31,13 @@ for(const row of Array.isArray(prices)?prices:[]){
   if(!priceByName.has(name))priceByName.set(name,[]);priceByName.get(name).push(row);
 }
 
-function displayPrice(p){
+function priceRecord(p){
   const name=label(p);const mount=String(p.mount||'').trim();
   let row=priceExact.get(`${name}||${mount}`);const same=priceByName.get(name)||[];if(!row&&same.length===1)row=same[0];
+  return row;
+}
+function displayPrice(p,row,priceStatus){
+  if(priceStatus==='not-announced')return null;
   for(const value of [row?.['한국 기준 가격(원)'],row?.['한국 공식/출시 가격(원)'],p.currentPriceKrw]){
     const number=Number(value);if(Number.isFinite(number)&&number>0)return number;
   }
@@ -49,6 +54,8 @@ function normalizedSystem(p){
 const index=merge(base,expansion,partners,hasselblad)
   .filter(p=>p?.active!==false&&p?.enabled!==false&&p?.visibility!=='hidden')
   .map(p=>{
+    const row=priceRecord(p);
+    const priceStatus=productPriceStatus({...p,koreaPriceDetails:row?.['가격 상세']||p.koreaPriceDetails});
     const aliases=[p.id,p.officialName,p.model,p.modelCode,p.series,...(p.searchAliases||[]),p.specs?.['모델 코드'],p.specs?.['렌즈 모델명'],p.specs?.['정식 제품명']]
       .map(value=>String(value||'').trim()).filter(Boolean);
     return {
@@ -56,7 +63,7 @@ const index=merge(base,expansion,partners,hasselblad)
       model:p.model||null,modelCode:p.modelCode||null,series:p.series||null,mount:p.mount||null,
       cameraSystem:normalizedSystem(p),sensorFormat:p.sensorFormat||null,lensFormat:p.lensFormat||null,
       focalLength:p.focalLength||null,maxAperture:p.maxAperture||null,releaseYear:p.releaseYear||null,
-      currentSale:p.currentSale||null,currentPriceKrw:displayPrice(p),imageSrc:imageSrc(p),
+      currentSale:p.currentSale||null,currentPriceKrw:displayPrice(p,row,priceStatus),priceStatus,imageSrc:imageSrc(p),
       filterDiameterMm:p.filterDiameterMm??p.specs?.['필터 구경(mm)']??null,
       exifAliases:[...new Set(aliases)],active:true,
     };

@@ -1,5 +1,5 @@
-import {loadProductIndex, loadProducts, money, productLabel, brandLogoUrl} from './data.js?v=20260902-performance';
-import {openProductDetail} from './product-detail.js?v=20260915-phase1';
+import {loadProductIndex, loadProducts, productMoney, productLabel, brandLogoUrl} from './data.js?v=20261006-catalog';
+import {openProductDetail} from './product-detail.js?v=20261006-catalog';
 
 const $ = s => document.querySelector(s);
 const esc = (v='') => String(v).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -117,7 +117,7 @@ function visual(p){
 }
 function card(p){
   const format=p.type==='바디'?(p.sensorFormat||p.cameraSystem||''):(p.focalLength||p.lensFormat||'');
-  return `<article class="featured-card" data-product-detail="${esc(p.id)}" role="button" tabindex="0" aria-label="${esc(productLabel(p))} 상세 보기">${visual(p)}<small>${esc(p.manufacturer)} · ${esc(p.mount||'')}</small><h3>${esc(productLabel(p))}</h3><div class="featured-meta">${esc(format)}${p.releaseYear?` · ${p.releaseYear}`:''}</div><div class="featured-price">${esc(money(p.currentPriceKrw))}</div></article>`;
+  return `<article class="featured-card" data-product-detail="${esc(p.id)}" role="button" tabindex="0" aria-label="${esc(productLabel(p))} 상세 보기">${visual(p)}<small>${esc(p.manufacturer)} · ${esc(p.mount||'')}</small><h3>${esc(productLabel(p))}</h3><div class="featured-meta">${esc(format)}${p.releaseYear?` · ${p.releaseYear}`:''}</div><div class="featured-price">${esc(productMoney(p))}</div></article>`;
 }
 
 try{

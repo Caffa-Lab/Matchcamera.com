@@ -1,4 +1,5 @@
-import {brandLogoUrl, money, productLabel} from './data.js?v=20260901-all';
+import {brandLogoUrl, money, productMoney, productLabel} from './data.js?v=20261006-catalog';
+import {isPricePending} from './price-format.js?v=20261006-catalog';
 import {correctionUrl} from './product-feedback.js?v=20260915-phase1';
 
 const esc=(value='')=>String(value).replace(/[&<>"']/g,char=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
@@ -11,7 +12,8 @@ const safeSource=value=>{
 export function priceDetailsMarkup(p){
   const details=p.koreaPriceDetails;
   const labels={current:'한국 공식 현재가',launch:'한국 출시가',historical:'과거 공식 가격',unverified:'이전 기록 · 재확인 필요'};
-  const offers=Array.isArray(details?.offers)?details.offers:[];
+  const pending=isPricePending(p);
+  const offers=!pending&&Array.isArray(details?.offers)?details.offers:[];
   const cards=offers.map(offer=>{
     const url=safeSource(offer.sourceUrl);
     return `<div class="product-price-record"><div><span>${esc(labels[offer.kind]||'한국 가격')}</span><strong>${esc(money(offer.amount))}</strong></div>
@@ -21,10 +23,10 @@ export function priceDetailsMarkup(p){
       ${url?`<a href="${esc(url)}" target="_blank" rel="noopener noreferrer">${esc(offer.sourceName||'공식 출처')} ↗</a>`:''}</div>`;
   }).join('');
   const fallbackUrl=safeSource(p.koreaPriceSource);
-  const status=details?.statusLabel||p.koreaPriceVerification||'한국 공식 가격 미확인';
+  const status=details?.statusLabel||p.koreaPriceVerification||(pending?'한국 가격 미발표':'한국 공식 가격 미확인');
   return `<section class="product-price-details" aria-label="한국 가격 상세"><h3>한국 가격 상세</h3>
     <p class="product-price-verification">${esc(status)}${details?.reviewedAt?` · 검토일 ${esc(details.reviewedAt)}`:''}</p>
-    ${cards?`<div class="product-price-records">${cards}</div>`:`<p>${esc(p.koreaPriceNote||'공식 현재가와 국내 출시가를 확인하지 못했습니다.')}</p>${fallbackUrl?`<a href="${esc(fallbackUrl)}" target="_blank" rel="noopener noreferrer">가격 출처 확인 ↗</a>`:''}`}
+    ${cards?`<div class="product-price-records">${cards}</div>`:`<p>${esc(p.koreaPriceNote||(pending?'한국 공식 가격 발표 전으로 가격 미정입니다.':'공식 현재가와 국내 출시가를 확인하지 못했습니다.'))}</p>${fallbackUrl?`<a href="${esc(fallbackUrl)}" target="_blank" rel="noopener noreferrer">가격 출처 확인 ↗</a>`:''}`}
     ${details?.notes?`<p class="product-price-note">${esc(details.notes)}</p>`:''}
     <p class="product-price-policy">원화 기준이며, 쿠폰·캐시백·중고·병행수입 가격은 포함하지 않습니다. 출시가와 과거 가격은 현재 구매가와 다를 수 있습니다.</p></section>`;
 }
@@ -100,7 +102,7 @@ export function openProductDetail(p){
           <strong>${esc(label)}</strong>
           <div class="product-detail-status">${esc(saleStatus)}</div>
           <small>${esc(priceLabel)}</small>
-          <b>${esc(money(p.currentPriceKrw))}</b>
+          <b>${esc(productMoney(p))}</b>
           ${p.koreaPriceDate?`<em>가격 기준일 ${esc(p.koreaPriceDate)}</em>`:''}
         </div>
       </section>

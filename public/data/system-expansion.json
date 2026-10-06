@@ -12791,7 +12791,8 @@
       "손떨림 보정 상세": "5축 센서 시프트 방식, 최대 6.0단",
       "4K 지원 여부": "있음",
       "내장 ND 필터": "4스톱",
-      "공식몰 재고 상태": "공식몰 Silver·Black 품절; 모델 단종을 뜻하지 않음"
+      "공식몰 재고 상태": "공식몰 Silver·Black 품절; 모델 단종을 뜻하지 않음",
+      "가격 기준일": "2026-10-01"
     },
     "specSources": {
       "센서 종류": {
@@ -12949,7 +12950,9 @@
     },
     "megapixels": 40.2,
     "active": true,
-    "koreaAvailabilitySource": "https://fujifilm-korea.co.kr/products/id/1330"
+    "koreaAvailabilitySource": "https://fujifilm-korea.co.kr/products/id/1330",
+    "currentPriceKrw": 2399000,
+    "priceStatus": "confirmed-current"
   },
   {
     "id": "ext-fujifilm-fujifilm-x100v",
@@ -24531,7 +24534,8 @@
       "가로 크기(mm)": 133.5,
       "세로 크기(mm)": 90.4,
       "두께(mm)": 76.5,
-      "공식몰 재고 상태": "공식몰 Silver 판매가 표시, Black 품절"
+      "공식몰 재고 상태": "공식몰 Silver 판매가 표시, Black 품절",
+      "가격 기준일": "2026-10-01"
     },
     "megapixels": 102,
     "active": true,
@@ -24665,7 +24669,9 @@
         "url": "https://www.fujifilm-korea.co.kr/products/id/1344",
         "checkedAt": "2026-09-14"
       }
-    }
+    },
+    "currentPriceKrw": 8359000,
+    "priceStatus": "confirmed-current"
   },
   {
     "manufacturer": "Fujifilm",

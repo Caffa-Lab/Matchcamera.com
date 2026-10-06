@@ -17972,10 +17972,10 @@
     "model": "FE 100-400mm F5.6-8 OSS",
     "officialName": "Sony FE 100-400mm F5.6-8 OSS",
     "modelCode": "SEL100400",
-    "releaseDate": "2026",
+    "releaseDate": "2026-08-11",
     "releaseYear": 2026,
     "discontinued": "아니오",
-    "currentSale": "아니오",
+    "currentSale": "예",
     "successor": null,
     "sensorFormat": null,
     "cropFactor": 1.0,
@@ -17990,11 +17990,11 @@
     "ibis": null,
     "oss": "있음",
     "weightG": 654.0,
-    "saleStatus": "출시 예정",
-    "note": "2026-08-27 기준 Sony US 예약판매/출시 예정. 일부 DB 주문코드 SEL-100400B 표기.",
-    "officialSource": "https://support.d-imaging.sony.co.jp/www/cscs/lens_body/index.php?area=gb&lang=en&mdl=SEL100400",
-    "verifiedAt": "2026-08-27",
-    "verification": "Sony 공식 호환성 목록 + M. Hohner 교차검증",
+    "saleStatus": "현재 판매",
+    "note": "소니코리아 국내 출시 보도자료 확인. 한국 공식 표시 가격 1,299,000원.",
+    "officialSource": "https://www.sony.co.kr/electronics/e-mount-lenses/sel100400",
+    "verifiedAt": "2026-10-06",
+    "verification": "Sony Korea 국내 출시 보도자료 및 공식 제품 페이지 확인",
     "specs": {
       "제조사": "Sony",
       "카메라 방식": "미러리스",
@@ -18004,10 +18004,10 @@
       "모델명": "FE 100-400mm F5.6-8 OSS",
       "정식 제품명": "Sony FE 100-400mm F5.6-8 OSS",
       "모델 코드": "SEL100400",
-      "출시일": "2026",
+      "출시일": "2026-08-11",
       "출시년도": 2026,
       "단종 여부": "아니오",
-      "현재 판매 여부": "아니오",
+      "현재 판매 여부": "예",
       "센서 크롭 배수": 1.0,
       "렌즈 마운트": "Sony E",
       "렌즈 포맷": "FE",
@@ -18043,12 +18043,12 @@
       "렌즈 길이(mm)": 164.5,
       "방진방적 여부": "있음",
       "무게(g)": 654.0,
-      "판매 상태": "출시 예정",
-      "비고": "2026-08-27 기준 Sony US 예약판매/출시 예정. 일부 DB 주문코드 SEL-100400B 표기.",
-      "공식 출처 URL": "https://support.d-imaging.sony.co.jp/www/cscs/lens_body/index.php?area=gb&lang=en&mdl=SEL100400",
+      "판매 상태": "현재 판매",
+      "비고": "소니코리아 국내 출시 보도자료 확인. 한국 공식 표시 가격 1,299,000원.",
+      "공식 출처 URL": "https://www.sony.co.kr/electronics/e-mount-lenses/sel100400",
       "교차검증 URL": "https://www.mhohner.de/sony-minolta/lenses.php",
-      "데이터 기준일": "2026-08-27",
-      "검증 상태": "추가 사양은 모델별 공식 자료 확인 · 미확인 항목은 별도 표시",
+      "데이터 기준일": "2026-10-06",
+      "검증 상태": "Sony Korea 국내 출시 보도자료 및 공식 제품 페이지 확인",
       "화각": "24°-6°10'",
       "최단 촬영 거리 상세": "1.13(W)-0.86(T)",
       "손떨림 보정 상세": "レンズ内手ブレ補正方式",
@@ -18057,7 +18057,9 @@
       "사양 확인일": "2026-09-11",
       "공식 사양 출처": "https://www.sony.jp/ichigan/products/SEL100400/spec",
       "최대 지름(mm)": 78.2,
-      "길이(mm)": 164.5
+      "길이(mm)": 164.5,
+      "한국 출시일": "2026-08-11",
+      "가격 기준일": "2026-10-06"
     },
     "specSources": {
       "렌즈 구성": {
@@ -18111,8 +18113,15 @@
       "무게(g)": {
         "url": "https://www.sony.jp/ichigan/products/SEL100400/spec",
         "checkedAt": "2026-09-11"
+      },
+      "한국 출시일": {
+        "url": "https://www.sony.co.kr/handler/DisplayNewsList",
+        "checkedAt": "2026-10-06"
       }
-    }
+    },
+    "koreaReleaseDate": "2026-08-11",
+    "currentPriceKrw": 1299000,
+    "priceStatus": "confirmed-current"
   },
   {
     "id": "sony-렌즈-sony-e-sel200600g",
@@ -35070,7 +35079,7 @@
     "releaseDate": "2026",
     "releaseYear": 2026,
     "discontinued": "확인 필요",
-    "currentSale": "확인 필요",
+    "currentSale": "예",
     "successor": null,
     "sensorFormat": null,
     "cropFactor": null,
@@ -35085,7 +35094,7 @@
     "ibis": null,
     "oss": "없음",
     "weightG": 350.0,
-    "saleStatus": "확인 필요",
+    "saleStatus": "현재 판매",
     "note": null,
     "officialSource": "https://www.nikonusa.com/lenses/mirrorless-lenses",
     "verifiedAt": "2026-08-28",
@@ -35102,7 +35111,7 @@
       "출시일": "2026",
       "출시년도": 2026,
       "단종 여부": "확인 필요",
-      "현재 판매 여부": "확인 필요",
+      "현재 판매 여부": "예",
       "렌즈 마운트": "Nikon Z",
       "렌즈 포맷": "FX",
       "대응 센서 포맷": "Full Frame",
@@ -35119,7 +35128,7 @@
       "AF 지원 여부": "있음",
       "MF 지원 여부": "있음",
       "렌즈 손떨림 보정(OSS) 여부": "없음",
-      "판매 상태": "확인 필요",
+      "판매 상태": "현재 판매",
       "공식 출처 URL": "https://www.nikonusa.com/lenses/mirrorless-lenses",
       "교차검증 URL": "https://en.wikipedia.org/wiki/Nikon_Z-mount",
       "데이터 기준일": "2026-08-28",
@@ -35182,6 +35191,14 @@
       "무게(g)": {
         "url": "https://imaging.nikon.com/imaging/lineup/lens/z-mount/z_24-105mmf4-71/",
         "checkedAt": "2026-09-11"
+      },
+      "현재 판매 여부": {
+        "url": "https://www.nikc.nikon.com/product/nikkor",
+        "checkedAt": "2026-10-06"
+      },
+      "판매 상태": {
+        "url": "https://www.nikc.nikon.com/product/nikkor",
+        "checkedAt": "2026-10-06"
       }
     }
   },
@@ -35980,7 +35997,7 @@
     "category": "고배율/표준 줌",
     "ibis": null,
     "oss": "없음",
-    "weightG": 210.0,
+    "weightG": 1210,
     "saleStatus": "확인 필요",
     "note": null,
     "officialSource": "https://www.nikonusa.com/lenses/mirrorless-lenses",
@@ -36032,7 +36049,7 @@
       "동봉 액세서리": "LC-95B Lens Cap (front cap), LF-N1 Lens Cap (rear cap), HB-116 Lens Hood, CL-C5 Lens Case",
       "사양 확인일": "2026-09-11",
       "공식 사양 출처": "https://imaging.nikon.com/imaging/lineup/lens/z-mount/z_28-135mmf4/",
-      "무게(g)": 210.0
+      "무게(g)": 1210
     },
     "specSources": {
       "최소 조리개": {
@@ -36236,7 +36253,7 @@
     "category": "광각 단렌즈",
     "ibis": null,
     "oss": "없음",
-    "weightG": 60.0,
+    "weightG": 1060,
     "saleStatus": "확인 필요",
     "note": null,
     "officialSource": "https://www.nikonusa.com/lenses/mirrorless-lenses",
@@ -36288,7 +36305,7 @@
       "동봉 액세서리": "LC-82B Lens Cap (front cap), LF-N1 Lens Cap (rear cap), HB-110 Lens Hood, CL-C2 Lens Case",
       "사양 확인일": "2026-09-11",
       "공식 사양 출처": "https://imaging.nikon.com/imaging/lineup/lens/z-mount/z_35mmf12s/",
-      "무게(g)": 60.0
+      "무게(g)": 1060
     },
     "specSources": {
       "최소 조리개": {
@@ -37644,7 +37661,7 @@
     "category": "표준 단렌즈",
     "ibis": null,
     "oss": "없음",
-    "weightG": 0.0,
+    "weightG": 2000,
     "saleStatus": "확인 필요",
     "note": null,
     "officialSource": "https://www.nikonusa.com/lenses/mirrorless-lenses",
@@ -37696,7 +37713,7 @@
       "동봉 액세서리": "LC-82B 82 mm snap-on Front Lens Cap, LF-N1 Rear Lens Cap, HN-38 Screw-on Lens Hood, CT-101 Trunk Case",
       "사양 확인일": "2026-09-11",
       "공식 사양 출처": "https://imaging.nikon.com/imaging/lineup/lens/z-mount/z_58mmf095s/",
-      "무게(g)": 0.0
+      "무게(g)": 2000
     },
     "specSources": {
       "최소 조리개": {
@@ -37900,7 +37917,7 @@
     "category": "망원 줌",
     "ibis": null,
     "oss": "있음",
-    "weightG": 440.0,
+    "weightG": 1440,
     "saleStatus": "확인 필요",
     "note": null,
     "officialSource": "https://www.nikonusa.com/lenses/mirrorless-lenses",
@@ -37952,7 +37969,7 @@
       "동봉 액세서리": "LC-77B Lens Cap (front cap), LF-N1 Lens Cap (rear cap), HB-92 Lens Hood, CL-C3 Lens Case",
       "사양 확인일": "2026-09-11",
       "공식 사양 출처": "https://imaging.nikon.com/imaging/lineup/lens/z-mount/z_70-200mmf28_vr_s/",
-      "무게(g)": 440.0
+      "무게(g)": 1440
     },
     "specSources": {
       "최소 조리개": {
@@ -38014,7 +38031,7 @@
     "releaseDate": "2026",
     "releaseYear": 2026,
     "discontinued": "확인 필요",
-    "currentSale": "확인 필요",
+    "currentSale": "예",
     "successor": null,
     "sensorFormat": null,
     "cropFactor": null,
@@ -38028,8 +38045,8 @@
     "category": "망원 줌",
     "ibis": null,
     "oss": "있음",
-    "weightG": 180.0,
-    "saleStatus": "확인 필요",
+    "weightG": 1180,
+    "saleStatus": "현재 판매",
     "note": null,
     "officialSource": "https://www.nikonusa.com/lenses/mirrorless-lenses",
     "verifiedAt": "2026-08-28",
@@ -38046,7 +38063,7 @@
       "출시일": "2026",
       "출시년도": 2026,
       "단종 여부": "확인 필요",
-      "현재 판매 여부": "확인 필요",
+      "현재 판매 여부": "예",
       "렌즈 마운트": "Nikon Z",
       "렌즈 포맷": "FX",
       "대응 센서 포맷": "Full Frame",
@@ -38063,7 +38080,7 @@
       "AF 지원 여부": "있음",
       "MF 지원 여부": "있음",
       "렌즈 손떨림 보정(OSS) 여부": "있음",
-      "판매 상태": "확인 필요",
+      "판매 상태": "현재 판매",
       "공식 출처 URL": "https://www.nikonusa.com/lenses/mirrorless-lenses",
       "교차검증 URL": "https://en.wikipedia.org/wiki/Nikon_Z-mount",
       "데이터 기준일": "2026-08-28",
@@ -38080,7 +38097,7 @@
       "동봉 액세서리": "LC-77B Lens Cap (front cap), LF-N1 Lens Cap (rear cap), HB-119 Lens Hood, CL-C3 Lens Case",
       "사양 확인일": "2026-09-11",
       "공식 사양 출처": "https://imaging.nikon.com/imaging/lineup/lens/z-mount/z_70-200mmf28_vr_s2/",
-      "무게(g)": 180.0
+      "무게(g)": 1180
     },
     "specSources": {
       "최소 조리개": {
@@ -38126,6 +38143,14 @@
       "무게(g)": {
         "url": "https://imaging.nikon.com/imaging/lineup/lens/z-mount/z_70-200mmf28_vr_s2/",
         "checkedAt": "2026-09-11"
+      },
+      "현재 판매 여부": {
+        "url": "https://www.nikc.nikon.com/product/nikkor",
+        "checkedAt": "2026-10-06"
+      },
+      "판매 상태": {
+        "url": "https://www.nikc.nikon.com/product/nikkor",
+        "checkedAt": "2026-10-06"
       }
     }
   },
@@ -38412,7 +38437,7 @@
     "category": "초망원 줌",
     "ibis": null,
     "oss": "있음",
-    "weightG": 435.0,
+    "weightG": 1435,
     "saleStatus": "확인 필요",
     "note": null,
     "officialSource": "https://www.nikonusa.com/lenses/mirrorless-lenses",
@@ -38464,7 +38489,7 @@
       "동봉 액세서리": "LC-77B Lens Cap (front cap), LF-N1 Lens Cap (rear cap), HB-103 Lens Hood, CL-C3 Lens Case",
       "사양 확인일": "2026-09-11",
       "공식 사양 출처": "https://imaging.nikon.com/imaging/lineup/lens/z-mount/z_100-400mmf45-56_vr_s/",
-      "무게(g)": 435.0
+      "무게(g)": 1435
     },
     "specSources": {
       "최소 조리개": {
@@ -38796,7 +38821,7 @@
     "category": "초망원 줌",
     "ibis": null,
     "oss": "있음",
-    "weightG": 140.0,
+    "weightG": 2140,
     "saleStatus": "확인 필요",
     "note": null,
     "officialSource": "https://www.nikonusa.com/lenses/mirrorless-lenses",
@@ -38848,7 +38873,7 @@
       "동봉 액세서리": "LC-95B Lens Cap (front cap), LF-N1 Lens Cap (rear cap), HB-109 Lens Hood, CL-C6 Lens Case",
       "사양 확인일": "2026-09-11",
       "공식 사양 출처": "https://imaging.nikon.com/imaging/lineup/lens/z-mount/z_180-600mmf56-63_vr/",
-      "무게(g)": 140.0
+      "무게(g)": 2140
     },
     "specSources": {
       "최소 조리개": {
@@ -38924,7 +38949,7 @@
     "category": "망원/초망원 단렌즈",
     "ibis": null,
     "oss": "있음",
-    "weightG": 950.0,
+    "weightG": 2950,
     "saleStatus": "확인 필요",
     "note": null,
     "officialSource": "https://www.nikonusa.com/lenses/mirrorless-lenses",
@@ -38976,7 +39001,7 @@
       "동봉 액세서리": "LC-K105 Lens Cap (front cap), LF-N1 Lens Cap (rear cap), HK-42 Lens Hood, CL-L3 Lens Case, LN-3 Strap",
       "사양 확인일": "2026-09-11",
       "공식 사양 출처": "https://imaging.nikon.com/imaging/lineup/lens/z-mount/z_400mmf28_tc_vr_s/",
-      "무게(g)": 950.0
+      "무게(g)": 2950
     },
     "specSources": {
       "최소 조리개": {
@@ -39052,7 +39077,7 @@
     "category": "망원/초망원 단렌즈",
     "ibis": null,
     "oss": "있음",
-    "weightG": 245.0,
+    "weightG": 1245,
     "saleStatus": "확인 필요",
     "note": null,
     "officialSource": "https://www.nikonusa.com/lenses/mirrorless-lenses",
@@ -39104,7 +39129,7 @@
       "동봉 액세서리": "LC-95B Lens Cap (front cap), LF-N1 Lens Cap (rear cap), HB-105 Lens Hood, CL-C5 Lens Case",
       "사양 확인일": "2026-09-11",
       "공식 사양 출처": "https://imaging.nikon.com/imaging/lineup/lens/z-mount/z_400mmf45_vr_s/",
-      "무게(g)": 245.0
+      "무게(g)": 1245
     },
     "specSources": {
       "최소 조리개": {
@@ -39180,7 +39205,7 @@
     "category": "망원/초망원 단렌즈",
     "ibis": null,
     "oss": "있음",
-    "weightG": 260.0,
+    "weightG": 3260,
     "saleStatus": "확인 필요",
     "note": null,
     "officialSource": "https://www.nikonusa.com/lenses/mirrorless-lenses",
@@ -39232,7 +39257,7 @@
       "동봉 액세서리": "LC-K107 Lens Cap (front cap), LF-N1 Lens Cap (rear cap), HK-43 Lens Hood, CL-L3 Lens Case",
       "사양 확인일": "2026-09-11",
       "공식 사양 출처": "https://imaging.nikon.com/imaging/lineup/lens/z-mount/z_600mmf4_tc_vr_s/",
-      "무게(g)": 260.0
+      "무게(g)": 3260
     },
     "specSources": {
       "최소 조리개": {
@@ -39308,7 +39333,7 @@
     "category": "망원/초망원 단렌즈",
     "ibis": null,
     "oss": "있음",
-    "weightG": 470.0,
+    "weightG": 1470,
     "saleStatus": "확인 필요",
     "note": null,
     "officialSource": "https://www.nikonusa.com/lenses/mirrorless-lenses",
@@ -39360,7 +39385,7 @@
       "동봉 액세서리": "LC-95B Lens Cap (front cap), LF-N1 Lens Cap (rear cap), HB-105A Lens Hood, CL-C6 Lens Case",
       "사양 확인일": "2026-09-11",
       "공식 사양 출처": "https://imaging.nikon.com/imaging/lineup/lens/z-mount/z_600mmf63_vr_s/",
-      "무게(g)": 470.0
+      "무게(g)": 1470
     },
     "specSources": {
       "최소 조리개": {
@@ -39436,7 +39461,7 @@
     "category": "망원/초망원 단렌즈",
     "ibis": null,
     "oss": "있음",
-    "weightG": 385.0,
+    "weightG": 2385,
     "saleStatus": "확인 필요",
     "note": null,
     "officialSource": "https://www.nikonusa.com/lenses/mirrorless-lenses",
@@ -39488,7 +39513,7 @@
       "동봉 액세서리": "LC-K106 Lens Cap (front cap), LF-N1 Lens Cap (rear cap), HB-104 Lens Hood, LN-3 Strap, CL-C3 Lens Case",
       "사양 확인일": "2026-09-11",
       "공식 사양 출처": "https://imaging.nikon.com/imaging/lineup/lens/z-mount/z_800mmf63_vr_s/",
-      "무게(g)": 385.0
+      "무게(g)": 2385
     },
     "specSources": {
       "최소 조리개": {
@@ -40047,7 +40072,8 @@
       "무게(g)": 445.0,
       "무게 기준": "배터리·메모리카드 포함",
       "동봉 액세서리": "Li-ion battery NP-W126S Headphone adapter Shoulder strap Clip attaching tool Body cap",
-      "배터리 모델": "NP-W126S"
+      "배터리 모델": "NP-W126S",
+      "가격 기준일": "2026-10-01"
     },
     "specSources": {
       "센서 종류": {
@@ -40115,7 +40141,9 @@
         "checkedAt": "2026-09-11"
       }
     },
-    "megapixels": 40.2
+    "megapixels": 40.2,
+    "currentPriceKrw": 2199000,
+    "priceStatus": "confirmed-current"
   },
   {
     "id": "fujifilm-바디-fujifilm-x-x-t1",
@@ -40875,7 +40903,8 @@
       "무게(g)": 438.0,
       "무게 기준": "배터리·메모리카드 포함",
       "동봉 액세서리": "리튬이온 배터리NP-W126S USB 케이블 헤드폰 어댑터 숄더 스트랩 바디캡",
-      "배터리 모델": "NP-W126S"
+      "배터리 모델": "NP-W126S",
+      "가격 기준일": "2026-10-01"
     },
     "specSources": {
       "센서 종류": {
@@ -40915,7 +40944,9 @@
         "checkedAt": "2026-09-11"
       }
     },
-    "megapixels": 40.2
+    "megapixels": 40.2,
+    "currentPriceKrw": 2029000,
+    "priceStatus": "confirmed-current"
   },
   {
     "id": "fujifilm-바디-fujifilm-x-x-h1",
@@ -41323,7 +41354,8 @@
       "HDMI 종류": "HDMI 마이크로 커넥터 (Type D)",
       "배터리 상세": "NP-W235 리튬이온배터리 (포함)",
       "동봉 액세서리": "리튬이온 배터리 NP-W235 AC 파워어댑터 AC-5VJ 플러그 어댑터 USB 케이블 헤드폰 어댑터 숄더 스트랩 바디캡 쿨링팬 커넥터 커버",
-      "배터리 모델": "NP-W235"
+      "배터리 모델": "NP-W235",
+      "가격 기준일": "2026-10-01"
     },
     "specSources": {
       "센서 종류": {
@@ -41375,7 +41407,9 @@
         "checkedAt": "2026-09-11"
       }
     },
-    "megapixels": 26.1
+    "megapixels": 26.1,
+    "currentPriceKrw": 1949000,
+    "priceStatus": "confirmed-current"
   },
   {
     "id": "fujifilm-바디-fujifilm-x-x-m1",
@@ -42382,7 +42416,8 @@
       "RAW 지원 여부": "있음",
       "HDMI 종류": "HDMI 마이크로 커넥터(Type D)",
       "동봉 액세서리": "교체 가능한 전자 뷰파인더 EVF-GFX3 리튬이온 배터리 NP-W235 AC 파워 어댑터AC-5VJ 플러그 어댑터 USB 케이블 숄더 스트랩 바디캡 핫슈커버 세로 배터리그립 커넥터 커버 메모리카드 슬롯 커버 싱크로터미널 커버 쿨링팬 커넥터 커버 케이블 프로젝터",
-      "배터리 모델": "NP-W235"
+      "배터리 모델": "NP-W235",
+      "가격 기준일": "2026-10-01"
     },
     "specSources": {
       "센서 종류": {
@@ -42430,7 +42465,9 @@
         "checkedAt": "2026-09-11"
       }
     },
-    "megapixels": 102.0
+    "megapixels": 102.0,
+    "currentPriceKrw": 11649000,
+    "priceStatus": "confirmed-current"
   },
   {
     "id": "fujifilm-바디-fujifilm-g-gfx100s-ii",
@@ -42494,7 +42531,8 @@
       "메모리카드 종류": "SD Card (-2GB) SDHC Card (-32GB) SDXC Card (-2TB) UHS-I UHS-II 비디오 스피드 클래스 V90 SSD (-2TB) *메모리 카드 호환성을 확인하려면 Fujifilm 웹사이트(https://fujifilm-x.com/support/compatibility/cameras/)를 참조하십시오.",
       "HDMI 종류": "HDMI 마이크로 커넥터 (타입 D)",
       "동봉 액세서리": "리튬이온 배터리 NP-W235 AC 전원 어댑터 AC-5VJ 플러그 어댑터 USB 케이블 숄더 스트랩 바디캡 핫슈커버 메모리 카드 슬롯 커버 케이블 프로텍터",
-      "배터리 모델": "NP-W235"
+      "배터리 모델": "NP-W235",
+      "가격 기준일": "2026-10-01"
     },
     "specSources": {
       "센서 종류": {
@@ -42530,7 +42568,9 @@
         "checkedAt": "2026-09-11"
       }
     },
-    "megapixels": 102.0
+    "megapixels": 102.0,
+    "currentPriceKrw": 7699000,
+    "priceStatus": "confirmed-current"
   },
   {
     "id": "fujifilm-바디-fujifilm-g-gfx-eterna-55",
@@ -45036,7 +45076,7 @@
     "category": "망원/초망원 단렌즈",
     "ibis": null,
     "oss": "있음",
-    "weightG": 265.0,
+    "weightG": 2265,
     "saleStatus": "판매 중",
     "note": null,
     "officialSource": "https://www.fujifilm-x.com/ko-kr/products/lenses/",
@@ -45086,7 +45126,7 @@
       "공식 사양 출처": "https://fujifilm-korea.co.kr/products/id/1146",
       "최대 지름(mm)": 122.0,
       "길이(mm)": 205.5,
-      "무게(g)": 265.0
+      "무게(g)": 2265
     },
     "specSources": {
       "렌즈 구성": {
@@ -45154,7 +45194,7 @@
     "category": "망원/초망원 단렌즈",
     "ibis": null,
     "oss": "있음",
-    "weightG": 335.0,
+    "weightG": 1335,
     "saleStatus": "판매 중",
     "note": null,
     "officialSource": "https://www.fujifilm-x.com/ko-kr/products/lenses/",
@@ -45202,7 +45242,7 @@
       "필터 구경(mm)": 95.0,
       "사양 확인일": "2026-09-11",
       "공식 사양 출처": "https://fujifilm-korea.co.kr/products/id/1338",
-      "무게(g)": 335.0,
+      "무게(g)": 1335,
       "동봉 액세서리": "전면 렌즈 캡 FLCP-95 후면 렌즈 캡 RLCP-001 렌즈 후드 렌즈 파우치 삼각대 칼라 풋 숄더 스트랩"
     },
     "specSources": {
@@ -46733,7 +46773,7 @@
     "category": "초망원 줌",
     "ibis": null,
     "oss": "있음",
-    "weightG": 375.0,
+    "weightG": 1375,
     "saleStatus": "판매 중",
     "note": null,
     "officialSource": "https://www.fujifilm-x.com/ko-kr/products/lenses/",
@@ -46783,7 +46823,7 @@
       "공식 사양 출처": "https://fujifilm-korea.co.kr/products/id/1156",
       "최대 지름(mm)": 94.8,
       "길이(mm)": 210.5,
-      "무게(g)": 375.0
+      "무게(g)": 1375
     },
     "specSources": {
       "렌즈 구성": {
@@ -46851,7 +46891,7 @@
     "category": "초망원 줌",
     "ibis": null,
     "oss": "있음",
-    "weightG": 605.0,
+    "weightG": 1605,
     "saleStatus": "판매 중",
     "note": null,
     "officialSource": "https://www.fujifilm-x.com/ko-kr/products/lenses/",
@@ -46903,7 +46943,7 @@
       "공식 사양 출처": "https://fujifilm-korea.co.kr/products/id/1222",
       "최대 지름(mm)": 99.0,
       "길이(mm)": 314.5,
-      "무게(g)": 605.0,
+      "무게(g)": 1605,
       "동봉 액세서리": "렌즈 앞캡 FLCP-82 렌즈 뒷캡 RLCP-001 렌즈 후드 렌즈 파우치 삼각대 칼라풋 숄더 스트랩"
     },
     "specSources": {
@@ -47481,7 +47521,7 @@
     "category": "시네마",
     "ibis": null,
     "oss": "없음",
-    "weightG": 80.0,
+    "weightG": 1080,
     "saleStatus": "판매 중",
     "note": null,
     "officialSource": "https://www.fujifilm-x.com/ko-kr/products/lenses/",
@@ -47531,7 +47571,7 @@
       "공식 사양 출처": "https://fujifilm-korea.co.kr/products/id/1161",
       "최대 지름(mm)": 87.0,
       "길이(mm)": 206.6,
-      "무게(g)": 80.0
+      "무게(g)": 1080
     },
     "specSources": {
       "렌즈 구성": {
@@ -47599,7 +47639,7 @@
     "category": "시네마",
     "ibis": null,
     "oss": "없음",
-    "weightG": 80.0,
+    "weightG": 1080,
     "saleStatus": "판매 중",
     "note": null,
     "officialSource": "https://www.fujifilm-x.com/ko-kr/products/lenses/",
@@ -47649,7 +47689,7 @@
       "공식 사양 출처": "https://fujifilm-korea.co.kr/products/id/1162",
       "최대 지름(mm)": 87.0,
       "길이(mm)": 206.6,
-      "무게(g)": 80.0
+      "무게(g)": 1080
     },
     "specSources": {
       "렌즈 구성": {
@@ -48568,7 +48608,7 @@
     "category": "인물/중망원 단렌즈",
     "ibis": null,
     "oss": "없음",
-    "weightG": 10.0,
+    "weightG": 1010,
     "saleStatus": "판매 중",
     "note": null,
     "officialSource": "https://www.fujifilm.com/kr/en/consumer/digitalcameras/gfx",
@@ -48618,7 +48658,7 @@
       "공식 사양 출처": "https://fujifilm-korea.co.kr/products/id/1123",
       "최대 지름(mm)": 94.3,
       "길이(mm)": 125.5,
-      "무게(g)": 10.0,
+      "무게(g)": 1010,
       "동봉 액세서리": "렌즈 캡 FLCP-77 렌즈 뒷캡 RLCP-002 렌즈 후드 렌즈 파우치"
     },
     "specSources": {
@@ -48809,7 +48849,7 @@
     "category": "망원/초망원 단렌즈",
     "ibis": null,
     "oss": "있음",
-    "weightG": 425.0,
+    "weightG": 1425,
     "saleStatus": "판매 중",
     "note": null,
     "officialSource": "https://www.fujifilm.com/kr/en/consumer/digitalcameras/gfx",
@@ -48859,7 +48899,7 @@
       "공식 사양 출처": "https://fujifilm-korea.co.kr/products/id/1125",
       "최대 지름(mm)": 108.0,
       "길이(mm)": 203.5,
-      "무게(g)": 425.0
+      "무게(g)": 1425
     },
     "specSources": {
       "렌즈 구성": {
@@ -48927,7 +48967,7 @@
     "category": "망원/초망원 단렌즈",
     "ibis": null,
     "oss": "있음",
-    "weightG": 375.0,
+    "weightG": 1375,
     "saleStatus": "판매 중",
     "note": null,
     "officialSource": "https://www.fujifilm.com/kr/en/consumer/digitalcameras/gfx",
@@ -48978,7 +49018,7 @@
       "공식 사양 출처": "https://fujifilm-korea.co.kr/products/id/1336",
       "최대 지름(mm)": 104.5,
       "길이(mm)": 246.5,
-      "무게(g)": 375.0,
+      "무게(g)": 1375,
       "동봉 액세서리": "전면 렌즈캡 FLCP-95 후면 렌즈캡 RLCP-002 렌즈 후드 삼각대 칼라풋 렌즈 파우치"
     },
     "specSources": {
@@ -49055,7 +49095,7 @@
     "category": "광각 줌",
     "ibis": null,
     "oss": "있음",
-    "weightG": 90.0,
+    "weightG": 2090,
     "saleStatus": "판매 중",
     "note": null,
     "officialSource": "https://www.fujifilm.com/kr/en/consumer/digitalcameras/gfx",
@@ -49101,7 +49141,7 @@
       "무게 상세": "2,090g",
       "사양 확인일": "2026-09-11",
       "공식 사양 출처": "https://fujifilm-korea.co.kr/products/id/1361",
-      "무게(g)": 90.0,
+      "무게(g)": 2090,
       "동봉 액세서리": "전면 렌즈 캡 후면 렌즈 캡 지지대 줌레버 렌즈 케이스"
     },
     "specSources": {
@@ -49345,7 +49385,7 @@
     "category": "고배율/표준 줌",
     "ibis": null,
     "oss": "있음",
-    "weightG": 150.0,
+    "weightG": 2150,
     "saleStatus": "판매 중",
     "note": null,
     "officialSource": "https://www.fujifilm.com/kr/en/consumer/digitalcameras/gfx",
@@ -49393,7 +49433,7 @@
       "필터 구경(mm)": 111.0,
       "사양 확인일": "2026-09-11",
       "공식 사양 출처": "https://fujifilm-korea.co.kr/products/id/1351",
-      "무게(g)": 150.0,
+      "무게(g)": 2150,
       "동봉 액세서리": "전면 렌즈 캡 후면 렌즈 캡 지지대 줌 레버 렌즈 케이스"
     },
     "specSources": {
@@ -49586,7 +49626,7 @@
     "category": "고배율/표준 줌",
     "ibis": null,
     "oss": "있음",
-    "weightG": 5.0,
+    "weightG": 1005,
     "saleStatus": "판매 중",
     "note": null,
     "officialSource": "https://www.fujifilm.com/kr/en/consumer/digitalcameras/gfx",
@@ -49636,7 +49676,7 @@
       "공식 사양 출처": "https://fujifilm-korea.co.kr/products/id/1127",
       "최대 지름(mm)": 93.0,
       "길이(mm)": 144.5,
-      "무게(g)": 5.0
+      "무게(g)": 1005
     },
     "specSources": {
       "렌즈 구성": {
@@ -49704,7 +49744,7 @@
     "category": "망원 줌",
     "ibis": null,
     "oss": "있음",
-    "weightG": 50.0,
+    "weightG": 1050,
     "saleStatus": "판매 중",
     "note": null,
     "officialSource": "https://www.fujifilm.com/kr/en/consumer/digitalcameras/gfx",
@@ -49754,7 +49794,7 @@
       "공식 사양 출처": "https://fujifilm-korea.co.kr/products/id/1128",
       "최대 지름(mm)": 89.5,
       "길이(mm)": 183.0,
-      "무게(g)": 50.0
+      "무게(g)": 1050
     },
     "specSources": {
       "렌즈 구성": {
@@ -49822,7 +49862,7 @@
     "category": "광각 단렌즈",
     "ibis": null,
     "oss": "없음",
-    "weightG": 340.0,
+    "weightG": 1340,
     "saleStatus": "판매 중",
     "note": null,
     "officialSource": "https://www.fujifilm.com/kr/en/consumer/digitalcameras/gfx",
@@ -49873,7 +49913,7 @@
       "공식 사양 출처": "https://fujifilm-korea.co.kr/products/id/1293",
       "최대 지름(mm)": 87.1,
       "길이(mm)": 138.5,
-      "무게(g)": 340.0,
+      "무게(g)": 1340,
       "동봉 액세서리": "렌즈 캡 FLCP-77 렌즈 뒷캡 RLCP-002 렌즈 후드 어댑터링 어댑터링 캡 FLCP-105 삼각대 칼라풋 렌즈 파우치"
     },
     "specSources": {
@@ -49950,7 +49990,7 @@
     "category": "매크로",
     "ibis": null,
     "oss": "없음",
-    "weightG": 255.0,
+    "weightG": 1255,
     "saleStatus": "판매 중",
     "note": null,
     "officialSource": "https://www.fujifilm.com/kr/en/consumer/digitalcameras/gfx",
@@ -50001,7 +50041,7 @@
       "공식 사양 출처": "https://fujifilm-korea.co.kr/products/id/1294",
       "최대 지름(mm)": 95.0,
       "길이(mm)": 149.0,
-      "무게(g)": 255.0,
+      "무게(g)": 1255,
       "동봉 액세서리": "렌즈 캡 FLCP-72 II 렌즈 뒷캡 RLCP-002 렌즈 파우치"
     },
     "specSources": {
@@ -63420,7 +63460,7 @@
     "category": "망원 줌",
     "ibis": null,
     "oss": "있음",
-    "weightG": 75.0,
+    "weightG": 1075,
     "saleStatus": "판매 중",
     "note": null,
     "officialSource": "https://explore.omsystem.com/c/en/lenses",
@@ -63463,7 +63503,7 @@
       "무게 상세": "1,075g (without tripod adapter, lens cap, lens rear cap and lens hood) 1,250g (with tripod adapter, without lens cap, lens rear cap and lens hood)",
       "사양 확인일": "2026-09-11",
       "공식 사양 출처": "https://explore.omsystem.com/us/en/m-zuiko-ed-50-200mm-f2-8-is-pro-white",
-      "무게(g)": 75.0
+      "무게(g)": 1075
     },
     "specSources": {
       "무게 상세": {
@@ -75095,7 +75135,7 @@
     "category": "초광각 단렌즈",
     "ibis": null,
     "oss": "없음",
-    "weightG": 160.0,
+    "weightG": 1160,
     "saleStatus": "확인 필요",
     "note": "Sony E 버전. Sigma 미러리스 전용 제품군.",
     "officialSource": "https://www.sigma-global.com/en/lenses/",
@@ -75149,7 +75189,7 @@
       "공식 사양 출처": "https://www.sigma-global.com/en/lenses/a023_14_14/",
       "최대 지름(mm)": 101.4,
       "길이(mm)": 151.9,
-      "무게(g)": 160.0
+      "무게(g)": 1160
     },
     "specSources": {
       "렌즈 구성": {
@@ -75229,7 +75269,7 @@
     "category": "초광각 단렌즈",
     "ibis": null,
     "oss": "없음",
-    "weightG": 170.0,
+    "weightG": 1170,
     "saleStatus": "확인 필요",
     "note": "L-Mount 버전. Sigma 미러리스 전용 제품군.",
     "officialSource": "https://www.sigma-global.com/en/lenses/",
@@ -75283,7 +75323,7 @@
       "공식 사양 출처": "https://www.sigma-global.com/en/lenses/a023_14_14/",
       "최대 지름(mm)": 101.4,
       "길이(mm)": 149.9,
-      "무게(g)": 170.0
+      "무게(g)": 1170
     },
     "specSources": {
       "렌즈 구성": {
@@ -75363,7 +75403,7 @@
     "category": "어안",
     "ibis": null,
     "oss": "없음",
-    "weightG": 360.0,
+    "weightG": 1360,
     "saleStatus": "확인 필요",
     "note": "Sony E 버전. Sigma 미러리스 전용 제품군.",
     "officialSource": "https://www.sigma-global.com/en/lenses/",
@@ -75417,7 +75457,7 @@
       "공식 사양 출처": "https://www.sigma-global.com/en/lenses/a024_15_14/",
       "최대 지름(mm)": 104.0,
       "길이(mm)": 159.9,
-      "무게(g)": 360.0
+      "무게(g)": 1360
     },
     "specSources": {
       "렌즈 구성": {
@@ -75497,7 +75537,7 @@
     "category": "어안",
     "ibis": null,
     "oss": "없음",
-    "weightG": 360.0,
+    "weightG": 1360,
     "saleStatus": "확인 필요",
     "note": "L-Mount 버전. Sigma 미러리스 전용 제품군.",
     "officialSource": "https://www.sigma-global.com/en/lenses/",
@@ -75551,7 +75591,7 @@
       "공식 사양 출처": "https://www.sigma-global.com/en/lenses/a024_15_14/",
       "최대 지름(mm)": 104.0,
       "길이(mm)": 157.9,
-      "무게(g)": 360.0
+      "무게(g)": 1360
     },
     "specSources": {
       "렌즈 구성": {
@@ -77299,7 +77339,7 @@
     "category": "광각 단렌즈",
     "ibis": null,
     "oss": "없음",
-    "weightG": 80.0,
+    "weightG": 1080,
     "saleStatus": "단종",
     "note": "Sony E 버전. Sigma 미러리스 전용 제품군.",
     "officialSource": "https://www.sigma-global.com/en/lenses/",
@@ -77354,7 +77394,7 @@
       "공식 사양 출처": "https://www.sigma-global.com/en/lenses/a019_35_12/",
       "최대 지름(mm)": 87.8,
       "길이(mm)": 138.2,
-      "무게(g)": 80.0
+      "무게(g)": 1080
     },
     "specSources": {
       "렌즈 구성": {
@@ -77438,7 +77478,7 @@
     "category": "광각 단렌즈",
     "ibis": null,
     "oss": "없음",
-    "weightG": 90.0,
+    "weightG": 1090,
     "saleStatus": "단종",
     "note": "L-Mount 버전. Sigma 미러리스 전용 제품군.",
     "officialSource": "https://www.sigma-global.com/en/lenses/",
@@ -77493,7 +77533,7 @@
       "공식 사양 출처": "https://www.sigma-global.com/en/lenses/a019_35_12/",
       "최대 지름(mm)": 87.8,
       "길이(mm)": 136.2,
-      "무게(g)": 90.0
+      "무게(g)": 1090
     },
     "specSources": {
       "렌즈 구성": {
@@ -80635,7 +80675,7 @@
     "category": "망원/초망원 단렌즈",
     "ibis": null,
     "oss": "있음",
-    "weightG": 800.0,
+    "weightG": 1800,
     "saleStatus": "확인 필요",
     "note": "Sony E 버전. Sigma 미러리스 전용 제품군.",
     "officialSource": "https://www.sigma-global.com/en/lenses/",
@@ -80690,7 +80730,7 @@
       "공식 사양 출처": "https://www.sigma-global.com/en/lenses/s025_200_2/",
       "최대 지름(mm)": 118.9,
       "길이(mm)": 203.0,
-      "무게(g)": 800.0
+      "무게(g)": 1800
     },
     "specSources": {
       "렌즈 구성": {
@@ -80774,7 +80814,7 @@
     "category": "망원/초망원 단렌즈",
     "ibis": null,
     "oss": "있음",
-    "weightG": 820.0,
+    "weightG": 1820,
     "saleStatus": "확인 필요",
     "note": "L-Mount 버전. Sigma 미러리스 전용 제품군.",
     "officialSource": "https://www.sigma-global.com/en/lenses/",
@@ -80829,7 +80869,7 @@
       "공식 사양 출처": "https://www.sigma-global.com/en/lenses/s025_200_2/",
       "최대 지름(mm)": 118.9,
       "길이(mm)": 201.0,
-      "무게(g)": 820.0
+      "무게(g)": 1820
     },
     "specSources": {
       "렌즈 구성": {
@@ -80913,7 +80953,7 @@
     "category": "망원/초망원 단렌즈",
     "ibis": null,
     "oss": "있음",
-    "weightG": 365.0,
+    "weightG": 1365,
     "saleStatus": "확인 필요",
     "note": "Sony E 버전. Sigma 미러리스 전용 제품군.",
     "officialSource": "https://www.sigma-global.com/en/lenses/",
@@ -80968,7 +81008,7 @@
       "공식 사양 출처": "https://www.sigma-global.com/en/lenses/s024_500_56/",
       "최대 지름(mm)": 107.6,
       "길이(mm)": 236.6,
-      "무게(g)": 365.0
+      "무게(g)": 1365
     },
     "specSources": {
       "렌즈 구성": {
@@ -81052,7 +81092,7 @@
     "category": "망원/초망원 단렌즈",
     "ibis": null,
     "oss": "있음",
-    "weightG": 370.0,
+    "weightG": 1370,
     "saleStatus": "확인 필요",
     "note": "L-Mount 버전. Sigma 미러리스 전용 제품군.",
     "officialSource": "https://www.sigma-global.com/en/lenses/",
@@ -81107,7 +81147,7 @@
       "공식 사양 출처": "https://www.sigma-global.com/en/lenses/s024_500_56/",
       "최대 지름(mm)": 107.6,
       "길이(mm)": 234.6,
-      "무게(g)": 370.0
+      "무게(g)": 1370
     },
     "specSources": {
       "렌즈 구성": {
@@ -83127,7 +83167,7 @@
     "category": "초망원 줌",
     "ibis": null,
     "oss": "있음",
-    "weightG": 485.0,
+    "weightG": 2485,
     "saleStatus": "확인 필요",
     "note": "Sony E 버전. Sigma 미러리스 전용 제품군.",
     "officialSource": "https://www.sigma-global.com/en/lenses/",
@@ -83182,7 +83222,7 @@
       "공식 사양 출처": "https://www.sigma-global.com/en/lenses/s023_60_600_45_63/",
       "최대 지름(mm)": 119.4,
       "길이(mm)": 281.2,
-      "무게(g)": 485.0
+      "무게(g)": 2485
     },
     "specSources": {
       "렌즈 구성": {
@@ -83266,7 +83306,7 @@
     "category": "초망원 줌",
     "ibis": null,
     "oss": "있음",
-    "weightG": 495.0,
+    "weightG": 2495,
     "saleStatus": "확인 필요",
     "note": "L-Mount 버전. Sigma 미러리스 전용 제품군.",
     "officialSource": "https://www.sigma-global.com/en/lenses/",
@@ -83321,7 +83361,7 @@
       "공식 사양 출처": "https://www.sigma-global.com/en/lenses/s023_60_600_45_63/",
       "최대 지름(mm)": 119.4,
       "길이(mm)": 279.2,
-      "무게(g)": 495.0
+      "무게(g)": 2495
     },
     "specSources": {
       "렌즈 구성": {
@@ -83405,7 +83445,7 @@
     "category": "망원 줌",
     "ibis": null,
     "oss": "있음",
-    "weightG": 335.0,
+    "weightG": 1335,
     "saleStatus": "확인 필요",
     "note": "Sony E 버전. Sigma 미러리스 전용 제품군.",
     "officialSource": "https://www.sigma-global.com/en/lenses/",
@@ -83460,7 +83500,7 @@
       "공식 사양 출처": "https://www.sigma-global.com/en/lenses/s023_70_200_28/",
       "최대 지름(mm)": 90.6,
       "길이(mm)": 207.0,
-      "무게(g)": 335.0
+      "무게(g)": 1335
     },
     "specSources": {
       "렌즈 구성": {
@@ -83544,7 +83584,7 @@
     "category": "망원 줌",
     "ibis": null,
     "oss": "있음",
-    "weightG": 345.0,
+    "weightG": 1345,
     "saleStatus": "확인 필요",
     "note": "L-Mount 버전. Sigma 미러리스 전용 제품군.",
     "officialSource": "https://www.sigma-global.com/en/lenses/",
@@ -83599,7 +83639,7 @@
       "공식 사양 출처": "https://www.sigma-global.com/en/lenses/s023_70_200_28/",
       "최대 지름(mm)": 90.6,
       "길이(mm)": 205.0,
-      "무게(g)": 345.0
+      "무게(g)": 1345
     },
     "specSources": {
       "렌즈 구성": {
@@ -83683,7 +83723,7 @@
     "category": "초망원 줌",
     "ibis": null,
     "oss": "있음",
-    "weightG": 140.0,
+    "weightG": 1140,
     "saleStatus": "확인 필요",
     "note": "Sony E 버전. Sigma 미러리스 전용 제품군.",
     "officialSource": "https://www.sigma-global.com/en/lenses/",
@@ -83738,7 +83778,7 @@
       "공식 사양 출처": "https://www.sigma-global.com/en/lenses/c020_100_400_5_63/?tab=specification",
       "최대 지름(mm)": 86.0,
       "길이(mm)": 199.2,
-      "무게(g)": 140.0
+      "무게(g)": 1140
     },
     "specSources": {
       "렌즈 구성": {
@@ -83822,7 +83862,7 @@
     "category": "초망원 줌",
     "ibis": null,
     "oss": "있음",
-    "weightG": 135.0,
+    "weightG": 1135,
     "saleStatus": "확인 필요",
     "note": "L-Mount 버전. Sigma 미러리스 전용 제품군.",
     "officialSource": "https://www.sigma-global.com/en/lenses/",
@@ -83877,7 +83917,7 @@
       "공식 사양 출처": "https://www.sigma-global.com/en/lenses/c020_100_400_5_63/?tab=specification",
       "최대 지름(mm)": 86.0,
       "길이(mm)": 197.2,
-      "무게(g)": 135.0
+      "무게(g)": 1135
     },
     "specSources": {
       "렌즈 구성": {
@@ -83961,7 +84001,7 @@
     "category": "초망원 줌",
     "ibis": null,
     "oss": "있음",
-    "weightG": 100.0,
+    "weightG": 2100,
     "saleStatus": "확인 필요",
     "note": "Sony E 버전. Sigma 미러리스 전용 제품군.",
     "officialSource": "https://www.sigma-global.com/en/lenses/",
@@ -84016,7 +84056,7 @@
       "공식 사양 출처": "https://www.sigma-global.com/en/lenses/s021_150_600_5_63/",
       "최대 지름(mm)": 109.4,
       "길이(mm)": 265.6,
-      "무게(g)": 100.0
+      "무게(g)": 2100
     },
     "specSources": {
       "렌즈 구성": {
@@ -84100,7 +84140,7 @@
     "category": "초망원 줌",
     "ibis": null,
     "oss": "있음",
-    "weightG": 100.0,
+    "weightG": 2100,
     "saleStatus": "확인 필요",
     "note": "L-Mount 버전. Sigma 미러리스 전용 제품군.",
     "officialSource": "https://www.sigma-global.com/en/lenses/",
@@ -84155,7 +84195,7 @@
       "공식 사양 출처": "https://www.sigma-global.com/en/lenses/s021_150_600_5_63/",
       "최대 지름(mm)": 109.4,
       "길이(mm)": 263.6,
-      "무게(g)": 100.0
+      "무게(g)": 2100
     },
     "specSources": {
       "렌즈 구성": {
@@ -84239,7 +84279,7 @@
     "category": "초망원 줌",
     "ibis": null,
     "oss": "있음",
-    "weightG": 970.0,
+    "weightG": 3970,
     "saleStatus": "확인 필요",
     "note": "Sony E 버전. Sigma 미러리스 전용 제품군.",
     "officialSource": "https://www.sigma-global.com/en/lenses/",
@@ -84294,7 +84334,7 @@
       "공식 사양 출처": "https://www.sigma-global.com/en/lenses/s025_300_600_4/",
       "최대 지름(mm)": 167.0,
       "길이(mm)": 469.9,
-      "무게(g)": 970.0
+      "무게(g)": 3970
     },
     "specSources": {
       "렌즈 구성": {
@@ -84378,7 +84418,7 @@
     "category": "초망원 줌",
     "ibis": null,
     "oss": "있음",
-    "weightG": 985.0,
+    "weightG": 3985,
     "saleStatus": "확인 필요",
     "note": "L-Mount 버전. Sigma 미러리스 전용 제품군.",
     "officialSource": "https://www.sigma-global.com/en/lenses/",
@@ -84433,7 +84473,7 @@
       "공식 사양 출처": "https://www.sigma-global.com/en/lenses/s025_300_600_4/",
       "최대 지름(mm)": 167.0,
       "길이(mm)": 467.9,
-      "무게(g)": 985.0
+      "무게(g)": 3985
     },
     "specSources": {
       "렌즈 구성": {
@@ -86839,7 +86879,7 @@
     "category": "망원 줌",
     "ibis": null,
     "oss": "없음",
-    "weightG": 165.0,
+    "weightG": 1165,
     "saleStatus": "판매 중",
     "note": "Model A058, Sony E 버전.",
     "officialSource": "https://www.tamron.com/global/consumer/lenses/",
@@ -86892,7 +86932,7 @@
       "동봉 액세서리": "Flower-shaped hood, Lens caps",
       "사양 확인일": "2026-09-11",
       "공식 사양 출처": "https://www.tamron.com/global/consumer/lenses/a058/spec.html",
-      "무게(g)": 165.0
+      "무게(g)": 1165
     },
     "specSources": {
       "화각": {
@@ -86968,7 +87008,7 @@
     "category": "망원 줌",
     "ibis": null,
     "oss": "없음",
-    "weightG": 165.0,
+    "weightG": 1190,
     "saleStatus": "판매 중",
     "note": "Model A058, Nikon Z 버전.",
     "officialSource": "https://www.tamron.com/global/consumer/lenses/",
@@ -87021,7 +87061,7 @@
       "동봉 액세서리": "Flower-shaped hood, Lens caps",
       "사양 확인일": "2026-09-11",
       "공식 사양 출처": "https://www.tamron.com/global/consumer/lenses/a058/spec.html",
-      "무게(g)": 165.0
+      "무게(g)": 1190
     },
     "specSources": {
       "화각": {
@@ -87236,7 +87276,7 @@
     "category": "초망원 줌",
     "ibis": null,
     "oss": "있음",
-    "weightG": 155.0,
+    "weightG": 1155,
     "saleStatus": "판매 중",
     "note": "Model A067, Sony E 버전.",
     "officialSource": "https://www.tamron.com/global/consumer/lenses/",
@@ -87290,7 +87330,7 @@
       "동봉 액세서리": "Flower-shaped hood, Front cap, Rear cap",
       "사양 확인일": "2026-09-11",
       "공식 사양 출처": "https://www.tamron.com/global/consumer/lenses/a067/spec.html",
-      "무게(g)": 155.0
+      "무게(g)": 1155
     },
     "specSources": {
       "화각": {
@@ -87370,7 +87410,7 @@
     "category": "초망원 줌",
     "ibis": null,
     "oss": "있음",
-    "weightG": 155.0,
+    "weightG": 1180,
     "saleStatus": "판매 중",
     "note": "Model A067, Nikon Z 버전.",
     "officialSource": "https://www.tamron.com/global/consumer/lenses/",
@@ -87424,7 +87464,7 @@
       "동봉 액세서리": "Flower-shaped hood, Front cap, Rear cap",
       "사양 확인일": "2026-09-11",
       "공식 사양 출처": "https://www.tamron.com/global/consumer/lenses/a067/spec.html",
-      "무게(g)": 155.0
+      "무게(g)": 1180
     },
     "specSources": {
       "화각": {
@@ -88402,7 +88442,7 @@
     "category": "초망원 줌",
     "ibis": null,
     "oss": "있음",
-    "weightG": 725.0,
+    "weightG": 1725,
     "saleStatus": "판매 중",
     "note": "Model A057, Sony E 버전.",
     "officialSource": "https://www.tamron.com/global/consumer/lenses/",
@@ -88455,7 +88495,7 @@
       "동봉 액세서리": "Round-shaped hood, Lens caps, Tripod mount",
       "사양 확인일": "2026-09-11",
       "공식 사양 출처": "https://www.tamron.com/global/consumer/lenses/a057/spec.html",
-      "무게(g)": 725.0
+      "무게(g)": 1725
     },
     "specSources": {
       "화각": {
@@ -88531,7 +88571,7 @@
     "category": "초망원 줌",
     "ibis": null,
     "oss": "있음",
-    "weightG": 725.0,
+    "weightG": 1720,
     "saleStatus": "판매 중",
     "note": "Model A057, Nikon Z 버전.",
     "officialSource": "https://www.tamron.com/global/consumer/lenses/",
@@ -88584,7 +88624,7 @@
       "동봉 액세서리": "Round-shaped hood, Lens caps, Tripod mount",
       "사양 확인일": "2026-09-11",
       "공식 사양 출처": "https://www.tamron.com/global/consumer/lenses/a057/spec.html",
-      "무게(g)": 725.0
+      "무게(g)": 1720
     },
     "specSources": {
       "화각": {
@@ -88660,7 +88700,7 @@
     "category": "초망원 줌",
     "ibis": null,
     "oss": "있음",
-    "weightG": 725.0,
+    "weightG": 1710,
     "saleStatus": "판매 중",
     "note": "Model A057, Fujifilm X 버전.",
     "officialSource": "https://www.tamron.com/global/consumer/lenses/",
@@ -88708,12 +88748,13 @@
       "손떨림 보정 상세": "〇",
       "필터 구경(mm)": 82.0,
       "최대 지름(mm)": 93.0,
-      "무게 상세": "1,725g / 60.8oz (w/o tripod mount) / (Sony)\n1,720g / 60.7oz (w/o tripod mount) / (Nikon)\ntripod mount 155g / 5.5oz",
+      "무게 상세": "1,710g / 60.3 oz (w/o tripod mount) / (FUJIFILM)\ntripod mount 155g / 5.5 oz",
       "최소 조리개": "F22-32",
       "동봉 액세서리": "Round-shaped hood, Lens caps, Tripod mount",
       "사양 확인일": "2026-09-11",
-      "공식 사양 출처": "https://www.tamron.com/global/consumer/lenses/a057/spec.html",
-      "무게(g)": 725.0
+      "공식 사양 출처": "https://www.tamron.com/global/consumer/lenses/a057/spec.html | https://www.tamron.com/global/consumer/lenses/a057x/spec.html",
+      "무게(g)": 1710,
+      "무게 기준": "삼각대 마운트 제외 (삼각대 마운트 별도 155g)"
     },
     "specSources": {
       "화각": {
@@ -88745,8 +88786,8 @@
         "checkedAt": "2026-09-11"
       },
       "무게 상세": {
-        "url": "https://www.tamron.com/global/consumer/lenses/a057/spec.html",
-        "checkedAt": "2026-09-11"
+        "url": "https://www.tamron.com/global/consumer/lenses/a057x/spec.html",
+        "checkedAt": "2026-10-06"
       },
       "최소 조리개": {
         "url": "https://www.tamron.com/global/consumer/lenses/a057/spec.html",
@@ -88757,8 +88798,12 @@
         "checkedAt": "2026-09-11"
       },
       "무게(g)": {
-        "url": "https://www.tamron.com/global/consumer/lenses/a057/spec.html",
-        "checkedAt": "2026-09-11"
+        "url": "https://www.tamron.com/global/consumer/lenses/a057x/spec.html",
+        "checkedAt": "2026-10-06"
+      },
+      "무게 기준": {
+        "url": "https://www.tamron.com/global/consumer/lenses/a057x/spec.html",
+        "checkedAt": "2026-10-06"
       }
     }
   },
@@ -90464,10 +90509,10 @@
     "model": "FE 8-14mm F3.5 Fisheye G",
     "officialName": "Sony FE 8-14mm F3.5 Fisheye G",
     "modelCode": "SEL814G",
-    "releaseDate": null,
+    "releaseDate": "2026-09-16",
     "releaseYear": 2026,
     "discontinued": "아니오",
-    "currentSale": "출시 예정",
+    "currentSale": "예",
     "successor": null,
     "sensorFormat": null,
     "cropFactor": 1.0,
@@ -90482,11 +90527,11 @@
     "ibis": null,
     "oss": "없음",
     "weightG": 314,
-    "saleStatus": "출시 예정",
-    "note": "2026-09-08 공식 발표. 한국 공식 페이지는 곧 공개 상태이며 국내 출시일·가격 미발표.",
+    "saleStatus": "현재 판매",
+    "note": "소니코리아 국내 출시 보도자료 확인. 국내 출시 발표는 확인되었으나 한국 공식 제품 목록은 가격 미정으로 표시합니다.",
     "officialSource": "https://www.sony.co.kr/electronics/e-mount-lenses/sel814g",
-    "verifiedAt": "2026-09-11",
-    "verification": "Sony Korea 공식 제품 사양 및 Sony Europe 발표 확인",
+    "verifiedAt": "2026-10-06",
+    "verification": "Sony Korea 국내 출시 보도자료 및 공식 제품 페이지 확인",
     "specs": {
       "제조사": "Sony",
       "카메라 방식": "미러리스",
@@ -90496,10 +90541,10 @@
       "모델명": "FE 8-14mm F3.5 Fisheye G",
       "정식 제품명": "Sony FE 8-14mm F3.5 Fisheye G",
       "모델 코드": "SEL814G",
-      "출시일": "한국 출시일 미발표",
+      "출시일": "2026-09-16",
       "출시년도": 2026,
       "단종 여부": "아니오",
-      "현재 판매 여부": "출시 예정",
+      "현재 판매 여부": "예",
       "센서 크롭 배수": 1.0,
       "렌즈 마운트": "Sony E",
       "렌즈 포맷": "FE",
@@ -90526,15 +90571,4253 @@
       "렌즈 길이(mm)": 82.8,
       "방진방적 여부": "있음",
       "무게(g)": 314,
-      "가격 기준일": "2026-09-11",
-      "판매 상태": "출시 예정",
+      "가격 기준일": "2026-10-06",
+      "판매 상태": "현재 판매",
       "공식 출처 URL": "https://www.sony.co.kr/electronics/e-mount-lenses/sel814g",
       "교차검증 URL": "https://www.sony.eu/presscentre/sony-introduces-its-first-fisheye-zoom-g-lens",
-      "데이터 기준일": "2026-09-11",
-      "검증 상태": "Sony Korea 공식 제품 사양 및 Sony Europe 발표 확인",
-      "발표일": "2026-09-08"
+      "데이터 기준일": "2026-10-06",
+      "검증 상태": "Sony Korea 국내 출시 보도자료 및 공식 제품 페이지 확인",
+      "발표일": "2026-09-08",
+      "한국 출시일": "2026-09-16",
+      "비고": "소니코리아 국내 출시 보도자료 확인. 국내 출시 발표는 확인되었으나 한국 공식 제품 목록은 가격 미정으로 표시합니다."
     },
     "announcementDate": "2026-09-08",
+    "active": true,
+    "koreaReleaseDate": "2026-09-16",
+    "specSources": {
+      "한국 출시일": {
+        "url": "https://www.sony.co.kr/handler/DisplayNewsList",
+        "checkedAt": "2026-10-06"
+      }
+    },
+    "currentPriceKrw": null,
+    "priceStatus": "not-announced"
+  },
+  {
+    "id": "sony-렌즈-sony-e-sel400f45gm",
+    "manufacturer": "Sony",
+    "cameraSystem": "미러리스",
+    "type": "렌즈",
+    "mount": "Sony E",
+    "series": "FE GM",
+    "model": "FE 400mm F4.5 GM OSS",
+    "officialName": "Sony FE 400mm F4.5 GM OSS",
+    "modelCode": "SEL400F45GM",
+    "releaseDate": null,
+    "releaseYear": 2026,
+    "discontinued": "아니오",
+    "currentSale": "출시 예정",
+    "saleStatus": "출시 예정",
+    "sensorFormat": null,
+    "cropFactor": 1.0,
+    "lensFormat": "FE",
+    "compatibleSensorFormat": "Full Frame",
+    "focalMinMm": 400,
+    "focalMaxMm": 400,
+    "focalLength": "400mm",
+    "maxAperture": "F4.5",
+    "lensType": "단렌즈",
+    "category": "초망원",
+    "oss": "있음",
+    "weightG": 994,
+    "officialSource": "https://www.sony.co.kr/electronics/e-mount-lenses/sel400f45gm",
+    "verifiedAt": "2026-10-06",
+    "verification": "Sony 공식 제품 사양 및 한국 제품 페이지 확인",
+    "active": true,
+    "specs": {
+      "제조사": "Sony",
+      "카메라 방식": "미러리스",
+      "제품 종류": "렌즈",
+      "마운트": "Sony E",
+      "렌즈 마운트": "Sony E",
+      "시리즈": "FE GM",
+      "모델명": "FE 400mm F4.5 GM OSS",
+      "정식 제품명": "Sony FE 400mm F4.5 GM OSS",
+      "모델 코드": "SEL400F45GM",
+      "출시년도": 2026,
+      "단종 여부": "아니오",
+      "현재 판매 여부": "출시 예정",
+      "판매 상태": "출시 예정",
+      "렌즈 포맷": "FE",
+      "대응 센서 포맷": "Full Frame",
+      "센서 크롭 배수": 1.0,
+      "초점거리": "400mm",
+      "최소 초점거리(mm)": 400,
+      "최대 초점거리(mm)": 400,
+      "최대 조리개": "F4.5",
+      "렌즈 종류": "단렌즈",
+      "무게(g)": 994,
+      "렌즈 손떨림 보정(OSS) 여부": "있음",
+      "공식 출처 URL": "https://www.sony.co.kr/electronics/e-mount-lenses/sel400f45gm",
+      "데이터 기준일": "2026-10-06",
+      "검증 상태": "Sony 공식 제품 사양 및 한국 제품 페이지 확인",
+      "AF 지원 여부": "있음",
+      "MF 지원 여부": "있음",
+      "방진방적 여부": "있음",
+      "파워줌 여부": "없음",
+      "발표일": "2026-09-15",
+      "출시일": "한국 출시일 미발표",
+      "최소 조리개": "F32",
+      "렌즈 구성": "16군 22매",
+      "렌즈군 수": 16,
+      "렌즈 매수": 22,
+      "조리개 날 수": 11,
+      "원형 조리개 여부": "있음",
+      "최소 초점거리(m)": 2.5,
+      "최대 촬영 배율": 0.18,
+      "필터 구경(mm)": 95,
+      "전면 필터 장착 가능 여부": "있음",
+      "렌즈 직경(mm)": 108,
+      "렌즈 길이(mm)": 242,
+      "최대 지름(mm)": 108,
+      "길이(mm)": 242,
+      "AF 모터": "XD 리니어 모터 2개",
+      "무게 기준": "삼각대 마운트 제외",
+      "텔레컨버터 호환": "SEL14TC / SEL20TC",
+      "사양 확인일": "2026-10-06",
+      "공식 사양 출처": "https://www.sony.co.kr/electronics/e-mount-lenses/sel400f45gm/specifications",
+      "가격 기준일": "2026-10-06"
+    },
+    "announcementDate": "2026-09-15",
+    "note": "한국 공식 제품 페이지 공개. 한국 출시일과 가격은 미발표이며 해외 출시일·가격을 국내 정보로 사용하지 않습니다.",
+    "filterDiameterMm": 95,
+    "specSources": {
+      "제조사": {
+        "url": "https://www.sony.co.kr/electronics/e-mount-lenses/sel400f45gm/specifications",
+        "checkedAt": "2026-10-06"
+      },
+      "카메라 방식": {
+        "url": "https://www.sony.co.kr/electronics/e-mount-lenses/sel400f45gm/specifications",
+        "checkedAt": "2026-10-06"
+      },
+      "제품 종류": {
+        "url": "https://www.sony.co.kr/electronics/e-mount-lenses/sel400f45gm/specifications",
+        "checkedAt": "2026-10-06"
+      },
+      "마운트": {
+        "url": "https://www.sony.co.kr/electronics/e-mount-lenses/sel400f45gm/specifications",
+        "checkedAt": "2026-10-06"
+      },
+      "렌즈 마운트": {
+        "url": "https://www.sony.co.kr/electronics/e-mount-lenses/sel400f45gm/specifications",
+        "checkedAt": "2026-10-06"
+      },
+      "시리즈": {
+        "url": "https://www.sony.co.kr/electronics/e-mount-lenses/sel400f45gm/specifications",
+        "checkedAt": "2026-10-06"
+      },
+      "모델명": {
+        "url": "https://www.sony.co.kr/electronics/e-mount-lenses/sel400f45gm/specifications",
+        "checkedAt": "2026-10-06"
+      },
+      "정식 제품명": {
+        "url": "https://www.sony.co.kr/electronics/e-mount-lenses/sel400f45gm/specifications",
+        "checkedAt": "2026-10-06"
+      },
+      "모델 코드": {
+        "url": "https://www.sony.co.kr/electronics/e-mount-lenses/sel400f45gm/specifications",
+        "checkedAt": "2026-10-06"
+      },
+      "출시년도": {
+        "url": "https://www.sony.co.kr/electronics/e-mount-lenses/sel400f45gm/specifications",
+        "checkedAt": "2026-10-06"
+      },
+      "단종 여부": {
+        "url": "https://www.sony.co.kr/electronics/e-mount-lenses/sel400f45gm/specifications",
+        "checkedAt": "2026-10-06"
+      },
+      "현재 판매 여부": {
+        "url": "https://www.sony.co.kr/electronics/e-mount-lenses/sel400f45gm/specifications",
+        "checkedAt": "2026-10-06"
+      },
+      "판매 상태": {
+        "url": "https://www.sony.co.kr/electronics/e-mount-lenses/sel400f45gm/specifications",
+        "checkedAt": "2026-10-06"
+      },
+      "렌즈 포맷": {
+        "url": "https://www.sony.co.kr/electronics/e-mount-lenses/sel400f45gm/specifications",
+        "checkedAt": "2026-10-06"
+      },
+      "대응 센서 포맷": {
+        "url": "https://www.sony.co.kr/electronics/e-mount-lenses/sel400f45gm/specifications",
+        "checkedAt": "2026-10-06"
+      },
+      "센서 크롭 배수": {
+        "url": "https://www.sony.co.kr/electronics/e-mount-lenses/sel400f45gm/specifications",
+        "checkedAt": "2026-10-06"
+      },
+      "초점거리": {
+        "url": "https://www.sony.co.kr/electronics/e-mount-lenses/sel400f45gm/specifications",
+        "checkedAt": "2026-10-06"
+      },
+      "최소 초점거리(mm)": {
+        "url": "https://www.sony.co.kr/electronics/e-mount-lenses/sel400f45gm/specifications",
+        "checkedAt": "2026-10-06"
+      },
+      "최대 초점거리(mm)": {
+        "url": "https://www.sony.co.kr/electronics/e-mount-lenses/sel400f45gm/specifications",
+        "checkedAt": "2026-10-06"
+      },
+      "최대 조리개": {
+        "url": "https://www.sony.co.kr/electronics/e-mount-lenses/sel400f45gm/specifications",
+        "checkedAt": "2026-10-06"
+      },
+      "렌즈 종류": {
+        "url": "https://www.sony.co.kr/electronics/e-mount-lenses/sel400f45gm/specifications",
+        "checkedAt": "2026-10-06"
+      },
+      "무게(g)": {
+        "url": "https://www.sony.co.kr/electronics/e-mount-lenses/sel400f45gm/specifications",
+        "checkedAt": "2026-10-06"
+      },
+      "렌즈 손떨림 보정(OSS) 여부": {
+        "url": "https://www.sony.co.kr/electronics/e-mount-lenses/sel400f45gm/specifications",
+        "checkedAt": "2026-10-06"
+      },
+      "공식 출처 URL": {
+        "url": "https://www.sony.co.kr/electronics/e-mount-lenses/sel400f45gm/specifications",
+        "checkedAt": "2026-10-06"
+      },
+      "데이터 기준일": {
+        "url": "https://www.sony.co.kr/electronics/e-mount-lenses/sel400f45gm/specifications",
+        "checkedAt": "2026-10-06"
+      },
+      "검증 상태": {
+        "url": "https://www.sony.co.kr/electronics/e-mount-lenses/sel400f45gm/specifications",
+        "checkedAt": "2026-10-06"
+      },
+      "AF 지원 여부": {
+        "url": "https://www.sony.co.kr/electronics/e-mount-lenses/sel400f45gm/specifications",
+        "checkedAt": "2026-10-06"
+      },
+      "MF 지원 여부": {
+        "url": "https://www.sony.co.kr/electronics/e-mount-lenses/sel400f45gm/specifications",
+        "checkedAt": "2026-10-06"
+      },
+      "방진방적 여부": {
+        "url": "https://www.sony.co.kr/electronics/e-mount-lenses/sel400f45gm/specifications",
+        "checkedAt": "2026-10-06"
+      },
+      "파워줌 여부": {
+        "url": "https://www.sony.co.kr/electronics/e-mount-lenses/sel400f45gm/specifications",
+        "checkedAt": "2026-10-06"
+      },
+      "최소 조리개": {
+        "url": "https://www.sony.co.kr/electronics/e-mount-lenses/sel400f45gm/specifications",
+        "checkedAt": "2026-10-06"
+      },
+      "렌즈 구성": {
+        "url": "https://www.sony.co.kr/electronics/e-mount-lenses/sel400f45gm/specifications",
+        "checkedAt": "2026-10-06"
+      },
+      "렌즈군 수": {
+        "url": "https://www.sony.co.kr/electronics/e-mount-lenses/sel400f45gm/specifications",
+        "checkedAt": "2026-10-06"
+      },
+      "렌즈 매수": {
+        "url": "https://www.sony.co.kr/electronics/e-mount-lenses/sel400f45gm/specifications",
+        "checkedAt": "2026-10-06"
+      },
+      "조리개 날 수": {
+        "url": "https://www.sony.co.kr/electronics/e-mount-lenses/sel400f45gm/specifications",
+        "checkedAt": "2026-10-06"
+      },
+      "원형 조리개 여부": {
+        "url": "https://www.sony.co.kr/electronics/e-mount-lenses/sel400f45gm/specifications",
+        "checkedAt": "2026-10-06"
+      },
+      "최소 초점거리(m)": {
+        "url": "https://www.sony.co.kr/electronics/e-mount-lenses/sel400f45gm/specifications",
+        "checkedAt": "2026-10-06"
+      },
+      "최대 촬영 배율": {
+        "url": "https://www.sony.co.kr/electronics/e-mount-lenses/sel400f45gm/specifications",
+        "checkedAt": "2026-10-06"
+      },
+      "필터 구경(mm)": {
+        "url": "https://www.sony.co.kr/electronics/e-mount-lenses/sel400f45gm/specifications",
+        "checkedAt": "2026-10-06"
+      },
+      "전면 필터 장착 가능 여부": {
+        "url": "https://www.sony.co.kr/electronics/e-mount-lenses/sel400f45gm/specifications",
+        "checkedAt": "2026-10-06"
+      },
+      "렌즈 직경(mm)": {
+        "url": "https://www.sony.co.kr/electronics/e-mount-lenses/sel400f45gm/specifications",
+        "checkedAt": "2026-10-06"
+      },
+      "렌즈 길이(mm)": {
+        "url": "https://www.sony.co.kr/electronics/e-mount-lenses/sel400f45gm/specifications",
+        "checkedAt": "2026-10-06"
+      },
+      "최대 지름(mm)": {
+        "url": "https://www.sony.co.kr/electronics/e-mount-lenses/sel400f45gm/specifications",
+        "checkedAt": "2026-10-06"
+      },
+      "길이(mm)": {
+        "url": "https://www.sony.co.kr/electronics/e-mount-lenses/sel400f45gm/specifications",
+        "checkedAt": "2026-10-06"
+      },
+      "AF 모터": {
+        "url": "https://www.sony.co.kr/electronics/e-mount-lenses/sel400f45gm/specifications",
+        "checkedAt": "2026-10-06"
+      },
+      "무게 기준": {
+        "url": "https://www.sony.co.kr/electronics/e-mount-lenses/sel400f45gm/specifications",
+        "checkedAt": "2026-10-06"
+      },
+      "텔레컨버터 호환": {
+        "url": "https://www.sony.co.kr/electronics/e-mount-lenses/sel400f45gm/specifications",
+        "checkedAt": "2026-10-06"
+      },
+      "사양 확인일": {
+        "url": "https://www.sony.co.kr/electronics/e-mount-lenses/sel400f45gm/specifications",
+        "checkedAt": "2026-10-06"
+      },
+      "공식 사양 출처": {
+        "url": "https://www.sony.co.kr/electronics/e-mount-lenses/sel400f45gm/specifications",
+        "checkedAt": "2026-10-06"
+      }
+    },
+    "currentPriceKrw": null,
+    "priceStatus": "not-announced"
+  },
+  {
+    "id": "sony-렌즈-sony-e-sel600f63gm",
+    "manufacturer": "Sony",
+    "cameraSystem": "미러리스",
+    "type": "렌즈",
+    "mount": "Sony E",
+    "series": "FE GM",
+    "model": "FE 600mm F6.3 GM OSS",
+    "officialName": "Sony FE 600mm F6.3 GM OSS",
+    "modelCode": "SEL600F63GM",
+    "releaseDate": null,
+    "releaseYear": 2026,
+    "discontinued": "아니오",
+    "currentSale": "출시 예정",
+    "saleStatus": "출시 예정",
+    "sensorFormat": null,
+    "cropFactor": 1.0,
+    "lensFormat": "FE",
+    "compatibleSensorFormat": "Full Frame",
+    "focalMinMm": 600,
+    "focalMaxMm": 600,
+    "focalLength": "600mm",
+    "maxAperture": "F6.3",
+    "lensType": "단렌즈",
+    "category": "초망원",
+    "oss": "있음",
+    "weightG": 995,
+    "officialSource": "https://www.sony.co.kr/electronics/e-mount-lenses/sel600f63gm",
+    "verifiedAt": "2026-10-06",
+    "verification": "Sony 공식 제품 사양 및 한국 제품 페이지 확인",
+    "active": true,
+    "specs": {
+      "제조사": "Sony",
+      "카메라 방식": "미러리스",
+      "제품 종류": "렌즈",
+      "마운트": "Sony E",
+      "렌즈 마운트": "Sony E",
+      "시리즈": "FE GM",
+      "모델명": "FE 600mm F6.3 GM OSS",
+      "정식 제품명": "Sony FE 600mm F6.3 GM OSS",
+      "모델 코드": "SEL600F63GM",
+      "출시년도": 2026,
+      "단종 여부": "아니오",
+      "현재 판매 여부": "출시 예정",
+      "판매 상태": "출시 예정",
+      "렌즈 포맷": "FE",
+      "대응 센서 포맷": "Full Frame",
+      "센서 크롭 배수": 1.0,
+      "초점거리": "600mm",
+      "최소 초점거리(mm)": 600,
+      "최대 초점거리(mm)": 600,
+      "최대 조리개": "F6.3",
+      "렌즈 종류": "단렌즈",
+      "무게(g)": 995,
+      "렌즈 손떨림 보정(OSS) 여부": "있음",
+      "공식 출처 URL": "https://www.sony.co.kr/electronics/e-mount-lenses/sel600f63gm",
+      "데이터 기준일": "2026-10-06",
+      "검증 상태": "Sony 공식 제품 사양 및 한국 제품 페이지 확인",
+      "AF 지원 여부": "있음",
+      "MF 지원 여부": "있음",
+      "방진방적 여부": "있음",
+      "파워줌 여부": "없음",
+      "발표일": "2026-09-15",
+      "출시일": "한국 출시일 미발표",
+      "최소 조리개": "F32",
+      "렌즈 구성": "17군 24매",
+      "렌즈군 수": 17,
+      "렌즈 매수": 24,
+      "조리개 날 수": 11,
+      "원형 조리개 여부": "있음",
+      "최소 초점거리(m)": 2.5,
+      "최대 촬영 배율": 0.25,
+      "필터 구경(mm)": 95,
+      "전면 필터 장착 가능 여부": "있음",
+      "렌즈 직경(mm)": 108,
+      "렌즈 길이(mm)": 263,
+      "최대 지름(mm)": 108,
+      "길이(mm)": 263,
+      "AF 모터": "XD 리니어 모터 2개",
+      "무게 기준": "삼각대 마운트 제외",
+      "텔레컨버터 호환": "SEL14TC / SEL20TC",
+      "사양 확인일": "2026-10-06",
+      "공식 사양 출처": "https://www.sony.co.kr/electronics/e-mount-lenses/sel600f63gm/specifications",
+      "가격 기준일": "2026-10-06"
+    },
+    "announcementDate": "2026-09-15",
+    "note": "한국 공식 제품 페이지 공개. 한국 출시일과 가격은 미발표이며 해외 출시일·가격을 국내 정보로 사용하지 않습니다.",
+    "filterDiameterMm": 95,
+    "specSources": {
+      "제조사": {
+        "url": "https://www.sony.co.kr/electronics/e-mount-lenses/sel600f63gm/specifications",
+        "checkedAt": "2026-10-06"
+      },
+      "카메라 방식": {
+        "url": "https://www.sony.co.kr/electronics/e-mount-lenses/sel600f63gm/specifications",
+        "checkedAt": "2026-10-06"
+      },
+      "제품 종류": {
+        "url": "https://www.sony.co.kr/electronics/e-mount-lenses/sel600f63gm/specifications",
+        "checkedAt": "2026-10-06"
+      },
+      "마운트": {
+        "url": "https://www.sony.co.kr/electronics/e-mount-lenses/sel600f63gm/specifications",
+        "checkedAt": "2026-10-06"
+      },
+      "렌즈 마운트": {
+        "url": "https://www.sony.co.kr/electronics/e-mount-lenses/sel600f63gm/specifications",
+        "checkedAt": "2026-10-06"
+      },
+      "시리즈": {
+        "url": "https://www.sony.co.kr/electronics/e-mount-lenses/sel600f63gm/specifications",
+        "checkedAt": "2026-10-06"
+      },
+      "모델명": {
+        "url": "https://www.sony.co.kr/electronics/e-mount-lenses/sel600f63gm/specifications",
+        "checkedAt": "2026-10-06"
+      },
+      "정식 제품명": {
+        "url": "https://www.sony.co.kr/electronics/e-mount-lenses/sel600f63gm/specifications",
+        "checkedAt": "2026-10-06"
+      },
+      "모델 코드": {
+        "url": "https://www.sony.co.kr/electronics/e-mount-lenses/sel600f63gm/specifications",
+        "checkedAt": "2026-10-06"
+      },
+      "출시년도": {
+        "url": "https://www.sony.co.kr/electronics/e-mount-lenses/sel600f63gm/specifications",
+        "checkedAt": "2026-10-06"
+      },
+      "단종 여부": {
+        "url": "https://www.sony.co.kr/electronics/e-mount-lenses/sel600f63gm/specifications",
+        "checkedAt": "2026-10-06"
+      },
+      "현재 판매 여부": {
+        "url": "https://www.sony.co.kr/electronics/e-mount-lenses/sel600f63gm/specifications",
+        "checkedAt": "2026-10-06"
+      },
+      "판매 상태": {
+        "url": "https://www.sony.co.kr/electronics/e-mount-lenses/sel600f63gm/specifications",
+        "checkedAt": "2026-10-06"
+      },
+      "렌즈 포맷": {
+        "url": "https://www.sony.co.kr/electronics/e-mount-lenses/sel600f63gm/specifications",
+        "checkedAt": "2026-10-06"
+      },
+      "대응 센서 포맷": {
+        "url": "https://www.sony.co.kr/electronics/e-mount-lenses/sel600f63gm/specifications",
+        "checkedAt": "2026-10-06"
+      },
+      "센서 크롭 배수": {
+        "url": "https://www.sony.co.kr/electronics/e-mount-lenses/sel600f63gm/specifications",
+        "checkedAt": "2026-10-06"
+      },
+      "초점거리": {
+        "url": "https://www.sony.co.kr/electronics/e-mount-lenses/sel600f63gm/specifications",
+        "checkedAt": "2026-10-06"
+      },
+      "최소 초점거리(mm)": {
+        "url": "https://www.sony.co.kr/electronics/e-mount-lenses/sel600f63gm/specifications",
+        "checkedAt": "2026-10-06"
+      },
+      "최대 초점거리(mm)": {
+        "url": "https://www.sony.co.kr/electronics/e-mount-lenses/sel600f63gm/specifications",
+        "checkedAt": "2026-10-06"
+      },
+      "최대 조리개": {
+        "url": "https://www.sony.co.kr/electronics/e-mount-lenses/sel600f63gm/specifications",
+        "checkedAt": "2026-10-06"
+      },
+      "렌즈 종류": {
+        "url": "https://www.sony.co.kr/electronics/e-mount-lenses/sel600f63gm/specifications",
+        "checkedAt": "2026-10-06"
+      },
+      "무게(g)": {
+        "url": "https://www.sony.co.kr/electronics/e-mount-lenses/sel600f63gm/specifications",
+        "checkedAt": "2026-10-06"
+      },
+      "렌즈 손떨림 보정(OSS) 여부": {
+        "url": "https://www.sony.co.kr/electronics/e-mount-lenses/sel600f63gm/specifications",
+        "checkedAt": "2026-10-06"
+      },
+      "공식 출처 URL": {
+        "url": "https://www.sony.co.kr/electronics/e-mount-lenses/sel600f63gm/specifications",
+        "checkedAt": "2026-10-06"
+      },
+      "데이터 기준일": {
+        "url": "https://www.sony.co.kr/electronics/e-mount-lenses/sel600f63gm/specifications",
+        "checkedAt": "2026-10-06"
+      },
+      "검증 상태": {
+        "url": "https://www.sony.co.kr/electronics/e-mount-lenses/sel600f63gm/specifications",
+        "checkedAt": "2026-10-06"
+      },
+      "AF 지원 여부": {
+        "url": "https://www.sony.co.kr/electronics/e-mount-lenses/sel600f63gm/specifications",
+        "checkedAt": "2026-10-06"
+      },
+      "MF 지원 여부": {
+        "url": "https://www.sony.co.kr/electronics/e-mount-lenses/sel600f63gm/specifications",
+        "checkedAt": "2026-10-06"
+      },
+      "방진방적 여부": {
+        "url": "https://www.sony.co.kr/electronics/e-mount-lenses/sel600f63gm/specifications",
+        "checkedAt": "2026-10-06"
+      },
+      "파워줌 여부": {
+        "url": "https://www.sony.co.kr/electronics/e-mount-lenses/sel600f63gm/specifications",
+        "checkedAt": "2026-10-06"
+      },
+      "최소 조리개": {
+        "url": "https://www.sony.co.kr/electronics/e-mount-lenses/sel600f63gm/specifications",
+        "checkedAt": "2026-10-06"
+      },
+      "렌즈 구성": {
+        "url": "https://www.sony.co.kr/electronics/e-mount-lenses/sel600f63gm/specifications",
+        "checkedAt": "2026-10-06"
+      },
+      "렌즈군 수": {
+        "url": "https://www.sony.co.kr/electronics/e-mount-lenses/sel600f63gm/specifications",
+        "checkedAt": "2026-10-06"
+      },
+      "렌즈 매수": {
+        "url": "https://www.sony.co.kr/electronics/e-mount-lenses/sel600f63gm/specifications",
+        "checkedAt": "2026-10-06"
+      },
+      "조리개 날 수": {
+        "url": "https://www.sony.co.kr/electronics/e-mount-lenses/sel600f63gm/specifications",
+        "checkedAt": "2026-10-06"
+      },
+      "원형 조리개 여부": {
+        "url": "https://www.sony.co.kr/electronics/e-mount-lenses/sel600f63gm/specifications",
+        "checkedAt": "2026-10-06"
+      },
+      "최소 초점거리(m)": {
+        "url": "https://www.sony.co.kr/electronics/e-mount-lenses/sel600f63gm/specifications",
+        "checkedAt": "2026-10-06"
+      },
+      "최대 촬영 배율": {
+        "url": "https://www.sony.co.kr/electronics/e-mount-lenses/sel600f63gm/specifications",
+        "checkedAt": "2026-10-06"
+      },
+      "필터 구경(mm)": {
+        "url": "https://www.sony.co.kr/electronics/e-mount-lenses/sel600f63gm/specifications",
+        "checkedAt": "2026-10-06"
+      },
+      "전면 필터 장착 가능 여부": {
+        "url": "https://www.sony.co.kr/electronics/e-mount-lenses/sel600f63gm/specifications",
+        "checkedAt": "2026-10-06"
+      },
+      "렌즈 직경(mm)": {
+        "url": "https://www.sony.co.kr/electronics/e-mount-lenses/sel600f63gm/specifications",
+        "checkedAt": "2026-10-06"
+      },
+      "렌즈 길이(mm)": {
+        "url": "https://www.sony.co.kr/electronics/e-mount-lenses/sel600f63gm/specifications",
+        "checkedAt": "2026-10-06"
+      },
+      "최대 지름(mm)": {
+        "url": "https://www.sony.co.kr/electronics/e-mount-lenses/sel600f63gm/specifications",
+        "checkedAt": "2026-10-06"
+      },
+      "길이(mm)": {
+        "url": "https://www.sony.co.kr/electronics/e-mount-lenses/sel600f63gm/specifications",
+        "checkedAt": "2026-10-06"
+      },
+      "AF 모터": {
+        "url": "https://www.sony.co.kr/electronics/e-mount-lenses/sel600f63gm/specifications",
+        "checkedAt": "2026-10-06"
+      },
+      "무게 기준": {
+        "url": "https://www.sony.co.kr/electronics/e-mount-lenses/sel600f63gm/specifications",
+        "checkedAt": "2026-10-06"
+      },
+      "텔레컨버터 호환": {
+        "url": "https://www.sony.co.kr/electronics/e-mount-lenses/sel600f63gm/specifications",
+        "checkedAt": "2026-10-06"
+      },
+      "사양 확인일": {
+        "url": "https://www.sony.co.kr/electronics/e-mount-lenses/sel600f63gm/specifications",
+        "checkedAt": "2026-10-06"
+      },
+      "공식 사양 출처": {
+        "url": "https://www.sony.co.kr/electronics/e-mount-lenses/sel600f63gm/specifications",
+        "checkedAt": "2026-10-06"
+      }
+    },
+    "currentPriceKrw": null,
+    "priceStatus": "not-announced"
+  },
+  {
+    "id": "fujifilm-렌즈-fujifilm-x-xf400mmf4.5",
+    "manufacturer": "Fujifilm",
+    "cameraSystem": "미러리스",
+    "type": "렌즈",
+    "mount": "Fujifilm X",
+    "series": "XF",
+    "model": "XF400mmF4.5 R LM OIS WR",
+    "officialName": "Fujifilm XF400mmF4.5 R LM OIS WR",
+    "modelCode": "XF400mmF4.5",
+    "releaseDate": "2026-09",
+    "releaseYear": 2026,
+    "discontinued": "아니오",
+    "currentSale": "예",
+    "saleStatus": "현재 판매",
+    "sensorFormat": null,
+    "cropFactor": 1.5,
+    "lensFormat": "XF",
+    "compatibleSensorFormat": "APS-C",
+    "focalMinMm": 400,
+    "focalMaxMm": 400,
+    "focalLength": "400mm",
+    "maxAperture": "F4.5",
+    "lensType": "단렌즈",
+    "category": "초망원",
+    "oss": "있음",
+    "weightG": 1245,
+    "officialSource": "https://www.fujifilm-korea.co.kr/products/id/1363",
+    "verifiedAt": "2026-10-06",
+    "verification": "Fujifilm 공식 제품 사양 및 한국 제품 페이지 확인",
+    "active": true,
+    "specs": {
+      "제조사": "Fujifilm",
+      "카메라 방식": "미러리스",
+      "제품 종류": "렌즈",
+      "마운트": "Fujifilm X",
+      "렌즈 마운트": "Fujifilm X",
+      "시리즈": "XF",
+      "모델명": "XF400mmF4.5 R LM OIS WR",
+      "정식 제품명": "Fujifilm XF400mmF4.5 R LM OIS WR",
+      "모델 코드": "XF400mmF4.5",
+      "출시년도": 2026,
+      "단종 여부": "아니오",
+      "현재 판매 여부": "예",
+      "판매 상태": "현재 판매",
+      "렌즈 포맷": "XF",
+      "대응 센서 포맷": "APS-C",
+      "센서 크롭 배수": 1.5,
+      "초점거리": "400mm",
+      "최소 초점거리(mm)": 400,
+      "최대 초점거리(mm)": 400,
+      "최대 조리개": "F4.5",
+      "렌즈 종류": "단렌즈",
+      "무게(g)": 1245,
+      "렌즈 손떨림 보정(OSS) 여부": "있음",
+      "공식 출처 URL": "https://www.fujifilm-korea.co.kr/products/id/1363",
+      "데이터 기준일": "2026-10-06",
+      "검증 상태": "Fujifilm 공식 제품 사양 및 한국 제품 페이지 확인",
+      "AF 지원 여부": "있음",
+      "MF 지원 여부": "있음",
+      "방진방적 여부": "있음",
+      "파워줌 여부": "없음",
+      "출시일": "2026-09",
+      "발표일": "2026-09-04",
+      "최소 조리개": "F22",
+      "렌즈 구성": "14군 21매",
+      "렌즈군 수": 14,
+      "렌즈 매수": 21,
+      "조리개 날 수": 9,
+      "원형 조리개 여부": "있음",
+      "최소 초점거리(m)": 2.75,
+      "최대 촬영 배율": 0.16,
+      "필터 구경(mm)": 95,
+      "전면 필터 장착 가능 여부": "있음",
+      "렌즈 직경(mm)": 104.5,
+      "렌즈 길이(mm)": 239.5,
+      "최대 지름(mm)": 104.5,
+      "길이(mm)": 239.5,
+      "35mm 환산 초점거리(기본 포맷)": "609mm",
+      "AF 모터": "리니어 모터",
+      "손떨림 보정 상세": "광학식, 최대 5.5스톱",
+      "텔레컨버터 호환": "XF1.4X TC WR / XF2X TC WR",
+      "사양 확인일": "2026-10-06",
+      "공식 사양 출처": "https://www.fujifilm-korea.co.kr/products/id/1363",
+      "가격 기준일": "2026-10-06"
+    },
+    "announcementDate": "2026-09-04",
+    "filterDiameterMm": 95,
+    "note": "한국 공식 출시 공지 및 공식몰 판매가 확인. 정확한 국내 판매 개시일은 확인되지 않아 월 단위로 표기합니다.",
+    "specSources": {
+      "제조사": {
+        "url": "https://www.fujifilm-korea.co.kr/products/id/1363",
+        "checkedAt": "2026-10-06"
+      },
+      "카메라 방식": {
+        "url": "https://www.fujifilm-korea.co.kr/products/id/1363",
+        "checkedAt": "2026-10-06"
+      },
+      "제품 종류": {
+        "url": "https://www.fujifilm-korea.co.kr/products/id/1363",
+        "checkedAt": "2026-10-06"
+      },
+      "마운트": {
+        "url": "https://www.fujifilm-korea.co.kr/products/id/1363",
+        "checkedAt": "2026-10-06"
+      },
+      "렌즈 마운트": {
+        "url": "https://www.fujifilm-korea.co.kr/products/id/1363",
+        "checkedAt": "2026-10-06"
+      },
+      "시리즈": {
+        "url": "https://www.fujifilm-korea.co.kr/products/id/1363",
+        "checkedAt": "2026-10-06"
+      },
+      "모델명": {
+        "url": "https://www.fujifilm-korea.co.kr/products/id/1363",
+        "checkedAt": "2026-10-06"
+      },
+      "정식 제품명": {
+        "url": "https://www.fujifilm-korea.co.kr/products/id/1363",
+        "checkedAt": "2026-10-06"
+      },
+      "모델 코드": {
+        "url": "https://www.fujifilm-korea.co.kr/products/id/1363",
+        "checkedAt": "2026-10-06"
+      },
+      "출시년도": {
+        "url": "https://www.fujifilm-korea.co.kr/products/id/1363",
+        "checkedAt": "2026-10-06"
+      },
+      "단종 여부": {
+        "url": "https://www.fujifilm-korea.co.kr/products/id/1363",
+        "checkedAt": "2026-10-06"
+      },
+      "현재 판매 여부": {
+        "url": "https://www.fujifilm-korea.co.kr/products/id/1363",
+        "checkedAt": "2026-10-06"
+      },
+      "판매 상태": {
+        "url": "https://www.fujifilm-korea.co.kr/products/id/1363",
+        "checkedAt": "2026-10-06"
+      },
+      "렌즈 포맷": {
+        "url": "https://www.fujifilm-korea.co.kr/products/id/1363",
+        "checkedAt": "2026-10-06"
+      },
+      "대응 센서 포맷": {
+        "url": "https://www.fujifilm-korea.co.kr/products/id/1363",
+        "checkedAt": "2026-10-06"
+      },
+      "센서 크롭 배수": {
+        "url": "https://www.fujifilm-korea.co.kr/products/id/1363",
+        "checkedAt": "2026-10-06"
+      },
+      "초점거리": {
+        "url": "https://www.fujifilm-korea.co.kr/products/id/1363",
+        "checkedAt": "2026-10-06"
+      },
+      "최소 초점거리(mm)": {
+        "url": "https://www.fujifilm-korea.co.kr/products/id/1363",
+        "checkedAt": "2026-10-06"
+      },
+      "최대 초점거리(mm)": {
+        "url": "https://www.fujifilm-korea.co.kr/products/id/1363",
+        "checkedAt": "2026-10-06"
+      },
+      "최대 조리개": {
+        "url": "https://www.fujifilm-korea.co.kr/products/id/1363",
+        "checkedAt": "2026-10-06"
+      },
+      "렌즈 종류": {
+        "url": "https://www.fujifilm-korea.co.kr/products/id/1363",
+        "checkedAt": "2026-10-06"
+      },
+      "무게(g)": {
+        "url": "https://www.fujifilm-korea.co.kr/products/id/1363",
+        "checkedAt": "2026-10-06"
+      },
+      "렌즈 손떨림 보정(OSS) 여부": {
+        "url": "https://www.fujifilm-korea.co.kr/products/id/1363",
+        "checkedAt": "2026-10-06"
+      },
+      "공식 출처 URL": {
+        "url": "https://www.fujifilm-korea.co.kr/products/id/1363",
+        "checkedAt": "2026-10-06"
+      },
+      "데이터 기준일": {
+        "url": "https://www.fujifilm-korea.co.kr/products/id/1363",
+        "checkedAt": "2026-10-06"
+      },
+      "검증 상태": {
+        "url": "https://www.fujifilm-korea.co.kr/products/id/1363",
+        "checkedAt": "2026-10-06"
+      },
+      "AF 지원 여부": {
+        "url": "https://www.fujifilm-korea.co.kr/products/id/1363",
+        "checkedAt": "2026-10-06"
+      },
+      "MF 지원 여부": {
+        "url": "https://www.fujifilm-korea.co.kr/products/id/1363",
+        "checkedAt": "2026-10-06"
+      },
+      "방진방적 여부": {
+        "url": "https://www.fujifilm-korea.co.kr/products/id/1363",
+        "checkedAt": "2026-10-06"
+      },
+      "파워줌 여부": {
+        "url": "https://www.fujifilm-korea.co.kr/products/id/1363",
+        "checkedAt": "2026-10-06"
+      },
+      "출시일": {
+        "url": "https://www.fujifilm-korea.co.kr/products/id/1363",
+        "checkedAt": "2026-10-06"
+      },
+      "발표일": {
+        "url": "https://www.fujifilm-korea.co.kr/products/id/1363",
+        "checkedAt": "2026-10-06"
+      },
+      "최소 조리개": {
+        "url": "https://www.fujifilm-korea.co.kr/products/id/1363",
+        "checkedAt": "2026-10-06"
+      },
+      "렌즈 구성": {
+        "url": "https://www.fujifilm-korea.co.kr/products/id/1363",
+        "checkedAt": "2026-10-06"
+      },
+      "렌즈군 수": {
+        "url": "https://www.fujifilm-korea.co.kr/products/id/1363",
+        "checkedAt": "2026-10-06"
+      },
+      "렌즈 매수": {
+        "url": "https://www.fujifilm-korea.co.kr/products/id/1363",
+        "checkedAt": "2026-10-06"
+      },
+      "조리개 날 수": {
+        "url": "https://www.fujifilm-korea.co.kr/products/id/1363",
+        "checkedAt": "2026-10-06"
+      },
+      "원형 조리개 여부": {
+        "url": "https://www.fujifilm-korea.co.kr/products/id/1363",
+        "checkedAt": "2026-10-06"
+      },
+      "최소 초점거리(m)": {
+        "url": "https://www.fujifilm-korea.co.kr/products/id/1363",
+        "checkedAt": "2026-10-06"
+      },
+      "최대 촬영 배율": {
+        "url": "https://www.fujifilm-korea.co.kr/products/id/1363",
+        "checkedAt": "2026-10-06"
+      },
+      "필터 구경(mm)": {
+        "url": "https://www.fujifilm-korea.co.kr/products/id/1363",
+        "checkedAt": "2026-10-06"
+      },
+      "전면 필터 장착 가능 여부": {
+        "url": "https://www.fujifilm-korea.co.kr/products/id/1363",
+        "checkedAt": "2026-10-06"
+      },
+      "렌즈 직경(mm)": {
+        "url": "https://www.fujifilm-korea.co.kr/products/id/1363",
+        "checkedAt": "2026-10-06"
+      },
+      "렌즈 길이(mm)": {
+        "url": "https://www.fujifilm-korea.co.kr/products/id/1363",
+        "checkedAt": "2026-10-06"
+      },
+      "최대 지름(mm)": {
+        "url": "https://www.fujifilm-korea.co.kr/products/id/1363",
+        "checkedAt": "2026-10-06"
+      },
+      "길이(mm)": {
+        "url": "https://www.fujifilm-korea.co.kr/products/id/1363",
+        "checkedAt": "2026-10-06"
+      },
+      "35mm 환산 초점거리(기본 포맷)": {
+        "url": "https://www.fujifilm-korea.co.kr/products/id/1363",
+        "checkedAt": "2026-10-06"
+      },
+      "AF 모터": {
+        "url": "https://www.fujifilm-korea.co.kr/products/id/1363",
+        "checkedAt": "2026-10-06"
+      },
+      "손떨림 보정 상세": {
+        "url": "https://www.fujifilm-korea.co.kr/products/id/1363",
+        "checkedAt": "2026-10-06"
+      },
+      "텔레컨버터 호환": {
+        "url": "https://www.fujifilm-korea.co.kr/products/id/1363",
+        "checkedAt": "2026-10-06"
+      },
+      "사양 확인일": {
+        "url": "https://www.fujifilm-korea.co.kr/products/id/1363",
+        "checkedAt": "2026-10-06"
+      },
+      "공식 사양 출처": {
+        "url": "https://www.fujifilm-korea.co.kr/products/id/1363",
+        "checkedAt": "2026-10-06"
+      }
+    },
+    "currentPriceKrw": 4299000,
+    "priceStatus": "confirmed-current"
+  },
+  {
+    "id": "sigma-렌즈-sony-e-85mm-f1-2-dg-art-sony-e",
+    "manufacturer": "Sigma",
+    "cameraSystem": "미러리스",
+    "type": "렌즈",
+    "mount": "Sony E",
+    "series": "Sigma Art",
+    "model": "85mm F1.2 DG | Art",
+    "officialName": "Sigma 85mm F1.2 DG | Art",
+    "modelCode": "85mm F1.2 DG | Art [Sony E]",
+    "releaseDate": "2026-09-30",
+    "releaseYear": 2026,
+    "discontinued": "아니오",
+    "currentSale": "예",
+    "successor": null,
+    "sensorFormat": null,
+    "cropFactor": null,
+    "lensFormat": "DG",
+    "compatibleSensorFormat": "Full Frame",
+    "focalMinMm": 85,
+    "focalMaxMm": 85,
+    "focalLength": "85mm",
+    "maxAperture": "F1.2",
+    "lensType": "단렌즈",
+    "category": "망원 단렌즈",
+    "ibis": null,
+    "oss": null,
+    "weightG": 905,
+    "saleStatus": "현재 판매",
+    "note": "Sony E 버전. 제조사 공식 사양 및 세기P&C 국내 정식 유통·가격 확인. 공식몰 일시 품절은 단종과 구분합니다.",
+    "officialSource": "https://www.sigma-global.com/en/lenses/a026_85_12/",
+    "verifiedAt": "2026-10-06",
+    "verification": "제조사 공식 사양과 한국 공식 유통·가격 확인",
+    "specs": {
+      "제조사": "Sigma",
+      "카메라 방식": "미러리스",
+      "제품 종류": "렌즈",
+      "마운트": "Sony E",
+      "시리즈": "Sigma Art",
+      "모델명": "85mm F1.2 DG | Art",
+      "정식 제품명": "Sigma 85mm F1.2 DG | Art",
+      "모델 코드": "85mm F1.2 DG | Art [Sony E]",
+      "출시일": "2026-09-30",
+      "출시년도": 2026,
+      "단종 여부": "아니오",
+      "현재 판매 여부": "예",
+      "렌즈 마운트": "Sony E",
+      "렌즈 포맷": "DG",
+      "대응 센서 포맷": "Full Frame",
+      "렌즈 시리즈": "Sigma Art",
+      "초점거리": "85mm",
+      "최소 초점거리(mm)": 85,
+      "최대 초점거리(mm)": 85,
+      "35mm 환산 초점거리(기본 포맷)": "85mm",
+      "35mm 환산 최소 초점거리(mm)": 85,
+      "35mm 환산 최대 초점거리(mm)": 85,
+      "렌즈 종류": "단렌즈",
+      "주요 용도 또는 렌즈 분류": "망원 단렌즈",
+      "최대 조리개": "F1.2",
+      "AF 지원 여부": "있음",
+      "MF 지원 여부": "있음",
+      "판매 상태": "현재 판매",
+      "비고": "Sony E 버전. 제조사 공식 사양 및 세기P&C 국내 정식 유통·가격 확인. 공식몰 일시 품절은 단종과 구분합니다.",
+      "공식 출처 URL": "https://www.sigma-global.com/en/lenses/a026_85_12/",
+      "교차검증 URL": "https://www.saeki.co.kr/item/itemDetail?itemId=PD00043418",
+      "데이터 기준일": "2026-10-06",
+      "검증 상태": "제조사 공식 사양과 한국 공식 유통·가격 확인",
+      "렌즈 구성": "12군 17매",
+      "화각": "28.6°",
+      "조리개 날 수": 13,
+      "최소 조리개": "F16",
+      "최단 촬영 거리 상세": "84cm",
+      "최대 촬영 배율": "1:8.9",
+      "필터 구경(mm)": 82,
+      "AF 모터": "Dual HLA",
+      "방진/방적 여부": "있음",
+      "동봉 액세서리": "파우치 / LH878-08 렌즈 후드 / LCF-82 IV 전면 캡 / LCR III 후면 캡",
+      "렌즈 치수 상세": "Sony E: 지름 87.2mm × 길이 121.7mm",
+      "무게 상세": "Sony E: 905g",
+      "최대 지름(mm)": 87.2,
+      "길이(mm)": 121.7,
+      "무게(g)": 905,
+      "사양 확인일": "2026-10-06",
+      "공식 사양 출처": "https://www.sigma-global.com/en/lenses/a026_85_12/"
+    },
+    "specSources": {
+      "제조사": {
+        "url": "https://www.sigma-global.com/en/lenses/a026_85_12/",
+        "checkedAt": "2026-10-06"
+      },
+      "카메라 방식": {
+        "url": "https://www.sigma-global.com/en/lenses/a026_85_12/",
+        "checkedAt": "2026-10-06"
+      },
+      "제품 종류": {
+        "url": "https://www.sigma-global.com/en/lenses/a026_85_12/",
+        "checkedAt": "2026-10-06"
+      },
+      "마운트": {
+        "url": "https://www.sigma-global.com/en/lenses/a026_85_12/",
+        "checkedAt": "2026-10-06"
+      },
+      "시리즈": {
+        "url": "https://www.sigma-global.com/en/lenses/a026_85_12/",
+        "checkedAt": "2026-10-06"
+      },
+      "모델명": {
+        "url": "https://www.sigma-global.com/en/lenses/a026_85_12/",
+        "checkedAt": "2026-10-06"
+      },
+      "정식 제품명": {
+        "url": "https://www.sigma-global.com/en/lenses/a026_85_12/",
+        "checkedAt": "2026-10-06"
+      },
+      "모델 코드": {
+        "url": "https://www.sigma-global.com/en/lenses/a026_85_12/",
+        "checkedAt": "2026-10-06"
+      },
+      "출시일": {
+        "url": "https://www.sigma-global.com/en/news/2026/09/08/012286/",
+        "checkedAt": "2026-10-06"
+      },
+      "출시년도": {
+        "url": "https://www.sigma-global.com/en/news/2026/09/08/012286/",
+        "checkedAt": "2026-10-06"
+      },
+      "단종 여부": {
+        "url": "https://www.saeki.co.kr/item/itemDetail?itemId=PD00043418",
+        "checkedAt": "2026-10-06"
+      },
+      "현재 판매 여부": {
+        "url": "https://www.saeki.co.kr/item/itemDetail?itemId=PD00043418",
+        "checkedAt": "2026-10-06"
+      },
+      "렌즈 마운트": {
+        "url": "https://www.sigma-global.com/en/lenses/a026_85_12/",
+        "checkedAt": "2026-10-06"
+      },
+      "렌즈 포맷": {
+        "url": "https://www.sigma-global.com/en/lenses/a026_85_12/",
+        "checkedAt": "2026-10-06"
+      },
+      "대응 센서 포맷": {
+        "url": "https://www.sigma-global.com/en/lenses/a026_85_12/",
+        "checkedAt": "2026-10-06"
+      },
+      "렌즈 시리즈": {
+        "url": "https://www.sigma-global.com/en/lenses/a026_85_12/",
+        "checkedAt": "2026-10-06"
+      },
+      "초점거리": {
+        "url": "https://www.sigma-global.com/en/lenses/a026_85_12/",
+        "checkedAt": "2026-10-06"
+      },
+      "최소 초점거리(mm)": {
+        "url": "https://www.sigma-global.com/en/lenses/a026_85_12/",
+        "checkedAt": "2026-10-06"
+      },
+      "최대 초점거리(mm)": {
+        "url": "https://www.sigma-global.com/en/lenses/a026_85_12/",
+        "checkedAt": "2026-10-06"
+      },
+      "35mm 환산 초점거리(기본 포맷)": {
+        "url": "https://www.sigma-global.com/en/lenses/a026_85_12/",
+        "checkedAt": "2026-10-06"
+      },
+      "35mm 환산 최소 초점거리(mm)": {
+        "url": "https://www.sigma-global.com/en/lenses/a026_85_12/",
+        "checkedAt": "2026-10-06"
+      },
+      "35mm 환산 최대 초점거리(mm)": {
+        "url": "https://www.sigma-global.com/en/lenses/a026_85_12/",
+        "checkedAt": "2026-10-06"
+      },
+      "렌즈 종류": {
+        "url": "https://www.sigma-global.com/en/lenses/a026_85_12/",
+        "checkedAt": "2026-10-06"
+      },
+      "주요 용도 또는 렌즈 분류": {
+        "url": "https://www.sigma-global.com/en/lenses/a026_85_12/",
+        "checkedAt": "2026-10-06"
+      },
+      "최대 조리개": {
+        "url": "https://www.sigma-global.com/en/lenses/a026_85_12/",
+        "checkedAt": "2026-10-06"
+      },
+      "AF 지원 여부": {
+        "url": "https://www.sigma-global.com/en/lenses/a026_85_12/",
+        "checkedAt": "2026-10-06"
+      },
+      "MF 지원 여부": {
+        "url": "https://www.sigma-global.com/en/lenses/a026_85_12/",
+        "checkedAt": "2026-10-06"
+      },
+      "판매 상태": {
+        "url": "https://www.saeki.co.kr/item/itemDetail?itemId=PD00043418",
+        "checkedAt": "2026-10-06"
+      },
+      "렌즈 구성": {
+        "url": "https://www.sigma-global.com/en/lenses/a026_85_12/",
+        "checkedAt": "2026-10-06"
+      },
+      "화각": {
+        "url": "https://www.sigma-global.com/en/lenses/a026_85_12/",
+        "checkedAt": "2026-10-06"
+      },
+      "조리개 날 수": {
+        "url": "https://www.sigma-global.com/en/lenses/a026_85_12/",
+        "checkedAt": "2026-10-06"
+      },
+      "최소 조리개": {
+        "url": "https://www.sigma-global.com/en/lenses/a026_85_12/",
+        "checkedAt": "2026-10-06"
+      },
+      "최단 촬영 거리 상세": {
+        "url": "https://www.sigma-global.com/en/lenses/a026_85_12/",
+        "checkedAt": "2026-10-06"
+      },
+      "최대 촬영 배율": {
+        "url": "https://www.sigma-global.com/en/lenses/a026_85_12/",
+        "checkedAt": "2026-10-06"
+      },
+      "필터 구경(mm)": {
+        "url": "https://www.sigma-global.com/en/lenses/a026_85_12/",
+        "checkedAt": "2026-10-06"
+      },
+      "AF 모터": {
+        "url": "https://www.sigma-global.com/en/lenses/a026_85_12/",
+        "checkedAt": "2026-10-06"
+      },
+      "방진/방적 여부": {
+        "url": "https://www.sigma-global.com/en/lenses/a026_85_12/",
+        "checkedAt": "2026-10-06"
+      },
+      "동봉 액세서리": {
+        "url": "https://www.sigma-global.com/en/lenses/a026_85_12/",
+        "checkedAt": "2026-10-06"
+      },
+      "렌즈 치수 상세": {
+        "url": "https://www.sigma-global.com/en/lenses/a026_85_12/",
+        "checkedAt": "2026-10-06"
+      },
+      "무게 상세": {
+        "url": "https://www.sigma-global.com/en/lenses/a026_85_12/",
+        "checkedAt": "2026-10-06"
+      },
+      "최대 지름(mm)": {
+        "url": "https://www.sigma-global.com/en/lenses/a026_85_12/",
+        "checkedAt": "2026-10-06"
+      },
+      "길이(mm)": {
+        "url": "https://www.sigma-global.com/en/lenses/a026_85_12/",
+        "checkedAt": "2026-10-06"
+      },
+      "무게(g)": {
+        "url": "https://www.sigma-global.com/en/lenses/a026_85_12/",
+        "checkedAt": "2026-10-06"
+      }
+    },
     "active": true
+  },
+  {
+    "id": "sigma-렌즈-l-mount-85mm-f1-2-dg-art-l-mount",
+    "manufacturer": "Sigma",
+    "cameraSystem": "미러리스",
+    "type": "렌즈",
+    "mount": "L-Mount",
+    "series": "Sigma Art",
+    "model": "85mm F1.2 DG | Art",
+    "officialName": "Sigma 85mm F1.2 DG | Art",
+    "modelCode": "85mm F1.2 DG | Art [L-Mount]",
+    "releaseDate": "2026-09-30",
+    "releaseYear": 2026,
+    "discontinued": "아니오",
+    "currentSale": "예",
+    "successor": null,
+    "sensorFormat": null,
+    "cropFactor": null,
+    "lensFormat": "DG",
+    "compatibleSensorFormat": "Full Frame",
+    "focalMinMm": 85,
+    "focalMaxMm": 85,
+    "focalLength": "85mm",
+    "maxAperture": "F1.2",
+    "lensType": "단렌즈",
+    "category": "망원 단렌즈",
+    "ibis": null,
+    "oss": null,
+    "weightG": 905,
+    "saleStatus": "현재 판매",
+    "note": "L-Mount 버전. 제조사 공식 사양 및 세기P&C 국내 정식 유통·가격 확인. 공식몰 일시 품절은 단종과 구분합니다.",
+    "officialSource": "https://www.sigma-global.com/en/lenses/a026_85_12/",
+    "verifiedAt": "2026-10-06",
+    "verification": "제조사 공식 사양과 한국 공식 유통·가격 확인",
+    "specs": {
+      "제조사": "Sigma",
+      "카메라 방식": "미러리스",
+      "제품 종류": "렌즈",
+      "마운트": "L-Mount",
+      "시리즈": "Sigma Art",
+      "모델명": "85mm F1.2 DG | Art",
+      "정식 제품명": "Sigma 85mm F1.2 DG | Art",
+      "모델 코드": "85mm F1.2 DG | Art [L-Mount]",
+      "출시일": "2026-09-30",
+      "출시년도": 2026,
+      "단종 여부": "아니오",
+      "현재 판매 여부": "예",
+      "렌즈 마운트": "L-Mount",
+      "렌즈 포맷": "DG",
+      "대응 센서 포맷": "Full Frame",
+      "렌즈 시리즈": "Sigma Art",
+      "초점거리": "85mm",
+      "최소 초점거리(mm)": 85,
+      "최대 초점거리(mm)": 85,
+      "35mm 환산 초점거리(기본 포맷)": "85mm",
+      "35mm 환산 최소 초점거리(mm)": 85,
+      "35mm 환산 최대 초점거리(mm)": 85,
+      "렌즈 종류": "단렌즈",
+      "주요 용도 또는 렌즈 분류": "망원 단렌즈",
+      "최대 조리개": "F1.2",
+      "AF 지원 여부": "있음",
+      "MF 지원 여부": "있음",
+      "판매 상태": "현재 판매",
+      "비고": "L-Mount 버전. 제조사 공식 사양 및 세기P&C 국내 정식 유통·가격 확인. 공식몰 일시 품절은 단종과 구분합니다.",
+      "공식 출처 URL": "https://www.sigma-global.com/en/lenses/a026_85_12/",
+      "교차검증 URL": "https://www.saeki.co.kr/item/itemDetail?itemId=PD00043419",
+      "데이터 기준일": "2026-10-06",
+      "검증 상태": "제조사 공식 사양과 한국 공식 유통·가격 확인",
+      "렌즈 구성": "12군 17매",
+      "화각": "28.6°",
+      "조리개 날 수": 13,
+      "최소 조리개": "F16",
+      "최단 촬영 거리 상세": "84cm",
+      "최대 촬영 배율": "1:8.9",
+      "필터 구경(mm)": 82,
+      "AF 모터": "Dual HLA",
+      "방진/방적 여부": "있음",
+      "동봉 액세서리": "파우치 / LH878-08 렌즈 후드 / LCF-82 IV 전면 캡 / LCR III 후면 캡",
+      "렌즈 치수 상세": "L-Mount: 지름 87.2mm × 길이 119.7mm",
+      "무게 상세": "L-Mount: 905g",
+      "최대 지름(mm)": 87.2,
+      "길이(mm)": 119.7,
+      "무게(g)": 905,
+      "사양 확인일": "2026-10-06",
+      "공식 사양 출처": "https://www.sigma-global.com/en/lenses/a026_85_12/"
+    },
+    "specSources": {
+      "제조사": {
+        "url": "https://www.sigma-global.com/en/lenses/a026_85_12/",
+        "checkedAt": "2026-10-06"
+      },
+      "카메라 방식": {
+        "url": "https://www.sigma-global.com/en/lenses/a026_85_12/",
+        "checkedAt": "2026-10-06"
+      },
+      "제품 종류": {
+        "url": "https://www.sigma-global.com/en/lenses/a026_85_12/",
+        "checkedAt": "2026-10-06"
+      },
+      "마운트": {
+        "url": "https://www.sigma-global.com/en/lenses/a026_85_12/",
+        "checkedAt": "2026-10-06"
+      },
+      "시리즈": {
+        "url": "https://www.sigma-global.com/en/lenses/a026_85_12/",
+        "checkedAt": "2026-10-06"
+      },
+      "모델명": {
+        "url": "https://www.sigma-global.com/en/lenses/a026_85_12/",
+        "checkedAt": "2026-10-06"
+      },
+      "정식 제품명": {
+        "url": "https://www.sigma-global.com/en/lenses/a026_85_12/",
+        "checkedAt": "2026-10-06"
+      },
+      "모델 코드": {
+        "url": "https://www.sigma-global.com/en/lenses/a026_85_12/",
+        "checkedAt": "2026-10-06"
+      },
+      "출시일": {
+        "url": "https://www.sigma-global.com/en/news/2026/09/08/012286/",
+        "checkedAt": "2026-10-06"
+      },
+      "출시년도": {
+        "url": "https://www.sigma-global.com/en/news/2026/09/08/012286/",
+        "checkedAt": "2026-10-06"
+      },
+      "단종 여부": {
+        "url": "https://www.saeki.co.kr/item/itemDetail?itemId=PD00043419",
+        "checkedAt": "2026-10-06"
+      },
+      "현재 판매 여부": {
+        "url": "https://www.saeki.co.kr/item/itemDetail?itemId=PD00043419",
+        "checkedAt": "2026-10-06"
+      },
+      "렌즈 마운트": {
+        "url": "https://www.sigma-global.com/en/lenses/a026_85_12/",
+        "checkedAt": "2026-10-06"
+      },
+      "렌즈 포맷": {
+        "url": "https://www.sigma-global.com/en/lenses/a026_85_12/",
+        "checkedAt": "2026-10-06"
+      },
+      "대응 센서 포맷": {
+        "url": "https://www.sigma-global.com/en/lenses/a026_85_12/",
+        "checkedAt": "2026-10-06"
+      },
+      "렌즈 시리즈": {
+        "url": "https://www.sigma-global.com/en/lenses/a026_85_12/",
+        "checkedAt": "2026-10-06"
+      },
+      "초점거리": {
+        "url": "https://www.sigma-global.com/en/lenses/a026_85_12/",
+        "checkedAt": "2026-10-06"
+      },
+      "최소 초점거리(mm)": {
+        "url": "https://www.sigma-global.com/en/lenses/a026_85_12/",
+        "checkedAt": "2026-10-06"
+      },
+      "최대 초점거리(mm)": {
+        "url": "https://www.sigma-global.com/en/lenses/a026_85_12/",
+        "checkedAt": "2026-10-06"
+      },
+      "35mm 환산 초점거리(기본 포맷)": {
+        "url": "https://www.sigma-global.com/en/lenses/a026_85_12/",
+        "checkedAt": "2026-10-06"
+      },
+      "35mm 환산 최소 초점거리(mm)": {
+        "url": "https://www.sigma-global.com/en/lenses/a026_85_12/",
+        "checkedAt": "2026-10-06"
+      },
+      "35mm 환산 최대 초점거리(mm)": {
+        "url": "https://www.sigma-global.com/en/lenses/a026_85_12/",
+        "checkedAt": "2026-10-06"
+      },
+      "렌즈 종류": {
+        "url": "https://www.sigma-global.com/en/lenses/a026_85_12/",
+        "checkedAt": "2026-10-06"
+      },
+      "주요 용도 또는 렌즈 분류": {
+        "url": "https://www.sigma-global.com/en/lenses/a026_85_12/",
+        "checkedAt": "2026-10-06"
+      },
+      "최대 조리개": {
+        "url": "https://www.sigma-global.com/en/lenses/a026_85_12/",
+        "checkedAt": "2026-10-06"
+      },
+      "AF 지원 여부": {
+        "url": "https://www.sigma-global.com/en/lenses/a026_85_12/",
+        "checkedAt": "2026-10-06"
+      },
+      "MF 지원 여부": {
+        "url": "https://www.sigma-global.com/en/lenses/a026_85_12/",
+        "checkedAt": "2026-10-06"
+      },
+      "판매 상태": {
+        "url": "https://www.saeki.co.kr/item/itemDetail?itemId=PD00043419",
+        "checkedAt": "2026-10-06"
+      },
+      "렌즈 구성": {
+        "url": "https://www.sigma-global.com/en/lenses/a026_85_12/",
+        "checkedAt": "2026-10-06"
+      },
+      "화각": {
+        "url": "https://www.sigma-global.com/en/lenses/a026_85_12/",
+        "checkedAt": "2026-10-06"
+      },
+      "조리개 날 수": {
+        "url": "https://www.sigma-global.com/en/lenses/a026_85_12/",
+        "checkedAt": "2026-10-06"
+      },
+      "최소 조리개": {
+        "url": "https://www.sigma-global.com/en/lenses/a026_85_12/",
+        "checkedAt": "2026-10-06"
+      },
+      "최단 촬영 거리 상세": {
+        "url": "https://www.sigma-global.com/en/lenses/a026_85_12/",
+        "checkedAt": "2026-10-06"
+      },
+      "최대 촬영 배율": {
+        "url": "https://www.sigma-global.com/en/lenses/a026_85_12/",
+        "checkedAt": "2026-10-06"
+      },
+      "필터 구경(mm)": {
+        "url": "https://www.sigma-global.com/en/lenses/a026_85_12/",
+        "checkedAt": "2026-10-06"
+      },
+      "AF 모터": {
+        "url": "https://www.sigma-global.com/en/lenses/a026_85_12/",
+        "checkedAt": "2026-10-06"
+      },
+      "방진/방적 여부": {
+        "url": "https://www.sigma-global.com/en/lenses/a026_85_12/",
+        "checkedAt": "2026-10-06"
+      },
+      "동봉 액세서리": {
+        "url": "https://www.sigma-global.com/en/lenses/a026_85_12/",
+        "checkedAt": "2026-10-06"
+      },
+      "렌즈 치수 상세": {
+        "url": "https://www.sigma-global.com/en/lenses/a026_85_12/",
+        "checkedAt": "2026-10-06"
+      },
+      "무게 상세": {
+        "url": "https://www.sigma-global.com/en/lenses/a026_85_12/",
+        "checkedAt": "2026-10-06"
+      },
+      "최대 지름(mm)": {
+        "url": "https://www.sigma-global.com/en/lenses/a026_85_12/",
+        "checkedAt": "2026-10-06"
+      },
+      "길이(mm)": {
+        "url": "https://www.sigma-global.com/en/lenses/a026_85_12/",
+        "checkedAt": "2026-10-06"
+      },
+      "무게(g)": {
+        "url": "https://www.sigma-global.com/en/lenses/a026_85_12/",
+        "checkedAt": "2026-10-06"
+      }
+    },
+    "active": true
+  },
+  {
+    "id": "sigma-렌즈-sony-e-20-60mm-f2-8-4-dg-contemporary-sony-e",
+    "manufacturer": "Sigma",
+    "cameraSystem": "미러리스",
+    "type": "렌즈",
+    "mount": "Sony E",
+    "series": "Sigma Contemporary",
+    "model": "20-60mm F2.8-4 DG | Contemporary",
+    "officialName": "Sigma 20-60mm F2.8-4 DG | Contemporary",
+    "modelCode": "20-60mm F2.8-4 DG | Contemporary [Sony E]",
+    "releaseDate": "2026-09-30",
+    "releaseYear": 2026,
+    "discontinued": "아니오",
+    "currentSale": "예",
+    "successor": null,
+    "sensorFormat": null,
+    "cropFactor": null,
+    "lensFormat": "DG",
+    "compatibleSensorFormat": "Full Frame",
+    "focalMinMm": 20,
+    "focalMaxMm": 60,
+    "focalLength": "20-60mm",
+    "maxAperture": "F2.8-4",
+    "lensType": "줌렌즈",
+    "category": "표준 줌렌즈",
+    "ibis": null,
+    "oss": null,
+    "weightG": 375,
+    "saleStatus": "현재 판매",
+    "note": "Sony E 버전. 제조사 공식 사양 및 세기P&C 국내 정식 유통·가격 확인. 공식몰 일시 품절은 단종과 구분합니다.",
+    "officialSource": "https://www.sigma-global.com/en/lenses/c026_20_60_28_4/",
+    "verifiedAt": "2026-10-06",
+    "verification": "제조사 공식 사양과 한국 공식 유통·가격 확인",
+    "specs": {
+      "제조사": "Sigma",
+      "카메라 방식": "미러리스",
+      "제품 종류": "렌즈",
+      "마운트": "Sony E",
+      "시리즈": "Sigma Contemporary",
+      "모델명": "20-60mm F2.8-4 DG | Contemporary",
+      "정식 제품명": "Sigma 20-60mm F2.8-4 DG | Contemporary",
+      "모델 코드": "20-60mm F2.8-4 DG | Contemporary [Sony E]",
+      "출시일": "2026-09-30",
+      "출시년도": 2026,
+      "단종 여부": "아니오",
+      "현재 판매 여부": "예",
+      "렌즈 마운트": "Sony E",
+      "렌즈 포맷": "DG",
+      "대응 센서 포맷": "Full Frame",
+      "렌즈 시리즈": "Sigma Contemporary",
+      "초점거리": "20-60mm",
+      "최소 초점거리(mm)": 20,
+      "최대 초점거리(mm)": 60,
+      "35mm 환산 초점거리(기본 포맷)": "20-60mm",
+      "35mm 환산 최소 초점거리(mm)": 20,
+      "35mm 환산 최대 초점거리(mm)": 60,
+      "렌즈 종류": "줌렌즈",
+      "주요 용도 또는 렌즈 분류": "표준 줌렌즈",
+      "최대 조리개": "F2.8-4",
+      "AF 지원 여부": "있음",
+      "MF 지원 여부": "있음",
+      "판매 상태": "현재 판매",
+      "비고": "Sony E 버전. 제조사 공식 사양 및 세기P&C 국내 정식 유통·가격 확인. 공식몰 일시 품절은 단종과 구분합니다.",
+      "공식 출처 URL": "https://www.sigma-global.com/en/lenses/c026_20_60_28_4/",
+      "교차검증 URL": "https://www.saeki.co.kr/item/itemDetail?itemId=PD00043415",
+      "데이터 기준일": "2026-10-06",
+      "검증 상태": "제조사 공식 사양과 한국 공식 유통·가격 확인",
+      "렌즈 구성": "13군 15매 (SLD 3매, 비구면 3매)",
+      "화각": "94.5°-39.6°",
+      "조리개 날 수": 9,
+      "최소 조리개": "F22-32",
+      "최단 촬영 거리 상세": "15.8cm (28mm) / 20cm (광각) - 25cm (망원)",
+      "최대 촬영 배율": "1:2.3 (35mm)",
+      "필터 구경(mm)": 67,
+      "AF 모터": "HLA",
+      "방진/방적 여부": "있음",
+      "동봉 액세서리": "파우치 / LH706-04 렌즈 후드 / LCF-67 IV 전면 캡 / LCR III 후면 캡",
+      "렌즈 치수 상세": "Sony E: 지름 72.2mm × 길이 88mm",
+      "무게 상세": "Sony E: 375g",
+      "최대 지름(mm)": 72.2,
+      "길이(mm)": 88,
+      "무게(g)": 375,
+      "사양 확인일": "2026-10-06",
+      "공식 사양 출처": "https://www.sigma-global.com/en/lenses/c026_20_60_28_4/"
+    },
+    "specSources": {
+      "제조사": {
+        "url": "https://www.sigma-global.com/en/lenses/c026_20_60_28_4/",
+        "checkedAt": "2026-10-06"
+      },
+      "카메라 방식": {
+        "url": "https://www.sigma-global.com/en/lenses/c026_20_60_28_4/",
+        "checkedAt": "2026-10-06"
+      },
+      "제품 종류": {
+        "url": "https://www.sigma-global.com/en/lenses/c026_20_60_28_4/",
+        "checkedAt": "2026-10-06"
+      },
+      "마운트": {
+        "url": "https://www.sigma-global.com/en/lenses/c026_20_60_28_4/",
+        "checkedAt": "2026-10-06"
+      },
+      "시리즈": {
+        "url": "https://www.sigma-global.com/en/lenses/c026_20_60_28_4/",
+        "checkedAt": "2026-10-06"
+      },
+      "모델명": {
+        "url": "https://www.sigma-global.com/en/lenses/c026_20_60_28_4/",
+        "checkedAt": "2026-10-06"
+      },
+      "정식 제품명": {
+        "url": "https://www.sigma-global.com/en/lenses/c026_20_60_28_4/",
+        "checkedAt": "2026-10-06"
+      },
+      "모델 코드": {
+        "url": "https://www.sigma-global.com/en/lenses/c026_20_60_28_4/",
+        "checkedAt": "2026-10-06"
+      },
+      "출시일": {
+        "url": "https://www.sigma-global.com/en/news/2026/09/08/012102/",
+        "checkedAt": "2026-10-06"
+      },
+      "출시년도": {
+        "url": "https://www.sigma-global.com/en/news/2026/09/08/012102/",
+        "checkedAt": "2026-10-06"
+      },
+      "단종 여부": {
+        "url": "https://www.saeki.co.kr/item/itemDetail?itemId=PD00043415",
+        "checkedAt": "2026-10-06"
+      },
+      "현재 판매 여부": {
+        "url": "https://www.saeki.co.kr/item/itemDetail?itemId=PD00043415",
+        "checkedAt": "2026-10-06"
+      },
+      "렌즈 마운트": {
+        "url": "https://www.sigma-global.com/en/lenses/c026_20_60_28_4/",
+        "checkedAt": "2026-10-06"
+      },
+      "렌즈 포맷": {
+        "url": "https://www.sigma-global.com/en/lenses/c026_20_60_28_4/",
+        "checkedAt": "2026-10-06"
+      },
+      "대응 센서 포맷": {
+        "url": "https://www.sigma-global.com/en/lenses/c026_20_60_28_4/",
+        "checkedAt": "2026-10-06"
+      },
+      "렌즈 시리즈": {
+        "url": "https://www.sigma-global.com/en/lenses/c026_20_60_28_4/",
+        "checkedAt": "2026-10-06"
+      },
+      "초점거리": {
+        "url": "https://www.sigma-global.com/en/lenses/c026_20_60_28_4/",
+        "checkedAt": "2026-10-06"
+      },
+      "최소 초점거리(mm)": {
+        "url": "https://www.sigma-global.com/en/lenses/c026_20_60_28_4/",
+        "checkedAt": "2026-10-06"
+      },
+      "최대 초점거리(mm)": {
+        "url": "https://www.sigma-global.com/en/lenses/c026_20_60_28_4/",
+        "checkedAt": "2026-10-06"
+      },
+      "35mm 환산 초점거리(기본 포맷)": {
+        "url": "https://www.sigma-global.com/en/lenses/c026_20_60_28_4/",
+        "checkedAt": "2026-10-06"
+      },
+      "35mm 환산 최소 초점거리(mm)": {
+        "url": "https://www.sigma-global.com/en/lenses/c026_20_60_28_4/",
+        "checkedAt": "2026-10-06"
+      },
+      "35mm 환산 최대 초점거리(mm)": {
+        "url": "https://www.sigma-global.com/en/lenses/c026_20_60_28_4/",
+        "checkedAt": "2026-10-06"
+      },
+      "렌즈 종류": {
+        "url": "https://www.sigma-global.com/en/lenses/c026_20_60_28_4/",
+        "checkedAt": "2026-10-06"
+      },
+      "주요 용도 또는 렌즈 분류": {
+        "url": "https://www.sigma-global.com/en/lenses/c026_20_60_28_4/",
+        "checkedAt": "2026-10-06"
+      },
+      "최대 조리개": {
+        "url": "https://www.sigma-global.com/en/lenses/c026_20_60_28_4/",
+        "checkedAt": "2026-10-06"
+      },
+      "AF 지원 여부": {
+        "url": "https://www.sigma-global.com/en/lenses/c026_20_60_28_4/",
+        "checkedAt": "2026-10-06"
+      },
+      "MF 지원 여부": {
+        "url": "https://www.sigma-global.com/en/lenses/c026_20_60_28_4/",
+        "checkedAt": "2026-10-06"
+      },
+      "판매 상태": {
+        "url": "https://www.saeki.co.kr/item/itemDetail?itemId=PD00043415",
+        "checkedAt": "2026-10-06"
+      },
+      "렌즈 구성": {
+        "url": "https://www.sigma-global.com/en/lenses/c026_20_60_28_4/",
+        "checkedAt": "2026-10-06"
+      },
+      "화각": {
+        "url": "https://www.sigma-global.com/en/lenses/c026_20_60_28_4/",
+        "checkedAt": "2026-10-06"
+      },
+      "조리개 날 수": {
+        "url": "https://www.sigma-global.com/en/lenses/c026_20_60_28_4/",
+        "checkedAt": "2026-10-06"
+      },
+      "최소 조리개": {
+        "url": "https://www.sigma-global.com/en/lenses/c026_20_60_28_4/",
+        "checkedAt": "2026-10-06"
+      },
+      "최단 촬영 거리 상세": {
+        "url": "https://www.sigma-global.com/en/lenses/c026_20_60_28_4/",
+        "checkedAt": "2026-10-06"
+      },
+      "최대 촬영 배율": {
+        "url": "https://www.sigma-global.com/en/lenses/c026_20_60_28_4/",
+        "checkedAt": "2026-10-06"
+      },
+      "필터 구경(mm)": {
+        "url": "https://www.sigma-global.com/en/lenses/c026_20_60_28_4/",
+        "checkedAt": "2026-10-06"
+      },
+      "AF 모터": {
+        "url": "https://www.sigma-global.com/en/lenses/c026_20_60_28_4/",
+        "checkedAt": "2026-10-06"
+      },
+      "방진/방적 여부": {
+        "url": "https://www.sigma-global.com/en/lenses/c026_20_60_28_4/",
+        "checkedAt": "2026-10-06"
+      },
+      "동봉 액세서리": {
+        "url": "https://www.sigma-global.com/en/lenses/c026_20_60_28_4/",
+        "checkedAt": "2026-10-06"
+      },
+      "렌즈 치수 상세": {
+        "url": "https://www.sigma-global.com/en/lenses/c026_20_60_28_4/",
+        "checkedAt": "2026-10-06"
+      },
+      "무게 상세": {
+        "url": "https://www.sigma-global.com/en/lenses/c026_20_60_28_4/",
+        "checkedAt": "2026-10-06"
+      },
+      "최대 지름(mm)": {
+        "url": "https://www.sigma-global.com/en/lenses/c026_20_60_28_4/",
+        "checkedAt": "2026-10-06"
+      },
+      "길이(mm)": {
+        "url": "https://www.sigma-global.com/en/lenses/c026_20_60_28_4/",
+        "checkedAt": "2026-10-06"
+      },
+      "무게(g)": {
+        "url": "https://www.sigma-global.com/en/lenses/c026_20_60_28_4/",
+        "checkedAt": "2026-10-06"
+      }
+    },
+    "active": true
+  },
+  {
+    "id": "sigma-렌즈-l-mount-20-60mm-f2-8-4-dg-contemporary-l-mount",
+    "manufacturer": "Sigma",
+    "cameraSystem": "미러리스",
+    "type": "렌즈",
+    "mount": "L-Mount",
+    "series": "Sigma Contemporary",
+    "model": "20-60mm F2.8-4 DG | Contemporary",
+    "officialName": "Sigma 20-60mm F2.8-4 DG | Contemporary",
+    "modelCode": "20-60mm F2.8-4 DG | Contemporary [L-Mount]",
+    "releaseDate": "2026-09-30",
+    "releaseYear": 2026,
+    "discontinued": "아니오",
+    "currentSale": "예",
+    "successor": null,
+    "sensorFormat": null,
+    "cropFactor": null,
+    "lensFormat": "DG",
+    "compatibleSensorFormat": "Full Frame",
+    "focalMinMm": 20,
+    "focalMaxMm": 60,
+    "focalLength": "20-60mm",
+    "maxAperture": "F2.8-4",
+    "lensType": "줌렌즈",
+    "category": "표준 줌렌즈",
+    "ibis": null,
+    "oss": null,
+    "weightG": 385,
+    "saleStatus": "현재 판매",
+    "note": "L-Mount 버전. 제조사 공식 사양 및 세기P&C 국내 정식 유통·가격 확인. 공식몰 일시 품절은 단종과 구분합니다.",
+    "officialSource": "https://www.sigma-global.com/en/lenses/c026_20_60_28_4/",
+    "verifiedAt": "2026-10-06",
+    "verification": "제조사 공식 사양과 한국 공식 유통·가격 확인",
+    "specs": {
+      "제조사": "Sigma",
+      "카메라 방식": "미러리스",
+      "제품 종류": "렌즈",
+      "마운트": "L-Mount",
+      "시리즈": "Sigma Contemporary",
+      "모델명": "20-60mm F2.8-4 DG | Contemporary",
+      "정식 제품명": "Sigma 20-60mm F2.8-4 DG | Contemporary",
+      "모델 코드": "20-60mm F2.8-4 DG | Contemporary [L-Mount]",
+      "출시일": "2026-09-30",
+      "출시년도": 2026,
+      "단종 여부": "아니오",
+      "현재 판매 여부": "예",
+      "렌즈 마운트": "L-Mount",
+      "렌즈 포맷": "DG",
+      "대응 센서 포맷": "Full Frame",
+      "렌즈 시리즈": "Sigma Contemporary",
+      "초점거리": "20-60mm",
+      "최소 초점거리(mm)": 20,
+      "최대 초점거리(mm)": 60,
+      "35mm 환산 초점거리(기본 포맷)": "20-60mm",
+      "35mm 환산 최소 초점거리(mm)": 20,
+      "35mm 환산 최대 초점거리(mm)": 60,
+      "렌즈 종류": "줌렌즈",
+      "주요 용도 또는 렌즈 분류": "표준 줌렌즈",
+      "최대 조리개": "F2.8-4",
+      "AF 지원 여부": "있음",
+      "MF 지원 여부": "있음",
+      "판매 상태": "현재 판매",
+      "비고": "L-Mount 버전. 제조사 공식 사양 및 세기P&C 국내 정식 유통·가격 확인. 공식몰 일시 품절은 단종과 구분합니다.",
+      "공식 출처 URL": "https://www.sigma-global.com/en/lenses/c026_20_60_28_4/",
+      "교차검증 URL": "https://www.saeki.co.kr/item/itemDetail?itemId=PD00043417",
+      "데이터 기준일": "2026-10-06",
+      "검증 상태": "제조사 공식 사양과 한국 공식 유통·가격 확인",
+      "렌즈 구성": "13군 15매 (SLD 3매, 비구면 3매)",
+      "화각": "94.5°-39.6°",
+      "조리개 날 수": 9,
+      "최소 조리개": "F22-32",
+      "최단 촬영 거리 상세": "15.8cm (28mm) / 20cm (광각) - 25cm (망원)",
+      "최대 촬영 배율": "1:2.3 (35mm)",
+      "필터 구경(mm)": 67,
+      "AF 모터": "HLA",
+      "방진/방적 여부": "있음",
+      "동봉 액세서리": "파우치 / LH706-04 렌즈 후드 / LCF-67 IV 전면 캡 / LCR III 후면 캡",
+      "렌즈 치수 상세": "L-Mount: 지름 72.2mm × 길이 86mm",
+      "무게 상세": "L-Mount: 385g",
+      "최대 지름(mm)": 72.2,
+      "길이(mm)": 86,
+      "무게(g)": 385,
+      "사양 확인일": "2026-10-06",
+      "공식 사양 출처": "https://www.sigma-global.com/en/lenses/c026_20_60_28_4/"
+    },
+    "specSources": {
+      "제조사": {
+        "url": "https://www.sigma-global.com/en/lenses/c026_20_60_28_4/",
+        "checkedAt": "2026-10-06"
+      },
+      "카메라 방식": {
+        "url": "https://www.sigma-global.com/en/lenses/c026_20_60_28_4/",
+        "checkedAt": "2026-10-06"
+      },
+      "제품 종류": {
+        "url": "https://www.sigma-global.com/en/lenses/c026_20_60_28_4/",
+        "checkedAt": "2026-10-06"
+      },
+      "마운트": {
+        "url": "https://www.sigma-global.com/en/lenses/c026_20_60_28_4/",
+        "checkedAt": "2026-10-06"
+      },
+      "시리즈": {
+        "url": "https://www.sigma-global.com/en/lenses/c026_20_60_28_4/",
+        "checkedAt": "2026-10-06"
+      },
+      "모델명": {
+        "url": "https://www.sigma-global.com/en/lenses/c026_20_60_28_4/",
+        "checkedAt": "2026-10-06"
+      },
+      "정식 제품명": {
+        "url": "https://www.sigma-global.com/en/lenses/c026_20_60_28_4/",
+        "checkedAt": "2026-10-06"
+      },
+      "모델 코드": {
+        "url": "https://www.sigma-global.com/en/lenses/c026_20_60_28_4/",
+        "checkedAt": "2026-10-06"
+      },
+      "출시일": {
+        "url": "https://www.sigma-global.com/en/news/2026/09/08/012102/",
+        "checkedAt": "2026-10-06"
+      },
+      "출시년도": {
+        "url": "https://www.sigma-global.com/en/news/2026/09/08/012102/",
+        "checkedAt": "2026-10-06"
+      },
+      "단종 여부": {
+        "url": "https://www.saeki.co.kr/item/itemDetail?itemId=PD00043417",
+        "checkedAt": "2026-10-06"
+      },
+      "현재 판매 여부": {
+        "url": "https://www.saeki.co.kr/item/itemDetail?itemId=PD00043417",
+        "checkedAt": "2026-10-06"
+      },
+      "렌즈 마운트": {
+        "url": "https://www.sigma-global.com/en/lenses/c026_20_60_28_4/",
+        "checkedAt": "2026-10-06"
+      },
+      "렌즈 포맷": {
+        "url": "https://www.sigma-global.com/en/lenses/c026_20_60_28_4/",
+        "checkedAt": "2026-10-06"
+      },
+      "대응 센서 포맷": {
+        "url": "https://www.sigma-global.com/en/lenses/c026_20_60_28_4/",
+        "checkedAt": "2026-10-06"
+      },
+      "렌즈 시리즈": {
+        "url": "https://www.sigma-global.com/en/lenses/c026_20_60_28_4/",
+        "checkedAt": "2026-10-06"
+      },
+      "초점거리": {
+        "url": "https://www.sigma-global.com/en/lenses/c026_20_60_28_4/",
+        "checkedAt": "2026-10-06"
+      },
+      "최소 초점거리(mm)": {
+        "url": "https://www.sigma-global.com/en/lenses/c026_20_60_28_4/",
+        "checkedAt": "2026-10-06"
+      },
+      "최대 초점거리(mm)": {
+        "url": "https://www.sigma-global.com/en/lenses/c026_20_60_28_4/",
+        "checkedAt": "2026-10-06"
+      },
+      "35mm 환산 초점거리(기본 포맷)": {
+        "url": "https://www.sigma-global.com/en/lenses/c026_20_60_28_4/",
+        "checkedAt": "2026-10-06"
+      },
+      "35mm 환산 최소 초점거리(mm)": {
+        "url": "https://www.sigma-global.com/en/lenses/c026_20_60_28_4/",
+        "checkedAt": "2026-10-06"
+      },
+      "35mm 환산 최대 초점거리(mm)": {
+        "url": "https://www.sigma-global.com/en/lenses/c026_20_60_28_4/",
+        "checkedAt": "2026-10-06"
+      },
+      "렌즈 종류": {
+        "url": "https://www.sigma-global.com/en/lenses/c026_20_60_28_4/",
+        "checkedAt": "2026-10-06"
+      },
+      "주요 용도 또는 렌즈 분류": {
+        "url": "https://www.sigma-global.com/en/lenses/c026_20_60_28_4/",
+        "checkedAt": "2026-10-06"
+      },
+      "최대 조리개": {
+        "url": "https://www.sigma-global.com/en/lenses/c026_20_60_28_4/",
+        "checkedAt": "2026-10-06"
+      },
+      "AF 지원 여부": {
+        "url": "https://www.sigma-global.com/en/lenses/c026_20_60_28_4/",
+        "checkedAt": "2026-10-06"
+      },
+      "MF 지원 여부": {
+        "url": "https://www.sigma-global.com/en/lenses/c026_20_60_28_4/",
+        "checkedAt": "2026-10-06"
+      },
+      "판매 상태": {
+        "url": "https://www.saeki.co.kr/item/itemDetail?itemId=PD00043417",
+        "checkedAt": "2026-10-06"
+      },
+      "렌즈 구성": {
+        "url": "https://www.sigma-global.com/en/lenses/c026_20_60_28_4/",
+        "checkedAt": "2026-10-06"
+      },
+      "화각": {
+        "url": "https://www.sigma-global.com/en/lenses/c026_20_60_28_4/",
+        "checkedAt": "2026-10-06"
+      },
+      "조리개 날 수": {
+        "url": "https://www.sigma-global.com/en/lenses/c026_20_60_28_4/",
+        "checkedAt": "2026-10-06"
+      },
+      "최소 조리개": {
+        "url": "https://www.sigma-global.com/en/lenses/c026_20_60_28_4/",
+        "checkedAt": "2026-10-06"
+      },
+      "최단 촬영 거리 상세": {
+        "url": "https://www.sigma-global.com/en/lenses/c026_20_60_28_4/",
+        "checkedAt": "2026-10-06"
+      },
+      "최대 촬영 배율": {
+        "url": "https://www.sigma-global.com/en/lenses/c026_20_60_28_4/",
+        "checkedAt": "2026-10-06"
+      },
+      "필터 구경(mm)": {
+        "url": "https://www.sigma-global.com/en/lenses/c026_20_60_28_4/",
+        "checkedAt": "2026-10-06"
+      },
+      "AF 모터": {
+        "url": "https://www.sigma-global.com/en/lenses/c026_20_60_28_4/",
+        "checkedAt": "2026-10-06"
+      },
+      "방진/방적 여부": {
+        "url": "https://www.sigma-global.com/en/lenses/c026_20_60_28_4/",
+        "checkedAt": "2026-10-06"
+      },
+      "동봉 액세서리": {
+        "url": "https://www.sigma-global.com/en/lenses/c026_20_60_28_4/",
+        "checkedAt": "2026-10-06"
+      },
+      "렌즈 치수 상세": {
+        "url": "https://www.sigma-global.com/en/lenses/c026_20_60_28_4/",
+        "checkedAt": "2026-10-06"
+      },
+      "무게 상세": {
+        "url": "https://www.sigma-global.com/en/lenses/c026_20_60_28_4/",
+        "checkedAt": "2026-10-06"
+      },
+      "최대 지름(mm)": {
+        "url": "https://www.sigma-global.com/en/lenses/c026_20_60_28_4/",
+        "checkedAt": "2026-10-06"
+      },
+      "길이(mm)": {
+        "url": "https://www.sigma-global.com/en/lenses/c026_20_60_28_4/",
+        "checkedAt": "2026-10-06"
+      },
+      "무게(g)": {
+        "url": "https://www.sigma-global.com/en/lenses/c026_20_60_28_4/",
+        "checkedAt": "2026-10-06"
+      }
+    },
+    "active": true
+  },
+  {
+    "id": "sigma-렌즈-sony-e-35mm-f1-4-dg-ii-art-sony-e",
+    "manufacturer": "Sigma",
+    "cameraSystem": "미러리스",
+    "type": "렌즈",
+    "mount": "Sony E",
+    "series": "Sigma Art",
+    "model": "35mm F1.4 DG II | Art",
+    "officialName": "Sigma 35mm F1.4 DG II | Art",
+    "modelCode": "35mm F1.4 DG II | Art [Sony E]",
+    "releaseDate": "2026-04-16",
+    "releaseYear": 2026,
+    "discontinued": "아니오",
+    "currentSale": "예",
+    "successor": null,
+    "sensorFormat": null,
+    "cropFactor": null,
+    "lensFormat": "DG",
+    "compatibleSensorFormat": "Full Frame",
+    "focalMinMm": 35,
+    "focalMaxMm": 35,
+    "focalLength": "35mm",
+    "maxAperture": "F1.4",
+    "lensType": "단렌즈",
+    "category": "광각 단렌즈",
+    "ibis": null,
+    "oss": null,
+    "weightG": 525,
+    "saleStatus": "현재 판매",
+    "note": "Sony E 버전. 제조사 공식 사양 및 세기P&C 국내 정식 유통·가격 확인. 공식몰 일시 품절은 단종과 구분합니다.",
+    "officialSource": "https://www.sigma-global.com/en/lenses/a026_35_14/",
+    "verifiedAt": "2026-10-06",
+    "verification": "제조사 공식 사양과 한국 공식 유통·가격 확인",
+    "specs": {
+      "제조사": "Sigma",
+      "카메라 방식": "미러리스",
+      "제품 종류": "렌즈",
+      "마운트": "Sony E",
+      "시리즈": "Sigma Art",
+      "모델명": "35mm F1.4 DG II | Art",
+      "정식 제품명": "Sigma 35mm F1.4 DG II | Art",
+      "모델 코드": "35mm F1.4 DG II | Art [Sony E]",
+      "출시일": "2026-04-16",
+      "출시년도": 2026,
+      "단종 여부": "아니오",
+      "현재 판매 여부": "예",
+      "렌즈 마운트": "Sony E",
+      "렌즈 포맷": "DG",
+      "대응 센서 포맷": "Full Frame",
+      "렌즈 시리즈": "Sigma Art",
+      "초점거리": "35mm",
+      "최소 초점거리(mm)": 35,
+      "최대 초점거리(mm)": 35,
+      "35mm 환산 초점거리(기본 포맷)": "35mm",
+      "35mm 환산 최소 초점거리(mm)": 35,
+      "35mm 환산 최대 초점거리(mm)": 35,
+      "렌즈 종류": "단렌즈",
+      "주요 용도 또는 렌즈 분류": "광각 단렌즈",
+      "최대 조리개": "F1.4",
+      "AF 지원 여부": "있음",
+      "MF 지원 여부": "있음",
+      "판매 상태": "현재 판매",
+      "비고": "Sony E 버전. 제조사 공식 사양 및 세기P&C 국내 정식 유통·가격 확인. 공식몰 일시 품절은 단종과 구분합니다.",
+      "공식 출처 URL": "https://www.sigma-global.com/en/lenses/a026_35_14/",
+      "교차검증 URL": "https://www.saeki.co.kr/item/itemDetail?itemId=PD00042489",
+      "데이터 기준일": "2026-10-06",
+      "검증 상태": "제조사 공식 사양과 한국 공식 유통·가격 확인",
+      "렌즈 구성": "12군 15매 (SLD 2매, 비구면 4매)",
+      "화각": "63.4°",
+      "조리개 날 수": 11,
+      "최소 조리개": "F16",
+      "최단 촬영 거리 상세": "28cm",
+      "최대 촬영 배율": "1:5.4",
+      "필터 구경(mm)": 67,
+      "AF 모터": "Dual HLA",
+      "방진/방적 여부": "있음",
+      "동봉 액세서리": "파우치 / LH725-01 렌즈 후드 / LCF-67 IV 전면 캡 / LCR III 후면 캡",
+      "렌즈 치수 상세": "Sony E: 지름 73mm × 길이 96mm",
+      "무게 상세": "Sony E: 525g",
+      "최대 지름(mm)": 73,
+      "길이(mm)": 96,
+      "무게(g)": 525,
+      "사양 확인일": "2026-10-06",
+      "공식 사양 출처": "https://www.sigma-global.com/en/lenses/a026_35_14/"
+    },
+    "specSources": {
+      "제조사": {
+        "url": "https://www.sigma-global.com/en/lenses/a026_35_14/",
+        "checkedAt": "2026-10-06"
+      },
+      "카메라 방식": {
+        "url": "https://www.sigma-global.com/en/lenses/a026_35_14/",
+        "checkedAt": "2026-10-06"
+      },
+      "제품 종류": {
+        "url": "https://www.sigma-global.com/en/lenses/a026_35_14/",
+        "checkedAt": "2026-10-06"
+      },
+      "마운트": {
+        "url": "https://www.sigma-global.com/en/lenses/a026_35_14/",
+        "checkedAt": "2026-10-06"
+      },
+      "시리즈": {
+        "url": "https://www.sigma-global.com/en/lenses/a026_35_14/",
+        "checkedAt": "2026-10-06"
+      },
+      "모델명": {
+        "url": "https://www.sigma-global.com/en/lenses/a026_35_14/",
+        "checkedAt": "2026-10-06"
+      },
+      "정식 제품명": {
+        "url": "https://www.sigma-global.com/en/lenses/a026_35_14/",
+        "checkedAt": "2026-10-06"
+      },
+      "모델 코드": {
+        "url": "https://www.sigma-global.com/en/lenses/a026_35_14/",
+        "checkedAt": "2026-10-06"
+      },
+      "출시일": {
+        "url": "https://www.sigma-global.com/en/news/2026/02/24/011999/",
+        "checkedAt": "2026-10-06"
+      },
+      "출시년도": {
+        "url": "https://www.sigma-global.com/en/news/2026/02/24/011999/",
+        "checkedAt": "2026-10-06"
+      },
+      "단종 여부": {
+        "url": "https://www.saeki.co.kr/item/itemDetail?itemId=PD00042489",
+        "checkedAt": "2026-10-06"
+      },
+      "현재 판매 여부": {
+        "url": "https://www.saeki.co.kr/item/itemDetail?itemId=PD00042489",
+        "checkedAt": "2026-10-06"
+      },
+      "렌즈 마운트": {
+        "url": "https://www.sigma-global.com/en/lenses/a026_35_14/",
+        "checkedAt": "2026-10-06"
+      },
+      "렌즈 포맷": {
+        "url": "https://www.sigma-global.com/en/lenses/a026_35_14/",
+        "checkedAt": "2026-10-06"
+      },
+      "대응 센서 포맷": {
+        "url": "https://www.sigma-global.com/en/lenses/a026_35_14/",
+        "checkedAt": "2026-10-06"
+      },
+      "렌즈 시리즈": {
+        "url": "https://www.sigma-global.com/en/lenses/a026_35_14/",
+        "checkedAt": "2026-10-06"
+      },
+      "초점거리": {
+        "url": "https://www.sigma-global.com/en/lenses/a026_35_14/",
+        "checkedAt": "2026-10-06"
+      },
+      "최소 초점거리(mm)": {
+        "url": "https://www.sigma-global.com/en/lenses/a026_35_14/",
+        "checkedAt": "2026-10-06"
+      },
+      "최대 초점거리(mm)": {
+        "url": "https://www.sigma-global.com/en/lenses/a026_35_14/",
+        "checkedAt": "2026-10-06"
+      },
+      "35mm 환산 초점거리(기본 포맷)": {
+        "url": "https://www.sigma-global.com/en/lenses/a026_35_14/",
+        "checkedAt": "2026-10-06"
+      },
+      "35mm 환산 최소 초점거리(mm)": {
+        "url": "https://www.sigma-global.com/en/lenses/a026_35_14/",
+        "checkedAt": "2026-10-06"
+      },
+      "35mm 환산 최대 초점거리(mm)": {
+        "url": "https://www.sigma-global.com/en/lenses/a026_35_14/",
+        "checkedAt": "2026-10-06"
+      },
+      "렌즈 종류": {
+        "url": "https://www.sigma-global.com/en/lenses/a026_35_14/",
+        "checkedAt": "2026-10-06"
+      },
+      "주요 용도 또는 렌즈 분류": {
+        "url": "https://www.sigma-global.com/en/lenses/a026_35_14/",
+        "checkedAt": "2026-10-06"
+      },
+      "최대 조리개": {
+        "url": "https://www.sigma-global.com/en/lenses/a026_35_14/",
+        "checkedAt": "2026-10-06"
+      },
+      "AF 지원 여부": {
+        "url": "https://www.sigma-global.com/en/lenses/a026_35_14/",
+        "checkedAt": "2026-10-06"
+      },
+      "MF 지원 여부": {
+        "url": "https://www.sigma-global.com/en/lenses/a026_35_14/",
+        "checkedAt": "2026-10-06"
+      },
+      "판매 상태": {
+        "url": "https://www.saeki.co.kr/item/itemDetail?itemId=PD00042489",
+        "checkedAt": "2026-10-06"
+      },
+      "렌즈 구성": {
+        "url": "https://www.sigma-global.com/en/lenses/a026_35_14/",
+        "checkedAt": "2026-10-06"
+      },
+      "화각": {
+        "url": "https://www.sigma-global.com/en/lenses/a026_35_14/",
+        "checkedAt": "2026-10-06"
+      },
+      "조리개 날 수": {
+        "url": "https://www.sigma-global.com/en/lenses/a026_35_14/",
+        "checkedAt": "2026-10-06"
+      },
+      "최소 조리개": {
+        "url": "https://www.sigma-global.com/en/lenses/a026_35_14/",
+        "checkedAt": "2026-10-06"
+      },
+      "최단 촬영 거리 상세": {
+        "url": "https://www.sigma-global.com/en/lenses/a026_35_14/",
+        "checkedAt": "2026-10-06"
+      },
+      "최대 촬영 배율": {
+        "url": "https://www.sigma-global.com/en/lenses/a026_35_14/",
+        "checkedAt": "2026-10-06"
+      },
+      "필터 구경(mm)": {
+        "url": "https://www.sigma-global.com/en/lenses/a026_35_14/",
+        "checkedAt": "2026-10-06"
+      },
+      "AF 모터": {
+        "url": "https://www.sigma-global.com/en/lenses/a026_35_14/",
+        "checkedAt": "2026-10-06"
+      },
+      "방진/방적 여부": {
+        "url": "https://www.sigma-global.com/en/lenses/a026_35_14/",
+        "checkedAt": "2026-10-06"
+      },
+      "동봉 액세서리": {
+        "url": "https://www.sigma-global.com/en/lenses/a026_35_14/",
+        "checkedAt": "2026-10-06"
+      },
+      "렌즈 치수 상세": {
+        "url": "https://www.sigma-global.com/en/lenses/a026_35_14/",
+        "checkedAt": "2026-10-06"
+      },
+      "무게 상세": {
+        "url": "https://www.sigma-global.com/en/lenses/a026_35_14/",
+        "checkedAt": "2026-10-06"
+      },
+      "최대 지름(mm)": {
+        "url": "https://www.sigma-global.com/en/lenses/a026_35_14/",
+        "checkedAt": "2026-10-06"
+      },
+      "길이(mm)": {
+        "url": "https://www.sigma-global.com/en/lenses/a026_35_14/",
+        "checkedAt": "2026-10-06"
+      },
+      "무게(g)": {
+        "url": "https://www.sigma-global.com/en/lenses/a026_35_14/",
+        "checkedAt": "2026-10-06"
+      }
+    },
+    "active": true
+  },
+  {
+    "id": "sigma-렌즈-l-mount-35mm-f1-4-dg-ii-art-l-mount",
+    "manufacturer": "Sigma",
+    "cameraSystem": "미러리스",
+    "type": "렌즈",
+    "mount": "L-Mount",
+    "series": "Sigma Art",
+    "model": "35mm F1.4 DG II | Art",
+    "officialName": "Sigma 35mm F1.4 DG II | Art",
+    "modelCode": "35mm F1.4 DG II | Art [L-Mount]",
+    "releaseDate": "2026-04-16",
+    "releaseYear": 2026,
+    "discontinued": "아니오",
+    "currentSale": "예",
+    "successor": null,
+    "sensorFormat": null,
+    "cropFactor": null,
+    "lensFormat": "DG",
+    "compatibleSensorFormat": "Full Frame",
+    "focalMinMm": 35,
+    "focalMaxMm": 35,
+    "focalLength": "35mm",
+    "maxAperture": "F1.4",
+    "lensType": "단렌즈",
+    "category": "광각 단렌즈",
+    "ibis": null,
+    "oss": null,
+    "weightG": 530,
+    "saleStatus": "현재 판매",
+    "note": "L-Mount 버전. 제조사 공식 사양 및 세기P&C 국내 정식 유통·가격 확인. 공식몰 일시 품절은 단종과 구분합니다.",
+    "officialSource": "https://www.sigma-global.com/en/lenses/a026_35_14/",
+    "verifiedAt": "2026-10-06",
+    "verification": "제조사 공식 사양과 한국 공식 유통·가격 확인",
+    "specs": {
+      "제조사": "Sigma",
+      "카메라 방식": "미러리스",
+      "제품 종류": "렌즈",
+      "마운트": "L-Mount",
+      "시리즈": "Sigma Art",
+      "모델명": "35mm F1.4 DG II | Art",
+      "정식 제품명": "Sigma 35mm F1.4 DG II | Art",
+      "모델 코드": "35mm F1.4 DG II | Art [L-Mount]",
+      "출시일": "2026-04-16",
+      "출시년도": 2026,
+      "단종 여부": "아니오",
+      "현재 판매 여부": "예",
+      "렌즈 마운트": "L-Mount",
+      "렌즈 포맷": "DG",
+      "대응 센서 포맷": "Full Frame",
+      "렌즈 시리즈": "Sigma Art",
+      "초점거리": "35mm",
+      "최소 초점거리(mm)": 35,
+      "최대 초점거리(mm)": 35,
+      "35mm 환산 초점거리(기본 포맷)": "35mm",
+      "35mm 환산 최소 초점거리(mm)": 35,
+      "35mm 환산 최대 초점거리(mm)": 35,
+      "렌즈 종류": "단렌즈",
+      "주요 용도 또는 렌즈 분류": "광각 단렌즈",
+      "최대 조리개": "F1.4",
+      "AF 지원 여부": "있음",
+      "MF 지원 여부": "있음",
+      "판매 상태": "현재 판매",
+      "비고": "L-Mount 버전. 제조사 공식 사양 및 세기P&C 국내 정식 유통·가격 확인. 공식몰 일시 품절은 단종과 구분합니다.",
+      "공식 출처 URL": "https://www.sigma-global.com/en/lenses/a026_35_14/",
+      "교차검증 URL": "https://www.saeki.co.kr/item/itemDetail?itemId=PD00042490",
+      "데이터 기준일": "2026-10-06",
+      "검증 상태": "제조사 공식 사양과 한국 공식 유통·가격 확인",
+      "렌즈 구성": "12군 15매 (SLD 2매, 비구면 4매)",
+      "화각": "63.4°",
+      "조리개 날 수": 11,
+      "최소 조리개": "F16",
+      "최단 촬영 거리 상세": "28cm",
+      "최대 촬영 배율": "1:5.4",
+      "필터 구경(mm)": 67,
+      "AF 모터": "Dual HLA",
+      "방진/방적 여부": "있음",
+      "동봉 액세서리": "파우치 / LH725-01 렌즈 후드 / LCF-67 IV 전면 캡 / LCR III 후면 캡",
+      "렌즈 치수 상세": "L-Mount: 지름 73mm × 길이 94mm",
+      "무게 상세": "L-Mount: 530g",
+      "최대 지름(mm)": 73,
+      "길이(mm)": 94,
+      "무게(g)": 530,
+      "사양 확인일": "2026-10-06",
+      "공식 사양 출처": "https://www.sigma-global.com/en/lenses/a026_35_14/"
+    },
+    "specSources": {
+      "제조사": {
+        "url": "https://www.sigma-global.com/en/lenses/a026_35_14/",
+        "checkedAt": "2026-10-06"
+      },
+      "카메라 방식": {
+        "url": "https://www.sigma-global.com/en/lenses/a026_35_14/",
+        "checkedAt": "2026-10-06"
+      },
+      "제품 종류": {
+        "url": "https://www.sigma-global.com/en/lenses/a026_35_14/",
+        "checkedAt": "2026-10-06"
+      },
+      "마운트": {
+        "url": "https://www.sigma-global.com/en/lenses/a026_35_14/",
+        "checkedAt": "2026-10-06"
+      },
+      "시리즈": {
+        "url": "https://www.sigma-global.com/en/lenses/a026_35_14/",
+        "checkedAt": "2026-10-06"
+      },
+      "모델명": {
+        "url": "https://www.sigma-global.com/en/lenses/a026_35_14/",
+        "checkedAt": "2026-10-06"
+      },
+      "정식 제품명": {
+        "url": "https://www.sigma-global.com/en/lenses/a026_35_14/",
+        "checkedAt": "2026-10-06"
+      },
+      "모델 코드": {
+        "url": "https://www.sigma-global.com/en/lenses/a026_35_14/",
+        "checkedAt": "2026-10-06"
+      },
+      "출시일": {
+        "url": "https://www.sigma-global.com/en/news/2026/02/24/011999/",
+        "checkedAt": "2026-10-06"
+      },
+      "출시년도": {
+        "url": "https://www.sigma-global.com/en/news/2026/02/24/011999/",
+        "checkedAt": "2026-10-06"
+      },
+      "단종 여부": {
+        "url": "https://www.saeki.co.kr/item/itemDetail?itemId=PD00042490",
+        "checkedAt": "2026-10-06"
+      },
+      "현재 판매 여부": {
+        "url": "https://www.saeki.co.kr/item/itemDetail?itemId=PD00042490",
+        "checkedAt": "2026-10-06"
+      },
+      "렌즈 마운트": {
+        "url": "https://www.sigma-global.com/en/lenses/a026_35_14/",
+        "checkedAt": "2026-10-06"
+      },
+      "렌즈 포맷": {
+        "url": "https://www.sigma-global.com/en/lenses/a026_35_14/",
+        "checkedAt": "2026-10-06"
+      },
+      "대응 센서 포맷": {
+        "url": "https://www.sigma-global.com/en/lenses/a026_35_14/",
+        "checkedAt": "2026-10-06"
+      },
+      "렌즈 시리즈": {
+        "url": "https://www.sigma-global.com/en/lenses/a026_35_14/",
+        "checkedAt": "2026-10-06"
+      },
+      "초점거리": {
+        "url": "https://www.sigma-global.com/en/lenses/a026_35_14/",
+        "checkedAt": "2026-10-06"
+      },
+      "최소 초점거리(mm)": {
+        "url": "https://www.sigma-global.com/en/lenses/a026_35_14/",
+        "checkedAt": "2026-10-06"
+      },
+      "최대 초점거리(mm)": {
+        "url": "https://www.sigma-global.com/en/lenses/a026_35_14/",
+        "checkedAt": "2026-10-06"
+      },
+      "35mm 환산 초점거리(기본 포맷)": {
+        "url": "https://www.sigma-global.com/en/lenses/a026_35_14/",
+        "checkedAt": "2026-10-06"
+      },
+      "35mm 환산 최소 초점거리(mm)": {
+        "url": "https://www.sigma-global.com/en/lenses/a026_35_14/",
+        "checkedAt": "2026-10-06"
+      },
+      "35mm 환산 최대 초점거리(mm)": {
+        "url": "https://www.sigma-global.com/en/lenses/a026_35_14/",
+        "checkedAt": "2026-10-06"
+      },
+      "렌즈 종류": {
+        "url": "https://www.sigma-global.com/en/lenses/a026_35_14/",
+        "checkedAt": "2026-10-06"
+      },
+      "주요 용도 또는 렌즈 분류": {
+        "url": "https://www.sigma-global.com/en/lenses/a026_35_14/",
+        "checkedAt": "2026-10-06"
+      },
+      "최대 조리개": {
+        "url": "https://www.sigma-global.com/en/lenses/a026_35_14/",
+        "checkedAt": "2026-10-06"
+      },
+      "AF 지원 여부": {
+        "url": "https://www.sigma-global.com/en/lenses/a026_35_14/",
+        "checkedAt": "2026-10-06"
+      },
+      "MF 지원 여부": {
+        "url": "https://www.sigma-global.com/en/lenses/a026_35_14/",
+        "checkedAt": "2026-10-06"
+      },
+      "판매 상태": {
+        "url": "https://www.saeki.co.kr/item/itemDetail?itemId=PD00042490",
+        "checkedAt": "2026-10-06"
+      },
+      "렌즈 구성": {
+        "url": "https://www.sigma-global.com/en/lenses/a026_35_14/",
+        "checkedAt": "2026-10-06"
+      },
+      "화각": {
+        "url": "https://www.sigma-global.com/en/lenses/a026_35_14/",
+        "checkedAt": "2026-10-06"
+      },
+      "조리개 날 수": {
+        "url": "https://www.sigma-global.com/en/lenses/a026_35_14/",
+        "checkedAt": "2026-10-06"
+      },
+      "최소 조리개": {
+        "url": "https://www.sigma-global.com/en/lenses/a026_35_14/",
+        "checkedAt": "2026-10-06"
+      },
+      "최단 촬영 거리 상세": {
+        "url": "https://www.sigma-global.com/en/lenses/a026_35_14/",
+        "checkedAt": "2026-10-06"
+      },
+      "최대 촬영 배율": {
+        "url": "https://www.sigma-global.com/en/lenses/a026_35_14/",
+        "checkedAt": "2026-10-06"
+      },
+      "필터 구경(mm)": {
+        "url": "https://www.sigma-global.com/en/lenses/a026_35_14/",
+        "checkedAt": "2026-10-06"
+      },
+      "AF 모터": {
+        "url": "https://www.sigma-global.com/en/lenses/a026_35_14/",
+        "checkedAt": "2026-10-06"
+      },
+      "방진/방적 여부": {
+        "url": "https://www.sigma-global.com/en/lenses/a026_35_14/",
+        "checkedAt": "2026-10-06"
+      },
+      "동봉 액세서리": {
+        "url": "https://www.sigma-global.com/en/lenses/a026_35_14/",
+        "checkedAt": "2026-10-06"
+      },
+      "렌즈 치수 상세": {
+        "url": "https://www.sigma-global.com/en/lenses/a026_35_14/",
+        "checkedAt": "2026-10-06"
+      },
+      "무게 상세": {
+        "url": "https://www.sigma-global.com/en/lenses/a026_35_14/",
+        "checkedAt": "2026-10-06"
+      },
+      "최대 지름(mm)": {
+        "url": "https://www.sigma-global.com/en/lenses/a026_35_14/",
+        "checkedAt": "2026-10-06"
+      },
+      "길이(mm)": {
+        "url": "https://www.sigma-global.com/en/lenses/a026_35_14/",
+        "checkedAt": "2026-10-06"
+      },
+      "무게(g)": {
+        "url": "https://www.sigma-global.com/en/lenses/a026_35_14/",
+        "checkedAt": "2026-10-06"
+      }
+    },
+    "active": true
+  },
+  {
+    "id": "leica-바디-l-mount-sl3-p",
+    "manufacturer": "Leica",
+    "cameraSystem": "미러리스",
+    "type": "바디",
+    "mount": "L-Mount",
+    "series": "Leica SL",
+    "model": "SL3-P",
+    "officialName": "Leica SL3-P",
+    "modelCode": "SL3-P",
+    "releaseDate": "2026-06-25",
+    "releaseYear": 2026,
+    "discontinued": "아니오",
+    "currentSale": "예",
+    "successor": null,
+    "sensorFormat": "Full Frame",
+    "cropFactor": 1.0,
+    "lensFormat": null,
+    "compatibleSensorFormat": null,
+    "focalMinMm": null,
+    "focalMaxMm": null,
+    "focalLength": null,
+    "maxAperture": null,
+    "lensType": null,
+    "category": null,
+    "ibis": "있음",
+    "oss": null,
+    "weightG": 768,
+    "saleStatus": "현재 판매",
+    "note": "한국 공식몰 바디 단품 판매 확인. 출시일은 제조사 발표의 전 세계 판매 개시일. 무게는 배터리·메모리카드·바디 캡 제외. 유효 화소 44.9MP와 실제 최대 기록 화상 44.2MP를 구분함.",
+    "officialSource": "https://leica-camera.com/en-int/photography/cameras/sl/sl3-p-black",
+    "verifiedAt": "2026-10-06",
+    "verification": "제조사 공식 사양과 한국 공식몰 가격·판매 상태 확인",
+    "specs": {
+      "제조사": "Leica",
+      "카메라 방식": "미러리스",
+      "제품 종류": "바디",
+      "마운트": "L-Mount",
+      "시리즈": "Leica SL",
+      "모델명": "SL3-P",
+      "정식 제품명": "Leica SL3-P",
+      "모델 코드": "SL3-P",
+      "출시일": "2026-06-25",
+      "출시년도": 2026,
+      "단종 여부": "아니오",
+      "현재 판매 여부": "예",
+      "판매 상태": "현재 판매",
+      "비고": "한국 공식몰 바디 단품 판매 확인. 출시일은 제조사 발표의 전 세계 판매 개시일. 무게는 배터리·메모리카드·바디 캡 제외. 유효 화소 44.9MP와 실제 최대 기록 화상 44.2MP를 구분함.",
+      "공식 출처 URL": "https://leica-camera.com/en-int/photography/cameras/sl/sl3-p-black",
+      "교차검증 URL": "https://www.leica-store.co.kr/product/view.asp?pcode=10664",
+      "데이터 기준일": "2026-10-06",
+      "검증 상태": "제조사 공식 사양과 한국 공식몰 가격·판매 상태 확인",
+      "센서 포맷": "Full Frame",
+      "센서 크롭 배수": 1.0,
+      "센서 종류": "BSI CMOS",
+      "유효 화소(MP)": 44.9,
+      "총 화소(MP)": 45.8,
+      "손떨림 보정(IBIS) 여부": "있음",
+      "손떨림 보정 상세": "5축, 최대 5스톱",
+      "이미지 프로세서": "Leica Maestro IV",
+      "최고 사진 해상도": "8144×5424",
+      "사진 해상도 상세": "일반 사진 8144×5424 (44.2MP) / 멀티샷 16288×10848 (176.7MP)",
+      "사진 기록 형식": "DNG / JPEG",
+      "RAW 지원 여부": "있음",
+      "최고 동영상 해상도": "8.1K Open Gate 8064×5376 (MOV) / 8128×5418 (HDMI RAW)",
+      "최고 동영상 프레임레이트(fps)": 30,
+      "동영상 해상도 상세": "8.1K Open Gate 30p / 8K 30p / 5.9K 60p / 4K 120p",
+      "4K 지원 여부": "있음",
+      "8K 지원 여부": "있음",
+      "동영상 비트 심도(bit)": 10,
+      "메모리카드 종류": "SD / SDHC / SDXC (UHS-II 지원) / CFexpress Type B",
+      "카드 슬롯 수": 2,
+      "CFexpress 지원 여부": "있음",
+      "배터리 모델": "BP-SCL6",
+      "배터리 용량(mAh)": 2200,
+      "배터리 상세": "정격 7.2V, 최소 용량 2200mAh",
+      "호환 배터리 충전기": "BC-SCL6",
+      "USB 종류": "USB Type-C (USB 3.1 Gen 2)",
+      "HDMI 종류": "HDMI 2.1 Type A",
+      "마이크 단자": "있음",
+      "헤드폰 단자": "있음",
+      "마이크 단자 상세": "3.5mm 스테레오",
+      "헤드폰 단자 상세": "3.5mm 스테레오",
+      "무게(g)": 768,
+      "무게 상세": "약 768g (배터리·메모리카드·바디 캡 제외)",
+      "방진/방적 여부": "있음",
+      "방진/방적 상세": "IP54",
+      "AF 포인트 상세": "위상차 819 / 콘트라스트 315",
+      "ISO 감도 상세": "사진 수동 ISO 50–200000",
+      "연속 촬영 상세": "전자셔터 최대 40fps, 12bit, AF 추종",
+      "전자식 뷰파인더": "576만 도트, 약 0.76배 (3:2)",
+      "모니터 상세": "3.2인치, 약 233만 도트 터치, 틸트",
+      "블루투스": "Bluetooth 5.0 LE",
+      "사양 확인일": "2026-10-06",
+      "공식 사양 출처": "https://leica-camera.com/sites/default/files/pm-28258-Datenblatt-SL3-P_EN.pdf"
+    },
+    "specSources": {
+      "제조사": {
+        "url": "https://leica-camera.com/sites/default/files/pm-28258-Datenblatt-SL3-P_EN.pdf",
+        "checkedAt": "2026-10-06"
+      },
+      "카메라 방식": {
+        "url": "https://leica-camera.com/sites/default/files/pm-28258-Datenblatt-SL3-P_EN.pdf",
+        "checkedAt": "2026-10-06"
+      },
+      "제품 종류": {
+        "url": "https://leica-camera.com/sites/default/files/pm-28258-Datenblatt-SL3-P_EN.pdf",
+        "checkedAt": "2026-10-06"
+      },
+      "마운트": {
+        "url": "https://leica-camera.com/sites/default/files/pm-28258-Datenblatt-SL3-P_EN.pdf",
+        "checkedAt": "2026-10-06"
+      },
+      "시리즈": {
+        "url": "https://leica-camera.com/sites/default/files/pm-28258-Datenblatt-SL3-P_EN.pdf",
+        "checkedAt": "2026-10-06"
+      },
+      "모델명": {
+        "url": "https://leica-camera.com/sites/default/files/pm-28258-Datenblatt-SL3-P_EN.pdf",
+        "checkedAt": "2026-10-06"
+      },
+      "정식 제품명": {
+        "url": "https://leica-camera.com/sites/default/files/pm-28258-Datenblatt-SL3-P_EN.pdf",
+        "checkedAt": "2026-10-06"
+      },
+      "모델 코드": {
+        "url": "https://www.leica-store.co.kr/product/view.asp?pcode=10664",
+        "checkedAt": "2026-10-06"
+      },
+      "출시일": {
+        "url": "https://leica-camera.com/en-int/press/new-leica-sl3-p",
+        "checkedAt": "2026-10-06"
+      },
+      "출시년도": {
+        "url": "https://leica-camera.com/en-int/press/new-leica-sl3-p",
+        "checkedAt": "2026-10-06"
+      },
+      "단종 여부": {
+        "url": "https://www.leica-store.co.kr/product/view.asp?pcode=10664",
+        "checkedAt": "2026-10-06"
+      },
+      "현재 판매 여부": {
+        "url": "https://www.leica-store.co.kr/product/view.asp?pcode=10664",
+        "checkedAt": "2026-10-06"
+      },
+      "판매 상태": {
+        "url": "https://www.leica-store.co.kr/product/view.asp?pcode=10664",
+        "checkedAt": "2026-10-06"
+      },
+      "센서 포맷": {
+        "url": "https://leica-camera.com/sites/default/files/pm-28258-Datenblatt-SL3-P_EN.pdf",
+        "checkedAt": "2026-10-06"
+      },
+      "센서 크롭 배수": {
+        "url": "https://leica-camera.com/sites/default/files/pm-28258-Datenblatt-SL3-P_EN.pdf",
+        "checkedAt": "2026-10-06"
+      },
+      "센서 종류": {
+        "url": "https://leica-camera.com/en-int/press/new-leica-sl3-p",
+        "checkedAt": "2026-10-06"
+      },
+      "유효 화소(MP)": {
+        "url": "https://leica-camera.com/sites/default/files/pm-28258-Datenblatt-SL3-P_EN.pdf",
+        "checkedAt": "2026-10-06"
+      },
+      "총 화소(MP)": {
+        "url": "https://leica-camera.com/sites/default/files/pm-28258-Datenblatt-SL3-P_EN.pdf",
+        "checkedAt": "2026-10-06"
+      },
+      "손떨림 보정(IBIS) 여부": {
+        "url": "https://leica-camera.com/sites/default/files/pm-28258-Datenblatt-SL3-P_EN.pdf",
+        "checkedAt": "2026-10-06"
+      },
+      "손떨림 보정 상세": {
+        "url": "https://leica-camera.com/sites/default/files/pm-28258-Datenblatt-SL3-P_EN.pdf",
+        "checkedAt": "2026-10-06"
+      },
+      "이미지 프로세서": {
+        "url": "https://leica-camera.com/sites/default/files/pm-28258-Datenblatt-SL3-P_EN.pdf",
+        "checkedAt": "2026-10-06"
+      },
+      "최고 사진 해상도": {
+        "url": "https://leica-camera.com/sites/default/files/pm-28258-Datenblatt-SL3-P_EN.pdf",
+        "checkedAt": "2026-10-06"
+      },
+      "사진 해상도 상세": {
+        "url": "https://leica-camera.com/sites/default/files/pm-28258-Datenblatt-SL3-P_EN.pdf",
+        "checkedAt": "2026-10-06"
+      },
+      "사진 기록 형식": {
+        "url": "https://leica-camera.com/sites/default/files/pm-28258-Datenblatt-SL3-P_EN.pdf",
+        "checkedAt": "2026-10-06"
+      },
+      "RAW 지원 여부": {
+        "url": "https://leica-camera.com/sites/default/files/pm-28258-Datenblatt-SL3-P_EN.pdf",
+        "checkedAt": "2026-10-06"
+      },
+      "최고 동영상 해상도": {
+        "url": "https://leica-camera.com/sites/default/files/pm-28258-Datenblatt-SL3-P_EN.pdf",
+        "checkedAt": "2026-10-06"
+      },
+      "최고 동영상 프레임레이트(fps)": {
+        "url": "https://leica-camera.com/en-int/press/new-leica-sl3-p",
+        "checkedAt": "2026-10-06"
+      },
+      "동영상 해상도 상세": {
+        "url": "https://leica-camera.com/en-int/press/new-leica-sl3-p",
+        "checkedAt": "2026-10-06"
+      },
+      "4K 지원 여부": {
+        "url": "https://leica-camera.com/sites/default/files/pm-28258-Datenblatt-SL3-P_EN.pdf",
+        "checkedAt": "2026-10-06"
+      },
+      "8K 지원 여부": {
+        "url": "https://leica-camera.com/sites/default/files/pm-28258-Datenblatt-SL3-P_EN.pdf",
+        "checkedAt": "2026-10-06"
+      },
+      "동영상 비트 심도(bit)": {
+        "url": "https://leica-camera.com/sites/default/files/pm-28258-Datenblatt-SL3-P_EN.pdf",
+        "checkedAt": "2026-10-06"
+      },
+      "메모리카드 종류": {
+        "url": "https://leica-camera.com/sites/default/files/pm-28258-Datenblatt-SL3-P_EN.pdf",
+        "checkedAt": "2026-10-06"
+      },
+      "카드 슬롯 수": {
+        "url": "https://leica-camera.com/sites/default/files/pm-28258-Datenblatt-SL3-P_EN.pdf",
+        "checkedAt": "2026-10-06"
+      },
+      "CFexpress 지원 여부": {
+        "url": "https://leica-camera.com/sites/default/files/pm-28258-Datenblatt-SL3-P_EN.pdf",
+        "checkedAt": "2026-10-06"
+      },
+      "배터리 모델": {
+        "url": "https://leica-camera.com/sites/default/files/pm-28258-Datenblatt-SL3-P_EN.pdf",
+        "checkedAt": "2026-10-06"
+      },
+      "배터리 용량(mAh)": {
+        "url": "https://leica-camera.com/sites/default/files/pm-28258-Datenblatt-SL3-P_EN.pdf",
+        "checkedAt": "2026-10-06"
+      },
+      "배터리 상세": {
+        "url": "https://leica-camera.com/sites/default/files/pm-28258-Datenblatt-SL3-P_EN.pdf",
+        "checkedAt": "2026-10-06"
+      },
+      "호환 배터리 충전기": {
+        "url": "https://leica-camera.com/sites/default/files/pm-28258-Datenblatt-SL3-P_EN.pdf",
+        "checkedAt": "2026-10-06"
+      },
+      "USB 종류": {
+        "url": "https://leica-camera.com/sites/default/files/pm-28258-Datenblatt-SL3-P_EN.pdf",
+        "checkedAt": "2026-10-06"
+      },
+      "HDMI 종류": {
+        "url": "https://leica-camera.com/sites/default/files/pm-28258-Datenblatt-SL3-P_EN.pdf",
+        "checkedAt": "2026-10-06"
+      },
+      "마이크 단자": {
+        "url": "https://leica-camera.com/sites/default/files/pm-28258-Datenblatt-SL3-P_EN.pdf",
+        "checkedAt": "2026-10-06"
+      },
+      "헤드폰 단자": {
+        "url": "https://leica-camera.com/sites/default/files/pm-28258-Datenblatt-SL3-P_EN.pdf",
+        "checkedAt": "2026-10-06"
+      },
+      "마이크 단자 상세": {
+        "url": "https://leica-camera.com/sites/default/files/pm-28258-Datenblatt-SL3-P_EN.pdf",
+        "checkedAt": "2026-10-06"
+      },
+      "헤드폰 단자 상세": {
+        "url": "https://leica-camera.com/sites/default/files/pm-28258-Datenblatt-SL3-P_EN.pdf",
+        "checkedAt": "2026-10-06"
+      },
+      "무게(g)": {
+        "url": "https://leica-camera.com/sites/default/files/pm-28258-Datenblatt-SL3-P_EN.pdf",
+        "checkedAt": "2026-10-06"
+      },
+      "무게 상세": {
+        "url": "https://leica-camera.com/sites/default/files/pm-28258-Datenblatt-SL3-P_EN.pdf",
+        "checkedAt": "2026-10-06"
+      },
+      "방진/방적 여부": {
+        "url": "https://leica-camera.com/sites/default/files/pm-28258-Datenblatt-SL3-P_EN.pdf",
+        "checkedAt": "2026-10-06"
+      },
+      "방진/방적 상세": {
+        "url": "https://leica-camera.com/sites/default/files/pm-28258-Datenblatt-SL3-P_EN.pdf",
+        "checkedAt": "2026-10-06"
+      },
+      "AF 포인트 상세": {
+        "url": "https://leica-camera.com/sites/default/files/pm-28258-Datenblatt-SL3-P_EN.pdf",
+        "checkedAt": "2026-10-06"
+      },
+      "ISO 감도 상세": {
+        "url": "https://leica-camera.com/sites/default/files/pm-28258-Datenblatt-SL3-P_EN.pdf",
+        "checkedAt": "2026-10-06"
+      },
+      "연속 촬영 상세": {
+        "url": "https://leica-camera.com/sites/default/files/pm-28258-Datenblatt-SL3-P_EN.pdf",
+        "checkedAt": "2026-10-06"
+      },
+      "전자식 뷰파인더": {
+        "url": "https://leica-camera.com/sites/default/files/pm-28258-Datenblatt-SL3-P_EN.pdf",
+        "checkedAt": "2026-10-06"
+      },
+      "모니터 상세": {
+        "url": "https://leica-camera.com/sites/default/files/pm-28258-Datenblatt-SL3-P_EN.pdf",
+        "checkedAt": "2026-10-06"
+      },
+      "블루투스": {
+        "url": "https://leica-camera.com/sites/default/files/pm-28258-Datenblatt-SL3-P_EN.pdf",
+        "checkedAt": "2026-10-06"
+      }
+    },
+    "active": true
+  },
+  {
+    "id": "leica-렌즈-leica-m-summicron-m-66-f2",
+    "manufacturer": "Leica",
+    "cameraSystem": "미러리스",
+    "type": "렌즈",
+    "mount": "Leica M",
+    "series": "Leica M Classic Line",
+    "model": "Summicron-M 66 f/2",
+    "officialName": "Leica Summicron-M 66 f/2",
+    "modelCode": "11099",
+    "releaseDate": "2026-09-03",
+    "releaseYear": 2026,
+    "discontinued": "아니오",
+    "currentSale": "예",
+    "successor": null,
+    "sensorFormat": null,
+    "cropFactor": null,
+    "lensFormat": "M",
+    "compatibleSensorFormat": "Full Frame",
+    "focalMinMm": 66,
+    "focalMaxMm": 66,
+    "focalLength": "66mm",
+    "maxAperture": "F2",
+    "lensType": "단렌즈",
+    "category": "표준 단렌즈",
+    "ibis": null,
+    "oss": null,
+    "weightG": 456,
+    "saleStatus": "예약 판매",
+    "note": "전 세계 660개 한정판. 한국 공식몰 가격 공개 및 예약 접수 확인. 2026-10-06 현재 국내 공식몰은 입고예정으로 표시하며 즉시 배송 가능 여부는 미확인. 출시일은 제조사 전 세계 출시일이며 한국 배송 개시일을 의미하지 않음. Leica M 마운트 수동초점 렌즈이며 SL 바디 사용에는 M-Adapter L이 필요함.",
+    "officialSource": "https://leica-camera.com/ko-KR/photography/lenses/m/summicron-m-66mm-f2-black",
+    "verifiedAt": "2026-10-06",
+    "verification": "제조사 공식 사양과 한국 공식몰 가격·판매 상태 확인",
+    "specs": {
+      "제조사": "Leica",
+      "카메라 방식": "미러리스",
+      "제품 종류": "렌즈",
+      "마운트": "Leica M",
+      "시리즈": "Leica M Classic Line",
+      "모델명": "Summicron-M 66 f/2",
+      "정식 제품명": "Leica Summicron-M 66 f/2",
+      "모델 코드": "11099",
+      "출시일": "2026-09-03",
+      "출시년도": 2026,
+      "단종 여부": "아니오",
+      "현재 판매 여부": "예",
+      "판매 상태": "예약 판매",
+      "비고": "전 세계 660개 한정판. 한국 공식몰 가격 공개 및 예약 접수 확인. 2026-10-06 현재 국내 공식몰은 입고예정으로 표시하며 즉시 배송 가능 여부는 미확인. 출시일은 제조사 전 세계 출시일이며 한국 배송 개시일을 의미하지 않음. Leica M 마운트 수동초점 렌즈이며 SL 바디 사용에는 M-Adapter L이 필요함.",
+      "공식 출처 URL": "https://leica-camera.com/ko-KR/photography/lenses/m/summicron-m-66mm-f2-black",
+      "교차검증 URL": "https://www.leica-store.co.kr/product/view.asp?pcode=11099",
+      "데이터 기준일": "2026-10-06",
+      "검증 상태": "제조사 공식 사양과 한국 공식몰 가격·판매 상태 확인",
+      "렌즈 마운트": "Leica M",
+      "렌즈 포맷": "M",
+      "대응 센서 포맷": "Full Frame",
+      "렌즈 시리즈": "Leica M Classic Line",
+      "초점거리": "66mm",
+      "최소 초점거리(mm)": 66,
+      "최대 초점거리(mm)": 66,
+      "35mm 환산 초점거리(기본 포맷)": "66mm",
+      "35mm 환산 최소 초점거리(mm)": 66,
+      "35mm 환산 최대 초점거리(mm)": 66,
+      "렌즈 종류": "단렌즈",
+      "주요 용도 또는 렌즈 분류": "표준 단렌즈",
+      "최대 조리개": "F2",
+      "최소 조리개": "F16",
+      "렌즈 구성": "5군 6매",
+      "화각": "36.3° / 30.5° / 20.6° (대각/수평/수직)",
+      "조리개 날 수": 9,
+      "최단 촬영 거리 상세": "1m",
+      "최대 촬영 배율": "1:13.4",
+      "필터 구경(mm)": 49,
+      "AF 지원 여부": "없음",
+      "MF 지원 여부": "있음",
+      "최대 지름(mm)": 60,
+      "길이(mm)": 60.1,
+      "렌즈 치수 상세": "지름 약 60mm × 길이 약 60.1mm",
+      "무게(g)": 456,
+      "무게 상세": "약 456g",
+      "마운트 상세": "Leica M 베이오넷, 6비트 인코딩",
+      "렌즈 후드": "나사식",
+      "생산 한정 수량": 660,
+      "사양 확인일": "2026-10-06",
+      "공식 사양 출처": "https://leica-camera.com/en-US/photography/lenses/m/summicron-m-66mm-f2-black/technical-specification"
+    },
+    "specSources": {
+      "제조사": {
+        "url": "https://leica-camera.com/en-US/photography/lenses/m/summicron-m-66mm-f2-black/technical-specification",
+        "checkedAt": "2026-10-06"
+      },
+      "카메라 방식": {
+        "url": "https://leica-camera.com/en-US/photography/lenses/m/summicron-m-66mm-f2-black/technical-specification",
+        "checkedAt": "2026-10-06"
+      },
+      "제품 종류": {
+        "url": "https://leica-camera.com/en-US/photography/lenses/m/summicron-m-66mm-f2-black/technical-specification",
+        "checkedAt": "2026-10-06"
+      },
+      "마운트": {
+        "url": "https://leica-camera.com/en-US/photography/lenses/m/summicron-m-66mm-f2-black/technical-specification",
+        "checkedAt": "2026-10-06"
+      },
+      "시리즈": {
+        "url": "https://leica-camera.com/en-US/photography/lenses/m/summicron-m-66mm-f2-black/technical-specification",
+        "checkedAt": "2026-10-06"
+      },
+      "모델명": {
+        "url": "https://leica-camera.com/en-US/photography/lenses/m/summicron-m-66mm-f2-black/technical-specification",
+        "checkedAt": "2026-10-06"
+      },
+      "정식 제품명": {
+        "url": "https://leica-camera.com/en-US/photography/lenses/m/summicron-m-66mm-f2-black/technical-specification",
+        "checkedAt": "2026-10-06"
+      },
+      "모델 코드": {
+        "url": "https://www.leica-store.co.kr/product/view.asp?pcode=11099",
+        "checkedAt": "2026-10-06"
+      },
+      "출시일": {
+        "url": "https://leica-camera.com/en-BE/press/new-leica-summicron-m-66-f2",
+        "checkedAt": "2026-10-06"
+      },
+      "출시년도": {
+        "url": "https://leica-camera.com/en-BE/press/new-leica-summicron-m-66-f2",
+        "checkedAt": "2026-10-06"
+      },
+      "단종 여부": {
+        "url": "https://www.leica-store.co.kr/product/view.asp?pcode=11099",
+        "checkedAt": "2026-10-06"
+      },
+      "현재 판매 여부": {
+        "url": "https://www.leica-store.co.kr/product/view.asp?pcode=11099",
+        "checkedAt": "2026-10-06"
+      },
+      "판매 상태": {
+        "url": "https://www.leica-store.co.kr/product/view.asp?pcode=11099",
+        "checkedAt": "2026-10-06"
+      },
+      "렌즈 마운트": {
+        "url": "https://leica-camera.com/en-US/photography/lenses/m/summicron-m-66mm-f2-black/technical-specification",
+        "checkedAt": "2026-10-06"
+      },
+      "렌즈 포맷": {
+        "url": "https://leica-camera.com/en-US/photography/lenses/m/summicron-m-66mm-f2-black/technical-specification",
+        "checkedAt": "2026-10-06"
+      },
+      "대응 센서 포맷": {
+        "url": "https://leica-camera.com/en-US/photography/lenses/m/summicron-m-66mm-f2-black/technical-specification",
+        "checkedAt": "2026-10-06"
+      },
+      "렌즈 시리즈": {
+        "url": "https://leica-camera.com/en-US/photography/lenses/m/summicron-m-66mm-f2-black/technical-specification",
+        "checkedAt": "2026-10-06"
+      },
+      "초점거리": {
+        "url": "https://leica-camera.com/en-US/photography/lenses/m/summicron-m-66mm-f2-black/technical-specification",
+        "checkedAt": "2026-10-06"
+      },
+      "최소 초점거리(mm)": {
+        "url": "https://leica-camera.com/en-US/photography/lenses/m/summicron-m-66mm-f2-black/technical-specification",
+        "checkedAt": "2026-10-06"
+      },
+      "최대 초점거리(mm)": {
+        "url": "https://leica-camera.com/en-US/photography/lenses/m/summicron-m-66mm-f2-black/technical-specification",
+        "checkedAt": "2026-10-06"
+      },
+      "35mm 환산 초점거리(기본 포맷)": {
+        "url": "https://leica-camera.com/en-US/photography/lenses/m/summicron-m-66mm-f2-black/technical-specification",
+        "checkedAt": "2026-10-06"
+      },
+      "35mm 환산 최소 초점거리(mm)": {
+        "url": "https://leica-camera.com/en-US/photography/lenses/m/summicron-m-66mm-f2-black/technical-specification",
+        "checkedAt": "2026-10-06"
+      },
+      "35mm 환산 최대 초점거리(mm)": {
+        "url": "https://leica-camera.com/en-US/photography/lenses/m/summicron-m-66mm-f2-black/technical-specification",
+        "checkedAt": "2026-10-06"
+      },
+      "렌즈 종류": {
+        "url": "https://leica-camera.com/en-US/photography/lenses/m/summicron-m-66mm-f2-black/technical-specification",
+        "checkedAt": "2026-10-06"
+      },
+      "주요 용도 또는 렌즈 분류": {
+        "url": "https://leica-camera.com/en-US/photography/lenses/m/summicron-m-66mm-f2-black/technical-specification",
+        "checkedAt": "2026-10-06"
+      },
+      "최대 조리개": {
+        "url": "https://leica-camera.com/ko-KR/photography/lenses/m/summicron-m-66mm-f2-black",
+        "checkedAt": "2026-10-06"
+      },
+      "최소 조리개": {
+        "url": "https://leica-camera.com/en-US/photography/lenses/m/summicron-m-66mm-f2-black/technical-specification",
+        "checkedAt": "2026-10-06"
+      },
+      "렌즈 구성": {
+        "url": "https://leica-camera.com/en-US/photography/lenses/m/summicron-m-66mm-f2-black/technical-specification",
+        "checkedAt": "2026-10-06"
+      },
+      "화각": {
+        "url": "https://leica-camera.com/en-US/photography/lenses/m/summicron-m-66mm-f2-black/technical-specification",
+        "checkedAt": "2026-10-06"
+      },
+      "조리개 날 수": {
+        "url": "https://leica-camera.com/en-US/photography/lenses/m/summicron-m-66mm-f2-black/technical-specification",
+        "checkedAt": "2026-10-06"
+      },
+      "최단 촬영 거리 상세": {
+        "url": "https://leica-camera.com/en-US/photography/lenses/m/summicron-m-66mm-f2-black/technical-specification",
+        "checkedAt": "2026-10-06"
+      },
+      "최대 촬영 배율": {
+        "url": "https://leica-camera.com/en-US/photography/lenses/m/summicron-m-66mm-f2-black/technical-specification",
+        "checkedAt": "2026-10-06"
+      },
+      "필터 구경(mm)": {
+        "url": "https://leica-camera.com/en-US/photography/lenses/m/summicron-m-66mm-f2-black/technical-specification",
+        "checkedAt": "2026-10-06"
+      },
+      "AF 지원 여부": {
+        "url": "https://leica-camera.com/ko-KR/photography/lenses/m/summicron-m-66mm-f2-black",
+        "checkedAt": "2026-10-06"
+      },
+      "MF 지원 여부": {
+        "url": "https://leica-camera.com/ko-KR/photography/lenses/m/summicron-m-66mm-f2-black",
+        "checkedAt": "2026-10-06"
+      },
+      "최대 지름(mm)": {
+        "url": "https://leica-camera.com/en-US/photography/lenses/m/summicron-m-66mm-f2-black/technical-specification",
+        "checkedAt": "2026-10-06"
+      },
+      "길이(mm)": {
+        "url": "https://leica-camera.com/en-US/photography/lenses/m/summicron-m-66mm-f2-black/technical-specification",
+        "checkedAt": "2026-10-06"
+      },
+      "렌즈 치수 상세": {
+        "url": "https://leica-camera.com/en-US/photography/lenses/m/summicron-m-66mm-f2-black/technical-specification",
+        "checkedAt": "2026-10-06"
+      },
+      "무게(g)": {
+        "url": "https://leica-camera.com/en-US/photography/lenses/m/summicron-m-66mm-f2-black/technical-specification",
+        "checkedAt": "2026-10-06"
+      },
+      "무게 상세": {
+        "url": "https://leica-camera.com/en-US/photography/lenses/m/summicron-m-66mm-f2-black/technical-specification",
+        "checkedAt": "2026-10-06"
+      },
+      "마운트 상세": {
+        "url": "https://leica-camera.com/en-US/photography/lenses/m/summicron-m-66mm-f2-black/technical-specification",
+        "checkedAt": "2026-10-06"
+      },
+      "렌즈 후드": {
+        "url": "https://leica-camera.com/en-US/photography/lenses/m/summicron-m-66mm-f2-black/technical-specification",
+        "checkedAt": "2026-10-06"
+      },
+      "생산 한정 수량": {
+        "url": "https://leica-camera.com/ko-KR/photography/lenses/m/summicron-m-66mm-f2-black",
+        "checkedAt": "2026-10-06"
+      }
+    },
+    "active": true
+  },
+  {
+    "id": "canon-바디-canon-rf-eos-r8-mark-ii",
+    "manufacturer": "Canon",
+    "cameraSystem": "미러리스",
+    "type": "바디",
+    "mount": "Canon RF",
+    "series": "EOS R",
+    "model": "EOS R8 Mark II",
+    "officialName": "Canon EOS R8 Mark II",
+    "modelCode": "EOS R8 Mark II",
+    "releaseDate": "2026-10",
+    "releaseYear": 2026,
+    "discontinued": "아니오",
+    "currentSale": "출시예정",
+    "successor": null,
+    "sensorFormat": "Full Frame",
+    "cropFactor": 1,
+    "lensFormat": null,
+    "compatibleSensorFormat": null,
+    "focalMinMm": null,
+    "focalMaxMm": null,
+    "focalLength": null,
+    "maxAperture": null,
+    "lensType": null,
+    "category": null,
+    "ibis": "있음",
+    "oss": null,
+    "weightG": 546,
+    "saleStatus": "출시 예정",
+    "note": "2026-09-16 국내 발표. 2026년 10월 국내 출시 예정으로, 정확한 국내 판매 개시일은 미공개. 공개된 바디 단품 출시가는 2,319,000원.",
+    "officialSource": "https://kr.canon/product/content/detail/233585E59CCB3F659615A07386CE5498",
+    "verifiedAt": "2026-10-06",
+    "verification": "한국 공식 발표·제품별 공식 사양 확인",
+    "active": true,
+    "specs": {
+      "제조사": "Canon",
+      "카메라 방식": "미러리스",
+      "제품 종류": "바디",
+      "마운트": "Canon RF",
+      "시리즈": "EOS R",
+      "모델명": "EOS R8 Mark II",
+      "정식 제품명": "Canon EOS R8 Mark II",
+      "모델 코드": "EOS R8 Mark II",
+      "출시일": "2026-10",
+      "출시년도": 2026,
+      "단종 여부": "아니오",
+      "현재 판매 여부": "출시예정",
+      "판매 상태": "출시 예정",
+      "무게(g)": 546,
+      "공식 출처 URL": "https://kr.canon/product/content/detail/233585E59CCB3F659615A07386CE5498",
+      "데이터 기준일": "2026-10-06",
+      "검증 상태": "한국 공식 발표·제품별 공식 사양 확인",
+      "사양 확인일": "2026-10-06",
+      "공식 사양 출처": "https://kr.canon/product/content/02/form.tab?productCd=NPAB7669",
+      "센서 포맷": "Full Frame",
+      "센서 크롭 배수": 1,
+      "손떨림 보정(IBIS) 여부": "있음",
+      "유효 화소(MP)": 24.2,
+      "총 화소(MP)": 25.6,
+      "센서 종류": "풀프레임 CMOS (36.0×24.0mm)",
+      "최고 사진 해상도": "6000×4000",
+      "사진 기록 형식": "JPEG, HEIF, RAW, C-RAW",
+      "RAW 지원 여부": "있음",
+      "손떨림 보정 상세": "바디 내 5축 IS; 렌즈 협조 제어 시 중앙 최대 7.5스톱, 주변 최대 7.0스톱",
+      "메모리카드 종류": "SD / SDHC / SDXC (UHS-II 지원)",
+      "카드 슬롯 수": 1,
+      "CFexpress 지원 여부": "없음",
+      "배터리 모델": "LP-E17",
+      "배터리 포함 여부": "포함",
+      "USB 종류": "USB Type-C (USB 10Gbps / USB 3.2 Gen 2)",
+      "HDMI 종류": "HDMI Type-D",
+      "마이크 단자": "있음",
+      "헤드폰 단자": "있음",
+      "가로 크기(mm)": 131.4,
+      "세로 크기(mm)": 90,
+      "두께(mm)": 79.7,
+      "무게 기준": "배터리·메모리카드 포함; 바디만 499g",
+      "동영상 비트 심도(bit)": 10,
+      "4K 지원 여부": "있음",
+      "8K 지원 여부": "없음",
+      "최고 동영상 해상도": "4K 3840×2160",
+      "최고 동영상 프레임레이트(fps)": 60,
+      "셔터 속도": "전자 선막 1/4000–30초; 전자 셔터 1/16000–30초",
+      "AF 방식": "듀얼 픽셀 CMOS AF II",
+      "ISO 감도": "정지 사진 기본 ISO 100–102400",
+      "이미지 프로세서": "DIGIC X",
+      "최고 연속촬영 속도(fps)": 40,
+      "연속촬영 상세": "전자 셔터 최대 40fps, 전자 선막 최대 6fps",
+      "동영상 기록 상세": "6K 오버샘플링 4K 최대 60p, Full HD 최대 180p",
+      "모니터 상세": "3.0형 약 162만 도트 회전형 LCD",
+      "뷰파인더 상세": "0.39형 약 236만 도트 전자식 뷰파인더",
+      "비고": "2026-09-16 국내 발표. 2026년 10월 국내 출시 예정으로, 정확한 국내 판매 개시일은 미공개. 공개된 바디 단품 출시가는 2,319,000원."
+    },
+    "specSources": {
+      "제조사": {
+        "url": "https://kr.canon/product/content/detail/233585E59CCB3F659615A07386CE5498",
+        "checkedAt": "2026-10-06"
+      },
+      "카메라 방식": {
+        "url": "https://kr.canon/product/content/detail/233585E59CCB3F659615A07386CE5498",
+        "checkedAt": "2026-10-06"
+      },
+      "제품 종류": {
+        "url": "https://kr.canon/product/content/detail/233585E59CCB3F659615A07386CE5498",
+        "checkedAt": "2026-10-06"
+      },
+      "마운트": {
+        "url": "https://kr.canon/product/content/detail/233585E59CCB3F659615A07386CE5498",
+        "checkedAt": "2026-10-06"
+      },
+      "시리즈": {
+        "url": "https://kr.canon/product/content/detail/233585E59CCB3F659615A07386CE5498",
+        "checkedAt": "2026-10-06"
+      },
+      "모델명": {
+        "url": "https://kr.canon/product/content/detail/233585E59CCB3F659615A07386CE5498",
+        "checkedAt": "2026-10-06"
+      },
+      "정식 제품명": {
+        "url": "https://kr.canon/product/content/detail/233585E59CCB3F659615A07386CE5498",
+        "checkedAt": "2026-10-06"
+      },
+      "모델 코드": {
+        "url": "https://kr.canon/product/content/detail/233585E59CCB3F659615A07386CE5498",
+        "checkedAt": "2026-10-06"
+      },
+      "출시일": {
+        "url": "https://kr.canon/product/content/detail/233585E59CCB3F659615A07386CE5498",
+        "checkedAt": "2026-10-06"
+      },
+      "출시년도": {
+        "url": "https://kr.canon/product/content/detail/233585E59CCB3F659615A07386CE5498",
+        "checkedAt": "2026-10-06"
+      },
+      "단종 여부": {
+        "url": "https://kr.canon/product/content/detail/233585E59CCB3F659615A07386CE5498",
+        "checkedAt": "2026-10-06"
+      },
+      "현재 판매 여부": {
+        "url": "https://kr.canon/product/content/detail/233585E59CCB3F659615A07386CE5498",
+        "checkedAt": "2026-10-06"
+      },
+      "판매 상태": {
+        "url": "https://kr.canon/product/content/detail/233585E59CCB3F659615A07386CE5498",
+        "checkedAt": "2026-10-06"
+      },
+      "무게(g)": {
+        "url": "https://kr.canon/product/content/02/form.tab?productCd=NPAB7669",
+        "checkedAt": "2026-10-06"
+      },
+      "공식 출처 URL": {
+        "url": "https://kr.canon/product/content/detail/233585E59CCB3F659615A07386CE5498",
+        "checkedAt": "2026-10-06"
+      },
+      "데이터 기준일": {
+        "url": "https://kr.canon/product/content/detail/233585E59CCB3F659615A07386CE5498",
+        "checkedAt": "2026-10-06"
+      },
+      "검증 상태": {
+        "url": "https://kr.canon/product/content/detail/233585E59CCB3F659615A07386CE5498",
+        "checkedAt": "2026-10-06"
+      },
+      "사양 확인일": {
+        "url": "https://kr.canon/product/content/02/form.tab?productCd=NPAB7669",
+        "checkedAt": "2026-10-06"
+      },
+      "공식 사양 출처": {
+        "url": "https://kr.canon/product/content/02/form.tab?productCd=NPAB7669",
+        "checkedAt": "2026-10-06"
+      },
+      "센서 포맷": {
+        "url": "https://kr.canon/product/content/02/form.tab?productCd=NPAB7669",
+        "checkedAt": "2026-10-06"
+      },
+      "센서 크롭 배수": {
+        "url": "https://kr.canon/product/content/02/form.tab?productCd=NPAB7669",
+        "checkedAt": "2026-10-06"
+      },
+      "손떨림 보정(IBIS) 여부": {
+        "url": "https://kr.canon/product/content/02/form.tab?productCd=NPAB7669",
+        "checkedAt": "2026-10-06"
+      },
+      "유효 화소(MP)": {
+        "url": "https://kr.canon/product/content/02/form.tab?productCd=NPAB7669",
+        "checkedAt": "2026-10-06"
+      },
+      "총 화소(MP)": {
+        "url": "https://kr.canon/product/content/02/form.tab?productCd=NPAB7669",
+        "checkedAt": "2026-10-06"
+      },
+      "센서 종류": {
+        "url": "https://kr.canon/product/content/02/form.tab?productCd=NPAB7669",
+        "checkedAt": "2026-10-06"
+      },
+      "최고 사진 해상도": {
+        "url": "https://kr.canon/product/content/02/form.tab?productCd=NPAB7669",
+        "checkedAt": "2026-10-06"
+      },
+      "사진 기록 형식": {
+        "url": "https://kr.canon/product/content/02/form.tab?productCd=NPAB7669",
+        "checkedAt": "2026-10-06"
+      },
+      "RAW 지원 여부": {
+        "url": "https://kr.canon/product/content/02/form.tab?productCd=NPAB7669",
+        "checkedAt": "2026-10-06"
+      },
+      "손떨림 보정 상세": {
+        "url": "https://kr.canon/company/brand/news/13348/Iframe",
+        "checkedAt": "2026-10-06"
+      },
+      "메모리카드 종류": {
+        "url": "https://kr.canon/product/content/02/form.tab?productCd=NPAB7669",
+        "checkedAt": "2026-10-06"
+      },
+      "카드 슬롯 수": {
+        "url": "https://kr.canon/product/content/02/form.tab?productCd=NPAB7669",
+        "checkedAt": "2026-10-06"
+      },
+      "CFexpress 지원 여부": {
+        "url": "https://kr.canon/product/content/02/form.tab?productCd=NPAB7669",
+        "checkedAt": "2026-10-06"
+      },
+      "배터리 모델": {
+        "url": "https://kr.canon/product/content/02/form.tab?productCd=NPAB7669",
+        "checkedAt": "2026-10-06"
+      },
+      "배터리 포함 여부": {
+        "url": "https://kr.canon/product/content/02/form.tab?productCd=NPAB7669",
+        "checkedAt": "2026-10-06"
+      },
+      "USB 종류": {
+        "url": "https://kr.canon/product/content/02/form.tab?productCd=NPAB7669",
+        "checkedAt": "2026-10-06"
+      },
+      "HDMI 종류": {
+        "url": "https://kr.canon/product/content/02/form.tab?productCd=NPAB7669",
+        "checkedAt": "2026-10-06"
+      },
+      "마이크 단자": {
+        "url": "https://kr.canon/product/content/02/form.tab?productCd=NPAB7669",
+        "checkedAt": "2026-10-06"
+      },
+      "헤드폰 단자": {
+        "url": "https://kr.canon/product/content/02/form.tab?productCd=NPAB7669",
+        "checkedAt": "2026-10-06"
+      },
+      "가로 크기(mm)": {
+        "url": "https://kr.canon/product/content/02/form.tab?productCd=NPAB7669",
+        "checkedAt": "2026-10-06"
+      },
+      "세로 크기(mm)": {
+        "url": "https://kr.canon/product/content/02/form.tab?productCd=NPAB7669",
+        "checkedAt": "2026-10-06"
+      },
+      "두께(mm)": {
+        "url": "https://kr.canon/product/content/02/form.tab?productCd=NPAB7669",
+        "checkedAt": "2026-10-06"
+      },
+      "무게 기준": {
+        "url": "https://kr.canon/product/content/02/form.tab?productCd=NPAB7669",
+        "checkedAt": "2026-10-06"
+      },
+      "동영상 비트 심도(bit)": {
+        "url": "https://kr.canon/product/content/02/form.tab?productCd=NPAB7669",
+        "checkedAt": "2026-10-06"
+      },
+      "4K 지원 여부": {
+        "url": "https://kr.canon/product/content/02/form.tab?productCd=NPAB7669",
+        "checkedAt": "2026-10-06"
+      },
+      "8K 지원 여부": {
+        "url": "https://kr.canon/product/content/02/form.tab?productCd=NPAB7669",
+        "checkedAt": "2026-10-06"
+      },
+      "최고 동영상 해상도": {
+        "url": "https://kr.canon/product/content/02/form.tab?productCd=NPAB7669",
+        "checkedAt": "2026-10-06"
+      },
+      "최고 동영상 프레임레이트(fps)": {
+        "url": "https://kr.canon/product/content/02/form.tab?productCd=NPAB7669",
+        "checkedAt": "2026-10-06"
+      },
+      "셔터 속도": {
+        "url": "https://kr.canon/product/content/02/form.tab?productCd=NPAB7669",
+        "checkedAt": "2026-10-06"
+      },
+      "AF 방식": {
+        "url": "https://kr.canon/product/content/02/form.tab?productCd=NPAB7669",
+        "checkedAt": "2026-10-06"
+      },
+      "ISO 감도": {
+        "url": "https://kr.canon/product/content/02/form.tab?productCd=NPAB7669",
+        "checkedAt": "2026-10-06"
+      },
+      "이미지 프로세서": {
+        "url": "https://kr.canon/company/brand/news/13348/Iframe",
+        "checkedAt": "2026-10-06"
+      },
+      "최고 연속촬영 속도(fps)": {
+        "url": "https://kr.canon/company/brand/news/13348/Iframe",
+        "checkedAt": "2026-10-06"
+      },
+      "연속촬영 상세": {
+        "url": "https://kr.canon/company/brand/news/13348/Iframe",
+        "checkedAt": "2026-10-06"
+      },
+      "동영상 기록 상세": {
+        "url": "https://kr.canon/company/brand/news/13348/Iframe",
+        "checkedAt": "2026-10-06"
+      },
+      "모니터 상세": {
+        "url": "https://kr.canon/company/brand/news/13348/Iframe",
+        "checkedAt": "2026-10-06"
+      },
+      "뷰파인더 상세": {
+        "url": "https://kr.canon/company/brand/news/13348/Iframe",
+        "checkedAt": "2026-10-06"
+      },
+      "비고": {
+        "url": "https://kr.canon/product/content/detail/233585E59CCB3F659615A07386CE5498",
+        "checkedAt": "2026-10-06"
+      }
+    },
+    "megapixels": 24.2
+  },
+  {
+    "id": "canon-바디-canon-rf-eos-r6-v",
+    "manufacturer": "Canon",
+    "cameraSystem": "미러리스",
+    "type": "바디",
+    "mount": "Canon RF",
+    "series": "EOS R",
+    "model": "EOS R6 V",
+    "officialName": "Canon EOS R6 V",
+    "modelCode": "EOS R6 V",
+    "releaseDate": "2026-06-19",
+    "releaseYear": 2026,
+    "discontinued": "아니오",
+    "currentSale": "예",
+    "successor": null,
+    "sensorFormat": "Full Frame",
+    "cropFactor": 1,
+    "lensFormat": null,
+    "compatibleSensorFormat": null,
+    "focalMinMm": null,
+    "focalMaxMm": null,
+    "focalLength": null,
+    "maxAperture": null,
+    "lensType": null,
+    "category": null,
+    "ibis": "있음",
+    "oss": null,
+    "weightG": 688,
+    "saleStatus": "판매 중",
+    "note": "2026-06-19 국내 공식 출시. 바디 단품 기준. 내장 냉각팬과 오픈 게이트 촬영을 지원하는 영상 특화 풀프레임 모델.",
+    "officialSource": "https://kr.canon/product/content/detail/1241ED0B384C50070E41D6CD620CC99D",
+    "verifiedAt": "2026-10-06",
+    "verification": "한국 공식 발표·제품별 공식 사양 확인",
+    "active": true,
+    "specs": {
+      "제조사": "Canon",
+      "카메라 방식": "미러리스",
+      "제품 종류": "바디",
+      "마운트": "Canon RF",
+      "시리즈": "EOS R",
+      "모델명": "EOS R6 V",
+      "정식 제품명": "Canon EOS R6 V",
+      "모델 코드": "EOS R6 V",
+      "출시일": "2026-06-19",
+      "출시년도": 2026,
+      "단종 여부": "아니오",
+      "현재 판매 여부": "예",
+      "판매 상태": "판매 중",
+      "무게(g)": 688,
+      "공식 출처 URL": "https://kr.canon/product/content/detail/1241ED0B384C50070E41D6CD620CC99D",
+      "데이터 기준일": "2026-10-06",
+      "검증 상태": "한국 공식 발표·제품별 공식 사양 확인",
+      "사양 확인일": "2026-10-06",
+      "공식 사양 출처": "https://kr.canon/product/content/02/form.tab?productCd=NPAB7503",
+      "센서 포맷": "Full Frame",
+      "센서 크롭 배수": 1,
+      "손떨림 보정(IBIS) 여부": "있음",
+      "유효 화소(MP)": 32.5,
+      "총 화소(MP)": 34.2,
+      "센서 종류": "풀프레임 CMOS (35.9×23.9mm)",
+      "최고 사진 해상도": "6960×4640",
+      "사진 기록 형식": "JPEG, HEIF, RAW, C-RAW",
+      "RAW 지원 여부": "있음",
+      "손떨림 보정 상세": "바디 내 5축 센서 시프트 방식",
+      "메모리카드 종류": "CFexpress Type B / SD·SDHC·SDXC UHS-II",
+      "카드 슬롯 수": 2,
+      "CFexpress 지원 여부": "있음",
+      "배터리 모델": "LP-E6P",
+      "배터리 포함 여부": "포함",
+      "배터리 상세": "LP-E6P. LP-E6NH / LP-E6N 사용 시 기능 제한; LP-E6 사용 불가.",
+      "USB 종류": "USB Type-C (USB 10Gbps / USB 3.2 Gen 2)",
+      "HDMI 종류": "HDMI Type-A",
+      "마이크 단자": "있음",
+      "헤드폰 단자": "있음",
+      "가로 크기(mm)": 141.8,
+      "세로 크기(mm)": 83.3,
+      "두께(mm)": 79.7,
+      "무게 기준": "배터리·CFexpress 카드 포함; 바디만 598g",
+      "4K 지원 여부": "있음",
+      "8K 지원 여부": "없음",
+      "동영상 비트 심도(bit)": 10,
+      "AF 방식": "듀얼 픽셀 CMOS AF",
+      "이미지 프로세서": "DIGIC X",
+      "최고 동영상 해상도": "7K",
+      "최고 동영상 프레임레이트(fps)": 60,
+      "동영상 기록 상세": "내부 7K 최대 60p RAW, 3:2 오픈 게이트, 크롭 없는 4K 최대 120p, 2K 최대 180p. 내장 냉각팬 지원.",
+      "비고": "2026-06-19 국내 공식 출시. 바디 단품 기준. 내장 냉각팬과 오픈 게이트 촬영을 지원하는 영상 특화 풀프레임 모델."
+    },
+    "specSources": {
+      "제조사": {
+        "url": "https://kr.canon/product/content/detail/1241ED0B384C50070E41D6CD620CC99D",
+        "checkedAt": "2026-10-06"
+      },
+      "카메라 방식": {
+        "url": "https://kr.canon/product/content/detail/1241ED0B384C50070E41D6CD620CC99D",
+        "checkedAt": "2026-10-06"
+      },
+      "제품 종류": {
+        "url": "https://kr.canon/product/content/detail/1241ED0B384C50070E41D6CD620CC99D",
+        "checkedAt": "2026-10-06"
+      },
+      "마운트": {
+        "url": "https://kr.canon/product/content/detail/1241ED0B384C50070E41D6CD620CC99D",
+        "checkedAt": "2026-10-06"
+      },
+      "시리즈": {
+        "url": "https://kr.canon/product/content/detail/1241ED0B384C50070E41D6CD620CC99D",
+        "checkedAt": "2026-10-06"
+      },
+      "모델명": {
+        "url": "https://kr.canon/product/content/detail/1241ED0B384C50070E41D6CD620CC99D",
+        "checkedAt": "2026-10-06"
+      },
+      "정식 제품명": {
+        "url": "https://kr.canon/product/content/detail/1241ED0B384C50070E41D6CD620CC99D",
+        "checkedAt": "2026-10-06"
+      },
+      "모델 코드": {
+        "url": "https://kr.canon/product/content/detail/1241ED0B384C50070E41D6CD620CC99D",
+        "checkedAt": "2026-10-06"
+      },
+      "출시일": {
+        "url": "https://kr.canon/company/brand/news/13088/Iframe",
+        "checkedAt": "2026-10-06"
+      },
+      "출시년도": {
+        "url": "https://kr.canon/product/content/detail/1241ED0B384C50070E41D6CD620CC99D",
+        "checkedAt": "2026-10-06"
+      },
+      "단종 여부": {
+        "url": "https://kr.canon/product/content/detail/1241ED0B384C50070E41D6CD620CC99D",
+        "checkedAt": "2026-10-06"
+      },
+      "현재 판매 여부": {
+        "url": "https://kr.canon/product/content/detail/1241ED0B384C50070E41D6CD620CC99D",
+        "checkedAt": "2026-10-06"
+      },
+      "판매 상태": {
+        "url": "https://kr.canon/product/content/detail/1241ED0B384C50070E41D6CD620CC99D",
+        "checkedAt": "2026-10-06"
+      },
+      "무게(g)": {
+        "url": "https://kr.canon/product/content/02/form.tab?productCd=NPAB7503",
+        "checkedAt": "2026-10-06"
+      },
+      "공식 출처 URL": {
+        "url": "https://kr.canon/product/content/detail/1241ED0B384C50070E41D6CD620CC99D",
+        "checkedAt": "2026-10-06"
+      },
+      "데이터 기준일": {
+        "url": "https://kr.canon/product/content/detail/1241ED0B384C50070E41D6CD620CC99D",
+        "checkedAt": "2026-10-06"
+      },
+      "검증 상태": {
+        "url": "https://kr.canon/product/content/detail/1241ED0B384C50070E41D6CD620CC99D",
+        "checkedAt": "2026-10-06"
+      },
+      "사양 확인일": {
+        "url": "https://kr.canon/product/content/02/form.tab?productCd=NPAB7503",
+        "checkedAt": "2026-10-06"
+      },
+      "공식 사양 출처": {
+        "url": "https://kr.canon/product/content/02/form.tab?productCd=NPAB7503",
+        "checkedAt": "2026-10-06"
+      },
+      "센서 포맷": {
+        "url": "https://kr.canon/product/content/02/form.tab?productCd=NPAB7503",
+        "checkedAt": "2026-10-06"
+      },
+      "센서 크롭 배수": {
+        "url": "https://kr.canon/product/content/02/form.tab?productCd=NPAB7503",
+        "checkedAt": "2026-10-06"
+      },
+      "손떨림 보정(IBIS) 여부": {
+        "url": "https://kr.canon/product/content/02/form.tab?productCd=NPAB7503",
+        "checkedAt": "2026-10-06"
+      },
+      "유효 화소(MP)": {
+        "url": "https://kr.canon/product/content/02/form.tab?productCd=NPAB7503",
+        "checkedAt": "2026-10-06"
+      },
+      "총 화소(MP)": {
+        "url": "https://kr.canon/product/content/02/form.tab?productCd=NPAB7503",
+        "checkedAt": "2026-10-06"
+      },
+      "센서 종류": {
+        "url": "https://kr.canon/product/content/02/form.tab?productCd=NPAB7503",
+        "checkedAt": "2026-10-06"
+      },
+      "최고 사진 해상도": {
+        "url": "https://kr.canon/product/content/02/form.tab?productCd=NPAB7503",
+        "checkedAt": "2026-10-06"
+      },
+      "사진 기록 형식": {
+        "url": "https://kr.canon/product/content/02/form.tab?productCd=NPAB7503",
+        "checkedAt": "2026-10-06"
+      },
+      "RAW 지원 여부": {
+        "url": "https://kr.canon/product/content/02/form.tab?productCd=NPAB7503",
+        "checkedAt": "2026-10-06"
+      },
+      "손떨림 보정 상세": {
+        "url": "https://kr.canon/product/content/02/form.tab?productCd=NPAB7503",
+        "checkedAt": "2026-10-06"
+      },
+      "메모리카드 종류": {
+        "url": "https://kr.canon/product/content/02/form.tab?productCd=NPAB7503",
+        "checkedAt": "2026-10-06"
+      },
+      "카드 슬롯 수": {
+        "url": "https://kr.canon/product/content/02/form.tab?productCd=NPAB7503",
+        "checkedAt": "2026-10-06"
+      },
+      "CFexpress 지원 여부": {
+        "url": "https://kr.canon/product/content/02/form.tab?productCd=NPAB7503",
+        "checkedAt": "2026-10-06"
+      },
+      "배터리 모델": {
+        "url": "https://kr.canon/product/content/02/form.tab?productCd=NPAB7503",
+        "checkedAt": "2026-10-06"
+      },
+      "배터리 포함 여부": {
+        "url": "https://kr.canon/product/content/02/form.tab?productCd=NPAB7503",
+        "checkedAt": "2026-10-06"
+      },
+      "배터리 상세": {
+        "url": "https://kr.canon/product/content/02/form.tab?productCd=NPAB7503",
+        "checkedAt": "2026-10-06"
+      },
+      "USB 종류": {
+        "url": "https://kr.canon/product/content/02/form.tab?productCd=NPAB7503",
+        "checkedAt": "2026-10-06"
+      },
+      "HDMI 종류": {
+        "url": "https://kr.canon/product/content/02/form.tab?productCd=NPAB7503",
+        "checkedAt": "2026-10-06"
+      },
+      "마이크 단자": {
+        "url": "https://kr.canon/product/content/02/form.tab?productCd=NPAB7503",
+        "checkedAt": "2026-10-06"
+      },
+      "헤드폰 단자": {
+        "url": "https://kr.canon/product/content/02/form.tab?productCd=NPAB7503",
+        "checkedAt": "2026-10-06"
+      },
+      "가로 크기(mm)": {
+        "url": "https://kr.canon/product/content/02/form.tab?productCd=NPAB7503",
+        "checkedAt": "2026-10-06"
+      },
+      "세로 크기(mm)": {
+        "url": "https://kr.canon/product/content/02/form.tab?productCd=NPAB7503",
+        "checkedAt": "2026-10-06"
+      },
+      "두께(mm)": {
+        "url": "https://kr.canon/product/content/02/form.tab?productCd=NPAB7503",
+        "checkedAt": "2026-10-06"
+      },
+      "무게 기준": {
+        "url": "https://kr.canon/product/content/02/form.tab?productCd=NPAB7503",
+        "checkedAt": "2026-10-06"
+      },
+      "4K 지원 여부": {
+        "url": "https://kr.canon/product/content/02/form.tab?productCd=NPAB7503",
+        "checkedAt": "2026-10-06"
+      },
+      "8K 지원 여부": {
+        "url": "https://kr.canon/product/content/02/form.tab?productCd=NPAB7503",
+        "checkedAt": "2026-10-06"
+      },
+      "동영상 비트 심도(bit)": {
+        "url": "https://kr.canon/product/content/02/form.tab?productCd=NPAB7503",
+        "checkedAt": "2026-10-06"
+      },
+      "AF 방식": {
+        "url": "https://kr.canon/product/content/02/form.tab?productCd=NPAB7503",
+        "checkedAt": "2026-10-06"
+      },
+      "이미지 프로세서": {
+        "url": "https://kr.canon/company/brand/news/13088/Iframe",
+        "checkedAt": "2026-10-06"
+      },
+      "최고 동영상 해상도": {
+        "url": "https://kr.canon/company/brand/news/13088/Iframe",
+        "checkedAt": "2026-10-06"
+      },
+      "최고 동영상 프레임레이트(fps)": {
+        "url": "https://kr.canon/company/brand/news/13088/Iframe",
+        "checkedAt": "2026-10-06"
+      },
+      "동영상 기록 상세": {
+        "url": "https://kr.canon/company/brand/news/13088/Iframe",
+        "checkedAt": "2026-10-06"
+      },
+      "비고": {
+        "url": "https://kr.canon/product/content/detail/1241ED0B384C50070E41D6CD620CC99D",
+        "checkedAt": "2026-10-06"
+      }
+    },
+    "megapixels": 32.5
+  },
+  {
+    "id": "canon-렌즈-canon-rf-rf20-50mm",
+    "manufacturer": "Canon",
+    "cameraSystem": "미러리스",
+    "type": "렌즈",
+    "mount": "Canon RF",
+    "series": "RF L",
+    "model": "RF20-50mm F4 L IS USM PZ",
+    "officialName": "Canon RF20-50mm F4 L IS USM PZ",
+    "modelCode": "RF20-50mm",
+    "releaseDate": "2026-06-19",
+    "releaseYear": 2026,
+    "discontinued": "아니오",
+    "currentSale": "예",
+    "successor": null,
+    "sensorFormat": null,
+    "cropFactor": null,
+    "lensFormat": "RF",
+    "compatibleSensorFormat": "Full Frame",
+    "focalMinMm": 20,
+    "focalMaxMm": 50,
+    "focalLength": "20-50mm",
+    "maxAperture": "F4",
+    "lensType": "줌렌즈",
+    "category": "표준 줌",
+    "ibis": null,
+    "oss": "있음",
+    "weightG": 420,
+    "saleStatus": "판매 중",
+    "note": "2026-06-19 국내 공식 출시. 파워 줌 내장 및 이너 줌 설계. 렌즈 단품 기준.",
+    "officialSource": "https://kr.canon/product/content/detail/C754B5333CB6CAF811FFB2C323188177",
+    "verifiedAt": "2026-10-06",
+    "verification": "한국 공식 발표·제품별 공식 사양 확인",
+    "active": true,
+    "specs": {
+      "제조사": "Canon",
+      "카메라 방식": "미러리스",
+      "제품 종류": "렌즈",
+      "마운트": "Canon RF",
+      "시리즈": "RF L",
+      "모델명": "RF20-50mm F4 L IS USM PZ",
+      "정식 제품명": "Canon RF20-50mm F4 L IS USM PZ",
+      "모델 코드": "RF20-50mm",
+      "출시일": "2026-06-19",
+      "출시년도": 2026,
+      "단종 여부": "아니오",
+      "현재 판매 여부": "예",
+      "판매 상태": "판매 중",
+      "무게(g)": 420,
+      "공식 출처 URL": "https://kr.canon/product/content/detail/C754B5333CB6CAF811FFB2C323188177",
+      "데이터 기준일": "2026-10-06",
+      "검증 상태": "한국 공식 발표·제품별 공식 사양 확인",
+      "사양 확인일": "2026-10-06",
+      "공식 사양 출처": "https://kr.canon/product/content/02/form.tab?productCd=NPAB7504",
+      "렌즈 마운트": "Canon RF",
+      "렌즈 포맷": "RF",
+      "대응 센서 포맷": "Full Frame",
+      "렌즈 시리즈": "RF L",
+      "초점거리": "20-50mm",
+      "최소 초점거리(mm)": 20,
+      "최대 초점거리(mm)": 50,
+      "35mm 환산 초점거리(기본 포맷)": "20-50mm",
+      "35mm 환산 최소 초점거리(mm)": 20,
+      "35mm 환산 최대 초점거리(mm)": 50,
+      "렌즈 종류": "줌렌즈",
+      "주요 용도 또는 렌즈 분류": "표준 줌",
+      "최대 조리개": "F4",
+      "최소 조리개": "F22",
+      "렌즈 구성": "11군 13매 (비구면 2매, UD 3매)",
+      "조리개 날 수": 9,
+      "렌즈 손떨림 보정(OSS) 여부": "있음",
+      "손떨림 보정 상세": "광학 IS 중앙 6.0스톱(50mm, EOS R8, 전자 셔터); 협조 IS 중앙·주변 8.0스톱(EOS R1), CIPA 2024 기준",
+      "최단 촬영 거리(m)": 0.24,
+      "최단 촬영 거리 상세": "전 줌 영역 0.24m",
+      "최대 촬영 배율": "0.14배(20mm), 0.33배(50mm)",
+      "필터 구경(mm)": 67,
+      "최대 지름(mm)": 79.9,
+      "길이(mm)": 98.4,
+      "파워 줌 지원 여부": "있음",
+      "줌 방식": "이너 줌 / 내장 파워 줌",
+      "AF 지원 여부": "있음",
+      "비고": "2026-06-19 국내 공식 출시. 파워 줌 내장 및 이너 줌 설계. 렌즈 단품 기준."
+    },
+    "specSources": {
+      "제조사": {
+        "url": "https://kr.canon/product/content/detail/C754B5333CB6CAF811FFB2C323188177",
+        "checkedAt": "2026-10-06"
+      },
+      "카메라 방식": {
+        "url": "https://kr.canon/product/content/detail/C754B5333CB6CAF811FFB2C323188177",
+        "checkedAt": "2026-10-06"
+      },
+      "제품 종류": {
+        "url": "https://kr.canon/product/content/detail/C754B5333CB6CAF811FFB2C323188177",
+        "checkedAt": "2026-10-06"
+      },
+      "마운트": {
+        "url": "https://kr.canon/product/content/detail/C754B5333CB6CAF811FFB2C323188177",
+        "checkedAt": "2026-10-06"
+      },
+      "시리즈": {
+        "url": "https://kr.canon/product/content/detail/C754B5333CB6CAF811FFB2C323188177",
+        "checkedAt": "2026-10-06"
+      },
+      "모델명": {
+        "url": "https://kr.canon/product/content/detail/C754B5333CB6CAF811FFB2C323188177",
+        "checkedAt": "2026-10-06"
+      },
+      "정식 제품명": {
+        "url": "https://kr.canon/product/content/detail/C754B5333CB6CAF811FFB2C323188177",
+        "checkedAt": "2026-10-06"
+      },
+      "모델 코드": {
+        "url": "https://kr.canon/product/content/detail/C754B5333CB6CAF811FFB2C323188177",
+        "checkedAt": "2026-10-06"
+      },
+      "출시일": {
+        "url": "https://kr.canon/company/brand/news/13088/Iframe",
+        "checkedAt": "2026-10-06"
+      },
+      "출시년도": {
+        "url": "https://kr.canon/product/content/detail/C754B5333CB6CAF811FFB2C323188177",
+        "checkedAt": "2026-10-06"
+      },
+      "단종 여부": {
+        "url": "https://kr.canon/product/content/detail/C754B5333CB6CAF811FFB2C323188177",
+        "checkedAt": "2026-10-06"
+      },
+      "현재 판매 여부": {
+        "url": "https://kr.canon/product/content/detail/C754B5333CB6CAF811FFB2C323188177",
+        "checkedAt": "2026-10-06"
+      },
+      "판매 상태": {
+        "url": "https://kr.canon/product/content/detail/C754B5333CB6CAF811FFB2C323188177",
+        "checkedAt": "2026-10-06"
+      },
+      "무게(g)": {
+        "url": "https://kr.canon/product/content/02/form.tab?productCd=NPAB7504",
+        "checkedAt": "2026-10-06"
+      },
+      "공식 출처 URL": {
+        "url": "https://kr.canon/product/content/detail/C754B5333CB6CAF811FFB2C323188177",
+        "checkedAt": "2026-10-06"
+      },
+      "데이터 기준일": {
+        "url": "https://kr.canon/product/content/detail/C754B5333CB6CAF811FFB2C323188177",
+        "checkedAt": "2026-10-06"
+      },
+      "검증 상태": {
+        "url": "https://kr.canon/product/content/detail/C754B5333CB6CAF811FFB2C323188177",
+        "checkedAt": "2026-10-06"
+      },
+      "사양 확인일": {
+        "url": "https://kr.canon/product/content/02/form.tab?productCd=NPAB7504",
+        "checkedAt": "2026-10-06"
+      },
+      "공식 사양 출처": {
+        "url": "https://kr.canon/product/content/02/form.tab?productCd=NPAB7504",
+        "checkedAt": "2026-10-06"
+      },
+      "렌즈 마운트": {
+        "url": "https://kr.canon/product/content/02/form.tab?productCd=NPAB7504",
+        "checkedAt": "2026-10-06"
+      },
+      "렌즈 포맷": {
+        "url": "https://kr.canon/product/content/02/form.tab?productCd=NPAB7504",
+        "checkedAt": "2026-10-06"
+      },
+      "대응 센서 포맷": {
+        "url": "https://kr.canon/product/content/02/form.tab?productCd=NPAB7504",
+        "checkedAt": "2026-10-06"
+      },
+      "렌즈 시리즈": {
+        "url": "https://kr.canon/product/content/02/form.tab?productCd=NPAB7504",
+        "checkedAt": "2026-10-06"
+      },
+      "초점거리": {
+        "url": "https://kr.canon/product/content/02/form.tab?productCd=NPAB7504",
+        "checkedAt": "2026-10-06"
+      },
+      "최소 초점거리(mm)": {
+        "url": "https://kr.canon/product/content/02/form.tab?productCd=NPAB7504",
+        "checkedAt": "2026-10-06"
+      },
+      "최대 초점거리(mm)": {
+        "url": "https://kr.canon/product/content/02/form.tab?productCd=NPAB7504",
+        "checkedAt": "2026-10-06"
+      },
+      "35mm 환산 초점거리(기본 포맷)": {
+        "url": "https://kr.canon/product/content/02/form.tab?productCd=NPAB7504",
+        "checkedAt": "2026-10-06"
+      },
+      "35mm 환산 최소 초점거리(mm)": {
+        "url": "https://kr.canon/product/content/02/form.tab?productCd=NPAB7504",
+        "checkedAt": "2026-10-06"
+      },
+      "35mm 환산 최대 초점거리(mm)": {
+        "url": "https://kr.canon/product/content/02/form.tab?productCd=NPAB7504",
+        "checkedAt": "2026-10-06"
+      },
+      "렌즈 종류": {
+        "url": "https://kr.canon/product/content/02/form.tab?productCd=NPAB7504",
+        "checkedAt": "2026-10-06"
+      },
+      "주요 용도 또는 렌즈 분류": {
+        "url": "https://kr.canon/product/content/02/form.tab?productCd=NPAB7504",
+        "checkedAt": "2026-10-06"
+      },
+      "최대 조리개": {
+        "url": "https://kr.canon/product/content/02/form.tab?productCd=NPAB7504",
+        "checkedAt": "2026-10-06"
+      },
+      "최소 조리개": {
+        "url": "https://kr.canon/product/content/02/form.tab?productCd=NPAB7504",
+        "checkedAt": "2026-10-06"
+      },
+      "렌즈 구성": {
+        "url": "https://kr.canon/product/content/02/form.tab?productCd=NPAB7504",
+        "checkedAt": "2026-10-06"
+      },
+      "조리개 날 수": {
+        "url": "https://kr.canon/product/content/02/form.tab?productCd=NPAB7504",
+        "checkedAt": "2026-10-06"
+      },
+      "렌즈 손떨림 보정(OSS) 여부": {
+        "url": "https://kr.canon/product/content/02/form.tab?productCd=NPAB7504",
+        "checkedAt": "2026-10-06"
+      },
+      "손떨림 보정 상세": {
+        "url": "https://kr.canon/product/content/02/form.tab?productCd=NPAB7504",
+        "checkedAt": "2026-10-06"
+      },
+      "최단 촬영 거리(m)": {
+        "url": "https://kr.canon/product/content/02/form.tab?productCd=NPAB7504",
+        "checkedAt": "2026-10-06"
+      },
+      "최단 촬영 거리 상세": {
+        "url": "https://kr.canon/product/content/02/form.tab?productCd=NPAB7504",
+        "checkedAt": "2026-10-06"
+      },
+      "최대 촬영 배율": {
+        "url": "https://kr.canon/product/content/02/form.tab?productCd=NPAB7504",
+        "checkedAt": "2026-10-06"
+      },
+      "필터 구경(mm)": {
+        "url": "https://kr.canon/product/content/02/form.tab?productCd=NPAB7504",
+        "checkedAt": "2026-10-06"
+      },
+      "최대 지름(mm)": {
+        "url": "https://kr.canon/product/content/02/form.tab?productCd=NPAB7504",
+        "checkedAt": "2026-10-06"
+      },
+      "길이(mm)": {
+        "url": "https://kr.canon/product/content/02/form.tab?productCd=NPAB7504",
+        "checkedAt": "2026-10-06"
+      },
+      "파워 줌 지원 여부": {
+        "url": "https://kr.canon/company/brand/news/13088/Iframe",
+        "checkedAt": "2026-10-06"
+      },
+      "줌 방식": {
+        "url": "https://kr.canon/company/brand/news/13088/Iframe",
+        "checkedAt": "2026-10-06"
+      },
+      "AF 지원 여부": {
+        "url": "https://kr.canon/product/content/detail/C754B5333CB6CAF811FFB2C323188177",
+        "checkedAt": "2026-10-06"
+      },
+      "비고": {
+        "url": "https://kr.canon/product/content/detail/C754B5333CB6CAF811FFB2C323188177",
+        "checkedAt": "2026-10-06"
+      }
+    }
+  },
+  {
+    "id": "nikon-바디-nikon-z-z5iic",
+    "manufacturer": "Nikon",
+    "cameraSystem": "미러리스",
+    "type": "바디",
+    "mount": "Nikon Z",
+    "series": "Z",
+    "model": "Z5IIC",
+    "officialName": "Nikon Z5IIC",
+    "modelCode": "Z5IIC",
+    "releaseDate": "2026-10",
+    "releaseYear": 2026,
+    "discontinued": "아니오",
+    "currentSale": "출시예정",
+    "successor": null,
+    "sensorFormat": "Full Frame",
+    "cropFactor": 1,
+    "lensFormat": null,
+    "compatibleSensorFormat": null,
+    "focalMinMm": null,
+    "focalMaxMm": null,
+    "focalLength": null,
+    "maxAperture": null,
+    "lensType": null,
+    "category": null,
+    "ibis": "있음",
+    "oss": null,
+    "weightG": 620,
+    "saleStatus": "출시 예정",
+    "note": "2026-09-28 국내 발표. 2026년 10월 국내 출시 예정, 정확한 국내 판매 개시일은 미공개. 바디 단품 출시가는 1,980,000원. 일본 출시일은 국내 날짜로 사용하지 않음.",
+    "officialSource": "https://www.nikc.nikon.com/product/mirrorless/Z5IIC",
+    "verifiedAt": "2026-10-06",
+    "verification": "한국 공식 발표·제품별 공식 사양 확인",
+    "active": true,
+    "specs": {
+      "제조사": "Nikon",
+      "카메라 방식": "미러리스",
+      "제품 종류": "바디",
+      "마운트": "Nikon Z",
+      "시리즈": "Z",
+      "모델명": "Z5IIC",
+      "정식 제품명": "Nikon Z5IIC",
+      "모델 코드": "Z5IIC",
+      "출시일": "2026-10",
+      "출시년도": 2026,
+      "단종 여부": "아니오",
+      "현재 판매 여부": "출시예정",
+      "판매 상태": "출시 예정",
+      "무게(g)": 620,
+      "공식 출처 URL": "https://www.nikc.nikon.com/product/mirrorless/Z5IIC",
+      "데이터 기준일": "2026-10-06",
+      "검증 상태": "한국 공식 발표·제품별 공식 사양 확인",
+      "사양 확인일": "2026-10-06",
+      "공식 사양 출처": "https://nij.nikon.com/products/lineup/mirrorless/z5_2c/spec.html",
+      "센서 포맷": "Full Frame",
+      "센서 크롭 배수": 1,
+      "손떨림 보정(IBIS) 여부": "있음",
+      "유효 화소(MP)": 24.5,
+      "총 화소(MP)": 25.28,
+      "센서 종류": "풀프레임 / FX 포맷 CMOS (35.9×23.9mm)",
+      "최고 사진 해상도": "6048×4032",
+      "사진 기록 형식": "NEF (RAW 14비트), JPEG, HEIF",
+      "RAW 지원 여부": "있음",
+      "손떨림 보정 상세": "센서 시프트 방식 5축 바디 내 손떨림 보정",
+      "메모리카드 종류": "SD / SDHC / SDXC (UHS-II 지원)",
+      "CFexpress 지원 여부": "없음",
+      "배터리 모델": "EN-EL15c",
+      "배터리 포함 여부": "포함",
+      "USB 종류": "USB Type-C (SuperSpeed USB)",
+      "HDMI 종류": "HDMI Type-D",
+      "마이크 단자": "있음",
+      "헤드폰 단자": "있음",
+      "헤드폰 단자 상세": "3.5mm; MC-DC3 리모트 코드와 단자 겸용",
+      "가로 크기(mm)": 134,
+      "세로 크기(mm)": 80.5,
+      "두께(mm)": 72,
+      "무게 기준": "배터리·메모리카드 포함; 바디만 538g",
+      "최고 동영상 해상도": "4K UHD 3840×2160",
+      "최고 동영상 프레임레이트(fps)": 60,
+      "4K 지원 여부": "있음",
+      "8K 지원 여부": "없음",
+      "동영상 비트 심도(bit)": 12,
+      "동영상 기록 상세": "4K UHD 최대 60p, Full HD 최대 120p. N-RAW 12비트 / H.265 8·10비트 / H.264 8비트.",
+      "최고 연속촬영 속도(fps)": 30,
+      "연속촬영 상세": "C30 최대 30fps JPEG; 고속 연속 확장 최대 약 14fps, 무음 모드 약 15fps",
+      "셔터 속도": "1/8000–30초, Bulb, Time; M 모드 최대 900초 확장",
+      "이미지 프로세서": "EXPEED 7",
+      "비고": "2026-09-28 국내 발표. 2026년 10월 국내 출시 예정, 정확한 국내 판매 개시일은 미공개. 바디 단품 출시가는 1,980,000원. 일본 출시일은 국내 날짜로 사용하지 않음."
+    },
+    "specSources": {
+      "제조사": {
+        "url": "https://www.nikc.nikon.com/product/mirrorless/Z5IIC",
+        "checkedAt": "2026-10-06"
+      },
+      "카메라 방식": {
+        "url": "https://www.nikc.nikon.com/product/mirrorless/Z5IIC",
+        "checkedAt": "2026-10-06"
+      },
+      "제품 종류": {
+        "url": "https://www.nikc.nikon.com/product/mirrorless/Z5IIC",
+        "checkedAt": "2026-10-06"
+      },
+      "마운트": {
+        "url": "https://www.nikc.nikon.com/product/mirrorless/Z5IIC",
+        "checkedAt": "2026-10-06"
+      },
+      "시리즈": {
+        "url": "https://www.nikc.nikon.com/product/mirrorless/Z5IIC",
+        "checkedAt": "2026-10-06"
+      },
+      "모델명": {
+        "url": "https://www.nikc.nikon.com/product/mirrorless/Z5IIC",
+        "checkedAt": "2026-10-06"
+      },
+      "정식 제품명": {
+        "url": "https://www.nikc.nikon.com/product/mirrorless/Z5IIC",
+        "checkedAt": "2026-10-06"
+      },
+      "모델 코드": {
+        "url": "https://www.nikc.nikon.com/product/mirrorless/Z5IIC",
+        "checkedAt": "2026-10-06"
+      },
+      "출시일": {
+        "url": "https://www.nikc.nikon.com/ad/press/view/1019",
+        "checkedAt": "2026-10-06"
+      },
+      "출시년도": {
+        "url": "https://www.nikc.nikon.com/product/mirrorless/Z5IIC",
+        "checkedAt": "2026-10-06"
+      },
+      "단종 여부": {
+        "url": "https://www.nikc.nikon.com/product/mirrorless/Z5IIC",
+        "checkedAt": "2026-10-06"
+      },
+      "현재 판매 여부": {
+        "url": "https://www.nikc.nikon.com/product/mirrorless/Z5IIC",
+        "checkedAt": "2026-10-06"
+      },
+      "판매 상태": {
+        "url": "https://www.nikc.nikon.com/product/mirrorless/Z5IIC",
+        "checkedAt": "2026-10-06"
+      },
+      "무게(g)": {
+        "url": "https://nij.nikon.com/products/lineup/mirrorless/z5_2c/spec.html",
+        "checkedAt": "2026-10-06"
+      },
+      "공식 출처 URL": {
+        "url": "https://www.nikc.nikon.com/product/mirrorless/Z5IIC",
+        "checkedAt": "2026-10-06"
+      },
+      "데이터 기준일": {
+        "url": "https://www.nikc.nikon.com/product/mirrorless/Z5IIC",
+        "checkedAt": "2026-10-06"
+      },
+      "검증 상태": {
+        "url": "https://www.nikc.nikon.com/product/mirrorless/Z5IIC",
+        "checkedAt": "2026-10-06"
+      },
+      "사양 확인일": {
+        "url": "https://nij.nikon.com/products/lineup/mirrorless/z5_2c/spec.html",
+        "checkedAt": "2026-10-06"
+      },
+      "공식 사양 출처": {
+        "url": "https://nij.nikon.com/products/lineup/mirrorless/z5_2c/spec.html",
+        "checkedAt": "2026-10-06"
+      },
+      "센서 포맷": {
+        "url": "https://nij.nikon.com/products/lineup/mirrorless/z5_2c/spec.html",
+        "checkedAt": "2026-10-06"
+      },
+      "센서 크롭 배수": {
+        "url": "https://nij.nikon.com/products/lineup/mirrorless/z5_2c/spec.html",
+        "checkedAt": "2026-10-06"
+      },
+      "손떨림 보정(IBIS) 여부": {
+        "url": "https://nij.nikon.com/products/lineup/mirrorless/z5_2c/spec.html",
+        "checkedAt": "2026-10-06"
+      },
+      "유효 화소(MP)": {
+        "url": "https://nij.nikon.com/products/lineup/mirrorless/z5_2c/spec.html",
+        "checkedAt": "2026-10-06"
+      },
+      "총 화소(MP)": {
+        "url": "https://nij.nikon.com/products/lineup/mirrorless/z5_2c/spec.html",
+        "checkedAt": "2026-10-06"
+      },
+      "센서 종류": {
+        "url": "https://nij.nikon.com/products/lineup/mirrorless/z5_2c/spec.html",
+        "checkedAt": "2026-10-06"
+      },
+      "최고 사진 해상도": {
+        "url": "https://nij.nikon.com/products/lineup/mirrorless/z5_2c/spec.html",
+        "checkedAt": "2026-10-06"
+      },
+      "사진 기록 형식": {
+        "url": "https://nij.nikon.com/products/lineup/mirrorless/z5_2c/spec.html",
+        "checkedAt": "2026-10-06"
+      },
+      "RAW 지원 여부": {
+        "url": "https://nij.nikon.com/products/lineup/mirrorless/z5_2c/spec.html",
+        "checkedAt": "2026-10-06"
+      },
+      "손떨림 보정 상세": {
+        "url": "https://nij.nikon.com/products/lineup/mirrorless/z5_2c/spec.html",
+        "checkedAt": "2026-10-06"
+      },
+      "메모리카드 종류": {
+        "url": "https://nij.nikon.com/products/lineup/mirrorless/z5_2c/spec.html",
+        "checkedAt": "2026-10-06"
+      },
+      "CFexpress 지원 여부": {
+        "url": "https://nij.nikon.com/products/lineup/mirrorless/z5_2c/spec.html",
+        "checkedAt": "2026-10-06"
+      },
+      "배터리 모델": {
+        "url": "https://nij.nikon.com/products/lineup/mirrorless/z5_2c/spec.html",
+        "checkedAt": "2026-10-06"
+      },
+      "배터리 포함 여부": {
+        "url": "https://nij.nikon.com/products/lineup/mirrorless/z5_2c/spec.html",
+        "checkedAt": "2026-10-06"
+      },
+      "USB 종류": {
+        "url": "https://nij.nikon.com/products/lineup/mirrorless/z5_2c/spec.html",
+        "checkedAt": "2026-10-06"
+      },
+      "HDMI 종류": {
+        "url": "https://nij.nikon.com/products/lineup/mirrorless/z5_2c/spec.html",
+        "checkedAt": "2026-10-06"
+      },
+      "마이크 단자": {
+        "url": "https://nij.nikon.com/products/lineup/mirrorless/z5_2c/spec.html",
+        "checkedAt": "2026-10-06"
+      },
+      "헤드폰 단자": {
+        "url": "https://nij.nikon.com/products/lineup/mirrorless/z5_2c/spec.html",
+        "checkedAt": "2026-10-06"
+      },
+      "헤드폰 단자 상세": {
+        "url": "https://nij.nikon.com/products/lineup/mirrorless/z5_2c/spec.html",
+        "checkedAt": "2026-10-06"
+      },
+      "가로 크기(mm)": {
+        "url": "https://nij.nikon.com/products/lineup/mirrorless/z5_2c/spec.html",
+        "checkedAt": "2026-10-06"
+      },
+      "세로 크기(mm)": {
+        "url": "https://nij.nikon.com/products/lineup/mirrorless/z5_2c/spec.html",
+        "checkedAt": "2026-10-06"
+      },
+      "두께(mm)": {
+        "url": "https://nij.nikon.com/products/lineup/mirrorless/z5_2c/spec.html",
+        "checkedAt": "2026-10-06"
+      },
+      "무게 기준": {
+        "url": "https://nij.nikon.com/products/lineup/mirrorless/z5_2c/spec.html",
+        "checkedAt": "2026-10-06"
+      },
+      "최고 동영상 해상도": {
+        "url": "https://nij.nikon.com/products/lineup/mirrorless/z5_2c/spec.html",
+        "checkedAt": "2026-10-06"
+      },
+      "최고 동영상 프레임레이트(fps)": {
+        "url": "https://nij.nikon.com/products/lineup/mirrorless/z5_2c/spec.html",
+        "checkedAt": "2026-10-06"
+      },
+      "4K 지원 여부": {
+        "url": "https://nij.nikon.com/products/lineup/mirrorless/z5_2c/spec.html",
+        "checkedAt": "2026-10-06"
+      },
+      "8K 지원 여부": {
+        "url": "https://nij.nikon.com/products/lineup/mirrorless/z5_2c/spec.html",
+        "checkedAt": "2026-10-06"
+      },
+      "동영상 비트 심도(bit)": {
+        "url": "https://nij.nikon.com/products/lineup/mirrorless/z5_2c/spec.html",
+        "checkedAt": "2026-10-06"
+      },
+      "동영상 기록 상세": {
+        "url": "https://nij.nikon.com/products/lineup/mirrorless/z5_2c/spec.html",
+        "checkedAt": "2026-10-06"
+      },
+      "최고 연속촬영 속도(fps)": {
+        "url": "https://nij.nikon.com/products/lineup/mirrorless/z5_2c/spec.html",
+        "checkedAt": "2026-10-06"
+      },
+      "연속촬영 상세": {
+        "url": "https://nij.nikon.com/products/lineup/mirrorless/z5_2c/spec.html",
+        "checkedAt": "2026-10-06"
+      },
+      "셔터 속도": {
+        "url": "https://nij.nikon.com/products/lineup/mirrorless/z5_2c/spec.html",
+        "checkedAt": "2026-10-06"
+      },
+      "이미지 프로세서": {
+        "url": "https://www.nikc.nikon.com/ad/press/view/1019",
+        "checkedAt": "2026-10-06"
+      },
+      "비고": {
+        "url": "https://www.nikc.nikon.com/product/mirrorless/Z5IIC",
+        "checkedAt": "2026-10-06"
+      }
+    },
+    "megapixels": 24.5
   }
 ]

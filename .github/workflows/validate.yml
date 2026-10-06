@@ -42,6 +42,8 @@ jobs:
         run: node scripts/test_fixed_lens_catalog.mjs
       - name: Validate price details
         run: node scripts/test_price_details.mjs
+      - name: Validate official weight parsing
+        run: python scripts/test_verified_spec_weights.py
       - name: Validate estimate price context
         run: node scripts/test_estimate_price_context.mjs
       - name: Validate minimal usage events

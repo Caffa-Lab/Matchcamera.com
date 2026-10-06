@@ -1,7 +1,9 @@
 import assert from 'node:assert/strict';
 import fs from 'node:fs/promises';
 import path from 'node:path';
+import vm from 'node:vm';
 import {pathToFileURL} from 'node:url';
+import {money,productMoney,productPriceStatus} from '../public/assets/js/price-format.js';
 const root=path.resolve(import.meta.dirname,'..');
 const {priceDetailsMarkup}=await import(pathToFileURL(path.join(root,'public/assets/js/product-detail.js')));
 
@@ -22,6 +24,63 @@ assert.doesNotMatch(unknown,/>0원</);
 const unsafe=priceDetailsMarkup({koreaPriceDetails:{offers:[{kind:'unverified',amount:1000,sourceUrl:'javascript:alert(1)',sourceName:'<img src=x onerror=alert(1)>',configuration:'<script>alert(1)</script>'}]}});
 assert.doesNotMatch(unsafe,/href="javascript:|<script>|<img/);
 assert.match(unsafe,/이전 기록 · 재확인 필요/);
+
+const pendingProduct={id:'pending-lens',type:'렌즈',manufacturer:'Sony',officialName:'Pending lens',modelCode:'PENDING',mount:'Sony E',priceStatus:'not-announced',currentPriceKrw:1000000};
+assert.equal(productMoney(pendingProduct),'가격 미정');
+assert.equal(productMoney({currentPriceKrw:null,priceStatus:'unconfirmed'}),'가격 미확인');
+assert.equal(productMoney({currentPriceKrw:1000000}),'1,000,000원');
+assert.equal(money(null),'가격 미확인');
+assert.equal(productMoney({...pendingProduct,koreaPriceDetails:{status:'confirmed-current'}}),'1,000,000원','a verified price update takes precedence over the old announcement state');
+const pendingDetails=priceDetailsMarkup({...pendingProduct,koreaPriceDetails:{status:'not-announced',offers:[{kind:'current',amount:1000000}]}});
+assert.match(pendingDetails,/가격 미정/);
+assert.doesNotMatch(pendingDetails,/1,000,000원|>0원</,'pending details must not show stale offers');
+
+// Both data paths must carry the explicit state and suppress stale amounts.
+const fixtureProducts=[pendingProduct,{...pendingProduct,id:'pending-detail',officialName:'Pending detail',modelCode:'DETAIL',priceStatus:undefined},{...pendingProduct,id:'unknown-product',officialName:'Unknown product',modelCode:'UNKNOWN',priceStatus:'unconfirmed',currentPriceKrw:null}];
+const fixtures={
+  'products.json':fixtureProducts,
+  'korea-prices.json':fixtureProducts.slice(0,2).map(product=>({'정식 제품명':product.officialName,'마운트':product.mount,'한국 기준 가격(원)':2000000,'한국 공식/출시 가격(원)':3000000,'가격 상세':{status:'not-announced',offers:[]}})),
+  'product-images.json':{},
+};
+globalThis.fetch=async url=>new Response(JSON.stringify(fixtures[path.basename(String(url).split('?')[0])]||[]));
+const fixtureData=await import(`${pathToFileURL(path.join(root,'public/assets/js/data.js'))}?pending-price-test`);
+const loadedFixtures=await fixtureData.loadProducts();
+for(const product of loadedFixtures.slice(0,2)){
+  assert.equal(product.priceStatus,'not-announced');
+  assert.equal(product.currentPriceKrw,null);
+  assert.equal(product.koreaOfficialPriceKrw,null);
+  assert.equal(product.koreaStreetPriceKrw,null);
+  assert.equal(productMoney(product),'가격 미정');
+}
+assert.equal(productMoney(loadedFixtures[2]),'가격 미확인');
+let builtIndex;
+const buildSource=(await fs.readFile(path.join(root,'scripts/build_product_index.mjs'),'utf8')).replace(/^import .*;\r?\n/gm,'').replace(/^const ROOT=.*;\r?\n/m,'');
+await vm.runInNewContext(`(async()=>{${buildSource}})()`,{ROOT:root,path,productPriceStatus,console:{log(){}},readFile:async file=>JSON.stringify(fixtures[path.basename(file)]||[]),writeFile:async(file,content)=>{assert.equal(path.basename(file),'product-index.json');builtIndex=JSON.parse(content);}});
+for(const product of builtIndex.slice(0,2)){
+  assert.equal(product.priceStatus,'not-announced');
+  assert.equal(product.currentPriceKrw,null);
+  assert.equal(productMoney(product),'가격 미정');
+}
+assert.equal(productMoney(builtIndex[2]),'가격 미확인');
+
+// Exercise actual catalog, homepage and comparison renderers, including search.
+const rendererContext={product:pendingProduct,productMoney,money,productLabel:p=>p.officialName,esc:value=>String(value??''),type:'렌즈',lensSpecs:()=>[],productVisual:()=>'',actionUrl:()=>'',isCurrent:()=>false,visual:()=>'',state:{a:pendingProduct,type:'렌즈'},imageMarkup:()=>'',hasValue:value=>value!==undefined&&value!==null&&value!=='',typeProducts:()=>[pendingProduct],matchesSearch:()=>true,pickers:{a:{input:{value:'Pending',setAttribute(){}},results:{}}}};
+vm.createContext(rendererContext);
+for(const [file,fn,next] of [['catalog.js','card',''],['home.js','card',''],['compare.js','productCard','specValue'],['compare.js','specValue','comparisonKeys'],['compare.js','showResults','selectProduct']]){
+  const source=await fs.readFile(path.join(root,'public/assets/js',file),'utf8');
+  const start=source.indexOf(`function ${fn}(`);
+  assert(start>=0,`${file} ${fn} renderer must exist`);
+  const end=next?source.indexOf(`function ${next}(`,start):source.indexOf('\n}',start)+2;
+  let code=file==='catalog.js'?source.split(/\r?\n/).find(line=>line.startsWith('function card(')):source.slice(start,end);
+  if(file==='home.js')code=code.replace('function card(', 'function homeCard(');
+  vm.runInContext(code,rendererContext);
+}
+assert.match(vm.runInContext('card(product)',rendererContext),/가격 미정/);
+assert.match(vm.runInContext('homeCard(product)',rendererContext),/가격 미정/);
+assert.match(vm.runInContext("productCard('a')",rendererContext),/가격 미정/);
+assert.equal(vm.runInContext("specValue(product,'한국 가격')",rendererContext),'가격 미정');
+vm.runInContext("showResults('a')",rendererContext);
+assert.match(rendererContext.pickers.a.results.innerHTML,/가격 미정/);
 
 if(process.argv.includes('--snapshot')){
   const rows=JSON.parse(await fs.readFile(path.join(root,'public/data/korea-prices.json'),'utf8'));
