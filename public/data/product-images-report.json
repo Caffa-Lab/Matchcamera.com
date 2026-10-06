@@ -1,10 +1,10 @@
 {
   "_meta": {
-    "updatedAt": "2026-09-11T14:17:50.652475+00:00",
-    "totalProducts": 844,
-    "selected": 844,
+    "updatedAt": "2026-10-06T02:28:28.966094+00:00",
+    "totalProducts": 859,
+    "selected": 628,
     "okThisRun": 0,
-    "skippedThisRun": 844,
+    "skippedThisRun": 628,
     "failedThisRun": 0,
     "blockedHostsThisRun": [],
     "host403CountsThisRun": {}
@@ -3781,6 +3781,41 @@
       "status": "skipped",
       "reason": "already exists",
       "label": "Sony FE 8-14mm F3.5 Fisheye G"
+    },
+    "Fujifilm XF400mmF4.5 R LM OIS WR": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Fujifilm XF400mmF4.5 R LM OIS WR"
+    },
+    "Sigma 85mm F1.2 DG | Art": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sigma 85mm F1.2 DG | Art"
+    },
+    "Sigma 20-60mm F2.8-4 DG | Contemporary": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sigma 20-60mm F2.8-4 DG | Contemporary"
+    },
+    "Sigma 35mm F1.4 DG II | Art": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sigma 35mm F1.4 DG II | Art"
+    },
+    "Leica SL3-P": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Leica SL3-P"
+    },
+    "Leica Summicron-M 66 f/2": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Leica Summicron-M 66 f/2"
+    },
+    "Nikon Z5IIC": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Nikon Z5IIC"
     }
   }
 }
