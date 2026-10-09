@@ -41,7 +41,11 @@ for(const rows of [await data.loadProducts(),await data.loadProductIndex()]){
   }
 }
 const index=await read('product-index.json');
-if(snapshot)assert.equal(index.find(p=>p.modelCode==='SEL814G').currentPriceKrw,null,'unannounced Korean price must not be invented');
+if(snapshot){
+  for(const product of index.filter(p=>p.priceStatus==='not-announced')){
+    assert.equal(product.currentPriceKrw,null,`${product.modelCode||product.id}: unannounced Korean price must not be invented`);
+  }
+}
 
 // Run actual admin handlers, replacing only UI boot and persistence boundary.
 const script=await fs.readFile(path.join(root,'public/admin/admin.js'),'utf8');

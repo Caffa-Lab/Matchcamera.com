@@ -90528,10 +90528,10 @@
     "oss": "없음",
     "weightG": 314,
     "saleStatus": "현재 판매",
-    "note": "소니코리아 국내 출시 보도자료 확인. 국내 출시 발표는 확인되었으나 한국 공식 제품 목록은 가격 미정으로 표시합니다.",
+    "note": "한국 공식 소니스토어 렌즈 단품 정상가 확인. 쿠폰·회원 혜택은 제외하며, 확인 시점 스토어는 재입고 알림 상태입니다.",
     "officialSource": "https://www.sony.co.kr/electronics/e-mount-lenses/sel814g",
-    "verifiedAt": "2026-10-06",
-    "verification": "Sony Korea 국내 출시 보도자료 및 공식 제품 페이지 확인",
+    "verifiedAt": "2026-10-09",
+    "verification": "Sony 공식 사양(2026-10-06) 및 한국 공식 스토어 가격·국내 출시 정보(2026-10-09) 확인",
     "specs": {
       "제조사": "Sony",
       "카메라 방식": "미러리스",
@@ -90571,15 +90571,15 @@
       "렌즈 길이(mm)": 82.8,
       "방진방적 여부": "있음",
       "무게(g)": 314,
-      "가격 기준일": "2026-10-06",
+      "가격 기준일": "2026-10-09",
       "판매 상태": "현재 판매",
       "공식 출처 URL": "https://www.sony.co.kr/electronics/e-mount-lenses/sel814g",
       "교차검증 URL": "https://www.sony.eu/presscentre/sony-introduces-its-first-fisheye-zoom-g-lens",
-      "데이터 기준일": "2026-10-06",
-      "검증 상태": "Sony Korea 국내 출시 보도자료 및 공식 제품 페이지 확인",
+      "데이터 기준일": "2026-10-09",
+      "검증 상태": "Sony 공식 사양(2026-10-06) 및 한국 공식 스토어 가격·국내 출시 정보(2026-10-09) 확인",
       "발표일": "2026-09-08",
       "한국 출시일": "2026-09-16",
-      "비고": "소니코리아 국내 출시 보도자료 확인. 국내 출시 발표는 확인되었으나 한국 공식 제품 목록은 가격 미정으로 표시합니다."
+      "비고": "한국 공식 소니스토어 렌즈 단품 정상가 확인. 쿠폰·회원 혜택은 제외하며, 확인 시점 스토어는 재입고 알림 상태입니다."
     },
     "announcementDate": "2026-09-08",
     "active": true,
@@ -90588,10 +90588,26 @@
       "한국 출시일": {
         "url": "https://www.sony.co.kr/handler/DisplayNewsList",
         "checkedAt": "2026-10-06"
+      },
+      "가격 기준일": {
+        "url": "https://store.sony.co.kr/product-view/136690815",
+        "checkedAt": "2026-10-09"
+      },
+      "데이터 기준일": {
+        "url": "https://store.sony.co.kr/product-view/136690815",
+        "checkedAt": "2026-10-09"
+      },
+      "검증 상태": {
+        "url": "https://store.sony.co.kr/product-view/136690815",
+        "checkedAt": "2026-10-09"
+      },
+      "비고": {
+        "url": "https://store.sony.co.kr/product-view/136690815",
+        "checkedAt": "2026-10-09"
       }
     },
-    "currentPriceKrw": null,
-    "priceStatus": "not-announced"
+    "currentPriceKrw": 2449000,
+    "priceStatus": "confirmed-current"
   },
   {
     "id": "sony-렌즈-sony-e-sel400f45gm",
@@ -90603,11 +90619,11 @@
     "model": "FE 400mm F4.5 GM OSS",
     "officialName": "Sony FE 400mm F4.5 GM OSS",
     "modelCode": "SEL400F45GM",
-    "releaseDate": null,
+    "releaseDate": "2026-10-08",
     "releaseYear": 2026,
     "discontinued": "아니오",
-    "currentSale": "출시 예정",
-    "saleStatus": "출시 예정",
+    "currentSale": "예",
+    "saleStatus": "현재 판매",
     "sensorFormat": null,
     "cropFactor": 1.0,
     "lensFormat": "FE",
@@ -90621,8 +90637,8 @@
     "oss": "있음",
     "weightG": 994,
     "officialSource": "https://www.sony.co.kr/electronics/e-mount-lenses/sel400f45gm",
-    "verifiedAt": "2026-10-06",
-    "verification": "Sony 공식 제품 사양 및 한국 제품 페이지 확인",
+    "verifiedAt": "2026-10-09",
+    "verification": "Sony 공식 사양(2026-10-06) 및 한국 공식 스토어 가격·국내 출시 정보(2026-10-09) 확인",
     "active": true,
     "specs": {
       "제조사": "Sony",
@@ -90636,8 +90652,8 @@
       "모델 코드": "SEL400F45GM",
       "출시년도": 2026,
       "단종 여부": "아니오",
-      "현재 판매 여부": "출시 예정",
-      "판매 상태": "출시 예정",
+      "현재 판매 여부": "예",
+      "판매 상태": "현재 판매",
       "렌즈 포맷": "FE",
       "대응 센서 포맷": "Full Frame",
       "센서 크롭 배수": 1.0,
@@ -90649,14 +90665,14 @@
       "무게(g)": 994,
       "렌즈 손떨림 보정(OSS) 여부": "있음",
       "공식 출처 URL": "https://www.sony.co.kr/electronics/e-mount-lenses/sel400f45gm",
-      "데이터 기준일": "2026-10-06",
-      "검증 상태": "Sony 공식 제품 사양 및 한국 제품 페이지 확인",
+      "데이터 기준일": "2026-10-09",
+      "검증 상태": "Sony 공식 사양(2026-10-06) 및 한국 공식 스토어 가격·국내 출시 정보(2026-10-09) 확인",
       "AF 지원 여부": "있음",
       "MF 지원 여부": "있음",
       "방진방적 여부": "있음",
       "파워줌 여부": "없음",
       "발표일": "2026-09-15",
-      "출시일": "한국 출시일 미발표",
+      "출시일": "2026-10-08",
       "최소 조리개": "F32",
       "렌즈 구성": "16군 22매",
       "렌즈군 수": 16,
@@ -90676,10 +90692,12 @@
       "텔레컨버터 호환": "SEL14TC / SEL20TC",
       "사양 확인일": "2026-10-06",
       "공식 사양 출처": "https://www.sony.co.kr/electronics/e-mount-lenses/sel400f45gm/specifications",
-      "가격 기준일": "2026-10-06"
+      "가격 기준일": "2026-10-09",
+      "비고": "한국 공식 소니스토어 렌즈 단품 정상가 확인. 쿠폰·회원 혜택은 제외하며, 확인 시점 스토어는 재입고 알림 상태입니다.",
+      "한국 출시일": "2026-10-08"
     },
     "announcementDate": "2026-09-15",
-    "note": "한국 공식 제품 페이지 공개. 한국 출시일과 가격은 미발표이며 해외 출시일·가격을 국내 정보로 사용하지 않습니다.",
+    "note": "한국 공식 소니스토어 렌즈 단품 정상가 확인. 쿠폰·회원 혜택은 제외하며, 확인 시점 스토어는 재입고 알림 상태입니다.",
     "filterDiameterMm": 95,
     "specSources": {
       "제조사": {
@@ -90727,12 +90745,14 @@
         "checkedAt": "2026-10-06"
       },
       "현재 판매 여부": {
-        "url": "https://www.sony.co.kr/electronics/e-mount-lenses/sel400f45gm/specifications",
-        "checkedAt": "2026-10-06"
+        "url": "https://www.sony.co.kr/handler/DisplayNewsList",
+        "checkedAt": "2026-10-09",
+        "note": "2026-10-08 국내 출시 보도자료 No. 36268"
       },
       "판매 상태": {
-        "url": "https://www.sony.co.kr/electronics/e-mount-lenses/sel400f45gm/specifications",
-        "checkedAt": "2026-10-06"
+        "url": "https://www.sony.co.kr/handler/DisplayNewsList",
+        "checkedAt": "2026-10-09",
+        "note": "2026-10-08 국내 출시 보도자료 No. 36268"
       },
       "렌즈 포맷": {
         "url": "https://www.sony.co.kr/electronics/e-mount-lenses/sel400f45gm/specifications",
@@ -90779,12 +90799,12 @@
         "checkedAt": "2026-10-06"
       },
       "데이터 기준일": {
-        "url": "https://www.sony.co.kr/electronics/e-mount-lenses/sel400f45gm/specifications",
-        "checkedAt": "2026-10-06"
+        "url": "https://store.sony.co.kr/product-view/136999260",
+        "checkedAt": "2026-10-09"
       },
       "검증 상태": {
-        "url": "https://www.sony.co.kr/electronics/e-mount-lenses/sel400f45gm/specifications",
-        "checkedAt": "2026-10-06"
+        "url": "https://store.sony.co.kr/product-view/136999260",
+        "checkedAt": "2026-10-09"
       },
       "AF 지원 여부": {
         "url": "https://www.sony.co.kr/electronics/e-mount-lenses/sel400f45gm/specifications",
@@ -90877,10 +90897,29 @@
       "공식 사양 출처": {
         "url": "https://www.sony.co.kr/electronics/e-mount-lenses/sel400f45gm/specifications",
         "checkedAt": "2026-10-06"
+      },
+      "가격 기준일": {
+        "url": "https://store.sony.co.kr/product-view/136999260",
+        "checkedAt": "2026-10-09"
+      },
+      "비고": {
+        "url": "https://store.sony.co.kr/product-view/136999260",
+        "checkedAt": "2026-10-09"
+      },
+      "출시일": {
+        "url": "https://www.sony.co.kr/handler/DisplayNewsList",
+        "checkedAt": "2026-10-09",
+        "note": "2026-10-08 국내 출시 보도자료 No. 36268"
+      },
+      "한국 출시일": {
+        "url": "https://www.sony.co.kr/handler/DisplayNewsList",
+        "checkedAt": "2026-10-09",
+        "note": "2026-10-08 국내 출시 보도자료 No. 36268"
       }
     },
-    "currentPriceKrw": null,
-    "priceStatus": "not-announced"
+    "currentPriceKrw": 4199000,
+    "priceStatus": "confirmed-current",
+    "koreaReleaseDate": "2026-10-08"
   },
   {
     "id": "sony-렌즈-sony-e-sel600f63gm",
@@ -90892,11 +90931,11 @@
     "model": "FE 600mm F6.3 GM OSS",
     "officialName": "Sony FE 600mm F6.3 GM OSS",
     "modelCode": "SEL600F63GM",
-    "releaseDate": null,
+    "releaseDate": "2026-10-08",
     "releaseYear": 2026,
     "discontinued": "아니오",
-    "currentSale": "출시 예정",
-    "saleStatus": "출시 예정",
+    "currentSale": "예",
+    "saleStatus": "현재 판매",
     "sensorFormat": null,
     "cropFactor": 1.0,
     "lensFormat": "FE",
@@ -90910,8 +90949,8 @@
     "oss": "있음",
     "weightG": 995,
     "officialSource": "https://www.sony.co.kr/electronics/e-mount-lenses/sel600f63gm",
-    "verifiedAt": "2026-10-06",
-    "verification": "Sony 공식 제품 사양 및 한국 제품 페이지 확인",
+    "verifiedAt": "2026-10-09",
+    "verification": "Sony 공식 사양(2026-10-06) 및 한국 공식 스토어 가격·국내 출시 정보(2026-10-09) 확인",
     "active": true,
     "specs": {
       "제조사": "Sony",
@@ -90925,8 +90964,8 @@
       "모델 코드": "SEL600F63GM",
       "출시년도": 2026,
       "단종 여부": "아니오",
-      "현재 판매 여부": "출시 예정",
-      "판매 상태": "출시 예정",
+      "현재 판매 여부": "예",
+      "판매 상태": "현재 판매",
       "렌즈 포맷": "FE",
       "대응 센서 포맷": "Full Frame",
       "센서 크롭 배수": 1.0,
@@ -90938,14 +90977,14 @@
       "무게(g)": 995,
       "렌즈 손떨림 보정(OSS) 여부": "있음",
       "공식 출처 URL": "https://www.sony.co.kr/electronics/e-mount-lenses/sel600f63gm",
-      "데이터 기준일": "2026-10-06",
-      "검증 상태": "Sony 공식 제품 사양 및 한국 제품 페이지 확인",
+      "데이터 기준일": "2026-10-09",
+      "검증 상태": "Sony 공식 사양(2026-10-06) 및 한국 공식 스토어 가격·국내 출시 정보(2026-10-09) 확인",
       "AF 지원 여부": "있음",
       "MF 지원 여부": "있음",
       "방진방적 여부": "있음",
       "파워줌 여부": "없음",
       "발표일": "2026-09-15",
-      "출시일": "한국 출시일 미발표",
+      "출시일": "2026-10-08",
       "최소 조리개": "F32",
       "렌즈 구성": "17군 24매",
       "렌즈군 수": 17,
@@ -90965,10 +91004,12 @@
       "텔레컨버터 호환": "SEL14TC / SEL20TC",
       "사양 확인일": "2026-10-06",
       "공식 사양 출처": "https://www.sony.co.kr/electronics/e-mount-lenses/sel600f63gm/specifications",
-      "가격 기준일": "2026-10-06"
+      "가격 기준일": "2026-10-09",
+      "비고": "한국 공식 소니스토어 렌즈 단품 정상가 확인. 쿠폰·회원 혜택은 제외하며, 확인 시점 스토어는 재입고 알림 상태입니다.",
+      "한국 출시일": "2026-10-08"
     },
     "announcementDate": "2026-09-15",
-    "note": "한국 공식 제품 페이지 공개. 한국 출시일과 가격은 미발표이며 해외 출시일·가격을 국내 정보로 사용하지 않습니다.",
+    "note": "한국 공식 소니스토어 렌즈 단품 정상가 확인. 쿠폰·회원 혜택은 제외하며, 확인 시점 스토어는 재입고 알림 상태입니다.",
     "filterDiameterMm": 95,
     "specSources": {
       "제조사": {
@@ -91016,12 +91057,14 @@
         "checkedAt": "2026-10-06"
       },
       "현재 판매 여부": {
-        "url": "https://www.sony.co.kr/electronics/e-mount-lenses/sel600f63gm/specifications",
-        "checkedAt": "2026-10-06"
+        "url": "https://www.sony.co.kr/handler/DisplayNewsList",
+        "checkedAt": "2026-10-09",
+        "note": "2026-10-08 국내 출시 보도자료 No. 36268"
       },
       "판매 상태": {
-        "url": "https://www.sony.co.kr/electronics/e-mount-lenses/sel600f63gm/specifications",
-        "checkedAt": "2026-10-06"
+        "url": "https://www.sony.co.kr/handler/DisplayNewsList",
+        "checkedAt": "2026-10-09",
+        "note": "2026-10-08 국내 출시 보도자료 No. 36268"
       },
       "렌즈 포맷": {
         "url": "https://www.sony.co.kr/electronics/e-mount-lenses/sel600f63gm/specifications",
@@ -91068,12 +91111,12 @@
         "checkedAt": "2026-10-06"
       },
       "데이터 기준일": {
-        "url": "https://www.sony.co.kr/electronics/e-mount-lenses/sel600f63gm/specifications",
-        "checkedAt": "2026-10-06"
+        "url": "https://store.sony.co.kr/product-view/137000589",
+        "checkedAt": "2026-10-09"
       },
       "검증 상태": {
-        "url": "https://www.sony.co.kr/electronics/e-mount-lenses/sel600f63gm/specifications",
-        "checkedAt": "2026-10-06"
+        "url": "https://store.sony.co.kr/product-view/137000589",
+        "checkedAt": "2026-10-09"
       },
       "AF 지원 여부": {
         "url": "https://www.sony.co.kr/electronics/e-mount-lenses/sel600f63gm/specifications",
@@ -91166,10 +91209,29 @@
       "공식 사양 출처": {
         "url": "https://www.sony.co.kr/electronics/e-mount-lenses/sel600f63gm/specifications",
         "checkedAt": "2026-10-06"
+      },
+      "가격 기준일": {
+        "url": "https://store.sony.co.kr/product-view/137000589",
+        "checkedAt": "2026-10-09"
+      },
+      "비고": {
+        "url": "https://store.sony.co.kr/product-view/137000589",
+        "checkedAt": "2026-10-09"
+      },
+      "출시일": {
+        "url": "https://www.sony.co.kr/handler/DisplayNewsList",
+        "checkedAt": "2026-10-09",
+        "note": "2026-10-08 국내 출시 보도자료 No. 36268"
+      },
+      "한국 출시일": {
+        "url": "https://www.sony.co.kr/handler/DisplayNewsList",
+        "checkedAt": "2026-10-09",
+        "note": "2026-10-08 국내 출시 보도자료 No. 36268"
       }
     },
-    "currentPriceKrw": null,
-    "priceStatus": "not-announced"
+    "currentPriceKrw": 5899000,
+    "priceStatus": "confirmed-current",
+    "koreaReleaseDate": "2026-10-08"
   },
   {
     "id": "fujifilm-렌즈-fujifilm-x-xf400mmf4.5",

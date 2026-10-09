@@ -1,0 +1,64 @@
+{
+  "checkedAt": "2026-10-09",
+  "scope": "소니 가격 미정 렌즈 3종의 한국 공식 스토어 정상가 반영",
+  "method": "공식 스토어 상품 페이지의 모델·금액을 브라우저에서 직접 확인. 400mm·600mm는 소니코리아 2026-10-08 국내 출시 보도자료와 교차 확인.",
+  "products": [
+    {
+      "id": "sony-렌즈-sony-e-sel400f45gm",
+      "modelCode": "SEL400F45GM",
+      "officialName": "Sony FE 400mm F4.5 GM OSS",
+      "before": {
+        "priceKrw": null,
+        "priceStatus": "not-announced"
+      },
+      "after": {
+        "priceKrw": 4199000,
+        "priceStatus": "confirmed-current"
+      },
+      "sourceUrl": "https://store.sony.co.kr/product-view/136999260",
+      "checkedAt": "2026-10-09",
+      "koreaReleaseDate": "2026-10-08",
+      "releaseSourceUrl": "https://www.sony.co.kr/handler/DisplayNewsList",
+      "releaseNoticeNo": 36268,
+      "stockObservation": "공식 스토어 재입고 알림 표시. 가격 검증과 재고 여부는 별개."
+    },
+    {
+      "id": "sony-렌즈-sony-e-sel600f63gm",
+      "modelCode": "SEL600F63GM",
+      "officialName": "Sony FE 600mm F6.3 GM OSS",
+      "before": {
+        "priceKrw": null,
+        "priceStatus": "not-announced"
+      },
+      "after": {
+        "priceKrw": 5899000,
+        "priceStatus": "confirmed-current"
+      },
+      "sourceUrl": "https://store.sony.co.kr/product-view/137000589",
+      "checkedAt": "2026-10-09",
+      "koreaReleaseDate": "2026-10-08",
+      "releaseSourceUrl": "https://www.sony.co.kr/handler/DisplayNewsList",
+      "releaseNoticeNo": 36268,
+      "stockObservation": "공식 스토어 재입고 알림 표시. 가격 검증과 재고 여부는 별개."
+    },
+    {
+      "id": "sony-렌즈-sony-e-sel814g",
+      "modelCode": "SEL814G",
+      "officialName": "Sony FE 8-14mm F3.5 Fisheye G",
+      "before": {
+        "priceKrw": null,
+        "priceStatus": "not-announced"
+      },
+      "after": {
+        "priceKrw": 2449000,
+        "priceStatus": "confirmed-current"
+      },
+      "sourceUrl": "https://store.sony.co.kr/product-view/136690815",
+      "checkedAt": "2026-10-09",
+      "koreaReleaseDate": "2026-09-16",
+      "releaseSourceUrl": "https://www.sony.co.kr/handler/DisplayNewsList",
+      "releaseNoticeNo": 36247,
+      "stockObservation": "공식 스토어 재입고 알림 표시. 가격 검증과 재고 여부는 별개."
+    }
+  ]
+}
