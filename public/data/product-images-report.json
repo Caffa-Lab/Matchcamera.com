@@ -1,10 +1,10 @@
 {
   "_meta": {
-    "updatedAt": "2026-10-06T02:28:28.966094+00:00",
+    "updatedAt": "2026-10-09T04:23:26.142152+00:00",
     "totalProducts": 859,
-    "selected": 628,
+    "selected": 859,
     "okThisRun": 0,
-    "skippedThisRun": 628,
+    "skippedThisRun": 859,
     "failedThisRun": 0,
     "blockedHostsThisRun": [],
     "host403CountsThisRun": {}
@@ -3816,6 +3816,31 @@
       "status": "skipped",
       "reason": "already exists",
       "label": "Nikon Z5IIC"
+    },
+    "Sony FE 400mm F4.5 GM OSS": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sony FE 400mm F4.5 GM OSS"
+    },
+    "Sony FE 600mm F6.3 GM OSS": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Sony FE 600mm F6.3 GM OSS"
+    },
+    "Canon EOS R8 Mark II": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Canon EOS R8 Mark II"
+    },
+    "Canon EOS R6 V": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Canon EOS R6 V"
+    },
+    "Canon RF20-50mm F4 L IS USM PZ": {
+      "status": "skipped",
+      "reason": "already exists",
+      "label": "Canon RF20-50mm F4 L IS USM PZ"
     }
   }
 }
