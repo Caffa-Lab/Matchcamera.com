@@ -21,6 +21,9 @@ jobs:
       - name: Validate programs
         run: |
           node scripts/test_programs.mjs
+          node scripts/test_shutter_count.mjs
+          node scripts/test_shutter_reader.mjs
+          node scripts/test_shutter_ui.mjs
           node scripts/test_equipment_match.mjs
           node scripts/test_equipment_preview.mjs
           node scripts/test_resize_crop_control.mjs

@@ -1,0 +1,69 @@
+{
+  "exiftoolVersion": "13.42",
+  "packages": {
+    "@uswriting/exiftool": "1.0.9",
+    "@6over3/zeroperl-ts": "1.0.10"
+  },
+  "files": [
+    {
+      "file": "exiftool.js",
+      "bytes": 129935,
+      "sha256": "cadbffe76386a88add562a514c5557a0af784bb0109ed13f76036b159489f89c"
+    },
+    {
+      "file": "zeroperl.js",
+      "bytes": 229532,
+      "sha256": "76581511e6d6766a4fd9b733428d5d6b22b74ddbd938565107e7a37194a7cd2c"
+    },
+    {
+      "file": "zeroperl.wasm",
+      "bytes": 25358252,
+      "sha256": "a6ae97f184fabc444b0b70d77c3d16475bfb3de16ebfb58ab8b2fbf98a53835e"
+    },
+    {
+      "file": "LICENSE-Apache-2.0.txt",
+      "bytes": 11357,
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "file": "LICENSE-zeroperl-MIT.txt",
+      "bytes": 1091,
+      "sha256": "6fc708729f3370d84e941ec13ce288de2ccfa9508861310ccd1eab13d28dcfc3"
+    },
+    {
+      "file": "LICENSE-Perl-Artistic.txt",
+      "bytes": 6321,
+      "sha256": "dd90d4f42e4dcadf5a7c09eea0189d93c7b37ae560c91f0f6d5233ed3b9292a2"
+    },
+    {
+      "file": "LICENSE-Perl-Copying.txt",
+      "bytes": 12522,
+      "sha256": "8979e6dd61852041643c5c5c40ea63b2bd1b438a67d114e62cbaef808c514315"
+    },
+    {
+      "file": "README-Perl.txt",
+      "bytes": 5277,
+      "sha256": "189e9d6ac7743ed4e832f14c9edb6f782c92d8868b447fa2684f7fe5a81465c1"
+    },
+    {
+      "file": "README-ExifTool.txt",
+      "bytes": 13622,
+      "sha256": "20026558f546dcec793322e32812a697cbbb405627d170aede9ffb637fb514a7"
+    },
+    {
+      "file": "LICENSE-zlib.txt",
+      "bytes": 1002,
+      "sha256": "845efc77857d485d91fb3e0b884aaa929368c717ae8186b66fe1ed2495753243"
+    },
+    {
+      "file": "LICENSE-bzip2.txt",
+      "bytes": 1896,
+      "sha256": "c6dbbf828498be844a89eaa3b84adbab3199e342eb5cb2ed2f0d4ba7ec0f38a3"
+    },
+    {
+      "file": "NOTICE.txt",
+      "bytes": 1496,
+      "sha256": "ec408d41cec0bfe9bca1ba463a8bf5983058a7d600c6ed539175a4fc6c8dfb3d"
+    }
+  ]
+}

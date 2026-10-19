@@ -2,16 +2,17 @@ import assert from 'node:assert/strict';
 import {readFile} from 'node:fs/promises';
 
 const read=path=>readFile(new URL(`../${path}`,import.meta.url),'utf8');
-const [hub,resize,resizeJs,previewRenderer,worker,rating,ratingJs,ratingXmp,index,carousel,exposure,sitemap]=await Promise.all([
+const [hub,resize,resizeJs,previewRenderer,worker,rating,ratingJs,ratingXmp,index,carousel,exposure,sitemap,shutter]=await Promise.all([
   read('public/program/index.html'),read('public/program/resize/index.html'),read('public/assets/js/resize/app.js'),read('public/assets/js/resize/image-utils.js'),read('public/program/resize/workers/image-worker.js'),read('public/program/rating/index.html'),read('public/assets/js/rating/app.js'),read('public/assets/js/rating/xmp.js'),read('public/data/product-index.json'),
   read('public/program/carousel/index.html'),read('public/program/exposure/index.html'),read('public/sitemap.xml'),
+  read('public/program/shutter-count/index.html'),
 ]);
 
 assert.match(hub,/href="\/program\/metadata\/"/,'메타데이터 도구 링크가 필요합니다.');
 assert.match(hub,/href="\/program\/resize\/"/,'리사이즈 도구 링크가 필요합니다.');
 assert.match(hub,/href="\/program\/rating\/"/,'Rating 도구 링크가 필요합니다.');
 assert.match(hub,/href="\/program\/filename\/"/,'파일명 내보내기 링크를 유지해야 합니다.');
-for(const [name,html] of [['carousel',carousel],['exposure',exposure]]){
+for(const [name,html] of [['carousel',carousel],['exposure',exposure],['shutter-count',shutter]]){
   assert.equal((hub.match(new RegExp(`href="/program/${name}/"`,'g'))||[]).length,1,`${name} must have one hub entry`);
   assert.match(sitemap,new RegExp(`<loc>https://matchcamera\\.com/program/${name}/</loc>`),`${name} must be discoverable in the sitemap`);
   assert.match(html,/name="viewport"/,'mobile viewport must be declared');

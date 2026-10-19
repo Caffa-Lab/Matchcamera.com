@@ -1,0 +1,28 @@
+Self-hosted metadata reader for Matchcamera
+
+@uswriting/exiftool 1.0.9 and @6over3/zeroperl-ts 1.0.10
+Author: 6over3; Apache License 2.0 (LICENSE-Apache-2.0.txt).
+Sources: https://github.com/6over3/exiftool
+         https://github.com/6over3/zeroperl-ts
+
+The packaged WASM includes Perl 5.42.0 and ExifTool 13.42.
+ExifTool copyright 2003-2025 Phil Harvey; same terms as Perl
+(Artistic License or GPL). See README-ExifTool.txt and LICENSE-Perl-*.
+Sources: https://github.com/exiftool/exiftool/tree/13.42
+         https://github.com/Perl/perl5/tree/v5.42.0
+The zeroperl runtime glue is copyright (c) 2025 United States Writing
+Corportation, MIT License (original spelling retained).
+Source: https://github.com/6over3/zeroperl
+The runtime also links zlib 1.3.1 and bzip2 1.0.8. Their copyright and
+license notices are preserved in LICENSE-zlib.txt and LICENSE-bzip2.txt.
+
+Matchcamera modifications to the JavaScript distribution:
+- exiftool.js imports the pinned local zeroperl.js, without a package CDN.
+- zeroperl.js resolves zeroperl.wasm relative to its own module URL.
+- zeroperl.js recognizes Web Workers as browser contexts.
+The WASM bytes are copied unchanged from the pinned npm package.
+Rebuild instructions: scripts/build_shutter_vendor.mjs in the source repository.
+
+Only this local WASM asset is fetched by the reader. Selected photos are
+read through the File API and never uploaded by the metadata reader.
+Do not call parseMetadata concurrently: upstream shares runtime/output state.

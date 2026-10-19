@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>셔터횟수 보기 | Matchcamera</title>
+  <meta name="description" content="원본 사진에 기록된 카메라의 셔터·촬영 횟수를 브라우저에서 확인하세요. 사진은 서버로 업로드하지 않으며, 모델과 파일에 따라 조회 가능 여부가 다릅니다.">
+  <link rel="canonical" href="https://matchcamera.com/program/shutter-count/">
+  <link rel="stylesheet" href="/assets/css/site.css?v=20260915-tools">
+  <link rel="stylesheet" href="/assets/css/site-enhancements.css?v=20260915-tools">
+  <link rel="stylesheet" href="/assets/css/responsive.css?v=20260915-tools">
+  <link rel="stylesheet" href="/assets/css/shutter-count.css?v=20261020-shutter">
+  <link rel="icon" href="/assets/images/matchcamera/symbol.png" type="image/png">
+</head>
+<body class="shutter-page">
+  <div data-header></div>
+  <main class="shutter-main">
+    <header class="shutter-hero">
+      <div class="container shutter-hero-inner">
+        <div>
+          <span class="shutter-eyebrow">MATCHCAMERA PROGRAM</span>
+          <h1>셔터횟수 보기</h1>
+          <p>원본 사진 한 장으로, 카메라에 기록된 촬영 횟수를 확인하세요.</p>
+        </div>
+        <div class="shutter-privacy"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 8 3v6c0 4-3.4 7-8 9-4.6-2-8-5-8-9V6z"/><path d="m8 12 2.5 2.5L16 9"/></svg><span>브라우저에서만 처리 · 서버 업로드 없음</span></div>
+      </div>
+    </header>
+
+    <div class="container shutter-workspace">
+      <section class="shutter-upload" aria-labelledby="uploadTitle">
+        <h2 id="uploadTitle" class="shutter-sr-only">원본 사진 선택</h2>
+        <button id="dropzone" class="shutter-dropzone" type="button" aria-controls="fileInput" aria-describedby="fileHint">
+          <span class="shutter-drop-icon" aria-hidden="true"><svg viewBox="0 0 32 32"><path d="M11 8.5 13 5h6l2 3.5h5a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-14a2 2 0 0 1 2-2z"/><circle cx="16" cy="17" r="5.5"/><path d="M24 12h.01"/></svg></span>
+          <strong>원본 사진을 선택하거나 여기에 놓으세요</strong>
+          <span class="shutter-drop-description">카메라에서 저장한 편집 전 파일을 사용해 주세요.</span>
+          <span class="shutter-file-button">사진 선택</span>
+          <span class="shutter-file-formats" id="fileHint">JPEG · TIFF · RAW 등 · 파일당 최대 200MB · 한 번에 20장<br>형식과 카메라 모델에 따라 횟수를 읽을 수 없는 파일도 있습니다.</span>
+        </button>
+        <label class="shutter-sr-only" for="fileInput">셔터횟수를 확인할 원본 사진 선택</label>
+        <input id="fileInput" class="shutter-sr-only" type="file" accept="image/jpeg,image/tiff,.jpg,.jpeg,.jpe,.tif,.tiff,.arw,.sr2,.srf,.nef,.nrw,.raf,.cr2,.cr3,.crw,.dng,.pef,.orf,.rw2,.rwl,.srw,.3fr,.fff,.heic,.heif,.png,.webp" multiple tabindex="-1">
+        <div class="shutter-upload-note"><span aria-hidden="true">i</span><p>메신저·SNS로 전달하거나 편집 후 저장한 사진은 촬영 정보가 지워질 수 있습니다. 가능하면 메모리카드의 원본을 선택하세요. 처음 분석할 때는 도구를 내려받느라 시간이 걸릴 수 있습니다.</p></div>
+      </section>
+
+      <section class="shutter-results" aria-labelledby="resultsTitle">
+        <div class="shutter-results-head">
+          <div class="shutter-results-title"><h2 id="resultsTitle">확인 결과</h2><span id="resultCount">0개</span></div>
+          <div class="shutter-status-wrap"><span id="status" role="status" aria-live="polite" aria-atomic="true">사진을 기다리고 있어요</span><button id="clearResults" class="shutter-action" type="button" hidden>결과 지우기</button></div>
+        </div>
+        <div id="list" class="shutter-grid"></div>
+        <div id="emptyResults" class="shutter-empty"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="3"/><path d="M8 8h8M8 12h8M8 16h5"/></svg><strong>사진 속 기록을 확인해 보세요</strong><p>카메라 모델과 읽을 수 있는 횟수가 이곳에 표시됩니다.</p></div>
+      </section>
+
+      <section class="shutter-guide" aria-labelledby="guideTitle">
+        <div class="shutter-guide-heading"><span class="shutter-eyebrow">확인 전에 알아두세요</span><h2 id="guideTitle">횟수의 의미는 카메라마다 달라요</h2></div>
+        <div class="shutter-guide-grid">
+          <div><h3>같은 브랜드여도 지원은 다릅니다</h3><p>Sony·Nikon·Fujifilm·Canon 모두 모델과 파일 형식에 따라 기록 방식이 다릅니다. 사진에 횟수를 저장하지 않는 모델은 이 도구로 확인할 수 없습니다.</p></div>
+          <div><h3>촬영 횟수와 기계식 셔터 횟수</h3><p>전자셔터 포함 여부와 집계 기준은 모델마다 다릅니다. 읽은 값이 기계식 셔터 작동 횟수와 같다는 뜻은 아니며, 결과에 표시되는 항목 이름을 함께 확인하세요.</p></div>
+          <div><h3>확인할 수 없는 값은 그대로 표시합니다</h3><p>정보가 없거나 해석할 수 없으면 ‘확인 불가’로 표시합니다. 이를 0회로 바꾸거나 파일명으로 추정하지 않으며, 남은 셔터 수명도 계산하지 않습니다.</p></div>
+        </div>
+        <details class="shutter-faq"><summary>원본 사진인데도 결과가 나오지 않나요?</summary><p>카메라가 파일에 횟수를 기록하지 않거나, 기록 형식을 아직 지원하지 않을 수 있습니다. 같은 카메라의 원본 JPEG와 RAW가 있다면 각각 확인해 보세요. Canon 등 일부 모델은 사진만으로 조회할 수 없어 카메라 연결 방식이나 제조사 점검이 필요합니다.</p></details>
+        <p class="shutter-source">판독 기준: <a href="https://exiftool.org/" target="_blank" rel="noopener noreferrer">ExifTool 13.42</a> · <a href="/assets/vendor/exiftool/NOTICE.txt" target="_blank" rel="noopener noreferrer">오픈소스 안내</a></p>
+      </section>
+      <noscript><p class="shutter-noscript">이 도구는 브라우저에서 사진을 읽기 위해 JavaScript가 필요합니다. 브라우저 설정에서 JavaScript를 켜 주세요.</p></noscript>
+    </div>
+  </main>
+  <div data-footer></div>
+  <script type="module" src="/assets/js/common.js?v=20261020-shutter"></script>
+  <script type="module" src="/assets/js/shutter-count/app.js?v=20261020-shutter"></script>
+</body>
+</html>

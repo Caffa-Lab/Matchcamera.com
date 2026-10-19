@@ -1,0 +1,5 @@
+# Preserve the exact vendor bytes checked by the release manifest on Windows.
+public/assets/vendor/exiftool/*.js text eol=lf
+public/assets/vendor/exiftool/*.txt text eol=lf
+public/assets/vendor/exiftool/manifest.json text eol=lf
+public/assets/vendor/exiftool/*.wasm binary
