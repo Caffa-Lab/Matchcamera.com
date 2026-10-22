@@ -34,15 +34,27 @@ function normalizeOffer(raw) {
   const sourceName = cleanText(raw.sourceName, 80), sourceUrl = usedOfferUrl(raw.sourceUrl);
   const title = cleanText(raw.title), condition = cleanText(raw.condition, 160);
   if (!id || !productId || !sourceName || !sourceUrl || !title || !condition) return null;
-  if (!Number.isSafeInteger(raw.priceKrw) || raw.priceKrw <= 0) return null;
   if (!CONFIGURATIONS.has(raw.configuration) || !AVAILABILITIES.has(raw.availability) || dateNumber(raw.checkedAt) === null) return null;
+  let completion;
+  if (raw.availability === 'sold-out') {
+    const completionStatus = raw.completionStatus || 'out-of-stock';
+    const completionCheckedAt = raw.completionCheckedAt || raw.checkedAt;
+    const completionEvidence = cleanText(raw.completionEvidence, 160);
+    if (!['sold', 'out-of-stock'].includes(completionStatus) || dateNumber(completionCheckedAt) === null || completionCheckedAt > raw.checkedAt) return null;
+    if (completionStatus === 'sold' && !completionEvidence) return null;
+    completion = { completionStatus, completionCheckedAt, ...(completionEvidence ? { completionEvidence } : {}) };
+  }
+  // A seller can confirm completion while hiding the old asking price. Keep
+  // that status record, but never turn its missing price into a zero or quote.
+  const hasPrice = Number.isSafeInteger(raw.priceKrw) && raw.priceKrw > 0;
+  if (!hasPrice && !(raw.priceKrw === null && completion?.completionStatus === 'sold')) return null;
   return { id, productId, kind: 'used-sale', priceKrw: raw.priceKrw, sourceName, sourceUrl, title, condition,
-    configuration: raw.configuration, availability: raw.availability, checkedAt: raw.checkedAt, verified: true };
+    configuration: raw.configuration, availability: raw.availability, checkedAt: raw.checkedAt, verified: true, ...completion };
 }
 
 export function summarizeUsedOffers(productId, offers = [], { now = Date.now() } = {}) {
   const today = todayNumber(now);
-  const groups = { offers: [], staleOffers: [], pendingOffers: [] };
+  const groups = { offers: [], staleOffers: [], pendingOffers: [], endedOffers: [] };
   let excludedCount = 0;
   const ids = new Set(), urls = new Set();
   for (const raw of Array.isArray(offers) ? offers : []) {
@@ -50,13 +62,14 @@ export function summarizeUsedOffers(productId, offers = [], { now = Date.now() }
     const offer = normalizeOffer(raw);
     if (!offer || ids.has(offer.id) || urls.has(offer.sourceUrl)) { excludedCount++; continue; }
     const age = (today - dateNumber(offer.checkedAt)) / DAY;
-    if (age < 0 || offer.availability === 'sold-out') { excludedCount++; continue; }
+    if (age < 0) { excludedCount++; continue; }
     ids.add(offer.id); urls.add(offer.sourceUrl);
-    if (age > USED_PRICE_MAX_AGE_DAYS) groups.staleOffers.push(offer);
+    if (offer.availability === 'sold-out') groups.endedOffers.push(offer);
+    else if (age > USED_PRICE_MAX_AGE_DAYS) groups.staleOffers.push(offer);
     else if (offer.availability === 'unknown') groups.pendingOffers.push(offer);
     else groups.offers.push(offer);
   }
-  for (const items of Object.values(groups)) items.sort((a, b) => a.priceKrw - b.priceKrw || a.id.localeCompare(b.id));
+  for (const items of Object.values(groups)) items.sort((a, b) => (a.priceKrw ?? Infinity) - (b.priceKrw ?? Infinity) || a.id.localeCompare(b.id));
   const active = groups.offers, count = active.length;
   const sources = new Set(active.map(offer => new URL(offer.sourceUrl).hostname.replace(/^www\./, '')));
   const middle = Math.floor(count / 2);
@@ -64,7 +77,58 @@ export function summarizeUsedOffers(productId, offers = [], { now = Date.now() }
   return { status: count >= USED_PRICE_MIN_SAMPLES ? 'ready' : count ? 'limited' : groups.staleOffers.length ? 'stale' : 'unavailable',
     median, min: count ? active[0].priceKrw : null, max: count ? active.at(-1).priceKrw : null,
     count, sourceCount: sources.size, lastCheckedAt: active.map(offer => offer.checkedAt).sort().at(-1) || '',
-    ...groups, excludedCount };
+    ...groups, endedCount: groups.endedOffers.length,
+    recordedCount: Object.values(groups).reduce((sum, items) => sum + items.length, 0),
+    hasRecords: Object.values(groups).some(items => items.length > 0), excludedCount };
+}
+
+function observationFor(offer) {
+  return { offerId: offer.id, productId: offer.productId, sourceUrl: offer.sourceUrl, priceKrw: offer.priceKrw,
+    availability: offer.availability, observedOn: offer.checkedAt,
+    ...(offer.completionStatus ? { completionStatus: offer.completionStatus } : {}) };
+}
+function normalizeObservation(raw, offer) {
+  if (!raw || !offer || raw.offerId !== offer.id || raw.productId !== offer.productId || usedOfferUrl(raw.sourceUrl) !== offer.sourceUrl) return null;
+  if (dateNumber(raw.observedOn) === null || !Number.isSafeInteger(raw.priceKrw) || raw.priceKrw <= 0 || !AVAILABILITIES.has(raw.availability)) return null;
+  const result = { offerId: offer.id, productId: offer.productId, sourceUrl: offer.sourceUrl,
+    priceKrw: raw.priceKrw, availability: raw.availability, observedOn: raw.observedOn };
+  if (raw.availability === 'sold-out') {
+    if (raw.completionStatus && !['sold', 'out-of-stock'].includes(raw.completionStatus)) return null;
+    result.completionStatus = raw.completionStatus || 'out-of-stock';
+  }
+  return result;
+}
+function rangeSummary(values) {
+  values.sort((a, b) => a - b);
+  const count = values.length, middle = Math.floor(count / 2);
+  return { count, min: count ? values[0] : null, max: count ? values.at(-1) : null,
+    median: count < USED_PRICE_MIN_SAMPLES ? null : count % 2 ? values[middle] : Math.round((values[middle - 1] + values[middle]) / 2) };
+}
+
+// Dates refer to actual page observations, never registration dates or an
+// invented sale date. Missing dates stay missing and ended prices stay separate.
+export function buildUsedPriceHistory(productId, data, { now = Date.now(), days = 90 } = {}) {
+  const today = todayNumber(now);
+  const windowDays = Number.isInteger(days) && days > 0 ? Math.min(days, 366) : 90;
+  const first = today - (windowDays - 1) * DAY;
+  const offers = new Map((Array.isArray(data?.offers) ? data.offers : []).map(raw => normalizeOffer(raw)).filter(Boolean).map(offer => [offer.id, offer]));
+  const records = Array.isArray(data?.observations) ? data.observations : [...offers.values()].map(observationFor);
+  const unique = new Map();
+  for (const raw of records) {
+    const record = normalizeObservation(raw, offers.get(raw?.offerId));
+    if (!record || record.productId !== productId) continue;
+    const date = dateNumber(record.observedOn);
+    if (date < first || date > today || record.availability === 'unknown') continue;
+    unique.set(`${record.observedOn}|${record.sourceUrl}`, record);
+  }
+  const byDate = new Map();
+  for (const record of unique.values()) {
+    if (!byDate.has(record.observedOn)) byDate.set(record.observedOn, { active: [], ended: [] });
+    byDate.get(record.observedOn)[record.availability === 'sold-out' ? 'ended' : 'active'].push(record.priceKrw);
+  }
+  const points = [...byDate].sort(([a], [b]) => a.localeCompare(b)).map(([date, buckets]) => ({ date,
+    active: rangeSummary(buckets.active), ended: rangeSummary(buckets.ended) }));
+  return { points, observationCount: unique.size, dayCount: points.length, hasTrend: points.length > 1 };
 }
 
 export function validateUsedPriceData(raw, { now = Date.now(), products } = {}) {
@@ -96,7 +160,18 @@ export function validateUsedPriceData(raw, { now = Date.now(), products } = {}) 
     ids.add(offer.id); urls.add(offer.sourceUrl);
     return offer;
   });
-  return { schemaVersion: 1, updatedAt: raw.updatedAt, currency: 'KRW', offers, sources,
+  if (raw.observations !== undefined && !Array.isArray(raw.observations)) throw new Error('가격 관측 이력 형식이 올바르지 않습니다.');
+  const byId = new Map(offers.map(offer => [offer.id, offer]));
+  const observed = new Set();
+  const observations = (raw.observations || offers.filter(offer => offer.priceKrw !== null).map(observationFor)).map(item => {
+    const record = normalizeObservation(item, byId.get(item?.offerId));
+    if (!record || dateNumber(record.observedOn) > updated || dateNumber(record.observedOn) > today || record.observedOn > byId.get(record.offerId).checkedAt) throw new Error('가격 관측 이력의 출처 또는 확인일이 올바르지 않습니다.');
+    const key = `${record.observedOn}|${record.sourceUrl}`;
+    if (observed.has(key)) throw new Error('같은 날의 상품 관측 이력이 중복되었습니다.');
+    observed.add(key);
+    return record;
+  });
+  return { schemaVersion: 1, updatedAt: raw.updatedAt, currency: 'KRW', offers, sources, observations,
     methodology: raw.methodology && typeof raw.methodology === 'object' ? raw.methodology : {} };
 }
 
@@ -104,7 +179,7 @@ let cached;
 export async function loadUsedPriceData() {
   if (!cached) {
     cached = (async () => {
-      const response = await fetch('/data/used-prices.json?v=20261022-beta', { cache: 'no-cache' });
+      const response = await fetch('/data/used-prices.json?v=20261022-history', { cache: 'no-cache' });
       if (!response.ok) throw new Error('중고가 자료를 불러오지 못했습니다. 잠시 후 다시 시도해 주세요.');
       return validateUsedPriceData(await response.json());
     })().catch(error => { cached = null; throw error; });

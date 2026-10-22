@@ -103,7 +103,12 @@ def parse_offer(html, expected_title):
         raise ValueError('판매처의 재고 표기를 확인하지 못했습니다.')
     # Unmanaged stock_number=0 does not mean sold out. Use the published state.
     availability = 'sold-out' if sold[1] == 'T' or state == 'OutOfStock' else 'in-stock'
-    return {'priceKrw': int(price), 'availability': availability}
+    result = {'priceKrw': int(price), 'availability': availability}
+    if availability == 'sold-out':
+        # A stock/sold-out icon is not evidence that somebody actually bought
+        # this item. Keep that uncertainty explicit in both current and history.
+        result['completionStatus'] = 'out-of-stock'
+    return result
 
 
 class NoRedirect(HTTPRedirectHandler):
@@ -152,17 +157,45 @@ class PublicHTMLReader:
 
 def refresh_offers(dataset, fetch_html, checked_at):
     updated, results = copy.deepcopy(dataset), []
+    if not isinstance(checked_at, str) or not re.fullmatch(r'\d{4}-\d{2}-\d{2}', checked_at):
+        raise ValueError('가격 확인일은 YYYY-MM-DD 형식이어야 합니다.')
+    datetime.strptime(checked_at, '%Y-%m-%d')
+    observations = updated.get('observations', [])
+    if not isinstance(observations, list) or any(not isinstance(item, dict) for item in observations):
+        raise ValueError('저장된 가격 관측 기록의 형식을 확인해 주세요.')
     for offer in updated['offers']:
         try:
             checked_url(offer['sourceUrl'])
             if offer.get('verified') is not True or offer.get('kind') != 'used-sale':
                 raise ValueError('검토된 중고 판매 호가만 갱신할 수 있습니다.')
+            if any(not isinstance(offer.get(key), str) or not offer[key].strip() for key in ['id', 'productId']):
+                raise ValueError('가격 관측 기록에 필요한 상품 식별자가 없습니다.')
             html = fetch_html(offer['sourceUrl'])
             change = parse_offer(html, offer['title'])
-            offer.update(change, checkedAt=checked_at)
+            # Build the full verified record before changing the snapshot. A
+            # failed read must not manufacture a fresh check date or graph point.
+            refreshed = {**offer, **change, 'checkedAt': checked_at}
+            if change['availability'] == 'sold-out':
+                refreshed['completionCheckedAt'] = checked_at
+            else:
+                refreshed.pop('completionStatus', None)
+                refreshed.pop('completionCheckedAt', None)
+                refreshed.pop('completionEvidence', None)
             evidence = offer.get('evidence') if isinstance(offer.get('evidence'), dict) else {}
-            offer['evidence'] = {**evidence, 'contentSha256': hashlib.sha256(html.encode('utf-8')).hexdigest(),
-                                 'availabilityBasis': '판매처 품절 표기' if change['availability'] == 'sold-out' else '판매처 판매 중 표기 · 실재고는 판매처 확인'}
+            refreshed['evidence'] = {**evidence, 'contentSha256': hashlib.sha256(html.encode('utf-8')).hexdigest(),
+                                     'availabilityBasis': '판매처 품절 표기' if change['availability'] == 'sold-out' else '판매처 판매 중 표기 · 실재고는 판매처 확인'}
+            observation = {key: refreshed[key] for key in ['productId', 'sourceUrl', 'priceKrw', 'availability']}
+            observation.update(offerId=refreshed['id'], observedOn=checked_at)
+            if change['availability'] == 'sold-out':
+                observation['completionStatus'] = change['completionStatus']
+            # Re-checking an item today replaces today's observation only; an
+            # earlier day's price/state remains the evidence for that day.
+            observations = [item for item in observations if not (
+                item.get('offerId') == refreshed['id'] and item.get('observedOn') == checked_at)]
+            observations.append(observation)
+            updated['observations'] = observations
+            offer.clear()
+            offer.update(refreshed)
             results.append({'id': offer['id'], 'ok': True, **change})
         except Exception as error:
             results.append({'id': offer.get('id', '?'), 'ok': False, 'error': str(error)})

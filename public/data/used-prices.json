@@ -10,20 +10,27 @@
     {
       "name": "국민카메라",
       "url": "https://kookmincamera.co.kr/"
+    },
+    {
+      "name": "강산카메라",
+      "url": "https://ekangsan.com/"
     }
   ],
   "methodology": {
     "basis": "국내 판매점의 공개 중고 상품 판매호가",
-    "coverage": "확인한 2개 판매점과 제품만 포함하는 베타 자료",
+    "coverage": "확인한 3개 판매점과 제품만 포함하는 베타 자료",
     "freshnessDays": 7,
     "minimumMedianSamples": 3,
     "refresh": "공개 상품 HTML 확인 후 갱신하는 스냅샷. 외부 시세 API를 직접 호출하지 않습니다.",
     "stockMeaning": "판매 중은 판매처 페이지의 표시이며 실재고 보장이 아닙니다.",
     "limits": [
-      "판매 완료 금액, 개인 간 거래 평균, 매입가는 포함하지 않습니다.",
+      "실제 결제 금액, 개인 간 거래 평균, 매입가는 포함하지 않습니다.",
+      "품절 표기만으로 판매 완료나 실제 거래일을 판단하지 않습니다.",
       "상품 상태와 컷수, 보증, 배송비 차이를 보정하지 않습니다.",
       "자료가 없거나 확인일이 지난 제품의 현재 가격을 추정하지 않습니다."
-    ]
+    ],
+    "history": "실제로 가격을 확인한 날짜의 기록만 누적합니다. 초기 기록은 2026-10-22 하루이며 과거 변동을 추정하지 않습니다.",
+    "completionMeaning": "판매 완료라는 명시적 근거가 있는 상품과 품절·판매 종료를 구분합니다. 종료 표시가는 실제 결제 금액이 아니며, 가격 비공개 기록은 가격 통계·그래프에 포함하지 않습니다."
   },
   "offers": [
     {
@@ -424,6 +431,678 @@
         "availabilityBasis": "판매처 판매 중 표기 · 실재고는 판매처 확인",
         "contentSha256": "1985fe32a546e02409866a9030c680500649c436cb1164752c0235fa1b61512d"
       }
+    },
+    {
+      "id": "canonstore-13489",
+      "productId": "canon-바디-canon-rf-eos-r7",
+      "priceKrw": 1350000,
+      "sourceName": "캐논스토어 서울역점",
+      "sourceUrl": "https://canon-store.com/product/detail.html?product_no=13489",
+      "title": "[중고] 캐논 EOS R7 BODY 정품 5,000컷 (A+)",
+      "condition": "중고 · A+등급 · 5,000컷",
+      "configuration": "body-only",
+      "availability": "sold-out",
+      "checkedAt": "2026-10-22",
+      "verified": true,
+      "kind": "used-sale",
+      "completionStatus": "out-of-stock",
+      "completionCheckedAt": "2026-10-22",
+      "evidence": {
+        "priceBasis": "HTML 표시 판매가와 JSON-LD 금액 일치",
+        "availabilityBasis": "판매처 품절 표기 · 실제 판매 완료 여부 미확인",
+        "contentSha256": "db0b93f063700c7e5f08357a2a068a541274ede1267d688c1aa90c4d31b23270"
+      }
+    },
+    {
+      "id": "canonstore-13441",
+      "productId": "canon-바디-canon-rf-eos-r6-mark-ii",
+      "priceKrw": 2190000,
+      "sourceName": "캐논스토어 서울역점",
+      "sourceUrl": "https://canon-store.com/product/detail.html?product_no=13441",
+      "title": "[중고] 캐논 EOS R6 MK II BODY 정품  1,000컷 (S)",
+      "condition": "중고 · S등급 · 1,000컷",
+      "configuration": "body-only",
+      "availability": "sold-out",
+      "checkedAt": "2026-10-22",
+      "verified": true,
+      "kind": "used-sale",
+      "completionStatus": "out-of-stock",
+      "completionCheckedAt": "2026-10-22",
+      "evidence": {
+        "priceBasis": "HTML 표시 판매가와 JSON-LD 금액 일치",
+        "availabilityBasis": "판매처 품절 표기 · 실제 판매 완료 여부 미확인",
+        "contentSha256": "7d3d6afc9e3855839b6df22bf8b57e7521c832cc91551158218f07850923f17c"
+      }
+    },
+    {
+      "id": "canonstore-13404",
+      "productId": "canon-바디-canon-rf-eos-r6-mark-ii",
+      "priceKrw": 2120000,
+      "sourceName": "캐논스토어 서울역점",
+      "sourceUrl": "https://canon-store.com/product/detail.html?product_no=13404",
+      "title": "[중고] 캐논 EOS R6 MK II BODY 정품  28,000컷 (S)",
+      "condition": "중고 · S등급 · 28,000컷",
+      "configuration": "body-only",
+      "availability": "sold-out",
+      "checkedAt": "2026-10-22",
+      "verified": true,
+      "kind": "used-sale",
+      "completionStatus": "out-of-stock",
+      "completionCheckedAt": "2026-10-22",
+      "evidence": {
+        "priceBasis": "HTML 표시 판매가와 JSON-LD 금액 일치",
+        "availabilityBasis": "판매처 품절 표기 · 실제 판매 완료 여부 미확인",
+        "contentSha256": "7b0a913b4b7a488562ceca332f75f84b62754768caa0edd250ef308f7f5ac858"
+      }
+    },
+    {
+      "id": "canonstore-13290",
+      "productId": "canon-바디-canon-rf-eos-r5",
+      "priceKrw": 2950000,
+      "sourceName": "캐논스토어 서울역점",
+      "sourceUrl": "https://canon-store.com/product/detail.html?product_no=13290",
+      "title": "[중고] 캐논 EOS R5 정품  3,000컷 (S)",
+      "condition": "중고 · S등급 · 3,000컷",
+      "configuration": "body-only",
+      "availability": "sold-out",
+      "checkedAt": "2026-10-22",
+      "verified": true,
+      "kind": "used-sale",
+      "completionStatus": "out-of-stock",
+      "completionCheckedAt": "2026-10-22",
+      "evidence": {
+        "priceBasis": "HTML 표시 판매가와 JSON-LD 금액 일치",
+        "availabilityBasis": "판매처 품절 표기 · 실제 판매 완료 여부 미확인",
+        "contentSha256": "1547d62985ebd79efc433937a3efcf3a2dd578f8490805f7f3882c132e3e281c"
+      }
+    },
+    {
+      "id": "canonstore-12916",
+      "productId": "canon-바디-canon-rf-eos-r10",
+      "priceKrw": 800000,
+      "sourceName": "캐논스토어 서울역점",
+      "sourceUrl": "https://canon-store.com/product/detail.html?product_no=12916",
+      "title": "[중고] 캐논 EOS R10 BODY 미러리스  정품  (A+)  6,000컷",
+      "condition": "중고 · A+등급 · 6,000컷",
+      "configuration": "body-only",
+      "availability": "sold-out",
+      "checkedAt": "2026-10-22",
+      "verified": true,
+      "kind": "used-sale",
+      "completionStatus": "out-of-stock",
+      "completionCheckedAt": "2026-10-22",
+      "evidence": {
+        "priceBasis": "HTML 표시 판매가와 JSON-LD 금액 일치",
+        "availabilityBasis": "판매처 품절 표기 · 실제 판매 완료 여부 미확인",
+        "contentSha256": "d4f28f5be74f5d367637bdb453b7489b5723f448004d6487f0925fff467d2643"
+      }
+    },
+    {
+      "id": "canonstore-12846",
+      "productId": "canon-바디-canon-rf-eos-r8",
+      "priceKrw": 1400000,
+      "sourceName": "캐논스토어 서울역점",
+      "sourceUrl": "https://canon-store.com/product/detail.html?product_no=12846",
+      "title": "[중고] 캐논 EOS R8  body 정품  (S)  1000컷",
+      "condition": "중고 · S등급 · 1000컷",
+      "configuration": "body-only",
+      "availability": "sold-out",
+      "checkedAt": "2026-10-22",
+      "verified": true,
+      "kind": "used-sale",
+      "completionStatus": "out-of-stock",
+      "completionCheckedAt": "2026-10-22",
+      "evidence": {
+        "priceBasis": "HTML 표시 판매가와 JSON-LD 금액 일치",
+        "availabilityBasis": "판매처 품절 표기 · 실제 판매 완료 여부 미확인",
+        "contentSha256": "d777e1e16ce3d8248da86c68e207475ba776b94d6e6c1b3768654d900d151512"
+      }
+    },
+    {
+      "id": "canonstore-12665",
+      "productId": "canon-바디-canon-rf-eos-r5-mark-ii",
+      "priceKrw": 4400000,
+      "sourceName": "캐논스토어 서울역점",
+      "sourceUrl": "https://canon-store.com/product/detail.html?product_no=12665",
+      "title": "[중고] 캐논 EOS R5 Mark II (S)  97컷",
+      "condition": "중고 · S등급 · 97컷",
+      "configuration": "body-only",
+      "availability": "sold-out",
+      "checkedAt": "2026-10-22",
+      "verified": true,
+      "kind": "used-sale",
+      "completionStatus": "out-of-stock",
+      "completionCheckedAt": "2026-10-22",
+      "evidence": {
+        "priceBasis": "HTML 표시 판매가와 JSON-LD 금액 일치",
+        "availabilityBasis": "판매처 품절 표기 · 실제 판매 완료 여부 미확인",
+        "contentSha256": "6b30554c58da869e034c99718a5e8d490b4ee48371f551614c7f3c38dcf76821"
+      }
+    },
+    {
+      "id": "canonstore-13498",
+      "productId": "canon-렌즈-canon-rf-rf70-200mm-2",
+      "priceKrw": 3500000,
+      "sourceName": "캐논스토어 서울역점",
+      "sourceUrl": "https://canon-store.com/product/detail.html?product_no=13498",
+      "title": "[중고] 캐논 RF 70-200mm F2.8 L IS USM Z  화이트 (S)",
+      "condition": "중고 · S등급",
+      "configuration": "lens-only",
+      "availability": "sold-out",
+      "checkedAt": "2026-10-22",
+      "verified": true,
+      "kind": "used-sale",
+      "completionStatus": "out-of-stock",
+      "completionCheckedAt": "2026-10-22",
+      "evidence": {
+        "priceBasis": "HTML 표시 판매가와 JSON-LD 금액 일치",
+        "availabilityBasis": "판매처 품절 표기 · 실제 판매 완료 여부 미확인",
+        "contentSha256": "f87029ab972b273dc262f1b8d9875630626d6caca59add8d728e099a30df27df"
+      }
+    },
+    {
+      "id": "canonstore-13477",
+      "productId": "canon-렌즈-canon-rf-rf16mm",
+      "priceKrw": 280000,
+      "sourceName": "캐논스토어 서울역점",
+      "sourceUrl": "https://canon-store.com/product/detail.html?product_no=13477",
+      "title": "[중고] 캐논 RF 16mm F2.8 STM 정품 (S)",
+      "condition": "중고 · S등급",
+      "configuration": "lens-only",
+      "availability": "sold-out",
+      "checkedAt": "2026-10-22",
+      "verified": true,
+      "kind": "used-sale",
+      "completionStatus": "out-of-stock",
+      "completionCheckedAt": "2026-10-22",
+      "evidence": {
+        "priceBasis": "HTML 표시 판매가와 JSON-LD 금액 일치",
+        "availabilityBasis": "판매처 품절 표기 · 실제 판매 완료 여부 미확인",
+        "contentSha256": "5cc8ef9254bdeca10f5cf9614790e84dcbbbad56711fb6764d6d960309654b2a"
+      }
+    },
+    {
+      "id": "canonstore-13454",
+      "productId": "canon-렌즈-canon-rf-rf50mm",
+      "priceKrw": 2350000,
+      "sourceName": "캐논스토어 서울역점",
+      "sourceUrl": "https://canon-store.com/product/detail.html?product_no=13454",
+      "title": "[중고] 캐논 RF 50mm F1.2L USM 정품 (S)",
+      "condition": "중고 · S등급",
+      "configuration": "lens-only",
+      "availability": "sold-out",
+      "checkedAt": "2026-10-22",
+      "verified": true,
+      "kind": "used-sale",
+      "completionStatus": "out-of-stock",
+      "completionCheckedAt": "2026-10-22",
+      "evidence": {
+        "priceBasis": "HTML 표시 판매가와 JSON-LD 금액 일치",
+        "availabilityBasis": "판매처 품절 표기 · 실제 판매 완료 여부 미확인",
+        "contentSha256": "b355a5b164786e6fff8f8d542bcaf2e0d6ee8f6e59651d033c5e2062dbab4325"
+      }
+    },
+    {
+      "id": "canonstore-13433",
+      "productId": "canon-렌즈-canon-rf-rf24-105mm-3",
+      "priceKrw": 420000,
+      "sourceName": "캐논스토어 서울역점",
+      "sourceUrl": "https://canon-store.com/product/detail.html?product_no=13433",
+      "title": "[중고] 캐논 RF 24-105mm F4-7.1 STM  정품 (S)",
+      "condition": "중고 · S등급",
+      "configuration": "lens-only",
+      "availability": "sold-out",
+      "checkedAt": "2026-10-22",
+      "verified": true,
+      "kind": "used-sale",
+      "completionStatus": "out-of-stock",
+      "completionCheckedAt": "2026-10-22",
+      "evidence": {
+        "priceBasis": "HTML 표시 판매가와 JSON-LD 금액 일치",
+        "availabilityBasis": "판매처 품절 표기 · 실제 판매 완료 여부 미확인",
+        "contentSha256": "71485e02a4b6a5162bda6bb76f41b1a3eddce674c4eb09d08ff5249754e49e92"
+      }
+    },
+    {
+      "id": "canonstore-13429",
+      "productId": "canon-렌즈-canon-rf-rf70-200mm",
+      "priceKrw": 2850000,
+      "sourceName": "캐논스토어 서울역점",
+      "sourceUrl": "https://canon-store.com/product/detail.html?product_no=13429",
+      "title": "[중고] 캐논 RF 70-200mm F2.8L IS USM 정품 (알아빠) (A+)",
+      "condition": "중고 · A+등급",
+      "configuration": "lens-only",
+      "availability": "sold-out",
+      "checkedAt": "2026-10-22",
+      "verified": true,
+      "kind": "used-sale",
+      "completionStatus": "out-of-stock",
+      "completionCheckedAt": "2026-10-22",
+      "evidence": {
+        "priceBasis": "HTML 표시 판매가와 JSON-LD 금액 일치",
+        "availabilityBasis": "판매처 품절 표기 · 실제 판매 완료 여부 미확인",
+        "contentSha256": "843590644a82823c32ab9aaf593c8d55f17cbb350cd49f4d10a5447879fe7b5d"
+      }
+    },
+    {
+      "id": "canonstore-13403",
+      "productId": "canon-렌즈-canon-rf-rf100-500mm",
+      "priceKrw": 3300000,
+      "sourceName": "캐논스토어 서울역점",
+      "sourceUrl": "https://canon-store.com/product/detail.html?product_no=13403",
+      "title": "[중고] 캐논 RF 100-500mm F4.5 7.1 L IS USM  정품 (S)",
+      "condition": "중고 · S등급",
+      "configuration": "lens-only",
+      "availability": "sold-out",
+      "checkedAt": "2026-10-22",
+      "verified": true,
+      "kind": "used-sale",
+      "completionStatus": "out-of-stock",
+      "completionCheckedAt": "2026-10-22",
+      "evidence": {
+        "priceBasis": "HTML 표시 판매가와 JSON-LD 금액 일치",
+        "availabilityBasis": "판매처 품절 표기 · 실제 판매 완료 여부 미확인",
+        "contentSha256": "ff2909a1f86c8f12edd6901acea36fea7517707322d9f1787f8a6789449517c2"
+      }
+    },
+    {
+      "id": "canonstore-13020",
+      "productId": "canon-렌즈-canon-rf-rf24-105mm-2",
+      "priceKrw": 1330000,
+      "sourceName": "캐논스토어 서울역점",
+      "sourceUrl": "https://canon-store.com/product/detail.html?product_no=13020",
+      "title": "[중고] 캐논 RF 24-105mm F4L IS USM 정품 (S)",
+      "condition": "중고 · S등급",
+      "configuration": "lens-only",
+      "availability": "sold-out",
+      "checkedAt": "2026-10-22",
+      "verified": true,
+      "kind": "used-sale",
+      "completionStatus": "out-of-stock",
+      "completionCheckedAt": "2026-10-22",
+      "evidence": {
+        "priceBasis": "HTML 표시 판매가와 JSON-LD 금액 일치",
+        "availabilityBasis": "판매처 품절 표기 · 실제 판매 완료 여부 미확인",
+        "contentSha256": "5d602466858b997a0435f4bb993a65f21937d15e7789935ad7c61eaadd039f52"
+      }
+    },
+    {
+      "id": "canonstore-12875",
+      "productId": "canon-렌즈-canon-rf-rf50mm-3",
+      "priceKrw": 230000,
+      "sourceName": "캐논스토어 서울역점",
+      "sourceUrl": "https://canon-store.com/product/detail.html?product_no=12875",
+      "title": "[중고] 캐논 RF 50mm F1.8 STM 정품  (A+)",
+      "condition": "중고 · A+등급",
+      "configuration": "lens-only",
+      "availability": "sold-out",
+      "checkedAt": "2026-10-22",
+      "verified": true,
+      "kind": "used-sale",
+      "completionStatus": "out-of-stock",
+      "completionCheckedAt": "2026-10-22",
+      "evidence": {
+        "priceBasis": "HTML 표시 판매가와 JSON-LD 금액 일치",
+        "availabilityBasis": "판매처 품절 표기 · 실제 판매 완료 여부 미확인",
+        "contentSha256": "0013ea15ed41b23f81d74ad2878274f72126b940b5f7057f842b5dfadb43e33d"
+      }
+    },
+    {
+      "id": "canonstore-12522",
+      "productId": "canon-렌즈-canon-rf-rf35mm-2",
+      "priceKrw": 495000,
+      "sourceName": "캐논스토어 서울역점",
+      "sourceUrl": "https://canon-store.com/product/detail.html?product_no=12522",
+      "title": "[중고] 캐논 RF 35mm F1.8 MACRO IS STM 정품 (S)",
+      "condition": "중고 · S등급",
+      "configuration": "lens-only",
+      "availability": "sold-out",
+      "checkedAt": "2026-10-22",
+      "verified": true,
+      "kind": "used-sale",
+      "completionStatus": "out-of-stock",
+      "completionCheckedAt": "2026-10-22",
+      "evidence": {
+        "priceBasis": "HTML 표시 판매가와 JSON-LD 금액 일치",
+        "availabilityBasis": "판매처 품절 표기 · 실제 판매 완료 여부 미확인",
+        "contentSha256": "470e18b98c5d9e39dfa6a4980118869735335dd4ded44b2b8f273afa1df231c6"
+      }
+    },
+    {
+      "id": "kangsan-5916",
+      "productId": "canon-바디-canon-rf-eos-r5",
+      "priceKrw": null,
+      "sourceName": "강산카메라",
+      "sourceUrl": "https://ekangsan.com/product/detail.html?product_no=5916",
+      "title": "[중고] 캐논 EOS R5 바디(246026000xxx)",
+      "condition": "중고 · 세부 상태 미확인",
+      "configuration": "body-only",
+      "availability": "sold-out",
+      "kind": "used-sale",
+      "verified": true,
+      "completionStatus": "sold",
+      "completionEvidence": "판매처 중고 상품상세의 판매가 항목에 판매완료 명시",
+      "completionCheckedAt": "2026-10-22",
+      "checkedAt": "2026-10-22",
+      "evidence": {
+        "priceBasis": "판매처가 수치 가격을 숨겨 확인할 수 없음",
+        "availabilityBasis": "중고 상품상세 판매가 항목의 판매완료 표기",
+        "contentSha256": "fb721da35b1106d6cf53df2dfd73276f7b4a7d3f000be0bb794b28f2ec1b2395"
+      }
+    }
+  ],
+  "observations": [
+    {
+      "offerId": "canonstore-13540",
+      "productId": "canon-바디-canon-rf-eos-r5",
+      "sourceUrl": "https://canon-store.com/product/detail.html?product_no=13540",
+      "priceKrw": 2880000,
+      "availability": "in-stock",
+      "observedOn": "2026-10-22"
+    },
+    {
+      "offerId": "canonstore-13496",
+      "productId": "canon-바디-canon-rf-eos-rp",
+      "sourceUrl": "https://canon-store.com/product/detail.html?product_no=13496",
+      "priceKrw": 899000,
+      "availability": "in-stock",
+      "observedOn": "2026-10-22"
+    },
+    {
+      "offerId": "canonstore-13476",
+      "productId": "canon-바디-canon-rf-eos-r",
+      "sourceUrl": "https://canon-store.com/product/detail.html?product_no=13476",
+      "priceKrw": 1400000,
+      "availability": "in-stock",
+      "observedOn": "2026-10-22"
+    },
+    {
+      "offerId": "canonstore-13453",
+      "productId": "canon-바디-canon-rf-eos-r1",
+      "sourceUrl": "https://canon-store.com/product/detail.html?product_no=13453",
+      "priceKrw": 7300000,
+      "availability": "in-stock",
+      "observedOn": "2026-10-22"
+    },
+    {
+      "offerId": "canonstore-13438",
+      "productId": "canon-바디-canon-rf-eos-r5",
+      "sourceUrl": "https://canon-store.com/product/detail.html?product_no=13438",
+      "priceKrw": 2900000,
+      "availability": "in-stock",
+      "observedOn": "2026-10-22"
+    },
+    {
+      "offerId": "canonstore-13372",
+      "productId": "canon-바디-canon-rf-eos-r6",
+      "sourceUrl": "https://canon-store.com/product/detail.html?product_no=13372",
+      "priceKrw": 1690000,
+      "availability": "in-stock",
+      "observedOn": "2026-10-22"
+    },
+    {
+      "offerId": "canonstore-13545",
+      "productId": "canon-렌즈-canon-rf-rf-s55-210mm",
+      "sourceUrl": "https://canon-store.com/product/detail.html?product_no=13545",
+      "priceKrw": 360000,
+      "availability": "in-stock",
+      "observedOn": "2026-10-22"
+    },
+    {
+      "offerId": "canonstore-13430",
+      "productId": "canon-렌즈-canon-rf-rf24-240mm",
+      "sourceUrl": "https://canon-store.com/product/detail.html?product_no=13430",
+      "priceKrw": 1200000,
+      "availability": "in-stock",
+      "observedOn": "2026-10-22"
+    },
+    {
+      "offerId": "canonstore-13353",
+      "productId": "canon-렌즈-canon-rf-rf28mm",
+      "sourceUrl": "https://canon-store.com/product/detail.html?product_no=13353",
+      "priceKrw": 340000,
+      "availability": "in-stock",
+      "observedOn": "2026-10-22"
+    },
+    {
+      "offerId": "kookmin-11606",
+      "productId": "sony-바디-sony-e-ilce-7m4",
+      "sourceUrl": "https://kookmincamera.co.kr/product/detail.html?product_no=11606",
+      "priceKrw": 2200000,
+      "availability": "in-stock",
+      "observedOn": "2026-10-22"
+    },
+    {
+      "offerId": "kookmin-10814",
+      "productId": "fixed-sony-rx10-iv",
+      "sourceUrl": "https://kookmincamera.co.kr/product/detail.html?product_no=10814",
+      "priceKrw": 1300000,
+      "availability": "in-stock",
+      "observedOn": "2026-10-22"
+    },
+    {
+      "offerId": "kookmin-7749",
+      "productId": "fixed-sony-rx100-iii",
+      "sourceUrl": "https://kookmincamera.co.kr/product/detail.html?product_no=7749",
+      "priceKrw": 500000,
+      "availability": "in-stock",
+      "observedOn": "2026-10-22"
+    },
+    {
+      "offerId": "kookmin-10513",
+      "productId": "nikon-바디-nikon-z-z-f",
+      "sourceUrl": "https://kookmincamera.co.kr/product/detail.html?product_no=10513",
+      "priceKrw": 2150000,
+      "availability": "in-stock",
+      "observedOn": "2026-10-22"
+    },
+    {
+      "offerId": "kookmin-11593",
+      "productId": "nikon-바디-nikon-z-z6iii",
+      "sourceUrl": "https://kookmincamera.co.kr/product/detail.html?product_no=11593",
+      "priceKrw": 2600000,
+      "availability": "in-stock",
+      "observedOn": "2026-10-22"
+    },
+    {
+      "offerId": "kookmin-7551",
+      "productId": "fujifilm-바디-fujifilm-x-x-t3",
+      "sourceUrl": "https://kookmincamera.co.kr/product/detail.html?product_no=7551",
+      "priceKrw": 1700000,
+      "availability": "in-stock",
+      "observedOn": "2026-10-22"
+    },
+    {
+      "offerId": "kookmin-11616",
+      "productId": "sony-렌즈-sony-e-sel24105g",
+      "sourceUrl": "https://kookmincamera.co.kr/product/detail.html?product_no=11616",
+      "priceKrw": 1100000,
+      "availability": "in-stock",
+      "observedOn": "2026-10-22"
+    },
+    {
+      "offerId": "kookmin-10803",
+      "productId": "sony-렌즈-sony-e-sel200600g",
+      "sourceUrl": "https://kookmincamera.co.kr/product/detail.html?product_no=10803",
+      "priceKrw": 2200000,
+      "availability": "in-stock",
+      "observedOn": "2026-10-22"
+    },
+    {
+      "offerId": "kookmin-10796",
+      "productId": "sony-렌즈-sony-e-sel50f18f",
+      "sourceUrl": "https://kookmincamera.co.kr/product/detail.html?product_no=10796",
+      "priceKrw": 350000,
+      "availability": "in-stock",
+      "observedOn": "2026-10-22"
+    },
+    {
+      "offerId": "kookmin-9716",
+      "productId": "sony-렌즈-sony-e-sel85f18",
+      "sourceUrl": "https://kookmincamera.co.kr/product/detail.html?product_no=9716",
+      "priceKrw": 620000,
+      "availability": "in-stock",
+      "observedOn": "2026-10-22"
+    },
+    {
+      "offerId": "kookmin-9647",
+      "productId": "sony-렌즈-sony-e-sel2470gm2",
+      "sourceUrl": "https://kookmincamera.co.kr/product/detail.html?product_no=9647",
+      "priceKrw": 2300000,
+      "availability": "in-stock",
+      "observedOn": "2026-10-22"
+    },
+    {
+      "offerId": "kookmin-7755",
+      "productId": "sony-렌즈-sony-e-sel35f18f",
+      "sourceUrl": "https://kookmincamera.co.kr/product/detail.html?product_no=7755",
+      "priceKrw": 600000,
+      "availability": "in-stock",
+      "observedOn": "2026-10-22"
+    },
+    {
+      "offerId": "canonstore-13489",
+      "productId": "canon-바디-canon-rf-eos-r7",
+      "sourceUrl": "https://canon-store.com/product/detail.html?product_no=13489",
+      "priceKrw": 1350000,
+      "availability": "sold-out",
+      "observedOn": "2026-10-22",
+      "completionStatus": "out-of-stock"
+    },
+    {
+      "offerId": "canonstore-13441",
+      "productId": "canon-바디-canon-rf-eos-r6-mark-ii",
+      "sourceUrl": "https://canon-store.com/product/detail.html?product_no=13441",
+      "priceKrw": 2190000,
+      "availability": "sold-out",
+      "observedOn": "2026-10-22",
+      "completionStatus": "out-of-stock"
+    },
+    {
+      "offerId": "canonstore-13404",
+      "productId": "canon-바디-canon-rf-eos-r6-mark-ii",
+      "sourceUrl": "https://canon-store.com/product/detail.html?product_no=13404",
+      "priceKrw": 2120000,
+      "availability": "sold-out",
+      "observedOn": "2026-10-22",
+      "completionStatus": "out-of-stock"
+    },
+    {
+      "offerId": "canonstore-13290",
+      "productId": "canon-바디-canon-rf-eos-r5",
+      "sourceUrl": "https://canon-store.com/product/detail.html?product_no=13290",
+      "priceKrw": 2950000,
+      "availability": "sold-out",
+      "observedOn": "2026-10-22",
+      "completionStatus": "out-of-stock"
+    },
+    {
+      "offerId": "canonstore-12916",
+      "productId": "canon-바디-canon-rf-eos-r10",
+      "sourceUrl": "https://canon-store.com/product/detail.html?product_no=12916",
+      "priceKrw": 800000,
+      "availability": "sold-out",
+      "observedOn": "2026-10-22",
+      "completionStatus": "out-of-stock"
+    },
+    {
+      "offerId": "canonstore-12846",
+      "productId": "canon-바디-canon-rf-eos-r8",
+      "sourceUrl": "https://canon-store.com/product/detail.html?product_no=12846",
+      "priceKrw": 1400000,
+      "availability": "sold-out",
+      "observedOn": "2026-10-22",
+      "completionStatus": "out-of-stock"
+    },
+    {
+      "offerId": "canonstore-12665",
+      "productId": "canon-바디-canon-rf-eos-r5-mark-ii",
+      "sourceUrl": "https://canon-store.com/product/detail.html?product_no=12665",
+      "priceKrw": 4400000,
+      "availability": "sold-out",
+      "observedOn": "2026-10-22",
+      "completionStatus": "out-of-stock"
+    },
+    {
+      "offerId": "canonstore-13498",
+      "productId": "canon-렌즈-canon-rf-rf70-200mm-2",
+      "sourceUrl": "https://canon-store.com/product/detail.html?product_no=13498",
+      "priceKrw": 3500000,
+      "availability": "sold-out",
+      "observedOn": "2026-10-22",
+      "completionStatus": "out-of-stock"
+    },
+    {
+      "offerId": "canonstore-13477",
+      "productId": "canon-렌즈-canon-rf-rf16mm",
+      "sourceUrl": "https://canon-store.com/product/detail.html?product_no=13477",
+      "priceKrw": 280000,
+      "availability": "sold-out",
+      "observedOn": "2026-10-22",
+      "completionStatus": "out-of-stock"
+    },
+    {
+      "offerId": "canonstore-13454",
+      "productId": "canon-렌즈-canon-rf-rf50mm",
+      "sourceUrl": "https://canon-store.com/product/detail.html?product_no=13454",
+      "priceKrw": 2350000,
+      "availability": "sold-out",
+      "observedOn": "2026-10-22",
+      "completionStatus": "out-of-stock"
+    },
+    {
+      "offerId": "canonstore-13433",
+      "productId": "canon-렌즈-canon-rf-rf24-105mm-3",
+      "sourceUrl": "https://canon-store.com/product/detail.html?product_no=13433",
+      "priceKrw": 420000,
+      "availability": "sold-out",
+      "observedOn": "2026-10-22",
+      "completionStatus": "out-of-stock"
+    },
+    {
+      "offerId": "canonstore-13429",
+      "productId": "canon-렌즈-canon-rf-rf70-200mm",
+      "sourceUrl": "https://canon-store.com/product/detail.html?product_no=13429",
+      "priceKrw": 2850000,
+      "availability": "sold-out",
+      "observedOn": "2026-10-22",
+      "completionStatus": "out-of-stock"
+    },
+    {
+      "offerId": "canonstore-13403",
+      "productId": "canon-렌즈-canon-rf-rf100-500mm",
+      "sourceUrl": "https://canon-store.com/product/detail.html?product_no=13403",
+      "priceKrw": 3300000,
+      "availability": "sold-out",
+      "observedOn": "2026-10-22",
+      "completionStatus": "out-of-stock"
+    },
+    {
+      "offerId": "canonstore-13020",
+      "productId": "canon-렌즈-canon-rf-rf24-105mm-2",
+      "sourceUrl": "https://canon-store.com/product/detail.html?product_no=13020",
+      "priceKrw": 1330000,
+      "availability": "sold-out",
+      "observedOn": "2026-10-22",
+      "completionStatus": "out-of-stock"
+    },
+    {
+      "offerId": "canonstore-12875",
+      "productId": "canon-렌즈-canon-rf-rf50mm-3",
+      "sourceUrl": "https://canon-store.com/product/detail.html?product_no=12875",
+      "priceKrw": 230000,
+      "availability": "sold-out",
+      "observedOn": "2026-10-22",
+      "completionStatus": "out-of-stock"
+    },
+    {
+      "offerId": "canonstore-12522",
+      "productId": "canon-렌즈-canon-rf-rf35mm-2",
+      "sourceUrl": "https://canon-store.com/product/detail.html?product_no=12522",
+      "priceKrw": 495000,
+      "availability": "sold-out",
+      "observedOn": "2026-10-22",
+      "completionStatus": "out-of-stock"
     }
   ]
 }
