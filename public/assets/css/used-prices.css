@@ -87,7 +87,6 @@
 .used-offer-details{display:flex;flex-wrap:wrap;gap:4px 12px;margin:8px 0 0;color:#a1a8b4;font-size:10px;line-height:1.8}
 .used-offer-action{display:flex;flex-direction:column;align-items:flex-end;justify-content:center;gap:9px;min-width:0}
 .used-offer-action>strong{color:#735fba;font-size:18px;line-height:1.6;font-weight:800}
-.used-offer-action>.used-private-price{font-size:14px;color:#7c6b59;white-space:normal}
 .used-offer-action>a{display:inline-flex;align-items:center;justify-content:center;min-height:42px;padding:9px 12px;border:1px solid #ded7ef;border-radius:9px;color:#8e7fad;background:#faf8fe;font-size:11px;font-weight:700;text-decoration:none}
 .used-link-unavailable{color:#a0a7b3;font-size:11px}
 .used-stale{margin-top:20px;padding-top:4px;border-top:1px solid #e9ecf2}

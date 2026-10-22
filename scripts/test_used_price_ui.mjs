@@ -136,18 +136,17 @@ async function app({ href = 'https://matchcamera.com/betatest/', dataset = data,
   assert.match(empty.textContent, /아직 확인한 가격 이력이 없습니다/);
 }
 
-// A source may explicitly say sold while hiding the old asking price. Its
-// completion remains discoverable, with no made-up amount, statistic or dot.
+// A hidden asking price excludes the listing, even with explicit completion.
 {
   const page = await app({dataset: {...data, offers: [offer('private', 'fuji', null, {
     availability: 'sold-out', completionStatus: 'sold', completionEvidence: '판매처 판매완료 표기', completionCheckedAt: '2026-10-22',
   })]}});
-  assert.equal(page.get('usedCount').textContent, '1개');
+  assert.equal(page.get('usedCount').textContent, '0개');
   page.get('usedAvailability').value = 'ended'; await page.get('usedAvailability').fire('change');
-  assert.equal(page.get('usedCount').textContent, '1개');
+  assert.equal(page.get('usedCount').textContent, '0개');
   page.ui.select('fuji');
-  assert.match(page.get('usedDetail').textContent, /판매 완료 가격 비공개/);
-  assert.match(page.get('usedDetail').textContent, /판매 완료 표기/);
+  assert.doesNotMatch(page.get('usedDetail').textContent, /판매 완료 가격 비공개|판매 완료 표기|Shop private|Used product private/);
+  assert.equal(classes(page.get('usedDetail'), 'used-offer').length, 0);
   assert.equal(classes(page.get('usedDetail'), 'used-summary').length, 0);
   assert.equal(classes(page.get('usedDetail'), 'used-chart-point').length, 0);
   assert.doesNotMatch(page.get('usedDetail').textContent, /NaN|0원/);

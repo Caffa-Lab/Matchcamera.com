@@ -44,10 +44,9 @@ function normalizeOffer(raw) {
     if (completionStatus === 'sold' && !completionEvidence) return null;
     completion = { completionStatus, completionCheckedAt, ...(completionEvidence ? { completionEvidence } : {}) };
   }
-  // A seller can confirm completion while hiding the old asking price. Keep
-  // that status record, but never turn its missing price into a zero or quote.
-  const hasPrice = Number.isSafeInteger(raw.priceKrw) && raw.priceKrw > 0;
-  if (!hasPrice && !(raw.priceKrw === null && completion?.completionStatus === 'sold')) return null;
+  // Only listings with a public numeric asking price belong in this beta,
+  // including ended listings. A completion label cannot replace a price.
+  if (!Number.isSafeInteger(raw.priceKrw) || raw.priceKrw <= 0) return null;
   return { id, productId, kind: 'used-sale', priceKrw: raw.priceKrw, sourceName, sourceUrl, title, condition,
     configuration: raw.configuration, availability: raw.availability, checkedAt: raw.checkedAt, verified: true, ...completion };
 }
@@ -69,7 +68,7 @@ export function summarizeUsedOffers(productId, offers = [], { now = Date.now() }
     else if (offer.availability === 'unknown') groups.pendingOffers.push(offer);
     else groups.offers.push(offer);
   }
-  for (const items of Object.values(groups)) items.sort((a, b) => (a.priceKrw ?? Infinity) - (b.priceKrw ?? Infinity) || a.id.localeCompare(b.id));
+  for (const items of Object.values(groups)) items.sort((a, b) => a.priceKrw - b.priceKrw || a.id.localeCompare(b.id));
   const active = groups.offers, count = active.length;
   const sources = new Set(active.map(offer => new URL(offer.sourceUrl).hostname.replace(/^www\./, '')));
   const middle = Math.floor(count / 2);
@@ -163,7 +162,7 @@ export function validateUsedPriceData(raw, { now = Date.now(), products } = {}) 
   if (raw.observations !== undefined && !Array.isArray(raw.observations)) throw new Error('가격 관측 이력 형식이 올바르지 않습니다.');
   const byId = new Map(offers.map(offer => [offer.id, offer]));
   const observed = new Set();
-  const observations = (raw.observations || offers.filter(offer => offer.priceKrw !== null).map(observationFor)).map(item => {
+  const observations = (raw.observations || offers.map(observationFor)).map(item => {
     const record = normalizeObservation(item, byId.get(item?.offerId));
     if (!record || dateNumber(record.observedOn) > updated || dateNumber(record.observedOn) > today || record.observedOn > byId.get(record.offerId).checkedAt) throw new Error('가격 관측 이력의 출처 또는 확인일이 올바르지 않습니다.');
     const key = `${record.observedOn}|${record.sourceUrl}`;
@@ -179,7 +178,7 @@ let cached;
 export async function loadUsedPriceData() {
   if (!cached) {
     cached = (async () => {
-      const response = await fetch('/data/used-prices.json?v=20261022-history', { cache: 'no-cache' });
+      const response = await fetch('/data/used-prices.json?v=20261022-public-prices', { cache: 'no-cache' });
       if (!response.ok) throw new Error('중고가 자료를 불러오지 못했습니다. 잠시 후 다시 시도해 주세요.');
       return validateUsedPriceData(await response.json());
     })().catch(error => { cached = null; throw error; });

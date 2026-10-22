@@ -1,5 +1,5 @@
 import { loadProductIndex, loadManufacturerOrder, sortManufacturers, publicManufacturer, productLabel, matchesSearch } from '../data.js?v=20261006-catalog';
-import { loadUsedPriceData, summarizeUsedOffers, buildUsedPriceHistory } from '../used-prices.js?v=20261022-history';
+import { loadUsedPriceData, summarizeUsedOffers, buildUsedPriceHistory } from '../used-prices.js?v=20261022-public-prices';
 import { createUsedPriceChart } from './price-chart.js?v=20261022-history';
 
 const $ = id => document.getElementById(id);
@@ -136,8 +136,7 @@ function offerCard(offer, stale = false) {
   if (offer.availability === 'sold-out' && offer.completionCheckedAt) details.append(node('span', '', `종료 표기 확인 ${offer.completionCheckedAt}`));
   body.append(shop, node('p', 'used-offer-title', offer.title || '판매 상품'), details);
   const links = node('div', 'used-offer-action');
-  const privatePrice = offer.availability === 'sold-out' && offer.completionStatus === 'sold' && offer.priceKrw === null;
-  links.append(node('strong', privatePrice ? 'used-private-price' : '', privatePrice ? '판매 완료 가격 비공개' : money(offer.priceKrw)));
+  links.append(node('strong', '', money(offer.priceKrw)));
   const url = externalUrl(offer.sourceUrl);
   if (url) { const link = node('a', '', '판매 상품 보기 ↗'); link.href = url; link.target = '_blank'; link.rel = 'noopener noreferrer'; link.setAttribute('aria-label', `${offer.sourceName || '판매점'} ${offer.title || '상품'} 새 창에서 보기`); links.append(link); }
   else links.append(node('span', 'used-link-unavailable', '상품 링크 확인 중'));

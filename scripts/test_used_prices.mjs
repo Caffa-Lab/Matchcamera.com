@@ -81,11 +81,12 @@ assert.throws(() => validateUsedPriceData({ ...dataset, updatedAt: '2026-10-21' 
 // Historical points use actual observed days and the price recorded on that
 // day, never today's quote placed backwards on invented dates.
 const privateSold = { ...offer('private-sold', 100), priceKrw: null, availability: 'sold-out', completionStatus: 'sold', completionEvidence: '상품 상세에 판매완료 표기' };
-const privateData = validateUsedPriceData({ ...dataset, offers: [privateSold] }, { now: NOW, products });
-assert.equal(privateData.offers[0].priceKrw, null);
-assert.deepEqual(privateData.observations, [], 'A hidden completion price must not create a graph observation');
+const privateData = { ...dataset, offers: [privateSold] };
+assert.throws(() => validateUsedPriceData(privateData, { now: NOW, products }), /상품 기록/);
 const privateSummary = summarizeUsedOffers('body-a', privateData.offers, { now: NOW });
-assert.equal(privateSummary.endedCount, 1);
+assert.equal(privateSummary.endedCount, 0);
+assert.equal(privateSummary.recordedCount, 0);
+assert.equal(privateSummary.hasRecords, false);
 assert.equal(privateSummary.min, null);
 assert.equal(privateSummary.count, 0);
 assert.throws(() => validateUsedPriceData({ ...dataset, offers: [offer('a', 123, { checkedAt: '2026-10-20' })], observations: [{ offerId: 'a', productId: 'body-a', sourceUrl: 'https://shop.example/item/a', priceKrw: 123, availability: 'in-stock', observedOn: '2026-10-21' }] }, { now: NOW }), /관측 이력/);
@@ -147,5 +148,6 @@ const catalog = JSON.parse(await readFile(new URL('../public/data/product-index.
 const published = JSON.parse(await readFile(new URL('../public/data/used-prices.json', import.meta.url), 'utf8'));
 const clean = validateUsedPriceData(published, { products: catalog });
 assert(clean.offers.length > 0, 'Beta must contain sourced price observations');
+assert(clean.offers.every(item => Number.isSafeInteger(item.priceKrw) && item.priceKrw > 0), 'Exclude every listing without a public numeric price, including completed sales');
 assert(clean.offers.every(item => !/(^|\.)camprice\.kr$/.test(new URL(item.sourceUrl).hostname)), 'Do not republish CamPrice statistics');
 console.log(`Used prices passed: real catalog mapping, asking-price semantics, sparse samples, status/freshness, deduplication, safe sources and loader retry (${clean.offers.length} published quotes).`);
