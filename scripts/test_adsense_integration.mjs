@@ -5,7 +5,7 @@ import vm from 'node:vm';
 
 const root = resolve(import.meta.dirname, '..');
 const publicDir = resolve(root, 'public');
-const allowed = new Set(['index.html', 'body/index.html', 'lens/index.html', 'accessories/index.html', 'database/index.html']);
+const allowed = new Set(['home/index.html', 'body/index.html', 'lens/index.html', 'accessories/index.html', 'database/index.html']);
 const expectedSrc = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6581176496481636';
 const seen = new Set();
 function checkPages(directory) {

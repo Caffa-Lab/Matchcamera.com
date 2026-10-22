@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>카메라·렌즈 중고가 BETA | Matchcamera</title>
+  <meta name="description" content="확인된 국내 판매점의 카메라·렌즈 중고 판매호가와 상품 상태, 구성, 확인일을 비교하세요. 판매호가는 거래 완료 가격과 다릅니다.">
+  <meta name="robots" content="noindex,follow">
+  <link rel="canonical" href="https://matchcamera.com/betatest/">
+  <link rel="icon" href="/assets/images/matchcamera/symbol.png" type="image/png">
+  <link rel="stylesheet" href="/assets/css/site.css?v=20260915-tools">
+  <link rel="stylesheet" href="/assets/css/site-enhancements.css?v=20260915-tools">
+  <link rel="stylesheet" href="/assets/css/responsive.css?v=20260915-tools">
+  <link rel="stylesheet" href="/assets/css/used-prices.css?v=20261022-used">
+</head>
+<body class="used-page">
+  <div data-header></div>
+  <main class="used-main">
+    <header class="used-hero">
+      <div class="container">
+        <span class="used-eyebrow">MATCHCAMERA USED PRICE</span>
+        <div class="used-title-line"><h1>중고가</h1><span class="used-beta">BETA</span></div>
+        <p>카메라와 렌즈, 확인된 국내 판매점의 가격을 함께 살펴보세요.</p>
+        <div class="used-hero-note"><span aria-hidden="true">i</span><span>판매자가 제시한 <strong>판매호가</strong>입니다. 실제 거래가·매입가와는 다릅니다.</span></div>
+      </div>
+    </header>
+    <div class="container used-workspace">
+      <section class="used-search-panel" aria-labelledby="searchTitle">
+        <h2 id="searchTitle" class="used-sr-only">중고 가격을 확인할 제품 찾기</h2>
+        <label class="used-search-label" for="usedSearch">어떤 장비를 찾으세요?</label>
+        <div class="used-search-field"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 4.5 4.5"/></svg><input id="usedSearch" type="search" placeholder="제품명 또는 모델 코드 · 소니, 캐논, 니콘도 검색 가능" autocomplete="off"><button id="usedReset" type="button">초기화</button></div>
+        <div class="used-filters">
+          <label>제품 종류<select id="usedType"><option value="">바디 + 렌즈</option><option value="바디">바디</option><option value="렌즈">렌즈</option></select></label>
+          <label>브랜드<select id="usedBrand"><option value="">전체 브랜드</option></select></label>
+          <label class="used-all-toggle"><input id="usedShowAll" type="checkbox"><span>가격 자료 없는 제품도 보기</span></label>
+        </div>
+      </section>
+
+      <div class="used-status-row"><p id="usedStatus" role="status" aria-live="polite">제품과 판매호가 자료를 불러오고 있습니다…</p><button id="usedRetry" class="used-button" type="button" hidden>다시 불러오기</button></div>
+      <section id="usedDetail" class="used-detail" aria-label="선택한 제품의 중고 판매호가" tabindex="-1" hidden></section>
+
+      <section class="used-results" aria-labelledby="resultsTitle">
+        <div class="used-results-head"><div><h2 id="resultsTitle">제품 둘러보기</h2><span id="usedCount">0개</span></div><p>최근 7일 안에 판매처가 판매 중으로 표시한 자료입니다.</p></div>
+        <div id="usedGrid" class="used-grid" aria-busy="true"></div>
+        <button id="usedMore" class="used-more" type="button" hidden>제품 더 보기</button>
+      </section>
+
+      <section class="used-method" aria-labelledby="methodTitle">
+        <span class="used-eyebrow">가격을 읽는 방법</span><h2 id="methodTitle">같은 모델이어도 상태와 구성은 달라요</h2>
+        <div class="used-method-grid">
+          <div><h3>판매호가 기준</h3><p>확인된 판매 상품의 표시 가격입니다. 판매 완료 금액이나 개인 간 거래의 평균을 뜻하지 않습니다. 배송비와 실제 결제 금액은 판매점에서 확인하세요.</p></div>
+          <div><h3>3개 이상일 때만 중앙값 표시</h3><p>현재 기준에 맞는 자료가 3개 이상이면 가격 순서의 가운데 값인 중앙값을 표시합니다. 상태·구성·보증 차이를 보정한 감정가가 아닙니다.</p></div>
+          <div><h3>확인일과 재고 함께 확인</h3><p>7일이 지난 자료와 재고가 확인되지 않은 상품은 최근 가격 계산에서 제외합니다. 판매 중 표기는 실재고 보장이 아니므로 상품 링크에서 현재 가격과 재고를 확인하세요.</p></div>
+        </div>
+        <p class="used-beta-note">BETA에서는 확인한 제품과 판매점부터 자료를 제공하며, 전체 중고시장을 포함하지 않습니다. 자료가 없는 제품은 가격을 추정하지 않습니다.</p>
+      </section>
+      <noscript><p class="used-empty">제품 검색과 가격 자료를 보려면 브라우저의 JavaScript를 켜 주세요.</p></noscript>
+    </div>
+  </main>
+  <div data-footer></div>
+  <script type="module" src="/assets/js/common.js?v=20261022-used"></script>
+  <script type="module" src="/assets/js/used/app.js?v=20261022-used"></script>
+</body>
+</html>

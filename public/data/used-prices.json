@@ -1,0 +1,429 @@
+{
+  "schemaVersion": 1,
+  "currency": "KRW",
+  "updatedAt": "2026-10-22",
+  "sources": [
+    {
+      "name": "캐논스토어 서울역점",
+      "url": "https://canon-store.com/"
+    },
+    {
+      "name": "국민카메라",
+      "url": "https://kookmincamera.co.kr/"
+    }
+  ],
+  "methodology": {
+    "basis": "국내 판매점의 공개 중고 상품 판매호가",
+    "coverage": "확인한 2개 판매점과 제품만 포함하는 베타 자료",
+    "freshnessDays": 7,
+    "minimumMedianSamples": 3,
+    "refresh": "공개 상품 HTML 확인 후 갱신하는 스냅샷. 외부 시세 API를 직접 호출하지 않습니다.",
+    "stockMeaning": "판매 중은 판매처 페이지의 표시이며 실재고 보장이 아닙니다.",
+    "limits": [
+      "판매 완료 금액, 개인 간 거래 평균, 매입가는 포함하지 않습니다.",
+      "상품 상태와 컷수, 보증, 배송비 차이를 보정하지 않습니다.",
+      "자료가 없거나 확인일이 지난 제품의 현재 가격을 추정하지 않습니다."
+    ]
+  },
+  "offers": [
+    {
+      "id": "canonstore-13540",
+      "productId": "canon-바디-canon-rf-eos-r5",
+      "kind": "used-sale",
+      "priceKrw": 2880000,
+      "sourceName": "캐논스토어 서울역점",
+      "sourceUrl": "https://canon-store.com/product/detail.html?product_no=13540",
+      "title": "[중고] 캐논 EOS R5 정품  4,000컷 (S)",
+      "condition": "중고 · S등급 · 4,000컷",
+      "configuration": "body-only",
+      "availability": "in-stock",
+      "checkedAt": "2026-10-22",
+      "verified": true,
+      "evidence": {
+        "priceBasis": "HTML 표시 판매가와 JSON-LD 금액 일치",
+        "availabilityBasis": "판매처 판매 중 표기 · 실재고는 판매처 확인",
+        "contentSha256": "3195ef793f022da84c3a223e8bdef467566bf9cdcc37330cb72e1242217be842"
+      }
+    },
+    {
+      "id": "canonstore-13496",
+      "productId": "canon-바디-canon-rf-eos-rp",
+      "kind": "used-sale",
+      "priceKrw": 899000,
+      "sourceName": "캐논스토어 서울역점",
+      "sourceUrl": "https://canon-store.com/product/detail.html?product_no=13496",
+      "title": "[중고] 캐논 EOS RP 정품  (S)  3,000컷",
+      "condition": "중고 · S등급 · 3,000컷",
+      "configuration": "body-only",
+      "availability": "in-stock",
+      "checkedAt": "2026-10-22",
+      "verified": true,
+      "evidence": {
+        "priceBasis": "HTML 표시 판매가와 JSON-LD 금액 일치",
+        "availabilityBasis": "판매처 판매 중 표기 · 실재고는 판매처 확인",
+        "contentSha256": "678a28c39c0c2ba16e6cfcfd4ecd8c18a24b87ae4fc448c9b73c12bf637c4bc7"
+      }
+    },
+    {
+      "id": "canonstore-13476",
+      "productId": "canon-바디-canon-rf-eos-r",
+      "kind": "used-sale",
+      "priceKrw": 1400000,
+      "sourceName": "캐논스토어 서울역점",
+      "sourceUrl": "https://canon-store.com/product/detail.html?product_no=13476",
+      "title": "[중고] 캐논 EOS R BODY 정품   9,000컷 (A)",
+      "condition": "중고 · A등급 · 9,000컷",
+      "configuration": "body-only",
+      "availability": "in-stock",
+      "checkedAt": "2026-10-22",
+      "verified": true,
+      "evidence": {
+        "priceBasis": "HTML 표시 판매가와 JSON-LD 금액 일치",
+        "availabilityBasis": "판매처 판매 중 표기 · 실재고는 판매처 확인",
+        "contentSha256": "67b4182a1a1f7979224dde78bcfb22540aa1b9646d854667556217251500d5c2"
+      }
+    },
+    {
+      "id": "canonstore-13453",
+      "productId": "canon-바디-canon-rf-eos-r1",
+      "kind": "used-sale",
+      "priceKrw": 7300000,
+      "sourceName": "캐논스토어 서울역점",
+      "sourceUrl": "https://canon-store.com/product/detail.html?product_no=13453",
+      "title": "[중고] 캐논 EOS R1  정품 (1,000컷미만)  (S)",
+      "condition": "중고 · S등급 · 1,000컷미만",
+      "configuration": "body-only",
+      "availability": "in-stock",
+      "checkedAt": "2026-10-22",
+      "verified": true,
+      "evidence": {
+        "priceBasis": "HTML 표시 판매가와 JSON-LD 금액 일치",
+        "availabilityBasis": "판매처 판매 중 표기 · 실재고는 판매처 확인",
+        "contentSha256": "27a3d4d110709ce56c9bcb842c842b4be903be7ca6ab6d87f4348a6be5a71804"
+      }
+    },
+    {
+      "id": "canonstore-13438",
+      "productId": "canon-바디-canon-rf-eos-r5",
+      "kind": "used-sale",
+      "priceKrw": 2900000,
+      "sourceName": "캐논스토어 서울역점",
+      "sourceUrl": "https://canon-store.com/product/detail.html?product_no=13438",
+      "title": "[중고] 캐논 EOS R5 정품  16,000컷 (S)",
+      "condition": "중고 · S등급 · 16,000컷",
+      "configuration": "body-only",
+      "availability": "in-stock",
+      "checkedAt": "2026-10-22",
+      "verified": true,
+      "evidence": {
+        "priceBasis": "HTML 표시 판매가와 JSON-LD 금액 일치",
+        "availabilityBasis": "판매처 판매 중 표기 · 실재고는 판매처 확인",
+        "contentSha256": "ca48920b0f310f11b60770c5774ccc315de771815770d61ef4da01ec1c44217c"
+      }
+    },
+    {
+      "id": "canonstore-13372",
+      "productId": "canon-바디-canon-rf-eos-r6",
+      "kind": "used-sale",
+      "priceKrw": 1690000,
+      "sourceName": "캐논스토어 서울역점",
+      "sourceUrl": "https://canon-store.com/product/detail.html?product_no=13372",
+      "title": "[중고] 캐논 EOS R6 BODY 정품  100,000컷 (A)",
+      "condition": "중고 · A등급 · 100,000컷",
+      "configuration": "body-only",
+      "availability": "in-stock",
+      "checkedAt": "2026-10-22",
+      "verified": true,
+      "evidence": {
+        "priceBasis": "HTML 표시 판매가와 JSON-LD 금액 일치",
+        "availabilityBasis": "판매처 판매 중 표기 · 실재고는 판매처 확인",
+        "contentSha256": "d9a5f26f5d687feea28b99db8b28ab08b40e716cf57589e19e146456e5034fee"
+      }
+    },
+    {
+      "id": "canonstore-13545",
+      "productId": "canon-렌즈-canon-rf-rf-s55-210mm",
+      "kind": "used-sale",
+      "priceKrw": 360000,
+      "sourceName": "캐논스토어 서울역점",
+      "sourceUrl": "https://canon-store.com/product/detail.html?product_no=13545",
+      "title": "[중고] 캐논 RF-S 55-210mm IS STM  정품 (S)",
+      "condition": "중고 · S등급",
+      "configuration": "lens-only",
+      "availability": "in-stock",
+      "checkedAt": "2026-10-22",
+      "verified": true,
+      "evidence": {
+        "priceBasis": "HTML 표시 판매가와 JSON-LD 금액 일치",
+        "availabilityBasis": "판매처 판매 중 표기 · 실재고는 판매처 확인",
+        "contentSha256": "943d2e9cd0708dd64872112d5bfc6ba90682a533c1384ca5c8252cd0647c940c"
+      }
+    },
+    {
+      "id": "canonstore-13430",
+      "productId": "canon-렌즈-canon-rf-rf24-240mm",
+      "kind": "used-sale",
+      "priceKrw": 1200000,
+      "sourceName": "캐논스토어 서울역점",
+      "sourceUrl": "https://canon-store.com/product/detail.html?product_no=13430",
+      "title": "[중고] 캐논 RF 24-240mm F4-6.3 IS USM  정품 (S)",
+      "condition": "중고 · S등급",
+      "configuration": "lens-only",
+      "availability": "in-stock",
+      "checkedAt": "2026-10-22",
+      "verified": true,
+      "evidence": {
+        "priceBasis": "HTML 표시 판매가와 JSON-LD 금액 일치",
+        "availabilityBasis": "판매처 판매 중 표기 · 실재고는 판매처 확인",
+        "contentSha256": "11664b09bcacef8dcd40aa239f29b5ea18d5f6440da3507dea6bf9485784a55a"
+      }
+    },
+    {
+      "id": "canonstore-13353",
+      "productId": "canon-렌즈-canon-rf-rf28mm",
+      "kind": "used-sale",
+      "priceKrw": 340000,
+      "sourceName": "캐논스토어 서울역점",
+      "sourceUrl": "https://canon-store.com/product/detail.html?product_no=13353",
+      "title": "[중고] 캐논 RF 28mm F2.8 STM 팬케이크  (A+)",
+      "condition": "중고 · A+등급",
+      "configuration": "lens-only",
+      "availability": "in-stock",
+      "checkedAt": "2026-10-22",
+      "verified": true,
+      "evidence": {
+        "priceBasis": "HTML 표시 판매가와 JSON-LD 금액 일치",
+        "availabilityBasis": "판매처 판매 중 표기 · 실재고는 판매처 확인",
+        "contentSha256": "549c2057b9dab48698e73d75340ad4aa6b1865978f00cea1b7e422fe84023580"
+      }
+    },
+    {
+      "id": "kookmin-11606",
+      "productId": "sony-바디-sony-e-ilce-7m4",
+      "kind": "used-sale",
+      "priceKrw": 2200000,
+      "sourceName": "국민카메라",
+      "sourceUrl": "https://kookmincamera.co.kr/product/detail.html?product_no=11606",
+      "title": "1879 소니 A7 마크4",
+      "condition": "중고 · 외관 등급 미표기",
+      "configuration": "body-only",
+      "availability": "in-stock",
+      "checkedAt": "2026-10-22",
+      "verified": true,
+      "evidence": {
+        "priceBasis": "HTML 표시 판매가와 JSON-LD 금액 일치",
+        "availabilityBasis": "판매처 판매 중 표기 · 실재고는 판매처 확인",
+        "contentSha256": "ba80d8f70112868120ffc3a1258ee0a013eaaf72f296f52aeb0d76dfa9dd550b"
+      }
+    },
+    {
+      "id": "kookmin-10814",
+      "productId": "fixed-sony-rx10-iv",
+      "kind": "used-sale",
+      "priceKrw": 1300000,
+      "sourceName": "국민카메라",
+      "sourceUrl": "https://kookmincamera.co.kr/product/detail.html?product_no=10814",
+      "title": "1810 소니 RX10 / 4",
+      "condition": "중고 · 외관 등급 미표기",
+      "configuration": "fixed-lens",
+      "availability": "in-stock",
+      "checkedAt": "2026-10-22",
+      "verified": true,
+      "evidence": {
+        "priceBasis": "HTML 표시 판매가와 JSON-LD 금액 일치",
+        "availabilityBasis": "판매처 판매 중 표기 · 실재고는 판매처 확인",
+        "contentSha256": "bebdcfde4918ee23222778dc1da4519f8381ea343a4deea307a931dea05daf1c"
+      }
+    },
+    {
+      "id": "kookmin-7749",
+      "productId": "fixed-sony-rx100-iii",
+      "kind": "used-sale",
+      "priceKrw": 500000,
+      "sourceName": "국민카메라",
+      "sourceUrl": "https://kookmincamera.co.kr/product/detail.html?product_no=7749",
+      "title": "1391 소니 RX100 III",
+      "condition": "중고 · 외관 등급 미표기",
+      "configuration": "fixed-lens",
+      "availability": "in-stock",
+      "checkedAt": "2026-10-22",
+      "verified": true,
+      "evidence": {
+        "priceBasis": "HTML 표시 판매가와 JSON-LD 금액 일치",
+        "availabilityBasis": "판매처 판매 중 표기 · 실재고는 판매처 확인",
+        "contentSha256": "5062211e7b11c71edc136844dbe6df123b60277100236cd4ea4a296280c8f6d8"
+      }
+    },
+    {
+      "id": "kookmin-10513",
+      "productId": "nikon-바디-nikon-z-z-f",
+      "kind": "used-sale",
+      "priceKrw": 2150000,
+      "sourceName": "국민카메라",
+      "sourceUrl": "https://kookmincamera.co.kr/product/detail.html?product_no=10513",
+      "title": "1753 니콘 ZF 바디 디지털",
+      "condition": "중고 · 외관 등급 미표기",
+      "configuration": "body-only",
+      "availability": "in-stock",
+      "checkedAt": "2026-10-22",
+      "verified": true,
+      "evidence": {
+        "priceBasis": "HTML 표시 판매가와 JSON-LD 금액 일치",
+        "availabilityBasis": "판매처 판매 중 표기 · 실재고는 판매처 확인",
+        "contentSha256": "db20a2957d15abe7e4f69497b76e3643823fee11b2a10e06289473f0814a5454"
+      }
+    },
+    {
+      "id": "kookmin-11593",
+      "productId": "nikon-바디-nikon-z-z6iii",
+      "kind": "used-sale",
+      "priceKrw": 2600000,
+      "sourceName": "국민카메라",
+      "sourceUrl": "https://kookmincamera.co.kr/product/detail.html?product_no=11593",
+      "title": "1863 니콘 Z 6 마크 Ⅲ",
+      "condition": "중고 · 외관 등급 미표기",
+      "configuration": "body-only",
+      "availability": "in-stock",
+      "checkedAt": "2026-10-22",
+      "verified": true,
+      "evidence": {
+        "priceBasis": "HTML 표시 판매가와 JSON-LD 금액 일치",
+        "availabilityBasis": "판매처 판매 중 표기 · 실재고는 판매처 확인",
+        "contentSha256": "482fe0f9cd80e22b3e3417a5344fc2b74f2edb0845ede91e25a0ecea3b4a2f41"
+      }
+    },
+    {
+      "id": "kookmin-7551",
+      "productId": "fujifilm-바디-fujifilm-x-x-t3",
+      "kind": "used-sale",
+      "priceKrw": 1700000,
+      "sourceName": "국민카메라",
+      "sourceUrl": "https://kookmincamera.co.kr/product/detail.html?product_no=7551",
+      "title": "1129 후지필름 X-T3",
+      "condition": "중고 · 외관 등급 미표기",
+      "configuration": "body-only",
+      "availability": "in-stock",
+      "checkedAt": "2026-10-22",
+      "verified": true,
+      "evidence": {
+        "priceBasis": "HTML 표시 판매가와 JSON-LD 금액 일치",
+        "availabilityBasis": "판매처 판매 중 표기 · 실재고는 판매처 확인",
+        "contentSha256": "4315058cd8d0234ea74c43516b3b568026cb6c40f47d8667fcbcd690de6265fe"
+      }
+    },
+    {
+      "id": "kookmin-11616",
+      "productId": "sony-렌즈-sony-e-sel24105g",
+      "kind": "used-sale",
+      "priceKrw": 1100000,
+      "sourceName": "국민카메라",
+      "sourceUrl": "https://kookmincamera.co.kr/product/detail.html?product_no=11616",
+      "title": "1890 소니 FE 24-105mm f4",
+      "condition": "중고 · 외관 등급 미표기",
+      "configuration": "lens-only",
+      "availability": "in-stock",
+      "checkedAt": "2026-10-22",
+      "verified": true,
+      "evidence": {
+        "priceBasis": "HTML 표시 판매가와 JSON-LD 금액 일치",
+        "availabilityBasis": "판매처 판매 중 표기 · 실재고는 판매처 확인",
+        "contentSha256": "e5d119dc10699c23610dc5f34a38685ced1c269040128287624d90377b223249"
+      }
+    },
+    {
+      "id": "kookmin-10803",
+      "productId": "sony-렌즈-sony-e-sel200600g",
+      "kind": "used-sale",
+      "priceKrw": 2200000,
+      "sourceName": "국민카메라",
+      "sourceUrl": "https://kookmincamera.co.kr/product/detail.html?product_no=10803",
+      "title": "1797 소니 FE 200-600mm",
+      "condition": "중고 · 외관 등급 미표기",
+      "configuration": "lens-only",
+      "availability": "in-stock",
+      "checkedAt": "2026-10-22",
+      "verified": true,
+      "evidence": {
+        "priceBasis": "HTML 표시 판매가와 JSON-LD 금액 일치",
+        "availabilityBasis": "판매처 판매 중 표기 · 실재고는 판매처 확인",
+        "contentSha256": "5f6ade1676730f17d16e2d787627262e25139c3ad52f16db0f24b1c516c2e9e0"
+      }
+    },
+    {
+      "id": "kookmin-10796",
+      "productId": "sony-렌즈-sony-e-sel50f18f",
+      "kind": "used-sale",
+      "priceKrw": 350000,
+      "sourceName": "국민카메라",
+      "sourceUrl": "https://kookmincamera.co.kr/product/detail.html?product_no=10796",
+      "title": "1788 소니 FE 50mm f1.8",
+      "condition": "중고 · 외관 등급 미표기",
+      "configuration": "lens-only",
+      "availability": "in-stock",
+      "checkedAt": "2026-10-22",
+      "verified": true,
+      "evidence": {
+        "priceBasis": "HTML 표시 판매가와 JSON-LD 금액 일치",
+        "availabilityBasis": "판매처 판매 중 표기 · 실재고는 판매처 확인",
+        "contentSha256": "f6b218c0629dc420288506203eaceeb8596f6947a3b78c2ad34397bc3c411f2f"
+      }
+    },
+    {
+      "id": "kookmin-9716",
+      "productId": "sony-렌즈-sony-e-sel85f18",
+      "kind": "used-sale",
+      "priceKrw": 620000,
+      "sourceName": "국민카메라",
+      "sourceUrl": "https://kookmincamera.co.kr/product/detail.html?product_no=9716",
+      "title": "1662 소니 FE 85mm f1.8",
+      "condition": "중고 · 외관 등급 미표기",
+      "configuration": "lens-only",
+      "availability": "in-stock",
+      "checkedAt": "2026-10-22",
+      "verified": true,
+      "evidence": {
+        "priceBasis": "HTML 표시 판매가와 JSON-LD 금액 일치",
+        "availabilityBasis": "판매처 판매 중 표기 · 실재고는 판매처 확인",
+        "contentSha256": "976d2fc7f1ea5b7e720ae342930b16851151e94bc69ac9f2ed97f4e96e2386fe"
+      }
+    },
+    {
+      "id": "kookmin-9647",
+      "productId": "sony-렌즈-sony-e-sel2470gm2",
+      "kind": "used-sale",
+      "priceKrw": 2300000,
+      "sourceName": "국민카메라",
+      "sourceUrl": "https://kookmincamera.co.kr/product/detail.html?product_no=9647",
+      "title": "1545 소니 FE 24-70mm f2.8 II (위탁)",
+      "condition": "중고 · 외관 등급 미표기",
+      "configuration": "lens-only",
+      "availability": "in-stock",
+      "checkedAt": "2026-10-22",
+      "verified": true,
+      "evidence": {
+        "priceBasis": "HTML 표시 판매가와 JSON-LD 금액 일치",
+        "availabilityBasis": "판매처 판매 중 표기 · 실재고는 판매처 확인",
+        "contentSha256": "e8e55c7b74c55867428c22f5ea75472b5aa8756653d199f351d17b3bc1cd1dc0"
+      }
+    },
+    {
+      "id": "kookmin-7755",
+      "productId": "sony-렌즈-sony-e-sel35f18f",
+      "kind": "used-sale",
+      "priceKrw": 600000,
+      "sourceName": "국민카메라",
+      "sourceUrl": "https://kookmincamera.co.kr/product/detail.html?product_no=7755",
+      "title": "1401 소니 Fe 35mm f1.8",
+      "condition": "중고 · 외관 등급 미표기",
+      "configuration": "lens-only",
+      "availability": "in-stock",
+      "checkedAt": "2026-10-22",
+      "verified": true,
+      "evidence": {
+        "priceBasis": "HTML 표시 판매가와 JSON-LD 금액 일치",
+        "availabilityBasis": "판매처 판매 중 표기 · 실재고는 판매처 확인",
+        "contentSha256": "1985fe32a546e02409866a9030c680500649c436cb1164752c0235fa1b61512d"
+      }
+    }
+  ]
+}

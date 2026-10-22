@@ -480,6 +480,10 @@ async function serveAssetOrNotFound(request, env) {
 export default {
   async fetch(request, env) {
     const url = new URL(request.url);
+    if (["GET", "HEAD"].includes(request.method) && ["/program", "/program/", "/program/index.html"].includes(url.pathname)) {
+      url.pathname = "/";
+      return Response.redirect(url.toString(), 308);
+    }
     if (url.pathname === "/api/usage") return handleUsage(request, env);
     if (url.pathname === "/api/health") {
       return Response.json({ ok: true, service: "matchcamera", platform: "cloudflare-workers", time: new Date().toISOString() }, { headers: { "Cache-Control": "no-store" } });

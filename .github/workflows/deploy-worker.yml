@@ -58,6 +58,9 @@ jobs:
           node scripts/test_battery_compatibility.mjs
           node scripts/test_fixed_lens_catalog.mjs
           node scripts/test_programs.mjs
+          node scripts/test_used_prices.mjs
+          node scripts/test_used_price_ui.mjs
+          python3 scripts/test_used_price_collection.py
           node scripts/test_shutter_count.mjs
           node scripts/test_shutter_reader.mjs
           node scripts/test_shutter_ui.mjs

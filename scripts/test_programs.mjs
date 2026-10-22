@@ -1,9 +1,11 @@
 import assert from 'node:assert/strict';
 import {readFile} from 'node:fs/promises';
+import vm from 'node:vm';
+import siteWorker from '../worker/index.js';
 
 const read=path=>readFile(new URL(`../${path}`,import.meta.url),'utf8');
 const [hub,resize,resizeJs,previewRenderer,worker,rating,ratingJs,ratingXmp,index,carousel,exposure,sitemap,shutter]=await Promise.all([
-  read('public/program/index.html'),read('public/program/resize/index.html'),read('public/assets/js/resize/app.js'),read('public/assets/js/resize/image-utils.js'),read('public/program/resize/workers/image-worker.js'),read('public/program/rating/index.html'),read('public/assets/js/rating/app.js'),read('public/assets/js/rating/xmp.js'),read('public/data/product-index.json'),
+  read('public/index.html'),read('public/program/resize/index.html'),read('public/assets/js/resize/app.js'),read('public/assets/js/resize/image-utils.js'),read('public/program/resize/workers/image-worker.js'),read('public/program/rating/index.html'),read('public/assets/js/rating/app.js'),read('public/assets/js/rating/xmp.js'),read('public/data/product-index.json'),
   read('public/program/carousel/index.html'),read('public/program/exposure/index.html'),read('public/sitemap.xml'),
   read('public/program/shutter-count/index.html'),
 ]);
@@ -12,6 +14,40 @@ assert.match(hub,/href="\/program\/metadata\/"/,'메타데이터 도구 링크�
 assert.match(hub,/href="\/program\/resize\/"/,'리사이즈 도구 링크가 필요합니다.');
 assert.match(hub,/href="\/program\/rating\/"/,'Rating 도구 링크가 필요합니다.');
 assert.match(hub,/href="\/program\/filename\/"/,'파일명 내보내기 링크를 유지해야 합니다.');
+assert.match(hub,/<link rel="canonical" href="https:\/\/matchcamera\.com\/">/,'the root program hub must declare the root URL');
+assert.doesNotMatch(hub,/\/assets\/js\/home\.js|googlesyndication\.com/,'the root program hub must retain the existing no-ad tool scope');
+assert.match(hub,/name="google-adsense-account" content="ca-pub-6581176496481636"/,'retain existing publisher verification when the homepage changes');
+const home = await read('public/home/index.html');
+assert.match(home,/class="home-page"/);
+assert.match(home,/\/assets\/js\/home\.js/,'camera homepage must keep the banner and featured-product loader');
+assert.match(home,/<link rel="canonical" href="https:\/\/matchcamera\.com\/home\/">/);
+assert.ok(sitemap.includes('<loc>https://matchcamera.com/home/</loc>'));
+assert.ok(!sitemap.includes('<loc>https://matchcamera.com/betatest/</loc>'), 'The noindex beta must stay outside the indexable sitemap');
+const routedPaths = [];
+const routeEnv = { ASSETS: { async fetch(request) { routedPaths.push(new URL(request.url).pathname); return new Response('asset'); } } };
+for (const path of ['/program', '/program/', '/program/index.html']) {
+  for (const method of ['GET', 'HEAD']) {
+    const response = await siteWorker.fetch(new Request(`https://matchcamera.com${path}?from=bookmark`, {method}), routeEnv);
+    assert.equal(response.status, 308);
+    assert.equal(response.headers.get('Location'), 'https://matchcamera.com/?from=bookmark');
+  }
+}
+for (const path of ['/', '/home/', '/program/resize/', '/program/metadata/', '/program/shutter-count/']) {
+  const response = await siteWorker.fetch(new Request(`https://matchcamera.com${path}`), routeEnv);
+  assert.equal(response.status, 200, `${path} must remain an independent asset route`);
+  assert.equal(routedPaths.at(-1), path);
+}
+// Navigation and homepage measurements follow the page's new role, including
+// explicit index.html URLs opened in a static preview.
+const common = (await read('public/assets/js/common.js')).replace(/^import .*;\r?\n/gm, '');
+for (const [path, target, surface] of [['/', '/', null], ['/home/', '/home/', 'home'], ['/home/index.html', '/home/', 'home'], ['/program/resize/', '/', 'resize'], ['/betatest/', '/betatest/', null]]) {
+  const events = [];
+  const context = vm.createContext({location: {pathname:path}, document: {querySelector:()=>null,createElement:()=>({}),head:{appendChild(){}}}, trackUsage: (...args)=>{events.push(args);return Promise.resolve(false);} });
+  vm.runInContext(common, context);
+  const active = vm.runInContext('nav.filter(item=>item[2]).map(item=>item[0])', context);
+  assert.deepEqual([...active], [target], `${path} selects its matching menu entry`);
+  assert.deepEqual(events, surface ? [['page_view', surface]] : [], `${path} must not be miscounted as the camera homepage`);
+}
 for(const [name,html] of [['carousel',carousel],['exposure',exposure],['shutter-count',shutter]]){
   assert.equal((hub.match(new RegExp(`href="/program/${name}/"`,'g'))||[]).length,1,`${name} must have one hub entry`);
   assert.match(sitemap,new RegExp(`<loc>https://matchcamera\\.com/program/${name}/</loc>`),`${name} must be discoverable in the sitemap`);

@@ -1,10 +1,10 @@
 import {trackUsage} from './usage-events.js?v=20260915-tools';
 
-const here = location.pathname;
-const usageSurfaces={'/':'home','/body/':'body','/lens/':'lens','/database/':'database','/accessories/':'accessories','/compare/':'compare','/builder/':'builder','/program/resize/':'resize','/program/filename/':'filename','/program/metadata/':'metadata','/program/rating/':'rating','/program/carousel/':'carousel','/program/exposure/':'exposure','/contact/':'contact','/trust/':'trust'};
+const here = location.pathname.replace(/index\.html$/, '').replace(/\/?$/, '/');
+const usageSurfaces={'/home/':'home','/body/':'body','/lens/':'lens','/database/':'database','/accessories/':'accessories','/compare/':'compare','/builder/':'builder','/program/resize/':'resize','/program/filename/':'filename','/program/metadata/':'metadata','/program/rating/':'rating','/program/carousel/':'carousel','/program/exposure/':'exposure','/contact/':'contact','/trust/':'trust'};
 const usageSurface=usageSurfaces[here.replace(/index\.html$/,'')];
 if(usageSurface)void trackUsage('page_view',usageSurface);
-const isHome = here === '/';
+const isHome = here === '/home/';
 const header = document.querySelector('[data-header]');
 
 const brandStyles = document.createElement('style');
@@ -85,7 +85,7 @@ brandStyles.textContent = `
     .category-nav a,.category-nav button{padding:0 9px!important;font-size:13px!important}
     .global-search{width:220px!important}
   }
-  @media(max-width:1180px){
+  @media(max-width:1560px){
     .global-search{display:none!important}
   }
   @media(max-width:980px){
@@ -109,7 +109,8 @@ const logoMark = '<img class="brand-logo" src="/assets/images/matchcamera/symbol
 const logoWordmark = '<img class="brand-wordmark" src="/assets/images/matchcamera/wordmark.png" alt="">';
 
 const nav = [
-  ['/', '홈', isHome],
+  ['/', '프로그램', here === '/' || here.startsWith('/program/')],
+  ['/home/', '카메라 홈', isHome],
   ['/body/', '바디', here.startsWith('/body/')],
   ['/lens/', '렌즈', here.startsWith('/lens/')],
   ['/builder/', '카메라 견적내기', here.startsWith('/builder/')],
@@ -117,7 +118,7 @@ const nav = [
   ['/database/', '제품 DB', here.startsWith('/database/')],
   ['/accessories/', '액세서리', here.startsWith('/accessories/')],
   ['/care/', '관리용품', here.startsWith('/care/')],
-  ['/program/', '프로그램', here.startsWith('/program/')],
+  ['/betatest/', '중고가 BETA', here.startsWith('/betatest/')],
   ['/contact/', '문의하기', here.startsWith('/contact/')],
 ];
 
