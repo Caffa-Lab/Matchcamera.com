@@ -109,7 +109,6 @@ const logoMark = '<img class="brand-logo" src="/assets/images/matchcamera/symbol
 const logoWordmark = '<img class="brand-wordmark" src="/assets/images/matchcamera/wordmark.png" alt="">';
 
 const nav = [
-  ['/', '프로그램', here === '/' || here.startsWith('/program/')],
   ['/home/', '카메라 홈', isHome],
   ['/body/', '바디', here.startsWith('/body/')],
   ['/lens/', '렌즈', here.startsWith('/lens/')],
@@ -118,6 +117,7 @@ const nav = [
   ['/database/', '제품 DB', here.startsWith('/database/')],
   ['/accessories/', '액세서리', here.startsWith('/accessories/')],
   ['/care/', '관리용품', here.startsWith('/care/')],
+  ['/', '프로그램', here === '/' || here.startsWith('/program/')],
   ['/betatest/', '중고가 BETA', here.startsWith('/betatest/')],
   ['/contact/', '문의하기', here.startsWith('/contact/')],
 ];
@@ -128,7 +128,7 @@ if(header){
   header.innerHTML = `
     <header class="site-header">
       <div class="top-nav">
-        <a class="brand" href="/" aria-label="Matchcamera 홈">${logoMark}${logoWordmark}</a>
+        <a class="brand" href="/home/" aria-label="Matchcamera 홈">${logoMark}${logoWordmark}</a>
         <button class="mobile-menu-toggle" type="button" aria-expanded="false" aria-controls="siteMenu siteSearch"><span aria-hidden="true">☰</span><span data-menu-label>메뉴</span></button>
         <nav id="siteMenu" class="category-nav" aria-label="주요 메뉴">${nav.map(([href,label,active])=>`<a href="${href}" class="${active?'active':''}"${active?' aria-current="page"':''}>${label}</a>`).join('')}</nav>
         <form id="siteSearch" class="global-search" action="/database/" role="search">
