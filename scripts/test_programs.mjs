@@ -42,7 +42,7 @@ for (const path of ['/', '/home/', '/program/resize/', '/program/metadata/', '/p
 const common = (await read('public/assets/js/common.js')).replace(/^import .*;\r?\n/gm, '');
 for (const [path, target, surface] of [['/', '/', null], ['/home/', '/home/', 'home'], ['/home/index.html', '/home/', 'home'], ['/program/resize/', '/', 'resize'], ['/betatest/', '/betatest/', null]]) {
   const events = [];
-  const context = vm.createContext({location: {pathname:path}, document: {querySelector:()=>null,createElement:()=>({}),head:{appendChild(){}}}, trackUsage: (...args)=>{events.push(args);return Promise.resolve(false);} });
+  const context = vm.createContext({location: {pathname:path}, document: {querySelector:()=>null,createElement:()=>({}),head:{appendChild(){}}}, trackVisit:()=>Promise.resolve(false), trackUsage: (...args)=>{events.push(args);return Promise.resolve(false);} });
   vm.runInContext(common, context);
   const active = vm.runInContext('nav.filter(item=>item[2]).map(item=>item[0])', context);
   assert.deepEqual([...active], [target], `${path} selects its matching menu entry`);

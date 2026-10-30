@@ -1,9 +1,13 @@
 import {trackUsage} from './usage-events.js?v=20260915-tools';
+import {trackVisit} from './visitor-events.js?v=20261030';
 
 const here = location.pathname.replace(/index\.html$/, '').replace(/\/?$/, '/');
 const usageSurfaces={'/home/':'home','/body/':'body','/lens/':'lens','/database/':'database','/accessories/':'accessories','/compare/':'compare','/builder/':'builder','/program/resize/':'resize','/program/filename/':'filename','/program/metadata/':'metadata','/program/rating/':'rating','/program/carousel/':'carousel','/program/exposure/':'exposure','/contact/':'contact','/trust/':'trust'};
 const usageSurface=usageSurfaces[here.replace(/index\.html$/,'')];
 if(usageSurface)void trackUsage('page_view',usageSurface);
+const visitorSurfaces={...usageSurfaces,'/':'programs','/care/':'care','/betatest/':'betatest','/program/shutter-count/':'shutter','/privacy/':'privacy','/terms/':'terms'};
+const visitorSurface=visitorSurfaces[here];
+if(visitorSurface)void trackVisit(visitorSurface);
 const isHome = here === '/home/';
 const header = document.querySelector('[data-header]');
 

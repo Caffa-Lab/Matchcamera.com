@@ -1,4 +1,6 @@
 import { handleUsage } from './usage-events.js';
+import { handleVisit, readVisitorStats } from './visitor-stats.js';
+export { VisitorStats } from './visitor-stats.js';
 
 const ADMIN_PREFIX = "/admin/";
 const ADMIN_API_PREFIX = "/admin/api/";
@@ -420,6 +422,7 @@ async function commitChanges(env, payload) {
 async function handleAdminApi(request, env, auth) {
   const url = new URL(request.url);
   const route = url.pathname.slice(ADMIN_API_PREFIX.length).replace(/\/+$/, "");
+  if (route === "visitors" && request.method === "GET") return json(await readVisitorStats(env));
   if (route === "session" && request.method === "GET") {
     return json({
       ok: true,
@@ -485,6 +488,7 @@ export default {
       return Response.redirect(url.toString(), 308);
     }
     if (url.pathname === "/api/usage") return handleUsage(request, env);
+    if (url.pathname === "/api/visits") return handleVisit(request, env);
     if (url.pathname === "/api/health") {
       return Response.json({ ok: true, service: "matchcamera", platform: "cloudflare-workers", time: new Date().toISOString() }, { headers: { "Cache-Control": "no-store" } });
     }

@@ -8,6 +8,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
@@ -54,6 +57,11 @@ jobs:
         run: node scripts/test_estimate_price_context.mjs
       - name: Validate minimal usage events
         run: node scripts/test_usage_events.mjs
+      - name: Validate private visitor statistics
+        run: |
+          node scripts/test_visitor_stats.mjs
+          node scripts/test_visitor_events.mjs
+          node scripts/test_visitor_ui.mjs
       - name: Validate product correction feedback
         run: node scripts/test_product_feedback.mjs
       - name: Validate body and lens manufacturer filters

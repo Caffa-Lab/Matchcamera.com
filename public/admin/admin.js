@@ -1,4 +1,5 @@
 import {buildCatalogReview,REVIEW_TYPES} from './catalog-review.js';
+import {initVisitorStats} from './visitor-stats.js';
 const PATHS = {
   products: "public/data/products.json",
   expansion: "public/data/system-expansion.json",
@@ -48,6 +49,7 @@ let currentEditor = null;
 let toastTimer = null;
 let manufacturerDraft = [];
 let filterDraft = null;
+let refreshVisitors = null;
 const pendingChanges = new Map();
 const pendingMessages = [];
 
@@ -968,6 +970,7 @@ function bindEvents() {
   $("#refreshButton").addEventListener("click", () => {
     if (pendingChanges.size && !confirm("배포하지 않은 변경사항을 취소하고 새로고침할까요?")) return;
     pendingChanges.clear(); pendingMessages.length = 0; updatePendingUi(); loadState();
+    void refreshVisitors?.();
   });
   $("#deployPending").addEventListener("click", deployPending);
   $("#discardPending").addEventListener("click", discardPending);
@@ -1021,6 +1024,7 @@ async function boot() {
   try {
     const session = await api("session");
     $("#sessionEmail").textContent = session.user.email;
+    refreshVisitors = initVisitorStats(() => api("visitors", {signal: AbortSignal.timeout(10_000)}));
     await loadState(false);
   } catch (error) {
     $("#fatalError").hidden = false;

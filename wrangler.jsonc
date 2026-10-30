@@ -5,6 +5,12 @@
   "analytics_engine_datasets": [
     { "binding": "USAGE_ANALYTICS", "dataset": "matchcamera_usage_v1" }
   ],
+  "durable_objects": {
+    "bindings": [{ "name": "VISITOR_STATS", "class_name": "VisitorStats" }]
+  },
+  "migrations": [
+    { "tag": "visitor-stats-v1", "new_sqlite_classes": ["VisitorStats"] }
+  ],
   "assets": {
     "directory": "./public/",
     "binding": "ASSETS",
