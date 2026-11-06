@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,follow">
+  <title>내 장비·촬영 준비 BETA | Matchcamera</title>
+  <meta name="description" content="나의 바디·렌즈·액세서리를 모아 무게와 촬영 준비를 확인하세요. 로그인 없이 브라우저에 저장하고 JSON·CSV로 백업합니다.">
+  <link rel="canonical" href="https://matchcamera.com/program/kit/">
+  <link rel="stylesheet" href="/assets/css/site.css?v=20260915-tools"><link rel="stylesheet" href="/assets/css/site-enhancements.css?v=20260915-tools"><link rel="stylesheet" href="/assets/css/responsive.css?v=20260915-mobile"><link rel="stylesheet" href="/assets/css/kit.css?v=20261107-beta">
+  <link rel="icon" type="image/x-icon" sizes="16x16 32x32 48x48" href="/favicon.ico?v=20261026-logo"><link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16.png?v=20261026-logo"><link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32.png?v=20261026-logo"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=20261026-logo">
+</head>
+<body class="kit-page"><div data-header></div>
+  <main class="kit-main">
+    <header class="kit-hero"><div><a href="/beta/" class="kit-back">← BETA 실험실</a><span class="kit-beta">BETA</span><h1>내 장비·촬영 준비</h1><p>어떤 장비를 챙길지, 얼마나 무거운지.<br>출발 전에 한곳에서 확인하세요.</p></div><div class="kit-local-badge">내 브라우저에 저장</div></header>
+    <p class="kit-storage-note">같은 브라우저에만 저장됩니다. 다른 기기로 이동하거나 사이트 데이터를 지우기 전에 JSON 백업을 저장하세요. 장비·체크리스트는 서버로 전송하지 않습니다.</p>
+    <div id="kitStatus" class="kit-status" role="status" aria-live="polite"></div>
+    <section class="kit-summary" aria-label="준비 현황"><article><span>장비 수량</span><strong id="kitPieces">0개</strong><small id="kitPacked">챙긴 장비 0개</small></article><article><span>확인된 장비 무게</span><strong id="kitWeight">0g</strong><small id="kitMissingWeight">장비를 추가해 보세요</small></article><article><span>촬영 준비</span><strong id="kitProgress">0 / 7</strong><small>완료한 준비 항목</small></article></section>
+    <div class="kit-columns">
+      <section class="kit-panel kit-catalog" aria-labelledby="kitAddTitle"><div class="kit-panel-head"><div><span class="kit-eyebrow">PACK YOUR GEAR</span><h2 id="kitAddTitle">장비 추가</h2></div></div>
+        <label for="kitCategory">분류</label><select id="kitCategory"><option value="body">바디</option><option value="lens">렌즈</option><option value="battery">배터리</option><option value="memory">메모리 카드</option><option value="tripod">삼각대</option><option value="head">삼각대 헤드</option><option value="plate">플레이트</option><option value="flash">플래시</option><option value="adapter">마운트 어댑터</option></select>
+        <label for="kitSearch">제품 검색</label><input id="kitSearch" type="search" placeholder="소니·캐논·니콘 또는 제품명" autocomplete="off"><p id="kitSearchCount" class="kit-help" role="status">제품 목록을 불러오는 중입니다.</p><div id="kitSearchResults" class="kit-search-results"></div>
+        <details class="kit-manual"><summary>목록에 없는 장비 직접 입력</summary><form id="kitManualForm"><label for="kitManualName">장비명</label><input id="kitManualName" maxlength="200" required placeholder="예: 카메라 가방"><div class="kit-form-pair"><div><label for="kitManualQuantity">수량</label><input id="kitManualQuantity" type="number" min="1" max="99" step="1" value="1" required></div><div><label for="kitManualWeight">개당 무게 (g, 선택)</label><input id="kitManualWeight" type="number" min="0.001" max="1000000" step="any" placeholder="미확인"></div></div><button type="submit" class="kit-button kit-primary">직접 입력한 장비 추가</button></form></details>
+      </section>
+      <section class="kit-panel kit-list-panel" aria-labelledby="kitListTitle"><div class="kit-panel-head"><div><span class="kit-eyebrow">MY EQUIPMENT</span><h2 id="kitListTitle">이번에 챙길 장비</h2></div><button id="kitUnpack" class="kit-text-button" type="button">챙김 표시 초기화</button></div><div id="kitItems" class="kit-items"></div><p class="kit-help">등록된 무게는 제품의 측정 기준에 따라 배터리·카드를 포함할 수 있습니다. 가방과 추가 액세서리는 직접 더해 주세요. 미확인 무게는 합계에서 제외하며 실제 휴대 무게와 차이가 있을 수 있습니다.</p></section>
+      <section class="kit-panel kit-checklist" id="checklist" aria-labelledby="kitTaskTitle"><div class="kit-panel-head"><div><span class="kit-eyebrow">BEFORE YOU GO</span><h2 id="kitTaskTitle">촬영 준비 체크리스트</h2></div><button id="kitResetChecks" class="kit-text-button" type="button">체크 초기화</button></div><div id="kitTasks" class="kit-tasks"></div><form id="kitTaskForm" class="kit-task-form"><label for="kitNewTask" class="kit-visually-hidden">새 촬영 준비 항목</label><input id="kitNewTask" maxlength="200" required placeholder="준비 항목 직접 추가"><button type="submit" class="kit-button">추가</button></form></section>
+    </div>
+    <section class="kit-panel kit-backup" aria-labelledby="kitBackupTitle"><div><h2 id="kitBackupTitle">저장·백업</h2><p id="kitSavedAt" class="kit-help">변경사항을 이 브라우저에 자동 저장합니다.</p></div><div class="kit-backup-actions"><button id="kitExport" type="button" class="kit-button kit-primary">JSON 백업 저장</button><label class="kit-button kit-file-button" for="kitImport">JSON 백업 불러오기<input id="kitImport" type="file" accept="application/json,.json"></label><button id="kitCsv" type="button" class="kit-button">장비 CSV 저장</button><button id="kitClear" type="button" class="kit-button kit-danger">전체 초기화</button></div></section>
+  </main><div data-footer></div><script type="module" src="/assets/js/common.js?v=20261107-beta"></script><script type="module" src="/assets/js/kit/app.js?v=20261107-beta"></script>
+</body></html>

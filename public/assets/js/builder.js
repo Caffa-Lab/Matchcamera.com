@@ -4,6 +4,7 @@ import {checkCompatibility,findMountAdapters} from './compatibility.js?v=2026083
 import {openProductDetail} from './product-detail.js?v=20261006-catalog';
 import {priceContext,estimatePriceSummary} from './price-context.js?v=20261006-catalog';
 import {trackUsage} from './usage-events.js?v=20260915-phase1';
+import {initBudgetRecommendations} from './builder-budget.js?v=20261107-beta';
 const $=s=>document.querySelector(s);const PAGE_SIZE=40;
 let catalogLimit=PAGE_SIZE;let catalogKey='';let catalogObserver=null;
 const measuredEstimates=new Set();
@@ -233,15 +234,27 @@ function render(){refreshFilters();renderCatalog();renderBodySlot();renderLensSl
 function switchMode(mode){if(mode==='lens'&&state.body?.cameraSystem==='일체형 카메라'){$('#catalogMode').value='body';toast('일체형 카메라는 교환 렌즈가 없습니다.');return}state.mode=mode;state.system='all';state.manufacturer='all';state.mount='all';state.format='all';state.lensType='all';state.focalRange='all';state.query='';$('#search').value='';render()}
 function selectBody(id){const p=state.products.find(x=>x.id===id);if(!p)return;state.body=p;state.lenses=[];state.system='all';state.manufacturer='all';state.mount='all';state.format='all';state.lensType='all';state.focalRange='all';state.query='';$('#search').value='';if(p.cameraSystem==='일체형 카메라'){state.mode='body';render();toast(`${productLabel(p)}은(는) 렌즈 고정형입니다.`);return}state.mode='lens';render();toast(`${productLabel(p)} 기준으로 직접/어댑터 호환 렌즈를 표시합니다.`)}
 function toggleLens(id){if(state.body?.cameraSystem==='일체형 카메라'){toast('일체형 카메라는 내장 렌즈를 사용합니다.');return}const p=state.products.find(x=>x.id===id);if(!p)return;if(state.lenses.some(x=>x.id===p.id))state.lenses=state.lenses.filter(x=>x.id!==p.id);else state.lenses=[...state.lenses,p];render()}
+function applyBudgetRecommendation({body,lens}){
+  state.body=body;state.lenses=[lens];
+  for(const key of ['battery','memory','flash','plate','head','tripod'])state[key]=null;
+  state.mode='lens';state.query='';state.system='all';state.manufacturer='all';state.mount='all';state.format='all';state.lensType='all';state.focalRange='all';state.sale='all';state.compatOnly=true;
+  $('#search').value='';render();
+  toast('바디와 렌즈 조합을 적용했습니다. 추가 액세서리는 다시 선택해 주세요.');
+  $('#bodySlot')?.scrollIntoView({behavior:'smooth',block:'center'});
+}
 async function initializeBuilder(){
+  const initialBudgetOpen=location.hash==='#budgetRecommendations';
   try{
     [state.products,state.adapters,state.batteries,state.manufacturerOrder,state.filterOrder,state.flashes,state.memoryCards,state.tripods,state.heads,state.plates]=await Promise.all([loadProducts(),loadAdapters(),loadBatteries(),loadManufacturerOrder(),loadFilterOrder(),loadFlashes(),loadMemoryCards(),loadTripods(),loadHeads(),loadPlates()]);
     hydrate();
     render();
+    initBudgetRecommendations({products:state.products,manufacturerOrder:state.manufacturerOrder,onApply:applyBudgetRecommendation,initialOpen:initialBudgetOpen});
   }catch(error){
     console.error('견적 제품 데이터를 불러오지 못했습니다.',error);
     $('#resultCount').textContent='0';
     $('#catalogList').innerHTML='<div class="catalog-empty"><b>제품 정보를 불러오지 못했습니다.</b><span>페이지를 새로고침해 주세요. 계속되면 잠시 후 다시 시도해 주세요.</span></div>';
+    const budgetResults=$('[data-budget-results]');
+    if(budgetResults)budgetResults.textContent='제품 정보를 불러오지 못해 예산 조합을 계산할 수 없습니다. 페이지를 새로고침해 주세요.';
     for(const id of ['systemFilter','manufacturerFilter','mountFilter','formatFilter','lensTypeFilter','focalLengthFilter','saleFilter']) $("#"+id).disabled=true;
     toast('제품 정보를 불러오지 못했습니다.');
   }

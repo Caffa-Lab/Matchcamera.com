@@ -64,6 +64,13 @@ jobs:
           node scripts/test_visitor_ui.mjs
       - name: Validate product correction feedback
         run: node scripts/test_product_feedback.mjs
+      - name: Validate beta tools
+        run: |
+          node scripts/test_budget_recommendations.mjs
+          node scripts/test_photo_calculators.mjs
+          node scripts/test_kit_planner.mjs
+          node scripts/test_photo_privacy.mjs
+          node scripts/test_beta_integration.mjs
       - name: Validate body and lens manufacturer filters
         run: node scripts/test_catalog_filter_order.mjs
       - name: Validate AdSense scope and consent controls

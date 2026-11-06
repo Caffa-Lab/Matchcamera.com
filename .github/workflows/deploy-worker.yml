@@ -55,6 +55,11 @@ jobs:
           node scripts/test_visitor_stats.mjs
           node scripts/test_visitor_events.mjs
           node scripts/test_visitor_ui.mjs
+          node scripts/test_budget_recommendations.mjs
+          node scripts/test_photo_calculators.mjs
+          node scripts/test_kit_planner.mjs
+          node scripts/test_photo_privacy.mjs
+          node scripts/test_beta_integration.mjs
           node scripts/test_product_feedback.mjs
           node scripts/test_remaining_catalog.mjs
           node scripts/test_support_compatibility.mjs

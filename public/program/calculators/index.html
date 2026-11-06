@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex,follow">
+  <title>촬영 계산기 BETA | Matchcamera</title>
+  <meta name="description" content="심도·과초점거리, 환산 초점거리·화각, 메모리 용량, 타임랩스와 사진 출력 크기를 한곳에서 계산하세요.">
+  <link rel="canonical" href="https://matchcamera.com/program/calculators/">
+  <link rel="stylesheet" href="/assets/css/site.css?v=20260915-tools">
+  <link rel="stylesheet" href="/assets/css/site-enhancements.css?v=20260915-tools">
+  <link rel="stylesheet" href="/assets/css/responsive.css?v=20260915-mobile">
+  <link rel="stylesheet" href="/assets/css/calculators.css?v=20261107-beta">
+  <link rel="icon" type="image/x-icon" sizes="16x16 32x32 48x48" href="/favicon.ico?v=20261026-logo">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16.png?v=20261026-logo">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32.png?v=20261026-logo">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=20261026-logo">
+</head>
+<body class="calc-page">
+  <div data-header></div>
+  <main class="calc-main">
+    <header class="calc-hero"><div class="container calc-wrap"><span class="calc-kicker">MATCHCAMERA PHOTO TOOLS</span><h1>촬영 계산기 <span class="calc-beta">BETA</span></h1><p>촬영 전의 궁금한 숫자부터 출력 크기까지.<br>값을 바꾸면 결과가 바로 계산됩니다.</p></div></header>
+    <div class="container calc-wrap">
+      <nav class="calc-nav" aria-label="촬영 계산기 선택"><a href="#dof" aria-current="page">심도·과초점거리</a><a href="#fov">초점거리·화각</a><a href="#storage">메모리 용량</a><a href="#timelapse">타임랩스</a><a href="#print">사진 출력 크기</a></nav>
+      <noscript><p class="calc-nojs">계산하려면 브라우저에서 JavaScript를 켜 주세요.</p></noscript>
+
+      <section class="calc-card" id="dof" aria-labelledby="dofTitle">
+        <h2 id="dofTitle">심도·과초점거리 <span class="calc-beta">BETA</span></h2><p class="calc-intro">앞뒤로 어느 범위까지 선명하게 보일지 계산합니다.</p>
+        <div class="calc-columns"><div><form id="dofForm" data-calculator="dof" novalidate><div class="calc-fields">
+          <label class="wide">센서 포맷<select name="sensor" data-sensor-options><option value="full">풀프레임 · 36 × 24mm</option><option value="aps">APS-C · 23.5 × 15.6mm</option><option value="canon">Canon APS-C · 22.3 × 14.9mm</option><option value="mft">마이크로 포서드 · 17.3 × 13mm</option><option value="gfx">중형 · 43.8 × 32.9mm</option><option value="inch">1형 · 13.2 × 8.8mm</option></select></label>
+          <label>실제 초점거리 · mm<input name="focalMm" type="number" min="1" max="2000" step="any" value="35" inputmode="decimal" required></label>
+          <label>조리개 · f/<input name="aperture" type="number" min="0.5" max="128" step="any" value="8" inputmode="decimal" required></label>
+          <label>초점 설정<select name="focusMode"><option value="distance">거리 지정</option><option value="infinity">무한대</option></select></label>
+          <label>초점을 맞춘 거리 · m<input name="focusM" type="number" min="0.01" max="1000000" step="any" value="5" inputmode="decimal" required></label>
+          <label class="wide">허용 착란원(CoC) · mm<input name="cocMm" type="number" min="0.001" max="0.1" step="0.001" value="0.03" inputmode="decimal" required></label>
+        </div><p class="calc-note">초점거리는 렌즈에 적힌 실제 mm를 넣으세요. 포맷 선택은 일반적인 CoC 가정값을 채웁니다. CoC는 선명하다고 보는 허용 기준이며 픽셀 크기가 아닙니다. 필요하면 직접 바꿀 수 있습니다.</p><div class="calc-actions"><button type="reset" class="calc-button">초기화</button><button type="button" data-copy="dof" class="calc-button primary">결과 복사</button></div><p class="calc-error" data-error role="alert" hidden></p><p class="calc-status" data-status role="status"></p></form></div>
+          <div class="calc-result" data-result="dof" aria-live="polite" aria-atomic="true"><h3>계산 결과</h3><dl class="calc-values"></dl></div></div>
+        <p class="calc-note">얇은 렌즈 모형을 사용한 참고값입니다. 렌즈 주평면에서의 거리를 가정하므로 바디의 거리 표시와 차이가 날 수 있습니다. 접사, 포커스 브리딩, 회절, 피사체 움직임과 실제 관찰 조건은 반영하지 않습니다. 과초점거리는 허용 기준 안에서 먼 한계가 무한대가 되는 초점 거리입니다.</p>
+        <p class="calc-note"><a href="https://lenspire.zeiss.com/photo/app/uploads/2022/02/technical-article-depth-of-field-and-bokeh.pdf" target="_blank" rel="noopener noreferrer">ZEISS 심도·허용 착란원 기술 자료 ↗</a></p>
+      </section>
+
+      <section class="calc-card" id="fov" aria-labelledby="fovTitle" hidden>
+        <h2 id="fovTitle">초점거리·화각 <span class="calc-beta">BETA</span></h2><p class="calc-intro">센서 크기에 따른 35mm 환산 초점거리와 담기는 가로 범위를 확인합니다.</p>
+        <div class="calc-columns"><div><form id="fovForm" data-calculator="fov" novalidate><div class="calc-fields">
+          <label class="wide">센서 포맷<select name="sensor" data-sensor-options><option value="full">풀프레임 · 36 × 24mm</option><option value="aps">APS-C · 23.5 × 15.6mm</option><option value="canon">Canon APS-C · 22.3 × 14.9mm</option><option value="mft">마이크로 포서드 · 17.3 × 13mm</option><option value="gfx">중형 · 43.8 × 32.9mm</option><option value="inch">1형 · 13.2 × 8.8mm</option><option value="custom">센서 크기 직접 입력</option></select></label>
+          <label>센서 가로 · mm<input name="sensorWidthMm" type="number" min="1" max="100" step="any" value="36" inputmode="decimal" readonly required></label>
+          <label>센서 세로 · mm<input name="sensorHeightMm" type="number" min="1" max="100" step="any" value="24" inputmode="decimal" readonly required></label>
+          <label>실제 초점거리 · mm<input name="focalMm" type="number" min="1" max="2000" step="any" value="35" inputmode="decimal" required></label>
+          <label>피사체까지 거리 · m<input name="distanceM" type="number" min="0.01" max="1000000" step="any" value="10" inputmode="decimal" required></label>
+        </div><div class="calc-actions"><button type="reset" class="calc-button">초기화</button><button type="button" data-copy="fov" class="calc-button primary">결과 복사</button></div><p class="calc-error" data-error role="alert" hidden></p><p class="calc-status" data-status role="status"></p></form></div>
+          <div class="calc-result" data-result="fov" aria-live="polite" aria-atomic="true"><h3>계산 결과</h3><dl class="calc-values"></dl><svg class="calc-schematic" viewBox="0 0 360 160" role="img" aria-label="계산한 가로 화각의 개념도"><path data-fov-ray class="ray" d="M180 140 L40 20 L320 20 Z"></path><line class="ground" x1="10" y1="20" x2="350" y2="20"></line><text x="180" y="155" text-anchor="middle">카메라</text><text data-fov-text x="180" y="12" text-anchor="middle"></text></svg></div></div>
+        <p class="calc-note">환산 초점거리는 센서 대각선 비율, 가로 화각은 센서 가로 길이를 사용합니다. 종횡비가 다른 센서끼리는 가로 화각이 정확히 일치하지 않습니다. 가로 범위는 무한대 초점의 직선 투영 렌즈를 가정한 거리 비례값으로, 근접 촬영·어안·전자식 크롭·영상 모드·손떨림 보정 크롭은 반영하지 않습니다. 포맷별 크기는 대표값이며 실제 모델은 다를 수 있습니다.</p>
+        <p class="calc-note"><a href="https://www.edmundoptics.com/knowledge-center/application-notes/imaging/understanding-focal-length-and-field-of-view" target="_blank" rel="noopener noreferrer">Edmund Optics 초점거리·화각 계산식 ↗</a></p>
+      </section>
+
+      <section class="calc-card" id="storage" aria-labelledby="storageTitle" hidden>
+        <h2 id="storageTitle">메모리 용량 <span class="calc-beta">BETA</span></h2><p class="calc-intro">사진 한 장의 크기 또는 영상 비트레이트로 기록 가능량을 추정합니다.</p>
+        <div class="calc-columns"><div><form id="storageForm" data-calculator="storage" novalidate><div class="calc-fields">
+          <label>카드 표기 용량 · GB<input name="capacityGB" type="number" min="0.1" max="100000" step="any" value="128" inputmode="decimal" required></label>
+          <label>사용 가능 비율 · %<input name="usablePercent" type="number" min="0.1" max="100" step="any" value="95" inputmode="decimal" required></label>
+          <label>사진 한 장 평균 크기 · MB<input name="fileMB" type="number" min="0.01" max="100000" step="any" value="40" inputmode="decimal" required></label>
+          <label>영상 비트레이트 · Mb/s<input name="bitrateMbps" type="number" min="0.01" max="100000" step="any" value="200" inputmode="decimal" required></label>
+        </div><div class="calc-actions"><button type="reset" class="calc-button">초기화</button><button type="button" data-copy="storage" class="calc-button primary">결과 복사</button></div><p class="calc-error" data-error role="alert" hidden></p><p class="calc-status" data-status role="status"></p></form></div><div class="calc-result" data-result="storage" aria-live="polite" aria-atomic="true"><h3>사진만 또는 영상만 저장할 때</h3><dl class="calc-values"></dl></div></div>
+        <p class="calc-note">1GB = 1,000MB = 1,000,000,000바이트, 1바이트 = 8비트로 계산합니다. Mb/s(메가비트/초)와 MB/s(메가바이트/초)는 8배 차이입니다. 사용 가능 95%는 수정 가능한 예시 여유값이며 카드 실측값이 아닙니다. RAW+JPEG라면 두 파일의 합계를 입력하세요. 가변 비트레이트·포맷·파일 시스템·남은 용량에 따라 달라집니다. 카드 쓰기 속도나 카메라 호환 여부를 판정하지 않습니다.</p>
+      </section>
+
+      <section class="calc-card" id="timelapse" aria-labelledby="timelapseTitle" hidden>
+        <h2 id="timelapseTitle">타임랩스 계획 <span class="calc-beta">BETA</span></h2><p class="calc-intro">완성할 영상 길이에서 필요한 사진 장수와 촬영 시간을 역산합니다.</p>
+        <div class="calc-columns"><div><form id="timelapseForm" data-calculator="timelapse" novalidate><div class="calc-fields">
+          <label>희망 영상 길이 · 초<input name="movieSeconds" type="number" min="0.1" max="86400" step="any" value="10" inputmode="decimal" required></label>
+          <label>완성 영상 프레임레이트 · fps<input name="fps" type="number" min="1" max="240" step="any" value="30" inputmode="decimal" required></label>
+          <label>촬영 시작 간격 · 초<input name="intervalSeconds" type="number" min="0.01" max="86400" step="any" value="5" inputmode="decimal" required></label>
+          <label>한 장 노출 시간 · 초<input name="shutterSeconds" type="number" min="0.000001" max="86400" step="any" value="1" inputmode="decimal" required></label>
+        </div><p class="calc-note">간격은 이전 사진의 촬영 시작부터 다음 사진의 촬영 시작까지입니다. 1/125초는 0.008로 입력하세요.</p><div class="calc-actions"><button type="reset" class="calc-button">초기화</button><button type="button" data-copy="timelapse" class="calc-button primary">결과 복사</button></div><p class="calc-error" data-error role="alert" hidden></p><p class="calc-status" data-status role="status"></p></form></div><div class="calc-result" data-result="timelapse" aria-live="polite" aria-atomic="true"><h3>계산 결과</h3><dl class="calc-values"></dl></div></div>
+        <p class="calc-note">장수는 ‘영상 길이 × fps’를 올림합니다. 촬영 시간은 첫 사진의 시작부터 마지막 사진의 노출 종료까지 ‘(장수 − 1) × 시작 간격 + 노출 시간’입니다. 자동초점·파일 기록·카메라 처리 지연과 배터리 소모는 포함하지 않습니다. 간격과 노출 시간이 같으면 처리 여유가 없으므로 실제 설정에서는 여유를 두세요. 카메라의 인터벌 간격 정의와 지원 범위를 확인하세요.</p>
+        <p class="calc-note"><a href="https://onlinemanual.nikonimglib.com/z9/en/15_menu_guide_02_32.html" target="_blank" rel="noopener noreferrer">Nikon 타임랩스의 간격·장수·영상 길이 안내 ↗</a></p>
+      </section>
+
+      <section class="calc-card" id="print" aria-labelledby="printTitle" hidden>
+        <h2 id="printTitle">사진 출력 크기 <span class="calc-beta">BETA</span></h2><p class="calc-intro">원본 픽셀로 출력 가능한 크기와 희망 크기에서의 픽셀 밀도를 확인합니다.</p>
+        <div class="calc-columns"><div><form id="printForm" data-calculator="print" novalidate><div class="calc-fields">
+          <label>사진 가로 · px<input name="widthPx" type="number" min="1" max="100000" step="1" value="6000" inputmode="numeric" required></label>
+          <label>사진 세로 · px<input name="heightPx" type="number" min="1" max="100000" step="1" value="4000" inputmode="numeric" required></label>
+          <label>출력 기준 · PPI<input name="ppi" type="number" min="1" max="2400" step="any" value="300" inputmode="decimal" required></label>
+          <label>희망 출력 가로 · cm<input name="targetWidthCm" type="number" min="0.1" max="10000" step="any" value="60" inputmode="decimal" required></label>
+        </div><div class="calc-actions"><button type="reset" class="calc-button">초기화</button><button type="button" data-copy="print" class="calc-button primary">결과 복사</button></div><p class="calc-error" data-error role="alert" hidden></p><p class="calc-status" data-status role="status"></p></form></div><div class="calc-result" data-result="print" aria-live="polite" aria-atomic="true"><h3>원본 비율을 유지한 계산</h3><dl class="calc-values"></dl></div></div>
+        <p class="calc-note">사진의 픽셀 밀도는 PPI(인치당 픽셀 수), 프린터의 잉크 점 밀도는 DPI입니다. 흔히 ‘사진 DPI’라고 부르는 수치를 여기서는 PPI로 구분합니다. 출력 크기(cm) = 픽셀 ÷ PPI × 2.54입니다. 300 PPI는 변경 가능한 예시 기준이며 모든 출력의 필수 조건은 아닙니다. 종이·프린터·관찰 거리에 따라 적절한 값이 달라집니다. 이 계산기는 이미지를 확대하거나 새 디테일을 만들지 않습니다.</p>
+        <p class="calc-note"><a href="https://helpx.adobe.com/photoshop/desktop/crop-resize-transform/resize-adjust-resolution/image-size-resolution-and-resampling.html" target="_blank" rel="noopener noreferrer">Adobe 픽셀·해상도·출력 크기의 관계 ↗</a></p>
+      </section>
+      <div class="calc-more"><a href="/beta/">BETA 기능 둘러보기 →</a> · <a href="/program/exposure/">노출·ND 계산기 →</a><p>모든 계산은 브라우저에서 처리합니다. BETA 결과는 현장 설정을 계획하기 위한 참고값이며 파일이나 카메라 설정을 변경하지 않습니다.</p></div>
+    </div>
+  </main>
+  <div data-footer></div>
+  <script type="module" src="/assets/js/common.js?v=20261107-beta"></script>
+  <script type="module" src="/assets/js/calculators/app.js?v=20261107-beta"></script>
+</body>
+</html>

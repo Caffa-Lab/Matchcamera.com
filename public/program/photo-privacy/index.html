@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex,follow"><title>사진 개인정보 제거 BETA | Matchcamera</title>
+  <meta name="description" content="사진의 EXIF·GPS·IPTC·XMP를 담지 않은 사본을 브라우저에서 만들고 JPEG·PNG·WebP로 저장하세요.">
+  <link rel="canonical" href="https://matchcamera.com/program/photo-privacy/">
+  <link rel="stylesheet" href="/assets/css/site.css?v=20260911-price-details"><link rel="stylesheet" href="/assets/css/site-enhancements.css"><link rel="stylesheet" href="/assets/css/responsive.css?v=20260915-mobile"><link rel="stylesheet" href="/assets/css/beta.css?v=20261107">
+  <link rel="icon" type="image/x-icon" sizes="16x16 32x32 48x48" href="/favicon.ico?v=20261026-logo"><link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16.png?v=20261026-logo"><link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32.png?v=20261026-logo"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=20261026-logo">
+</head><body class="beta-page"><div data-header></div><main class="beta-main container">
+  <header class="beta-hero"><a class="beta-back" href="/beta/">← BETA 실험실</a><span class="beta-badge">BETA · 브라우저에서 처리</span><h1>사진 개인정보 제거</h1><p>사진은 그대로 나누고, 촬영 위치와 장비 기록은 덜어내세요.</p></header>
+  <div class="privacy-grid">
+    <section class="beta-panel" aria-labelledby="settingsTitle"><h2 id="settingsTitle">공유용 사본 만들기</h2>
+      <label class="beta-drop" for="privacyFiles"><strong>사진 선택하기</strong><span>JPEG · PNG · WebP<br>최대 10장 · 장당 50MB · 합계 200MB</span><input id="privacyFiles" type="file" accept="image/jpeg,image/png,image/webp" multiple></label>
+      <p id="privacySelection" class="beta-note" role="status">선택한 사진이 없습니다.</p>
+      <label class="beta-field">저장 형식<select id="privacyType"><option value="image/jpeg">JPEG · 투명 부분은 흰색</option><option value="image/png">PNG · 투명도 유지</option><option value="image/webp">WebP · 투명도 유지</option></select></label>
+      <label class="beta-field">긴 변 크기<select id="privacyEdge"><option value="0">원본 픽셀 크기</option><option value="4000">최대 4,000px</option><option value="2400">최대 2,400px</option><option value="1920">최대 1,920px</option></select></label>
+      <label class="beta-field">JPEG·WebP 품질 <output id="privacyQualityLabel">94%</output><input id="privacyQuality" type="range" min="80" max="100" value="94"></label>
+      <div class="beta-actions"><button class="beta-button primary" id="privacyRun" type="button" disabled>메타데이터 없는 사본 만들기</button><button class="beta-button" id="privacyClear" type="button">비우기</button></div>
+      <p id="privacyStatus" class="beta-note" role="status">사진을 선택하면 시작할 수 있습니다.</p>
+    </section>
+    <section class="beta-panel" aria-labelledby="previewTitle"><h2 id="previewTitle">선택한 사진과 결과</h2><div class="privacy-preview"><img id="privacyPreview" alt="선택한 원본 사진 미리보기" hidden><p id="privacyEmpty">공유할 사진을 선택해 주세요.</p></div><p id="privacyFileName" class="beta-note"></p><div id="privacyOutput" class="privacy-outputs"></div><button class="beta-button" id="privacyZip" type="button" disabled>완료한 사진 ZIP 다운로드</button></section>
+  </div>
+  <section class="beta-panel beta-explanation"><h2>어떤 정보가 달라지나요?</h2><ul><li>사진 픽셀을 다시 저장해 원본의 EXIF(촬영 날짜·장비·GPS), IPTC, XMP와 주석을 복사하지 않습니다. 내보낸 파일의 해당 메타데이터 블록도 검사합니다.</li><li>파일명은 촬영 정보가 담기지 않은 <code>matchcamera-clean-001</code> 형태로 바꿉니다. 원본은 수정하지 않습니다.</li><li>재인코딩으로 파일 크기·색 표현이 달라질 수 있습니다. JPEG·WebP는 품질 손실이 있을 수 있고, 원본 ICC 프로필·촬영 기록은 보존하지 않습니다. 출력 픽셀 크기는 선택한 긴 변 한도 안에서 유지합니다.</li><li>사진에 보이는 얼굴·차량 번호·위치 표지, 눈에 보이는 워터마크는 지우지 않습니다. 정지 사진용이며 애니메이션은 정지 이미지로 저장됩니다. RAW·HEIC는 지원하지 않습니다.</li></ul><p>사진과 결과 파일은 이 브라우저에서만 처리합니다. 다른 사람에게 공유하기 전에는 저장한 사본을 확인해 주세요.</p></section>
+  <p class="beta-feedback">불편하거나 결과가 예상과 다르면 <a href="/contact/?type=program">문의하기</a>로 알려주세요.</p>
+</main><div data-footer></div><script src="/assets/vendor/jszip.min.js"></script><script type="module" src="/assets/js/common.js?v=20261107-beta"></script><script type="module" src="/assets/js/photo-privacy/app.js?v=20261107"></script></body></html>

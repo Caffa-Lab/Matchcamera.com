@@ -1,0 +1,22 @@
+import {validateFiles,cleanPhoto,outputName,LIMITS} from './engine.js';
+const $=id=>document.getElementById(id);
+const state={files:[],outputs:[],previewUrl:null,busy:false};
+const note=message=>{$('privacyStatus').textContent=message;};
+function outputsClear(){for(const item of state.outputs)URL.revokeObjectURL(item.url);state.outputs=[];$('privacyOutput').replaceChildren();$('privacyZip').disabled=true;}
+function busy(value){state.busy=value;for(const id of ['privacyFiles','privacyType','privacyEdge','privacyClear'])$(id).disabled=value;$('privacyQuality').disabled=value||$('privacyType').value==='image/png';$('privacyRun').disabled=value||!state.files.length;$('privacyZip').disabled=value||!state.outputs.length;$('privacyOutput').setAttribute('aria-busy',String(value));}
+function reset(){if(state.busy)return;outputsClear();if(state.previewUrl)URL.revokeObjectURL(state.previewUrl);state.files=[];state.previewUrl=null;$('privacyFiles').value='';$('privacyPreview').hidden=true;$('privacyPreview').removeAttribute('src');$('privacyEmpty').hidden=false;$('privacyFileName').textContent='';$('privacySelection').textContent='선택한 사진이 없습니다.';busy(false);note('사진을 선택하면 시작할 수 있습니다.');}
+$('privacyFiles').addEventListener('change',event=>{if(state.busy)return;try{const files=validateFiles(event.target.files);outputsClear();if(state.previewUrl)URL.revokeObjectURL(state.previewUrl);state.files=files;state.previewUrl=URL.createObjectURL(files[0]);$('privacyPreview').src=state.previewUrl;$('privacyPreview').hidden=false;$('privacyEmpty').hidden=true;$('privacyFileName').textContent=`첫 사진: ${files[0].name}`;$('privacySelection').textContent=`${files.length}장 · 합계 ${(files.reduce((n,f)=>n+f.size,0)/1e6).toFixed(1)}MB`;busy(false);note('사진을 준비했습니다. 저장 설정을 확인해 주세요.');}catch(error){reset();note(error.message);}});
+$('privacyClear').addEventListener('click',reset);
+for(const id of ['privacyType','privacyEdge','privacyQuality'])$(id).addEventListener('input',()=>{if(state.busy)return;outputsClear();$('privacyQualityLabel').textContent=`${$('privacyQuality').value}%`;$('privacyQuality').disabled=$('privacyType').value==='image/png';note('설정이 바뀌었습니다. 새 사본을 만들어 주세요.');});
+$('privacyRun').addEventListener('click',async()=>{
+  if(state.busy||!state.files.length)return;outputsClear();busy(true);
+  const settings={type:$('privacyType').value,edge:Number($('privacyEdge').value),quality:Number($('privacyQuality').value)/100};
+  let totalBytes=0,failed=0;
+  try{for(const [index,file] of state.files.entries()){
+    note(`${index+1} / ${state.files.length} 처리 중 · 원본은 변경하지 않습니다.`);
+    try{const result=await cleanPhoto(file,settings);if(totalBytes+result.blob.size>LIMITS.batchBytes)throw new Error('결과 합계가 200MB를 넘습니다. 긴 변 크기를 줄여 다시 시도해 주세요.');totalBytes+=result.blob.size;const name=outputName(index,settings.type),url=URL.createObjectURL(result.blob);state.outputs.push({name,url,blob:result.blob});const link=document.createElement('a');link.href=url;link.download=name;link.className='privacy-download';link.textContent=`${name} · ${result.width} × ${result.height}px · ${(result.blob.size/1e6).toFixed(2)}MB 다운로드`;$('privacyOutput').append(link);}catch(error){failed++;const message=document.createElement('p');message.className='beta-error';message.textContent=`사진 ${index+1} 처리 실패: ${error.message || '사진을 읽지 못했습니다.'}`;$('privacyOutput').append(message);}
+    await new Promise(resolve=>setTimeout(resolve,0));
+  }note(`${state.outputs.length}장 완료${failed?` · ${failed}장 실패`:''}. 파일명의 다운로드 링크를 눌러 사본을 저장하세요.`);}finally{busy(false);}
+});
+$('privacyZip').addEventListener('click',async()=>{if(state.busy||!state.outputs.length)return;busy(true);note('ZIP 파일을 만들고 있습니다.');try{if(!globalThis.JSZip)throw new Error('ZIP 기능을 불러오지 못했습니다.');const zip=new globalThis.JSZip();for(const output of state.outputs)zip.file(output.name,output.blob);const blob=await zip.generateAsync({type:'blob',compression:'STORE'}),url=URL.createObjectURL(blob),link=document.createElement('a');link.href=url;link.download='matchcamera-clean-photos.zip';link.click();setTimeout(()=>URL.revokeObjectURL(url),60_000);note('ZIP 다운로드를 요청했습니다. 브라우저의 다운로드 목록을 확인해 주세요.');}catch{note('ZIP을 만들지 못했습니다. 개별 다운로드 링크를 이용해 주세요.');}finally{busy(false);}});
+window.addEventListener('pagehide',event=>{if(event.persisted)return;if(state.previewUrl)URL.revokeObjectURL(state.previewUrl);for(const output of state.outputs)URL.revokeObjectURL(output.url);});
