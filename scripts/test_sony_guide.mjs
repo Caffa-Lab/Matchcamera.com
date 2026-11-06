@@ -1,0 +1,52 @@
+import assert from 'node:assert/strict';
+import fs from 'node:fs/promises';
+import path from 'node:path';
+import vm from 'node:vm';
+import {buildGuidePage,validateGuide,officialSonyUrl,CATEGORIES} from './build_sony_guide.mjs';
+import {handleVisit} from '../worker/visitor-stats.js';
+
+const read=file=>fs.readFile(path.resolve(file),'utf8');
+const data=JSON.parse(await read('public/data/sony-guide.json')),html=await read('public/sony/index.html');
+validateGuide(data);
+assert(data.cards.length>=40&&data.recipes.length>=6,'the guide must include the researched settings and scene examples');
+assert.equal(buildGuidePage(data,html),html,'published HTML must be generated from current reviewed content');
+assert.match(html,/<h1>소니 카메라/);
+assert.match(html,/기종·펌웨어·사진\/영상 모드/);
+assert.match(html,/매치카메라의 출발점/,'scene values must be attributed as editorial examples');
+assert.match(html,/https:\/\/matchcamera\.com\/sony\//);
+assert.match(html,/name="viewport"/);
+assert.doesNotMatch(html,/googlesyndication|unpkg\.com|cdn\.jsdelivr\.net/);
+assert((await read('public/sitemap.xml')).includes('<loc>https://matchcamera.com/sony/</loc>'));
+const ids=[...html.matchAll(/\bid="([^"]+)"/g)].map(match=>match[1]);assert.equal(ids.length,new Set(ids).size);
+for(const [category] of CATEGORIES)assert(data.cards.some(card=>card.category===category));
+for(const card of data.cards){assert(html.includes(`id="setting-${card.id}"`));assert(html.includes(card.source.url.replaceAll('&','&amp;')));}
+assert.equal(data.manuals.find(manual=>manual.model==='ILCE-7M5').url,'https://helpguide.sony.net/ilc/2540/v1/ko/index.html','α7 V must not be confused with FX2');
+for(const url of ['http://helpguide.sony.net/a','https://helpguide.sony.net.evil.test/a','https://evil@helpguide.sony.net/a','javascript:alert(1)'])assert.equal(officialSonyUrl(url),false);
+const malicious=structuredClone(data);malicious.cards[0].title='<script>alert(1)</script>';
+assert(!buildGuidePage(malicious,html).includes('<script>alert(1)</script>'),'editor text must render escaped');
+const invalid=structuredClone(data);invalid.cards[0].source.url='https://example.test/';assert.throws(()=>validateGuide(invalid));
+const common=(await read('public/assets/js/common.js')).replace(/^import .*;\r?\n/gm,'');
+assert(!common.match(/const nav = \[[\s\S]*?\n\];/)[0].includes('/sony/'),'Sony must not be added to the top navigation');
+const events=[];vm.runInNewContext(common,{location:{pathname:'/sony/'},document:{querySelector:()=>null,createElement:()=>({}),head:{appendChild(){}}},trackUsage:()=>Promise.resolve(false),trackVisit:surface=>{events.push(surface);return Promise.resolve(true);}});assert.deepEqual(events,['sony']);
+const visit=await handleVisit(new Request('https://matchcamera.com/api/visits',{method:'POST',headers:{Origin:'https://matchcamera.com','Content-Type':'application/json'},body:JSON.stringify({visitorId:'d'.repeat(32),surface:'sony'})}),{VISITOR_STATS:{idFromName:()=>1,get:()=>({fetch:async()=>new Response(null,{status:202})})}});assert.equal(visit.status,202);
+
+// Exercise actual UI behavior without relying on copied filter logic.
+const element=()=>({value:'',hidden:false,textContent:'',handlers:{},addEventListener(name,fn){this.handlers[name]=fn;},setAttribute(name,value){this[name]=value;},focus(){this.focused=true;}});
+const elements=new Map(['#sonySearch','#sonyResultCount','#sonyNoResults','#sonyClear','#sonyExpand','#sonyCollapse','#sonyManualSelect','#sonyManualOpen','#sonyCopyStatus'].map(key=>[key,element()]));
+const cards=[{id:'setting-iso',dataset:{category:'exposure'},textContent:'ISO AUTO 최소 속도',open:false,scrollIntoView(){this.scrolled=true;}},{id:'setting-log',dataset:{category:'video'},textContent:'S-Log3 LUT 동영상',open:false,scrollIntoView(){this.scrolled=true;}}];
+const filters=['all','exposure','video'].map(value=>Object.assign(element(),{dataset:{sonyFilter:value}}));
+const document={querySelector:key=>elements.get(key),querySelectorAll:key=>key==='[data-sony-filter]'?filters:cards,handlers:{},addEventListener(name,fn){this.handlers[name]=fn;}};
+const window={handlers:{},addEventListener(name,fn){this.handlers[name]=fn;}};
+const clipboard=[];
+const context={document,window,location:{href:'https://matchcamera.com/sony/?reference=private',hash:''},navigator:{clipboard:{async writeText(value){clipboard.push(value);}}},URL,requestAnimationFrame:fn=>fn(),setTimeout:fn=>fn()};
+vm.runInNewContext(await read('public/assets/js/sony-guide.js'),context);
+elements.get('#sonySearch').value='ISO AUTO';elements.get('#sonySearch').handlers.input();assert.deepEqual(cards.map(card=>card.hidden),[false,true]);
+filters[2].handlers.click();assert.equal(elements.get('#sonyNoResults').hidden,false);
+elements.get('#sonyClear').handlers.click();assert.deepEqual(cards.map(card=>card.hidden),[false,false]);
+filters[2].handlers.click();elements.get('#sonyExpand').handlers.click();assert.deepEqual(cards.map(card=>card.open),[false,true]);
+elements.get('#sonyCollapse').handlers.click();assert.equal(cards[1].open,false);
+context.location.hash='#setting-iso';window.handlers.hashchange();assert.equal(cards[0].open,true);assert.equal(cards[0].scrolled,true);
+const option={value:'a7rv',textContent:'α7R V',dataset:{url:'https://helpguide.sony.net/ilc/2230/v1/ko/index.html'}};
+elements.get('#sonyManualSelect').handlers.change({target:{selectedOptions:[option]}});assert.equal(elements.get('#sonyManualOpen').href,option.dataset.url);
+const copyButton={dataset:{copySetting:'setting-iso'}};await document.handlers.click({target:{closest:()=>copyButton}});assert.deepEqual(clipboard,['https://matchcamera.com/sony/#setting-iso']);
+console.log(`Sony guide: ${data.cards.length} sourced settings, scenes/manuals, safe rendering, search/filter/deep links, privacy-safe copying and unchanged navigation passed.`);

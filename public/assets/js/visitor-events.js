@@ -1,6 +1,6 @@
 import { usageOptedOut } from './usage-events.js?v=20260915-phase1';
 
-const VISITOR_SURFACES = new Set(['programs', 'home', 'body', 'lens', 'database', 'accessories', 'compare', 'builder', 'resize', 'filename', 'metadata', 'rating', 'carousel', 'exposure', 'shutter', 'care', 'betatest', 'contact', 'trust', 'privacy', 'terms', 'beta', 'calculators', 'kit', 'photo_privacy']);
+const VISITOR_SURFACES = new Set(['programs', 'home', 'body', 'lens', 'database', 'accessories', 'compare', 'builder', 'resize', 'filename', 'metadata', 'rating', 'carousel', 'exposure', 'shutter', 'care', 'betatest', 'contact', 'trust', 'privacy', 'terms', 'beta', 'calculators', 'kit', 'photo_privacy', 'sony']);
 export const VISITOR_STORAGE_KEY = 'matchcamera.visitor';
 const VISITOR_LIFETIME_MS = 30 * 24 * 60 * 60 * 1000;
 

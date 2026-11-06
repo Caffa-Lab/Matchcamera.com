@@ -71,6 +71,10 @@ jobs:
           node scripts/test_kit_planner.mjs
           node scripts/test_photo_privacy.mjs
           node scripts/test_beta_integration.mjs
+      - name: Validate Sony settings guide
+        run: |
+          node scripts/build_sony_guide.mjs --check
+          node scripts/test_sony_guide.mjs
       - name: Validate body and lens manufacturer filters
         run: node scripts/test_catalog_filter_order.mjs
       - name: Validate AdSense scope and consent controls

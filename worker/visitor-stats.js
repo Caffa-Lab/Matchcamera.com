@@ -1,5 +1,5 @@
 // Browser estimates are kept separate from the identifier-free usage v1 dataset.
-const SURFACES = new Set(['programs', 'home', 'body', 'lens', 'database', 'accessories', 'care', 'compare', 'builder', 'resize', 'filename', 'metadata', 'rating', 'carousel', 'exposure', 'shutter', 'contact', 'trust', 'betatest', 'privacy', 'terms', 'beta', 'calculators', 'kit', 'photo_privacy']);
+const SURFACES = new Set(['programs', 'home', 'body', 'lens', 'database', 'accessories', 'care', 'compare', 'builder', 'resize', 'filename', 'metadata', 'rating', 'carousel', 'exposure', 'shutter', 'contact', 'trust', 'betatest', 'privacy', 'terms', 'beta', 'calculators', 'kit', 'photo_privacy', 'sony']);
 const MAX_BYTES = 256;
 const RETENTION_DAYS = 30;
 const DAY_MS = 86_400_000;

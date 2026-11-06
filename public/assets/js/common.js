@@ -5,7 +5,7 @@ const here = location.pathname.replace(/index\.html$/, '').replace(/\/?$/, '/');
 const usageSurfaces={'/home/':'home','/body/':'body','/lens/':'lens','/database/':'database','/accessories/':'accessories','/compare/':'compare','/builder/':'builder','/program/resize/':'resize','/program/filename/':'filename','/program/metadata/':'metadata','/program/rating/':'rating','/program/carousel/':'carousel','/program/exposure/':'exposure','/contact/':'contact','/trust/':'trust'};
 const usageSurface=usageSurfaces[here.replace(/index\.html$/,'')];
 if(usageSurface)void trackUsage('page_view',usageSurface);
-const visitorSurfaces={...usageSurfaces,'/':'programs','/care/':'care','/betatest/':'betatest','/program/shutter-count/':'shutter','/privacy/':'privacy','/terms/':'terms','/beta/':'beta','/program/calculators/':'calculators','/program/kit/':'kit','/program/photo-privacy/':'photo_privacy'};
+const visitorSurfaces={...usageSurfaces,'/':'programs','/care/':'care','/betatest/':'betatest','/program/shutter-count/':'shutter','/privacy/':'privacy','/terms/':'terms','/beta/':'beta','/program/calculators/':'calculators','/program/kit/':'kit','/program/photo-privacy/':'photo_privacy','/sony/':'sony'};
 const visitorSurface=visitorSurfaces[here];
 if(visitorSurface)void trackVisit(visitorSurface);
 const isHome = here === '/home/';
