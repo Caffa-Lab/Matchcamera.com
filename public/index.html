@@ -16,7 +16,7 @@
   <link rel="manifest" href="/site.webmanifest?v=20261026-logo">
   <link rel="stylesheet" href="/assets/css/responsive.css?v=20260915-mobile">
   <link rel="stylesheet" href="/assets/css/program-hub.css?v=20261022-photo">
-  <link rel="stylesheet" href="/assets/css/beta.css?v=20261107">
+  <link rel="stylesheet" href="/assets/css/beta.css?v=20261107-release">
 </head>
 <body class="program-hub">
   <div data-header></div>
@@ -26,6 +26,7 @@
         <span class="hub-eyebrow">MATCHCAMERA TOOLS</span>
         <h1>프로그램</h1>
         <p>사진을 찍은 다음에도, 매치카메라.</p>
+        <a class="hub-beta-jump" href="#betaPrograms">새로 출시한 BETA 도구 9개 보기 →</a>
       </div>
     </section>
 
@@ -89,7 +90,19 @@
         <strong class="program-card-link">도구 열기 →</strong>
       </a>
     </section>
-    <section class="container hub-beta" aria-labelledby="betaTitle"><div><span class="beta-badge">새로운 기능 · BETA</span><h2 id="betaTitle">촬영 준비부터 장비 선택까지.</h2><p>예산별 바디·렌즈 추천, 내 장비 보관함, 촬영 계산기와 사진 개인정보 제거.<br>매치카메라의 새로운 도구를 먼저 사용해 보세요.</p></div><a href="/beta/">BETA 실험실 둘러보기 →</a></section>
+    <section class="container hub-tools-heading" id="betaPrograms"><div><span class="hub-eyebrow">NOW AVAILABLE · BETA</span><h2>새로 출시한 도구</h2></div><p>원하는 기능을 바로 열어 사용하세요.</p></section>
+    <section class="container simple-grid hub-tools hub-release-tools" aria-label="BETA 출시 도구 목록">
+      <a class="simple-card program-card-live" data-beta-tool="budget" href="/builder/#budgetRecommendations"><span class="badge-soft">BETA</span><h2>예산별 바디·렌즈 추천</h2><p>희망 예산과 제조사·화각에 맞는 직접 장착 조합을 찾고 견적에 적용합니다.</p><strong class="program-card-link">견적내기에서 추천받기 →</strong></a>
+      <a class="simple-card program-card-live" data-beta-tool="kit" href="/program/kit/"><span class="badge-soft">BETA</span><h2>내 장비 보관함</h2><p>바디·렌즈·액세서리와 수량·무게를 브라우저에 저장하고 JSON·CSV로 백업합니다.</p><strong class="program-card-link">장비 정리하기 →</strong></a>
+      <a class="simple-card program-card-live" data-beta-tool="checklist" href="/program/kit/#checklist"><span class="badge-soft">BETA</span><h2>촬영 준비 체크리스트</h2><p>배터리와 메모리 카드부터 직접 추가한 준비 항목까지 출발 전에 확인합니다.</p><strong class="program-card-link">촬영 준비하기 →</strong></a>
+      <a class="simple-card program-card-live" data-beta-tool="dof" href="/program/calculators/#dof"><span class="badge-soft">BETA</span><h2>심도·과초점거리</h2><p>초점거리·조리개·촬영 거리에 따른 앞뒤 심도와 과초점거리를 계산합니다.</p><strong class="program-card-link">심도 계산하기 →</strong></a>
+      <a class="simple-card program-card-live" data-beta-tool="fov" href="/program/calculators/#fov"><span class="badge-soft">BETA</span><h2>화각·환산 초점거리</h2><p>센서 크기와 실제 초점거리로 가로·세로 화각과 35mm 환산 초점거리를 확인합니다.</p><strong class="program-card-link">화각 확인하기 →</strong></a>
+      <a class="simple-card program-card-live" data-beta-tool="storage" href="/program/calculators/#storage"><span class="badge-soft">BETA</span><h2>메모리 용량 계산</h2><p>사진 한 장의 크기와 영상 비트레이트로 카드에 담을 수 있는 장수·시간을 예상합니다.</p><strong class="program-card-link">저장 용량 계산하기 →</strong></a>
+      <a class="simple-card program-card-live" data-beta-tool="timelapse" href="/program/calculators/#timelapse"><span class="badge-soft">BETA</span><h2>타임랩스 계획</h2><p>완성 영상 길이와 촬영 간격으로 필요한 사진 수와 전체 촬영 시간을 계산합니다.</p><strong class="program-card-link">촬영 시간 계획하기 →</strong></a>
+      <a class="simple-card program-card-live" data-beta-tool="print" href="/program/calculators/#print"><span class="badge-soft">BETA</span><h2>인쇄 크기 계산</h2><p>원본 픽셀과 출력 해상도(PPI)로 cm·인치와 희망 크기의 픽셀 밀도를 확인합니다.</p><strong class="program-card-link">출력 크기 확인하기 →</strong></a>
+      <a class="simple-card program-card-live" data-beta-tool="photo-privacy" href="/program/photo-privacy/"><span class="badge-soft">BETA</span><h2>사진 개인정보 제거</h2><p>EXIF·GPS 등을 복사하지 않은 공유용 사본을 만들고 JPEG·PNG·WebP·ZIP으로 저장합니다.</p><strong class="program-card-link">공유용 사본 만들기 →</strong></a>
+    </section>
+    <section class="container hub-beta" aria-labelledby="betaTitle"><div><span class="beta-badge">BETA</span><h2 id="betaTitle">촬영 준비부터 장비 선택까지.</h2><p>출시한 베타 기능의 설명과 사용 기준을 한곳에서 확인하세요.</p></div><a href="/beta/">베타 도구 모아보기 →</a></section>
   </main>
   <div data-footer></div>
   <script type="module" src="/assets/js/common.js?v=20261022-navigation"></script>

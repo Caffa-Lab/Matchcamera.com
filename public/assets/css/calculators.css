@@ -4,3 +4,5 @@
 @media(max-width:400px){.calc-card{padding:16px}.calc-fields{grid-template-columns:minmax(0,1fr)}.calc-fields .wide{grid-column:auto}.calc-values{grid-template-columns:minmax(0,1fr)}.calc-values div{padding:0 0 12px;border-bottom:1px solid #ded9ef}.calc-hero p{font-size:13px}.calc-nav a{flex:1;justify-content:center;min-width:92px}.calc-card h2{font-size:21px}}
 @media(max-width:580px){.calc-nav{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}.calc-nav a{min-width:0;justify-content:center;white-space:nowrap;word-break:keep-all}.calc-nav a:last-child{grid-column:1/-1}}
 @media(max-width:340px){.calc-nav a{padding:9px 7px;font-size:11px}}
+
+.calc-card{scroll-margin-top:96px}

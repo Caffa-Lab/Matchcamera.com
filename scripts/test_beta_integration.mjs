@@ -10,7 +10,8 @@ const read = file => fs.readFile(path.join(root,file),'utf8');
 const sitemap = await read('sitemap.xml');
 for(const page of pages){
   const html=await read(page);
-  assert.match(html,/noindex,follow/,'experimental pages must declare beta indexing policy');
+  const overview=page==='beta/index.html';
+  assert.match(html,overview?/noindex,follow/:/content="index,follow"/,'released tools are indexable while the overview retains its beta policy');
   assert.match(html,/BETA/);
   assert.match(html,/name="viewport"/);
   assert.match(html,/\/assets\/css\/responsive\.css/);
@@ -18,7 +19,8 @@ for(const page of pages){
   assert.match(html,/\/apple-touch-icon\.png/);
   assert.equal((html.match(/<h1(?:\s[^>]*)?>/g)||[]).length,1);
   assert.doesNotMatch(html,/googlesyndication|unpkg\.com|cdn\.jsdelivr\.net/,'beta tools keep local dependencies and existing ad scope');
-  assert(!sitemap.includes(`https://matchcamera.com/${page.replace('index.html','')}`),'noindex experiments must not enter indexable sitemap');
+  const listed=sitemap.includes(`https://matchcamera.com/${page.replace('index.html','')}`);
+  assert.equal(listed,!overview,'released execution pages must be discoverable in the sitemap');
   const ids=[...html.matchAll(/\bid="([^"]+)"/g)].map(match=>match[1]);
   assert.equal(ids.length,new Set(ids).size,`${page} unique element IDs`);
   for(const [,url] of html.matchAll(/(?:href|src)="(\/[^"\s]+)"/g)){
@@ -30,7 +32,19 @@ for(const page of pages){
 }
 const hub=await read('beta/index.html');
 assert.equal((hub.match(/class="beta-card"/g)||[]).length,9);
-assert.match(await read('index.html'),/href="\/beta\/"/,'program homepage must expose the experiments');
+const homepage=await read('index.html');
+assert.match(homepage,/href="\/beta\/"/,'program homepage retains the beta overview');
+const cards=[...homepage.matchAll(/<a\b[^>]*data-beta-tool="([^"]+)"[^>]*>[\s\S]*?<\/a>/g)];
+assert.equal(cards.length,9,'all nine released features must be directly available on the program homepage');
+assert.equal(new Set(cards.map(match=>match[1])).size,9);
+const releasedLinks=[...hub.matchAll(/class="beta-card" href="([^"]+)"/g)].map(match=>match[1]);
+for(const card of cards){
+  assert.match(card[0],/<span class="badge-soft">BETA<\/span>/,'every released card needs its own beta label');
+  const href=card[0].match(/href="([^"]+)"/)[1];
+  assert(releasedLinks.includes(href),'released card must point directly to its existing executable feature');
+}
+assert.match(await read('program/kit/index.html'),/id="kitTaskTitle">[^<]+<span class="kit-beta">BETA/);
+assert.match(await read('program/kit/index.html'),/id="kitListTitle">[^<]+<span class="kit-beta">BETA/);
 assert.match(await read('builder/index.html'),/id="budgetRecommendations"/);
 const privacy=await read('privacy/index.html');
 assert.match(privacy,/사진 개인정보 제거 BETA/);

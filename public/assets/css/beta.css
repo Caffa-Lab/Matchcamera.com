@@ -2,3 +2,5 @@
 @media(max-width:920px){.beta-card-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.privacy-grid{grid-template-columns:minmax(0,1fr)}}
 @media(max-width:580px){.beta-main{padding-top:23px}.beta-card-grid{grid-template-columns:minmax(0,1fr);gap:12px}.beta-card,.beta-panel{padding:20px}.beta-section{margin:25px 0}.beta-hero>p{font-size:14px}.hub-beta{align-items:flex-start;flex-direction:column;padding:23px}.hub-beta h2{font-size:21px}.hub-beta>a{width:100%;text-align:center}.beta-actions{display:grid;grid-template-columns:1fr}.beta-button{width:100%}}
 @media(prefers-reduced-motion:reduce){.beta-card{transition:none}}
+
+.hub-beta-jump{display:inline-flex;align-items:center;min-height:44px;margin-top:10px;font-size:12px;font-weight:700;color:#6249a9;line-height:1.6}.hub-beta-jump:focus-visible{outline:3px solid #8976d4;outline-offset:3px}.program-hub #betaPrograms{scroll-margin-top:96px}.program-hub .hub-release-tools{padding-bottom:32px}
